@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Find screen-free children's games for any moment." />
-    <title>Play Picks — 100 games for little imaginations</title>
+    <title>Play Picks — games for little imaginations</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
@@ -17,7 +17,7 @@
       <header class="topbar">
         <button class="brand" id="homeButton" type="button" aria-label="Play Picks home">
           <span class="brand-mark">✦</span>
-          <span>Play Picks</span>
+          <span id="brandLabel">Play Picks</span>
         </button>
         <nav class="main-nav" aria-label="Game views">
           <button class="nav-button is-active" type="button" data-view="recommended">For you</button>
@@ -33,16 +33,14 @@
           <span class="profile-avatar" id="profileAvatar">?</span>
           <span id="profileLabel">Profile</span>
         </button>
-        <button class="text-button" id="resetButton" type="button">Start over</button>
       </header>
 
       <div id="landing">
         <section class="hero">
           <div class="hero-content">
             <span class="parent-badge" id="parentBadge">Made with parents in mind</span>
-            <p class="eyebrow" id="heroEyebrow">Less scrolling. More playing.</p>
             <h1 id="heroTitle">Find their next <span>favorite game.</span></h1>
-            <p class="hero-copy" id="heroCopy">Answer six quick questions and we’ll search 100 simple, screen-free games for the perfect fit.</p>
+            <p class="hero-copy" id="heroCopy">Answer seven quick questions and we’ll search simple, screen-free games for the perfect fit.</p>
             <div class="hero-actions">
               <button class="primary-button hero-primary" id="startButton" type="button">Find a game <span>→</span></button>
               <button class="hero-secondary" id="popularButton" type="button">See what families love</button>
@@ -69,7 +67,6 @@
           <div class="section-heading">
             <div>
               <p class="eyebrow" id="parentEyebrow">A little help for grown-ups</p>
-              <h2 id="parentTitle">Play that fits real family life.</h2>
             </div>
             <p id="parentIntro">No complicated preparation. Choose what you have, how much time is available and how energetic everyone feels.</p>
           </div>
@@ -154,10 +151,6 @@
           <button class="edit-button" id="editButton" type="button">Edit filters</button>
         </div>
         <div class="filter-chips" id="filterChips"></div>
-        <div class="results-toolbar">
-          <span class="results-count" id="resultsCount"></span>
-          <button class="subtle-button" id="resultsTopButton" type="button">↑ Top</button>
-        </div>
         <div class="activity-grid" id="activityGrid"></div>
         <div class="empty-state" id="emptyState" hidden>
           <span aria-hidden="true">🪁</span>
@@ -224,7 +217,6 @@
 
       <footer>
         <span id="footerMessage">Made for little moments and big imaginations.</span>
-        <span id="footerMeta">100 unique games · saved on this device</span>
       </footer>
     </main>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
