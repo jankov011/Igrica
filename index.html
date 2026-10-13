@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Find screen-free children's games for any moment." />
+    <title>Play Picks — 100 games for little imaginations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shape page-shape-one" aria-hidden="true"></div>
+    <div class="page-shape page-shape-two" aria-hidden="true"></div>
+    <main class="app-shell">
+      <header class="topbar">
+        <button class="brand" id="homeButton" type="button" aria-label="Play Picks home">
+          <span class="brand-mark">✦</span>
+          <span>Play Picks</span>
+        </button>
+        <nav class="main-nav" aria-label="Game views">
+          <button class="nav-button is-active" type="button" data-view="recommended">For you</button>
+          <button class="nav-button" type="button" data-view="explore">Explore</button>
+          <button class="nav-button" type="button" data-view="popular">Popular</button>
+          <button class="nav-button" type="button" data-view="saved">Saved</button>
+        </nav>
+        <div class="language-switcher" role="group" aria-label="Language">
+          <button class="language-button is-active" type="button" data-language="en" aria-pressed="true">EN</button>
+          <button class="language-button" type="button" data-language="sr" aria-pressed="false">SR</button>
+        </div>
+        <button class="profile-button" id="profileButton" type="button">
+          <span class="profile-avatar" id="profileAvatar">?</span>
+          <span id="profileLabel">Profile</span>
+        </button>
+        <button class="text-button" id="resetButton" type="button">Start over</button>
+      </header>
+
+      <div id="landing">
+        <section class="hero">
+          <div class="hero-content">
+            <span class="parent-badge" id="parentBadge">Made with parents in mind</span>
+            <p class="eyebrow" id="heroEyebrow">Less scrolling. More playing.</p>
+            <h1 id="heroTitle">Find their next <span>favorite game.</span></h1>
+            <p class="hero-copy" id="heroCopy">Answer six quick questions and we’ll search 100 simple, screen-free games for the perfect fit.</p>
+            <div class="hero-actions">
+              <button class="primary-button hero-primary" id="startButton" type="button">Find a game <span>→</span></button>
+              <button class="hero-secondary" id="popularButton" type="button">See what families love</button>
+            </div>
+            <div class="trust-row">
+              <span id="trustOne">✓ No sign-up needed</span>
+              <span id="trustTwo">✓ Screen-free ideas</span>
+              <span id="trustThree">✓ Ages 2–12</span>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="play-card play-card-main">
+              <span>🪁</span>
+              <b id="visualTitle">Ready for play?</b>
+              <small id="visualCopy">One minute to the right idea</small>
+            </div>
+            <div class="floating-bubble bubble-one">🎨</div>
+            <div class="floating-bubble bubble-two">⚽</div>
+            <div class="floating-bubble bubble-three">✨</div>
+          </div>
+        </section>
+
+        <section class="parent-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow" id="parentEyebrow">A little help for grown-ups</p>
+              <h2 id="parentTitle">Play that fits real family life.</h2>
+            </div>
+            <p id="parentIntro">No complicated preparation. Choose what you have, how much time is available and how energetic everyone feels.</p>
+          </div>
+          <div class="parent-grid">
+            <article class="parent-card parent-card-featured">
+              <div class="card-icon">💛</div>
+              <span class="mini-label" id="dailyLabel">TODAY’S EASY WIN</span>
+              <h3 id="dailyTitle">Five-minute connection</h3>
+              <p id="dailyCopy">Short play still counts. A few focused minutes can turn an ordinary pause into a warm family memory.</p>
+              <div class="daily-meta" id="dailyMeta"></div>
+              <button class="card-link" id="dailyButton" type="button">Find a quick game →</button>
+            </article>
+            <article class="parent-card">
+              <div class="card-icon mint-icon">🌱</div>
+              <h3 id="benefitOneTitle">Supports development</h3>
+              <p id="benefitOneCopy">Discover ideas for movement, creativity, cooperation and calm focus.</p>
+            </article>
+            <article class="parent-card">
+              <div class="card-icon blue-icon">🧘</div>
+              <h3 id="benefitTwoTitle">Less decision fatigue</h3>
+              <p id="benefitTwoCopy">Six simple choices turn “what should we do?” into a useful shortlist.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="parent-note">
+          <div class="parent-note-icon">🛟</div>
+          <div>
+            <h3 id="safetyTitle">A note for safe, happy play</h3>
+            <p id="safetyCopy">Stay nearby, adapt every activity to your child and space, and use age-appropriate, safe materials.</p>
+          </div>
+          <button class="primary-button" id="bottomStartButton" type="button">Let’s find a game <span>→</span></button>
+        </section>
+      </div>
+
+      <section class="progress" id="progress" aria-label="Setup progress" hidden></section>
+
+      <section class="explore-page" id="explorePage" hidden>
+        <div class="explore-hero">
+          <div>
+            <p class="eyebrow" id="exploreEyebrow">Browse by moment</p>
+            <h2 id="exploreTitle">There’s a game for every kind of day.</h2>
+            <p id="exploreCopy">Choose a season, setting or developmental goal and start exploring.</p>
+          </div>
+          <div class="explore-hero-art" aria-hidden="true">🌦️</div>
+        </div>
+        <div class="explore-section-heading">
+          <h3 id="momentTitle">Ideas for the moment</h3>
+          <p id="momentCopy">Pick the kind of day you are having.</p>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+        <div class="explore-section-heading skill-heading">
+          <h3 id="skillTitle">What would you like to encourage?</h3>
+          <p id="skillCopy">Explore games through the skill they help children practice.</p>
+        </div>
+        <div class="skill-grid" id="skillGrid"></div>
+      </section>
+
+      <section class="question-card" id="questionCard" aria-live="polite" hidden>
+        <div class="question-heading">
+          <div>
+            <p class="step-label" id="stepLabel"></p>
+            <h2 id="questionTitle"></h2>
+            <p id="questionHint"></p>
+          </div>
+          <span class="question-number" id="questionNumber"></span>
+        </div>
+        <div class="choice-grid" id="choiceGrid"></div>
+        <div class="question-actions">
+          <button class="back-button" id="backButton" type="button">← Back</button>
+          <button class="primary-button" id="nextButton" type="button" disabled>Continue <span>→</span></button>
+        </div>
+      </section>
+
+      <section class="results" id="results" hidden aria-live="polite">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="resultsEyebrow">Your play picks</p>
+            <h2 id="resultsTitle">Ready, set, play!</h2>
+            <p id="resultsSummary"></p>
+          </div>
+          <button class="edit-button" id="editButton" type="button">Edit filters</button>
+        </div>
+        <div class="filter-chips" id="filterChips"></div>
+        <div class="results-toolbar">
+          <span class="results-count" id="resultsCount"></span>
+          <button class="subtle-button" id="resultsTopButton" type="button">↑ Top</button>
+        </div>
+        <div class="activity-grid" id="activityGrid"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <span aria-hidden="true">🪁</span>
+          <h3 id="emptyTitle">No exact matches this time</h3>
+          <p id="emptyCopy">Try changing one filter and we’ll find a better fit.</p>
+          <button class="primary-button" id="changeFiltersButton" type="button">Change my filters</button>
+        </div>
+      </section>
+
+      <dialog class="profile-dialog" id="profileDialog">
+        <form method="dialog" class="profile-card" id="profileForm">
+          <button class="dialog-close" value="cancel" type="submit" aria-label="Close">×</button>
+          <span class="profile-hero" aria-hidden="true">👋</span>
+          <h2 id="profileTitle">Your profile</h2>
+          <p id="profileCopy">Enter a name to save games and keep your favorites on this device.</p>
+          <label for="profileName" id="profileNameLabel">Name</label>
+          <input id="profileName" name="profileName" maxlength="30" autocomplete="nickname" required />
+          <button class="primary-button profile-save" id="profileSaveButton" value="default" type="submit">Save profile</button>
+          <button class="danger-button" id="deleteProfileButton" type="button">Delete profile</button>
+        </form>
+      </dialog>
+
+      <dialog class="game-dialog" id="gameDialog">
+        <article class="game-detail">
+          <button class="dialog-close game-dialog-close" id="gameDialogClose" type="button" aria-label="Close">×</button>
+          <img class="game-detail-image" id="detailImage" alt="" />
+          <div class="game-detail-body">
+            <div class="game-detail-heading">
+              <div>
+                <p class="eyebrow" id="detailEyebrow">Game guide</p>
+                <h2 id="detailTitle"></h2>
+              </div>
+              <button class="like-button detail-like" id="detailLikeButton" type="button">♥</button>
+            </div>
+            <p class="game-detail-intro" id="detailDescription"></p>
+            <div class="detail-tags" id="detailTags"></div>
+            <div class="detail-section">
+              <h3 id="detailPrepareTitle">Before you start</h3>
+              <p id="detailPrepare"></p>
+            </div>
+            <div class="detail-section">
+              <h3 id="detailStepsTitle">How to play</h3>
+              <ol class="detail-steps" id="detailSteps"></ol>
+            </div>
+            <div class="detail-grid">
+              <div class="detail-tip">
+                <span aria-hidden="true">💡</span>
+                <h3 id="detailExampleTitle">Try this example</h3>
+                <p id="detailExample"></p>
+              </div>
+              <div class="detail-tip detail-tip-parent">
+                <span aria-hidden="true">💛</span>
+                <h3 id="detailParentTitle">Parent tip</h3>
+                <p id="detailParent"></p>
+              </div>
+            </div>
+            <div class="detail-actions">
+              <button class="primary-button" id="detailPlayButton" type="button">We played this!</button>
+              <button class="hero-secondary" id="detailCloseButton" type="button">Back to games</button>
+            </div>
+          </div>
+        </article>
+      </dialog>
+
+      <footer>
+        <span id="footerMessage">Made for little moments and big imaginations.</span>
+        <span id="footerMeta">100 unique games · saved on this device</span>
+      </footer>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
