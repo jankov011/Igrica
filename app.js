@@ -25,22 +25,22 @@ const copy = {
     ready:"Ideas picked for you", popular:"Popular games", saved:"Your saved games", edit:"Edit filters", step:(a,b)=>`Step ${a} of ${b}`,
     next:"Continue", show:"Show", back:"Back", matches:"",
     popularSummary:"", savedSummary:n=>n ? `${n} game${n===1?"":"s"} saved in your local profile.` : "Like a game to save it here.",
-    emptySaved:"No saved games yet", emptySavedCopy:"Tap the heart on a game you love and it will appear here.", change:"Explore games", footer:"Simple ideas for everyday play.",
+    emptySaved:"No saved games yet", emptySavedCopy:"Tap the heart on a game you love and it will appear here.", change:"Explore games",
     profileTitle:"Your profile", profileCopy:"Enter a name to save games and keep favorites on this device.", name:"Name",
     saveProfile:"Save profile", deleteProfile:"Delete profile", likes:"likes", loginLike:"Create a local profile to save games.",
     place:{either:"Inside or outside",indoors:"Indoors",outdoors:"Outdoors",travel:"On the go"}, ages:(a,b)=>`Ages ${a}–${b}`, min:"min", image:t=>`Children playing ${t}`,
     noProfile:"Profile",
     findGame:"Find a game",
-    trust:["✓ No sign-up needed","✓ Screen-free ideas","✓ Ages 2–12"], visualTitle:"Ready for play?", visualCopy:"Simple ideas for everyday moments",
+    trust:["✓ Screen-free ideas","✓ Ages 2–12"], visualTitle:"Ready for play?", visualCopy:"Simple ideas for everyday moments",
     dailyLabel:"TODAY’S GAME", dailyTitle:"Five-minute connection", dailyCopy:"Short play still counts. A few focused minutes can turn an ordinary pause into a warm family memory.",
-    dailyButton:"Find a quick game →", benefitOneTitle:"Supports development", benefitOneCopy:"Discover ideas for movement, creativity, cooperation and calm focus.",
+    benefitOneTitle:"Supports development", benefitOneCopy:"Discover ideas for movement, creativity, cooperation and calm focus.",
     benefitTwoTitle:"Less decision fatigue", benefitTwoCopy:"Six simple choices turn “what should we do?” into a useful shortlist.",
     benefitThreeTitle:"Time together to remember", benefitThreeCopy:"Small shared moments can become happy memories children carry with them.",
     safetyTitle:"A note for safe, happy play", safetyCopy:"Stay nearby and adapt each game to your child and space.",
     liked:"Saved to your profile ♥", unliked:"Removed from saved games", saveAction:"Save", savedAction:"Saved",
-    exploreEyebrow:"Browse by moment", exploreTitle:"There’s a game for every kind of day.", exploreCopy:"Choose a season, setting or developmental goal and start exploring.",
-    momentTitle:"Ideas for the moment", momentCopy:"Pick the kind of day you are having.", skillTitle:"What would you like to encourage?", skillCopy:"Explore games through the skill they help children practice.",
-    details:"Details", categorySummary:()=>"", exampleTitle:"Try this example", parentTipTitle:"Parent tip", closeDetails:"Back to games", dailyButton:"Open today’s game →",
+    exploreTitle:"Games for every moment.", exploreCopy:"Choose a situation or a skill.", exploreModeLabel:"Explore games by", bySituation:"By situation", bySkill:"By skill",
+    momentTitle:"Choose a situation", momentCopy:"Browse games by setting or moment.", skillTitle:"Choose a skill", skillCopy:"Browse games by what you want to practice.",
+    details:"Details", categorySummary:()=>"", exampleTitle:"Try this example", parentTipTitle:"Parent tip", closeDetails:"Back to games",
     feedbackLabel:"Send a comment", feedbackHint:"Your email app will open with the comment ready to send.", feedbackButton:"Prepare email", feedbackRequired:"Write a comment first.", feedbackSubject:"A comment about Play Picks"
   },
   sr: {
@@ -50,25 +50,26 @@ const copy = {
     ready:"Predlozi igara za vas", popular:"Popularno", saved:"Sačuvane igre", edit:"Promeni filtere", step:(a,b)=>`Korak ${a} od ${b}`,
     next:"Nastavi", show:"Prikaži", back:"Nazad", matches:"",
     popularSummary:"", savedSummary:n=>n ? `${n} ${n===1?"igra je sačuvana":n<5?"igre su sačuvane":"igara je sačuvano"} u profilu.` : "Sačuvajte igre koje vam se dopadaju.",
-    emptySaved:"Još nema sačuvanih igara", emptySavedCopy:"Dodirnite srce na igri koja vam se sviđa i pojaviće se ovde.", change:"Istraži igre", footer:"Jednostavne ideje za svakodnevnu igru.",
+    emptySaved:"Još nema sačuvanih igara", emptySavedCopy:"Dodirnite srce na igri koja vam se sviđa i pojaviće se ovde.", change:"Istraži igre",
     profileTitle:"Vaš profil", profileCopy:"Unesite ime da sačuvate igre i omiljene stavke na ovom uređaju.", name:"Ime",
     saveProfile:"Sačuvaj profil", deleteProfile:"Obriši profil", likes:"lajkova", loginLike:"Napravite lokalni profil da sačuvate igre.",
     place:{either:"Unutra ili napolju",indoors:"Unutra",outdoors:"Napolju",travel:"U pokretu"}, ages:(a,b)=>`Uzrast ${a}–${b}`, min:"min", image:t=>`Deca igraju igru ${t}`,
     noProfile:"Profil",
     findGame:"Pronađi igru",
-    trust:["✓ Bez obavezne prijave","✓ Ideje bez ekrana","✓ Uzrast 2–12"], visualTitle:"Spremni za igru?", visualCopy:"Jednostavne ideje za svaki dan",
+    trust:["✓ Ideje bez ekrana","✓ Uzrast 2–12"], visualTitle:"Spremni za igru?", visualCopy:"Jednostavne ideje za svaki dan",
     dailyLabel:"DANAŠNJA IGRA", dailyTitle:"Pet minuta povezivanja", dailyCopy:"I kratka igra se računa. Nekoliko posvećenih minuta može običnu pauzu pretvoriti u lepu porodičnu uspomenu.",
-    dailyButton:"Pronađi brzu igru →", benefitOneTitle:"Podstiče razvoj", benefitOneCopy:"Otkrijte ideje za kretanje, kreativnost, saradnju i miran fokus.",
+    benefitOneTitle:"Podstiče razvoj", benefitOneCopy:"Otkrijte ideje za kretanje, kreativnost, saradnju i miran fokus.",
     benefitTwoTitle:"Manje umora od odlučivanja", benefitTwoCopy:"Šest lakih izbora pretvara „šta ćemo sada?“ u koristan izbor igara.",
     benefitThreeTitle:"Vreme zajedno koje se pamti", benefitThreeCopy:"Male zajedničke igre i razgovori mogu postati lepe uspomene koje dete pamti.",
     safetyTitle:"Napomena za bezbednu i veselu igru", safetyCopy:"Budite u blizini i prilagodite igru detetu i prostoru.",
     liked:"Sačuvano u profilu ♥", unliked:"Uklonjeno iz sačuvanih igara", saveAction:"Sačuvaj", savedAction:"Sačuvano",
-    exploreEyebrow:"Istražite po trenutku", exploreTitle:"Postoji igra za svaku vrstu dana.", exploreCopy:"Izaberite godišnje doba, priliku ili razvojni cilj i počnite da istražujete.",
-    momentTitle:"Ideje za ovaj trenutak", momentCopy:"Izaberite kakav dan imate.", skillTitle:"Šta želite da podstaknete?", skillCopy:"Istražite igre prema veštini koju pomažu deci da vežbaju.",
-    details:"Detalji", categorySummary:()=>"", exampleTitle:"Primer", parentTipTitle:"Savet za roditelje", closeDetails:"Nazad na igre", dailyButton:"Otvori današnju igru →",
+    exploreTitle:"Igre za svaki trenutak.", exploreCopy:"Birajte situaciju ili veštinu.", exploreModeLabel:"Istraži igre prema", bySituation:"Po situaciji", bySkill:"Po veštini",
+    momentTitle:"Izaberite situaciju", momentCopy:"Pregledajte igre prema mestu ili trenutku.", skillTitle:"Izaberite veštinu", skillCopy:"Pregledajte igre prema onome što želite da podstaknete.",
+    details:"Detalji", categorySummary:()=>"", exampleTitle:"Primer", parentTipTitle:"Savet za roditelje", closeDetails:"Nazad na igre",
     feedbackLabel:"Pošaljite komentar", feedbackHint:"Otvoriće se e-pošta sa pripremljenim komentarom.", feedbackButton:"Pripremi e-poštu", feedbackRequired:"Prvo napišite komentar.", feedbackSubject:"Komentar o aplikaciji Naše igre"
   }
 };
+  $$('[data-category]').forEach(b=>b.onclick=()=>openCollection("category",b.dataset.category,categories.find(x=>x[0]===b.dataset.category)[2]));
 
 const gameIdeas = [
 ["Rainbow Hunt","Lov na dugu","Choose a few rainbow colors, find one safe object of each color, and arrange them from red to violet.","Izaberite nekoliko boja duge, pronađite po jedan bezbedan predmet svake boje i poređajte ih od crvene do ljubičaste.","search"],
@@ -712,7 +713,7 @@ function preparationForGame(game, language) {
 }
 
 const state = {
-  language:localStorage.getItem("playPicksLanguage")==="en"?"en":"sr", step:0, answers:{}, view:"recommended", collection:null, selectedGame:null,
+  language:"sr", step:0, answers:{}, view:"recommended", collection:null, selectedGame:null,
   profile:JSON.parse(localStorage.getItem("playPicksProfile")||"null"),
   likes:JSON.parse(localStorage.getItem("playPicksLikes")||"[]"),
   saveCounts:JSON.parse(localStorage.getItem("playPicksSaveCounts")||"{}")
@@ -730,20 +731,19 @@ function translate() {
   $('meta[name="description"]').content=c.description; $("#homeButton").ariaLabel=c.home; $(".language-switcher").ariaLabel=c.language;
   $("#heroTitle").innerHTML=c.hero; $("#heroCopy").textContent=c.heroCopy;
   $("#progress").ariaLabel=c.progress; $("#editButton").textContent=c.edit;
-  $("#footerMessage").textContent=c.footer; $("#profileLabel").textContent=state.profile?.name||c.noProfile;
+  $("#profileLabel").textContent=state.profile?.name||c.noProfile;
   $("#profileAvatar").textContent=state.profile?.name?.[0]||"?"; $("#profileTitle").textContent=c.profileTitle; $("#profileCopy").textContent=c.profileCopy;
   $("#profileNameLabel").textContent=c.name; $("#profileSaveButton").textContent=c.saveProfile; $("#deleteProfileButton").textContent=c.deleteProfile;
   $("#feedbackLabel").textContent=c.feedbackLabel; $("#feedbackHint").textContent=c.feedbackHint; $("#feedbackButton").textContent=c.feedbackButton;
   $("#startButton").innerHTML=`${c.findGame} <span>→</span>`;
-  $("#trustOne").textContent=c.trust[0]; $("#trustTwo").textContent=c.trust[1]; $("#trustThree").textContent=c.trust[2];
-  $("#visualTitle").textContent=c.visualTitle; $("#visualCopy").textContent=c.visualCopy; $("#dailyLabel").textContent=c.dailyLabel;
+  $("#trustTwo").textContent=c.trust[0]; $("#trustThree").textContent=c.trust[1];
+  $("#dailyLabel").textContent=c.dailyLabel;
   $("#dailyTitle").textContent=c.dailyTitle; $("#dailyCopy").textContent=c.dailyCopy; $("#dailyButton").textContent=c.dailyButton;
   $("#benefitOneTitle").textContent=c.benefitOneTitle; $("#benefitOneCopy").textContent=c.benefitOneCopy;
   $("#benefitTwoTitle").textContent=c.benefitTwoTitle; $("#benefitTwoCopy").textContent=c.benefitTwoCopy;
   $("#benefitThreeTitle").textContent=c.benefitThreeTitle; $("#benefitThreeCopy").textContent=c.benefitThreeCopy;
   $("#safetyTitle").textContent=c.safetyTitle; $("#safetyCopy").textContent=c.safetyCopy;
-  $("#exploreEyebrow").textContent=c.exploreEyebrow; $("#exploreTitle").textContent=c.exploreTitle; $("#exploreCopy").textContent=c.exploreCopy;
-  $("#momentTitle").textContent=c.momentTitle; $("#momentCopy").textContent=c.momentCopy; $("#skillTitle").textContent=c.skillTitle; $("#skillCopy").textContent=c.skillCopy;
+  $("#categoryTitle").textContent=c.bySituation; $("#skillTitle").textContent=c.bySkill;
   $$(".nav-button").forEach((b,i)=>b.textContent=c.nav[i]); $$(".language-button").forEach(b=>{const active=b.dataset.language===state.language;b.classList.toggle("is-active",active);b.setAttribute("aria-pressed",active)});
   renderDaily();
 }
@@ -770,7 +770,7 @@ function localized(game){return state.language==="sr"?[game.srTitle,game.srDescr
 function dailyGame(){const now=new Date();const day=Math.floor(new Date(now.getFullYear(),now.getMonth(),now.getDate()).getTime()/86400000);return games[((day%games.length)+games.length)%games.length]}
 function renderDaily(){
   const game=dailyGame(), [title,description]=localized(game);
-  $("#dailyTitle").textContent=title; $("#dailyCopy").textContent=description; $("#dailyButton").textContent=t().dailyButton;
+  $("#dailyTitle").textContent=title; $("#dailyCopy").textContent=description; $("#dailyButton").textContent=`${t().details} →`;
   $("#dailyMeta").innerHTML=`<span>${game.duration} ${t().min}</span><span>${t().place[game.place]}</span><span>${t().ages(game.minAge,game.maxAge)}</span>`;
 }
 function travelFriendly(game){
@@ -858,7 +858,7 @@ $("#backButton").onclick=()=>{if(state.step){state.step--;renderQuestion()}else 
 $("#changeFiltersButton").onclick=()=>setView("recommended"); $$(".nav-button").forEach(b=>b.onclick=()=>setView(b.dataset.view));
 $("#startButton").onclick=()=>showFilters(0); $("#dailyButton").onclick=()=>openGameDetail(dailyGame().id);
 $("#gameDialogClose").onclick=()=>$("#gameDialog").close();$("#detailCloseButton").onclick=()=>$("#gameDialog").close();$("#detailLikeButton").onclick=()=>toggleLike(state.selectedGame);
-$$(".language-button").forEach(b=>b.onclick=()=>{state.language=b.dataset.language;localStorage.setItem("playPicksLanguage",state.language);translate();if($("#gameDialog").open)openGameDetail(state.selectedGame);if(!$("#explorePage").hidden)renderExplore();else if(!$("#results").hidden)renderResults();else if(!$("#questionCard").hidden)renderQuestion()});
+$$ (".language-button").forEach(b=>b.onclick=()=>{state.language=b.dataset.language;translate();if($("#gameDialog").open)openGameDetail(state.selectedGame);if(!$("#explorePage").hidden)renderExplore();else if(!$("#results").hidden)renderResults();else if(!$("#questionCard").hidden)renderQuestion()});
 $("#profileButton").onclick=()=>{$("#profileName").value=state.profile?.name||"";$("#deleteProfileButton").classList.toggle("is-visible",Boolean(state.profile));$("#profileDialog").showModal()};
 $("#feedbackLabel").textContent=t().feedbackLabel;$("#feedbackHint").textContent=t().feedbackHint;$("#feedbackButton").textContent=t().feedbackButton;
 $("#feedbackButton").onclick=()=>{const message=$("#feedbackMessage").value.trim();if(!message){showToast(t().feedbackRequired);return}window.location.href=`mailto:?subject=${encodeURIComponent(t().feedbackSubject)}&body=${encodeURIComponent(message)}`};

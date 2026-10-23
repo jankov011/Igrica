@@ -25,10 +25,6 @@
           <button class="nav-button" type="button" data-view="popular">Popular</button>
           <button class="nav-button" type="button" data-view="saved">Saved</button>
         </nav>
-        <div class="language-switcher" role="group" aria-label="Language">
-          <button class="language-button is-active" type="button" data-language="en" aria-pressed="true">EN</button>
-          <button class="language-button" type="button" data-language="sr" aria-pressed="false">SR</button>
-        </div>
         <button class="profile-button" id="profileButton" type="button">
           <span class="profile-avatar" id="profileAvatar">?</span>
           <span id="profileLabel">Profile</span>
@@ -44,27 +40,30 @@
               <button class="primary-button hero-primary" id="startButton" type="button">Find a game <span>→</span></button>
             </div>
             <div class="trust-row">
-              <span id="trustOne">✓ No sign-up needed</span>
               <span id="trustTwo">✓ Screen-free ideas</span>
               <span id="trustThree">✓ Ages 2–12</span>
             </div>
           </div>
           <div class="hero-visual" aria-hidden="true">
             <div class="play-card play-card-main">
-              <span>🪁</span>
-              <b id="visualTitle">Ready for play?</b>
-              <small id="visualCopy">One minute to the right idea</small>
+              <svg class="kite-art" viewBox="0 0 100 126" aria-hidden="true">
+                <path d="M50 4 92 45 50 83 8 45Z" fill="#70bfd2" />
+                <path d="M50 4 50 45 8 45Z" fill="#f47e88" />
+                <path d="M50 4 92 45 50 45Z" fill="#a99be8" />
+                <path d="M8 45 50 83V45Z" fill="#8bd7e8" />
+                <path d="M50 4v79M8 45h84" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="3" />
+                <path d="M50 83c-12 11 12 15-1 25s8 13 5 16" fill="none" stroke="#7459e8" stroke-linecap="round" stroke-width="3" />
+                <path d="m46 94 9 4-8 5-6-5ZM52 108l8 3-6 6-7-4Z" fill="#f47e88" />
+              </svg>
             </div>
             <div class="floating-bubble bubble-one">🎨</div>
             <div class="floating-bubble bubble-two">⚽</div>
-            <div class="floating-bubble bubble-three">✨</div>
           </div>
         </section>
 
         <section class="parent-section">
           <div class="parent-grid">
             <article class="parent-card parent-card-featured">
-              <div class="card-icon">💛</div>
               <span class="mini-label" id="dailyLabel">TODAY’S EASY WIN</span>
               <h3 id="dailyTitle">Five-minute connection</h3>
               <p id="dailyCopy">Short play still counts. A few focused minutes can turn an ordinary pause into a warm family memory.</p>
@@ -89,36 +88,19 @@
           </div>
         </section>
 
-        <section class="parent-note">
-          <div class="parent-note-icon">🛟</div>
-          <div>
-            <h3 id="safetyTitle">A note for safe, happy play</h3>
-            <p id="safetyCopy">Stay nearby, adapt every activity to your child and space, and use age-appropriate, safe materials.</p>
-          </div>
-        </section>
       </div>
 
       <section class="progress" id="progress" aria-label="Setup progress" hidden></section>
 
       <section class="explore-page" id="explorePage" hidden>
-        <div class="explore-hero">
-          <div>
-            <p class="eyebrow" id="exploreEyebrow">Browse by moment</p>
-            <h2 id="exploreTitle">There’s a game for every kind of day.</h2>
-            <p id="exploreCopy">Choose a season, setting or developmental goal and start exploring.</p>
-          </div>
-          <div class="explore-hero-art" aria-hidden="true">🌦️</div>
-        </div>
-        <div class="explore-section-heading">
-          <h3 id="momentTitle">Ideas for the moment</h3>
-          <p id="momentCopy">Pick the kind of day you are having.</p>
-        </div>
-        <div class="category-grid" id="categoryGrid"></div>
-        <div class="explore-section-heading skill-heading">
-          <h3 id="skillTitle">What would you like to encourage?</h3>
-          <p id="skillCopy">Explore games through the skill they help children practice.</p>
-        </div>
-        <div class="skill-grid" id="skillGrid"></div>
+        <section class="explore-panel">
+          <h2 class="explore-list-title explore-list-title-situations"><span class="explore-title-mark" aria-hidden="true">🌤️</span><span id="categoryTitle">By situation</span></h2>
+          <div class="category-grid" id="categoryGrid"></div>
+        </section>
+        <section class="explore-panel explore-panel-skills">
+          <h2 class="explore-list-title explore-list-title-skills"><span class="explore-title-mark" aria-hidden="true">✨</span><span id="skillTitle">By skill</span></h2>
+          <div class="skill-grid" id="skillGrid"></div>
+        </section>
       </section>
 
       <section class="question-card" id="questionCard" aria-live="polite" hidden>
@@ -156,6 +138,10 @@
           <span class="profile-hero" aria-hidden="true">👋</span>
           <h2 id="profileTitle">Your profile</h2>
           <p id="profileCopy">Enter a name to save games and keep your favorites on this device.</p>
+          <div class="language-switcher profile-language-switcher" role="group" aria-label="Language">
+            <button class="language-button" type="button" data-language="en" aria-pressed="false">EN</button>
+            <button class="language-button is-active" type="button" data-language="sr" aria-pressed="true">SR</button>
+          </div>
           <label for="profileName" id="profileNameLabel">Name</label>
           <input id="profileName" name="profileName" maxlength="30" autocomplete="nickname" required />
           <button class="primary-button profile-save" id="profileSaveButton" value="default" type="submit">Save profile</button>
@@ -202,7 +188,13 @@
       </dialog>
 
       <footer>
-        <span id="footerMessage">Made for little moments and big imaginations.</span>
+        <section class="parent-note">
+          <div class="parent-note-icon" aria-hidden="true">🛟</div>
+          <div>
+            <h3 id="safetyTitle">A note for safe, happy play</h3>
+            <p id="safetyCopy">Stay nearby, adapt every activity to your child and space, and use age-appropriate, safe materials.</p>
+          </div>
+        </section>
       </footer>
     </main>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
