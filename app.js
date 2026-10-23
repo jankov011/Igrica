@@ -71,7 +71,7 @@ const copy = {
 };
 
 const gameIdeas = [
-["Rainbow Hunt","Lov na dugu","Find one safe object in every rainbow color and arrange them in order.","Pronađite po jedan bezbedan predmet u svakoj boji duge i poređajte ih.","search"],
+["Rainbow Hunt","Lov na dugu","Choose a few rainbow colors, find one safe object of each color, and arrange them from red to violet.","Izaberite nekoliko boja duge, pronađite po jedan bezbedan predmet svake boje i poređajte ih od crvene do ljubičaste.","search"],
 ["Animal Parade","Parada životinja","Choose an animal and cross a short, clear space moving and making its sound while the others guess. Take turns choosing the animal.","Izaberite životinju, pređite kratak i slobodan prostor njenim pokretima i oglašavanjem dok ostali pogađaju. Zatim menjajte ko bira životinju.","pretend"],
 ["Story Circle","Krug priča","Build a story one sentence at a time and add a surprise on every turn.","Gradite priču rečenicu po rečenicu i dodajte iznenađenje u svakom krugu.","story"],
 ["Color Dash","Trka boja","Call a color and race to safely touch something that matches.","Izgovorite boju i požurite da bezbedno dodirnete nešto takvo.","run"],
@@ -215,7 +215,6 @@ const gameIdeas = [
 ["Five Things Fast","Pet stvari brzo","Name or find five items that fit the chosen clue before counting down.","Navedite ili pronađite pet predmeta pre odbrojavanja.","search"],
 ["Paper Bridge Test","Test papirnog mosta","Build a paper bridge and test which fold makes it stronger.","Napravite most od papira i isprobajte koji pregib je jači.","build"],
 ["Straw City","Grad od slamki","Connect safe straws or craft sticks into roads and buildings.","Spojite bezbedne slamčice ili štapiće u puteve i zgrade.","build"],
-["Recycled Robot","Robot od reciklaže","Build a robot from clean boxes and give it a helpful job.","Napravite robota od čistih kutija i odredite mu koristan posao.","build"],
 ["Marshmallow Structures","Konstrukcije od mekanih kockica","Build a structure that balances three lightweight pieces.","Napravite konstrukciju koja drži tri lagana dela u ravnoteži.","build"],
 ["Bridge to the Toy","Most do igračke","Design a route that lets a small toy cross an imaginary river.","Osmislite put kojim mala igračka prelazi zamišljenu reku.","build"],
 ["Cardboard Telescope","Kartonski teleskop","Decorate a cardboard tube and invent what it can discover.","Ukrasite kartonsku cev i izmislite šta ona otkriva.","build"],
@@ -635,8 +634,8 @@ const gameDetailOverrides = {
     sr:{steps:["Izaberite životinju, ali je nemojte odmah otkriti ostalima.","Pređite kratak i slobodan prostor njenim pokretima i oglašavanjem; hodajte umesto da trčite.","Neka ostali pogode, pa zamenite ko bira i predstavlja životinju."],example:"Krećite se polako kao slon, jednom rukom napravite surlu i tiho zatrubite da ostali pogode.",parent:"Ne očekujte savršeno oponašanje. Ponudite detetu izbor između dve životinje i dozvolite mu da koristi zvuk, pokret ili oba."}
   },
   "Rainbow Hunt": {
-    en:{steps:["Choose a safe area and name the rainbow colors to look for.","Find one safe object for each color and arrange the objects in rainbow order.","If a color is hard to find, skip it or draw it; do not climb or move heavy items."],example:"Find one red, one yellow and one blue object, then place them in color order.",parent:"Let the child choose which color to search for first; accept a drawing or a skipped color if an item is hard to find."},
-    sr:{steps:["Izaberite bezbedan prostor i navedite boje duge koje tražite.","Pronađite po jedan bezbedan predmet svake boje i poređajte ih kao dugu.","Ako neku boju ne možete da pronađete, preskočite je ili je nacrtajte; nemojte se penjati ni pomerati teške predmete."],example:"Pronađite jedan crveni, jedan žuti i jedan plavi predmet, pa ih poređajte po bojama.",parent:"Neka dete izabere koju boju će prvo tražiti; ako nešto ne može da pronađe, prihvatite crtež ili preskočite tu boju."}
+    en:{steps:["Choose a safe area and name the rainbow colors to look for.","Find one safe object for each color and arrange the objects in rainbow order.","If a color is hard to find, skip it or draw it; do not climb or move heavy items."],example:"Start with red, yellow and blue. Find one safe object of each color and arrange them in that order.",parent:"Let the child choose which color to search for first; accept a drawing or a skipped color if an item is hard to find."},
+    sr:{steps:["Izaberite bezbedan prostor i navedite boje duge koje tražite.","Pronađite po jedan bezbedan predmet svake boje i poređajte ih kao dugu.","Ako neku boju ne možete da pronađete, preskočite je ili je nacrtajte; nemojte se penjati ni pomerati teške predmete."],example:"Počnite od crvene, žute i plave: pronađite po jedan bezbedan predmet svake boje i poređajte ih tim redom.",parent:"Neka dete izabere koju boju će prvo tražiti; ako nešto ne može da pronađe, prihvatite crtež ili preskočite tu boju."}
   },
   "Color Dash": {
     en:{steps:["Choose an open area with safe objects within easy reach.","Call a color; players find and gently touch a matching object.","Take turns calling colors. Walk instead of run in a small or crowded space."],example:"Call “green” and let each player find a nearby green object to touch safely.",parent:"Keep the pace playful rather than competitive; in a tight room, change “race” to a walking search."},
@@ -830,11 +829,13 @@ function openGameDetail(id){
   const game=games.find(g=>g.id===id);if(!game)return;state.selectedGame=id;
   const [title,description]=localized(game), d=detailContent[state.language], liked=state.likes.includes(id);
   const specific=gameDetailOverrides[game.title]?.[state.language];
-  $("#detailImage").src=game.image;$("#detailImage").alt=t().image(title);$("#detailTitle").textContent=title;
+  $("#detailImage").src=game.image;$("#detailImage").alt=t().image(title);$("#detailTitle").textContent=title;$("#detailDescription").textContent=description;
   $("#detailTags").innerHTML=`<span class="tag">${game.duration} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span>`;
   $("#detailExampleTitle").textContent=t().exampleTitle;
   const example=specific?.example;
-  $("#detailExample").textContent=example?(state.language==="sr"?`Za igru „${title}“ probajte: ${example}`:`For ${title}, try: ${example}`):description;
+  $("#detailExampleCard").hidden=!example;
+  $("#detailGrid").classList.toggle("has-example",Boolean(example));
+  $("#detailExample").textContent=example||"";
   const parentTips=d.parent[game.scene];
   $("#detailParentTitle").textContent=t().parentTipTitle;
   $("#detailParent").textContent=specific?.parent||parentTips[(id-1)%parentTips.length];
