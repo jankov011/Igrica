@@ -94,11 +94,11 @@
 
       <section class="explore-page" id="explorePage" hidden>
         <section class="explore-panel">
-          <h2 class="explore-list-title explore-list-title-situations"><span class="explore-title-mark" aria-hidden="true">🌤️</span><span id="categoryTitle">By situation</span></h2>
+          <h2 class="explore-list-title explore-list-title-situations" id="categoryTitle">Games for every occasion</h2>
           <div class="category-grid" id="categoryGrid"></div>
         </section>
         <section class="explore-panel explore-panel-skills">
-          <h2 class="explore-list-title explore-list-title-skills"><span class="explore-title-mark" aria-hidden="true">✨</span><span id="skillTitle">By skill</span></h2>
+          <h2 class="explore-list-title explore-list-title-skills" id="skillTitle">Games to build skills</h2>
           <div class="skill-grid" id="skillGrid"></div>
         </section>
       </section>
@@ -120,6 +120,12 @@
       </section>
 
       <section class="results" id="results" hidden aria-live="polite">
+        <div class="results-heading results-collection-heading" id="collectionHeading" hidden>
+          <div>
+            <h2 id="collectionTitle"></h2>
+            <p id="collectionSummary"></p>
+          </div>
+        </div>
         <div class="results-heading" id="resultsToolbar">
           <button class="edit-button" id="editButton" type="button">Edit filters</button>
         </div>

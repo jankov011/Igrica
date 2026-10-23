@@ -1,6 +1,6 @@
 const questionSets = {
   en: [
-    ["age", "Age", "How old are the children?", "Choose the age of the youngest player.", [["2-3","🐣","2–3 years","Little explorers"],["4-5","🧸","4–5 years","Curious creators"],["6-8","🦊","6–8 years","Big imaginations"],["9-12","🚀","9–12 years","Confident players"]]],
+    ["age", "Age", "How old are the children?", "Choose the age of the youngest player.", [["3-4","🐣","3–4 years","Little explorers"],["5-6","🧸","5–6 years","Curious creators"],["7-9","🦊","7–9 years","Big imaginations"],["10-12","🚀","10–12 years","Confident players"]]],
     ["players", "Children", "How many children are playing?", "We’ll choose games that work for your group.", [["1","🌟","One child","Solo play"],["2","🙌","Two children","A playful pair"],["3-4","🎈","3–4 children","A small group"],["5+","🎉","5+ children","Party or class"]]],
     ["place", "Setting", "Where will they play?", "Pick the space available right now.", [["indoors","🏠","Indoors",""],["outdoors","🌿","Outdoors",""],["travel","🚗","On the go",""],["either","🌤️","Either one",""]]],
     ["duration", "Time", "How much time do you have?", "We’ll prioritize games that fit your play window.", [["5","⚡","Up to 5 min","A quick reset"],["15","⏱️","Up to 15 min","A play break"],["30","🕰️","Up to 30 min","Time to create"],["60","🌈","Up to 1 hour","A bigger adventure"]]],
@@ -8,7 +8,7 @@ const questionSets = {
     ["activity", "Energy", "What activity level feels right?", "Match the game to their energy.", [["calm","☁️","Calm","Quiet and focused"],["medium","🪁","Playful","Some movement"],["active","⚡","Very active","Lots of energy"]]],
   ],
   sr: [
-    ["age", "Uzrast", "Koliko godina imaju deca?", "Izaberite uzrast najmlađeg igrača.", [["2-3","🐣","2–3 godine","Mali istraživači"],["4-5","🧸","4–5 godina","Radoznali kreativci"],["6-8","🦊","6–8 godina","Velika mašta"],["9-12","🚀","9–12 godina","Samostalni igrači"]]],
+    ["age", "Uzrast", "Koliko godina imaju deca?", "Izaberite uzrast najmlađeg igrača.", [["3-4","🐣","3–4 godine","Mali istraživači"],["5-6","🧸","5–6 godina","Radoznali kreativci"],["7-9","🦊","7–9 godina","Velika mašta"],["10-12","🚀","10–12 godina","Samostalni igrači"]]],
     ["players", "Deca", "Koliko dece se igra?", "Izabraćemo igre koje odgovaraju vašoj grupi.", [["1","🌟","Jedno dete","Samostalna igra"],["2","🙌","Dvoje dece","Razigrani par"],["3-4","🎈","3–4 deteta","Mala grupa"],["5+","🎉","5+ dece","Zabava ili odeljenje"]]],
     ["place", "Mesto", "Gde će se igrati?", "Izaberite prostor koji vam je dostupan.", [["indoors","🏠","Unutra",""],["outdoors","🌿","Napolju",""],["travel","🚗","U pokretu",""],["either","🌤️","Svejedno",""]]],
     ["duration", "Vreme", "Koliko vremena imate?", "Prednost imaju igre koje se uklapaju u vaše vreme.", [["5","⚡","Do 5 min","Brza razbibriga"],["15","⏱️","Do 15 min","Kratka igra"],["30","🕰️","Do 30 min","Vreme za kreativnost"],["60","🌈","Do 1 sata","Veća avantura"]]],
@@ -24,6 +24,7 @@ const copy = {
     heroCopy:"Answer a few questions to find a simple game that fits the moment.", progress:"Setup progress", resultsEye:"Your play picks",
     ready:"Ideas picked for you", popular:"Popular games", saved:"Your saved games", edit:"Edit filters", step:(a,b)=>`Step ${a} of ${b}`,
     next:"Continue", show:"Show", back:"Back", matches:"",
+    collectionSummary:{popular:"Ideas for your next play break.",saved:"Games you’ve saved, ready when you need them."},
     popularSummary:"", savedSummary:n=>n ? `${n} game${n===1?"":"s"} saved in your local profile.` : "Like a game to save it here.",
     emptySaved:"No saved games yet", emptySavedCopy:"Tap the heart on a game you love and it will appear here.", change:"Explore games",
     profileTitle:"Your profile", profileCopy:"Enter a name to save games and keep favorites on this device.", name:"Name",
@@ -31,14 +32,14 @@ const copy = {
     place:{either:"Inside or outside",indoors:"Indoors",outdoors:"Outdoors",travel:"On the go"}, ages:(a,b)=>`Ages ${a}–${b}`, min:"min", image:t=>`Children playing ${t}`,
     noProfile:"Profile",
     findGame:"Find a game",
-    trust:["✓ Screen-free ideas","✓ Ages 2–12"], visualTitle:"Ready for play?", visualCopy:"Simple ideas for everyday moments",
+    trust:["✓ Screen-free ideas","✓ Ages 3–12"], visualTitle:"Ready for play?", visualCopy:"Simple ideas for everyday moments",
     dailyLabel:"TODAY’S GAME", dailyTitle:"Five-minute connection", dailyCopy:"Short play still counts. A few focused minutes can turn an ordinary pause into a warm family memory.",
     benefitOneTitle:"Supports development", benefitOneCopy:"Discover ideas for movement, creativity, cooperation and calm focus.",
     benefitTwoTitle:"Less decision fatigue", benefitTwoCopy:"Six simple choices turn “what should we do?” into a useful shortlist.",
     benefitThreeTitle:"Time together to remember", benefitThreeCopy:"Small shared moments can become happy memories children carry with them.",
     safetyTitle:"A note for safe, happy play", safetyCopy:"Stay nearby and adapt each game to your child and space.",
     liked:"Saved to your profile ♥", unliked:"Removed from saved games", saveAction:"Save", savedAction:"Saved",
-    exploreTitle:"Games for every moment.", exploreCopy:"Choose a situation or a skill.", exploreModeLabel:"Explore games by", bySituation:"By situation", bySkill:"By skill",
+    exploreTitle:"Games for every moment.", exploreCopy:"Choose a situation or a skill.", exploreModeLabel:"Explore games by", bySituation:"Games for every occasion", bySkill:"Games to build skills",
     momentTitle:"Choose a situation", momentCopy:"Browse games by setting or moment.", skillTitle:"Choose a skill", skillCopy:"Browse games by what you want to practice.",
     details:"Details", categorySummary:()=>"", exampleTitle:"Try this example", parentTipTitle:"Bonus idea", closeDetails:"Back to games",
     feedbackLabel:"Send a comment", feedbackHint:"Your email app will open with the comment ready to send.", feedbackButton:"Prepare email", feedbackRequired:"Write a comment first.", feedbackSubject:"A comment about Play Picks"
@@ -49,6 +50,7 @@ const copy = {
     heroCopy:"Odgovorite na nekoliko pitanja i pronađite jednostavnu igru koja odgovara trenutku.", progress:"Napredak izbora", resultsEye:"Predlozi za igru",
     ready:"Predlozi igara za vas", popular:"Popularno", saved:"Sačuvane igre", edit:"Promeni filtere", step:(a,b)=>`Korak ${a} od ${b}`,
     next:"Nastavi", show:"Prikaži", back:"Nazad", matches:"",
+    collectionSummary:{popular:"Izdvojene ideje za sledeću igru.",saved:"Igre koje ste sačuvali, spremne kad vam zatrebaju."},
     popularSummary:"", savedSummary:n=>n ? `${n} ${n===1?"igra je sačuvana":n<5?"igre su sačuvane":"igara je sačuvano"} u profilu.` : "Sačuvajte igre koje vam se dopadaju.",
     emptySaved:"Još nema sačuvanih igara", emptySavedCopy:"Dodirnite srce na igri koja vam se sviđa i pojaviće se ovde.", change:"Istraži igre",
     profileTitle:"Vaš profil", profileCopy:"Unesite ime da sačuvate igre i omiljene stavke na ovom uređaju.", name:"Ime",
@@ -56,14 +58,14 @@ const copy = {
     place:{either:"Unutra ili napolju",indoors:"Unutra",outdoors:"Napolju",travel:"U pokretu"}, ages:(a,b)=>`Uzrast ${a}–${b}`, min:"min", image:t=>`Deca igraju igru ${t}`,
     noProfile:"Profil",
     findGame:"Pronađi igru",
-    trust:["✓ Ideje bez ekrana","✓ Uzrast 2–12"], visualTitle:"Spremni za igru?", visualCopy:"Jednostavne ideje za svaki dan",
+    trust:["✓ Ideje bez ekrana","✓ Uzrast 3–12"], visualTitle:"Spremni za igru?", visualCopy:"Jednostavne ideje za svaki dan",
     dailyLabel:"DANAŠNJA IGRA", dailyTitle:"Pet minuta povezivanja", dailyCopy:"I kratka igra se računa. Nekoliko posvećenih minuta može običnu pauzu pretvoriti u lepu porodičnu uspomenu.",
     benefitOneTitle:"Podstiče razvoj", benefitOneCopy:"Otkrijte ideje za kretanje, kreativnost, saradnju i miran fokus.",
     benefitTwoTitle:"Manje umora od odlučivanja", benefitTwoCopy:"Šest lakih izbora pretvara „šta ćemo sada?“ u koristan izbor igara.",
     benefitThreeTitle:"Vreme zajedno koje se pamti", benefitThreeCopy:"Male zajedničke igre i razgovori mogu postati lepe uspomene koje dete pamti.",
     safetyTitle:"Napomena za bezbednu i veselu igru", safetyCopy:"Budite u blizini i prilagodite igru detetu i prostoru.",
     liked:"Sačuvano u profilu ♥", unliked:"Uklonjeno iz sačuvanih igara", saveAction:"Sačuvaj", savedAction:"Sačuvano",
-    exploreTitle:"Igre za svaki trenutak.", exploreCopy:"Birajte situaciju ili veštinu.", exploreModeLabel:"Istraži igre prema", bySituation:"Po situaciji", bySkill:"Po veštini",
+    exploreTitle:"Igre za svaki trenutak.", exploreCopy:"Birajte situaciju ili veštinu.", exploreModeLabel:"Istraži igre prema", bySituation:"Igre za različite prilike", bySkill:"Igre za razvoj veština",
     momentTitle:"Izaberite situaciju", momentCopy:"Pregledajte igre prema mestu ili trenutku.", skillTitle:"Izaberite veštinu", skillCopy:"Pregledajte igre prema onome što želite da podstaknete.",
     details:"Detalji", categorySummary:()=>"", exampleTitle:"Primer", parentTipTitle:"Bonus ideja", closeDetails:"Nazad na igre",
     feedbackLabel:"Pošaljite komentar", feedbackHint:"Otvoriće se e-pošta sa pripremljenim komentarom.", feedbackButton:"Pripremi e-poštu", feedbackRequired:"Prvo napišite komentar.", feedbackSubject:"Komentar o aplikaciji Naše igre"
@@ -171,14 +173,14 @@ const gameIdeas = [
 ["Final Pose Challenge","Izazov završne poze","Cross the space with a dance and finish in a themed pose.","Pređite prostor plesom i završite u zadatoj pozi.","dance"],
 ["Colorful Steps","Šareni koraci","Follow a path of colors and invent a movement for each one.","Pratite stazu boja i osmislite pokret za svaku boju.","run"],
 ["Treasure Statues","Statue čuvara blaga","Freeze like a treasure guardian whenever the music stops.","Ukočite se kao čuvar blaga kada muzika stane.","pretend"],
-["Window Weather","Vreme na prozoru","Describe the view outside and act out the weather you see.","Opišite pogled kroz prozor i odglumite vreme koje vidite.","story"],
+["Three Things, One Story","Tri predmeta, jedna priča","Choose three nearby objects and take turns adding one sentence to a story that includes all three.","Izaberite tri predmeta u blizini i naizmenično dodajte po jednu rečenicu priči u kojoj se pojavljuju sva tri.","story"],
 ["Pillow Mountain","Planina od jastuka","Climb over a safe pillow mountain using careful steps.","Pređite preko bezbedne planine od jastuka pažljivim koracima.","balance"],
 ["Tiptoe Trail","Staza na prstima","Walk a quiet trail and change direction at each marker.","Hodajte tihom stazom i menjajte smer kod svake oznake.","balance"],
 ["Animal Traffic","Životinjski saobraćaj","Move like different animals while following stop and go signals.","Krećite se kao različite životinje prateći signale stani i kreni.","pretend"],
 ["Jump and Name","Skoči i reci","Jump to a safe spot and name something from a chosen category.","Skočite na bezbedno mesto i recite pojam iz zadate kategorije.","run"],
 ["Mission Cards","Kartice misija","Complete a sequence of playful movement missions in order.","Izvršite niz razigranih pokretnih misija po redu.","run"],
 ["Crawl Like a Comet","Puzi kao kometa","Travel low and fast, then finish with a bright star pose.","Krećite se nisko i brzo, a zatim završite pozom sjajne zvezde.","run"],
-["Five-Step Story","Priča od pet koraka","Tell a story where every sentence includes a new action.","Ispričajte priču u kojoj svaka rečenica ima novu radnju.","story"],
+["Invent a Creature","Izmisli biće","Take turns adding one feature to an imaginary creature—its appearance, movement, sound or favorite food—then give it a name.","Naizmenično dodajte po jednu osobinu zamišljenom biću — izgled, pokret, zvuk ili omiljenu hranu — pa mu dajte ime.","pretend"],
 ["Question Train","Voz pitanja","Take turns asking simple questions about an imaginary train trip. Each answer chooses the next station, and the group decides where the train goes next.","Zamislite zajedničko putovanje vozom i naizmenično postavljajte jednostavna pitanja. Svaki odgovor određuje sledeću stanicu, a grupa bira kuda voz ide dalje.","story"],
 ["Pocket Narrator","Džepni pripovedač","Choose three small objects and give each one a voice.","Izaberite tri mala predmeta i dajte svakom svoj glas.","story"],
 ["Rhyme Relay","Rimovana štafeta","Build a silly rhyme chain one word at a time.","Gradite smešan lanac rima reč po reč.","story"],
@@ -516,7 +518,7 @@ function materialForIdea(g) {
 function ageRangeForIdea(g) {
   const text=`${g[0]} ${g[2]}`.toLowerCase();
   const simpleImitationGames=new Set(["Animal Parade","Freeze Dance","Yes, Let's","Mirror Moves","Monster Steps","Copycat Clap","Animal Traffic","Seed and Tree","Mirror Animal","Bird Sound Pause","Breathing Buddy"]);
-  if(simpleImitationGames.has(g[0]))return [2,12];
+  if(simpleImitationGames.has(g[0]))return [3,12];
   if(g[0]==="Robot Guide")return [4,12];
   if(["Family Quiz","Letter Clue Guess"].includes(g[0]))return [4,12];
   if(/\b(alphabet|letters?|rhyme|decode|secret rule|sequence|memory|maze|map|countdown|counting down|yes-or-no|points|symmetry|strategy|numbers?)\b/.test(text))return [6,12];
@@ -532,20 +534,20 @@ const games = gameIdeas.map((g,index)=>({
 
 const exploreCategories = {
   en:[
-    ["rainy","🌧️","Rainy days","Cozy indoor ideas when going outside is not an option."],
+    ["rainy","🌧️","Rainy days","Calm and creative indoor games for rainy days."],
     ["summer","☀️","Summer play","Sunny ideas for warm days, gardens and parks."],
-    ["winter","❄️","Cold days","Warm, active and creative play for chilly weather."],
-    ["holiday","🎄","Family gatherings","Conversation and group games for family get-togethers."],
-    ["travel","🚗","On the go","Car-friendly games for passengers and short movement breaks at safe stops; never play while driving."],
-    ["party","🎉","Groups & parties","Games that help a group laugh, move and connect."]
+    ["winter","❄️","Cold days","Active indoor games to help kids warm up on cold days."],
+    ["holiday","🎄","Family gatherings","Games for conversation and shared fun across generations."],
+    ["travel","🚗","On the go","No-equipment games for passengers (never the driver), plus short breaks at safe stops."],
+    ["party","🎉","Groups & parties","More active games for large groups and celebrations."]
   ],
   sr:[
-    ["rainy","🌧️","Kišni dani","Udobne ideje za unutra kada izlazak nije opcija."],
+    ["rainy","🌧️","Kišni dani","Mirne i kreativne igre za unutra dok pada kiša."],
     ["summer","☀️","Letnje igre","Sunčane ideje za tople dane, dvorište i park."],
-    ["winter","❄️","Hladniji dani","Tople, aktivne i kreativne igre za hladno vreme."],
-    ["holiday","🎄","Porodična okupljanja","Razgovorne i grupne igre za porodična okupljanja."],
-    ["travel","🚗","U pokretu","Igre za putnike u automobilu i kratke pauze za kretanje; ne igraju se tokom vožnje."],
-    ["party","🎉","Grupe i proslave","Igre koje pomažu grupi da se smeje, kreće i poveže."]
+    ["winter","❄️","Hladniji dani","Aktivne igre za unutra koje razgibavaju kada je napolju hladno."],
+    ["holiday","🎄","Porodična okupljanja","Igre za zajednički razgovor i zabavu u porodici različitih uzrasta."],
+    ["travel","🚗","U pokretu","Igre bez rekvizita za putnike (vozač ne učestvuje), uz kratke pauze na bezbednom mestu."],
+    ["party","🎉","Grupe i proslave","Življe igre za veće grupe i proslave."]
   ]
 };
 const exploreSkills = {
@@ -702,6 +704,14 @@ const gameDetailOverrides = {
   "One-Minute Challenge": {
     en:{prep:"Choose a safe, simple task and set a one-minute timer.",example:"Set a one-minute timer and see how many plastic cups you can stack. Swap roles and try again.",parent:"Compare each player's result with their own previous try, not with others. If a timer feels stressful, count down together instead."},
     sr:{prep:"Izaberite bezbedan, jednostavan zadatak i podesite tajmer na minut.",example:"Podesite tajmer na minut i proverite koliko plastičnih čaša možete da složite. Zamenite uloge i pokušajte ponovo.",parent:"Uporedite pokušaj svakog igrača sa njegovim prethodnim, ne sa drugima. Ako tajmer stvara pritisak, odbrojavajte zajedno."}
+  },
+  "Name That Mime": {
+    en:{example:"Mime a simple action such as sweeping, stretching or feeding a pet while the others guess.",parent:"For a bonus challenge, mime two actions in order, such as waking up and brushing your teeth, and let others guess both."},
+    sr:{example:"Bez reči odglumite jednostavnu radnju, poput metenja, istezanja ili hranjenja ljubimca, dok ostali pogađaju.",parent:"Za bonus pantomimišite dve radnje zaredom — na primer buđenje pa pranje zuba — a ostali neka ih pogode po redu."}
+  },
+  "Statue Museum": {
+    en:{example:"Each player chooses a simple statue pose. The visitor walks slowly through the museum and guesses what each statue represents.",parent:"For a bonus, the visitor turns away while one statue quietly changes its pose. The visitor looks back and guesses which statue changed."},
+    sr:{example:"Svako izabere jednostavnu pozu statue. Posetilac polako obilazi muzej i pogađa šta koja statua predstavlja.",parent:"Za bonus, posetilac se okrene dok jedna statua tiho promeni pozu. Kada se vrati, pogađa koja se statua promenila."}
   }
 };
 
@@ -801,9 +811,9 @@ function travelFriendly(game){
 }
 function categoryMatches(game,key){
   const rules={
-    rainy:g=>g.place==="indoors"||(g.place==="either"&&["story","pretend","search","draw","build"].includes(g.scene)&&g.activity!=="active"),
+    rainy:g=>(g.place==="indoors"&&g.activity!=="active")||(g.place==="either"&&["story","pretend","search","draw","build"].includes(g.scene)&&g.activity!=="active"),
     summer:g=>g.place==="outdoors"||(g.place==="either"&&["nature","run","ball","balance"].includes(g.scene)),
-    winter:g=>g.place==="indoors"||(g.place==="either"&&["build","draw","nature","balance","dance"].includes(g.scene)),
+    winter:g=>(g.place==="indoors"||g.place==="either")&&g.activity==="active"&&["run","dance","balance","pretend"].includes(g.scene),
     holiday:g=>g.maxPlayers>=4&&g.skill==="social",
     travel:travelFriendly, party:g=>g.maxPlayers>=8
   };
@@ -829,6 +839,9 @@ function gameCard(game){
 function renderResults(){
   const list=gameList(), c=t(); $("#questionCard").hidden=true; $("#progress").hidden=true; $("#results").hidden=false;
   $("#landing").hidden=true; $("#explorePage").hidden=true;
+  const showCollectionHeading=state.view==="popular"||state.view==="saved";
+  $("#collectionHeading").hidden=!showCollectionHeading;
+  if(showCollectionHeading){$("#collectionTitle").textContent=state.view==="popular"?c.popular:c.saved;$("#collectionSummary").textContent=state.view==="popular"?c.collectionSummary.popular:c.collectionSummary.saved;}
   $("#resultsToolbar").hidden=state.view!=="recommended";
   $("#activityGrid").innerHTML=list.map(gameCard).join(""); $("#emptyState").hidden=list.length>0||state.view!=="saved";
   $("#emptyTitle").textContent=c.emptySaved; $("#emptyCopy").textContent=c.emptySavedCopy; $("#changeFiltersButton").textContent=c.change;
