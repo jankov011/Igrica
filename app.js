@@ -2,20 +2,18 @@ const questionSets = {
   en: [
     ["age", "Age", "How old are the children?", "Choose the age of the youngest player.", [["2-3","🐣","2–3 years","Little explorers"],["4-5","🧸","4–5 years","Curious creators"],["6-8","🦊","6–8 years","Big imaginations"],["9-12","🚀","9–12 years","Confident players"]]],
     ["players", "Children", "How many children are playing?", "We’ll choose games that work for your group.", [["1","🌟","One child","Solo play"],["2","🙌","Two children","A playful pair"],["3-4","🎈","3–4 children","A small group"],["5+","🎉","5+ children","Party or class"]]],
-    ["place", "Setting", "Where will they play?", "Pick the space available right now.", [["indoors","🏠","Indoors","Home or classroom"],["outdoors","🌿","Outdoors","Garden, park or beach"],["either","🌤️","Either one","We’re flexible"]]],
+    ["place", "Setting", "Where will they play?", "Pick the space available right now.", [["indoors","🏠","Indoors",""],["outdoors","🌿","Outdoors",""],["travel","🚗","On the go",""],["either","🌤️","Either one",""]]],
     ["duration", "Time", "How much time do you have?", "We’ll prioritize games that fit your play window.", [["5","⚡","Up to 5 min","A quick reset"],["15","⏱️","Up to 15 min","A play break"],["30","🕰️","Up to 30 min","Time to create"],["60","🌈","Up to 1 hour","A bigger adventure"]]],
     ["material", "Materials", "What can they use?", "Games with no materials are always a good fit.", [["none","🙌","Nothing","Just imagination"],["paper","🖍️","Paper & pencils","Simple craft supplies"],["household","📦","Household items","Cups, cushions and more"],["ball","⚽","A ball","Any safe ball"]]],
     ["activity", "Energy", "What activity level feels right?", "Match the game to their energy.", [["calm","☁️","Calm","Quiet and focused"],["medium","🪁","Playful","Some movement"],["active","⚡","Very active","Lots of energy"]]],
-    ["skill", "Goal", "What would you like to encourage?", "We’ll prioritize games that gently practice this skill.", [["speech","💬","Speech & communication","Words, stories and listening"],["problem","🧩","Problem solving","Logic, memory and discovery"],["movement","🏃","Movement & motor skills","Balance, coordination and strength"],["creativity","🎨","Creativity","Imagination and self-expression"],["social","🤝","Cooperation","Sharing, turn-taking and teamwork"],["calm","🌿","Focus & calm","Attention and emotional regulation"]]]
   ],
   sr: [
     ["age", "Uzrast", "Koliko godina imaju deca?", "Izaberite uzrast najmlađeg igrača.", [["2-3","🐣","2–3 godine","Mali istraživači"],["4-5","🧸","4–5 godina","Radoznali kreativci"],["6-8","🦊","6–8 godina","Velika mašta"],["9-12","🚀","9–12 godina","Samostalni igrači"]]],
     ["players", "Deca", "Koliko dece se igra?", "Izabraćemo igre koje odgovaraju vašoj grupi.", [["1","🌟","Jedno dete","Samostalna igra"],["2","🙌","Dvoje dece","Razigrani par"],["3-4","🎈","3–4 deteta","Mala grupa"],["5+","🎉","5+ dece","Zabava ili odeljenje"]]],
-    ["place", "Mesto", "Gde će se igrati?", "Izaberite prostor koji vam je dostupan.", [["indoors","🏠","Unutra","Kuća ili učionica"],["outdoors","🌿","Napolju","Dvorište, park ili plaža"],["either","🌤️","Svejedno","Obe opcije odgovaraju"]]],
+    ["place", "Mesto", "Gde će se igrati?", "Izaberite prostor koji vam je dostupan.", [["indoors","🏠","Unutra",""],["outdoors","🌿","Napolju",""],["travel","🚗","U pokretu",""],["either","🌤️","Svejedno",""]]],
     ["duration", "Vreme", "Koliko vremena imate?", "Prednost imaju igre koje se uklapaju u vaše vreme.", [["5","⚡","Do 5 min","Brza razbibriga"],["15","⏱️","Do 15 min","Kratka igra"],["30","🕰️","Do 30 min","Vreme za kreativnost"],["60","🌈","Do 1 sata","Veća avantura"]]],
     ["material", "Materijali", "Šta mogu da koriste?", "Igre bez materijala su uvek dobar izbor.", [["none","🙌","Ništa","Samo mašta"],["paper","🖍️","Papir i olovke","Jednostavan pribor"],["household","📦","Kućni predmeti","Čaše, jastuci i drugo"],["ball","⚽","Lopta","Bilo koja bezbedna lopta"]]],
     ["activity", "Energija", "Koji nivo aktivnosti odgovara?", "Uskladite igru sa njihovom energijom.", [["calm","☁️","Mirno","Tiho i fokusirano"],["medium","🪁","Razigrano","Malo kretanja"],["active","⚡","Veoma aktivno","Mnogo energije"]]],
-    ["skill", "Cilj", "Šta želite da podstaknete?", "Prednost ćemo dati igrama koje nežno vežbaju ovu veštinu.", [["speech","💬","Govor i komunikacija","Reči, priče i slušanje"],["problem","🧩","Rešavanje problema","Logika, pamćenje i otkrivanje"],["movement","🏃","Kretanje i motorika","Ravnoteža, koordinacija i snaga"],["creativity","🎨","Kreativnost","Mašta i izražavanje"],["social","🤝","Saradnja","Deljenje, čekanje reda i timski rad"],["calm","🌿","Fokus i smirenost","Pažnja i regulacija emocija"]]]
   ]
 };
 
@@ -24,78 +22,80 @@ const copy = {
     pageTitle:"Play Picks", brand:"Play Picks", description:"Find screen-free children's games for every moment.", home:"Play Picks home", language:"Language",
     nav:["For you","Explore","Popular","Saved"], profile:"Profile", hero:"Find their next <span>favorite game.</span>",
     heroCopy:"Answer a few questions to find a simple game that fits the moment.", progress:"Setup progress", resultsEye:"Your play picks",
-    ready:"Ideas picked for you", popular:"A game selection", saved:"Your saved games", edit:"Edit filters", step:(a,b)=>`Step ${a} of ${b}`,
-    next:"Continue", show:"Show 50 games", back:"Back", matches:"",
-    popularSummary:"A selection of simple games to try together.", savedSummary:n=>n ? `${n} game${n===1?"":"s"} saved in your local profile.` : "Like a game to save it here.",
+    ready:"Ideas picked for you", popular:"Popular games", saved:"Your saved games", edit:"Edit filters", step:(a,b)=>`Step ${a} of ${b}`,
+    next:"Continue", show:"Show", back:"Back", matches:"",
+    popularSummary:"", savedSummary:n=>n ? `${n} game${n===1?"":"s"} saved in your local profile.` : "Like a game to save it here.",
     emptySaved:"No saved games yet", emptySavedCopy:"Tap the heart on a game you love and it will appear here.", change:"Explore games", footer:"Simple ideas for everyday play.",
     profileTitle:"Your profile", profileCopy:"Enter a name to save games and keep favorites on this device.", name:"Name",
     saveProfile:"Save profile", deleteProfile:"Delete profile", likes:"likes", loginLike:"Create a local profile to save games.",
-    place:{either:"Inside or outside",indoors:"Indoors",outdoors:"Outdoors"}, ages:(a,b)=>`Ages ${a}–${b}`, min:"min", image:t=>`Children playing ${t}`,
+    place:{either:"Inside or outside",indoors:"Indoors",outdoors:"Outdoors",travel:"On the go"}, ages:(a,b)=>`Ages ${a}–${b}`, min:"min", image:t=>`Children playing ${t}`,
     noProfile:"Profile",
-    findGame:"Find a game", familyLove:"Browse popular games",
+    findGame:"Find a game",
     trust:["✓ No sign-up needed","✓ Screen-free ideas","✓ Ages 2–12"], visualTitle:"Ready for play?", visualCopy:"Simple ideas for everyday moments",
     parentEyebrow:"A little help for grown-ups",
-    parentIntro:"No complicated preparation. Choose what you have, how much time is available and how energetic everyone feels.",
+    parentIntro:"Choose by time, space, materials and energy.",
     dailyLabel:"TODAY’S GAME", dailyTitle:"Five-minute connection", dailyCopy:"Short play still counts. A few focused minutes can turn an ordinary pause into a warm family memory.",
     dailyButton:"Find a quick game →", benefitOneTitle:"Supports development", benefitOneCopy:"Discover ideas for movement, creativity, cooperation and calm focus.",
-    benefitTwoTitle:"Less decision fatigue", benefitTwoCopy:"Seven simple choices turn “what should we do?” into a useful shortlist.",
-    safetyTitle:"A note for safe, happy play", safetyCopy:"Stay nearby, adapt every activity to your child and space, and use age-appropriate, safe materials.", bottomStart:"Let’s find a game",
-    liked:"Saved to your profile ♥", unliked:"Removed from saved games",
+    benefitTwoTitle:"Less decision fatigue", benefitTwoCopy:"Six simple choices turn “what should we do?” into a useful shortlist.",
+    benefitThreeTitle:"Time together to remember", benefitThreeCopy:"Small shared moments can become happy memories children carry with them.",
+    safetyTitle:"A note for safe, happy play", safetyCopy:"Stay nearby and adapt each game to your child and space.",
+    liked:"Saved to your profile ♥", unliked:"Removed from saved games", saveAction:"Save", savedAction:"Saved",
     exploreEyebrow:"Browse by moment", exploreTitle:"There’s a game for every kind of day.", exploreCopy:"Choose a season, setting or developmental goal and start exploring.",
     momentTitle:"Ideas for the moment", momentCopy:"Pick the kind of day you are having.", skillTitle:"What would you like to encourage?", skillCopy:"Explore games through the skill they help children practice.",
-    details:"How to play", categorySummary:n=>`${n} games in this collection.`, guide:"Game guide", stepsTitle:"How to play", exampleTitle:"Try this example", parentTipTitle:"Parent tip", closeDetails:"Back to games", dailyButton:"Open today’s game →",
+    details:"How to play", categorySummary:()=>"", guide:"Game guide", stepsTitle:"How to play", exampleTitle:"Try this example", parentTipTitle:"Parent tip", closeDetails:"Back to games", dailyButton:"Open today’s game →",
     feedbackLabel:"Send a comment", feedbackHint:"Your email app will open with the comment ready to send.", feedbackButton:"Prepare email", feedbackRequired:"Write a comment first.", feedbackSubject:"A comment about Play Picks"
   },
   sr: {
     pageTitle:"Naše igre", brand:"Naše igre", description:"Pronađite dečje igre bez ekrana za svaki trenutak.", home:"Početna stranica Naše igre", language:"Jezik",
     nav:["Za vas","Istraži","Popularno","Sačuvano"], profile:"Profil", hero:"Pronađite njihovu novu <span>omiljenu igru.</span>",
     heroCopy:"Odgovorite na nekoliko pitanja i pronađite jednostavnu igru koja odgovara trenutku.", progress:"Napredak izbora", resultsEye:"Predlozi za igru",
-    ready:"Predlozi igara za vas", popular:"Izdvojene igre", saved:"Sačuvane igre", edit:"Promeni filtere", step:(a,b)=>`Korak ${a} od ${b}`,
-    next:"Nastavi", show:"Prikaži 50 igara", back:"Nazad", matches:"",
-    popularSummary:"Izbor jednostavnih igara koje možete isprobati zajedno.", savedSummary:n=>n ? `${n} ${n===1?"igra je sačuvana":n<5?"igre su sačuvane":"igara je sačuvano"} u profilu.` : "Sačuvajte igre koje vam se dopadaju.",
+    ready:"Predlozi igara za vas", popular:"Popularno", saved:"Sačuvane igre", edit:"Promeni filtere", step:(a,b)=>`Korak ${a} od ${b}`,
+    next:"Nastavi", show:"Prikaži", back:"Nazad", matches:"",
+    popularSummary:"", savedSummary:n=>n ? `${n} ${n===1?"igra je sačuvana":n<5?"igre su sačuvane":"igara je sačuvano"} u profilu.` : "Sačuvajte igre koje vam se dopadaju.",
     emptySaved:"Još nema sačuvanih igara", emptySavedCopy:"Dodirnite srce na igri koja vam se sviđa i pojaviće se ovde.", change:"Istraži igre", footer:"Jednostavne ideje za svakodnevnu igru.",
     profileTitle:"Vaš profil", profileCopy:"Unesite ime da sačuvate igre i omiljene stavke na ovom uređaju.", name:"Ime",
     saveProfile:"Sačuvaj profil", deleteProfile:"Obriši profil", likes:"lajkova", loginLike:"Napravite lokalni profil da sačuvate igre.",
-    place:{either:"Unutra ili napolju",indoors:"Unutra",outdoors:"Napolju"}, ages:(a,b)=>`Uzrast ${a}–${b}`, min:"min", image:t=>`Deca igraju igru ${t}`,
+    place:{either:"Unutra ili napolju",indoors:"Unutra",outdoors:"Napolju",travel:"U pokretu"}, ages:(a,b)=>`Uzrast ${a}–${b}`, min:"min", image:t=>`Deca igraju igru ${t}`,
     noProfile:"Profil",
-    findGame:"Pronađi igru", familyLove:"Popularne igre",
+    findGame:"Pronađi igru",
     trust:["✓ Bez obavezne prijave","✓ Ideje bez ekrana","✓ Uzrast 2–12"], visualTitle:"Spremni za igru?", visualCopy:"Jednostavne ideje za svaki dan",
     parentEyebrow:"Mala pomoć za roditelje",
-    parentIntro:"Bez komplikovane pripreme. Izaberite šta imate, koliko vremena je dostupno i koliko energije svi imaju.",
+    parentIntro:"Izaberite prema vremenu, prostoru, materijalima i energiji.",
     dailyLabel:"DANAŠNJA IGRA", dailyTitle:"Pet minuta povezivanja", dailyCopy:"I kratka igra se računa. Nekoliko posvećenih minuta može običnu pauzu pretvoriti u lepu porodičnu uspomenu.",
     dailyButton:"Pronađi brzu igru →", benefitOneTitle:"Podstiče razvoj", benefitOneCopy:"Otkrijte ideje za kretanje, kreativnost, saradnju i miran fokus.",
-    benefitTwoTitle:"Manje umora od odlučivanja", benefitTwoCopy:"Sedam lakih izbora pretvara „šta ćemo sada?“ u koristan izbor igara.",
-    safetyTitle:"Napomena za bezbednu i veselu igru", safetyCopy:"Budite u blizini, prilagodite svaku aktivnost detetu i prostoru i koristite bezbedne materijale primerene uzrastu.", bottomStart:"Pronađimo igru",
-    liked:"Sačuvano u profilu ♥", unliked:"Uklonjeno iz sačuvanih igara",
+    benefitTwoTitle:"Manje umora od odlučivanja", benefitTwoCopy:"Šest lakih izbora pretvara „šta ćemo sada?“ u koristan izbor igara.",
+    benefitThreeTitle:"Vreme zajedno koje se pamti", benefitThreeCopy:"Male zajedničke igre i razgovori mogu postati lepe uspomene koje dete pamti.",
+    safetyTitle:"Napomena za bezbednu i veselu igru", safetyCopy:"Budite u blizini i prilagodite igru detetu i prostoru.",
+    liked:"Sačuvano u profilu ♥", unliked:"Uklonjeno iz sačuvanih igara", saveAction:"Sačuvaj", savedAction:"Sačuvano",
     exploreEyebrow:"Istražite po trenutku", exploreTitle:"Postoji igra za svaku vrstu dana.", exploreCopy:"Izaberite godišnje doba, priliku ili razvojni cilj i počnite da istražujete.",
     momentTitle:"Ideje za ovaj trenutak", momentCopy:"Izaberite kakav dan imate.", skillTitle:"Šta želite da podstaknete?", skillCopy:"Istražite igre prema veštini koju pomažu deci da vežbaju.",
-    details:"Kako se igra", categorySummary:n=>`${n} igara u ovoj kolekciji.`, guide:"Uputstvo za igru", stepsTitle:"Kako se igra", exampleTitle:"Primer", parentTipTitle:"Savet za roditelje", closeDetails:"Nazad na igre", dailyButton:"Otvori današnju igru →",
+    details:"Kako se igra", categorySummary:()=>"", guide:"Uputstvo za igru", stepsTitle:"Kako se igra", exampleTitle:"Primer", parentTipTitle:"Savet za roditelje", closeDetails:"Nazad na igre", dailyButton:"Otvori današnju igru →",
     feedbackLabel:"Pošaljite komentar", feedbackHint:"Otvoriće se e-pošta sa pripremljenim komentarom.", feedbackButton:"Pripremi e-poštu", feedbackRequired:"Prvo napišite komentar.", feedbackSubject:"Komentar o aplikaciji Naše igre"
   }
 };
 
 const gameIdeas = [
 ["Rainbow Hunt","Lov na dugu","Find one safe object in every rainbow color and arrange them in order.","Pronađite po jedan bezbedan predmet u svakoj boji duge i poređajte ih.","search"],
-["Animal Parade","Parada životinja","Cross the room walking and sounding like a different animal each round.","Pređite prostor hodajući i oglašavajući se kao druga životinja u svakom krugu.","pretend"],
+["Animal Parade","Parada životinja","Choose an animal and cross a short, clear space moving and making its sound while the others guess. Take turns choosing the animal.","Izaberite životinju, pređite kratak i slobodan prostor njenim pokretima i oglašavanjem dok ostali pogađaju. Zatim menjajte ko bira životinju.","pretend"],
 ["Story Circle","Krug priča","Build a story one sentence at a time and add a surprise on every turn.","Gradite priču rečenicu po rečenicu i dodajte iznenađenje u svakom krugu.","story"],
 ["Color Dash","Trka boja","Call a color and race to safely touch something that matches.","Izgovorite boju i požurite da bezbedno dodirnete nešto takvo.","run"],
 ["Mystery Drawing","Tajanstveni crtež","Draw a secret object while everyone else guesses what is appearing.","Nacrtajte tajni predmet dok ostali pogađaju šta nastaje.","draw"],
 ["Cushion Islands","Ostrva od jastuka","Cross a path of cushions without touching the imaginary water.","Pređite stazu od jastuka bez dodirivanja zamišljene vode.","balance"],
-["Balloon Breaths","Balonski dah","Use slow breaths to mime inflating a giant balloon, then gently pop.","Sporim dahom zamišljajte da naduvavate veliki balon, pa ga nežno probušite.","pretend"],
+["Family Quiz","Porodični kviz","Take turns answering questions about animals, nature and everyday life. Choose questions that fit the child's age; hints are welcome.","Naizmenično odgovarajte na pitanja o životinjama, prirodi i svakodnevnom životu. Birajte pitanja prema uzrastu deteta; nagoveštaji su dozvoljeni.","story"],
 ["Target Toss","Pogodi metu","Toss a soft ball toward safe targets worth different points.","Bacajte meku loptu ka bezbednim metama koje nose različite poene.","ball"],
 ["Shadow Zoo","Zoološki vrt senki","Make animal shadows with hands or bodies for others to identify.","Rukama ili telom pravite senke životinja koje ostali pogađaju.","pretend"],
 ["Robot Guide","Vodič za robota","Guide a robot player using precise step-by-step instructions.","Vodite igrača robota preciznim uputstvima korak po korak.","pretend"],
-["Paper Tower","Kula od papira","Fold and balance paper to build the tallest freestanding tower.","Savijajte i balansirajte papir da napravite najvišu samostojeću kulu.","build"],
+["Tallest Tower","Najviša kula","Build the tallest stable tower you can from safe items such as blocks, cups or small boxes.","Napravite što višu stabilnu kulu od bezbednih predmeta, poput kockica, čaša ili manjih kutija.","build"],
 ["Nature Faces","Lica iz prirode","Arrange leaves, stones and twigs into an expressive face.","Od lišća, kamenčića i grančica složite lice sa izrazom.","nature"],
 ["Freeze Dance","Ples i zaleđivanje","Dance freely and freeze in a funny pose whenever the leader calls stop.","Plešite slobodno i ukočite se u smešnoj pozi kada vođa kaže stop.","dance"],
 ["Cup Castle","Dvorac od čaša","Stack reusable cups into a castle with towers and a gate.","Složite čaše u dvorac sa kulama i kapijom.","build"],
 ["Secret Sound","Tajni zvuk","Make a hidden sound and let players identify its source.","Napravite skriveni zvuk i neka igrači otkriju odakle dolazi.","story"],
 ["Adventure Path","Staza avanture","Create a route with turns, jumps and balance challenges.","Napravite stazu sa okretima, skokovima i izazovima ravnoteže.","balance"],
-["Ball Balance","Balansiranje lopte","Carry a ball between two points using a new body part each round.","Prenesite loptu između dve tačke drugim delom tela u svakom krugu.","ball"],
+["Ball Balance","Balansiranje lopte","Carry a soft ball along a short route using safe holds such as open palms or forearms; try a different hold each round.","Prenosite mekanu loptu kratkom stazom bezbednim položajima, na primer na otvorenim dlanovima ili podlakticama; svakog kruga probajte drugi položaj.","ball"],
 ["Funny Portrait","Smešni portret","Draw a portrait without lifting the pencil from the paper.","Nacrtajte portret bez podizanja olovke sa papira.","draw"],
 ["Cloud Detective","Detektiv za oblake","Spot pictures in clouds and connect them in a short adventure.","Pronađite slike u oblacima i povežite ih u kratku avanturu.","nature"],
 ["Movement Memory","Pamćenje pokreta","Add one movement to a growing sequence and repeat it together.","Dodajte pokret nizu koji raste i ponovite ga zajedno.","dance"],
-["Paper Air Lab","Laboratorija papirnih aviona","Fold a paper flyer, test it and improve one feature.","Napravite papirni avion, testirajte ga i poboljšajte jednu osobinu.","build"],
+["Paper Airplane Test","Test papirnog aviona","Fold a simple paper airplane, fly it from a marked line, then change one fold to see whether it flies straighter or farther.","Napravite jednostavan papirni avion i bacite ga sa označene linije. Promenite jedan pregib i proverite da li leti pravo ili dalje.","build"],
 ["Mini Bowling","Mini kuglanje","Roll a ball to knock down safe household pins.","Kotrljajte loptu da oborite bezbedne kućne čunjeve.","ball"],
 ["Yes, Let's","Da, hajde","Suggest imaginary actions; everyone says yes and acts them out.","Predlažite zamišljene radnje; svi kažu da i izvode ih.","pretend"],
 ["Garden Relay","Baštenska štafeta","Complete playful movement tasks between two outdoor markers.","Izvršavajte zabavne zadatke kretanja između dve spoljne oznake.","run"],
@@ -119,7 +119,7 @@ const gameIdeas = [
 ["Monster Steps","Koraci čudovišta","Invent giant, tiny and wobbly monster walks.","Osmislite džinovske, sićušne i klimave korake čudovišta.","dance"],
 ["Memory Tray","Poslužavnik pamćenja","Study several objects, hide one and identify what changed.","Pogledajte nekoliko predmeta, sakrijte jedan i pogodite šta se promenilo.","search"],
 ["Bridge Builders","Graditelji mosta","Build a bridge that can hold a small toy.","Napravite most koji može da izdrži malu igračku.","build"],
-["Compliment Ball","Lopta lepih reči","Pass a ball and share one kind thought with each catch.","Dodajte loptu i uz svako hvatanje podelite lepu misao.","ball"],
+["Compliment Ball","Lopta lepih reči","Pass a soft ball gently around the group. Whoever catches it shares one specific, kind thing someone in the group did.","Nežno dodajte mekanu loptu u krugu. Ko je uhvati, kaže jednu konkretnu lepu stvar koju je neko iz grupe uradio.","ball"],
 ["Weather Reporter","Vremenski reporter","Present today’s weather with dramatic gestures and predictions.","Predstavite današnje vreme dramatičnim pokretima i prognozom.","pretend"],
 ["Dot-to-Doodle","Od tačke do crteža","Place random dots, connect them and turn the shape into art.","Postavite nasumične tačke, spojite ih i pretvorite oblik u crtež.","draw"],
 ["Quiet Detective","Tihi detektiv","Notice five tiny details others may have missed.","Primetite pet sitnih detalja koje su drugi možda propustili.","search"],
@@ -210,7 +210,7 @@ const gameIdeas = [
 ["Button Sorting Lab","Laboratorija dugmića","Sort safe buttons or objects in as many ways as possible.","Razvrstajte bezbedne dugmiće ili predmete na što više načina.","search"],
 ["What Is Missing?","Šta nedostaje?","Look at a group of objects, hide one and identify the missing item.","Pogledajte grupu predmeta, sakrijte jedan i pronađite šta nedostaje.","search"],
 ["Clue Collector","Sakupljač tragova","Follow simple clues that lead to a safe hidden surprise.","Pratite jednostavne tragove do bezbednog skrivenog iznenađenja.","search"],
-["Sound Source Hunt","Potraga za izvorom zvuka","Close your eyes and point toward a familiar sound.","Zatvorite oči i pokažite ka poznatom izvoru zvuka.","search"],
+["Sound Source Hunt","Potraga za izvorom zvuka","Listen to a familiar sound and point toward where it comes from; keep your eyes open.","Slušajte poznati zvuk i pokažite odakle dolazi; oči ostaju otvorene.","search"],
 ["Odd One Out","Uljez u grupi","Find the object that does not belong and explain why.","Pronađite predmet koji ne pripada grupi i objasnite zašto.","search"],
 ["Touch and Tell","Dodirni i opiši","Feel a safe object in a bag and describe it before looking.","Dodirnite bezbedan predmet u torbi i opišite ga pre gledanja.","search"],
 ["Sequence Spotter","Uoči niz","Study a repeating arrangement and say what should come next.","Pogledajte niz koji se ponavlja i recite šta sledi.","search"],
@@ -223,7 +223,7 @@ const gameIdeas = [
 ["Marshmallow Structures","Konstrukcije od mekanih kockica","Build a structure that balances three lightweight pieces.","Napravite konstrukciju koja drži tri lagana dela u ravnoteži.","build"],
 ["Bridge to the Toy","Most do igračke","Design a route that lets a small toy cross an imaginary river.","Osmislite put kojim mala igračka prelazi zamišljenu reku.","build"],
 ["Cardboard Telescope","Kartonski teleskop","Decorate a cardboard tube and invent what it can discover.","Ukrasite kartonsku cev i izmislite šta ona otkriva.","build"],
-["Magnet-Free Maze","Lavirint bez magneta","Build a maze from blocks and guide a toy from start to finish.","Napravite lavirint od kockica i vodite igračku do cilja.","build"],
+["Maze Builder","Pravimo lavirint","Build a maze from any safe items you have, then guide a toy from start to finish.","Od bezbednih predmeta koje imate napravite lavirint, pa provedite igračku od početka do cilja.","build"],
 ["Balance Sculpture","Skulptura ravnoteže","Stack safe objects into a sculpture that leans but does not fall.","Složite bezbedne predmete u skulpturu koja se naginje ali ne pada.","build"],
 ["Tiny Shop","Mala prodavnica","Build a pretend shop and create signs, shelves and products.","Napravite zamišljenu prodavnicu sa natpisima, policama i proizvodima.","build"],
 ["Paper Playground","Igralište od papira","Design a paper playground with spaces for different games.","Osmislite igralište od papira sa prostorima za različite igre.","build"],
@@ -276,7 +276,8 @@ const gameIdeas = [
 ["Tense and Relax","Stegni i opusti","Gently tense and relax different body parts like a robot.","Nežno stežite i opuštajte delove tela kao robot.","nature"],
 ["Quiet Pattern Tiles","Tihe šare","Make a repeating pattern with safe objects in complete silence.","Napravite ponavljajuću šaru od bezbednih predmeta u tišini.","nature"],
 ["Gratitude Garden","Bašta zahvalnosti","Place imaginary flowers for things each player appreciates.","Postavite zamišljene cvetove za stvari na kojima je svako zahvalan.","nature"],
-["Breathing Buddy","Drug za disanje","Help a toy or partner match five slow, comfortable breaths.","Pomozite igrački ili partneru da prati pet sporih, prijatnih udaha.","nature"]
+["Breathing Buddy","Drug za disanje","Help a toy or partner match five slow, comfortable breaths.","Pomozite igrački ili partneru da prati pet sporih, prijatnih udaha.","nature"],
+["Letter Clue Guess","Na slovo, na slovo","Choose a letter and category, give clues for a word that starts with it, and let others guess the word.","Izaberite slovo i kategoriju, dajte tragove za reč koja počinje tim slovom i neka je ostali pogode.","story"]
 ];
 
 const scenes = {
@@ -380,7 +381,7 @@ const artRecipes = {
   "Target Toss":[["kid",110,182,1.3],["ball",205,112,1],["target",335,112,1.5]],
   "Shadow Zoo":[["sun",365,58,.85],["kid",118,182,1.3],["animal",272,132,1.5]],
   "Robot Guide":[["kid",110,182,1.3],["steps",228,152,1.35],["robot",335,142,1.4]],
-  "Paper Tower":[["paper",118,138,1.05],["tower",248,172,1.6],["kidReach",358,182,1.2]],
+  "Tallest Tower":[["box",118,162,1.05],["tower",248,172,1.6],["kidReach",358,182,1.2]],
   "Nature Faces":[["leaf",198,98,1.15],["leaf",302,98,1.15],["stone",250,138,1.35],["twig",250,178,1.55]],
   "Freeze Dance":[["kidDance",150,182,1.4],["note",292,98,1.4],["note",362,140,1.05]],
   "Cup Castle":[["cup",182,172,1.25],["cup",250,172,1.25],["cup",318,172,1.25],["cup",216,132,1.25],["cup",284,132,1.25],["cup",250,92,1.25]],
@@ -390,7 +391,7 @@ const artRecipes = {
   "Funny Portrait":[["paper",228,112,1.8],["mask",228,106,.85],["pencil",342,150,1.35]],
   "Cloud Detective":[["cloud",205,78,1.45],["cloud",325,108,1.05],["kid",118,182,1.3],["magnifier",305,168,1.2]],
   "Movement Memory":[["kid",118,182,1.2],["kidDance",232,182,1.2],["kidJump",342,182,1.2]],
-  "Paper Air Lab":[["plane",262,98,1.55],["kidReach",118,182,1.3],["paper",352,158,.95]],
+  "Paper Airplane Test":[["plane",262,98,1.55],["kidReach",118,182,1.3],["paper",352,158,.95]],
   "Mini Bowling":[["ball",125,152,1.15],["pin",252,152,1.15],["pin",305,152,1.15],["pin",358,152,1.15]],
   "Yes, Let's":[["star",225,68,1.15],["kidReach",140,182,1.3],["kidReach",305,182,1.3]],
   "Garden Relay":[["tape",258,198,1],["kidRun",138,182,1.35],["tree",352,172,1.35]],
@@ -486,6 +487,11 @@ function gameArt(title, scene, index) {
 
 const skillByScene = {story:"speech",pretend:"speech",search:"problem",build:"problem",run:"movement",ball:"movement",balance:"movement",dance:"creativity",draw:"creativity",nature:"calm"};
 const activityByScene = {story:"calm",pretend:"medium",search:"calm",build:"medium",run:"active",ball:"active",balance:"medium",dance:"active",draw:"calm",nature:"calm"};
+function skillForIdea(g) {
+  const text=`${g[0]} ${g[2]}`.toLowerCase();
+  if(/\b(cooperat|teamwork|team|share|group|partner|each player|every player|take turns|together|pass around|circle|relay)\b/.test(text))return "social";
+  return skillByScene[g[4]];
+}
 function activityForIdea(g) {
   const text=`${g[0]} ${g[2]}`.toLowerCase();
   if(text.includes("slow fast switch")||text.includes("slow-motion race"))return "medium";
@@ -499,7 +505,7 @@ function maxPlayersForIdea(g) {
 function placeForIdea(g) {
   const text=`${g[0]} ${g[2]}`.toLowerCase();
   if(/\b(window|living room|classroom|kitchen|indoors?|room|cushions?|pillows?|cups?|cardboard boxes?)\b/.test(text))return "indoors";
-  if(/\b(outdoors?|backyard|garden|park|beach|pavement|sunlight|nature|clouds?|birds?|wind|chalk)\b/.test(text))return "outdoors";
+  if(/\b(outdoors?|backyard|garden|park|beach|pavement|sunlight|clouds?|birds?|wind|chalk|leaves?|twigs?|stones?|pebbles?)\b/.test(text))return "outdoors";
   return "either";
 }
 function durationForIdea(g) {
@@ -509,6 +515,7 @@ function durationForIdea(g) {
   return 15;
 }
 function materialForIdea(g) {
+  if(["Family Quiz","Letter Clue Guess"].includes(g[0]))return "none";
   const text=`${g[0]} ${g[2]}`.toLowerCase();
   if(/\b(sock|balloon|cup|cushion|pillow|box|cardboard|tray|tape|chalk|straw|utensil|button|bottle|ribbon|scarf|feather|tissue|block|toy|nature|leaf|leaves|stone|stones|pebble|pebbles|twig|twigs)\b/.test(text))return "household";
   if(g[4]==="ball"||/\bball\b/.test(text))return "ball";
@@ -516,11 +523,19 @@ function materialForIdea(g) {
   if(g[4]==="build"||/\b(stack|structure|tower|bridge|sculpture)\b/.test(text))return "household";
   return "none";
 }
-const games = gameIdeas.slice(0,200).map((g,index)=>({
+function ageRangeForIdea(g) {
+  const text=`${g[0]} ${g[2]}`.toLowerCase();
+  if(g[0]==="Robot Guide")return [4,12];
+  if(["Family Quiz","Letter Clue Guess"].includes(g[0]))return [4,12];
+  if(/\b(alphabet|letters?|rhyme|decode|secret rule|sequence|memory|maze|map|countdown|yes-or-no|points|symmetry|strategy)\b/.test(text))return [6,12];
+  if(/\b(balloon|button|buttons|pebble|pebbles|small objects|tiny pieces|seed|seeds)\b/.test(text))return [6,12];
+  if(["pretend","dance","nature"].includes(g[4])&&materialForIdea(g)==="none")return [2,12];
+  return [4,12];
+}
+const games = gameIdeas.map((g,index)=>({
   id:index+1, title:g[0], srTitle:g[1], description:g[2], srDescription:g[3], scene:g[4],
   place:placeForIdea(g), material:materialForIdea(g), activity:activityForIdea(g), duration:durationForIdea(g),
-  minAge:materialForIdea(g)==="none"&&["story","pretend","dance"].includes(g[4])?2:4,
-  maxAge:12, minPlayers:1, maxPlayers:maxPlayersForIdea(g), skill:skillByScene[g[4]],
+  minAge:ageRangeForIdea(g)[0], maxAge:ageRangeForIdea(g)[1], minPlayers:1, maxPlayers:maxPlayersForIdea(g), skill:skillForIdea(g),
   image:gameArt(g[0],g[4],index)
 }));
 
@@ -529,16 +544,16 @@ const exploreCategories = {
     ["rainy","🌧️","Rainy days","Cozy indoor ideas when going outside is not an option."],
     ["summer","☀️","Summer play","Sunny ideas for warm days, gardens and parks."],
     ["winter","❄️","Cold days","Warm, active and creative play for chilly weather."],
-    ["holiday","🎄","Holiday moments","Festive games for family gatherings and special days."],
-    ["travel","🚗","On the go","Simple ideas for trips, waiting and small spaces."],
+    ["holiday","🎄","Family gatherings","Conversation and group games for family get-togethers."],
+    ["travel","🚗","On the go","Car-friendly games for passengers and short movement breaks at safe stops; never play while driving."],
     ["party","🎉","Groups & parties","Games that help a group laugh, move and connect."]
   ],
   sr:[
     ["rainy","🌧️","Kišni dani","Udobne ideje za unutra kada izlazak nije opcija."],
     ["summer","☀️","Letnje igre","Sunčane ideje za tople dane, dvorište i park."],
     ["winter","❄️","Hladniji dani","Tople, aktivne i kreativne igre za hladno vreme."],
-    ["holiday","🎄","Praznični trenuci","Vesele igre za porodična okupljanja i posebne dane."],
-    ["travel","🚗","U pokretu","Jednostavne ideje za putovanja, čekanje i mali prostor."],
+    ["holiday","🎄","Porodična okupljanja","Razgovorne i grupne igre za porodična okupljanja."],
+    ["travel","🚗","U pokretu","Igre za putnike u automobilu i kratke pauze za kretanje; ne igraju se tokom vožnje."],
     ["party","🎉","Grupe i proslave","Igre koje pomažu grupi da se smeje, kreće i poveže."]
   ]
 };
@@ -551,14 +566,14 @@ const detailContent = {
   en:{
     prepare:{none:"Clear a small safe area. No special materials are needed.",paper:"Prepare paper and child-safe pencils or crayons.",household:"Choose a few safe, unbreakable household objects.",ball:"Use a soft, age-appropriate ball and clear fragile objects away."},
     steps:{
-      run:["Mark a clear start and finish.","Demonstrate the movement slowly first.","Take turns and adapt the distance to each child."],
+      run:["Clear a safe area; mark a start and finish only if this game needs a route.","Explain the game's action or rule and try one easy round.","Let children choose a comfortable pace and stop for a break when needed."],
       draw:["Explain the creative prompt and show one simple example.","Let every child create without correcting their choices.","Invite them to describe or name what they made."],
       ball:["Agree on a safe throwing or rolling zone.","Practice one slow round together.","Add distance, a target or teamwork when everyone is ready."],
       build:["Look at the available pieces and imagine a goal.","Build, test and notice what works.","Change one thing and try the improved version."],
-      search:["Give the first clue and define the safe search area.","Let children observe and discuss possible answers.","Compare discoveries and celebrate unusual ideas."],
+      search:["Agree on what the game asks players to find: an item, color, sound, pattern or change.","Follow the game's rule; give clues only when clues are part of the game.","Check the result using the game's rule: match, count, identify or explain what changed."],
       dance:["Show the first movement or rhythm.","Let each player add or change one movement.","Finish with everyone performing the sequence together."],
       story:["Choose a character, place or opening sentence.","Take turns adding one small part.","End the story together and recall the funniest moment."],
-      nature:["Set clear boundaries and only collect safe fallen objects.","Observe colors, shapes, sounds and textures.","Use the discoveries to create, sort or tell a story."],
+      nature:["Use only materials named in the game; some activities need no materials.","Follow the activity described: observe, arrange, listen, move or breathe.","Finish when the game's goal is reached; do not add a collecting task."],
       balance:["Make a low, safe route and demonstrate it.","Move slowly with arms free for balance.","Adjust the challenge rather than rushing."],
       pretend:["Choose roles and describe the imaginary situation.","Let children lead what happens next.","Add a gentle surprise that keeps the story moving."]
     },
@@ -566,26 +581,26 @@ const detailContent = {
       run:["Keep the route short at first, then extend it only if the child wants another round.","Offer a slower or seated version so every child can join comfortably.","Praise careful movement and safe choices rather than speed or winning."],
       draw:["Ask what is happening in the picture instead of guessing what it represents.","Keep your own example simple so the child feels free to invent a different solution.","Describe the colors, lines and choices you notice without judging the finished picture."],
       ball:["Use a larger, softer ball when a child is still building confidence.","Move the target closer after a miss so the next attempt feels achievable.","Count successful passes together rather than comparing players’ scores."],
-      build:["When the structure falls, ask what the child would like to change before rebuilding.","Offer fewer pieces to younger children and add more only when they are ready.","Take a photo before rebuilding so experiments feel valuable, even when they do not last."],
-      search:["Give one clue at a time and allow a quiet pause before offering help.","Let the child create the next clue once they understand how the search works.","Keep hidden objects within the agreed safe area and away from climbing hazards."],
+      build:["When the structure falls, ask what the child would like to change before rebuilding.","Offer fewer pieces to younger children and give them time to try their own ideas.","Take a photo before rebuilding so experiments feel valuable, even when they do not last."],
+      search:["Let the child decide what to look for first; offer a clue only if the game uses clues.","Give time to notice, remember or sort before offering help.","If an item is hidden, keep it in the agreed safe area and at an easy-to-reach height."],
       dance:["Let the child choose the music, leader or final pose for the next round.","Avoid correcting movements; personal interpretation is part of the creative play.","If energy rises too much, finish with one slow song and gentle stretches."],
-      story:["Use open questions such as “What happens next?” instead of directing the plot.","Accept surprising ideas and repeat the child’s words to show that you are listening.","If a child gets stuck, offer two playful choices rather than completing the story for them."],
-      nature:["Collect only fallen items and leave living plants and small creatures undisturbed.","Bring attention to one sound, texture or color at a time to avoid rushing the experience.","Wash hands after outdoor play and check that collected pieces are safe to handle."],
+      story:["Use open questions such as “What happens next?” instead of directing the plot.","When talking about the story, get down to the child's eye level and listen patiently.","If a child gets stuck, wait a moment, then offer a gentle prompt rather than finishing for them."],
+      nature:["Collect natural items only when the game asks for them; leave plants and small creatures undisturbed.","For listening, breathing or movement games, let the child choose a comfortable pace.","Check that materials are safe to handle; collecting is not needed for every activity."],
       balance:["Stay close enough to help without holding the child unless support is requested.","Lower or widen the route when the child looks unsure, then celebrate steady progress.","Keep the challenge near floor level and remove hard or sharp objects from the area."],
-      pretend:["Follow the role the child gives you and let their ideas guide the scene.","Use ordinary objects as open-ended props instead of explaining what each one must be.","Introduce a small problem for the characters, then let the child invent the solution."]
+      pretend:["Follow the role the child gives you and let their ideas guide the scene.","Get down to the child's eye level when speaking in character, and give them time to answer.","Introduce a small problem for the characters, then let the child invent the solution."]
     }
   },
   sr:{
     prepare:{none:"Oslobodite mali bezbedan prostor. Posebni materijali nisu potrebni.",paper:"Pripremite papir i bezbedne olovke ili bojice.",household:"Izaberite nekoliko bezbednih i nelomljivih kućnih predmeta.",ball:"Koristite mekanu loptu primerenu uzrastu i sklonite lomljive predmete."},
     steps:{
-      run:["Označite jasan početak i cilj.","Prvo polako pokažite pokret.","Igrajte naizmenično i prilagodite udaljenost svakom detetu."],
+      run:["Oslobodite bezbedan prostor; početak i cilj označite samo ako igra koristi stazu.","Objasnite radnju ili pravilo igre i probajte jedan lak krug.","Neka dete izabere prijatan tempo i napravite pauzu kada mu je potrebna."],
       draw:["Objasnite kreativni zadatak i pokažite jednostavan primer.","Pustite svako dete da stvara bez ispravljanja.","Pozovite ih da opišu ili imenuju ono što su napravili."],
       ball:["Dogovorite bezbednu zonu za bacanje ili kotrljanje.","Zajedno probajte jedan spor krug.","Dodajte udaljenost, metu ili timski zadatak kada svi budu spremni."],
       build:["Pogledajte dostupne delove i zamislite cilj.","Gradite, testirajte i posmatrajte šta funkcioniše.","Promenite jednu stvar i probajte poboljšanu verziju."],
-      search:["Dajte prvi trag i odredite bezbedan prostor za potragu.","Pustite decu da posmatraju i razgovaraju o odgovorima.","Uporedite otkrića i proslavite neobične ideje."],
+      search:["Dogovorite se šta igra traži: predmet, boju, zvuk, šaru ili promenu.","Pratite pravilo igre; tragove dajte samo ako su deo igre.","Proverite rezultat po pravilu igre: uporedite, prebrojte, prepoznajte ili objasnite promenu."],
       dance:["Pokažite prvi pokret ili ritam.","Neka svaki igrač doda ili promeni jedan pokret.","Završite zajedničkim izvođenjem celog niza."],
       story:["Izaberite junaka, mesto ili početnu rečenicu.","Naizmenično dodajte po jedan mali deo.","Zajedno završite priču i setite se najsmešnijeg trenutka."],
-      nature:["Postavite jasne granice i skupljajte samo bezbedne otpale predmete.","Posmatrajte boje, oblike, zvukove i teksture.","Iskoristite otkrića za stvaranje, razvrstavanje ili priču."],
+      nature:["Koristite samo materijale koje igra pominje; za neke aktivnosti ne treba ništa.","Pratite zadatak iz opisa: posmatranje, slaganje, slušanje, pokret ili disanje.","Završite kada ostvarite cilj igre; nemojte dodavati sakupljanje predmeta."],
       balance:["Napravite nisku i bezbednu stazu i pokažite je.","Krećite se polako, sa slobodnim rukama za ravnotežu.","Prilagodite izazov umesto da požurujete dete."],
       pretend:["Izaberite uloge i opišite zamišljenu situaciju.","Pustite decu da vode ono što se dalje dešava.","Dodajte blago iznenađenje koje pokreće priču."]
     },
@@ -610,10 +625,10 @@ const exampleVariations = {
     draw:["Start with one simple shape, then let the child add a detail that changes its meaning.","Take turns adding one line to the same picture and describe what changed.","Choose a small prompt from the game and let the child decide what the finished picture means."],
     ball:["Begin with a gentle pass or roll from nearby; move farther apart only if it stays comfortable.","Try one cooperative round and count successful passes or turns together.","If the game uses a target, bring it close first and move it farther only when the child asks."],
     build:["Start with only a few safe pieces, test the result, then change one thing at a time.","Build a small first version together and ask the child what they want to improve.","Let the child choose the goal, then test the creation on a low, stable surface."],
-    search:["Offer one clue at a time and give the child a quiet moment to look before adding another.","Take turns choosing what to notice; let the child explain how they reached an answer.","Keep the search to a small agreed area and celebrate an interesting discovery, not speed."],
+    search:["Find one item, color, sound or detail named by the game, then explain how you recognized it.","Take turns choosing what to notice; let the child explain how they reached an answer.","Check the answer by the game's rule and take time instead of racing."],
     dance:["Choose one easy movement, repeat it together, then let the child add the next one.","Try a slow round first and finish with a pose or rhythm chosen by the child.","Take turns leading a short sequence; anyone can pause or choose a gentler movement."],
     story:["Begin with one character and a small surprise; take turns adding one sentence.","Let the child choose the setting, then ask what the character notices first.","Make a short beginning and ending together, leaving the middle open to new ideas."],
-    nature:["Notice one safe fallen object, sound or pattern, then describe it in a new way.","Choose one color or texture to look for and compare what each player notices.","Use only safe fallen materials; arrange a few, then tell a short story about the pattern."],
+    nature:["Follow the game's prompt: observe, arrange, listen, move or breathe.","Choose one detail from the activity and give the child time to notice it.","Use natural objects only when the game asks for them; some activities need none."],
     balance:["Keep the route low and clear; try it slowly once before adding a turn or extra step.","Begin with a straight, easy path and let the child choose whether to make it longer.","Demonstrate the route, stay nearby and let the child pause or change the challenge."],
     pretend:["Choose roles and a simple situation; let the child decide what happens next.","Use one ordinary object as a pretend prop and invite the child to give it a new purpose.","Start with a small, friendly problem for the characters and let the child invent a solution."]
   },
@@ -622,20 +637,80 @@ const exampleVariations = {
     draw:["Počnite jednostavnim oblikom, pa neka dete doda detalj koji mu menja značenje.","Naizmenično dodajte po jednu liniju na isti crtež i opišite šta se promenilo.","Izaberite mali motiv iz igre, a detetu prepustite da odluči šta crtež predstavlja."],
     ball:["Počnite blagim dodavanjem ili kotrljanjem izbliza; udaljite se samo ako je detetu prijatno.","Probajte jedan zajednički krug i zajedno brojite uspešna dodavanja ili poteze.","Ako igra koristi metu, prvo je postavite blizu i udaljite tek kada dete poželi."],
     build:["Počnite sa nekoliko bezbednih delova, isprobajte rezultat i menjajte jednu stvar odjednom.","Zajedno napravite malu početnu verziju i pitajte dete šta želi da poboljša.","Neka dete izabere cilj, a zatim isprobajte rad na niskoj i stabilnoj površini."],
-    search:["Dajte po jedan trag i ostavite detetu vremena da potraži odgovor pre sledećeg.","Naizmenično birajte šta ćete posmatrati; neka dete objasni kako je došlo do odgovora.","Ograničite potragu na dogovoren prostor i pohvalite zanimljivo otkriće, ne brzinu."],
+    search:["Pronađite predmet, boju, zvuk ili detalj koji igra traži i recite kako ste ga prepoznali.","Naizmenično birajte šta ćete posmatrati; neka dete objasni kako je došlo do odgovora.","Proverite odgovor po pravilu igre i ne pretvarajte potragu u trku."],
     dance:["Izaberite jedan lak pokret, ponovite ga zajedno, pa neka dete doda sledeći.","Počnite sporim krugom i završite pozom ili ritmom koji dete izabere.","Naizmenično vodite kratak niz; svako može da zastane ili izabere blaži pokret."],
     story:["Počnite jednim junakom i malim iznenađenjem; naizmenično dodajte po jednu rečenicu.","Neka dete izabere mesto radnje, pa pitajte šta junak prvo primećuje.","Zajedno osmislite kratak početak i kraj, a sredinu prepustite novim idejama."],
-    nature:["Uočite jedan bezbedan opali predmet, zvuk ili šaru, pa ga opišite na nov način.","Izaberite jednu boju ili teksturu koju ćete tražiti i uporedite šta je ko primetio.","Koristite samo bezbedne otpale delove; složite nekoliko i ispričajte priču o šari."],
+    nature:["Pratite zadatak igre: posmatrajte, slažite, slušajte, krećite se ili dišite.","Izaberite jedan detalj iz aktivnosti i dajte detetu vremena da ga primeti.","Prirodne predmete koristite samo ako ih igra traži; za neke aktivnosti ne treba ništa."],
     balance:["Neka staza bude niska i slobodna; prvo je polako pređite pre dodavanja okreta.","Počnite ravnom i lakom stazom, pa neka dete odluči da li želi da je produži.","Pokažite stazu, ostanite u blizini i dozvolite detetu da zastane ili promeni izazov."],
     pretend:["Izaberite uloge i jednostavnu situaciju, a detetu prepustite šta će se dalje desiti.","Upotrebite običan predmet kao rekvizit i pozovite dete da mu smisli novu namenu.","Započnite malim, prijatnim problemom za junake i neka dete smisli rešenje."]
+  }
+};
+
+const gameDetailOverrides = {
+  "Compliment Ball": {
+    en:{prep:"Use a soft ball and sit or stand in a comfortable circle.",steps:["Agree to pass the ball gently to someone in the circle.","Whoever catches it shares one specific, kind thing someone in the group did.","Pass to another person; anyone can skip a turn if they cannot think of something."],example:"Say, “I liked how you helped me put the blocks away,” then gently pass the ball to someone else.",parent:"Model sincere compliments about actions or effort, not appearance. Give children time to think and never pressure anyone to speak."},
+    sr:{prep:"Pripremite mekanu loptu i sedite ili stanite u udoban krug.",steps:["Dogovorite se da loptu nežno dodajete nekome u krugu.","Ko uhvati loptu, kaže jednu konkretnu lepu stvar koju je neko iz grupe uradio.","Dodajte loptu drugoj osobi; svako može da preskoči red ako ne može da se seti nečega."],example:"Recite: „Svidelo mi se što si mi pomogao da sklonim kockice”, pa nežno dodajte loptu drugome.",parent:"Dajte iskren primer o nečijem postupku ili trudu, ne o izgledu. Sačekajte da dete smisli odgovor i ne primoravajte ga da govori."}
+  },
+  "Animal Parade": {
+    en:{steps:["Choose one animal without telling the other players.","Cross a short, clear space using its movement and sound; walk instead of run.","Let the others guess, then switch who chooses and acts out the animal."],example:"Move slowly like an elephant, swing one arm as a trunk and make a gentle trumpet sound for others to guess.",parent:"Do not expect a perfect imitation. Offer the child a choice of two animals, and let them use a sound, gesture or both."},
+    sr:{steps:["Izaberite životinju, ali je nemojte odmah otkriti ostalima.","Pređite kratak i slobodan prostor njenim pokretima i oglašavanjem; hodajte umesto da trčite.","Neka ostali pogode, pa zamenite ko bira i predstavlja životinju."],example:"Krećite se polako kao slon, jednom rukom napravite surlu i tiho zatrubite da ostali pogode.",parent:"Ne očekujte savršeno oponašanje. Ponudite detetu izbor između dve životinje i dozvolite mu da koristi zvuk, pokret ili oba."}
+  },
+  "Rainbow Hunt": {
+    en:{steps:["Choose a safe area and name the rainbow colors to look for.","Find one safe object for each color and arrange the objects in rainbow order.","If a color is hard to find, skip it or draw it; do not climb or move heavy items."],example:"Find one red, one yellow and one blue object, then place them in color order.",parent:"Let the child choose which color to search for first; accept a drawing or a skipped color if an item is hard to find."},
+    sr:{steps:["Izaberite bezbedan prostor i navedite boje duge koje tražite.","Pronađite po jedan bezbedan predmet svake boje i poređajte ih kao dugu.","Ako neku boju ne možete da pronađete, preskočite je ili je nacrtajte; nemojte se penjati ni pomerati teške predmete."],example:"Pronađite jedan crveni, jedan žuti i jedan plavi predmet, pa ih poređajte po bojama.",parent:"Neka dete izabere koju boju će prvo tražiti; ako nešto ne može da pronađe, prihvatite crtež ili preskočite tu boju."}
+  },
+  "Color Dash": {
+    en:{steps:["Choose an open area with safe objects within easy reach.","Call a color; players find and gently touch a matching object.","Take turns calling colors. Walk instead of run in a small or crowded space."],example:"Call “green” and let each player find a nearby green object to touch safely.",parent:"Keep the pace playful rather than competitive; in a tight room, change “race” to a walking search."},
+    sr:{steps:["Izaberite slobodan prostor sa bezbednim predmetima nadohvat ruke.","Izgovorite boju; igrači pronađu predmet te boje i nežno ga dodirnu.","Naizmenično zadajte boje. U manjoj ili punoj prostoriji hodajte umesto da trčite."],example:"Recite „zeleno” i neka svaki igrač bezbedno dodirne neki zeleni predmet u blizini.",parent:"Neka cilj bude zabava, a ne takmičenje; u skučenoj prostoriji pretvorite trku u hodanje i traženje."}
+  },
+  "Robot Guide": {
+    en:{steps:["Choose a short route on a clear floor and name a safe destination.","Give one clear command at a time, such as “forward”, “turn” or “stop”. The robot follows only the spoken commands.","Swap roles, then add one extra command if the route still feels easy."],example:"Say “take one step forward, turn left, stop” to guide the robot to a pillow.",parent:"Keep the route free of obstacles and agree that “stop” means stop immediately. Give the child time to think through each command."},
+    sr:{steps:["Izaberite kratku stazu na slobodnom podu i odredite bezbedan cilj.","Zadajte po jednu jasnu komandu, poput „napred”, „okreni se” ili „stani”. Robot prati samo izgovorene komande.","Zamenite uloge, pa dodajte još jednu komandu ako je staza i dalje laka."],example:"Recite „napravi jedan korak napred, okreni se levo, stani” da biste robota doveli do jastuka.",parent:"Oslobodite stazu od prepreka i dogovorite se da „stani” znači odmah stati. Dajte detetu vremena da smisli svaku komandu."}
+  },
+  "Shadow Zoo": {
+    en:{prep:"Find a clear wall and use a lamp or daylight; keep the light out of everyone's eyes.",steps:["Stand near the wall and make a simple animal shape with your hands or body.","Let the others guess the animal before adding a hint.","Swap roles and try a new animal; use a whole-body pose if hand shapes are tricky."],example:"Make rabbit ears with two fingers, or shape your arms like a bird's wings, and let others guess.",parent:"Accept imaginative guesses rather than expecting perfect hand shapes. Keep the light away from eyes and do not let children climb to reach the wall."},
+    sr:{prep:"Pronađite slobodan zid i koristite lampu ili dnevno svetlo; svetlo ne usmeravajte nikome u oči.",steps:["Stanite blizu zida i rukama ili telom napravite jednostavan oblik životinje.","Neka ostali pogode životinju pre nego što dodate nagoveštaj.","Zamenite uloge i probajte novu životinju; ako su oblici rukama teški, koristite ceo položaj tela."],example:"Podignite dva prsta kao zečje uši ili rukama napravite krila ptice, pa pustite ostale da pogađaju.",parent:"Prihvatite maštovite odgovore umesto da očekujete savršene oblike. Pazite da svetlo ne ide u oči i ne dozvolite penjanje do zida."}
+  },
+  "Family Quiz": {
+    en:{prep:"",steps:["Choose a familiar topic and ask one short question at a time.","Give the child time to think; offer a hint or two choices if needed.","Take turns asking questions. Keep it playful rather than scoring every answer."],example:"Ages 4–5: What animal says “meow”? (cat). Ages 6–8: Which animal has a trunk? (elephant). Ages 9–12: What is a baby frog called? (tadpole).",parent:"Match questions to the child's age and interests. Praise curiosity, allow a pass and let the child ask the next question."},
+    sr:{prep:"",steps:["Izaberite poznatu temu i postavljajte jedno kratko pitanje odjednom.","Dajte detetu vremena da razmisli; po potrebi ponudite nagoveštaj ili dva odgovora.","Naizmenično postavljajte pitanja. Neka kviz bude zabava, ne ocenjivanje svakog odgovora."],example:"Uzrast 4–5: Koja životinja kaže „mjau”? (mačka). Uzrast 6–8: Koja životinja ima surlu? (slon). Uzrast 9–12: Kako se zove mladunče žabe? (punoglavac).",parent:"Prilagodite pitanja uzrastu i interesovanjima deteta. Pohvalite radoznalost, dozvolite da preskoči pitanje i prepustite mu sledeće."}
+  },
+  "Letter Clue Guess": {
+    en:{steps:["Choose a letter and a category, such as animals, food or objects.","Give one clue for a word that starts with that letter and let the others guess.","If the word is hard to guess, add a clue or offer two possible answers, then switch roles."],example:"“M: a pet that meows?” (cat). “S: a large animal with a trunk?” (elephant). Try another category, such as foods or objects.",parent:"For younger children, say the starting sound and offer two choices. Older children can invent clues and choose the next letter."},
+    sr:{steps:["Izaberite slovo i kategoriju, na primer životinje, hranu ili predmete.","Dajte jedan trag za reč koja počinje tim slovom i pustite ostale da pogađaju.","Ako je teško, dodajte trag ili ponudite dva odgovora, pa zamenite uloge."],example:"„Na slovo M, kućni ljubimac koji mjauče?” (mačka). „Na slovo S, velika životinja sa surlom?” (slon). Zatim izaberite hranu ili predmete.",parent:"Mlađoj deci izgovorite početni glas i ponudite dva izbora. Starija deca mogu sama smišljati tragove i birati sledeće slovo."}
+  },
+  "Tallest Tower": {
+    en:{prep:"Gather safe, stable items such as blocks, plastic cups or small boxes. Build on the floor.",steps:["Start with a wide, stable base and choose items that are safe to stack.","Add one item at a time, checking that the tower stays balanced.","If it wobbles or falls, rebuild together and try a different base."],example:"Take turns adding one block to a wide base; cheer each time the tower reaches a new level.",parent:"Show excitement as the tower grows. Praise each careful addition and creative rebuild, not just the final height; keep it low and never use a chair to reach."},
+    sr:{prep:"Pripremite bezbedne i stabilne predmete, poput kockica, plastičnih čaša ili manjih kutija. Gradite na podu.",steps:["Počnite širokom i stabilnom osnovom i birajte predmete koje je bezbedno slagati.","Dodajte po jedan predmet i proverite da li kula ostaje stabilna.","Ako se zaljulja ili sruši, gradite ponovo zajedno i probajte drugačiju osnovu."],example:"Naizmenično dodajte po jednu kockicu na široku osnovu i obradujte se svakom novom nivou kule.",parent:"Pokažite oduševljenje dok kula raste. Pohvalite svaki pažljiv pokušaj i novu ideju, ne samo konačnu visinu; gradite nisko i ne koristite stolicu za dohvat."}
+  },
+  "Secret Sound": {
+    en:{steps:["Choose a safe sound source, such as paper, a clap or a gentle tap on a cup.","Make the sound out of sight while everyone else keeps their eyes open and guesses its source.","Switch roles and try another sound; give a hint only if the guessers ask."],example:"Crumple a sheet of paper behind your back and ask, “What made that sound?”",parent:"Use familiar, child-safe objects and make one sound at a time. No one needs to close their eyes; let the child listen without rushing to answer."},
+    sr:{steps:["Izaberite bezbedan izvor zvuka, poput papira, pljeska ili laganog kucanja po čaši.","Napravite zvuk van vidokruga dok ostali drže oči otvorene i pogađaju šta ga je izazvalo.","Zamenite uloge i probajte drugi zvuk; nagoveštaj dajte samo ako ga zatraže."],example:"Zgužvajte papir iza leđa i pitajte: „Šta je proizvelo ovaj zvuk?”",parent:"Koristite poznate i bezbedne predmete i pravite po jedan zvuk. Niko ne mora da zatvara oči; pustite dete da sluša bez žurbe."}
+  },
+  "Adventure Path": {
+    en:{steps:["Make a short route on the floor with clear turns and a taped line; keep all obstacles low and stable.","Try one movement at a time: walk to a turn, make a small jump on the floor, then follow a balance line.","Take turns changing one part of the route. Skip any move that feels unsafe or uncomfortable."],example:"Follow a taped line, turn around a cushion on the floor, then do one small jump over a line of tape.",parent:"Let the child choose or change a challenge. Keep the route at floor level, clear sharp furniture, and praise careful attempts rather than speed."},
+    sr:{steps:["Napravite kratku stazu na podu sa jasnim skretanjima i linijom od trake; prepreke neka budu niske i stabilne.","Probajte po jedan pokret: hodajte do skretanja, napravite mali skok na podu, pa pratite liniju za ravnotežu.","Naizmenično menjajte po jedan deo staze. Preskočite svaki pokret koji nije bezbedan ili prijatan."],example:"Pratite liniju od trake, obiđite jastuk na podu i zatim jednom preskočite drugu liniju trake.",parent:"Neka dete bira ili menja izazov. Staza neka ostane na podu, sklonite oštre predmete i pohvalite pažljivo izvođenje, ne brzinu."}
+  },
+  "Ball Balance": {
+    en:{prep:"Choose a soft, lightweight ball that is easy to hold.",steps:["Choose a short, clear route between two floor markers.","Carry the ball on open palms or between forearms; keep it away from the head and neck.","Walk to the marker, return, and try another comfortable hold if the child wants."],example:"Walk a few steps carrying a soft ball between your forearms, then try again with it resting on open palms.",parent:"Keep the route short and never ask the child to balance the ball on their head or neck. Let them hold it in their hands if that is easier."},
+    sr:{prep:"Izaberite mekanu i laganu loptu koju dete može lako da drži.",steps:["Odredite kratku i slobodnu stazu između dve oznake na podu.","Nosite loptu na otvorenim dlanovima ili između podlaktica; držite je dalje od glave i vrata.","Prošetajte do oznake i nazad, pa probajte drugi udoban položaj ako dete želi."],example:"Napravite nekoliko koraka noseći mekanu loptu između podlaktica, pa probajte ponovo sa loptom na otvorenim dlanovima.",parent:"Neka staza bude kratka i ne tražite od deteta da balansira loptu na glavi ili vratu. Ako je lakše, neka je nosi rukama."}
+  },
+  "Paper Airplane Test": {
+    en:{prep:"Use one sheet of paper for each plane; no other materials are needed.",steps:["Fold a simple paper plane and agree on a clear launch line and direction.","Throw gently one at a time, then notice whether it flew straight, far or turned.","Change one fold or wing shape and test again; take turns as the flyer and observer."],example:"If the plane turns left, check whether both wings match, adjust one fold and try another gentle throw.",parent:"Keep launches aimed away from faces and breakable items. Praise careful experiments and observations, not just the longest flight."},
+    sr:{prep:"Za svaki avion pripremite po jedan list papira; drugi materijali nisu potrebni.",steps:["Napravite jednostavan papirni avion i dogovorite slobodnu liniju i smer bacanja.","Bacajte blago, jedan po jedan, pa primetite da li avion leti pravo, daleko ili skreće.","Promenite jedan pregib ili oblik krila i ponovo probajte; menjajte se u bacanju i posmatranju."],example:"Ako avion skreće ulevo, proverite da li su krila ista, promenite jedan pregib i bacite ga ponovo, nežno.",parent:"Avion usmeravajte dalje od lica i lomljivih predmeta. Pohvalite pažljivo isprobavanje i zapažanja, a ne samo najduži let."}
+  },
+  "Human Sculpture": {
+    en:{steps:["Choose a simple object or shape for the group to make.","Arrange comfortable body poses with feet on the floor; do not lift or pull anyone.","Hold the pose briefly, then relax and let another player choose the next shape."],example:"Work together to make a tree: one person stands as the trunk while others form branches with their arms.",parent:"Keep poses comfortable and brief. Help the group communicate instead of physically moving a child into position."},
+    sr:{steps:["Izaberite jednostavan predmet ili oblik koji ćete zajedno predstaviti.","Zauzmite udobne poze sa stopalima na podu; nemojte podizati ni vući druge.","Kratko zadržite pozu, opustite se, pa neka sledeći igrač izabere novi oblik."],example:"Napravite drvo: jedna osoba je stablo, a ostali rukama predstavljaju grane.",parent:"Neka poze budu udobne i kratke. Dogovarajte se rečima umesto da fizički nameštate dete."}
   }
 };
 
 function preparationForGame(game, language) {
   const text=`${game.title} ${game.description}`.toLowerCase();
   const localized=(en,sr)=>language==="sr"?sr:en;
+  if(["Family Quiz","Letter Clue Guess"].includes(game.title))return "";
   if(text.includes("leaf shadow trace"))return localized("Prepare one safe fallen leaf, paper, a child-safe pencil and a sunny spot.","Pripremite jedan bezbedan opali list, papir, bezbednu olovku i sunčano mesto.");
-  if(/\b(maze|labyrinth)\b/.test(text))return localized("Choose a few large blocks and one small toy; build on a flat, clear surface.","Pripremite nekoliko većih kockica i jednu malu igračku; gradite na ravnoj i slobodnoj površini.");
+  if(/\b(maze|labyrinth)\b/.test(text))return localized("Gather safe items you have, such as paper, cups or cushions, and a small toy. Build on a clear, stable surface.","Pripremite bezbedne predmete koje imate, poput papira, čaša ili jastuka, i malu igračku. Lavirint pravite na stabilnoj i slobodnoj površini.");
   if(/\bmini bowling\b/.test(text))return localized("Prepare a soft ball and a few lightweight, unbreakable cups or bottles as pins.","Pripremite mekanu loptu i nekoliko laganih, nelomljivih čaša ili flašica kao čunjeve.");
   if(/\b(sock|rolled socks)\b/.test(text))return localized("Roll a clean pair of socks into a soft ball and prepare a basket or other safe target.","Urolajte čist par čarapa u mekanu loptu i pripremite korpu ili drugu bezbednu metu.");
   if(/\bballoon\b/.test(text))return localized("Prepare one lightweight balloon and clear sharp or fragile objects from the play area.","Pripremite jedan lagani balon i sklonite oštre ili lomljive predmete iz prostora za igru.");
@@ -654,14 +729,18 @@ function preparationForGame(game, language) {
   if(/\b(leaf|leaves|twig|twigs|stone|stones|pebble|pebbles|nature)\b/.test(text))return localized("Choose a safe outdoor area and use only clean, fallen leaves, twigs or stones needed for the game.","Izaberite bezbedan prostor napolju i koristite samo čisto opalo lišće, grančice ili kamenčiće potrebne za igru.");
   if(game.material==="paper")return localized("Prepare paper and child-safe pencils, crayons or other drawing supplies needed for the activity.","Pripremite papir i bezbedne olovke, bojice ili drugi pribor za crtanje potreban za ovu igru.");
   if(game.material==="household")return localized("Prepare only the safe, clean household items named in the game.","Pripremite samo bezbedne i čiste kućne predmete koji se pominju u igri.");
+  if(game.material==="none")return "";
   return detailContent[language].prepare[game.material];
 }
 
 const state = {
   language:localStorage.getItem("playPicksLanguage")==="en"?"en":"sr", step:0, answers:{}, view:"recommended", collection:null, selectedGame:null,
   profile:JSON.parse(localStorage.getItem("playPicksProfile")||"null"),
-  likes:JSON.parse(localStorage.getItem("playPicksLikes")||"[]")
+  likes:JSON.parse(localStorage.getItem("playPicksLikes")||"[]"),
+  saveCounts:JSON.parse(localStorage.getItem("playPicksSaveCounts")||"{}")
 };
+state.likes.forEach(id=>{state.saveCounts[id]=Math.max(1,Number(state.saveCounts[id])||0)});
+if(state.likes.length)localStorage.setItem("playPicksSaveCounts",JSON.stringify(state.saveCounts));
 const $=selector=>document.querySelector(selector);
 const questions=()=>questionSets[state.language];
 const t=()=>copy[state.language];
@@ -677,24 +756,25 @@ function translate() {
   $("#profileAvatar").textContent=state.profile?.name?.[0]||"?"; $("#profileTitle").textContent=c.profileTitle; $("#profileCopy").textContent=c.profileCopy;
   $("#profileNameLabel").textContent=c.name; $("#profileSaveButton").textContent=c.saveProfile; $("#deleteProfileButton").textContent=c.deleteProfile;
   $("#feedbackLabel").textContent=c.feedbackLabel; $("#feedbackHint").textContent=c.feedbackHint; $("#feedbackButton").textContent=c.feedbackButton;
-  $("#startButton").innerHTML=`${c.findGame} <span>→</span>`; $("#popularButton").textContent=c.familyLove;
+  $("#startButton").innerHTML=`${c.findGame} <span>→</span>`;
   $("#trustOne").textContent=c.trust[0]; $("#trustTwo").textContent=c.trust[1]; $("#trustThree").textContent=c.trust[2];
   $("#visualTitle").textContent=c.visualTitle; $("#visualCopy").textContent=c.visualCopy; $("#parentEyebrow").textContent=c.parentEyebrow;
   $("#parentIntro").textContent=c.parentIntro; $("#dailyLabel").textContent=c.dailyLabel;
   $("#dailyTitle").textContent=c.dailyTitle; $("#dailyCopy").textContent=c.dailyCopy; $("#dailyButton").textContent=c.dailyButton;
   $("#benefitOneTitle").textContent=c.benefitOneTitle; $("#benefitOneCopy").textContent=c.benefitOneCopy;
   $("#benefitTwoTitle").textContent=c.benefitTwoTitle; $("#benefitTwoCopy").textContent=c.benefitTwoCopy;
-  $("#safetyTitle").textContent=c.safetyTitle; $("#safetyCopy").textContent=c.safetyCopy; $("#bottomStartButton").innerHTML=`${c.bottomStart} <span>→</span>`;
+  $("#benefitThreeTitle").textContent=c.benefitThreeTitle; $("#benefitThreeCopy").textContent=c.benefitThreeCopy;
+  $("#safetyTitle").textContent=c.safetyTitle; $("#safetyCopy").textContent=c.safetyCopy;
   $("#exploreEyebrow").textContent=c.exploreEyebrow; $("#exploreTitle").textContent=c.exploreTitle; $("#exploreCopy").textContent=c.exploreCopy;
   $("#momentTitle").textContent=c.momentTitle; $("#momentCopy").textContent=c.momentCopy; $("#skillTitle").textContent=c.skillTitle; $("#skillCopy").textContent=c.skillCopy;
   $$(".nav-button").forEach((b,i)=>b.textContent=c.nav[i]); $$(".language-button").forEach(b=>{const active=b.dataset.language===state.language;b.classList.toggle("is-active",active);b.setAttribute("aria-pressed",active)});
   renderDaily();
 }
 function $$(selector){return document.querySelectorAll(selector)}
-function renderProgress(){ $("#progress").innerHTML=questions().map((q,i)=>`<div class="progress-step ${i===state.step?"is-active":""} ${i<state.step?"is-complete":""}" data-number="${i+1}">${q[1]}</div>`).join("") }
+function renderProgress(){ $("#progress").style.gridTemplateColumns=`repeat(${questions().length}, minmax(0, 1fr))`; $("#progress").innerHTML=questions().map((q,i)=>`<div class="progress-step ${i===state.step?"is-active":""} ${i<state.step?"is-complete":""}" data-number="${i+1}">${q[1]}</div>`).join("") }
 function renderQuestion(){
   const q=questions()[state.step]; $("#stepLabel").textContent=t().step(state.step+1,questions().length); $("#questionTitle").textContent=q[2]; $("#questionHint").textContent=q[3];
-  $("#questionNumber").textContent=String(state.step+1).padStart(2,"0"); $("#choiceGrid").innerHTML=q[4].map(c=>`<button class="choice ${state.answers[q[0]]===c[0]?"is-selected":""}" data-choice="${c[0]}" type="button"><span class="choice-icon">${c[1]}</span><strong>${c[2]}</strong><small>${c[3]}</small></button>`).join("");
+  $("#questionNumber").textContent=String(state.step+1).padStart(2,"0"); $("#choiceGrid").innerHTML=q[4].map(c=>`<button class="choice ${state.answers[q[0]]===c[0]?"is-selected":""}" data-choice="${c[0]}" type="button"><span class="choice-icon">${c[1]}</span><strong>${c[2]}</strong>${c[3]?`<small>${c[3]}</small>`:""}</button>`).join("");
   $$(".choice").forEach(b=>{b.setAttribute("aria-pressed",String(state.answers[q[0]]===b.dataset.choice));b.onclick=()=>{state.answers[q[0]]=b.dataset.choice;renderQuestion()}});
   $("#nextButton").innerHTML=`${state.step===questions().length-1?t().show:t().next} <span>→</span>`; $("#nextButton").disabled=!state.answers[q[0]];
   $("#backButton").textContent=`← ${t().back}`; $("#backButton").classList.toggle("is-visible",state.step>0); renderProgress();
@@ -704,9 +784,10 @@ function score(game){
   if(!state.answers.age)return 0;
   const [amin,amax]=state.answers.age.split("-").map(Number), players=playerCount(state.answers.players); let s=0;
   if(game.minAge<=amin&&game.maxAge>=amax)s+=4; if(game.minPlayers<=players&&game.maxPlayers>=players)s+=3;
-  if(state.answers.place==="either"||game.place==="either"||game.place===state.answers.place)s+=3;
+  const placeMatch=state.answers.place==="either"||game.place==="either"||game.place===state.answers.place||(state.answers.place==="travel"&&travelFriendly(game));
+  if(placeMatch)s+=3;
   if(game.duration<=Number(state.answers.duration))s+=3; if(game.material==="none"||game.material===state.answers.material)s+=3;
-  if(game.activity===state.answers.activity)s+=4; if(game.skill===state.answers.skill)s+=5; return s;
+  if(game.activity===state.answers.activity)s+=4; return s;
 }
 function localized(game){return state.language==="sr"?[game.srTitle,game.srDescription]:[game.title,game.description]}
 function dailyGame(){const now=new Date();const day=Math.floor(new Date(now.getFullYear(),now.getMonth(),now.getDate()).getTime()/86400000);return games[((day%games.length)+games.length)%games.length]}
@@ -715,32 +796,42 @@ function renderDaily(){
   $("#dailyTitle").textContent=title; $("#dailyCopy").textContent=description; $("#dailyButton").textContent=t().dailyButton;
   $("#dailyMeta").innerHTML=`<span>${game.duration} ${t().min}</span><span>${t().place[game.place]}</span><span>${t().ages(game.minAge,game.maxAge)}</span>`;
 }
+function travelFriendly(game){
+  const carGame=game.material==="none"&&game.duration<=15&&game.activity!=="active"&&game.place!=="outdoors"&&["story","search"].includes(game.scene);
+  const movementBreak=game.material==="none"&&game.duration<=15&&game.activity!=="calm"&&["pretend","run","dance","balance"].includes(game.scene);
+  return carGame||movementBreak;
+}
 function categoryMatches(game,key){
   const rules={
-    rainy:g=>g.place!=="outdoors", summer:g=>g.place!=="indoors", winter:g=>g.place!=="outdoors",
-    holiday:g=>g.id%2===0, travel:g=>g.duration<=15||g.material==="none", party:g=>g.maxPlayers>=8
+    rainy:g=>g.place==="indoors"||(g.place==="either"&&["story","pretend","search","draw","build"].includes(g.scene)&&g.activity!=="active"),
+    summer:g=>g.place==="outdoors"||(g.place==="either"&&["nature","run","ball","balance"].includes(g.scene)),
+    winter:g=>g.place==="indoors"||(g.place==="either"&&["build","draw","nature","balance","dance"].includes(g.scene)),
+    holiday:g=>g.maxPlayers>=4&&g.skill==="social",
+    travel:travelFriendly, party:g=>g.maxPlayers>=8
   };
   return rules[key]?.(game)??false;
 }
 function collectionGames(){
   const direct=state.collection?.type==="skill"?games.filter(g=>g.skill===state.collection.key):games.filter(g=>categoryMatches(g,state.collection?.key));
-  const remainder=games.filter(g=>!direct.includes(g));
-  return [...direct,...remainder].slice(0,50);
+  return direct.slice(0,20);
 }
 function gameList(){
   if(state.view==="collection")return collectionGames();
   if(state.view==="saved")return games.filter(g=>state.likes.includes(g.id));
-  if(state.view==="popular")return games.slice(0,50);
-  return [...games].sort((a,b)=>score(b)-score(a)||a.id-b.id).slice(0,50);
+  if(state.view==="popular"){
+    return [...games].sort((a,b)=>(Number(state.saveCounts[b.id])||0)-(Number(state.saveCounts[a.id])||0)||a.id-b.id).slice(0,20);
+  }
+  return [...games].sort((a,b)=>score(b)-score(a)||a.id-b.id).slice(0,20);
 }
 function gameCard(game){
   const [title,description]=localized(game), liked=state.likes.includes(game.id);
-  return `<article class="activity" data-detail="${game.id}" tabindex="0"><img class="activity-image" src="${game.image}" alt="${t().image(title)}"><div class="activity-content"><div class="activity-topline"><h3>${title}</h3><button class="like-button ${liked?"is-liked":""}" data-like="${game.id}" aria-label="${t().likes}">♥</button></div><p>${description}</p><div class="activity-meta"><span class="tag">${game.duration} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span></div><button class="details-button" data-open-detail="${game.id}">${t().details}</button></div></article>`;
+  const saveLabel=liked?t().savedAction:t().saveAction;
+  return `<article class="activity" data-detail="${game.id}" tabindex="0"><img class="activity-image" src="${game.image}" alt="${t().image(title)}"><div class="activity-content"><div class="activity-topline"><h3>${title}</h3><button class="like-button ${liked?"is-liked":""}" data-like="${game.id}" aria-label="${saveLabel}" aria-pressed="${liked}">♥ <span class="save-label">${saveLabel}</span></button></div><p>${description}</p><div class="activity-meta"><span class="tag">${game.duration} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span></div><button class="details-button" data-open-detail="${game.id}">${t().details}</button></div></article>`;
 }
 function renderResults(){
   const list=gameList(), c=t(); $("#questionCard").hidden=true; $("#progress").hidden=true; $("#results").hidden=false;
   $("#landing").hidden=true; $("#explorePage").hidden=true;
-  $("#editButton").hidden=state.view==="popular"||state.view==="saved";
+  $("#editButton").hidden=state.view==="popular"||state.view==="saved"||state.view==="collection";
   $("#resultsTitle").textContent=state.view==="popular"?c.popular:state.view==="saved"?c.saved:state.view==="collection"?state.collection.label:c.ready;
   $("#resultsSummary").textContent=state.view==="popular"?c.popularSummary:state.view==="saved"?c.savedSummary(list.length):state.view==="collection"?c.categorySummary(list.length):c.matches;
   $("#resultsSummary").hidden=!$("#resultsSummary").textContent;
@@ -764,17 +855,21 @@ function openCollection(type,key,label){state.collection={type,key,label};state.
 function openGameDetail(id){
   const game=games.find(g=>g.id===id);if(!game)return;state.selectedGame=id;
   const [title,description]=localized(game), d=detailContent[state.language], liked=state.likes.includes(id);
+  const specific=gameDetailOverrides[game.title]?.[state.language];
   $("#detailImage").src=game.image;$("#detailImage").alt=t().image(title);$("#detailEyebrow").textContent=t().guide;$("#detailTitle").textContent=title;$("#detailDescription").textContent=description;
   $("#detailTags").innerHTML=`<span class="tag">${game.duration} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span>`;
   $("#detailStepsTitle").textContent=t().stepsTitle;
-  $("#detailSteps").innerHTML=[preparationForGame(game,state.language),...d.steps[game.scene]].map(step=>`<li>${step}</li>`).join("");
+  const preparation=specific?.prep??preparationForGame(game,state.language);
+  $("#detailSteps").innerHTML=[preparation,...(specific?.steps||d.steps[game.scene])].filter(Boolean).map(step=>`<li>${step}</li>`).join("");
   $("#detailExampleTitle").textContent=t().exampleTitle;
-  const example=exampleVariations[state.language][game.scene][(id-1)%3];
+  const example=specific?.example||exampleVariations[state.language][game.scene][(id-1)%3];
   $("#detailExample").textContent=state.language==="sr"?`Za igru „${title}“ probajte: ${example}`:`For ${title}, try: ${example}`;
   const parentTips=d.parent[game.scene];
   $("#detailParentTitle").textContent=t().parentTipTitle;
-  $("#detailParent").textContent=parentTips[(id-1)%parentTips.length];
+  $("#detailParent").textContent=specific?.parent||parentTips[(id-1)%parentTips.length];
   $("#detailCloseButton").textContent=t().closeDetails;
+  const saveLabel=liked?t().savedAction:t().saveAction;
+  $("#detailLikeButton").innerHTML=`♥ <span class="save-label">${saveLabel}</span>`;$("#detailLikeButton").setAttribute("aria-label",saveLabel);$("#detailLikeButton").setAttribute("aria-pressed",String(liked));
   $("#detailLikeButton").classList.toggle("is-liked",liked);if(!$("#gameDialog").open)$("#gameDialog").showModal();
 }
 function setView(view){
@@ -783,13 +878,13 @@ function setView(view){
 }
 function requireProfile(){if(state.profile)return true;$("#profileDialog").showModal();return false}
 function showToast(message){const toast=$("#toast");toast.textContent=message;toast.classList.add("is-visible");clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>toast.classList.remove("is-visible"),2600)}
-function toggleLike(id){if(!requireProfile())return;const liked=state.likes.includes(id);state.likes=liked?state.likes.filter(x=>x!==id):[...state.likes,id];localStorage.setItem("playPicksLikes",JSON.stringify(state.likes));showToast(liked?t().unliked:t().liked);if(!$("#results").hidden)renderResults();if($("#gameDialog").open)openGameDetail(id)}
+function toggleLike(id){if(!requireProfile())return;const liked=state.likes.includes(id);if(!liked){state.saveCounts[id]=(Number(state.saveCounts[id])||0)+1;localStorage.setItem("playPicksSaveCounts",JSON.stringify(state.saveCounts))}state.likes=liked?state.likes.filter(x=>x!==id):[...state.likes,id];localStorage.setItem("playPicksLikes",JSON.stringify(state.likes));showToast(liked?t().unliked:t().liked);if(!$("#results").hidden)renderResults();if($("#gameDialog").open)openGameDetail(id)}
 function showFilters(step=state.step){state.step=step;$("#landing").hidden=true;$("#explorePage").hidden=true;$("#questionCard").hidden=false;$("#progress").hidden=false;$("#results").hidden=true;renderQuestion();scrollTo({top:0,behavior:"smooth"})}
 function showLanding(){state.step=0;state.answers={};state.view="recommended";$("#landing").hidden=false;$("#explorePage").hidden=true;$("#questionCard").hidden=true;$("#progress").hidden=true;$("#results").hidden=true;$$(".nav-button").forEach(b=>b.classList.toggle("is-active",b.dataset.view==="recommended"));scrollTo({top:0,behavior:"smooth"})}
 $("#nextButton").onclick=()=>{if(state.step<questions().length-1){state.step++;renderQuestion()}else{state.view="recommended";renderResults()}};
 $("#backButton").onclick=()=>{if(state.step){state.step--;renderQuestion()}else showLanding()}; $("#homeButton").onclick=showLanding; $("#editButton").onclick=()=>showFilters(0);
 $("#changeFiltersButton").onclick=()=>setView("recommended"); $$(".nav-button").forEach(b=>b.onclick=()=>setView(b.dataset.view));
-$("#startButton").onclick=()=>showFilters(0); $("#bottomStartButton").onclick=()=>showFilters(0); $("#dailyButton").onclick=()=>openGameDetail(dailyGame().id); $("#popularButton").onclick=()=>setView("popular");
+$("#startButton").onclick=()=>showFilters(0); $("#dailyButton").onclick=()=>openGameDetail(dailyGame().id);
 $("#gameDialogClose").onclick=()=>$("#gameDialog").close();$("#detailCloseButton").onclick=()=>$("#gameDialog").close();$("#detailLikeButton").onclick=()=>toggleLike(state.selectedGame);
 $$(".language-button").forEach(b=>b.onclick=()=>{state.language=b.dataset.language;localStorage.setItem("playPicksLanguage",state.language);translate();if($("#gameDialog").open)openGameDetail(state.selectedGame);if(!$("#explorePage").hidden)renderExplore();else if(!$("#results").hidden)renderResults();else if(!$("#questionCard").hidden)renderQuestion()});
 $("#profileButton").onclick=()=>{$("#profileName").value=state.profile?.name||"";$("#deleteProfileButton").classList.toggle("is-visible",Boolean(state.profile));$("#profileDialog").showModal()};
