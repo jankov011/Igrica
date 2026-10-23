@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="sr-Latn">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,7 +38,6 @@
       <div id="landing">
         <section class="hero">
           <div class="hero-content">
-            <span class="parent-badge" id="parentBadge">Made with parents in mind</span>
             <h1 id="heroTitle">Find their next <span>favorite game.</span></h1>
             <p class="hero-copy" id="heroCopy">Answer seven quick questions and we’ll search simple, screen-free games for the perfect fit.</p>
             <div class="hero-actions">
@@ -169,6 +168,12 @@
           <label for="profileName" id="profileNameLabel">Name</label>
           <input id="profileName" name="profileName" maxlength="30" autocomplete="nickname" required />
           <button class="primary-button profile-save" id="profileSaveButton" value="default" type="submit">Save profile</button>
+          <div class="profile-feedback">
+            <label for="feedbackMessage" id="feedbackLabel">Send a comment</label>
+            <textarea id="feedbackMessage" maxlength="1500" rows="4"></textarea>
+            <p id="feedbackHint">Your email app will open with the comment ready to send.</p>
+            <button class="feedback-button" id="feedbackButton" type="button">Prepare email</button>
+          </div>
           <button class="danger-button" id="deleteProfileButton" type="button">Delete profile</button>
         </form>
       </dialog>
@@ -188,10 +193,6 @@
             <p class="game-detail-intro" id="detailDescription"></p>
             <div class="detail-tags" id="detailTags"></div>
             <div class="detail-section">
-              <h3 id="detailPrepareTitle">Before you start</h3>
-              <p id="detailPrepare"></p>
-            </div>
-            <div class="detail-section">
               <h3 id="detailStepsTitle">How to play</h3>
               <ol class="detail-steps" id="detailSteps"></ol>
             </div>
@@ -208,7 +209,6 @@
               </div>
             </div>
             <div class="detail-actions">
-              <button class="primary-button" id="detailPlayButton" type="button">We played this!</button>
               <button class="hero-secondary" id="detailCloseButton" type="button">Back to games</button>
             </div>
           </div>

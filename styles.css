@@ -48,7 +48,6 @@ button:focus-visible, input:focus-visible { outline: 4px solid rgba(116, 89, 232
 .hero { position: relative; display: grid; grid-template-columns: 1.25fr .75fr; align-items: center; gap: 45px; min-height: 540px; padding: 62px 58px; border-radius: 38px; background: linear-gradient(135deg, #fff 0%, #fff7e8 52%, #f2edff 100%); box-shadow: 0 24px 70px rgba(73, 58, 137, .12); overflow: hidden; }
 .hero::before { position: absolute; right: -80px; bottom: -130px; width: 350px; height: 350px; border-radius: 50%; background: linear-gradient(135deg, rgba(255,94,112,.17), rgba(116,89,232,.2)); content: ""; }
 .hero-content { position: relative; z-index: 2; }
-.parent-badge { display: inline-flex; align-items: center; margin-bottom: 26px; border-radius: 999px; padding: 8px 13px; background: #e9fbf5; color: #2a7b63; font-size: .76rem; font-weight: 900; }
 .eyebrow, .step-label { margin: 0 0 9px; color: var(--coral-dark); font-size: .75rem; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
 h1, h2, h3, p { margin-top: 0; }
 h1 { max-width: 700px; margin-bottom: 18px; font-size: clamp(3rem, 6vw, 5rem); line-height: .96; letter-spacing: -.06em; }
@@ -164,9 +163,6 @@ h1 span { background: linear-gradient(90deg, var(--coral), var(--purple)); backg
 .like-button { transition: transform .2s ease, background .2s ease; }
 .like-button:hover { transform: scale(1.12); }
 .like-button.is-liked { background: var(--coral); color: white; }
-.game-stats { display: flex; gap: 12px; margin: 14px 0 0; color: var(--muted); font-size: .72rem; font-weight: 800; }
-.play-button { width: 100%; margin-top: 14px; border: 0; border-radius: 10px; padding: 9px; background: var(--ink); color: white; cursor: pointer; font-weight: 900; }
-.play-button:hover { background: var(--coral-dark); }
 .details-button { width: 100%; margin-top: 8px; border: 1px solid #ded8f5; border-radius: 10px; padding: 9px; background: #faf8ff; color: var(--purple); cursor: pointer; font-weight: 900; }
 .details-button:hover { background: #f0ecff; }
 .profile-dialog { width: min(440px, calc(100% - 30px)); border: 0; border-radius: 24px; padding: 0; box-shadow: 0 24px 70px rgba(36, 52, 75, .25); }
@@ -181,16 +177,17 @@ h1 span { background: linear-gradient(90deg, var(--coral), var(--purple)); backg
 .game-detail-intro { color: var(--muted); font-size: 1.03rem; line-height: 1.65; }
 .detail-like { width: 44px; height: 44px; font-size: 1.35rem; }
 .detail-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 30px; }
-.detail-section { margin: 28px 0; }
+.detail-section { margin: 26px 0; }
 .detail-section h3, .detail-tip h3 { margin-bottom: 8px; font-size: 1.05rem; }
-.detail-section p, .detail-tip p { margin-bottom: 0; color: var(--muted); line-height: 1.6; }
-.detail-steps { display: grid; gap: 12px; padding-left: 24px; }
-.detail-steps li { padding-left: 8px; color: var(--muted); line-height: 1.55; }
+.detail-steps { display: grid; gap: 10px; padding-left: 24px; }
+.detail-steps li { padding-left: 6px; color: var(--muted); line-height: 1.55; }
 .detail-steps li::marker { color: var(--coral); font-weight: 900; }
 .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.detail-tip { border-radius: 18px; padding: 20px; background: #fff8df; }
-.detail-tip-parent { background: #f1edff; }
-.detail-tip > span { display: block; margin-bottom: 10px; font-size: 1.5rem; }
+.detail-tip { border-radius: 16px; padding: 20px; background: #fff8df; }
+.detail-tip-parent { background: #eaf8f1; }
+.detail-tip h3 { margin-top: 8px; }
+.detail-tip p { margin-bottom: 0; color: var(--muted); line-height: 1.6; }
+.detail-tip > span { display: block; font-size: 1.4rem; }
 .detail-actions { display: flex; gap: 10px; margin-top: 30px; }
 .game-dialog-close { z-index: 2; display: grid; width: 38px; height: 38px; place-items: center; border-radius: 50%; background: rgba(255,255,255,.92); box-shadow: var(--shadow); }
 .profile-card { position: relative; padding: 34px; }
@@ -199,6 +196,12 @@ h1 span { background: linear-gradient(90deg, var(--coral), var(--purple)); backg
 .profile-card label { display: block; margin: 20px 0 7px; font-weight: 900; }
 .profile-card input { width: 100%; border: 2px solid var(--line); border-radius: 12px; padding: 12px; outline: none; }
 .profile-card input:focus { border-color: var(--coral); }
+.profile-feedback { margin-top: 24px; border-top: 1px solid var(--line); padding-top: 18px; }
+.profile-feedback textarea { display: block; width: 100%; resize: vertical; border: 2px solid var(--line); border-radius: 12px; padding: 12px; color: var(--ink); font: inherit; }
+.profile-feedback textarea:focus { outline: 4px solid rgba(255, 94, 112, .18); border-color: var(--coral); }
+.profile-feedback p { margin: 7px 0 12px; font-size: .82rem; }
+.feedback-button { border: 1px solid var(--line); border-radius: 999px; padding: 10px 14px; background: white; color: var(--ink); cursor: pointer; font-weight: 900; }
+.feedback-button:hover { border-color: var(--coral); color: var(--coral-dark); }
 .profile-hero { font-size: 2.7rem; }
 .dialog-close { position: absolute; top: 16px; right: 18px; border: 0; background: transparent; color: var(--muted); cursor: pointer; font-size: 1.7rem; }
 .profile-save { width: 100%; margin-top: 16px; }
