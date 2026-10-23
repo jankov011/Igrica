@@ -248,18 +248,18 @@ footer { display: block; padding: 8px 0 28px; color: #949eaa; font-size: .8rem; 
   .language-button { width: 40px; height: 40px; }
   .profile-button span:last-child { display: none; }
   .hero { padding-top: 34px; }
-  .hero { min-height: auto; gap: 10px; padding: 28px 14px; border-radius: 26px; }
-  h1 { max-width: none; margin-bottom: 14px; font-size: 1.95rem; line-height: 1.04; }
+  .hero { min-height: 660px; align-content: start; gap: 10px; padding: 18px 14px 22px; border-radius: 26px; }
+  h1 { max-width: 270px; margin-bottom: 14px; font-size: 1.95rem; line-height: 1.04; }
   .hero-copy { font-size: .96rem; line-height: 1.5; }
   .hero-actions { align-items: stretch; flex-direction: column; }
-  .hero-visual { display: block; width: min(220px, 100%); min-height: 150px; margin: 4px auto 0; }
-  .play-card-main { inset: 20px 38px 16px; border-width: 5px; }
-  .kite-art { width: 56px; height: 72px; }
+  .hero-visual { display: block; width: min(270px, 100%); min-height: 290px; margin: 8px auto 0; }
+  .play-card-main { inset: 30px 48px 22px; border-width: 5px; }
+  .kite-art { width: 80px; height: 102px; }
   .floating-bubble { border-width: 4px; font-size: 1.45rem; }
-  .bubble-one { width: 52px; height: 52px; }
-  .bubble-two { right: 0; bottom: 0; width: 60px; height: 60px; }
+  .bubble-one { width: 62px; height: 62px; }
+  .bubble-two { right: 0; bottom: 0; width: 72px; height: 72px; }
   .trust-row { gap: 9px 14px; }
-  .parent-section { padding-top: 68px; }
+  .parent-section { padding-top: 48px; }
   .parent-grid { grid-template-columns: 1fr; }
   .parent-card-featured { grid-column: auto; }
   .parent-grid { row-gap: 4px; }
