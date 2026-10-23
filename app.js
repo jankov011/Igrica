@@ -90,32 +90,31 @@ const gameIdeas = [
 ["Adventure Path","Staza avanture","Create a route with turns, jumps and balance challenges.","Napravite stazu sa okretima, skokovima i izazovima ravnoteže.","balance"],
 ["Ball Balance","Balansiranje lopte","Carry a soft ball along a short route using safe holds such as open palms or forearms; try a different hold each round.","Prenosite mekanu loptu kratkom stazom bezbednim položajima, na primer na otvorenim dlanovima ili podlakticama; svakog kruga probajte drugi položaj.","ball"],
 ["Funny Portrait","Smešni portret","Draw a portrait without lifting the pencil from the paper.","Nacrtajte portret bez podizanja olovke sa papira.","draw"],
-["Cloud Detective","Detektiv za oblake","Spot pictures in clouds and connect them in a short adventure.","Pronađite slike u oblacima i povežite ih u kratku avanturu.","nature"],
+["Cloud Shapes","Oblici u oblacima","Look at the clouds and take turns saying what they resemble. Use the shapes you spot to make up a short story together.","Posmatrajte oblake i naizmenično recite na šta vas podsećaju. Od uočenih oblika zajedno smislite kratku priču.","nature"],
 ["Movement Memory","Pamćenje pokreta","Add one movement to a growing sequence and repeat it together.","Dodajte pokret nizu koji raste i ponovite ga zajedno.","dance"],
 ["Paper Airplane Test","Test papirnog aviona","Fold a simple paper airplane, fly it from a marked line, then change one fold to see whether it flies straighter or farther.","Napravite jednostavan papirni avion i bacite ga sa označene linije. Promenite jedan pregib i proverite da li leti pravo ili dalje.","build"],
-["Mini Bowling","Mini kuglanje","Roll a ball to knock down safe household pins.","Kotrljajte loptu da oborite bezbedne kućne čunjeve.","ball"],
+["Mini Bowling","Mini kuglanje","Set up a few empty plastic bottles or paper cups as pins, then roll a soft ball to knock them down.","Poređajte nekoliko praznih plastičnih flašica ili papirnih čaša kao čunjeve, pa ih oborite mekanom loptom.","ball"],
 ["Yes, Let's","Da, hajde","Suggest imaginary actions; everyone says yes and acts them out.","Predlažite zamišljene radnje; svi kažu da i izvode ih.","pretend"],
 ["Garden Relay","Baštenska štafeta","Complete playful movement tasks between two outdoor markers.","Izvršavajte zabavne zadatke kretanja između dve spoljne oznake.","run"],
 ["Treasure Map","Mapa blaga","Draw a map with landmarks, hazards and hidden treasure.","Nacrtajte mapu sa znamenitostima, preprekama i skrivenim blagom.","draw"],
 ["Sock Basketball","Košarka čarapama","Toss rolled socks into a basket from marked distances.","Bacajte urolane čarape u korpu sa označenih udaljenosti.","ball"],
 ["Mirror Moves","Pokreti u ogledalu","Copy a partner’s slow movements as accurately as possible.","Kopirajte spore pokrete partnera što preciznije.","dance"],
 ["Texture Safari","Safari tekstura","Find something smooth, rough, soft and bumpy.","Pronađite nešto glatko, hrapavo, meko i kvrgavo.","search"],
-["Cardboard City","Grad od kartona","Turn boxes into roads, homes and landmarks for a tiny city.","Pretvorite kutije u puteve, kuće i znamenitosti malog grada.","build"],
+["Cardboard City","Grad od kartona","Use clean small boxes as houses, then draw doors, windows, roads and a park on scrap paper. Arrange them into a tiny city and give it a name.","Iskoristite čiste manje kutije za kuće, a na papiru nacrtajte vrata, prozore, puteve i park. Rasporedite ih u mali grad i dajte mu ime.","build"],
 ["Whisper Chain","Lanac šapata","Pass a funny message around and compare the final version.","Prenesite smešnu poruku šapatom i uporedite završnu verziju.","story"],
 ["Leaf Race","Trka listova","Blow leaves across a finish line without touching them.","Duvanjem pomerajte lišće do cilja bez dodirivanja.","nature"],
 ["Statue Museum","Muzej statua","Pose as themed statues while a visitor tours the museum.","Pozirajte kao tematske statue dok posetilac obilazi muzej.","pretend"],
 ["Shape Explorer","Istraživač oblika","Find circles, triangles and squares in the space around you.","Pronađite krugove, trouglove i kvadrate u prostoru oko sebe.","search"],
 ["Floor Is Lava","Pod je lava","Travel across safe stepping spots without touching the floor.","Pređite preko bezbednih tačaka bez dodirivanja poda.","balance"],
 ["Name That Mime","Pogodi pantomimu","Act out everyday actions without words for others to guess.","Bez reči odglumite svakodnevne radnje koje ostali pogađaju.","pretend"],
-["Paper Maze","Lavirint na papiru","Draw a maze and swap with a friend to solve it.","Nacrtajte lavirint i zamenite ga sa prijateljem za rešavanje.","draw"],
+["Paper Maze","Lavirint na papiru","Draw a simple maze with a start, finish and a few dead ends, then swap mazes and trace each route with a pencil.","Nacrtajte jednostavan lavirint sa početkom, ciljem i nekoliko slepih ulica, pa zamenite papire i pronađite put olovkom.","draw"],
 ["Backyard Olympics","Dvorišna olimpijada","Create three simple events for speed, aim and balance.","Napravite tri jednostavne discipline brzine, ciljanja i ravnoteže.","run"],
-["Rolling Goal","Kotrljanje u gol","Build two goals and roll a ball past a defender.","Napravite dva gola i otkotrljajte loptu pored odbrane.","ball"],
+["Make a Goal","Napravimo gol","On flat, clear ground, mark a small goal with two short sticks or stones that will not roll. Take turns gently rolling a soft ball through it.","Na ravnom, slobodnom prostoru označite mali gol kratkim grančicama ili kamenovima koji se ne kotrljaju. Naizmenično nežno kotrljajte mekanu loptu kroz gol.","ball"],
 ["Sound Orchestra","Orkestar zvukova","Assign each player a sound and conduct a group performance.","Dodelite svakom igraču zvuk i dirigujte grupnim nastupom.","story"],
-["Nature Crown","Kruna iz prirode","Collect fallen nature pieces and arrange a royal crown.","Sakupite otpale delove prirode i složite kraljevsku krunu.","nature"],
 ["Tape-Line Balance","Balans po liniji","Follow a safe floor line heel-to-toe with playful poses.","Pratite bezbednu liniju na podu korak po korak uz zabavne poze.","balance"],
 ["Monster Steps","Koraci čudovišta","Invent giant, tiny and wobbly monster walks.","Osmislite džinovske, sićušne i klimave korake čudovišta.","dance"],
 ["Memory Tray","Poslužavnik pamćenja","Study several objects, hide one and identify what changed.","Pogledajte nekoliko predmeta, sakrijte jedan i pogodite šta se promenilo.","search"],
-["Bridge Builders","Graditelji mosta","Build a bridge that can hold a small toy.","Napravite most koji može da izdrži malu igračku.","build"],
+["Bridge Builders","Graditelji mosta","Span a small gap between two sturdy supports with folded paper, cardboard strips or craft sticks. Test the bridge with a small toy and add one piece at a time.","Prebacite presavijeni papir, trake kartona ili drvene štapiće preko malog razmaka između dva stabilna oslonca. Ispitajte most malom igračkom i dodajte po jedan deo.","build"],
 ["Compliment Ball","Lopta lepih reči","Pass a soft ball gently around the group. Whoever catches it shares one specific, kind thing someone in the group did.","Nežno dodajte mekanu loptu u krugu. Ko je uhvati, kaže jednu konkretnu lepu stvar koju je neko iz grupe uradio.","ball"],
 ["Weather Reporter","Vremenski reporter","Present today’s weather with dramatic gestures and predictions.","Predstavite današnje vreme dramatičnim pokretima i prognozom.","pretend"],
 ["Dot-to-Doodle","Od tačke do crteža","Place random dots, connect them and turn the shape into art.","Postavite nasumične tačke, spojite ih i pretvorite oblik u crtež.","draw"],
@@ -123,10 +122,8 @@ const gameIdeas = [
 ["Obstacle Mission","Misija sa preprekama","Crawl, step and weave through a safe homemade course.","Puzite, koračajte i provlačite se kroz bezbedan kućni poligon.","run"],
 ["Story Dice Without Dice","Priča bez kockica","Point to three nearby objects and make them story heroes.","Izaberite tri predmeta u blizini i učinite ih junacima priče.","story"],
 ["Pebble Patterns","Šare od kamenčića","Arrange stones in repeating patterns, spirals or pictures.","Složite kamenčiće u ponavljajuće šare, spirale ili slike.","nature"],
-["Ball Tunnel","Tunel za loptu","Build a human tunnel and gently roll a ball through it.","Napravite tunel od ljudi i nežno provucite loptu kroz njega.","ball"],
 ["Copycat Clap","Kopiraj pljesak","Create clap rhythms that others echo and extend.","Napravite ritam pljeskanja koji ostali ponavljaju i produžavaju.","dance"],
 ["Paper Costume","Kostim od papira","Design wearable paper accessories for an imaginary character.","Napravite papirne dodatke za kostim zamišljenog junaka.","build"],
-["Eyes-Open Guide","Vođenje uz otvorene oči","Follow a partner’s spoken directions along a clear, low-obstacle route with eyes open.","Pratite usmena uputstva partnera kroz slobodnu stazu bez prepreka, otvorenih očiju.","balance"],
 ["Alphabet Hunt","Lov na slova","Find objects beginning with as many letters as possible.","Pronađite predmete koji počinju na što više različitih slova.","search"],
 ["Emotion Charades","Pantomima osećanja","Act out an emotion and discuss clues that revealed it.","Odglumite osećanje i razgovarajte o znacima koji su ga otkrili.","pretend"],
 ["Chalk River","Reka od krede","Draw a winding river path and jump between its banks.","Nacrtajte krivudavu reku i skačite između njenih obala.","run"],
@@ -141,7 +138,6 @@ const gameIdeas = [
 ["Paper Puppet Show","Predstava papirnih lutaka","Create simple paper characters and perform a tiny play.","Napravite papirne junake i izvedite kratku predstavu.","story"],
 ["Cone-Free Slalom","Slalom bez čunjeva","Use safe objects as markers and weave through the course.","Koristite bezbedne predmete kao oznake i vijugajte kroz stazu.","run"],
 ["Seed and Tree","Seme i drvo","Grow from a tiny curled seed into a swaying tree.","Izrastite iz malog sklupčanog semena u drvo koje se njiše.","nature"],
-["Goalkeeper Challenge","Izazov za golmana","Take turns rolling and safely stopping gentle shots.","Naizmenično kotrljajte i bezbedno zaustavljajte lagane udarce.","ball"],
 ["One-Line Creature","Biće iz jedne linije","Draw a creature using one continuous looping line.","Nacrtajte biće jednom neprekidnom vijugavom linijom.","draw"],
 ["Museum Guide","Muzejski vodič","Choose household treasures and give visitors a guided tour.","Izaberite kućna blaga i vodite posetioce kroz izložbu.","pretend"],
 ["Balance Delivery","Dostava u ravnoteži","Carry a light object on a tray through a simple route.","Prenesite lagan predmet na poslužavniku kroz jednostavnu stazu.","balance"],
@@ -165,7 +161,6 @@ const gameIdeas = [
 ["Captain Says","Kapetan kaže","Follow commands only when they begin with the captain’s phrase.","Izvršite komande samo kada počnu kapetanovom rečenicom.","pretend"],
 ["Hopscotch Remix","Nove školice","Create a hopscotch path with special actions in each square.","Napravite školice sa posebnim radnjama u svakom polju.","run"],
 ["Leaf Shadow Trace","Crtanje senke lista","Place a leaf in sunlight and trace its changing shadow.","Postavite list na sunce i pratite njegovu promenljivu senku.","nature"],
-["Ball Pass Puzzle","Slagalica dodavanja","Pass a ball around the group without repeating a route.","Dodajte loptu kroz grupu bez ponavljanja putanje.","ball"],
 ["Mood Music Moves","Pokreti uz raspoloženje","Move differently to happy, calm and dramatic rhythms.","Krećite se drugačije uz vesele, mirne i dramatične ritmove.","dance"],
 ["Tallest Tiny Tower","Najviša mala kula","Build a tall tower from the smallest safe objects available.","Napravite visoku kulu od najmanjih dostupnih bezbednih predmeta.","build"],
 ["Guess My Rule","Pogodi moje pravilo","Sort objects by a secret rule for others to discover.","Razvrstajte predmete po tajnom pravilu koje ostali otkrivaju.","search"],
@@ -176,7 +171,6 @@ const gameIdeas = [
 ["Final Pose Challenge","Izazov završne poze","Cross the space with a dance and finish in a themed pose.","Pređite prostor plesom i završite u zadatoj pozi.","dance"],
 ["Colorful Steps","Šareni koraci","Follow a path of colors and invent a movement for each one.","Pratite stazu boja i osmislite pokret za svaku boju.","run"],
 ["Treasure Statues","Statue čuvara blaga","Freeze like a treasure guardian whenever the music stops.","Ukočite se kao čuvar blaga kada muzika stane.","pretend"],
-["Shape Relay","Štafeta oblika","Carry a soft shape to the matching finish line.","Prenesite mekani oblik do odgovarajućeg cilja.","run"],
 ["Window Weather","Vreme na prozoru","Describe the view outside and act out the weather you see.","Opišite pogled kroz prozor i odglumite vreme koje vidite.","story"],
 ["Pillow Mountain","Planina od jastuka","Climb over a safe pillow mountain using careful steps.","Pređite preko bezbedne planine od jastuka pažljivim koracima.","balance"],
 ["Tiptoe Trail","Staza na prstima","Walk a quiet trail and change direction at each marker.","Hodajte tihom stazom i menjajte smer kod svake oznake.","balance"],
@@ -185,7 +179,7 @@ const gameIdeas = [
 ["Mission Cards","Kartice misija","Complete a sequence of playful movement missions in order.","Izvršite niz razigranih pokretnih misija po redu.","run"],
 ["Crawl Like a Comet","Puzi kao kometa","Travel low and fast, then finish with a bright star pose.","Krećite se nisko i brzo, a zatim završite pozom sjajne zvezde.","run"],
 ["Five-Step Story","Priča od pet koraka","Tell a story where every sentence includes a new action.","Ispričajte priču u kojoj svaka rečenica ima novu radnju.","story"],
-["Question Train","Voz pitanja","Take turns asking a question that moves an imaginary train forward.","Naizmenično postavljajte pitanja koja vode zamišljeni voz napred.","story"],
+["Question Train","Voz pitanja","Take turns asking simple questions about an imaginary train trip. Each answer chooses the next station, and the group decides where the train goes next.","Zamislite zajedničko putovanje vozom i naizmenično postavljajte jednostavna pitanja. Svaki odgovor određuje sledeću stanicu, a grupa bira kuda voz ide dalje.","story"],
 ["Pocket Narrator","Džepni pripovedač","Choose three small objects and give each one a voice.","Izaberite tri mala predmeta i dajte svakom svoj glas.","story"],
 ["Rhyme Relay","Rimovana štafeta","Build a silly rhyme chain one word at a time.","Gradite smešan lanac rima reč po reč.","story"],
 ["Sound Story","Priča od zvukova","Tell a story using a different sound for every character.","Ispričajte priču koristeći drugi zvuk za svakog lika.","story"],
@@ -200,7 +194,7 @@ const gameIdeas = [
 ["Round-Robin Doodle","Kružni crtež","Pass a drawing around and add one surprising detail each turn.","Prosleđujte crtež i dodajte po jedan detalj iznenađenja.","draw"],
 ["Shape Family","Porodica oblika","Give geometric shapes names, feelings and a family story.","Dajte geometrijskim oblicima imena, osećanja i porodičnu priču.","draw"],
 ["Folded Face","Presavijeno lice","Fold paper, draw one feature, unfold and complete the funny face.","Presavijte papir, nacrtajte detalj, otvorite ga i dovršite lice.","draw"],
-["Postcard Puzzle","Slagalica razglednice","Draw a postcard in sections and ask a partner to rebuild it.","Nacrtajte razglednicu u delovima i neka je partner sastavi.","draw"],
+["Postcard Puzzle","Sastavi razglednicu","Draw a simple postcard scene on paper. An adult cuts it into four large pieces; mix them up and let a partner put the picture back together.","Nacrtajte jednostavan prizor na papiru. Odrasla osoba ga iseče na četiri velika dela; pomešajte ih i neka partner ponovo sastavi sliku.","draw"],
 ["Pattern Portrait","Portret sa šarama","Make a portrait where hair, clothes and background use patterns.","Napravite portret sa šarama u kosi, odeći i pozadini.","draw"],
 ["Invisible Ink Map","Mapa nevidljivog mastila","Draw a secret route with symbols and explain how to decode it.","Nacrtajte tajnu rutu simbolima i objasnite kako se čita.","draw"],
 ["Draw the Feeling","Nacrtaj osećanje","Use lines and colors to show a feeling without drawing a face.","Prikažite osećanje linijama i bojama bez crtanja lica.","draw"],
@@ -227,7 +221,7 @@ const gameIdeas = [
 ["Target Ladder","Merdevine za cilj","Move a soft ball through targets that get farther each round.","Pogađajte meke mete koje su sve dalje u svakom krugu.","ball"],
 ["Roll and Follow","Kotrljaj i prati","Roll a ball to a partner, then follow it with a new movement.","Otkotrljajte loptu partneru i pratite je novim pokretom.","ball"],
 ["Two-Bounce Catch","Hvatanje posle dva odskoka","Let the ball bounce twice before trying a careful catch.","Pustite loptu da odskoči dva puta pre pažljivog hvatanja.","ball"],
-["Color Goalkeeper","Golman boja","Call a color and stop the soft ball near its matching marker.","Izgovorite boju i zaustavite mekanu loptu kod odgovarajuće oznake.","ball"],
+["Guess the Leader","Pogodi vođu","One player looks away while the group quietly chooses a leader. The leader makes slow, simple movements for everyone to copy; the player turns back and guesses who is leading.","Jedan igrač se okrene dok grupa tiho bira vođu. Vođa pravi spore, jednostavne pokrete koje svi oponašaju; igrač se vraća i pogađa ko vodi.","pretend"],
 ["Balloon Volleyball","Odbojka balonom","Tap a balloon over a line and count cooperative hits.","Prebacujte balon preko linije i brojite zajedničke udarce.","ball"],
 ["Partner Pass Pattern","Šablon dodavanja","Create a repeating pass pattern and see if the group remembers it.","Napravite šablon dodavanja i proverite da li ga grupa pamti.","ball"],
 ["Rolling Ramps","Rampe za kotrljanje","Make a gentle ramp and compare how different balls travel.","Napravite blagu rampu i uporedite kretanje različitih lopti.","ball"],
@@ -274,7 +268,10 @@ const gameIdeas = [
 ["Gratitude Garden","Bašta zahvalnosti","Place imaginary flowers for things each player appreciates.","Postavite zamišljene cvetove za stvari na kojima je svako zahvalan.","nature"],
 ["Breathing Buddy","Drug za disanje","Help a toy or partner match five slow, comfortable breaths.","Pomozite igrački ili partneru da prati pet sporih, prijatnih udaha.","nature"],
 ["Letter Clue Guess","Na slovo, na slovo","Choose a letter and category, give clues for a word that starts with it, and let others guess the word.","Izaberite slovo i kategoriju, dajte tragove za reč koja počinje tim slovom i neka je ostali pogode.","story"],
-["Movement Commands","Komande pokreta","Follow one safe movement command at a time: make a star shape, crouch, lie on the floor or do one small jump. Pause between moves.","Pratite jednu bezbednu komandu za pokret: raširite se kao zvezda, čučnite, lezite na pod ili napravite mali skok. Pravite pauze između pokreta.","run"]
+["Movement Commands","Komande pokreta","Follow one safe movement command at a time: make a star shape, crouch, lie on the floor or do one small jump. Pause between moves.","Pratite jednu bezbednu komandu za pokret: raširite se kao zvezda, čučnite, lezite na pod ili napravite mali skok. Pravite pauze između pokreta.","run"],
+["Don't Step on a Crack","Ne gazi pukotinu","On a quiet, even sidewalk with an adult, walk slowly without stepping on cracks. Stop if the path is crowded, uneven or near traffic.","Na mirnom, ravnom trotoaru, uz odraslu osobu, hodajte polako bez gaženja pukotina. Prekinite igru ako je put prometan, neravan ili blizu saobraćaja.","search"],
+["Guess Who I Am","Pogodi ko sam","One player thinks of a familiar person or story character. The others ask yes-or-no questions until they guess, then switch roles.","Jedan igrač zamisli poznatu osobu ili lik iz priče. Ostali postavljaju pitanja na koja se odgovara sa „da” ili „ne” dok ne pogode, pa menjaju uloge.","story"],
+["One-Minute Challenge","Minutni izazov","Choose a simple task, set a one-minute timer and take turns seeing how many times you can do it. Keep it playful, not competitive.","Izaberite jednostavan zadatak, podesite tajmer na minut i naizmenično pratite koliko puta možete da ga uradite. Neka bude zabavno, bez takmičenja.","story"]
 ];
 
 const scenes = {
@@ -386,7 +383,7 @@ const artRecipes = {
   "Adventure Path":[["tape",232,198,1.3],["cushion",305,172,1.2],["kidJump",168,152,1.2],["steps",358,152,1.1]],
   "Ball Balance":[["ball",152,92,.9],["kidReach",152,182,1.3],["ball",322,150,1.2]],
   "Funny Portrait":[["paper",228,112,1.8],["mask",228,106,.85],["pencil",342,150,1.35]],
-  "Cloud Detective":[["cloud",205,78,1.45],["cloud",325,108,1.05],["kid",118,182,1.3],["magnifier",305,168,1.2]],
+  "Cloud Shapes":[["cloud",205,78,1.45],["cloud",325,108,1.05],["kid",118,182,1.3]],
   "Movement Memory":[["kid",118,182,1.2],["kidDance",232,182,1.2],["kidJump",342,182,1.2]],
   "Paper Airplane Test":[["plane",262,98,1.55],["kidReach",118,182,1.3],["paper",352,158,.95]],
   "Mini Bowling":[["ball",125,152,1.15],["pin",252,152,1.15],["pin",305,152,1.15],["pin",358,152,1.15]],
@@ -405,9 +402,8 @@ const artRecipes = {
   "Name That Mime":[["mask",158,120,1.6],["kidDance",298,182,1.3],["question",372,88,.85]],
   "Paper Maze":[["maze",230,116,1.9],["pencil",348,150,1.3]],
   "Backyard Olympics":[["kidRun",118,182,1.3],["star",248,88,1.3],["pin",330,170,1.15],["ball",382,166,.85]],
-  "Rolling Goal":[["goal",312,160,1.5],["kidRun",110,182,1.2],["ball",188,162,1.05]],
+  "Make a Goal":[["goal",312,160,1.5],["kidRun",110,182,1.2],["ball",188,162,1.05]],
   "Sound Orchestra":[["note",222,96,1.3],["note",290,130,1],["note",352,92,1.2],["kid",118,182,1.2],["kid",332,182,1.2]],
-  "Nature Crown":[["crown",250,118,1.8],["leaf",148,160,1.2],["flower",352,160,1.05]],
   "Tape-Line Balance":[["tape",222,192,1.6],["kidReach",222,182,1.3],["steps",342,170,1.05]],
   "Monster Steps":[["kidJump",152,182,1.5],["steps",302,158,1.6]],
   "Memory Tray":[["cup",192,122,.95],["apple",250,120,.78],["star",306,120,.88],["tray",248,160,2]],
@@ -419,7 +415,6 @@ const artRecipes = {
   "Obstacle Mission":[["cushion",128,182,1.1],["bridge",252,168,1.1],["kidJump",252,138,1],["tape",356,192,.65]],
   "Story Dice Without Dice":[["bubble",250,68,1.1],["cup",142,162,1.05],["sock",232,152,.95],["apple",322,158,.95]],
   "Pebble Patterns":[["stone",170,120,.95],["stone",232,120,.95],["stone",294,120,.95],["stone",140,164,1.15],["stone",202,164,1.15],["stone",264,164,1.15],["stone",326,164,1.15]],
-  "Ball Tunnel":[["bridge",222,168,1.25],["kid",148,182,1.3],["kid",292,182,1.3],["ball",222,170,1]],
   "Copycat Clap":[["note",252,66,1],["hands",182,132,1.5],["hands",305,132,1.2]],
   "Paper Costume":[["kidCape",152,182,1.4],["paper",302,120,1.25],["crown",362,152,.95]],
   "Blindfold-Free Guide":[["bubble",232,72,1.05],["kid",158,182,1.3],["kid",292,182,1.3],["steps",372,166,.95]],
@@ -437,7 +432,6 @@ const artRecipes = {
   "Paper Puppet Show":[["bubble",252,58,.95],["puppet",192,142,1.55],["puppet",302,142,1.25]],
   "Cone-Free Slalom":[["cup",148,166,1.05],["cup",250,166,1.05],["cup",352,166,1.05],["kidRun",198,182,1.2],["steps",302,186,.85]],
   "Seed and Tree":[["stone",128,172,.95],["tree",248,172,1.25],["tree",352,166,1.6]],
-  "Goalkeeper Challenge":[["goal",292,160,1.6],["kidReach",292,178,1.15],["ball",150,162,1.15]],
   "One-Line Creature":[["spiral",232,116,1.35],["pencil",342,150,1.3]],
   "Museum Guide":[["kidReach",118,182,1.2],["star",188,110,1.15],["cup",262,160,.95],["apple",332,156,.95]],
   "Balance Delivery":[["cup",272,112,.85],["tray",272,132,1.55],["kidReach",158,182,1.3],["steps",362,176,.95]],
@@ -461,7 +455,6 @@ const artRecipes = {
   "Captain Says":[["bubble",250,68,1],["kidReach",148,182,1.3],["kid",250,182,1.3],["kidReach",352,182,1.3]],
   "Hopscotch Remix":[["hopscotch",258,150,1.8],["kidJump",128,182,1.2]],
   "Leaf Shadow Trace":[["sun",358,62,.85],["leaf",198,96,1.25],["paper",232,152,1.15],["pencil",332,160,1.1]],
-  "Ball Pass Puzzle":[["ball",182,108,.95],["ball",312,108,.95],["kid",118,182,1.2],["kid",250,182,1.2],["kid",372,182,1.2]],
   "Mood Music Moves":[["note",292,98,1.3],["heart",362,140,.85],["kidDance",158,182,1.4]],
   "Tallest Tiny Tower":[["tower",252,178,1.3],["stone",128,176,.95],["cup",352,172,.95]],
   "Guess My Rule":[["question",122,110,.95],["shapes",252,132,1.4]],
@@ -681,6 +674,34 @@ const gameDetailOverrides = {
   "Human Sculpture": {
     en:{steps:["Choose a simple object or shape for the group to make.","Arrange comfortable body poses with feet on the floor; do not lift or pull anyone.","Hold the pose briefly, then relax and let another player choose the next shape."],example:"Work together to make a tree: one person stands as the trunk while others form branches with their arms.",parent:"Keep poses comfortable and brief. Help the group communicate instead of physically moving a child into position."},
     sr:{steps:["Izaberite jednostavan predmet ili oblik koji ćete zajedno predstaviti.","Zauzmite udobne poze sa stopalima na podu; nemojte podizati ni vući druge.","Kratko zadržite pozu, opustite se, pa neka sledeći igrač izabere novi oblik."],example:"Napravite drvo: jedna osoba je stablo, a ostali rukama predstavljaju grane.",parent:"Neka poze budu udobne i kratke. Dogovarajte se rečima umesto da fizički nameštate dete."}
+  },
+  "Paper Maze": {
+    en:{example:"Draw one start, one finish and two or three dead ends. Swap papers and use a pencil to trace a path to the finish.",parent:"For a bonus challenge, draw a tiny treasure at the finish and add one extra dead end for your partner to navigate."},
+    sr:{example:"Nacrtajte početak, cilj i dve-tri slepe ulice. Zamenite papire i olovkom pratite put do cilja.",parent:"Za bonus izazov nacrtajte malo blago na cilju i dodajte još jednu slepu ulicu koju druga osoba treba da izbegne."}
+  },
+  "Question Train": {
+    en:{example:"“Where should we go first?” “To the zoo.” “Which animal will we visit?” “The elephants.” Each answer adds a stop to the trip.",parent:"For a bonus, pick a theme such as animals, places or food and make each new question connect to the previous stop. Anyone can pass a turn."},
+    sr:{example:"„Kuda prvo putujemo?” „U zoološki vrt.” „Koju životinju ćemo posetiti?” „Slonove.” Svaki odgovor dodaje novu stanicu putovanju.",parent:"Za bonus izaberite temu, poput životinja, mesta ili hrane, pa neka se svako novo pitanje nadoveže na prethodnu stanicu. Svako može da preskoči red."}
+  },
+  "Postcard Puzzle": {
+    en:{example:"Draw a beach with a sun, umbrella and bucket. An adult cuts the picture into four large pieces; mix them and take turns putting it back together.",parent:"For a bonus, hide one piece and describe what is missing before revealing it. An adult should handle the scissors."},
+    sr:{example:"Nacrtajte plažu sa suncem, suncobranom i kantom. Odrasla osoba iseče sliku na četiri velika dela; pomešajte ih i naizmenično je sastavljajte.",parent:"Za bonus sakrijte jedan deo i opišite šta nedostaje pre nego što ga otkrijete. Makazama rukuje odrasla osoba."}
+  },
+  "Guess the Leader": {
+    en:{example:"The leader slowly taps their knees, raises their arms, then switches to a new gentle movement while everyone copies. The returning player guesses who started the changes.",parent:"Keep movements slow and comfortable. Let anyone pass on being the observer, and avoid sudden or unsafe actions."},
+    sr:{example:"Vođa polako tapka kolena, podigne ruke, pa pređe na novi blag pokret koji svi oponašaju. Vraćeni igrač pogađa ko je započeo promene.",parent:"Neka pokreti budu spori i prijatni. Svako može da preskoči ulogu posmatrača; izbegavajte nagle ili nebezbedne pokrete."}
+  },
+  "Don't Step on a Crack": {
+    en:{example:"Walk at a normal pace along a quiet, flat stretch of pavement, with an adult beside you. Skip the game near crossings, driveways or uneven ground.",parent:"Keep attention on the path ahead, not only on the cracks. Stop or change the game whenever the pavement is busy or unsafe."},
+    sr:{example:"Hodajte uobičajenim korakom po mirnom i ravnom delu trotoara, uz odraslu osobu. Preskočite igru kod prelaza, prilaza za kola ili neravnog tla.",parent:"Gledajte put ispred sebe, a ne samo pukotine. Prekinite ili promenite igru ako je trotoar prometan ili nebezbedan."}
+  },
+  "Guess Who I Am": {
+    en:{example:"Think of a familiar story character. Others can ask, “Are you from a book?” or “Do you wear a crown?” until they guess.",parent:"Choose someone all players can know, allow broad yes-or-no questions and let anyone pass or switch roles."},
+    sr:{example:"Zamislite poznat lik iz priče. Ostali mogu da pitaju: „Da li si iz knjige?” ili „Da li nosiš krunu?” dok ne pogode.",parent:"Birajte osobu ili lik koga svi mogu da poznaju, prihvatite jednostavna pitanja i dozvolite svakome da preskoči red ili promeni ulogu."}
+  },
+  "One-Minute Challenge": {
+    en:{prep:"Choose a safe, simple task and set a one-minute timer.",example:"Set a one-minute timer and see how many plastic cups you can stack. Swap roles and try again.",parent:"Compare each player's result with their own previous try, not with others. If a timer feels stressful, count down together instead."},
+    sr:{prep:"Izaberite bezbedan, jednostavan zadatak i podesite tajmer na minut.",example:"Podesite tajmer na minut i proverite koliko plastičnih čaša možete da složite. Zamenite uloge i pokušajte ponovo.",parent:"Uporedite pokušaj svakog igrača sa njegovim prethodnim, ne sa drugima. Ako tajmer stvara pritisak, odbrojavajte zajedno."}
   }
 };
 
