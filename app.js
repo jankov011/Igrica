@@ -40,7 +40,7 @@ const copy = {
     liked:"Saved to your profile ♥", unliked:"Removed from saved games", saveAction:"Save", savedAction:"Saved",
     exploreTitle:"Games for every moment.", exploreCopy:"Choose a situation or a skill.", exploreModeLabel:"Explore games by", bySituation:"By situation", bySkill:"By skill",
     momentTitle:"Choose a situation", momentCopy:"Browse games by setting or moment.", skillTitle:"Choose a skill", skillCopy:"Browse games by what you want to practice.",
-    details:"Details", categorySummary:()=>"", exampleTitle:"Try this example", parentTipTitle:"Parent tip", closeDetails:"Back to games",
+    details:"Details", categorySummary:()=>"", exampleTitle:"Try this example", parentTipTitle:"Bonus idea", closeDetails:"Back to games",
     feedbackLabel:"Send a comment", feedbackHint:"Your email app will open with the comment ready to send.", feedbackButton:"Prepare email", feedbackRequired:"Write a comment first.", feedbackSubject:"A comment about Play Picks"
   },
   sr: {
@@ -65,7 +65,7 @@ const copy = {
     liked:"Sačuvano u profilu ♥", unliked:"Uklonjeno iz sačuvanih igara", saveAction:"Sačuvaj", savedAction:"Sačuvano",
     exploreTitle:"Igre za svaki trenutak.", exploreCopy:"Birajte situaciju ili veštinu.", exploreModeLabel:"Istraži igre prema", bySituation:"Po situaciji", bySkill:"Po veštini",
     momentTitle:"Izaberite situaciju", momentCopy:"Pregledajte igre prema mestu ili trenutku.", skillTitle:"Izaberite veštinu", skillCopy:"Pregledajte igre prema onome što želite da podstaknete.",
-    details:"Detalji", categorySummary:()=>"", exampleTitle:"Primer", parentTipTitle:"Savet za roditelje", closeDetails:"Nazad na igre",
+    details:"Detalji", categorySummary:()=>"", exampleTitle:"Primer", parentTipTitle:"Bonus ideja", closeDetails:"Nazad na igre",
     feedbackLabel:"Pošaljite komentar", feedbackHint:"Otvoriće se e-pošta sa pripremljenim komentarom.", feedbackButton:"Pripremi e-poštu", feedbackRequired:"Prvo napišite komentar.", feedbackSubject:"Komentar o aplikaciji Naše igre"
   }
 };
