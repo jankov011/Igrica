@@ -35,13 +35,13 @@
         <section class="hero">
           <div class="hero-content">
             <h1 id="heroTitle">Find their next <span>favorite game.</span></h1>
-            <p class="hero-copy" id="heroCopy">Answer seven quick questions and we’ll search simple, screen-free games for the perfect fit.</p>
+            <p class="hero-copy" id="heroCopy">Answer a few questions to find a simple game that fits the moment.</p>
             <div class="hero-actions">
               <button class="primary-button hero-primary" id="startButton" type="button">Find a game <span>→</span></button>
             </div>
             <div class="trust-row">
               <span id="trustTwo">✓ Screen-free ideas</span>
-              <span id="trustThree">✓ Ages 2–12</span>
+              <span id="trustThree">✓ Ages 3–12</span>
             </div>
           </div>
           <div class="hero-visual" aria-hidden="true">
@@ -175,6 +175,29 @@
               </div>
             </div>
             <p class="game-detail-intro" id="detailDescription"></p>
+            <section class="detail-demo" id="detailDemo" hidden aria-labelledby="detailDemoTitle">
+              <div class="detail-demo-toolbar">
+                <h3 id="detailDemoTitle"></h3>
+                <button class="detail-demo-toggle" id="detailDemoToggle" type="button" aria-pressed="false"><span aria-hidden="true">▶</span><span id="detailDemoToggleText"></span></button>
+              </div>
+              <div class="detail-demo-steps">
+                <div class="detail-demo-step">
+                  <span class="detail-demo-number">1</span>
+                  <svg class="demo-turner" viewBox="0 0 64 58" aria-hidden="true"><circle cx="26" cy="10" r="6" fill="#7459e8"/><path d="M26 17v20m0-13L14 32m12-8 9-8M26 37 17 50m9-13 9 13" fill="none" stroke="#7459e8" stroke-width="4" stroke-linecap="round"/><path d="M46 17q10 8 1 17" fill="none" stroke="#f47e88" stroke-width="3" stroke-linecap="round"/></svg>
+                  <div><strong id="detailDemoStep1Title"></strong><small id="detailDemoStep1Copy"></small></div>
+                </div>
+                <div class="detail-demo-step">
+                  <span class="detail-demo-number">2</span>
+                  <svg class="demo-copy" viewBox="0 0 64 58" aria-hidden="true"><g fill="none" stroke="#78a995" stroke-width="3.5" stroke-linecap="round"><circle cx="13" cy="11" r="5" fill="#b9a8ff" stroke="none"/><path d="M13 17v17m0-12-7-7m7 7 6-9m-6 21-5 10m5-10 5 10"/><circle cx="32" cy="9" r="6" fill="#7459e8" stroke="none"/><path d="M32 16v18m0-12-10-11m10 11 10-11m-10 23-7 11m7-11 7 11" stroke="#7459e8"/><circle cx="51" cy="11" r="5" fill="#b9a8ff" stroke="none"/><path d="M51 17v17m0-12-7-7m7 7 6-9m-6 21-5 10m5-10 5 10"/></g></svg>
+                  <div><strong id="detailDemoStep2Title"></strong><small id="detailDemoStep2Copy"></small></div>
+                </div>
+                <div class="detail-demo-step">
+                  <span class="detail-demo-number">3</span>
+                  <svg class="demo-guesser" viewBox="0 0 64 58" aria-hidden="true"><circle cx="24" cy="11" r="6" fill="#7459e8"/><path d="M24 18v19m0-12-10 8m10-8 10 8m-10 4-8 12m8-12 8 12" fill="none" stroke="#7459e8" stroke-width="4" stroke-linecap="round"/><circle cx="48" cy="13" r="10" fill="#fff1c9"/><text class="demo-question" x="48" y="18" text-anchor="middle" font-size="14" font-weight="800" fill="#7459e8">?</text></svg>
+                  <div><strong id="detailDemoStep3Title"></strong><small id="detailDemoStep3Copy"></small></div>
+                </div>
+              </div>
+            </section>
             <div class="detail-tags" id="detailTags"></div>
             <div class="detail-grid" id="detailGrid">
               <div class="detail-tip" id="detailExampleCard">

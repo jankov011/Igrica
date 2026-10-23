@@ -41,7 +41,7 @@ const copy = {
     liked:"Saved to your profile ♥", unliked:"Removed from saved games", saveAction:"Save", savedAction:"Saved",
     exploreTitle:"Games for every moment.", exploreCopy:"Choose a situation or a skill.", exploreModeLabel:"Explore games by", bySituation:"Games for every occasion", bySkill:"Games to build skills",
     momentTitle:"Choose a situation", momentCopy:"Browse games by setting or moment.", skillTitle:"Choose a skill", skillCopy:"Browse games by what you want to practice.",
-    details:"Details", categorySummary:()=>"", exampleTitle:"Try this example", parentTipTitle:"Bonus idea", closeDetails:"Back to games",
+    details:"Details", categorySummary:()=>"", exampleTitle:"Try this example", parentTipTitle:"Bonus idea", closeDetails:"Back to games", demoTitle:"How to play", demoPlay:"Play", demoPause:"Pause", demoSteps:[["Turn away","The observer turns around while the group chooses a leader."],["Copy the leader","Everyone copies the leader’s slow movement."],["Guess who leads","The observer turns back and guesses."]],
     feedbackLabel:"Send a comment", feedbackHint:"Your email app will open with the comment ready to send.", feedbackButton:"Prepare email", feedbackRequired:"Write a comment first.", feedbackSubject:"A comment about Play Picks"
   },
   sr: {
@@ -67,7 +67,7 @@ const copy = {
     liked:"Sačuvano u profilu ♥", unliked:"Uklonjeno iz sačuvanih igara", saveAction:"Sačuvaj", savedAction:"Sačuvano",
     exploreTitle:"Igre za svaki trenutak.", exploreCopy:"Birajte situaciju ili veštinu.", exploreModeLabel:"Istraži igre prema", bySituation:"Igre za različite prilike", bySkill:"Igre za razvoj veština",
     momentTitle:"Izaberite situaciju", momentCopy:"Pregledajte igre prema mestu ili trenutku.", skillTitle:"Izaberite veštinu", skillCopy:"Pregledajte igre prema onome što želite da podstaknete.",
-    details:"Detalji", categorySummary:()=>"", exampleTitle:"Primer", parentTipTitle:"Bonus ideja", closeDetails:"Nazad na igre",
+    details:"Detalji", categorySummary:()=>"", exampleTitle:"Primer", parentTipTitle:"Bonus ideja", closeDetails:"Nazad na igre", demoTitle:"Kako se igra", demoPlay:"Pusti", demoPause:"Pauziraj", demoSteps:[["Okreni se","Posmatrač se okreće dok grupa bira vođu."],["Prati vođu","Svi oponašaju spori pokret vođe."],["Pogodi ko vodi","Posmatrač se vrati i pogađa."]],
     feedbackLabel:"Pošaljite komentar", feedbackHint:"Otvoriće se e-pošta sa pripremljenim komentarom.", feedbackButton:"Pripremi e-poštu", feedbackRequired:"Prvo napišite komentar.", feedbackSubject:"Komentar o aplikaciji Naše igre"
   }
 };
@@ -223,7 +223,7 @@ const gameIdeas = [
 ["Target Ladder","Merdevine za cilj","Move a soft ball through targets that get farther each round.","Pogađajte meke mete koje su sve dalje u svakom krugu.","ball"],
 ["Roll and Follow","Kotrljaj i prati","Roll a ball to a partner, then follow it with a new movement.","Otkotrljajte loptu partneru i pratite je novim pokretom.","ball"],
 ["Two-Bounce Catch","Hvatanje posle dva odskoka","Let the ball bounce twice before trying a careful catch.","Pustite loptu da odskoči dva puta pre pažljivog hvatanja.","ball"],
-["Guess the Leader","Pogodi vođu","One player looks away while the group quietly chooses a leader. The leader makes slow, simple movements for everyone to copy; the player turns back and guesses who is leading.","Jedan igrač se okrene dok grupa tiho bira vođu. Vođa pravi spore, jednostavne pokrete koje svi oponašaju; igrač se vraća i pogađa ko vodi.","pretend"],
+["Guess the Leader","Pogodi vođu","One player turns away while the group chooses a leader. The leader makes slow movements for everyone to copy. The player turns back toward the group and guesses who is leading.","Jedan igrač se okrene leđima dok grupa bira vođu. Vođa pravi spore pokrete koje svi oponašaju. Igrač se zatim okrene prema grupi i pogađa ko vodi.","pretend"],
 ["Balloon Volleyball","Odbojka balonom","Tap a balloon over a line and count cooperative hits.","Prebacujte balon preko linije i brojite zajedničke udarce.","ball"],
 ["Partner Pass Pattern","Šablon dodavanja","Create a repeating pass pattern and see if the group remembers it.","Napravite šablon dodavanja i proverite da li ga grupa pamti.","ball"],
 ["Rolling Ramps","Rampe za kotrljanje","Make a gentle ramp and compare how different balls travel.","Napravite blagu rampu i uporedite kretanje različitih lopti.","ball"],
@@ -690,8 +690,8 @@ const gameDetailOverrides = {
     sr:{example:"Nacrtajte plažu sa suncem, suncobranom i kantom. Odrasla osoba iseče sliku na četiri velika dela; pomešajte ih i naizmenično je sastavljajte.",parent:"Za bonus sakrijte jedan deo i opišite šta nedostaje pre nego što ga otkrijete. Makazama rukuje odrasla osoba."}
   },
   "Guess the Leader": {
-    en:{example:"The leader slowly taps their knees, raises their arms, then switches to a new gentle movement while everyone copies. The returning player guesses who started the changes.",parent:"Keep movements slow and comfortable. Let anyone pass on being the observer, and avoid sudden or unsafe actions."},
-    sr:{example:"Vođa polako tapka kolena, podigne ruke, pa pređe na novi blag pokret koji svi oponašaju. Vraćeni igrač pogađa ko je započeo promene.",parent:"Neka pokreti budu spori i prijatni. Svako može da preskoči ulogu posmatrača; izbegavajte nagle ili nebezbedne pokrete."}
+    en:{example:"One player turns away. The group chooses a leader who slowly raises and lowers their arms; everyone copies. The player turns back toward the group and guesses who started the movement.",parent:"Keep movements slow and comfortable. Let anyone pass on being the observer, and avoid sudden or unsafe actions."},
+    sr:{example:"Jedan igrač se okrene leđima. Grupa bira vođu koji polako podiže i spušta ruke; svi ga oponašaju. Igrač se okrene nazad prema grupi i pogađa ko je započeo pokret.",parent:"Neka pokreti budu spori i prijatni. Svako može da preskoči ulogu posmatrača; izbegavajte nagle ili nebezbedne pokrete."}
   },
   "Don't Step on a Crack": {
     en:{example:"Walk at a normal pace along a quiet, flat stretch of pavement, with an adult beside you. Skip the game near crossings, driveways or uneven ground.",parent:"Keep attention on the path ahead, not only on the cracks. Stop or change the game whenever the pavement is busy or unsafe."},
@@ -712,6 +712,10 @@ const gameDetailOverrides = {
   "Statue Museum": {
     en:{example:"Each player chooses a simple statue pose. The visitor walks slowly through the museum and guesses what each statue represents.",parent:"For a bonus, the visitor turns away while one statue quietly changes its pose. The visitor looks back and guesses which statue changed."},
     sr:{example:"Svako izabere jednostavnu pozu statue. Posetilac polako obilazi muzej i pogađa šta koja statua predstavlja.",parent:"Za bonus, posetilac se okrene dok jedna statua tiho promeni pozu. Kada se vrati, pogađa koja se statua promenila."}
+  },
+  "Breathing Buddy": {
+    en:{example:"Lie down comfortably and place a small stuffed toy on your belly. Notice it rise and fall as you breathe normally.",parent:"For a bonus, imagine the toy is sailing on gentle waves as your belly rises and falls. Keep breathing natural; stop if it feels uncomfortable."},
+    sr:{example:"Udobno lezite i stavite malu plišanu igračku na stomak. Posmatrajte kako se blago podiže i spušta dok dišete prirodno.",parent:"Za bonus zamislite da igračka plovi na blagim talasima dok se stomak podiže i spušta. Dišite prirodno i prekinite ako je detetu neprijatno."}
   }
 };
 
@@ -859,11 +863,17 @@ function renderExplore(){
   scrollTo({top:0,behavior:"smooth"});
 }
 function openCollection(type,key,label){state.collection={type,key,label};state.view="collection";renderResults();scrollTo({top:0,behavior:"smooth"})}
+let detailDemoTimer=null;
 function openGameDetail(id){
   const game=games.find(g=>g.id===id);if(!game)return;state.selectedGame=id;
   const [title,description]=localized(game), d=detailContent[state.language], liked=state.likes.includes(id);
   const specific=gameDetailOverrides[game.title]?.[state.language];
   $("#detailImage").src=game.image;$("#detailImage").alt=t().image(title);$("#detailTitle").textContent=title;$("#detailDescription").textContent=description;
+  const showDemo=game.title==="Guess the Leader", demoCopy=t().demoSteps;
+  if(detailDemoTimer){clearInterval(detailDemoTimer);detailDemoTimer=null}
+  $("#detailDemo").hidden=!showDemo;$("#detailDemo").classList.remove("is-playing");
+  $$(".detail-demo-step").forEach((step,index)=>step.classList.toggle("is-active",showDemo&&index===0));
+  if(showDemo){$("#detailDemoTitle").textContent=t().demoTitle;demoCopy.forEach((step,index)=>{$(`#detailDemoStep${index+1}Title`).textContent=step[0];$(`#detailDemoStep${index+1}Copy`).textContent=step[1]});$("#detailDemoToggleText").textContent=t().demoPlay;$("#detailDemoToggle").querySelector("[aria-hidden='true']").textContent="▶";$("#detailDemoToggle").setAttribute("aria-pressed","false")}
   $("#detailTags").innerHTML=`<span class="tag">${game.duration} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span>`;
   $("#detailExampleTitle").textContent=t().exampleTitle;
   const example=specific?.example;
@@ -891,6 +901,7 @@ $("#nextButton").onclick=()=>{if(state.step<questions().length-1){state.step++;r
 $("#backButton").onclick=()=>{if(state.step){state.step--;renderQuestion()}else showLanding()}; $("#homeButton").onclick=showLanding; $("#editButton").onclick=()=>showFilters(0);
 $("#changeFiltersButton").onclick=()=>setView("recommended"); $$(".nav-button").forEach(b=>b.onclick=()=>setView(b.dataset.view));
 $("#startButton").onclick=()=>showFilters(0); $("#dailyButton").onclick=()=>openGameDetail(dailyGame().id);
+$("#detailDemoToggle").onclick=()=>{const playing=$("#detailDemo").classList.toggle("is-playing"),steps=[...$$(".detail-demo-step")];if(detailDemoTimer){clearInterval(detailDemoTimer);detailDemoTimer=null}if(playing&&steps.length){let activeIndex=0;steps.forEach((step,index)=>step.classList.toggle("is-active",index===0));detailDemoTimer=setInterval(()=>{steps[activeIndex].classList.remove("is-active");activeIndex=(activeIndex+1)%steps.length;steps[activeIndex].classList.add("is-active")},1600)}else{steps.forEach(step=>step.classList.remove("is-active"))}$("#detailDemoToggle").setAttribute("aria-pressed",String(playing));$("#detailDemoToggleText").textContent=playing?t().demoPause:t().demoPlay;$("#detailDemoToggle").querySelector("[aria-hidden='true']").textContent=playing?"Ⅱ":"▶"};
 $("#gameDialogClose").onclick=()=>$("#gameDialog").close();$("#detailCloseButton").onclick=()=>$("#gameDialog").close();$("#detailLikeButton").onclick=()=>toggleLike(state.selectedGame);
 $$ (".language-button").forEach(b=>b.onclick=()=>{state.language=b.dataset.language;translate();if($("#gameDialog").open)openGameDetail(state.selectedGame);if(!$("#explorePage").hidden)renderExplore();else if(!$("#results").hidden)renderResults();else if(!$("#questionCard").hidden)renderQuestion()});
 $("#profileButton").onclick=()=>{$("#profileName").value=state.profile?.name||"";$("#deleteProfileButton").classList.toggle("is-visible",Boolean(state.profile));$("#profileDialog").showModal()};
