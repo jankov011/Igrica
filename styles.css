@@ -202,10 +202,10 @@ h1 span { color: var(--coral); }
 .detail-demo-step strong { color: var(--ink); font-size: .88rem; }
 .detail-demo-step small { margin-top: 3px; color: var(--muted); font-size: .77rem; }
 .demo-turner, .demo-guesser { transform-box: fill-box; transform-origin: center; }
-.detail-demo-step.is-active .demo-turner { animation: demo-turn-away .55s ease-in-out forwards; }
-.detail-demo-step.is-active .demo-guesser { animation: demo-turn-back .55s ease-in-out forwards; }
-.detail-demo-step.is-active .demo-copy { transform-box: fill-box; transform-origin: center bottom; animation: demo-copy .8s ease-in-out infinite alternate; }
-.detail-demo-step.is-active .demo-question { transform-box: fill-box; transform-origin: center; animation: demo-question .8s ease-in-out infinite alternate; }
+.detail-demo.is-playing .detail-demo-step.is-active .demo-turner { animation: demo-turn-away .55s ease-in-out forwards; }
+.detail-demo.is-playing .detail-demo-step.is-active .demo-guesser { animation: demo-turn-back .55s ease-in-out forwards; }
+.detail-demo.is-playing .detail-demo-step.is-active .demo-copy { transform-box: fill-box; transform-origin: center bottom; animation: demo-copy .8s ease-in-out infinite alternate; }
+.detail-demo.is-playing .detail-demo-step.is-active .demo-question { transform-box: fill-box; transform-origin: center; animation: demo-question .8s ease-in-out infinite alternate; }
 @keyframes demo-turn-away { from { transform: scaleX(1); } to { transform: scaleX(-1); } }
 @keyframes demo-turn-back { from { transform: scaleX(-1); } to { transform: scaleX(1); } }
 @keyframes demo-copy { from { transform: translateY(0); } to { transform: translateY(-4px); } }
