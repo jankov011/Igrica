@@ -1,19 +1,19 @@
 const questionSets = {
   en: [
-    ["age", "Age", "How old are the children?", "Choose the age of the youngest player.", [["3-4","🐣","3–4 years","Little explorers"],["5-6","🧸","5–6 years","Curious creators"],["7-9","🦊","7–9 years","Big imaginations"],["10-12","🚀","10–12 years","Confident players"]]],
-    ["players", "Children", "How many children are playing?", "We’ll choose games that work for your group.", [["1","🌟","One child","Solo play"],["2","🙌","Two children","A playful pair"],["3-4","🎈","3–4 children","A small group"],["5+","🎉","5+ children","Party or class"]]],
-    ["place", "Setting", "Where will they play?", "Pick the space available right now.", [["indoors","🏠","Indoors",""],["outdoors","🌿","Outdoors",""],["travel","🚗","On the go",""],["either","🌤️","Either one",""]]],
-    ["duration", "Time", "How much time do you have?", "We’ll prioritize games that fit your play window.", [["5","⚡","Up to 5 min","A quick reset"],["15","⏱️","Up to 15 min","A play break"],["30","🕰️","Up to 30 min","Time to create"],["60","🌈","Up to 1 hour","A bigger adventure"]]],
-    ["material", "Materials", "What can they use?", "Games with no materials are always a good fit.", [["none","🙌","Nothing","Just imagination"],["paper","🖍️","Paper & pencils","Simple craft supplies"],["household","📦","Household items","Cups, cushions and more"],["ball","⚽","A ball","Any safe ball"]]],
-    ["activity", "Energy", "What activity level feels right?", "Match the game to their energy.", [["calm","☁️","Calm","Quiet and focused"],["medium","🪁","Playful","Some movement"],["active","⚡","Very active","Lots of energy"]]],
+    ["age", "Age", "How old are the children?", "Select all age groups; games must suit the full selected age range.", [["3-4","🐣","3–4 years","Little explorers"],["5-6","🧸","5–6 years","Curious creators"],["7-9","🦊","7–9 years","Big imaginations"],["10-12","🚀","10–12 years","Confident players"]]],
+    ["players", "Children", "How many children are playing?", "Select all group sizes that may be playing.", [["1","🌟","One child","Solo play"],["2","🙌","Two children","A playful pair"],["3-4","🎈","3–4 children","A small group"],["5+","🎉","5+ children","Party or class"]]],
+    ["place", "Setting", "Where will they play?", "Select every setting available.", [["indoors","🏠","Indoors",""],["outdoors","🌿","Outdoors",""],["travel","🚗","On the go",""],["either","🌤️","Either one",""]]],
+    ["duration", "Time", "How much time do you have?", "Select every time limit that works.", [["5","⚡","Up to 5 min","A quick reset"],["15","⏱️","Up to 15 min","A play break"],["30","🕰️","Up to 30 min","Time to create"],["60","🌈","Up to 1 hour","A bigger adventure"]]],
+    ["material", "Materials", "What can they use?", "Select all available materials; no-material games are always included.", [["none","🙌","Nothing","Just imagination"],["paper","🖍️","Paper & pencils","Simple craft supplies"],["household","📦","Household items","Cups, cushions and more"],["ball","⚽","A ball","Any safe ball"]]],
+    ["activity", "Energy", "What activity level feels right?", "Select every activity level that fits.", [["calm","☁️","Calm","Quiet and focused"],["medium","🪁","Playful","Some movement"],["active","⚡","Very active","Lots of energy"]]],
   ],
   sr: [
-    ["age", "Uzrast", "Koliko godina imaju deca?", "Izaberite uzrast najmlađeg igrača.", [["3-4","🐣","3–4 godine","Mali istraživači"],["5-6","🧸","5–6 godina","Radoznali kreativci"],["7-9","🦊","7–9 godina","Velika mašta"],["10-12","🚀","10–12 godina","Samostalni igrači"]]],
-    ["players", "Deca", "Koliko dece se igra?", "Izabraćemo igre koje odgovaraju vašoj grupi.", [["1","🌟","Jedno dete","Samostalna igra"],["2","🙌","Dvoje dece","Razigrani par"],["3-4","🎈","3–4 deteta","Mala grupa"],["5+","🎉","5+ dece","Zabava ili odeljenje"]]],
-    ["place", "Mesto", "Gde će se igrati?", "Izaberite prostor koji vam je dostupan.", [["indoors","🏠","Unutra",""],["outdoors","🌿","Napolju",""],["travel","🚗","U pokretu",""],["either","🌤️","Svejedno",""]]],
-    ["duration", "Vreme", "Koliko vremena imate?", "Prednost imaju igre koje se uklapaju u vaše vreme.", [["5","⚡","Do 5 min","Brza razbibriga"],["15","⏱️","Do 15 min","Kratka igra"],["30","🕰️","Do 30 min","Vreme za kreativnost"],["60","🌈","Do 1 sata","Veća avantura"]]],
-    ["material", "Materijali", "Šta mogu da koriste?", "Igre bez materijala su uvek dobar izbor.", [["none","🙌","Ništa","Samo mašta"],["paper","🖍️","Papir i olovke","Jednostavan pribor"],["household","📦","Kućni predmeti","Čaše, jastuci i drugo"],["ball","⚽","Lopta","Bilo koja bezbedna lopta"]]],
-    ["activity", "Energija", "Koji nivo aktivnosti odgovara?", "Uskladite igru sa njihovom energijom.", [["calm","☁️","Mirno","Tiho i fokusirano"],["medium","🪁","Razigrano","Malo kretanja"],["active","⚡","Veoma aktivno","Mnogo energije"]]],
+    ["age", "Uzrast", "Koliko godina imaju deca?", "Možete izabrati više uzrasta; igra mora odgovarati celom izabranom rasponu.", [["3-4","🐣","3–4 godine","Mali istraživači"],["5-6","🧸","5–6 godina","Radoznali kreativci"],["7-9","🦊","7–9 godina","Velika mašta"],["10-12","🚀","10–12 godina","Samostalni igrači"]]],
+    ["players", "Deca", "Koliko dece se igra?", "Izaberite sve moguće veličine grupe.", [["1","🌟","Jedno dete","Samostalna igra"],["2","🙌","Dvoje dece","Razigrani par"],["3-4","🎈","3–4 deteta","Mala grupa"],["5+","🎉","5+ dece","Zabava ili odeljenje"]]],
+    ["place", "Mesto", "Gde će se igrati?", "Izaberite sva mesta na kojima igra može da se odigra.", [["indoors","🏠","Unutra",""],["outdoors","🌿","Napolju",""],["travel","🚗","U pokretu",""],["either","🌤️","Svejedno",""]]],
+    ["duration", "Vreme", "Koliko vremena imate?", "Izaberite sve vremenske okvire koji odgovaraju.", [["5","⚡","Do 5 min","Brza razbibriga"],["15","⏱️","Do 15 min","Kratka igra"],["30","🕰️","Do 30 min","Vreme za kreativnost"],["60","🌈","Do 1 sata","Veća avantura"]]],
+    ["material", "Materijali", "Šta mogu da koriste?", "Izaberite sve dostupne materijale; igre bez materijala su uvek dobar izbor.", [["none","🙌","Ništa","Samo mašta"],["paper","🖍️","Papir i olovke","Jednostavan pribor"],["household","📦","Kućni predmeti","Čaše, jastuci i drugo"],["ball","⚽","Lopta","Bilo koja bezbedna lopta"]]],
+    ["activity", "Energija", "Koji nivo aktivnosti odgovara?", "Izaberite sve nivoe aktivnosti koji odgovaraju.", [["calm","☁️","Mirno","Tiho i fokusirano"],["medium","🪁","Razigrano","Malo kretanja"],["active","⚡","Veoma aktivno","Mnogo energije"]]],
   ]
 };
 
@@ -32,15 +32,15 @@ const copy = {
     place:{either:"Inside or outside",indoors:"Indoors",outdoors:"Outdoors",travel:"On the go"}, ages:(a,b)=>`Ages ${a}–${b}`, min:"min", image:t=>`Children playing ${t}`,
     noProfile:"Profile",
     findGame:"Find a game",
-    trust:["✓ Screen-free ideas","✓ Ages 3–12"], visualTitle:"Ready for play?", visualCopy:"Simple ideas for everyday moments",
+    trust:["✓ Screen-free ideas","✓ Ages 3–12","✓ Everyday ideas"], visualTitle:"Ready for play?", visualCopy:"Simple ideas for everyday moments",
     dailyLabel:"TODAY’S GAME", dailyTitle:"Five-minute connection", dailyCopy:"Short play still counts. A few focused minutes can turn an ordinary pause into a warm family memory.",
     benefitOneTitle:"Supports development", benefitOneCopy:"Discover ideas for movement, creativity, cooperation and calm focus.",
     benefitTwoTitle:"Less decision fatigue", benefitTwoCopy:"Six simple choices turn “what should we do?” into a useful shortlist.",
     benefitThreeTitle:"Time together to remember", benefitThreeCopy:"Small shared moments can become happy memories children carry with them.",
-    safetyTitle:"A note for safe, happy play", safetyCopy:"Stay nearby and adapt each game to your child and space.",
+    safetyTitle:"A note for safe, happy play", safetyCopy:"Stay nearby and adapt each game to your child and space.", safetyNoteAction:"Details", safetyDetailsTitle:"Keeping play safe", safetyDialogDone:"Close", safetyDetails:[["Stay close","Supervise play and adapt the activity to the child’s age, confidence and abilities."],["Prepare the space","Clear the floor, avoid slippery or crowded areas, and keep play away from roads, stairs and furniture used for climbing."],["Check materials","Use clean, age-appropriate materials. Keep small parts, sharp objects and broken balloon pieces away from young children; do not taste scents."],["Keep it voluntary","Let children pause, skip a turn or stop if they feel tired or uncomfortable. There is no need to compete or finish every challenge."]],
     liked:"Saved to your profile ♥", unliked:"Removed from saved games", saveAction:"Save", savedAction:"Saved",
-    exploreTitle:"Games for every moment.", exploreCopy:"Choose a situation or a skill.", exploreModeLabel:"Explore games by", bySituation:"Games for every occasion", bySkill:"Games to build skills",
-    momentTitle:"Choose a situation", momentCopy:"Browse games by setting or moment.", skillTitle:"Choose a skill", skillCopy:"Browse games by what you want to practice.",
+    momentTitle:"By situation", skillTitle:"By skill",
+    prepareLabel:"Before play", ageGuidanceTitle:"Age guidance", ageBonusLabel:"Age guidance", stepsTitle:"Steps", safetyNoteTitle:"Safety note", aboutTitle:"About this game", skillsTitle:"What it develops", startGame:"Start game", shareCopied:"Game details copied.", shareUnavailable:"Sharing is unavailable here.",
     details:"Details", categorySummary:()=>"", exampleTitle:"Try this example", parentTipTitle:"Bonus idea", closeDetails:"Back to games", demoTitle:"How to play", demoPlay:"Play", demoPause:"Pause", demoSteps:[["Turn away","The observer turns around while the group chooses a leader."],["Copy the leader","Everyone copies the leader’s slow movement."],["Guess who leads","The observer turns back and guesses."]],
     feedbackLabel:"Send a comment", feedbackHint:"Your email app will open with the comment ready to send.", feedbackButton:"Prepare email", feedbackRequired:"Write a comment first.", feedbackSubject:"A comment about Play Picks"
   },
@@ -58,15 +58,15 @@ const copy = {
     place:{either:"Unutra ili napolju",indoors:"Unutra",outdoors:"Napolju",travel:"U pokretu"}, ages:(a,b)=>`Uzrast ${a}–${b}`, min:"min", image:t=>`Deca igraju igru ${t}`,
     noProfile:"Profil",
     findGame:"Pronađi igru",
-    trust:["✓ Ideje bez ekrana","✓ Uzrast 3–12"], visualTitle:"Spremni za igru?", visualCopy:"Jednostavne ideje za svaki dan",
+    trust:["✓ Ideje bez ekrana","✓ Uzrast 3–12","✓ Za svaki dan"], visualTitle:"Spremni za igru?", visualCopy:"Jednostavne ideje za svaki dan",
     dailyLabel:"DANAŠNJA IGRA", dailyTitle:"Pet minuta povezivanja", dailyCopy:"I kratka igra se računa. Nekoliko posvećenih minuta može običnu pauzu pretvoriti u lepu porodičnu uspomenu.",
     benefitOneTitle:"Podstiče razvoj", benefitOneCopy:"Otkrijte ideje za kretanje, kreativnost, saradnju i miran fokus.",
     benefitTwoTitle:"Manje umora od odlučivanja", benefitTwoCopy:"Šest lakih izbora pretvara „šta ćemo sada?“ u koristan izbor igara.",
     benefitThreeTitle:"Vreme zajedno koje se pamti", benefitThreeCopy:"Male zajedničke igre i razgovori mogu postati lepe uspomene koje dete pamti.",
-    safetyTitle:"Napomena za bezbednu i veselu igru", safetyCopy:"Budite u blizini i prilagodite igru detetu i prostoru.",
+    safetyTitle:"Napomena za bezbednu i veselu igru", safetyCopy:"Budite u blizini i prilagodite igru detetu i prostoru.", safetyNoteAction:"Detalji", safetyDetailsTitle:"Bezbedna igra", safetyDialogDone:"Zatvori", safetyDetails:[["Budite u blizini","Nadgledajte igru i prilagodite aktivnost uzrastu, sigurnosti i mogućnostima deteta."],["Pripremite prostor","Oslobodite pod, izbegavajte klizave ili prepune prostore i držite se dalje od puta, stepenica i nameštaja za penjanje."],["Proverite materijale","Koristite čiste materijale primerene uzrastu. Sitne delove, oštre predmete i pocepane delove balona držite dalje od male dece; mirise nemojte probati."],["Igra je dobrovoljna","Dete može da napravi pauzu, preskoči potez ili prekine igru ako je umorno ili mu je neprijatno. Nije potrebno takmičenje ni završavanje svakog izazova."]],
     liked:"Sačuvano u profilu ♥", unliked:"Uklonjeno iz sačuvanih igara", saveAction:"Sačuvaj", savedAction:"Sačuvano",
-    exploreTitle:"Igre za svaki trenutak.", exploreCopy:"Birajte situaciju ili veštinu.", exploreModeLabel:"Istraži igre prema", bySituation:"Igre za različite prilike", bySkill:"Igre za razvoj veština",
-    momentTitle:"Izaberite situaciju", momentCopy:"Pregledajte igre prema mestu ili trenutku.", skillTitle:"Izaberite veštinu", skillCopy:"Pregledajte igre prema onome što želite da podstaknete.",
+    momentTitle:"Situacije", skillTitle:"Veštine",
+    prepareLabel:"Priprema", ageGuidanceTitle:"Uzrasna napomena", ageBonusLabel:"Prilagođavanje uzrastu", stepsTitle:"Koraci", safetyNoteTitle:"Bezbednosna napomena", aboutTitle:"O igri", skillsTitle:"Šta razvija?", startGame:"Pokreni igru", shareCopied:"Detalji igre su kopirani.", shareUnavailable:"Deljenje nije dostupno u ovom pregledaču.",
     details:"Detalji", categorySummary:()=>"", exampleTitle:"Primer", parentTipTitle:"Bonus ideja", closeDetails:"Nazad na igre", demoTitle:"Kako se igra", demoPlay:"Pusti", demoPause:"Pauziraj", demoSteps:[["Okreni se","Posmatrač se okreće dok grupa bira vođu."],["Prati vođu","Svi oponašaju spori pokret vođe."],["Pogodi ko vodi","Posmatrač se vrati i pogađa."]],
     feedbackLabel:"Pošaljite komentar", feedbackHint:"Otvoriće se e-pošta sa pripremljenim komentarom.", feedbackButton:"Pripremi e-poštu", feedbackRequired:"Prvo napišite komentar.", feedbackSubject:"Komentar o aplikaciji Naše igre"
   }
@@ -80,7 +80,7 @@ const gameIdeas = [
 ["Color Dash","Trka boja","Call a color and race to safely touch something that matches.","Izgovorite boju i požurite da bezbedno dodirnete nešto takvo.","run"],
 ["Mystery Drawing","Tajanstveni crtež","Draw a secret object while everyone else guesses what is appearing.","Nacrtajte tajni predmet dok ostali pogađaju šta nastaje.","draw"],
 ["Cushion Islands","Ostrva od jastuka","Cross a path of cushions without touching the imaginary water.","Pređite stazu od jastuka bez dodirivanja zamišljene vode.","balance"],
-["Family Quiz","Porodični kviz","Take turns answering questions about animals, nature and everyday life. Choose questions that fit the child's age; hints are welcome.","Naizmenično odgovarajte na pitanja o životinjama, prirodi i svakodnevnom životu. Birajte pitanja prema uzrastu deteta; nagoveštaji su dozvoljeni.","story"],
+["Family Quiz","Kviz","Take turns answering questions about animals, nature and everyday life. Choose questions that fit the child's age; hints are welcome.","Naizmenično odgovarajte na pitanja o životinjama, prirodi i svakodnevnom životu. Birajte pitanja prema uzrastu deteta; nagoveštaji su dozvoljeni.","story"],
 ["Target Toss","Pogodi metu","Toss a soft ball toward safe targets worth different points.","Bacajte meku loptu ka bezbednim metama koje nose različite poene.","ball"],
 ["Shadow Zoo","Zoološki vrt senki","Make animal shadows with hands or bodies for others to identify.","Rukama ili telom pravite senke životinja koje ostali pogađaju.","pretend"],
 ["Robot Guide","Vodič za robota","Guide a robot player using precise step-by-step instructions.","Vodite igrača robota preciznim uputstvima korak po korak.","pretend"],
@@ -94,7 +94,7 @@ const gameIdeas = [
 ["Funny Portrait","Smešni portret","Draw a portrait without lifting the pencil from the paper.","Nacrtajte portret bez podizanja olovke sa papira.","draw"],
 ["Cloud Shapes","Oblici u oblacima","Look at the clouds and take turns saying what they resemble. Use the shapes you spot to make up a short story together.","Posmatrajte oblake i naizmenično recite na šta vas podsećaju. Od uočenih oblika zajedno smislite kratku priču.","nature"],
 ["Movement Memory","Pamćenje pokreta","Add one movement to a growing sequence and repeat it together.","Dodajte pokret nizu koji raste i ponovite ga zajedno.","dance"],
-["Paper Airplane Test","Test papirnog aviona","Fold a simple paper airplane, fly it from a marked line, then change one fold to see whether it flies straighter or farther.","Napravite jednostavan papirni avion i bacite ga sa označene linije. Promenite jedan pregib i proverite da li leti pravo ili dalje.","build"],
+["Paper Airplane Test","Papirni avioni","Fold a simple paper airplane, fly it from a marked line, then change one fold to see whether it flies straighter or farther.","Napravite jednostavan papirni avion i bacite ga sa označene linije. Promenite jedan pregib i proverite da li leti pravo ili dalje.","build"],
 ["Mini Bowling","Mini kuglanje","Set up a few empty plastic bottles or paper cups as pins, then roll a soft ball to knock them down.","Poređajte nekoliko praznih plastičnih flašica ili papirnih čaša kao čunjeve, pa ih oborite mekanom loptom.","ball"],
 ["Magic Object","Čarobni predmet","Choose a safe household object and pretend it is something else. Use its new purpose in a short scene while others guess what it has become.","Izaberite bezbedan kućni predmet i zamislite da je nešto drugo. Upotrebite ga u kratkoj sceni dok ostali pogađaju šta predstavlja.","pretend"],
 ["Garden Relay","Baštenska štafeta","Complete playful movement tasks between two outdoor markers.","Izvršavajte zabavne zadatke kretanja između dve spoljne oznake.","run"],
@@ -282,32 +282,101 @@ const scenes = {
   balance:["#d7dbff","#646db5"], pretend:["#f7d2ec","#a85f91"]
 };
 
-function sceneSvg(scene, index) {
-  const [bg, accent] = scenes[scene];
-  const object = {
-    run:`<path d="M65 174h300" stroke="${accent}" stroke-width="8" stroke-dasharray="18 14"/><circle cx="175" cy="75" r="19" fill="${accent}"/><path d="M175 94l-18 45 42 28m-24-56 38 7m-56 21-31 32" stroke="${accent}" stroke-width="13" stroke-linecap="round"/>`,
-    draw:`<rect x="112" y="55" width="215" height="120" rx="8" fill="#fff" stroke="${accent}" stroke-width="7"/><path d="M145 139l42-42 35 27 44-49 28 64z" fill="${accent}" opacity=".55"/><path d="M330 35l24 22-78 82-31 10 9-31z" fill="${accent}"/>`,
-    ball:`<circle cx="285" cy="120" r="38" fill="#fff" stroke="${accent}" stroke-width="8"/><path d="M262 90l25 22 30-10m-30 10-2 37m-23-9 23 9 24-15" stroke="${accent}" stroke-width="5"/><circle cx="140" cy="70" r="18" fill="${accent}"/><path d="M140 90v57m0-35 49 16m-49 19-28 32m28-32 32 31" stroke="${accent}" stroke-width="12" stroke-linecap="round"/>`,
-    build:`<rect x="78" y="133" width="78" height="48" rx="5" fill="${accent}"/><rect x="164" y="91" width="84" height="90" rx="5" fill="${accent}" opacity=".8"/><rect x="256" y="50" width="105" height="131" rx="5" fill="${accent}" opacity=".55"/><path d="M69 186h303" stroke="#fff" stroke-width="7"/>`,
-    search:`<circle cx="187" cy="92" r="52" fill="#fff" stroke="${accent}" stroke-width="10"/><path d="M225 131l63 55" stroke="${accent}" stroke-width="17" stroke-linecap="round"/><circle cx="176" cy="80" r="9" fill="${accent}"/><path d="M144 111q38 25 70-5" fill="none" stroke="${accent}" stroke-width="7"/>`,
-    dance:`<circle cx="220" cy="54" r="21" fill="${accent}"/><path d="M220 78v65m0-43-55-27m55 27 55-30m-55 73-42 40m42-40 45 38" stroke="${accent}" stroke-width="14" stroke-linecap="round"/><path d="M110 55q20-28 40 0m140-5q20-28 40 0" fill="none" stroke="${accent}" stroke-width="7"/>`,
-    story:`<path d="M72 56q74-28 145 12v119q-71-35-145-10zm296 0q-74-28-145 12v119q71-35 145-10z" fill="#fff" stroke="${accent}" stroke-width="8"/><path d="M100 93h80m-80 28h91m-91 28h65m95-56h80m-91 28h91m-76 28h76" stroke="${accent}" stroke-width="6"/>`,
-    nature:`<path d="M218 183V92m0 35-52-38m52 20 54-45" stroke="${accent}" stroke-width="12" stroke-linecap="round"/><ellipse cx="151" cy="74" rx="47" ry="25" transform="rotate(25 151 74)" fill="${accent}"/><ellipse cx="289" cy="52" rx="52" ry="27" transform="rotate(-25 289 52)" fill="${accent}" opacity=".75"/><path d="M97 186h244" stroke="${accent}" stroke-width="8"/>`,
-    balance:`<path d="M64 172h312" stroke="${accent}" stroke-width="9"/><circle cx="218" cy="55" r="20" fill="${accent}"/><path d="M218 77v57m0-34-67 18m67-18 67 18m-67 16-38 46m38-46 45 45" stroke="${accent}" stroke-width="13" stroke-linecap="round"/>`,
-    pretend:`<circle cx="220" cy="72" r="30" fill="${accent}"/><path d="M196 68l-22-23m70 23 22-23m-46 57v74m0-48-62 26m62-26 62 26m-62 22-35 32m35-32 35 32" stroke="${accent}" stroke-width="12" stroke-linecap="round"/><circle cx="208" cy="68" r="4" fill="#fff"/><circle cx="232" cy="68" r="4" fill="#fff"/>`
-  }[scene];
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 220"><rect width="440" height="220" rx="24" fill="${bg}"/><circle cx="${42+(index%4)*108}" cy="30" r="12" fill="#fff" opacity=".55"/>${object}</svg>`;
+function watercolorSvg(background, accent, index, artwork) {
+  const seed=index+23;
+  const pigmentMarks=Array.from({length:54},(_,i)=>{const x=(i*83+seed*29)%440,y=(i*47+seed*13)%220,rx=2+(i*13)%8,ry=1+(i*17)%5,color=i%4===0?accent:"#fff";return `<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="${color}" opacity="${i%4===0?.12:.17}"/>`}).join("");
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 220"><defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity=".58"/><stop offset="1" stop-color="${background}" stop-opacity=".1"/></linearGradient>
+    <filter id="washBlur"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="paint" x="-8%" y="-12%" width="116%" height="124%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="${seed}" result="fiber"/><feDisplacementMap in="SourceGraphic" in2="fiber" scale="1.7" xChannelSelector="R" yChannelSelector="G" result="roughPaint"/><feGaussianBlur in="roughPaint" stdDeviation=".22" result="softPaint"/><feBlend in="SourceGraphic" in2="softPaint" mode="normal"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="2" seed="${seed+17}" result="paperGrain"/><feColorMatrix in="paperGrain" type="saturate" values="0" result="grayGrain"/><feComponentTransfer in="grayGrain"><feFuncA type="table" tableValues="0 .12"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="440" height="220" rx="24" fill="${background}"/>
+  <rect width="440" height="220" rx="24" fill="url(#paper)"/>
+  <path d="M-24 139C35 105 91 115 131 151s71 43 121 18 98-59 212-24v83H-24z" fill="#fff" opacity=".36" filter="url(#washBlur)"/>
+  <path d="M-18 188c49-35 93-15 142-18 63-4 101-39 155-22s99 20 179-4v76H-18z" fill="${accent}" opacity=".12" filter="url(#washBlur)"/>
+  <g filter="url(#paint)">${artwork}</g>
+  <g>${pigmentMarks}</g>
+  <rect width="440" height="220" rx="24" fill="#857762" opacity=".17" filter="url(#grain)"/>
+  </svg>`;
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
 }
 
+function sceneSvg(scene, index, title, description) {
+  const [bg, accent] = scenes[scene];
+  const text=`${title} ${description}`.toLowerCase();
+  const conceptRules=[
+    [/\b(rainbow|colour|color|colors|colours)\b/,"rainbow"],
+    [/\b(quiz|question|guess|riddle|clue|detective|mystery|missing|secret rule)\b/,"question"],
+    [/\b(balloon)\b/,"balloon"],
+    [/\b(ball|toss|target|goal|bowling|bounce|catch|pass)\b/,"ball"],
+    [/\b(bridge)\b/,"bridge"],
+    [/\b(tower|structure|build|building|construction)\b/,"tower"],
+    [/\b(maze|labyrinth|route|path|trail|course)\b/,"maze"],
+    [/\b(sound|music|rhythm|song|listen|clap|whisper|sing)\b/,"note"],
+    [/\b(draw|drawing|sketch|portrait|picture|postcard|paper|art|letter|map)\b/,"pencil"],
+    [/\b(nature|leaf|leaves|tree|garden|flower|cloud|wind|bird|seed|twig)\b/,"leaf"],
+    [/\b(animal|creature|pet)\b/,"animal"],
+    [/\b(restaurant|mail|poem|story|news|theatre|interview)\b/,"bubble"],
+    [/\b(mirror|copy|imitate|follow)\b/,"mirror"],
+    [/\b(dance|move|movement|jump|run|step|crawl|race|walk|balance)\b/,"kidDance"],
+    [/\b(breath|relax|calm|focus|quiet)\b/,"heart"],
+    [/\b(doctor|health)\b/,"heart"],
+    [/\b(robot|invent|machine|space|mission)\b/,"robot"]
+  ];
+  const conceptPart=conceptRules.find(([pattern])=>pattern.test(text))?.[1]||({run:"steps",draw:"pencil",ball:"ball",build:"tower",search:"magnifier",dance:"note",story:"bubble",nature:"leaf",balance:"cushion",pretend:"mask"}[scene]);
+  const conceptColor=`hsl(${(index*137.507764)%360} 62% 45%)`;
+  const conceptBadge=`<circle cx="386" cy="42" r="27" fill="#fff" opacity=".9"/><g transform="translate(386,42) scale(.48)">${parts[conceptPart](conceptColor)}</g>`;
+  const sceneHasPerson=["run","ball","dance","balance","pretend"].includes(scene);
+  const child=sceneHasPerson?"":`<g transform="translate(105,200) scale(1.12)">${illustratedChild(accent,"reach")}</g>`;
+  const object = {
+    run:`<path d="M65 174h300" stroke="${accent}" stroke-width="8" stroke-dasharray="18 14"/><g transform="translate(175,200) scale(1.05)">${illustratedChild(accent,"run")}</g>`,
+    draw:`<rect x="112" y="55" width="215" height="120" rx="8" fill="#fff" stroke="${accent}" stroke-width="7"/><path d="M145 139l42-42 35 27 44-49 28 64z" fill="${accent}" opacity=".55"/><path d="M330 35l24 22-78 82-31 10 9-31z" fill="${accent}"/>`,
+    ball:`<circle cx="285" cy="120" r="38" fill="#fff" stroke="${accent}" stroke-width="8"/><path d="M262 90l25 22 30-10m-30 10-2 37m-23-9 23 9 24-15" stroke="${accent}" stroke-width="5"/><g transform="translate(140,200) scale(1.05)">${illustratedChild(accent,"reach")}</g>`,
+    build:`<rect x="78" y="133" width="78" height="48" rx="5" fill="${accent}"/><rect x="164" y="91" width="84" height="90" rx="5" fill="${accent}" opacity=".8"/><rect x="256" y="50" width="105" height="131" rx="5" fill="${accent}" opacity=".55"/><path d="M69 186h303" stroke="#fff" stroke-width="7"/>`,
+    search:`<circle cx="187" cy="92" r="52" fill="#fff" stroke="${accent}" stroke-width="10"/><path d="M225 131l63 55" stroke="${accent}" stroke-width="17" stroke-linecap="round"/><circle cx="176" cy="80" r="9" fill="${accent}"/><path d="M144 111q38 25 70-5" fill="none" stroke="${accent}" stroke-width="7"/>`,
+    dance:`<g transform="translate(220,200) scale(1.05)">${illustratedChild(accent,"dance")}</g><path d="M110 55q20-28 40 0m140-5q20-28 40 0" fill="none" stroke="${accent}" stroke-width="7"/>`,
+    story:`<path d="M72 56q74-28 145 12v119q-71-35-145-10zm296 0q-74-28-145 12v119q71-35 145-10z" fill="#fff" stroke="${accent}" stroke-width="8"/><path d="M100 93h80m-80 28h91m-91 28h65m95-56h80m-91 28h91m-76 28h76" stroke="${accent}" stroke-width="6"/>`,
+    nature:`<path d="M218 183V92m0 35-52-38m52 20 54-45" stroke="${accent}" stroke-width="12" stroke-linecap="round"/><ellipse cx="151" cy="74" rx="47" ry="25" transform="rotate(25 151 74)" fill="${accent}"/><ellipse cx="289" cy="52" rx="52" ry="27" transform="rotate(-25 289 52)" fill="${accent}" opacity=".75"/><path d="M97 186h244" stroke="${accent}" stroke-width="8"/>`,
+    balance:`<path d="M64 172h312" stroke="${accent}" stroke-width="9"/><g transform="translate(218,200) scale(1.05)">${illustratedChild(accent,"reach")}</g>`,
+    pretend:`<g transform="translate(220,200) scale(1.05)">${illustratedChild(accent,"stand",true)}</g><g transform="translate(321,106) scale(.82)">${parts.mask(accent)}</g>`
+  }[scene];
+  return watercolorSvg(bg, accent, index, `${object}${child}${conceptBadge}`);
+}
+
+function illustratedChild(shirtColor, pose, cape = false) {
+  const poses={
+    stand:{arms:"M-8-32-21-21m29-11 13 11",legs:"M-6-11-12 13m18-24 6 24"},
+    run:{arms:"M-8-32-22-39m30 7 15-12",legs:"M-6-11-24 5m18-16 20 14"},
+    jump:{arms:"M-8-32-23-49m31 17 15-17",legs:"M-6-11-22 8m16-19 20 19"},
+    dance:{arms:"M-8-32-22-47m30 15 18-9",legs:"M-6-11-20 12m14-23 18 14"},
+    reach:{arms:"M-8-32-18-51m26 19 10-19",legs:"M-6-11-14 13m12-24 12 24"},
+    sit:{arms:"M-8-32-21-23m29-9 13 8",legs:"M-6-11-22-1-18 13m18-24 20 1 4 12"}
+  }[pose];
+  const capeShape=cape?`<path d="M-8-36q-25 7-25 33 14-4 28-18z" fill="${shirtColor}" opacity=".55"/>`:"";
+  return `<g stroke-linecap="round" stroke-linejoin="round">
+    ${capeShape}
+    <path d="${poses.legs}" fill="none" stroke="#587087" stroke-width="7"/>
+    <path d="M-14 14h7m14 0h7" stroke="#735244" stroke-width="5"/>
+    <path d="${poses.arms}" fill="none" stroke="#f2bd96" stroke-width="5"/>
+    <circle cx="-21" cy="-21" r="3" fill="#f2bd96"/><circle cx="21" cy="-21" r="3" fill="#f2bd96"/>
+    <path d="M-9-39q9-5 18 0l6 27q-15 8-30 0z" fill="${shirtColor}"/>
+    <path d="M-13-58q0-15 13-15t13 15v7q0 12-13 12t-13-12z" fill="#f3c49e"/>
+    <path d="M-14-58q-3-15 10-19 18-2 20 16l-5 4-5-8q-8 7-20 7z" fill="#76503d"/>
+    <circle cx="-5" cy="-55" r="1.7" fill="#493b38"/><circle cx="5" cy="-55" r="1.7" fill="#493b38"/>
+    <path d="M-4-48q4 4 8 0" fill="none" stroke="#a95e58" stroke-width="1.7"/>
+    <circle cx="-10" cy="-49" r="2.5" fill="#e99784" opacity=".5"/><circle cx="10" cy="-49" r="2.5" fill="#e99784" opacity=".5"/>
+  </g>`;
+}
+
 const parts = {
-  kid:c=>`<circle cx="0" cy="-52" r="11" fill="${c}"/><path d="M0 -41v24m0-17-16 10m16-10 16 10m-16 17-12 17m12-17 12 17" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round"/>`,
-  kidRun:c=>`<circle cx="7" cy="-52" r="11" fill="${c}"/><path d="M5 -41l-8 22m0 0-17 16m17-16 15 18m-11-29-21-5m21 5 20-12" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round"/>`,
-  kidJump:c=>`<circle cx="0" cy="-60" r="11" fill="${c}"/><path d="M0 -49v22m0-15-19-13m19 13 19-13m-19 28-17 13m17-13 17 13" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round"/>`,
-  kidSit:c=>`<circle cx="-7" cy="-44" r="11" fill="${c}"/><path d="M-7 -33v20m0 0h25m-25-11-14 11m14-20 17 7" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round"/>`,
-  kidDance:c=>`<circle cx="0" cy="-54" r="11" fill="${c}"/><path d="M0 -43v24m0-17-20 5m20-5 18-17m-18 34-16 19m16-19 14 19" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round"/>`,
-  kidReach:c=>`<circle cx="0" cy="-52" r="11" fill="${c}"/><path d="M0 -41v24m0-17-16-15m16 15 16-15m-16 32-12 17m12-17 12 17" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round"/>`,
-  kidCape:c=>`<path d="M-3 -42q-27 16-19 38 15-9 22-22z" fill="${c}" opacity=".45"/><circle cx="0" cy="-52" r="11" fill="${c}"/><path d="M0 -41v24m0-17-16-15m16 15 16-15m-16 32-12 17m12-17 12 17" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round"/>`,
+  kid:c=>illustratedChild(c,"stand"),
+  kidRun:c=>illustratedChild(c,"run"),
+  kidJump:c=>illustratedChild(c,"jump"),
+  kidSit:c=>illustratedChild(c,"sit"),
+  kidDance:c=>illustratedChild(c,"dance"),
+  kidReach:c=>illustratedChild(c,"reach"),
+  kidCape:c=>illustratedChild(c,"reach",true),
   ball:c=>`<circle r="20" fill="#fff" stroke="${c}" stroke-width="5"/><path d="M-18-8q18 11 36 0M-18 8q18-11 36 0M0-20v40" fill="none" stroke="${c}" stroke-width="3.5"/>`,
   balloon:c=>`<ellipse cy="-12" rx="16" ry="20" fill="${c}"/><path d="M0 8v24" fill="none" stroke="${c}" stroke-width="3"/>`,
   leaf:c=>`<g transform="rotate(-25)"><ellipse rx="21" ry="11" fill="${c}"/><path d="M-19 6 19-6" fill="none" stroke="#fff" stroke-width="3"/></g>`,
@@ -363,7 +432,23 @@ const parts = {
   apple:c=>`<path d="M0-17v-10" fill="none" stroke="${c}" stroke-width="4"/><ellipse cx="10" cy="-23" rx="9" ry="5" fill="${c}" opacity=".7"/><circle r="16" fill="${c}"/>`,
   dots:()=>`<circle cx="-26" r="12" fill="#e4572e"/><circle r="12" fill="#f0a92b"/><circle cx="26" r="12" fill="#4a7fd4"/>`,
   river:c=>`<path d="M-58 14q22-32 44-12t48-16" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round" stroke-dasharray="14 10"/>`,
-  plane:c=>`<path d="M-32 10 32-13-6 23-11 7z" fill="${c}"/><path d="M-11 7 32-13" fill="none" stroke="#fff" stroke-width="3"/>`
+  plane:c=>`<path d="M-32 10 32-13-6 23-11 7z" fill="${c}"/><path d="M-11 7 32-13" fill="none" stroke="#fff" stroke-width="3"/>`,
+  bounceTrail:c=>`<path d="M-48 4q12 30 24 0t24 0 24 0 24 0" fill="none" stroke="${c}" stroke-width="4" stroke-dasharray="5 4"/><path d="M-31 21q7-10 14 0M17 21q7-10 14 0" fill="none" stroke="${c}" stroke-width="3" stroke-linecap="round"/>`,
+  feather:c=>`<path d="M-27 25Q-26-16 27-28Q23 16-27 25Z" fill="${c}"/><path d="M-28 28 20-20M-17 17l-2-15M-6 7l-1-18M5-3l8 2M-20 13l-10-6M-8 4l-10-9" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>`,
+  train:c=>`<rect x="-30" y="-23" width="60" height="43" rx="9" fill="${c}"/><rect x="-20" y="-15" width="16" height="14" rx="3" fill="#fff"/><rect x="5" y="-15" width="16" height="14" rx="3" fill="#fff"/><path d="M-20 20l-9 11m49-11 9 11M-24 9h48" stroke="${c}" stroke-width="5" stroke-linecap="round"/><circle cx="-17" cy="22" r="5" fill="#455"/><circle cx="17" cy="22" r="5" fill="#455"/>`,
+  envelope:c=>`<rect x="-31" y="-21" width="62" height="43" rx="5" fill="#fff" stroke="${c}" stroke-width="4"/><path d="m-28-17 28 23 28-23" fill="none" stroke="${c}" stroke-width="4"/><path d="m-28 18 19-16m37 16L9 2" fill="none" stroke="${c}" stroke-width="3"/>`,
+  microphone:c=>`<rect x="-10" y="-29" width="20" height="38" rx="10" fill="${c}"/><path d="M-21-7v6a21 21 0 0 0 42 0v-6M0 20v12m-12 0h24" fill="none" stroke="${c}" stroke-width="5" stroke-linecap="round"/>`,
+  fish:c=>`<ellipse cx="-4" cy="0" rx="25" ry="16" fill="${c}"/><path d="m18 0 23-17v34z" fill="${c}"/><circle cx="-14" cy="-4" r="2.8" fill="#fff"/><path d="M-2-13q12 13 0 26" fill="none" stroke="#fff" stroke-width="2.5"/>`,
+  ribbon:c=>`<path d="M-34-18q28-28 40 0t28 0M-34 0q28-28 40 0T34 0M-34 18q28-28 40 0T34 18" fill="none" stroke="${c}" stroke-width="5" stroke-linecap="round"/>`,
+  arrows:c=>`<path d="M-29 0h53m-14-14L24 0 10 14M0 28V-25m-14 14L0-25l14 14" fill="none" stroke="${c}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>`,
+  crack:c=>`<path d="m3-31-12 19 13 5-17 20 14-2-5 22 21-29-13 2 14-20-14 2z" fill="${c}"/>`,
+  book:c=>`<path d="M-3-24q-23-14-42-4v49q20-10 42 4zm6 0q23-14 42-4v49Q25 11 3 25z" fill="#fff" stroke="${c}" stroke-width="4"/><path d="M-34-12h21M-34 0h20M13-12h21M13 0h20" stroke="${c}" stroke-width="3"/>`,
+  rocket:c=>`<path d="M0-33q21 17 18 41L0 24-18 8Q-21-16 0-33Z" fill="${c}"/><circle cy="-7" r="6" fill="#fff"/><path d="m-17 4-16 8 10 13 12-5m28-16 16 8-10 13-12-5M-8 24l-7 14 15-6 15 6-7-14" fill="${c}"/>`,
+  gear:c=>`<circle r="17" fill="none" stroke="${c}" stroke-width="8"/><circle r="6" fill="${c}"/><path d="M0-31v8M0 23v8M-31 0h8M23 0h8M-22-22l6 6M16 16l6 6M22-22l-6 6M-16 16l-6 6" stroke="${c}" stroke-width="7" stroke-linecap="round"/>`,
+  curtain:c=>`<path d="M-34-29h68v58H-34z" fill="#fff" stroke="${c}" stroke-width="4"/><path d="M-24-27q13 17 0 54M-9-27q13 17 0 54M9-27q-13 17 0 54M24-27q-13 17 0 54" fill="none" stroke="${c}" stroke-width="5"/>`,
+  net:c=>`<path d="M-34-22h68v45h-68zM-17-22v45M0-22v45M17-22v45M-34-7h68M-34 8h68" fill="none" stroke="${c}" stroke-width="3.5"/><path d="M-40-27h80" stroke="${c}" stroke-width="5"/>`,
+  bag:c=>`<path d="M-25-13h50l7 38h-64z" fill="${c}"/><path d="M-12-13a12 12 0 0 1 24 0" fill="none" stroke="${c}" stroke-width="5"/><path d="M-13 0h26" stroke="#fff" stroke-width="3"/>`,
+  puzzle:c=>`<path d="M-29-27h17q-2 13 10 13t10-13h22v18q-13-2-13 10t13 10v17H8q2-13-10-13t-10 13h-17v-19q13 2 13-10t-13-10z" fill="${c}"/>`
 };
 
 const artRecipes = {
@@ -466,20 +551,164 @@ const artRecipes = {
   "Circle Keep-Away":[["kid",120,182,1.2],["kid",250,182,1.2],["kid",372,182,1.2],["ball",250,104,1.2]],
   "Final Pose Challenge":[["note",250,66,1],["kidDance",150,182,1.35],["kidReach",320,182,1.35]]
 };
-
-function gameArt(title, scene, index) {
+Object.assign(artRecipes,{
+  "Family Quiz":[["book",250,126,1.35],["question",353,82,.72],["kid",112,182,1.05]],
+  "Colorful Steps":[["dots",128,95,1.1],["steps",250,168,1.4],["kidJump",354,176,1.05]],
+  "Treasure Guards":[["star",251,106,1.15],["kidReach",153,181,1.2],["kid",348,181,1.15]],
+  "Three Things, One Story":[["bubble",250,66,.95],["apple",145,164,1],["sock",246,166,.9],["cup",348,164,.9]],
+  "Pillow Mountain":[["cushion",120,177,1.2],["cushion",235,146,1.4],["cushion",350,177,1.2],["kidJump",236,130,1.05]],
+  "Tiptoe Trail":[["steps",112,181,1.15],["steps",246,160,1.25],["steps",368,138,1.1],["kidSit",244,171,.9]],
+  "Animal Traffic":[["lights",323,110,1.2],["animal",240,135,1.25],["kidRun",120,181,1.2]],
+  "Jump and Name":[["kidJump",150,177,1.3],["bubble",301,84,1],["shapes",352,160,.8]],
+  "Mission Cards":[["paper",147,135,1.1],["question",244,122,.75],["kidRun",348,178,1.15]],
+  "Crawl Like a Comet":[["star",343,75,1.15],["kidSit",155,177,1.35],["steps",255,183,1.2]],
+  "Invent a Creature":[["animal",235,131,1.35],["twig",325,155,1.2],["star",344,76,.7]],
+  "Question Train":[["train",250,151,1.15],["bubble",259,75,.85],["question",119,89,.6]],
+  "Pocket Narrator":[["sock",162,151,1.05],["apple",250,149,.9],["bubble",348,77,.85]],
+  "Rhyme Relay":[["kid",121,180,1.05],["bubble",244,76,.95],["note",347,123,1.05]],
+  "Sound Story":[["puppet",162,152,1.3],["puppet",280,152,1.1],["note",351,74,.85]],
+  "Question Detective":[["magnifier",154,130,1.2],["question",259,100,.8],["kidSit",350,174,1.1]],
+  "Kindness News":[["microphone",160,132,1.05],["heart",267,114,.9],["paper",354,143,.85]],
+  "Opposite Day Tale":[["mirror",163,131,1.15],["arrows",258,127,.85],["bubble",351,76,.75]],
+  "Soundtrack Story":[["kid",129,179,1.1],["bubble",246,78,.9],["note",344,124,1.1]],
+  "Magic Word Story":[["abc",151,122,1.1],["bubble",260,76,.85],["star",352,145,.8]],
+  "Secret Shape Sketch":[["paper",242,131,1.25],["shapes",242,119,.65],["pencil",351,156,.9]],
+  "Line to Landscape":[["paper",238,135,1.15],["tree",190,129,.72],["cloud",297,96,.7],["pencil",357,165,.75]],
+  "Three-Color Creature":[["animal",238,131,1.3],["dots",345,139,.9],["pencil",137,160,.8]],
+  "Round-Robin Doodle":[["paper",246,120,1.15],["kid",114,180,.95],["kid",365,180,.95],["pencil",342,153,.75]],
+  "Shape Family":[["shapes",240,132,1.2],["heart",348,127,.75],["bubble",137,82,.7]],
+  "Folded Face":[["paper",239,128,1.15],["mask",239,125,.8],["pencil",352,157,.8]],
+  "Postcard Puzzle":[["paper",237,126,1.1],["puzzle",237,130,.72],["puzzle",347,157,.65]],
+  "Pattern Portrait":[["mask",235,126,1.2],["shapes",345,135,.8],["paper",132,145,.75]],
+  "Invisible Ink Map":[["map",237,127,1.25],["magnifier",348,140,.85],["star",140,78,.65]],
+  "Draw the Feeling":[["heart",238,121,1.05],["paper",238,140,1],["pencil",351,156,.85]],
+  "Button Sorting Lab":[["dots",168,127,1.05],["tray",262,163,1.4],["magnifier",354,105,.8]],
+  "What Is Missing?":[["tray",237,162,1.45],["question",238,105,.8],["magnifier",351,144,.75]],
+  "Clue Collector":[["map",236,133,1.15],["magnifier",146,127,.8],["star",356,146,.7]],
+  "Sound Source Hunt":[["ear",148,126,1.1],["note",251,119,1],["magnifier",351,145,.75]],
+  "Odd One Out":[["shapes",233,128,1.1],["question",351,110,.72],["dots",139,165,.8]],
+  "Touch and Tell":[["bag",236,145,1.1],["hands",139,128,.9],["question",350,96,.7]],
+  "Sequence Spotter":[["shapes",153,125,1],["steps",258,159,1.1],["question",355,100,.7]],
+  "Room Scavenger List":[["city",244,162,1.15],["magnifier",350,105,.8],["dots",137,125,.65]],
+  "Secret Path Finder":[["map",241,130,1.1],["steps",146,168,.95],["star",353,93,.7]],
+  "Five Things Fast":[["timer",151,126,1.05],["num",257,122,.8],["bubble",353,79,.7]],
+  "Paper Bridge Test":[["bridge",239,157,1.2],["paper",146,126,.8],["box",351,164,.75]],
+  "Straw City":[["city",239,160,1.25],["twig",144,145,.8],["box",355,165,.75]],
+  "Marshmallow Structures":[["tower",237,151,1.2],["dots",143,123,.9],["cup",353,163,.8]],
+  "Bridge to the Toy":[["bridge",239,159,1.2],["robot",350,153,.8],["river",143,176,.7]],
+  "Cardboard Telescope":[["box",146,160,.95],["magnifier",252,119,.9],["star",354,82,.75]],
+  "Maze Builder":[["maze",239,123,1.3],["robot",353,156,.7],["star",138,82,.6]],
+  "Balance Sculpture":[["tower",239,151,1.1],["stone",143,174,1.15],["kidReach",350,176,.95]],
+  "Tiny Shop":[["basket",240,154,1.1],["apple",145,157,.8],["box",350,159,.85]],
+  "Paper Playground":[["paper",240,130,1.15],["hopscotch",240,149,.8],["star",352,78,.7]],
+  "Balloon Tap Circle":[["kid",123,180,1],["balloon",239,95,1.25],["kid",354,180,1],["hands",239,156,.65]],
+  "Target Ladder":[["target",240,112,1],["steps",145,174,1.15],["ball",350,154,.8]],
+  "Roll and Follow":[["ball",152,151,.85],["kidRun",258,177,1.1],["steps",357,164,.9]],
+  "Two-Bounce Catch":[["ball",243,105,1.05],["ball",243,164,.75],["kidReach",132,179,1.05]],
+  "Guess the Leader":[["kid",123,179,1],["mirror",246,121,1],["kidDance",353,177,1.05],["question",351,73,.55]],
+  "Balloon Volleyball":[["net",240,137,1.2],["balloon",152,97,.9],["balloon",338,88,.9]],
+  "Partner Pass Pattern":[["kid",124,179,.95],["ball",244,118,.85],["kid",354,179,.95],["steps",245,171,.7]],
+  "Rolling Ramps":[["bridge",239,147,1.15],["ball",144,156,.75],["ball",352,165,.65]],
+  "Circle Bounce":[["kid",119,180,.9],["kid",240,180,.9],["kid",361,180,.9],["ball",240,107,.95]],
+  "Target Story Toss":[["target",156,127,.95],["ball",253,156,.72],["bubble",352,81,.75]],
+  "Leaf Line-Up":[["leaf",145,122,.8],["leaf",221,122,1],["leaf",304,122,1.2],["steps",235,178,.7]],
+  "Nature Number Hunt":[["tree",150,172,1],["num",252,119,.8],["magnifier",352,133,.75]],
+  "Stick Shadow Shapes":[["sun",350,77,.75],["twig",239,151,1.5],["shapes",150,108,.9]],
+  "Bird Sound Pause":[["animal",145,134,.9],["ear",247,123,.8],["note",354,116,.9]],
+  "Nature Color Wheel":[["rainbow",239,131,1.15],["leaf",145,160,.75],["flower",350,158,.9]],
+  "Windy Ribbon Watch":[["ribbon",236,121,1.2],["leaf",144,157,.8],["cloud",352,91,.7]],
+  "Mini Habitat":[["tent",239,155,1.15],["animal",149,134,.8],["leaf",350,158,.85]],
+  "Cloud Shape Chain":[["cloud",151,103,.95],["shapes",251,127,.9],["bubble",352,78,.7]],
+  "Nature Texture Cards":[["paper",145,128,.75],["stone",236,152,1.1],["leaf",340,119,.8],["magnifier",240,86,.55]],
+  "Sunrise Stretch Story":[["sun",349,74,.8],["kidDance",153,178,1.05],["tree",245,167,.85],["bubble",348,142,.55]],
+  "Mirror Animal":[["animal",145,131,.95],["mirror",241,125,1],["animal",347,131,.85]],
+  "Beat the Pause":[["timer",149,116,.95],["kidDance",248,177,1.15],["note",352,109,.85]],
+  "Body Letter Dance":[["kidDance",155,178,1.1],["abc",267,120,.75],["question",356,111,.65]],
+  "Slow Fast Switch":[["timer",146,118,.95],["kidRun",252,179,1.05],["steps",352,158,.8]],
+  "Clap and Step":[["hands",148,126,.9],["steps",247,160,1],["note",351,102,.85]],
+  "Rainbow Ribbon Dance":[["rainbow",238,124,1.15],["ribbon",151,155,.8],["kidDance",348,178,1.05]],
+  "Partner Shadow Dance":[["kidDance",145,179,1.1],["sun",245,92,.7],["kid",350,179,1.05]],
+  "Mood Statues":[["mask",145,125,.9],["heart",245,122,.75],["kidDance",350,178,1.05]],
+  "Direction Dance":[["arrows",249,122,.9],["kidDance",150,178,1.05],["kidReach",351,178,1.05]],
+  "Celebration Choreo":[["note",149,94,.75],["kidDance",239,177,1.05],["star",350,96,.8]],
+  "Hide and Seek":[["tree",353,166,1.15],["kidSit",147,178,1],["magnifier",247,117,.85]],
+  "Toy Doctor":[["robot",239,134,1],["heart",351,105,.75],["bag",147,157,.8]],
+  "Restaurant Imagination":[["cup",147,157,.8],["apple",240,153,.85],["bubble",349,83,.75]],
+  "Post Office Play":[["envelope",242,129,1.1],["map",147,134,.8],["steps",352,166,.8]],
+  "Space Mission Control":[["rocket",238,121,1],["robot",145,151,.8],["timer",351,126,.8]],
+  "Helpful Inventor":[["gear",240,124,.95],["box",147,157,.85],["star",352,82,.7]],
+  "Underwater Tour":[["fish",240,133,1.15],["bubble",147,82,.65],["bubble",350,108,.55]],
+  "Family Newsroom":[["microphone",148,126,.9],["paper",243,137,.85],["note",351,105,.8]],
+  "Time-Travel Guide":[["timer",147,120,1],["map",247,139,.9],["star",352,83,.7]],
+  "Tiny Theatre":[["curtain",240,130,1.05],["puppet",154,158,.85],["mask",351,138,.75]],
+  "Quiet Cloud Count":[["cloud",146,99,.85],["num",248,121,.75],["heart",352,130,.7]],
+  "Feather Focus":[["feather",241,121,1.2],["cloud",150,91,.75],["kidSit",350,177,1]],
+  "Breathing Shapes":[["kidSit",148,178,1.1],["shapes",251,123,.9],["heart",352,132,.65]],
+  "Silent Sorting":[["tray",242,159,1.2],["shapes",149,122,.8],["hands",350,135,.7]],
+  "Calm Color Search":[["magnifier",149,124,.9],["rainbow",246,133,.9],["leaf",352,156,.7]],
+  "Listening Minute":[["ear",145,123,.8],["timer",244,122,.9],["note",351,120,.8]],
+  "Tense and Relax":[["kidSit",148,178,1],["robot",246,133,.75],["heart",352,129,.7]],
+  "Quiet Pattern Tiles":[["shapes",149,122,.8],["dots",244,131,.75],["tray",350,160,1]],
+  "Gratitude Garden":[["heart",148,120,.75],["flower",246,135,1],["flower",351,147,.8]],
+  "Breathing Buddy":[["kidSit",148,178,1],["heart",249,125,.7],["animal",352,134,.85]],
+  "Letter Clue Guess":[["abc",148,125,.8],["question",247,117,.72],["bubble",352,79,.65]],
+  "Movement Commands":[["bubble",146,82,.7],["kidReach",248,177,1.1],["steps",353,158,.8]],
+  "Don't Step on a Crack":[["crack",243,157,1],["kidRun",145,177,1],["steps",351,162,.8]],
+  "Guess Who I Am":[["mask",147,124,.9],["question",248,117,.75],["kid",351,179,.95]],
+  "One-Minute Challenge":[["timer",149,121,.95],["num",247,121,.7],["kidRun",350,178,1]]
+});
+Object.assign(artRecipes,{
+  "Dot-to-Doodle":[["spiral",235,120,1.65],["dots",145,79,.85],["dots",347,165,.85],["pencil",354,105,.9]],
+  "Symmetry Art":[["mirror",235,122,1.05],["flower",154,127,.9],["flower",316,127,.9],["twig",235,177,.85]],
+  "Funny Portrait":[["mask",235,133,1.5],["crown",235,78,1],["heart",347,138,.7],["pencil",133,163,.8]],
+  "Tense and Relax":[["kidReach",145,177,1.1],["arrows",239,121,.9],["kidSit",350,177,1.1],["heart",239,74,.6]],
+  "Breathing Buddy":[["kidSit",145,177,1.05],["robot",249,140,.8],["heart",351,119,.8],["bubble",351,67,.55]],
+  "Mood Music Moves":[["mask",145,125,.9],["heart",239,125,.7],["mask",333,125,.9],["note",239,69,.7]]
+});
+Object.assign(artRecipes,{
+  "Secret Shape Sketch":[["question",145,91,.8],["shapes",250,128,1.1],["magnifier",352,139,.9],["pencil",144,174,.75]],
+  "Folded Face":[["mask",239,126,1.55],["paper",145,151,.65],["crown",344,84,.8]],
+  "Postcard Puzzle":[["puzzle",161,121,.8],["puzzle",241,121,.8],["puzzle",321,121,.8],["sun",241,179,.5]],
+  "Postcard Adventure":[["plane",148,99,1.1],["map",252,149,1.05],["sun",353,81,.65],["tree",353,171,.75]],
+  "Paper Maze":[["maze",238,122,1.55],["steps",142,176,.8],["pencil",350,160,.85]],
+  "Button Sorting Lab":[["dots",144,124,1.05],["tray",240,160,1.3],["magnifier",351,100,.8]],
+  "Sequence Spotter":[["shapes",141,120,.65],["shapes",240,120,.65],["shapes",339,120,.65],["arrows",241,173,.65]]
+});
+Object.assign(artRecipes,{
+  "Two-Bounce Catch":[["kidReach",105,177,1.05],["ball",187,117,.65],["ball",260,165,.6],["ball",333,117,.65],["bounceTrail",260,191,.9]]
+});
+function gameArt(title, scene, index, description) {
   const recipe = artRecipes[title];
-  if (!recipe) return sceneSvg(scene, index);
+  if (!recipe) return sceneSvg(scene, index, title, description||gameIdeas[index][2]);
   const [bg, accent] = scenes[scene];
   const body = recipe.map(([name, x, y, s]) =>
     `<g transform="translate(${x},${y}) scale(${s})">${parts[name](accent)}</g>`).join("");
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 220"><rect width="440" height="220" rx="24" fill="${bg}"/><circle cx="${40+(index%4)*106}" cy="30" r="12" fill="#fff" opacity=".5"/><circle cx="398" cy="${44+(index%3)*22}" r="8" fill="#fff" opacity=".45"/>${body}</svg>`;
-  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+  const hasPerson=recipe.some(([name])=>name.startsWith("kid"));
+  const child=hasPerson?"":`<g transform="translate(105,200) scale(1.12)">${illustratedChild(accent,"reach")}</g>`;
+  return watercolorSvg(bg, accent, index, `${body}${child}`);
 }
 
 const skillByScene = {story:"speech",pretend:"speech",search:"problem",build:"problem",run:"movement",ball:"movement",balance:"movement",dance:"creativity",draw:"creativity",nature:"calm"};
 const activityByScene = {story:"calm",pretend:"medium",search:"calm",build:"medium",run:"active",ball:"active",balance:"medium",dance:"active",draw:"calm",nature:"calm"};
+const skillOverrides = {
+  "Animal Traffic":"movement","Body Letter Dance":"movement","Breathing Buddy":"calm","Breathing Shapes":"calm",
+  "Cardboard City":"creativity","Cardboard Telescope":"creativity","Cloud Shape Chain":"creativity",
+  "Dance Traffic Lights":"movement","Direction Dance":"movement","Helpful Inventor":"problem",
+  "Invisible Ink Map":"problem","Leaf Line-Up":"problem","Leaf Shadow Trace":"creativity",
+  "Living Room Camp":"creativity","Mini Habitat":"creativity","Mirror Animal":"movement",
+  "Mirror Moves":"movement","Movement Memory":"problem","Nature Bingo":"problem",
+  "Nature Color Wheel":"creativity","Nature Faces":"creativity","Nature Number Hunt":"problem",
+  "Nature Texture Cards":"problem","Paper Costume":"creativity","Paper Maze":"problem",
+  "Paper Playground":"creativity","Pebble Patterns":"creativity","Postcard Puzzle":"problem",
+  "Quiet Pattern Tiles":"problem","Roll and Follow":"movement","Seed and Tree":"movement",
+  "Silent Sorting":"problem","Slow Fast Switch":"movement","Sound Map":"calm",
+  "Sunrise Stretch Story":"movement","Tiny Garden Design":"creativity","Tiny Shop":"creativity",
+  "Treasure Guards":"movement","Treasure Map":"problem","Twig Letters":"creativity",
+  "What Is Missing?":"problem","Windy Ribbon Watch":"movement","Partner Pass Pattern":"social",
+  "Partner Shadow Dance":"social","Scent Explorer":"speech","Story Circle":"social"
+};
 function skillForIdea(g) {
+  if(skillOverrides[g[0]])return skillOverrides[g[0]];
   const text=`${g[0]} ${g[2]}`.toLowerCase();
   if(/\b(cooperat|teamwork|team|share|group|partner|each player|every player|take turns|together|pass around|circle|relay)\b/.test(text))return "social";
   return skillByScene[g[4]];
@@ -492,6 +721,7 @@ function activityForIdea(g) {
 }
 function maxPlayersForIdea(g) {
   const text=`${g[0]} ${g[2]}`.toLowerCase();
+  if(/\bgroup of (objects|items|things)\b/.test(text)||g[0]==="Breathing Shapes")return 4;
   return /\b(circle|group|relay|everyone|each player|take turns|partner|pass around|around the group|visitor|players)\b/.test(text)?12:4;
 }
 function placeForIdea(g) {
@@ -515,9 +745,31 @@ function materialForIdea(g) {
   if(g[4]==="build"||/\b(stack|structure|tower|bridge|sculpture)\b/.test(text))return "household";
   return "none";
 }
+const ageRangeOverrides = {
+  "Animal Parade":[3,9],
+  "Rainbow Hunt":[4,9],
+  "Color Dash":[3,9],
+  "Shadow Zoo":[3,9],
+  "Freeze Dance":[3,9],
+  "Mirror Moves":[3,9],
+  "Texture Safari":[4,9],
+  "Shape Explorer":[4,9],
+  "Floor Is Lava":[4,9],
+  "Monster Steps":[3,9],
+  "Copycat Clap":[3,9],
+  "Seed and Tree":[3,9],
+  "Animal Traffic":[3,9],
+  "Jump and Name":[4,9],
+  "Colorful Steps":[4,9],
+  "Dance Traffic Lights":[3,9],
+  "Toy Doctor":[3,8],
+  "Bird Sound Pause":[3,9],
+  "Mirror Animal":[3,9]
+};
 function ageRangeForIdea(g) {
   const text=`${g[0]} ${g[2]}`.toLowerCase();
   const simpleImitationGames=new Set(["Animal Parade","Freeze Dance","Magic Object","Hide and Seek","Mirror Moves","Monster Steps","Copycat Clap","Animal Traffic","Seed and Tree","Mirror Animal","Bird Sound Pause","Breathing Buddy"]);
+  if(ageRangeOverrides[g[0]])return ageRangeOverrides[g[0]];
   if(simpleImitationGames.has(g[0]))return [3,12];
   if(g[0]==="Robot Guide")return [4,12];
   if(["Family Quiz","Letter Clue Guess"].includes(g[0]))return [4,12];
@@ -525,34 +777,99 @@ function ageRangeForIdea(g) {
   if(/\b(balloon|button|buttons|stone|stones|pebble|pebbles|tiny pieces|small pieces|loose parts|small objects)\b/.test(text))return [6,12];
   return [4,12];
 }
-const games = gameIdeas.map((g,index)=>({
-  id:index+1, title:g[0], srTitle:g[1], description:g[2], srDescription:g[3], scene:g[4],
-  place:placeForIdea(g), material:materialForIdea(g), activity:activityForIdea(g), duration:durationForIdea(g),
-  minAge:ageRangeForIdea(g)[0], maxAge:ageRangeForIdea(g)[1], minPlayers:1, maxPlayers:maxPlayersForIdea(g), skill:skillForIdea(g),
-  image:gameArt(g[0],g[4],index)
-}));
+const uploadedHeroImages = {
+  "Rainbow Hunt":"20_hero_slika_JPG/cropped/01_Lov_na_dugu.jpg",
+  "Animal Parade":"20_hero_slika_JPG/cropped/02_Parada_zivotinja.jpg",
+  "Story Circle":"20_hero_slika_JPG/cropped/03_Krug_prica.jpg",
+  "Color Dash":"20_hero_slika_JPG/cropped/04_Trka_boja.jpg",
+  "Secret Sound":"20_hero_slika_JPG/cropped/05_Tajni_zvuk.jpg",
+  "Cushion Islands":"20_hero_slika_JPG/cropped/06_Ostrva_od_jastuka.jpg",
+  "Mini Bowling":"20_hero_slika_JPG/cropped/07_Mini_kuglanje.jpg",
+  "Shape Explorer":"20_hero_slika_JPG/cropped/08_Potraga_za_oblicima.jpg",
+  "Magic Object":"20_hero_slika_JPG/cropped/09_Carobna_kutija.jpg",
+  "Question Detective":"20_hero_slika_JPG/cropped/10_Pitaj_i_pogodi.jpg",
+  "Three Things, One Story":"20_hero_slika_JPG/cropped/11_Slozi_pricu.jpg",
+  "Ball Balance":"20_hero_slika_JPG/cropped/12_Balansiranje_lopte.jpg",
+  "Pass the Sketch":"20_hero_slika_JPG/cropped/13_Crtaj_zajedno.jpg",
+  "What Changed":"20_hero_slika_JPG/cropped/14_Sta_se_promenilo.jpg",
+  "Adventure Path":"20_hero_slika_JPG/cropped/15_Napravi_stazu.jpg",
+  "Guess Who I Am":"20_hero_slika_JPG/cropped/16_Ko_sam_ja.jpg",
+  "Letter Clue Guess":"20_hero_slika_JPG/cropped/17_Lov_na_slova.jpg",
+  "Jumping Numbers":"20_hero_slika_JPG/cropped/18_Broji_korake.jpg",
+  "Postcard Adventure":"20_hero_slika_JPG/cropped/19_Zamisljenо_putovanje.jpg",
+  "Celebration Choreo":"20_hero_slika_JPG/cropped/20_Plesna_misija.jpg"
+};
+function hasUploadedGameImage(image){return image.startsWith("20_hero_slika_JPG/cropped/")||image.startsWith("Game app/")}
+const gameFeedbackById=new Map((window.GAME_FEEDBACK_DATA||[]).map(record=>[record.id,record]));
+const situationKeyByName={"Kišni dani":"rainy","Letnje igre":"summer","Hladniji dani":"winter","Porodična okupljanja":"holiday","U pokretu":"travel","Grupe i proslave":"party"};
+const replacementScenes={"Space Base: Limited Resources":"build","The Swap Market":"pretend","Museum of the Future":"pretend","Detective File: Three Clues":"search","Spot the Story Glitch":"story","Advertise the Most Useless Invention":"story","Build a Chain-Reaction Machine":"build","Secret Symbol Message":"search","Who Lives in This Ecosystem?":"nature","Invent a New Planet":"draw","Family Mini Escape Room":"search","Design a Family Secret Handshake":"dance"};
+function feedbackSkillKey(skill){
+  const text=`${skill.sr} ${skill.en}`.toLowerCase();
+  if(/cooperation|teamwork|negotiation|emotion|saradnja|pregovaranje|emocij/.test(text))return "social";
+  if(/movement|motor|coordination|kretanje|pokret|koordinacija|motorika/.test(text))return "movement";
+  if(/speech|communication|language|speaking|storytelling|govor|komunikacija|jezik|pripoved/.test(text))return "speech";
+  if(/creativ|design|imagination|humou?r|kreativ|dizajn|mašta/.test(text))return "creativity";
+  if(/memory|pamćenje/.test(text))return "memory";
+  if(/attention|listening|observation|opažanje|pažnja|slušno/.test(text))return "observation";
+  if(/focus|self.regulation|calm|smiren|samoregul/.test(text))return "calm";
+  if(/problem|logic|reason|planning|spatial|engineering|coding|system|cause|science|scientific|curiosity|knowledge|rešavanje|logika|zaključ|planiranje|prostorno|inženjer|šifrovanje|uzrok|sistemsko|nauka|radoznal/.test(text))return "problem";
+  return "";
+}
+function feedbackSkillIcon(label){
+  const text=label.toLowerCase();
+  if(/cooperation|teamwork|negotiation|saradnja|pregovaranje/.test(text))return "🤝";
+  if(/movement|motor|coordination|kretanje|pokret|koordinacija|motorika/.test(text))return "🏃";
+  if(/creativ|design|imagination|storytelling|humou?r|kreativ|dizajn|mašta|pripoved/.test(text))return "🎨";
+  if(/speech|communication|language|speaking|govor|komunikacija|jezik/.test(text))return "💬";
+  if(/memory|pamćenje/.test(text))return "🧠";
+  if(/attention|listening|observation|opažanje|pažnja|slušno/.test(text))return "🔎";
+  if(/focus|self.regulation|calm|smiren|samoregul/.test(text))return "🌿";
+  if(/nature|science|curiosity|priroda|nauka|radoznal/.test(text))return "🔎";
+  if(/emotion|emocij/.test(text))return "💛";
+  if(/problem|logic|reason|planning|spatial|engineering|coding|system|cause|rešavanje|logika|zaključ|planiranje|prostorno|inženjer|šifrovanje|uzrok|sistemsko/.test(text))return "🧩";
+  return "✨";
+}
+const games = gameIdeas.map((idea,index)=>{
+  const feedback=gameFeedbackById.get(index+1);
+  if(!feedback)throw new Error(`Missing feedback record for game ${index+1}`);
+  const scene=replacementScenes[feedback.title]||idea[4];
+  const derivedIdea=[feedback.title,feedback.srTitle,feedback.en.description,feedback.sr.description,scene];
+  const skillKeys=[...new Set(feedback.skills.map(feedbackSkillKey).filter(Boolean))];
+  const situationKeys=feedback.situationsSr.map(name=>situationKeyByName[name]).filter(Boolean);
+  return {
+    id:index+1,title:feedback.title,srTitle:feedback.srTitle,description:feedback.en.description,srDescription:feedback.sr.description,scene,
+    place:placeForIdea(derivedIdea),material:feedback.material,activity:activityForIdea(derivedIdea),duration:feedback.duration,
+    minAge:feedback.minAge,maxAge:feedback.maxAge,ageText:feedback.ageText,minPlayers:1,maxPlayers:maxPlayersForIdea(derivedIdea),
+    skills:feedback.skills,skillKeys,skill:skillKeys[0]||"",situationKeys,feedback,
+    image:feedback.id>=21&&feedback.id<=200?`Game app/matched-images/${String(feedback.id).padStart(3,"0")}_igra.jpg`:uploadedHeroImages[feedback.title]||gameArt(feedback.title,scene,index,feedback.en.description)
+  };
+});
 
 const exploreCategories = {
   en:[
-    ["rainy","🌧️","Rainy days","Calm and creative indoor games for rainy days."],
+    ["rainy","🌧️","Rainy days","Calm and playful indoor ideas for rainy days."],
     ["summer","☀️","Summer play","Sunny ideas for warm days, gardens and parks."],
     ["winter","❄️","Cold days","Active indoor games to help kids warm up on cold days."],
     ["holiday","🎄","Family gatherings","Games for conversation and shared fun across generations."],
     ["travel","🚗","On the go","No-equipment games for passengers (never the driver), plus short breaks at safe stops."],
-    ["party","🎉","Groups & parties","More active games for large groups and celebrations."]
+    ["party","🎉","Groups & parties","Games for larger groups and celebrations."]
   ],
   sr:[
-    ["rainy","🌧️","Kišni dani","Mirne i kreativne igre za unutra dok pada kiša."],
+    ["rainy","🌧️","Kišni dani","Mirne i razigrane ideje za unutra dok pada kiša."],
     ["summer","☀️","Letnje igre","Sunčane ideje za tople dane, dvorište i park."],
     ["winter","❄️","Hladniji dani","Aktivne igre za unutra koje razgibavaju kada je napolju hladno."],
     ["holiday","🎄","Porodična okupljanja","Igre za zajednički razgovor i zabavu u porodici različitih uzrasta."],
     ["travel","🚗","U pokretu","Igre bez rekvizita za putnike (vozač ne učestvuje), uz kratke pauze na bezbednom mestu."],
-    ["party","🎉","Grupe i proslave","Življe igre za veće grupe i proslave."]
+    ["party","🎉","Grupe i proslave","Igre za veće društvo i proslave."]
   ]
 };
-const exploreSkills = {
-  en:[["speech","💬","Speech & communication","Talk, listen and tell stories"],["problem","🧩","Problem solving","Think, remember and experiment"],["movement","🏃","Movement & motor skills","Balance, coordinate and move"],["creativity","🎨","Creativity","Imagine, make and express"],["social","🤝","Cooperation","Share, take turns and connect"],["calm","🌿","Focus & calm","Slow down and pay attention"]],
-  sr:[["speech","💬","Govor i komunikacija","Razgovor, slušanje i pričanje"],["problem","🧩","Rešavanje problema","Razmišljanje, pamćenje i isprobavanje"],["movement","🏃","Kretanje i motorika","Ravnoteža, koordinacija i pokret"],["creativity","🎨","Kreativnost","Mašta, stvaranje i izražavanje"],["social","🤝","Saradnja","Deljenje, red i povezivanje"],["calm","🌿","Fokus i smirenost","Usporavanje i pažnja"]]
+const existingSkillDescriptions={
+  en:{"Speech & communication":"Talk, listen and tell stories","Problem solving":"Think, remember and experiment","Creativity":"Imagine, make and express","Cooperation":"Share, take turns and connect","Movement & motor skills":"Balance, coordinate and move","Focus & calm":"Slow down and pay attention","Observation & attention":"Notice details and listen carefully","Memory":"Remember details and sequences"},
+  sr:{"Govor i komunikacija":"Razgovor, slušanje i pričanje","Rešavanje problema":"Razmišljanje, pamćenje i isprobavanje","Kreativnost":"Mašta, stvaranje i izražavanje","Saradnja":"Deljenje, red i povezivanje","Kretanje i motorika":"Ravnoteža, koordinacija i pokret","Fokus i smirenost":"Usporavanje i pažnja","Opažanje i pažnja":"Uočavanje detalja i pažljivo slušanje","Pamćenje":"Pamćenje detalja i redosleda"}
+};
+const exploreSkills={
+  en:[["speech","💬","Speech & communication",existingSkillDescriptions.en["Speech & communication"]],["problem","🧩","Problem solving",existingSkillDescriptions.en["Problem solving"]],["movement","🏃","Movement & motor skills",existingSkillDescriptions.en["Movement & motor skills"]],["creativity","🎨","Creativity",existingSkillDescriptions.en.Creativity],["social","🤝","Cooperation",existingSkillDescriptions.en.Cooperation],["calm","🌿","Focus & calm",existingSkillDescriptions.en["Focus & calm"]],["observation","🔎","Observation & attention",existingSkillDescriptions.en["Observation & attention"]],["memory","🧠","Memory",existingSkillDescriptions.en.Memory]],
+  sr:[["speech","💬","Govor i komunikacija",existingSkillDescriptions.sr["Govor i komunikacija"]],["problem","🧩","Rešavanje problema",existingSkillDescriptions.sr["Rešavanje problema"]],["movement","🏃","Kretanje i motorika",existingSkillDescriptions.sr["Kretanje i motorika"]],["creativity","🎨","Kreativnost",existingSkillDescriptions.sr.Kreativnost],["social","🤝","Saradnja",existingSkillDescriptions.sr.Saradnja],["calm","🌿","Fokus i smirenost",existingSkillDescriptions.sr["Fokus i smirenost"]],["observation","🔎","Opažanje i pažnja",existingSkillDescriptions.sr["Opažanje i pažnja"]],["memory","🧠","Pamćenje",existingSkillDescriptions.sr.Pamćenje]]
 };
 
 const detailContent = {
@@ -751,7 +1068,8 @@ function preparationForGame(game, language) {
   if(/\b(maze|labyrinth)\b/.test(text))return localized("Gather safe items you have, such as paper, cups or cushions, and a small toy. Build on a clear, stable surface.","Pripremite bezbedne predmete koje imate, poput papira, čaša ili jastuka, i malu igračku. Lavirint pravite na stabilnoj i slobodnoj površini.");
   if(/\bmini bowling\b/.test(text))return localized("Prepare a soft ball and a few lightweight, unbreakable cups or bottles as pins.","Pripremite mekanu loptu i nekoliko laganih, nelomljivih čaša ili flašica kao čunjeve.");
   if(/\b(sock|rolled socks)\b/.test(text))return localized("Roll a clean pair of socks into a soft ball and prepare a basket or other safe target.","Urolajte čist par čarapa u mekanu loptu i pripremite korpu ili drugu bezbednu metu.");
-  if(/\bballoon\b/.test(text))return localized("Prepare one lightweight balloon and clear sharp or fragile objects from the play area.","Pripremite jedan lagani balon i sklonite oštre ili lomljive predmete iz prostora za igru.");
+  if(/\bscent explorer\b/.test(text))return localized("Use only familiar, mild scents; do not taste them. Skip known allergens or any scent that causes discomfort.","Koristite samo blage, poznate mirise; nemojte ih probati. Preskočite poznate alergene i mirise koji izazivaju nelagodnost.");
+  if(/\bballoon\b/.test(text))return localized("Use an intact balloon with an adult nearby. Clear sharp objects; immediately discard broken balloon pieces and keep them away from young children.","Koristite ceo balon uz odraslu osobu u blizini. Sklonite oštre predmete; pocepane delove odmah bacite i držite dalje od male dece.");
   if(/\b(cup|cups)\b/.test(text))return localized("Prepare several clean, reusable plastic cups and a flat, stable surface.","Pripremite nekoliko čistih plastičnih čaša za višekratnu upotrebu i ravnu, stabilnu površinu.");
   if(/\b(cushion|cushions|pillow|pillows)\b/.test(text))return localized("Place a few firm cushions or pillows on a clear floor, leaving safe space between them.","Postavite nekoliko čvrstih jastuka na slobodan pod i ostavite bezbedan razmak između njih.");
   if(/\bchalk\b/.test(text))return localized("Prepare child-safe chalk and choose a safe pavement or chalkboard surface.","Pripremite bezbednu dečju kredu i izaberite bezbednu površinu ili tablu.");
@@ -772,7 +1090,7 @@ function preparationForGame(game, language) {
 }
 
 const state = {
-  language:"sr", step:0, answers:{}, view:"recommended", collection:null, selectedGame:null,
+  language:"sr", step:0, answers:{}, view:"recommended", collection:null, selectedGame:null, gameReturnScreen:null,
   profile:JSON.parse(localStorage.getItem("playPicksProfile")||"null"),
   likes:JSON.parse(localStorage.getItem("playPicksLikes")||"[]"),
   saveCounts:JSON.parse(localStorage.getItem("playPicksSaveCounts")||"{}")
@@ -782,7 +1100,10 @@ if(state.likes.length)localStorage.setItem("playPicksSaveCounts",JSON.stringify(
 const $=selector=>document.querySelector(selector);
 const questions=()=>questionSets[state.language];
 const t=()=>copy[state.language];
-const choice=(key)=>questions().find(q=>q[0]===key)[4].find(c=>c[0]===state.answers[key]);
+const multiSelectQuestions=new Set(questionSets.en.map(question=>question[0]));
+function selectedValues(key){const value=state.answers[key];return Array.isArray(value)?value:value===undefined?[]:[value]}
+function selectedAgeBounds(){const ranges=selectedValues("age").map(value=>value.split("-").map(Number));return ranges.length?[Math.min(...ranges.map(range=>range[0])),Math.max(...ranges.map(range=>range[1]))]:null}
+const choice=(key)=>questions().find(q=>q[0]===key)[4].filter(item=>selectedValues(key).includes(item[0]));
 
 function translate() {
   const c=t();
@@ -795,35 +1116,38 @@ function translate() {
   $("#profileNameLabel").textContent=c.name; $("#profileSaveButton").textContent=c.saveProfile; $("#deleteProfileButton").textContent=c.deleteProfile;
   $("#feedbackLabel").textContent=c.feedbackLabel; $("#feedbackHint").textContent=c.feedbackHint; $("#feedbackButton").textContent=c.feedbackButton;
   $("#startButton").innerHTML=`${c.findGame} <span>→</span>`;
-  $("#trustTwo").textContent=c.trust[0]; $("#trustThree").textContent=c.trust[1];
+  $("#trustTwo").textContent=c.trust[0]; $("#trustThree").textContent=c.trust[1]; $("#trustFour").textContent=c.trust[2];
   $("#dailyLabel").textContent=c.dailyLabel;
   $("#dailyTitle").textContent=c.dailyTitle; $("#dailyCopy").textContent=c.dailyCopy; $("#dailyButton").textContent=c.dailyButton;
   $("#benefitOneTitle").textContent=c.benefitOneTitle; $("#benefitOneCopy").textContent=c.benefitOneCopy;
   $("#benefitTwoTitle").textContent=c.benefitTwoTitle; $("#benefitTwoCopy").textContent=c.benefitTwoCopy;
   $("#benefitThreeTitle").textContent=c.benefitThreeTitle; $("#benefitThreeCopy").textContent=c.benefitThreeCopy;
-  $("#safetyTitle").textContent=c.safetyTitle; $("#safetyCopy").textContent=c.safetyCopy;
+  $("#safetyTitle").textContent=c.safetyTitle; $("#safetyCopy").textContent=c.safetyCopy; $("#safetyNoteAction").textContent=c.safetyNoteAction; $("#safetyDialogTitle").textContent=c.safetyDetailsTitle; $("#safetyDialogDone").textContent=c.safetyDialogDone;
+  const safetyDetails=$("#safetyDialogCopy");safetyDetails.replaceChildren();c.safetyDetails.forEach(([heading,copy])=>{const section=document.createElement("section"),title=document.createElement("h3"),text=document.createElement("p");title.textContent=heading;text.textContent=copy;section.append(title,text);safetyDetails.append(section)});
   $("#categoryTitle").textContent=c.bySituation; $("#skillTitle").textContent=c.bySkill;
-  $$(".nav-button").forEach((b,i)=>b.textContent=c.nav[i]); $$(".language-button").forEach(b=>{const active=b.dataset.language===state.language;b.classList.toggle("is-active",active);b.setAttribute("aria-pressed",active)});
+  $$(".nav-button").forEach((b,i)=>{const label=b.querySelector(".nav-label");if(label)label.textContent=c.nav[i]}); $$(".language-button").forEach(b=>{const active=b.dataset.language===state.language;b.classList.toggle("is-active",active);b.setAttribute("aria-pressed",active)});
   renderDaily();
 }
 function $$(selector){return document.querySelectorAll(selector)}
 function renderProgress(){ $("#progress").style.gridTemplateColumns=`repeat(${questions().length}, minmax(0, 1fr))`; $("#progress").innerHTML=questions().map((q,i)=>`<div class="progress-step ${i===state.step?"is-active":""} ${i<state.step?"is-complete":""}" data-number="${i+1}">${q[1]}</div>`).join("") }
 function renderQuestion(){
   const q=questions()[state.step]; $("#stepLabel").textContent=t().step(state.step+1,questions().length); $("#questionTitle").textContent=q[2]; $("#questionHint").textContent=q[3];
-  $("#questionNumber").textContent=String(state.step+1).padStart(2,"0"); $("#choiceGrid").innerHTML=q[4].map(c=>`<button class="choice ${state.answers[q[0]]===c[0]?"is-selected":""}" data-choice="${c[0]}" type="button"><span class="choice-icon">${c[1]}</span><strong>${c[2]}</strong>${c[3]?`<small>${c[3]}</small>`:""}</button>`).join("");
-  $$(".choice").forEach(b=>{b.setAttribute("aria-pressed",String(state.answers[q[0]]===b.dataset.choice));b.onclick=()=>{state.answers[q[0]]=b.dataset.choice;renderQuestion()}});
-  $("#nextButton").innerHTML=`${state.step===questions().length-1?t().show:t().next} <span>→</span>`; $("#nextButton").disabled=!state.answers[q[0]];
+  const selected=selectedValues(q[0]);
+  $("#questionNumber").textContent=String(state.step+1).padStart(2,"0"); $("#choiceGrid").innerHTML=q[4].map(c=>`<button class="choice ${selected.includes(c[0])?"is-selected":""}" data-choice="${c[0]}" type="button" aria-pressed="${selected.includes(c[0])}"><span class="choice-icon">${c[1]}</span><strong>${c[2]}</strong>${c[3]?`<small>${c[3]}</small>`:""}</button>`).join("");
+  $$(".choice").forEach(b=>{b.onclick=()=>{const value=b.dataset.choice;if(multiSelectQuestions.has(q[0])){const values=selectedValues(q[0]);const next=values.includes(value)?values.filter(item=>item!==value):[...values,value];if(next.length)state.answers[q[0]]=next;else delete state.answers[q[0]]}else state.answers[q[0]]=value;renderQuestion()}});
+  $("#nextButton").innerHTML=`${state.step===questions().length-1?t().show:t().next} <span>→</span>`; $("#nextButton").disabled=selected.length===0;
   $("#backButton").textContent=`← ${t().back}`; $("#backButton").classList.toggle("is-visible",state.step>0); renderProgress();
 }
-function playerCount(v){return v==="3-4"?3:v==="5+"?5:Number(v)}
+function playerRange(value){return value==="3-4"?[3,4]:value==="5+"?[5,5]:[Number(value),Number(value)]}
 function score(game){
-  if(!state.answers.age)return 0;
-  const [amin,amax]=state.answers.age.split("-").map(Number), players=playerCount(state.answers.players); let s=0;
-  if(game.minAge<=amin&&game.maxAge>=amax)s+=4; if(game.minPlayers<=players&&game.maxPlayers>=players)s+=3;
-  const placeMatch=state.answers.place==="either"||game.place==="either"||game.place===state.answers.place||(state.answers.place==="travel"&&travelFriendly(game));
-  if(placeMatch)s+=3;
-  if(game.duration<=Number(state.answers.duration))s+=3; if(game.material==="none"||game.material===state.answers.material)s+=3;
-  if(game.activity===state.answers.activity)s+=4; return s;
+  const ageRange=selectedAgeBounds();if(!ageRange)return 0;let total=0;
+  if(game.minAge<=ageRange[0]&&game.maxAge>=ageRange[1])total+=4;
+  if(selectedValues("players").some(value=>{const [min,max]=playerRange(value);return game.minPlayers<=min&&game.maxPlayers>=max}))total+=3;
+  if(selectedValues("place").some(place=>place==="either"||game.place==="either"||game.place===place||(place==="travel"&&travelFriendly(game))))total+=3;
+  const durations=selectedValues("duration").map(Number);if(durations.length&&game.duration<=Math.max(...durations))total+=3;
+  const materials=selectedValues("material");if(game.material==="none"||materials.includes(game.material))total+=3;
+  if(selectedValues("activity").includes(game.activity))total+=4;
+  return total;
 }
 function localized(game){return state.language==="sr"?[game.srTitle,game.srDescription]:[game.title,game.description]}
 function dailyGame(){const now=new Date();const day=Math.floor(new Date(now.getFullYear(),now.getMonth(),now.getDate()).getTime()/86400000);return games[((day%games.length)+games.length)%games.length]}
@@ -838,38 +1162,36 @@ function travelFriendly(game){
   return carGame||movementBreak;
 }
 function categoryMatches(game,key){
-  const rules={
-    rainy:g=>(g.place==="indoors"&&g.activity!=="active")||(g.place==="either"&&["story","pretend","search","draw","build"].includes(g.scene)&&g.activity!=="active"),
-    summer:g=>g.place==="outdoors"||(g.place==="either"&&["nature","run","ball","balance"].includes(g.scene)),
-    winter:g=>(g.place==="indoors"||g.place==="either")&&g.activity==="active"&&["run","dance","balance","pretend"].includes(g.scene),
-    holiday:g=>g.maxPlayers>=4&&g.skill==="social",
-    travel:travelFriendly, party:g=>g.maxPlayers>=8
-  };
-  return rules[key]?.(game)??false;
+  return game.situationKeys.includes(key);
 }
-function collectionGames(){
-  const direct=state.collection?.type==="skill"?games.filter(g=>g.skill===state.collection.key):games.filter(g=>categoryMatches(g,state.collection?.key));
-  return direct.slice(0,20);
-}
+function collectionMatches(){return state.collection?.type==="skill"?games.filter(g=>g.skillKeys.includes(state.collection.key)):games.filter(g=>categoryMatches(g,state.collection?.key))}
+function collectionGames(){return collectionMatches()}
 function gameList(){
   if(state.view==="collection")return collectionGames();
   if(state.view==="saved")return games.filter(g=>state.likes.includes(g.id));
   if(state.view==="popular"){
     return [...games].sort((a,b)=>(Number(state.saveCounts[b.id])||0)-(Number(state.saveCounts[a.id])||0)||a.id-b.id).slice(0,20);
   }
-  return [...games].sort((a,b)=>score(b)-score(a)||a.id-b.id).slice(0,20);
+  const ageRange=selectedAgeBounds();if(!ageRange)return [];
+  return games.filter(g=>g.minAge<=ageRange[0]&&g.maxAge>=ageRange[1]).sort((a,b)=>score(b)-score(a)||a.id-b.id).slice(0,20);
 }
 function gameCard(game){
   const [title,description]=localized(game), liked=state.likes.includes(game.id);
   const saveLabel=liked?t().savedAction:t().saveAction;
-  return `<article class="activity" data-detail="${game.id}" tabindex="0"><img class="activity-image" src="${game.image}" alt="${t().image(title)}"><div class="activity-content"><div class="activity-topline"><h3>${title}</h3><button class="like-button ${liked?"is-liked":""}" data-like="${game.id}" aria-label="${saveLabel}" aria-pressed="${liked}">♥ <span class="save-label">${saveLabel}</span></button></div><p>${description}</p><div class="activity-meta"><span class="tag">${game.duration} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span></div><button class="details-button" data-open-detail="${game.id}">${t().details}</button></div></article>`;
+  const uploadedImage=hasUploadedGameImage(game.image);
+  return `<article class="activity" data-detail="${game.id}" tabindex="0"><div class="activity-visual"><img class="activity-image ${uploadedImage?"activity-image-uploaded":""}" src="${game.image}" alt="${t().image(title)}"><button class="like-button activity-like ${liked?"is-liked":""}" data-like="${game.id}" aria-label="${saveLabel}" aria-pressed="${liked}">♥ <span class="save-label">${saveLabel}</span></button></div><div class="activity-content"><div class="activity-topline"><h3>${title}</h3></div><p>${description}</p><div class="activity-meta"><span class="tag">${game.duration} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span></div><button class="details-button" data-open-detail="${game.id}">${t().details}</button></div></article>`;
 }
 function renderResults(){
   const list=gameList(), c=t(); $("#questionCard").hidden=true; $("#progress").hidden=true; $("#results").hidden=false;
   $("#landing").hidden=true; $("#explorePage").hidden=true;
-  const showCollectionHeading=state.view==="popular"||state.view==="saved";
+  const showCollectionHeading=state.view==="popular"||state.view==="saved"||state.view==="collection";
   $("#collectionHeading").hidden=!showCollectionHeading;
-  if(showCollectionHeading){$("#collectionTitle").textContent=state.view==="popular"?c.popular:c.saved;$("#collectionSummary").textContent=state.view==="popular"?c.collectionSummary.popular:c.collectionSummary.saved;}
+  if(showCollectionHeading){
+    const isCollection=state.view==="collection";
+    $("#collectionTitle").textContent=isCollection?state.collection.label:state.view==="popular"?c.popular:c.saved;
+    $("#collectionSummary").hidden=isCollection;
+    if(!isCollection)$("#collectionSummary").textContent=state.view==="popular"?c.collectionSummary.popular:c.collectionSummary.saved;
+  }
   $("#resultsToolbar").hidden=state.view!=="recommended";
   $("#activityGrid").innerHTML=list.map(gameCard).join(""); $("#emptyState").hidden=list.length>0||state.view!=="saved";
   $("#emptyTitle").textContent=c.emptySaved; $("#emptyCopy").textContent=c.emptySavedCopy; $("#changeFiltersButton").textContent=c.change;
@@ -880,14 +1202,44 @@ function renderResults(){
 function renderExplore(){
   const c=t(), categories=exploreCategories[state.language], skills=exploreSkills[state.language];
   $("#landing").hidden=true;$("#questionCard").hidden=true;$("#progress").hidden=true;$("#results").hidden=true;$("#explorePage").hidden=false;
-  $("#categoryGrid").innerHTML=categories.map(x=>`<button class="category-card" data-category="${x[0]}"><span>${x[1]}</span><strong>${x[2]}</strong><small>${x[3]}</small></button>`).join("");
-  $("#skillGrid").innerHTML=skills.map(x=>`<button class="skill-card" data-skill="${x[0]}"><span>${x[1]}</span><span><strong>${x[2]}</strong><small>${x[3]}</small></span></button>`).join("");
+  $("#categoryTitle").textContent=c.momentTitle;$("#skillTitle").textContent=c.skillTitle;
+  $("#categoryGrid").innerHTML=categories.map(x=>`<button class="category-card" data-category="${x[0]}"><span class="category-icon">${x[1]}</span><span class="category-copy"><strong>${x[2]}</strong><small>${x[3]}</small></span></button>`).join("");
+  $("#skillGrid").innerHTML=skills.map(x=>`<button class="skill-card" data-skill="${x[0]}"><span>${x[1]}</span><span><strong>${x[2]}</strong>${x[3]?`<small>${x[3]}</small>`:""}</span></button>`).join("");
   $$("[data-category]").forEach(b=>b.onclick=()=>openCollection("category",b.dataset.category,categories.find(x=>x[0]===b.dataset.category)[2]));
   $$("[data-skill]").forEach(b=>b.onclick=()=>openCollection("skill",b.dataset.skill,skills.find(x=>x[0]===b.dataset.skill)[2]));
   scrollTo({top:0,behavior:"smooth"});
 }
 function openCollection(type,key,label){state.collection={type,key,label};state.view="collection";renderResults();scrollTo({top:0,behavior:"smooth"})}
 let detailDemoTimer=null;
+const ageGuidanceTranslations={
+  "3–5 uz odraslog":"Younger children ages 3–5 should play with adult support.",
+  "mlađima ponuditi dva izvora zvuka":"Offer younger children a choice of two sounds.",
+  "starijima izazov stabilnosti":"Add a stability challenge for older children.",
+  "starijima omogućiti da osmisle stazu":"Let older children design the route.",
+  "starijima dodati dvostruki uslov":"Add a second condition for older children.",
+  "mlađima koristiti celo telo":"Invite younger children to use their whole body.",
+  "mlađima ponuditi izbor između dve životinje":"Offer younger children a choice between two animals.",
+  "starijima dodati pravila ili izazov":"Add a rule or extra challenge for older children.",
+  "jedna komanda za mlađe, niz komandi za starije":"Use one command for younger children and a sequence for older children.",
+  "mlađima dozvoliti podizanje olovke":"Allow younger children to lift the pencil.",
+  "mlađima ponuditi izbor, starijima dodatni izazov":"Offer a choice to younger children and an extra challenge to older children.",
+  "mlađima uz odraslog":"Younger children should play with adult support.",
+  "starijima dodati građevinski izazov":"Add a building challenge for older children.",
+  "starijima dodati ograničenje":"Add a constraint for older children.",
+  "za 10–12 godina koristiti izazovnu varijantu":"Use the challenge version for ages 10–12.",
+  "uz nivoe pitanja":"Choose question difficulty to match the child’s age.",
+  "uz tri nivoa težine":"Offer three difficulty levels.",
+  "zavisi od vremena i okruženja":"Adapt to the weather and setting.",
+  "starijima dodati misiju":"Add a mission for older children.",
+  "5–6 uz kotrljanje lopte":"For ages 5–6, roll the ball instead of throwing it.",
+  "početi sa dva pokreta":"Start with two movements."
+};
+function localizedAgeGuidance(game,language){
+  const ageText=game.ageText||"";let note=ageText.includes(";")?ageText.split(";").slice(1).join(";").trim():(ageText.match(/\(([^)]+)\)/)?.[1]||ageText.replace(/^\d+\s*[–-]\s*\d+\s*godina\s*/i,"").trim());
+  if(!note||/^\d+\s*[–-]\s*\d+\s*(godina|years?)$/i.test(note))return "";
+  if(language==="sr")return note;
+  return ageGuidanceTranslations[note]||"Adapt the activity to the child’s age and ability.";
+}
 const gameBonusIdeas = {
   "Story Circle": {en:"Add an unexpected visitor who changes what the characters planned.",sr:"Uvedite neočekivanog gosta koji promeni planove junaka."},
   "Mystery Drawing": {en:"After the guess, add one tiny detail that changes what the object is used for.",sr:"Kada pogode predmet, dodajte sitnicu koja mu menja namenu."},
@@ -1288,9 +1640,22 @@ const gameExampleIdeas = {
 
 function openGameDetail(id){
   const game=games.find(g=>g.id===id);if(!game)return;state.selectedGame=id;
+  if($("#gamePage").hidden){state.gameReturnScreen={landing:!$("#landing").hidden,explore:!$("#explorePage").hidden,question:!$("#questionCard").hidden,results:!$("#results").hidden,step:state.step}}
+  $("#landing").hidden=true;$("#explorePage").hidden=true;$("#questionCard").hidden=true;$("#progress").hidden=true;$("#results").hidden=true;$("#appTopbar").hidden=true;$("#appFooter").hidden=true;$(".main-nav").hidden=true;$("#gamePage").hidden=false;
   const [title,description]=localized(game), liked=state.likes.includes(id);
   const specific=gameDetailOverrides[game.title]?.[state.language];
-  $("#detailImage").src=game.image;$("#detailImage").alt=t().image(title);$("#detailTitle").textContent=title;$("#detailDescription").textContent=description;
+  const feedback=game.feedback?.[state.language];
+  $("#detailImage").src=game.image;$("#detailImage").alt=t().image(title);$("#detailImage").classList.toggle("game-detail-image-uploaded",hasUploadedGameImage(game.image));$("#detailTitle").textContent=title;$("#detailDescription").textContent=description;
+  $("#detailAboutTitle").textContent=t().aboutTitle;
+  const skills=game.skills||[];$("#detailSkillsSection").hidden=!skills.length;$("#detailSkillsTitle").textContent=t().skillsTitle;
+  $("#detailSkillsList").innerHTML=skills.map(skill=>{const name=state.language==="sr"?skill.sr:skill.en,description=existingSkillDescriptions[state.language][name]||"";return `<div class="detail-skill"><span class="detail-skill-icon" aria-hidden="true">${feedbackSkillIcon(name)}</span><div><strong>${name}</strong>${description?`<small>${description}</small>`:""}</div></div>`}).join("");
+  const preparation=feedback?.preparation||specific?.prep||preparationForGame(game,state.language);
+  const needsPreparation=Boolean(preparation)&&!/^no special preparation needed\.?$/i.test(preparation.trim())&&!/^nije potrebna posebna priprema\.?$/i.test(preparation.trim());
+  $("#detailPreparation").hidden=!needsPreparation;$("#detailPreparationTitle").textContent=t().prepareLabel;$("#detailPreparationCopy").textContent=preparation;
+  const ageNote=localizedAgeGuidance(game,state.language);
+  const steps=feedback?.steps||specific?.steps||[];
+  $("#detailStepsSection").hidden=!steps.length;$("#detailStepsTitle").textContent=t().stepsTitle;
+  const stepList=$("#detailStepsList");stepList.replaceChildren();steps.forEach(step=>{const item=document.createElement("li");item.textContent=step;stepList.append(item)});
   const showDemo=game.title==="Guess the Leader", demoCopy=t().demoSteps;
   if(detailDemoTimer){clearInterval(detailDemoTimer);detailDemoTimer=null}
   $("#detailDemo").hidden=!showDemo;$("#detailDemo").classList.remove("is-playing");
@@ -1298,19 +1663,26 @@ function openGameDetail(id){
   if(showDemo){$("#detailDemoTitle").textContent=t().demoTitle;demoCopy.forEach((step,index)=>{$(`#detailDemoStep${index+1}Title`).textContent=step[0];$(`#detailDemoStep${index+1}Copy`).textContent=step[1]});$("#detailDemoToggleText").textContent=t().demoPlay;$("#detailDemoToggle").querySelector("[aria-hidden='true']").textContent="▶";$("#detailDemoToggle").setAttribute("aria-pressed","false")}
   $("#detailTags").innerHTML=`<span class="tag">${game.duration} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span>`;
   $("#detailExampleTitle").textContent=t().exampleTitle;
-  const example=specific?.example||gameExampleIdeas[game.title]?.[state.language];
+  const example=feedback?.example||specific?.example||gameExampleIdeas[game.title]?.[state.language];
   $("#detailExampleCard").hidden=!example;
-  const bonus=specific?.parent||gameBonusIdeas[game.title]?.[state.language];
+  const bonusBase=feedback?.bonus||specific?.parent||gameBonusIdeas[game.title]?.[state.language]||"";
+  const bonus=[bonusBase,ageNote?`${t().ageBonusLabel}: ${ageNote}`:""].filter(Boolean).join("\n\n");
   $("#detailParentCard").hidden=!bonus;
   $("#detailGrid").hidden=!(example||bonus);
   $("#detailGrid").classList.toggle("has-example",Boolean(example));
   $("#detailExample").textContent=example||"";
   $("#detailParentTitle").textContent=t().parentTipTitle;
   $("#detailParent").textContent=bonus||"";
-  $("#detailCloseButton").textContent=t().closeDetails;
+  $("#gamePageBack").setAttribute("aria-label",t().closeDetails);$("#gameShareButton").setAttribute("aria-label",state.language==="sr"?"Podeli igru":"Share game");
   const saveLabel=liked?t().savedAction:t().saveAction;
   $("#detailLikeButton").innerHTML=`♥ <span class="save-label">${saveLabel}</span>`;$("#detailLikeButton").setAttribute("aria-label",saveLabel);$("#detailLikeButton").setAttribute("aria-pressed",String(liked));
-  $("#detailLikeButton").classList.toggle("is-liked",liked);if(!$("#gameDialog").open)$("#gameDialog").showModal();
+  $("#detailLikeButton").classList.toggle("is-liked",liked);
+}
+function closeGameDetail(){
+  if(detailDemoTimer){clearInterval(detailDemoTimer);detailDemoTimer=null}
+  $("#detailDemo").classList.remove("is-playing");$("#gamePage").hidden=true;$("#appTopbar").hidden=false;$("#appFooter").hidden=false;$(".main-nav").hidden=false;
+  const previous=state.gameReturnScreen;state.gameReturnScreen=null;
+  if(previous?.explore)renderExplore();else if(previous?.question)showFilters(previous.step);else if(previous?.results)renderResults();else showLanding();
 }
 function setView(view){
   state.view=view; $$(".nav-button").forEach(b=>b.classList.toggle("is-active",b.dataset.view===view));
@@ -1318,7 +1690,7 @@ function setView(view){
 }
 function requireProfile(){if(state.profile)return true;$("#profileDialog").showModal();return false}
 function showToast(message){const toast=$("#toast");toast.textContent=message;toast.classList.add("is-visible");clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>toast.classList.remove("is-visible"),2600)}
-function toggleLike(id){if(!requireProfile())return;const liked=state.likes.includes(id);if(!liked){state.saveCounts[id]=(Number(state.saveCounts[id])||0)+1;localStorage.setItem("playPicksSaveCounts",JSON.stringify(state.saveCounts))}state.likes=liked?state.likes.filter(x=>x!==id):[...state.likes,id];localStorage.setItem("playPicksLikes",JSON.stringify(state.likes));showToast(liked?t().unliked:t().liked);if(!$("#results").hidden)renderResults();if($("#gameDialog").open)openGameDetail(id)}
+function toggleLike(id){if(!requireProfile())return;const liked=state.likes.includes(id);if(!liked){state.saveCounts[id]=(Number(state.saveCounts[id])||0)+1;localStorage.setItem("playPicksSaveCounts",JSON.stringify(state.saveCounts))}state.likes=liked?state.likes.filter(x=>x!==id):[...state.likes,id];localStorage.setItem("playPicksLikes",JSON.stringify(state.likes));showToast(liked?t().unliked:t().liked);if(!$("#results").hidden)renderResults();if(!$("#gamePage").hidden)openGameDetail(id)}
 function showFilters(step=state.step){state.step=step;$("#landing").hidden=true;$("#explorePage").hidden=true;$("#questionCard").hidden=false;$("#progress").hidden=false;$("#results").hidden=true;renderQuestion();scrollTo({top:0,behavior:"smooth"})}
 function showLanding(){state.step=0;state.answers={};state.view="recommended";$("#landing").hidden=false;$("#explorePage").hidden=true;$("#questionCard").hidden=true;$("#progress").hidden=true;$("#results").hidden=true;$$(".nav-button").forEach(b=>b.classList.toggle("is-active",b.dataset.view==="recommended"));scrollTo({top:0,behavior:"smooth"})}
 $("#nextButton").onclick=()=>{if(state.step<questions().length-1){state.step++;renderQuestion()}else{state.view="recommended";renderResults()}};
@@ -1326,8 +1698,10 @@ $("#backButton").onclick=()=>{if(state.step){state.step--;renderQuestion()}else 
 $("#changeFiltersButton").onclick=()=>setView("recommended"); $$(".nav-button").forEach(b=>b.onclick=()=>setView(b.dataset.view));
 $("#startButton").onclick=()=>showFilters(0); $("#dailyButton").onclick=()=>openGameDetail(dailyGame().id);
 $("#detailDemoToggle").onclick=()=>{const playing=$("#detailDemo").classList.toggle("is-playing"),steps=[...$$(".detail-demo-step")];if(detailDemoTimer){clearInterval(detailDemoTimer);detailDemoTimer=null}if(playing&&steps.length){let activeIndex=0;steps.forEach((step,index)=>step.classList.toggle("is-active",index===0));detailDemoTimer=setInterval(()=>{steps[activeIndex].classList.remove("is-active");activeIndex=(activeIndex+1)%steps.length;steps[activeIndex].classList.add("is-active")},1600)}else{steps.forEach(step=>step.classList.remove("is-active"))}$("#detailDemoToggle").setAttribute("aria-pressed",String(playing));$("#detailDemoToggleText").textContent=playing?t().demoPause:t().demoPlay;$("#detailDemoToggle").querySelector("[aria-hidden='true']").textContent=playing?"Ⅱ":"▶"};
-$("#gameDialogClose").onclick=()=>$("#gameDialog").close();$("#detailCloseButton").onclick=()=>$("#gameDialog").close();$("#detailLikeButton").onclick=()=>toggleLike(state.selectedGame);
-$$ (".language-button").forEach(b=>b.onclick=()=>{state.language=b.dataset.language;translate();if($("#gameDialog").open)openGameDetail(state.selectedGame);if(!$("#explorePage").hidden)renderExplore();else if(!$("#results").hidden)renderResults();else if(!$("#questionCard").hidden)renderQuestion()});
+$("#gamePageBack").onclick=closeGameDetail;$("#detailLikeButton").onclick=()=>toggleLike(state.selectedGame);
+$("#safetyNoteButton").onclick=()=>$("#safetyDialog").showModal();$("#safetyDialogClose").onclick=()=>$("#safetyDialog").close();$("#safetyDialogDone").onclick=()=>$("#safetyDialog").close();
+$("#gameShareButton").onclick=async()=>{const title=$("#detailTitle").textContent,text=$("#detailDescription").textContent;try{if(navigator.share)await navigator.share({title,text,url:location.href});else if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(`${title}\n${text}`);showToast(t().shareCopied)}else showToast(t().shareUnavailable)}catch(error){if(error.name!=="AbortError")showToast(t().shareUnavailable)}};
+$$ (".language-button").forEach(b=>b.onclick=()=>{state.language=b.dataset.language;translate();if(!$("#gamePage").hidden)openGameDetail(state.selectedGame);if(!$("#explorePage").hidden)renderExplore();else if(!$("#results").hidden)renderResults();else if(!$("#questionCard").hidden)renderQuestion()});
 $("#profileButton").onclick=()=>{$("#profileName").value=state.profile?.name||"";$("#deleteProfileButton").classList.toggle("is-visible",Boolean(state.profile));$("#profileDialog").showModal()};
 $("#feedbackLabel").textContent=t().feedbackLabel;$("#feedbackHint").textContent=t().feedbackHint;$("#feedbackButton").textContent=t().feedbackButton;
 $("#feedbackButton").onclick=()=>{const message=$("#feedbackMessage").value.trim();if(!message){showToast(t().feedbackRequired);return}window.location.href=`mailto:?subject=${encodeURIComponent(t().feedbackSubject)}&body=${encodeURIComponent(message)}`};

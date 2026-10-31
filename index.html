@@ -14,17 +14,11 @@
     <div class="page-shape page-shape-one" aria-hidden="true"></div>
     <div class="page-shape page-shape-two" aria-hidden="true"></div>
     <main class="app-shell">
-      <header class="topbar">
+      <header class="topbar" id="appTopbar">
         <button class="brand" id="homeButton" type="button" aria-label="Play Picks home">
           <span class="brand-mark">✦</span>
           <span id="brandLabel">Play Picks</span>
         </button>
-        <nav class="main-nav" aria-label="Game views">
-          <button class="nav-button is-active" type="button" data-view="recommended">For you</button>
-          <button class="nav-button" type="button" data-view="explore">Explore</button>
-          <button class="nav-button" type="button" data-view="popular">Popular</button>
-          <button class="nav-button" type="button" data-view="saved">Saved</button>
-        </nav>
         <button class="profile-button" id="profileButton" type="button">
           <span class="profile-avatar" id="profileAvatar">?</span>
           <span id="profileLabel">Profile</span>
@@ -42,22 +36,11 @@
             <div class="trust-row">
               <span id="trustTwo">✓ Screen-free ideas</span>
               <span id="trustThree">✓ Ages 3–12</span>
+              <span id="trustFour">✓ For every day</span>
             </div>
           </div>
           <div class="hero-visual" aria-hidden="true">
-            <div class="play-card play-card-main">
-              <svg class="kite-art" viewBox="0 0 100 126" aria-hidden="true">
-                <path d="M50 4 92 45 50 83 8 45Z" fill="#70bfd2" />
-                <path d="M50 4 50 45 8 45Z" fill="#f47e88" />
-                <path d="M50 4 92 45 50 45Z" fill="#a99be8" />
-                <path d="M8 45 50 83V45Z" fill="#8bd7e8" />
-                <path d="M50 4v79M8 45h84" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="3" />
-                <path d="M50 83c-12 11 12 15-1 25s8 13 5 16" fill="none" stroke="#7459e8" stroke-linecap="round" stroke-width="3" />
-                <path d="m46 94 9 4-8 5-6-5ZM52 108l8 3-6 6-7-4Z" fill="#f47e88" />
-              </svg>
-            </div>
-            <div class="floating-bubble bubble-one">🎨</div>
-            <div class="floating-bubble bubble-two">⚽</div>
+            <img class="hero-image" src="Image%20(3).jpg" alt="" />
           </div>
         </section>
 
@@ -94,11 +77,11 @@
 
       <section class="explore-page" id="explorePage" hidden>
         <section class="explore-panel">
-          <h2 class="explore-list-title explore-list-title-situations" id="categoryTitle">Games for every occasion</h2>
+          <h2 class="explore-list-title explore-list-title-situations" id="categoryTitle">By situation</h2>
           <div class="category-grid" id="categoryGrid"></div>
         </section>
         <section class="explore-panel explore-panel-skills">
-          <h2 class="explore-list-title explore-list-title-skills" id="skillTitle">Games to build skills</h2>
+          <h2 class="explore-list-title explore-list-title-skills" id="skillTitle">By skill</h2>
           <div class="skill-grid" id="skillGrid"></div>
         </section>
       </section>
@@ -161,9 +144,14 @@
         </form>
       </dialog>
 
-      <dialog class="game-dialog" id="gameDialog">
+      <section class="game-page" id="gamePage" hidden aria-labelledby="detailTitle">
         <article class="game-detail">
-          <button class="dialog-close game-dialog-close" id="gameDialogClose" type="button" aria-label="Close">×</button>
+          <div class="game-page-toolbar">
+            <button class="game-page-back" id="gamePageBack" type="button" aria-label="Back to games"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+            <div class="game-page-actions">
+              <button class="game-page-share" id="gameShareButton" type="button" aria-label="Share game"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.7 10.7 6.6-4.4m-6.6 9 6.6 4.1"/></svg></button>
+            </div>
+          </div>
           <div class="game-detail-visual">
             <img class="game-detail-image" id="detailImage" alt="" />
             <button class="like-button detail-like" id="detailLikeButton" type="button">♥ <span class="save-label">Save</span></button>
@@ -174,7 +162,23 @@
                 <h2 id="detailTitle"></h2>
               </div>
             </div>
-            <p class="game-detail-intro" id="detailDescription"></p>
+            <div class="detail-tags" id="detailTags"></div>
+            <section class="detail-skills" id="detailSkillsSection" hidden aria-labelledby="detailSkillsTitle">
+              <h3 id="detailSkillsTitle"></h3>
+              <div class="detail-skill-list" id="detailSkillsList"></div>
+            </section>
+            <section class="detail-about" aria-labelledby="detailAboutTitle">
+              <h3 id="detailAboutTitle"></h3>
+              <p class="game-detail-intro" id="detailDescription"></p>
+            </section>
+            <section class="detail-preparation" id="detailPreparation" hidden aria-labelledby="detailPreparationTitle">
+              <h3 id="detailPreparationTitle"></h3>
+              <p id="detailPreparationCopy"></p>
+            </section>
+            <section class="detail-steps-panel" id="detailStepsSection" hidden aria-labelledby="detailStepsTitle">
+              <h3 id="detailStepsTitle"></h3>
+              <ol class="detail-steps-list" id="detailStepsList"></ol>
+            </section>
             <section class="detail-demo" id="detailDemo" hidden aria-labelledby="detailDemoTitle">
               <div class="detail-demo-toolbar">
                 <h3 id="detailDemoTitle"></h3>
@@ -198,7 +202,6 @@
                 </div>
               </div>
             </section>
-            <div class="detail-tags" id="detailTags"></div>
             <div class="detail-grid" id="detailGrid">
               <div class="detail-tip" id="detailExampleCard">
                 <span aria-hidden="true">💡</span>
@@ -211,24 +214,47 @@
                 <p id="detailParent"></p>
               </div>
             </div>
-            <div class="detail-actions">
-              <button class="hero-secondary" id="detailCloseButton" type="button">Back to games</button>
-            </div>
           </div>
         </article>
-      </dialog>
+      </section>
 
-      <footer>
-        <section class="parent-note">
-          <div class="parent-note-icon" aria-hidden="true">🛟</div>
-          <div>
-            <h3 id="safetyTitle">A note for safe, happy play</h3>
-            <p id="safetyCopy">Stay nearby, adapt every activity to your child and space, and use age-appropriate, safe materials.</p>
-          </div>
-        </section>
+      <footer id="appFooter">
+        <button class="parent-note" id="safetyNoteButton" type="button" aria-haspopup="dialog" aria-controls="safetyDialog">
+          <span class="parent-note-icon" aria-hidden="true">🛟</span>
+          <span class="parent-note-copy"><strong id="safetyTitle">A note for safe, happy play</strong><span id="safetyCopy">Stay nearby, adapt every activity to your child and space, and use age-appropriate, safe materials.</span></span>
+          <span class="safety-note-action" id="safetyNoteAction">Details</span>
+        </button>
       </footer>
     </main>
+    <dialog class="safety-dialog" id="safetyDialog" aria-labelledby="safetyDialogTitle">
+      <article class="safety-dialog-card">
+        <button class="dialog-close" id="safetyDialogClose" type="button" aria-label="Close">×</button>
+        <span class="safety-dialog-icon" aria-hidden="true">🛟</span>
+        <h2 id="safetyDialogTitle">Safety details</h2>
+        <div id="safetyDialogCopy"></div>
+        <button class="primary-button safety-dialog-done" id="safetyDialogDone" type="button">Close</button>
+      </article>
+    </dialog>
+    <nav class="main-nav" aria-label="Game views">
+      <button class="nav-button is-active" type="button" data-view="recommended" aria-current="page">
+        <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/><path d="M9 21v-7h6v7"/></svg>
+        <span class="nav-label">For you</span>
+      </button>
+      <button class="nav-button" type="button" data-view="explore">
+        <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+        <span class="nav-label">Explore</span>
+      </button>
+      <button class="nav-button" type="button" data-view="popular">
+        <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9z"/></svg>
+        <span class="nav-label">Popular</span>
+      </button>
+      <button class="nav-button" type="button" data-view="saved">
+        <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5.2-8.8 11.1-8.8 11.1S3.2 13.9 3.2 8.7A4.7 4.7 0 0 1 12 6.3a4.7 4.7 0 0 1 8.8 2.4z"/></svg>
+        <span class="nav-label">Saved</span>
+      </button>
+    </nav>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="game-feedback-data.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
