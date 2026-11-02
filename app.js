@@ -107,13 +107,13 @@ const gameIdeas = [
 ["Leaf Race","Trka listova","Blow leaves across a finish line without touching them.","Duvanjem pomerajte lišće do cilja bez dodirivanja.","nature"],
 ["Statue Museum","Muzej statua","Pose as themed statues while a visitor tours the museum.","Pozirajte kao tematske statue dok posetilac obilazi muzej.","pretend"],
 ["Shape Explorer","Istraživač oblika","Find circles, triangles and squares in the space around you.","Pronađite krugove, trouglove i kvadrate u prostoru oko sebe.","search"],
-["Floor Is Lava","Pod je lava","Travel across safe stepping spots without touching the floor.","Pređite preko bezbednih tačaka bez dodirivanja poda.","balance"],
+["Invent a New Sport","Osmisli novi sport","Invent a movement game together: choose a goal, agree on one safe movement rule and try a short round.","Zajedno osmislite novu igru kretanja: izaberite cilj, dogovorite jedno bezbedno pravilo i isprobajte kratku rundu.","run"],
 ["Name That Mime","Pogodi pantomimu","Act out everyday actions without words for others to guess.","Bez reči odglumite svakodnevne radnje koje ostali pogađaju.","pretend"],
 ["Paper Maze","Lavirint na papiru","Draw a simple maze with a start, finish and a few dead ends, then swap mazes and trace each route with a pencil.","Nacrtajte jednostavan lavirint sa početkom, ciljem i nekoliko slepih ulica, pa zamenite papire i pronađite put olovkom.","draw"],
 ["Backyard Olympics","Dvorišna olimpijada","Create three simple events for speed, aim and balance.","Napravite tri jednostavne discipline brzine, ciljanja i ravnoteže.","run"],
 ["Make a Goal","Napravimo gol","On flat, clear ground, mark a small goal with two short sticks or stones that will not roll. Take turns gently rolling a soft ball through it.","Na ravnom, slobodnom prostoru označite mali gol kratkim grančicama ili kamenovima koji se ne kotrljaju. Naizmenično nežno kotrljajte mekanu loptu kroz gol.","ball"],
 ["Sound Orchestra","Orkestar zvukova","Assign each player a sound and conduct a group performance.","Dodelite svakom igraču zvuk i dirigujte grupnim nastupom.","story"],
-["Tape-Line Balance","Balans po liniji","Follow a safe floor line heel-to-toe with playful poses.","Pratite bezbednu liniju na podu korak po korak uz zabavne poze.","balance"],
+["Forbidden Word","Zabranjena reč","Describe a familiar word without saying it or its forbidden clue word while the others guess.","Opišite poznatu reč bez izgovaranja njenog naziva ili povezane zabranjene reči, dok ostali pogađaju.","story"],
 ["Monster Steps","Koraci čudovišta","Invent giant, tiny and wobbly monster walks.","Osmislite džinovske, sićušne i klimave korake čudovišta.","dance"],
 ["Memory Tray","Poslužavnik pamćenja","Study several objects, hide one and identify what changed.","Pogledajte nekoliko predmeta, sakrijte jedan i pogodite šta se promenilo.","search"],
 ["Bridge Builders","Graditelji mosta","Span a small gap between two sturdy supports with folded paper, cardboard strips or craft sticks. Test the bridge with a small toy and add one piece at a time.","Prebacite presavijeni papir, trake kartona ili drvene štapiće preko malog razmaka između dva stabilna oslonca. Ispitajte most malom igračkom i dodajte po jedan deo.","build"],
@@ -778,31 +778,60 @@ function ageRangeForIdea(g) {
   return [4,12];
 }
 const uploadedHeroImages = {
-  "Rainbow Hunt":"20_hero_slika_JPG/cropped/01_Lov_na_dugu.jpg",
+  "Freeze Dance":"20_hero_slika_JPG/cropped/20_Plesna_misija.jpg",
+  "Who Lives in This Ecosystem?":"Game app/illustrations-133-200/162_igra.jpg",
+  "Invent a New Sport":"Game app/matched-images/037_igra.jpg",
+  "Mystery Drawing":"Game app/matched-images/056_igra.jpg",
+  "Family Quiz":"Game app/illustrations-133-200/150_igra.jpg",
+  "Forbidden Word":"20_hero_slika_JPG/cropped/10_Pitaj_i_pogodi.jpg",
+  "Funny Portrait":"20_hero_slika_JPG/cropped/13_Crtaj_zajedno.jpg",
+  "Nature Faces":"Game app/illustrations-133-200/160_igra.jpg",
+  "Target Toss":"Game app/illustrations-133-200/147_igra.jpg",
+  "Movement Memory":"Game app/illustrations-133-200/175_igra.jpg",
+  "Pass the Sketch":"Game app/matched-images/056_igra.jpg",
+  "Guess My Rule":"Game app/illustrations-133-200/133_igra.jpg",
+  "Balance Delivery":"Game app/illustrations-133-200/143_igra.jpg",
+  "Marshmallow Structures":"Game app/illustrations-133-200/139_igra.jpg",
+  "Balance Sculpture":"Game app/illustrations-133-200/143_igra.jpg",
+  "Guess the Leader":"Game app/illustrations-133-200/150_igra.jpg",
+  "Restaurant Imagination":"Game app/illustrations-133-200/178_igra.jpg",
+  "Helpful Inventor":"Game app/illustrations-133-200/181_igra.jpg",
+  "Letter Clue Guess":"20_hero_slika_JPG/cropped/17_Lov_na_slova.jpg",
+  "Guess Who I Am":"Game app/illustrations-133-200/200_igra.jpg",
+  "Target Ladder":"Game app/illustrations-133-200/147_igra.jpg",
+  "Leaf Line-Up":"Game app/illustrations-133-200/156_igra.jpg",
+  "Stick Shadow Shapes":"Game app/illustrations-133-200/158_igra.jpg",
+  "Nature Color Wheel":"Game app/illustrations-133-200/160_igra.jpg",
+  "Mirror Animal":"Game app/illustrations-133-200/166_igra.jpg",
   "Animal Parade":"20_hero_slika_JPG/cropped/02_Parada_zivotinja.jpg",
+  "Shadow Zoo":"Game app/illustrations-133-200/172_igra.jpg",
+  "Robot Guide":"Game app/illustrations-133-200/181_igra.jpg",
+  "Tallest Tower":"Game app/illustrations-133-200/139_igra.jpg",
+  "Cup Castle":"Game app/illustrations-133-200/139_igra.jpg",
+  "Animal Traffic":"20_hero_slika_JPG/cropped/02_Parada_zivotinja.jpg",
+  "Cloud Shapes":"Game app/illustrations-133-200/163_igra.jpg",
+  "One-Minute Challenge":"Game app/illustrations-133-200/136_igra.jpg",
+  "Rainbow Hunt":"20_hero_slika_JPG/cropped/01_Lov_na_dugu.jpg",
   "Story Circle":"20_hero_slika_JPG/cropped/03_Krug_prica.jpg",
   "Color Dash":"20_hero_slika_JPG/cropped/04_Trka_boja.jpg",
   "Secret Sound":"20_hero_slika_JPG/cropped/05_Tajni_zvuk.jpg",
   "Cushion Islands":"20_hero_slika_JPG/cropped/06_Ostrva_od_jastuka.jpg",
-  "Mini Bowling":"20_hero_slika_JPG/cropped/07_Mini_kuglanje.jpg",
+  "Mini Bowling":"Game app/matched-images/091_igra.jpg",
   "Shape Explorer":"20_hero_slika_JPG/cropped/08_Potraga_za_oblicima.jpg",
   "Magic Object":"20_hero_slika_JPG/cropped/09_Carobna_kutija.jpg",
-  "Question Detective":"20_hero_slika_JPG/cropped/10_Pitaj_i_pogodi.jpg",
   "Three Things, One Story":"20_hero_slika_JPG/cropped/11_Slozi_pricu.jpg",
   "Ball Balance":"20_hero_slika_JPG/cropped/12_Balansiranje_lopte.jpg",
-  "Pass the Sketch":"20_hero_slika_JPG/cropped/13_Crtaj_zajedno.jpg",
   "What Changed":"20_hero_slika_JPG/cropped/14_Sta_se_promenilo.jpg",
   "Adventure Path":"20_hero_slika_JPG/cropped/15_Napravi_stazu.jpg",
-  "Guess Who I Am":"20_hero_slika_JPG/cropped/16_Ko_sam_ja.jpg",
-  "Letter Clue Guess":"20_hero_slika_JPG/cropped/17_Lov_na_slova.jpg",
   "Jumping Numbers":"20_hero_slika_JPG/cropped/18_Broji_korake.jpg",
   "Postcard Adventure":"20_hero_slika_JPG/cropped/19_Zamisljenо_putovanje.jpg",
   "Celebration Choreo":"20_hero_slika_JPG/cropped/20_Plesna_misija.jpg"
 };
 function hasUploadedGameImage(image){return image.startsWith("20_hero_slika_JPG/cropped/")||image.startsWith("Game app/")}
+function hasNumberedGameImage(image){return image.startsWith("Game app/matched-images/")||image.startsWith("Game app/illustrations-133-200/")}
 const gameFeedbackById=new Map((window.GAME_FEEDBACK_DATA||[]).map(record=>[record.id,record]));
 const situationKeyByName={"Kišni dani":"rainy","Letnje igre":"summer","Hladniji dani":"winter","Porodična okupljanja":"holiday","U pokretu":"travel","Grupe i proslave":"party"};
-const replacementScenes={"Space Base: Limited Resources":"build","The Swap Market":"pretend","Museum of the Future":"pretend","Detective File: Three Clues":"search","Spot the Story Glitch":"story","Advertise the Most Useless Invention":"story","Build a Chain-Reaction Machine":"build","Secret Symbol Message":"search","Who Lives in This Ecosystem?":"nature","Invent a New Planet":"draw","Family Mini Escape Room":"search","Design a Family Secret Handshake":"dance"};
+const replacementScenes={"Invent a New Sport":"run","Forbidden Word":"story","Museum of the Future":"pretend","Detective File: Three Clues":"search","Spot the Story Glitch":"story","Advertise the Most Useless Invention":"story","Build a Chain-Reaction Machine":"build","Secret Symbol Message":"search","Who Lives in This Ecosystem?":"nature","Invent a New Planet":"draw","Family Mini Escape Room":"search","Design a Family Secret Handshake":"dance"};
 function feedbackSkillKey(skill){
   const text=`${skill.sr} ${skill.en}`.toLowerCase();
   if(/cooperation|teamwork|negotiation|emotion|saradnja|pregovaranje|emocij/.test(text))return "social";
@@ -834,6 +863,8 @@ const games = gameIdeas.map((idea,index)=>{
   if(!feedback)throw new Error(`Missing feedback record for game ${index+1}`);
   const scene=replacementScenes[feedback.title]||idea[4];
   const derivedIdea=[feedback.title,feedback.srTitle,feedback.en.description,feedback.sr.description,scene];
+  const generatedImage=Boolean(replacementScenes[feedback.title])||[7,16,56,69,85,92,93,139,143,147,150,156,158,160,163,166,172,178,181,196,199].includes(feedback.id);
+  const imageId=feedback.id>=196&&feedback.id<=199?feedback.id+1:feedback.id;
   const skillKeys=[...new Set(feedback.skills.map(feedbackSkillKey).filter(Boolean))];
   const situationKeys=feedback.situationsSr.map(name=>situationKeyByName[name]).filter(Boolean);
   return {
@@ -841,7 +872,7 @@ const games = gameIdeas.map((idea,index)=>{
     place:placeForIdea(derivedIdea),material:feedback.material,activity:activityForIdea(derivedIdea),duration:feedback.duration,
     minAge:feedback.minAge,maxAge:feedback.maxAge,ageText:feedback.ageText,minPlayers:1,maxPlayers:maxPlayersForIdea(derivedIdea),
     skills:feedback.skills,skillKeys,skill:skillKeys[0]||"",situationKeys,feedback,
-    image:feedback.id>=21&&feedback.id<=200?`Game app/matched-images/${String(feedback.id).padStart(3,"0")}_igra.jpg`:uploadedHeroImages[feedback.title]||gameArt(feedback.title,scene,index,feedback.en.description)
+    image:uploadedHeroImages[feedback.title]||(generatedImage?gameArt(feedback.title,scene,index,feedback.en.description):feedback.id>=133&&feedback.id<=200?`Game app/illustrations-133-200/${String(feedback.id).padStart(3,"0")}_igra.jpg`:imageId>=21&&imageId<=200?`Game app/matched-images/${String(imageId).padStart(3,"0")}_igra.jpg`:gameArt(feedback.title,scene,index,feedback.en.description))
   };
 });
 
@@ -1179,7 +1210,9 @@ function gameCard(game){
   const [title,description]=localized(game), liked=state.likes.includes(game.id);
   const saveLabel=liked?t().savedAction:t().saveAction;
   const uploadedImage=hasUploadedGameImage(game.image);
-  return `<article class="activity" data-detail="${game.id}" tabindex="0"><div class="activity-visual"><img class="activity-image ${uploadedImage?"activity-image-uploaded":""}" src="${game.image}" alt="${t().image(title)}"><button class="like-button activity-like ${liked?"is-liked":""}" data-like="${game.id}" aria-label="${saveLabel}" aria-pressed="${liked}">♥ <span class="save-label">${saveLabel}</span></button></div><div class="activity-content"><div class="activity-topline"><h3>${title}</h3></div><p>${description}</p><div class="activity-meta"><span class="tag">${game.duration} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span></div><button class="details-button" data-open-detail="${game.id}">${t().details}</button></div></article>`;
+  const numberedImage=hasNumberedGameImage(game.image), wideImage=numberedImage&&game.srTitle.length>20&&![21,100].includes(game.id);
+  const imageClasses=["activity-image",uploadedImage&&"activity-image-uploaded",numberedImage&&"activity-image-numbered",wideImage&&"activity-image-numbered-wide"].filter(Boolean).join(" ");
+  return `<article class="activity" data-detail="${game.id}" tabindex="0"><div class="activity-visual"><img class="${imageClasses}" src="${game.image}" alt="${t().image(title)}"><button class="like-button activity-like ${liked?"is-liked":""}" data-like="${game.id}" aria-label="${saveLabel}" aria-pressed="${liked}">♥ <span class="save-label">${saveLabel}</span></button></div><div class="activity-content"><div class="activity-topline"><h3>${title}</h3></div><p>${description}</p><div class="activity-meta"><span class="tag">${game.duration} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span></div><button class="details-button" data-open-detail="${game.id}">${t().details}</button></div></article>`;
 }
 function renderResults(){
   const list=gameList(), c=t(); $("#questionCard").hidden=true; $("#progress").hidden=true; $("#results").hidden=false;
@@ -1645,15 +1678,16 @@ function openGameDetail(id){
   const [title,description]=localized(game), liked=state.likes.includes(id);
   const specific=gameDetailOverrides[game.title]?.[state.language];
   const feedback=game.feedback?.[state.language];
-  $("#detailImage").src=game.image;$("#detailImage").alt=t().image(title);$("#detailImage").classList.toggle("game-detail-image-uploaded",hasUploadedGameImage(game.image));$("#detailTitle").textContent=title;$("#detailDescription").textContent=description;
+  const numberedImage=hasNumberedGameImage(game.image),wideImage=numberedImage&&game.srTitle.length>20&&![21,100].includes(game.id);
+  $("#detailImage").src=game.image;$("#detailImage").alt=t().image(title);$("#detailImage").classList.toggle("game-detail-image-uploaded",hasUploadedGameImage(game.image));$("#detailImage").classList.toggle("game-detail-image-numbered",numberedImage);$("#detailImage").classList.toggle("game-detail-image-numbered-wide",wideImage);$("#detailImage").classList.toggle("game-detail-image-ecosystem",game.title==="Who Lives in This Ecosystem?");$("#detailTitle").textContent=title;$("#detailDescription").textContent=description;
   $("#detailAboutTitle").textContent=t().aboutTitle;
-  const skills=game.skills||[];$("#detailSkillsSection").hidden=!skills.length;$("#detailSkillsTitle").textContent=t().skillsTitle;
-  $("#detailSkillsList").innerHTML=skills.map(skill=>{const name=state.language==="sr"?skill.sr:skill.en,description=existingSkillDescriptions[state.language][name]||"";return `<div class="detail-skill"><span class="detail-skill-icon" aria-hidden="true">${feedbackSkillIcon(name)}</span><div><strong>${name}</strong>${description?`<small>${description}</small>`:""}</div></div>`}).join("");
+  const skills=(game.skills||[]).slice(0,2);$("#detailSkillsSection").hidden=!skills.length;$("#detailSkillsTitle").textContent=t().skillsTitle;
+  $("#detailSkillsList").innerHTML=skills.map(skill=>{const name=state.language==="sr"?skill.sr:skill.en;return `<div class="detail-skill"><span class="detail-skill-icon" aria-hidden="true">${feedbackSkillIcon(name)}</span><strong>${name}</strong></div>`}).join("");
   const preparation=feedback?.preparation||specific?.prep||preparationForGame(game,state.language);
   const needsPreparation=Boolean(preparation)&&!/^no special preparation needed\.?$/i.test(preparation.trim())&&!/^nije potrebna posebna priprema\.?$/i.test(preparation.trim());
   $("#detailPreparation").hidden=!needsPreparation;$("#detailPreparationTitle").textContent=t().prepareLabel;$("#detailPreparationCopy").textContent=preparation;
   const ageNote=localizedAgeGuidance(game,state.language);
-  const steps=feedback?.steps||specific?.steps||[];
+  const steps=[];
   $("#detailStepsSection").hidden=!steps.length;$("#detailStepsTitle").textContent=t().stepsTitle;
   const stepList=$("#detailStepsList");stepList.replaceChildren();steps.forEach(step=>{const item=document.createElement("li");item.textContent=step;stepList.append(item)});
   const showDemo=game.title==="Guess the Leader", demoCopy=t().demoSteps;
