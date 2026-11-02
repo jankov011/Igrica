@@ -778,16 +778,16 @@ function ageRangeForIdea(g) {
   return [4,12];
 }
 const uploadedHeroImages = {
-  "Freeze Dance":"20_hero_slika_JPG/cropped/20_Plesna_misija.jpg",
+  "Freeze Dance":"Game app/matched-images/167_igra.jpg",
   "Who Lives in This Ecosystem?":"Game app/illustrations-133-200/162_igra.jpg",
   "Invent a New Sport":"Game app/matched-images/037_igra.jpg",
   "Mystery Drawing":"Game app/matched-images/056_igra.jpg",
   "Family Quiz":"Game app/illustrations-133-200/150_igra.jpg",
-  "Forbidden Word":"20_hero_slika_JPG/cropped/10_Pitaj_i_pogodi.jpg",
-  "Funny Portrait":"20_hero_slika_JPG/cropped/13_Crtaj_zajedno.jpg",
+  "Forbidden Word":"Game app/matched-images/112_igra.jpg",
+  "Funny Portrait":"Game app/illustrations-133-200/124_igra.jpg",
   "Nature Faces":"Game app/illustrations-133-200/160_igra.jpg",
   "Target Toss":"Game app/illustrations-133-200/147_igra.jpg",
-  "Movement Memory":"Game app/illustrations-133-200/175_igra.jpg",
+  "Movement Memory":"Game app/illustrations-133-200/170_igra.jpg",
   "Pass the Sketch":"Game app/matched-images/056_igra.jpg",
   "Guess My Rule":"Game app/illustrations-133-200/133_igra.jpg",
   "Balance Delivery":"Game app/illustrations-133-200/143_igra.jpg",
@@ -796,39 +796,49 @@ const uploadedHeroImages = {
   "Guess the Leader":"Game app/illustrations-133-200/150_igra.jpg",
   "Restaurant Imagination":"Game app/illustrations-133-200/178_igra.jpg",
   "Helpful Inventor":"Game app/illustrations-133-200/181_igra.jpg",
-  "Letter Clue Guess":"20_hero_slika_JPG/cropped/17_Lov_na_slova.jpg",
-  "Guess Who I Am":"Game app/illustrations-133-200/200_igra.jpg",
+  "Letter Clue Guess":"Game app/illustrations-133-200/196_igra.jpg",
+  "Guess Who I Am":"Game app/illustrations-133-200/199_igra.jpg",
   "Target Ladder":"Game app/illustrations-133-200/147_igra.jpg",
   "Leaf Line-Up":"Game app/illustrations-133-200/156_igra.jpg",
   "Stick Shadow Shapes":"Game app/illustrations-133-200/158_igra.jpg",
   "Nature Color Wheel":"Game app/illustrations-133-200/160_igra.jpg",
   "Mirror Animal":"Game app/illustrations-133-200/166_igra.jpg",
-  "Animal Parade":"20_hero_slika_JPG/cropped/02_Parada_zivotinja.jpg",
+  "Animal Parade":"Game app/illustrations-133-200/166_igra.jpg",
   "Shadow Zoo":"Game app/illustrations-133-200/172_igra.jpg",
   "Robot Guide":"Game app/illustrations-133-200/181_igra.jpg",
-  "Tallest Tower":"Game app/illustrations-133-200/139_igra.jpg",
+  "Tallest Tower":"Game app/matched-images/091_igra.jpg",
   "Cup Castle":"Game app/illustrations-133-200/139_igra.jpg",
-  "Animal Traffic":"20_hero_slika_JPG/cropped/02_Parada_zivotinja.jpg",
+  "Animal Traffic":"Game app/illustrations-133-200/103_igra.jpg",
   "Cloud Shapes":"Game app/illustrations-133-200/163_igra.jpg",
   "One-Minute Challenge":"Game app/illustrations-133-200/136_igra.jpg",
-  "Rainbow Hunt":"20_hero_slika_JPG/cropped/01_Lov_na_dugu.jpg",
-  "Story Circle":"20_hero_slika_JPG/cropped/03_Krug_prica.jpg",
-  "Color Dash":"20_hero_slika_JPG/cropped/04_Trka_boja.jpg",
-  "Secret Sound":"20_hero_slika_JPG/cropped/05_Tajni_zvuk.jpg",
-  "Cushion Islands":"20_hero_slika_JPG/cropped/06_Ostrva_od_jastuka.jpg",
-  "Mini Bowling":"Game app/matched-images/091_igra.jpg",
-  "Shape Explorer":"20_hero_slika_JPG/cropped/08_Potraga_za_oblicima.jpg",
-  "Magic Object":"20_hero_slika_JPG/cropped/09_Carobna_kutija.jpg",
-  "Three Things, One Story":"20_hero_slika_JPG/cropped/11_Slozi_pricu.jpg",
-  "Ball Balance":"20_hero_slika_JPG/cropped/12_Balansiranje_lopte.jpg",
-  "What Changed":"20_hero_slika_JPG/cropped/14_Sta_se_promenilo.jpg",
-  "Adventure Path":"20_hero_slika_JPG/cropped/15_Napravi_stazu.jpg",
-  "Jumping Numbers":"20_hero_slika_JPG/cropped/18_Broji_korake.jpg",
-  "Postcard Adventure":"20_hero_slika_JPG/cropped/19_Zamisljenо_putovanje.jpg",
-  "Celebration Choreo":"20_hero_slika_JPG/cropped/20_Plesna_misija.jpg"
+  "Rainbow Hunt":"Game app/illustrations-133-200/190_igra.jpg",
+  "Story Circle":"Game app/matched-images/100_igra.jpg",
+  "Color Dash":"Game app/matched-images/074_igra.jpg",
+  "Secret Sound":"Game app/illustrations-133-200/130_igra.jpg",
+  "Cushion Islands":"Game app/illustrations-133-200/101_igra.jpg",
+  "Mini Bowling":"Game app/matched-images/022_igra.jpg",
+  "Shape Explorer":"Game app/illustrations-133-200/121_igra.jpg",
+  "Magic Object":"Game app/matched-images/023_igra.jpg",
+  "Three Things, One Story":"Game app/matched-images/100_igra.jpg",
+  "Ball Balance":"Game app/illustrations-133-200/148_igra.jpg",
+  "What Changed":"Game app/matched-images/063_igra.jpg",
+  "Adventure Path":"Game app/matched-images/065_igra.jpg",
+  "Jumping Numbers":"Game app/matched-images/079_igra.jpg",
+  "Postcard Adventure":"Game app/matched-images/093_igra.jpg",
+  "Celebration Choreo":"Game app/illustrations-133-200/175_igra.jpg"
 };
-function hasUploadedGameImage(image){return image.startsWith("20_hero_slika_JPG/cropped/")||image.startsWith("Game app/")}
-function hasNumberedGameImage(image){return image.startsWith("Game app/matched-images/")||image.startsWith("Game app/illustrations-133-200/")}
+const publishedImageNameOverrides={21:"test_papirnog_aviona",48:"misija_sa_balonom",69:"dostava_u_svemir",70:"odbrojavanje",78:"simetri_na_slika",85:"potraga_za_ku_nim_blagom",90:"pokreti_uz_muziku",92:"pogodi_moje_zanimanje",93:"avantura_na_ostrvu",97:"izazov_zavr_ne_re_i"};
+function publishedImagePath(image){
+  const match=image.match(/^Game app\/(?:matched-images|illustrations-133-200)\/(\d{3})_igra\.jpg$/);
+  if(!match)return image;
+  const imageId=Number(match[1]);
+  const directory=imageId<=40?"Ilustracije_igara_21-40_JPG_novi":imageId<=100?"Ilustracije_igara_41-100_JPG":imageId<=132?"Ilustracije_igara_101-132_JPG":"Ilustracije_igara_133-200_JPG_bez_teksta";
+  const sourceTitle=gameIdeas[imageId-1]?.[1]||"";
+  const slug=sourceTitle.toLowerCase().replace(/[čćđšž]/g,"_").replace(/[^a-z0-9]+/g,"_").replace(/_+/g,"_").replace(/^_+|_+$/g,"");
+  return `${directory}/${String(imageId).padStart(3,"0")}_${publishedImageNameOverrides[imageId]||slug}.jpg`;
+}
+function hasUploadedGameImage(image){return image.startsWith("Ilustracije_igara_")||image.startsWith("Game app/")}
+function hasNumberedGameImage(image){return image.startsWith("Ilustracije_igara_")||image.startsWith("Game app/matched-images/")||image.startsWith("Game app/illustrations-133-200/")}
 const gameFeedbackById=new Map((window.GAME_FEEDBACK_DATA||[]).map(record=>[record.id,record]));
 const situationKeyByName={"Kišni dani":"rainy","Letnje igre":"summer","Hladniji dani":"winter","Porodična okupljanja":"holiday","U pokretu":"travel","Grupe i proslave":"party"};
 const replacementScenes={"Invent a New Sport":"run","Forbidden Word":"story","Museum of the Future":"pretend","Detective File: Three Clues":"search","Spot the Story Glitch":"story","Advertise the Most Useless Invention":"story","Build a Chain-Reaction Machine":"build","Secret Symbol Message":"search","Who Lives in This Ecosystem?":"nature","Invent a New Planet":"draw","Family Mini Escape Room":"search","Design a Family Secret Handshake":"dance"};
@@ -872,7 +882,7 @@ const games = gameIdeas.map((idea,index)=>{
     place:placeForIdea(derivedIdea),material:feedback.material,activity:activityForIdea(derivedIdea),duration:feedback.duration,
     minAge:feedback.minAge,maxAge:feedback.maxAge,ageText:feedback.ageText,minPlayers:1,maxPlayers:maxPlayersForIdea(derivedIdea),
     skills:feedback.skills,skillKeys,skill:skillKeys[0]||"",situationKeys,feedback,
-    image:uploadedHeroImages[feedback.title]||(generatedImage?gameArt(feedback.title,scene,index,feedback.en.description):feedback.id>=133&&feedback.id<=200?`Game app/illustrations-133-200/${String(feedback.id).padStart(3,"0")}_igra.jpg`:imageId>=21&&imageId<=200?`Game app/matched-images/${String(imageId).padStart(3,"0")}_igra.jpg`:gameArt(feedback.title,scene,index,feedback.en.description))
+    image:publishedImagePath(uploadedHeroImages[feedback.title]||(generatedImage?gameArt(feedback.title,scene,index,feedback.en.description):feedback.id>=133&&feedback.id<=200?`Game app/illustrations-133-200/${String(feedback.id).padStart(3,"0")}_igra.jpg`:imageId>=21&&imageId<=200?`Game app/matched-images/${String(imageId).padStart(3,"0")}_igra.jpg`:gameArt(feedback.title,scene,index,feedback.en.description)))
   };
 });
 
