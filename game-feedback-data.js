@@ -14,8 +14,8 @@ window.GAME_FEEDBACK_DATA = [
                            "en":  "Observation"
                        },
                        {
-                           "sr":  "Kreativnost",
-                           "en":  "Creativity"
+                           "sr":  "Opažanje i pažnja",
+                           "en":  "Observation & attention"
                        }
                    ],
         "situationsSr":  [
@@ -261,10 +261,12 @@ window.GAME_FEEDBACK_DATA = [
                        }
                    ],
         "situationsSr":  [
-                             "Kišni dani"
+                             "Kišni dani",
+                             "U pokretu"
                          ],
         "situationsEn":  [
-                             "Rainy days"
+                             "Rainy days",
+                             "On the go"
                          ],
         "sr":  {
                    "description":  "Pređite stazu od jastuka bez dodirivanja zamišljene vode.",
@@ -931,7 +933,7 @@ window.GAME_FEEDBACK_DATA = [
                    "preparation":  "Za svaki avion pripremite po jedan list papira; drugi materijali nisu potrebni.",
                    "steps":  [],
                    "example":  "Ako avion skreće ulevo, proverite da li su krila ista, promenite jedan pregib i bacite ga ponovo, nežno.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
+                   "bonus":  "Promenite samo jedan pregib, pogodite kako će to uticati na let, pa probajte i uporedite sa prethodnim avionom.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -939,7 +941,7 @@ window.GAME_FEEDBACK_DATA = [
                    "preparation":  "Use one sheet of paper for each plane; no other materials are needed.",
                    "steps":  [],
                    "example":  "If the plane turns left, check whether both wings match, adjust one fold and try another gentle throw.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
+                   "bonus":  "Change just one fold, predict how it will affect the flight, then test and compare it with the previous plane.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -973,7 +975,7 @@ window.GAME_FEEDBACK_DATA = [
                    "preparation":  "Pripremite mekanu loptu i nekoliko laganih, nelomljivih čaša ili flašica kao čunjeve.",
                    "steps":  [],
                    "example":  "Poređajte tri prazne flašice u trougao i otkotrljajte mekanu loptu sa označene linije.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
+                   "bonus":  "Posle bacanja poređajte čaše u novi raspored za sledeći pokušaj.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -981,7 +983,7 @@ window.GAME_FEEDBACK_DATA = [
                    "preparation":  "Prepare a soft ball and a few lightweight, unbreakable cups or bottles as pins.",
                    "steps":  [],
                    "example":  "Arrange three empty bottles in a triangle and roll a soft ball from a marked line.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
+                   "bonus":  "After a roll, arrange the cups in a new pattern for the next turn.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -1167,7 +1169,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Pokreti u ogledalu",
         "minAge":  3,
         "maxAge":  9,
-        "ageText":  "3–9 godina; starijima dodati pravila ili izazov",
+        "ageText":  "3–9 godina",
         "duration":  15,
         "material":  "none",
         "skills":  [
@@ -1191,7 +1193,7 @@ window.GAME_FEEDBACK_DATA = [
                    "preparation":  "Nije potrebna posebna priprema.",
                    "steps":  [],
                    "example":  "Jedan partner polako podiže ruku i okreće se; drugi ga kopira, pa menjaju uloge.",
-                   "bonus":  "Dodajte promenu pravila u sledećem krugu, na primer promenite smer, usporite pokret ili uvedite malu misiju. Odrasli proverava da prostor ostane bezbedan.",
+                   "bonus":  "Bonus: Dodajte promenu pravila u sledećem krugu, na primer promenite smer, usporite pokret ili uvedite malu misiju. Odrasli proverava da prostor ostane bezbedan.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -1209,13 +1211,13 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Safari tekstura",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; mlađima ponuditi izbor, starijima dodatni izazov",
+        "ageText":  "4–10 godina; mlađima pomoći da nacrtaju jednostavan cvet, starijima dodati detalj ili natpis",
         "duration":  15,
-        "material":  "none",
+        "material":  "paper",
         "skills":  [
                        {
                            "sr":  "Opažanje i pažnja",
-                           "en":  "Observation \u0026 attention"
+                          "en":  "Observation \u0026 attention"
                        },
                        {
                            "sr":  "Rešavanje problema",
@@ -1235,7 +1237,7 @@ window.GAME_FEEDBACK_DATA = [
                    "preparation":  "Nije potrebna posebna priprema.",
                    "steps":  [],
                    "example":  "Pronađite nešto glatko, poput većeg kamena, i nešto hrapavo, poput kore drveta; nežno ih uporedite.",
-                   "bonus":  "Bonus: Napravite niz od tri zvuka/osećaja i zamolite drugog igrača da ga prepozna ili ponovi istim redosledom.",
+                   "bonus":  "Pronađite dva bezbedna predmeta iste teksture i objasnite šta im je zajedničko.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -1243,7 +1245,7 @@ window.GAME_FEEDBACK_DATA = [
                    "preparation":  "No special preparation needed.",
                    "steps":  [],
                    "example":  "Find something smooth like a large stone and something rough like tree bark; compare them gently.",
-                   "bonus":  "Bonus: Make a sequence of three sounds or sensations and ask another player to identify or repeat them in order.",
+                   "bonus":  "Find two safe objects with matching textures and explain the match.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -1705,7 +1707,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Napravimo gol",
         "minAge":  3,
         "maxAge":  9,
-        "ageText":  "3–9 godina; starijima dodati pravila ili izazov",
+        "ageText":  "3–9 godina",
         "duration":  15,
         "material":  "household",
         "skills":  [
@@ -1730,26 +1732,26 @@ window.GAME_FEEDBACK_DATA = [
                          ],
         "sr":  {
                    "description":  "Na ravnom, slobodnom prostoru označite mali gol kratkim grančicama ili kamenovima koji se ne kotrljaju. Naizmenično nežno kotrljajte mekanu loptu kroz gol.",
-                   "preparation":  "Koristite mekanu loptu primerenu uzrastu i pripremite bezbedne mete ili oznake koje igra traži.",
+                   "preparation":  "Mekanom loptom gađajte mali gol od grančica; papirnom trakom označite levi i desni ugao otvora.",
                    "steps":  [
                                  "Objasnite cilj igre: na ravnom, slobodnom prostoru označite mali gol kratkim grančicama ili kamenovima koji se ne kotrljaju. Naizmenično nežno kotrljajte mekanu loptu kroz gol.",
                                  "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Svako kotrlja loptu tri puta sa iste linije. Zajedno brojite koliko puta je prošla između oznaka.",
-                   "bonus":  "Postavite blisku i dalju startnu liniju i zajedno pokušajte da postignete pet golova. Posle uspešnog pokušaja možete da se udaljite korak, a zatim da se vratite bliže ako zatreba.",
+                   "bonus":  "Papirnom trakom označite levi i desni ugao otvora gola. Pre svakog pokušaja vodič kaže „levo“ ili „desno“. Pogodak kroz najavljeni ugao vredi dva poena; kroz drugi deo gola jedan poen. Zatim zamenite uloge.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
                    "description":  "On flat, clear ground, mark a small goal with two short sticks or stones that will not roll. Take turns gently rolling a soft ball through it.",
-                   "preparation":  "Use a soft, age-appropriate ball and prepare any safe targets or markers mentioned in the game.",
+                   "preparation":  "Use a soft ball and mark the left and right corners of the small twig goal with paper tape.",
                    "steps":  [
                                  "Explain the goal: on flat, clear ground, mark a small goal with two short sticks or stones that will not roll. Take turns gently rolling a soft ball through it.",
                                  "Agree on who starts and demonstrate one example before the child tries.",
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "Each player rolls the ball three times from the same line. Count together how many times it passes between the markers.",
-                   "bonus":  "Set a near and a farther starting line and try to score five goals together. After a successful turn, move back one step; move closer again whenever needed.",
+                   "bonus":  "Mark the left and right corners of the goal opening with paper tape. Before each turn, the caller says ‘left’ or ‘right.’ A goal through the called corner scores two points; through the other part of the goal scores one. Then switch roles.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -1857,101 +1859,110 @@ window.GAME_FEEDBACK_DATA = [
     },
     {
         "id":  41,
-        "title":  "Monster Steps",
-        "srTitle":  "Koraci čudovišta",
-        "minAge":  3,
-        "maxAge":  9,
-        "ageText":  "3–9 godina",
-        "duration":  30,
+        "title":  "Sardines",
+        "srTitle":  "Sardine (obrnuta žmurka)",
+        "minAge":  5,
+        "maxAge":  12,
+        "ageText":  "5–12 godina",
+        "duration":  20,
+        "durationLabel":  "15–20",
         "material":  "none",
         "skills":  [
                        {
-                           "sr":  "Kreativnost",
-                           "en":  "Creativity"
+                           "sr":  "Strategija",
+                           "en":  "Strategy"
                        },
                        {
                            "sr":  "Saradnja",
                            "en":  "Cooperation"
+                       },
+                       {
+                           "sr":  "Prostorna orijentacija",
+                           "en":  "Spatial awareness"
                        }
                    ],
         "situationsSr":  [
-                             "Hladniji dani"
+                             "Porodična okupljanja",
+                             "Grupe i proslave"
                          ],
         "situationsEn":  [
-                             "Cold days"
+                             "Family gatherings",
+                             "Groups & parties"
                          ],
         "sr":  {
-                   "description":  "Osmislite džinovske, sićušne i klimave korake čudovišta.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Jedno dete se sakrije, a ostali ga traže. Kada ga neko pronađe, tiho mu se pridruži na istom mestu umesto da oda skrovište. Igra se završava kada se svi bezbedno okupe.",
+                   "preparation":  "Pre igre dogovorite jasno ograničen prostor i prostrana, bezbedna skrovišta. Odrasla osoba nadgleda igru.",
                    "steps":  [
-                                 "Objasnite cilj igre: osmislite džinovske, sićušne i klimave korake čudovišta.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Jedno dete se sakrije, a ostali počinju potragu.",
+                                 "Ko ga pronađe, tiho mu se pridruži bez odavanja skrovišta.",
+                                 "Ponavljajte dok se svi ne okupe; skrovište mora biti dovoljno veliko da niko ne bude stisnut."
                              ],
-                   "example":  "Probajte džinovske i sićušne korake, pa hod na prstima; neka ostali pogode koje ste čudovište.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Jedno dete se sakrije iza široke zavese u prostranoj sobi. Svako ko ga pronađe tiho mu se pridruži, ako ima dovoljno mesta.",
+                   "bonus":  "Poslednje dete koje pronađe grupu bira ko će se sledeći sakriti.",
+                   "safety":  "Ne koristite ormare, zaključane prostorije, stepenice ni mesta iza teškog nameštaja. Bez guranja; svako može odmah da izađe iz skrovišta."
                },
         "en":  {
-                   "description":  "Invent giant, tiny and wobbly monster walks.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "One child hides while the others search. When someone finds them, they quietly join the same hiding place instead of giving it away. The game ends when everyone has gathered safely.",
+                   "preparation":  "Agree on clear boundaries and spacious, safe hiding places before playing. An adult supervises.",
                    "steps":  [
-                                 "Explain the goal: invent giant, tiny and wobbly monster walks.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "One child hides while everyone else starts searching.",
+                                 "When a player finds them, they quietly join without revealing the hiding place.",
+                                 "Continue until everyone has joined; the hiding place must be roomy enough for everyone."
                              ],
-                   "example":  "Try giant steps, tiny steps and tiptoes; let the others guess which monster you are.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "One child hides behind a wide curtain in a spacious room. Anyone who finds them quietly joins, if there is enough room.",
+                   "bonus":  "The last child to find the group chooses who hides next.",
+                   "safety":  "Avoid cupboards, locked rooms, stairs and spaces behind heavy furniture. No pushing; anyone can leave the hiding place at any time."
                }
     },
     {
         "id":  42,
         "title":  "Memory Tray",
         "srTitle":  "Poslužavnik pamćenja",
-        "minAge":  6,
+        "minAge":  4,
         "maxAge":  12,
-        "ageText":  "6–12 godina",
+        "ageText":  "4–12 godina",
         "duration":  15,
         "material":  "household",
         "skills":  [
                        {
-                           "sr":  "Kreativnost",
-                           "en":  "Creativity"
+                           "sr":  "Opažanje i pažnja",
+                           "en":  "Observation & attention"
                        },
                        {
-                           "sr":  "Saradnja",
-                           "en":  "Cooperation"
+                           "sr":  "Pamćenje",
+                           "en":  "Memory"
                        }
                    ],
         "situationsSr":  [
-                             "Kišni dani"
+                             "Kišni dani",
+                             "U pokretu"
                          ],
         "situationsEn":  [
-                             "Rainy days"
+                             "Rainy days",
+                             "On the go"
                          ],
         "sr":  {
-                   "description":  "Pogledajte nekoliko predmeta, sakrijte jedan i pogodite šta se promenilo.",
-                   "preparation":  "Pripremite lagani poslužavnik i nekoliko bezbednih, nelomljivih predmeta.",
+                   "description":  "Posmatrajte poznate predmete na poslužavniku ili stolu. Dok su prekriveni, sklonite jedan i pogodite šta nedostaje. Za teži krug promenite raspored predmeta i otkrijte šta se promenilo.",
+                   "preparation":  "Izaberite tri do sedam poznatih, bezbednih i nelomljivih predmeta dovoljno velikih za dete. Poslužavnik je opcionalan; možete ih staviti i na sto.",
                    "steps":  [
-                                 "Objasnite cilj igre: pogledajte nekoliko predmeta, sakrijte jedan i pogodite šta se promenilo.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Stavite tri do sedam poznatih predmeta na poslužavnik ili sto i dajte igraču vremena da ih pogleda.",
+                                 "Prekrijte predmete rukom ili krpom. Sklonite jedan, pa ih otkrijte i pitajte šta nedostaje.",
+                                 "Zamenite uloge. Za teži krug nemojte ništa sklanjati; promenite raspored dva predmeta i pitajte šta se promenilo."
                              ],
-                   "example":  "Stavite čašu, jabuku i igračku na poslužavnik. Neka dete pogleda, pokrijte ga, sklonite jabuku, pa pitajte šta nedostaje.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
+                   "example":  "Stavite čašu, jabuku i igračku na poslužavnik ili sto. Neka dete pogleda, prekrijte predmete, sklonite igračku pa pitajte šta nedostaje.",
+                   "bonus":  "Zamenite uloge: dete pripremi predmete, a odrasli pogađa. Za izazov promenite raspored dva predmeta i zajedno ih vratite na početna mesta.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Study several objects, hide one and identify what changed.",
-                   "preparation":  "Prepare a lightweight tray and a few safe, unbreakable objects.",
+                   "description":  "Observe familiar objects on a tray or table. While they are covered, remove one and guess what is missing. For a harder round, rearrange the objects and spot what changed.",
+                   "preparation":  "Choose three to seven familiar, child-safe, unbreakable objects large enough for the child. A tray is optional; a table works too.",
                    "steps":  [
-                                 "Explain the goal: study several objects, hide one and identify what changed.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Place three to seven familiar objects on a tray or table and give the player time to look.",
+                                 "Cover the objects with a hand or cloth. Remove one, uncover them and ask what is missing.",
+                                 "Switch roles. For a harder round, leave everything there, rearrange two objects and ask what changed."
                              ],
-                   "example":  "Place a cup, an apple and a toy on a tray. Let the child look, cover the tray, remove the apple, then ask what is missing.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
+                   "example":  "Place a cup, an apple and a toy on a tray or table. Let the child look, cover the objects, remove the toy and ask what is missing.",
+                   "bonus":  "Switch roles: the child sets up the objects and the adult guesses. For a challenge, rearrange two objects and work together to restore their original places.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -1981,28 +1992,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Prebacite presavijeni papir, trake kartona ili drvene štapiće preko malog razmaka između dva stabilna oslonca. Ispitajte most malom igračkom i dodajte po jedan deo.",
-                   "preparation":  "Pripremite čiste kartonske kutije bez spajalica, lepljive trake i oštrih ivica.",
+                   "description":  "Napravite most preko malog razmaka između dve stabilne knjige koristeći papir, karton ili štapiće. Posle svakog dodatog dela isprobajte ga laganom igračkom i prilagodite konstrukciju.",
+                   "preparation":  "Postavite dve stabilne knjige kao oslonce i pripremite čist papir, karton, široke štapiće i jednu laganu igračku. Odrasli proverava da nema spajalica ni oštrih ivica.",
                    "steps":  [
-                                 "Objasnite cilj igre: prebacite presavijeni papir, trake kartona ili drvene štapiće preko malog razmaka između dva stabilna oslonca. Ispitajte most malom igračkom i dodajte po jedan deo.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Dogovorite koliki razmak most treba da premosti i izaberite laganu igračku za test.",
+                                 "Naizmenično dodajte po jedan presavijen ili naslagan deo, pa proverite da li most ostaje stabilan.",
+                                 "Ako se savije, promenite jedan deo i pokušajte ponovo; svako predlaže po jednu izmenu."
                              ],
-                   "example":  "Oslonite presavijenu traku kartona na dve stabilne knjige i isprobajte je malom igračkom.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Presavijte papir u harmoniku, oslonite ga na dve knjige i pažljivo stavite malu plišanu igračku na sredinu.",
+                   "bonus":  "Dodajte lagane papirne loptice jednu po jednu i zajedno brojite koliko ih most drži. Zaustavite se čim se konstrukcija savije.",
+                   "safety":  "Koristite samo lagane predmete, stabilne oslonce i materijale bez spajalica ili oštrih ivica. Odrasli nadgleda testiranje; niko ne stavlja ruke ni glavu ispod mosta."
                },
         "en":  {
-                   "description":  "Span a small gap between two sturdy supports with folded paper, cardboard strips or craft sticks. Test the bridge with a small toy and add one piece at a time.",
-                   "preparation":  "Prepare clean cardboard boxes with staples, tape and sharp edges removed.",
+                   "description":  "Build a bridge across a small gap between two sturdy books using paper, cardboard or craft sticks. Test it with a light toy after each piece and adjust the design.",
+                   "preparation":  "Set up two sturdy books as supports and prepare clean paper, cardboard, wide craft sticks and one light toy. An adult should check for staples and sharp edges.",
                    "steps":  [
-                                 "Explain the goal: span a small gap between two sturdy supports with folded paper, cardboard strips or craft sticks. Test the bridge with a small toy and add one piece at a time.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Choose the gap the bridge must cross and a light toy to test it.",
+                                 "Take turns adding one folded or stacked piece, then check whether the bridge stays steady.",
+                                 "If it bends, change one part and try again; everyone suggests one improvement."
                              ],
-                   "example":  "Rest a folded strip of cardboard between two sturdy books and test it with a small toy.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Fold paper like an accordion, rest it between two books and carefully place a small soft toy in the middle.",
+                   "bonus":  "Add light paper balls one at a time and count together how many the bridge can hold. Stop as soon as it bends.",
+                   "safety":  "Use only light objects, stable supports and materials without staples or sharp edges. An adult supervises testing; keep hands and heads out from under the bridge."
                }
     },
     {
@@ -2043,7 +2054,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Dodajte loptu drugoj osobi; svako može da preskoči red ako ne može da se seti nečega."
                              ],
                    "example":  "Recite: „Svidelo mi se što si mi pomogao da sklonim kockice”, pa nežno dodajte loptu drugome.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
+                   "bonus":  "U sledećem krugu izaberite temu, kao što su pomoć, trud ili strpljenje. Neka svako pohvali konkretan postupak, na primer: „Hvala što si sačekao da završim.”",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -2055,7 +2066,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Pass to another person; anyone can skip a turn if they cannot think of something."
                              ],
                    "example":  "Say, “I liked how you helped me put the blocks away,” then gently pass the ball to someone else.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
+                   "bonus":  "In the next round, choose a theme such as helpfulness, effort or patience. Make each compliment about a specific action, for example, “Thanks for waiting until I finished.”",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -2065,7 +2076,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Muzej budućnosti",
         "minAge":  6,
         "maxAge":  12,
-        "ageText":  "6–12 godina / 6–12 years",
+        "ageText":  "6–12 godina; mlađima uz pomoć odraslog",
         "duration":  30,
         "material":  "none",
         "skills":  [
@@ -2141,27 +2152,27 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Postavite nasumične tačke, spojite ih i pretvorite oblik u crtež.",
+                   "description":  "Postavite nekoliko tačaka tako da ocrtavaju prepoznatljiv oblik, poput kuće, ribe ili sunca. Spojite ih redom, a zatim dodajte detalje i boje.",
                    "preparation":  "Pripremite papir i bezbedne olovke, bojice ili drugi pribor za crtanje potreban za ovu igru.",
                    "steps":  [
-                                 "Objasnite cilj igre: postavite nasumične tačke, spojite ih i pretvorite oblik u crtež.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Zajedno izaberite jednostavan motiv i postavite pet do sedam tačaka duž njegovih glavnih ivica.",
+                                 "Spojite tačke redom linijama da se pojavi prepoznatljiv obris.",
+                                 "Dete dodaje detalje, boje i smišlja naziv crteža."
                              ],
-                   "example":  "Spojite pet tačaka u ribu, pa joj dodajte mehuriće i mesto gde pliva.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
+                   "example":  "Rasporedite tačke u obris ribe, spojite ih, pa dodajte oko, peraje i mehuriće.",
+                   "bonus":  "Za stariju decu nacrtajte novi motiv samo pomoću tačaka, pa neka ostali pogode šta predstavlja pre dodavanja detalja.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Place random dots, connect them and turn the shape into art.",
+                   "description":  "Place a few dots to outline a recognizable shape, such as a house, fish or sun. Connect them in order, then add details and color.",
                    "preparation":  "Prepare paper and child-safe pencils, crayons or other drawing supplies needed for the activity.",
                    "steps":  [
-                                 "Explain the goal: place random dots, connect them and turn the shape into art.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Choose a simple subject together and place five to seven dots along its main edges.",
+                                 "Connect the dots in order to reveal a recognizable outline.",
+                                 "The child adds details, colors and gives the drawing a name."
                              ],
-                   "example":  "Connect five dots into a fish, then add bubbles and a place for it to swim.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
+                   "example":  "Arrange the dots into a fish outline, connect them, then add an eye, fins and bubbles.",
+                   "bonus":  "For older children, outline a new subject with dots and let others guess it before adding details.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -2176,8 +2187,8 @@ window.GAME_FEEDBACK_DATA = [
         "material":  "none",
         "skills":  [
                        {
-                           "sr":  "Kreativnost",
-                           "en":  "Creativity"
+                           "sr":  "Opažanje i pažnja",
+                           "en":  "Observation & attention"
                        },
                        {
                            "sr":  "Saradnja",
@@ -2193,37 +2204,37 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Primetite pet sitnih detalja koje su drugi možda propustili.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Svi u tišini posmatraju isti mali deo prostorije. Zatim naizmenično navode po jedan novi detalj koji su primetili; cilj je da zajedno otkrijete što više različitih stvari.",
+                   "preparation":  "Izaberite deo prostorije koji svi mogu jasno da vide sa svojih mesta.",
                    "steps":  [
-                                 "Objasnite cilj igre: primetite pet sitnih detalja koje su drugi možda propustili.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Izaberite mali deo prostorije i posmatrajte ga u tišini oko 20 sekundi.",
+                                 "Naizmenično navedite po jedan detalj koji ste primetili; detalji se ne ponavljaju.",
+                                 "Nastavite dok ne ponestane novih opažanja, pa izaberite drugi deo prostorije."
                              ],
-                   "example":  "Pogledajte tri predmeta na stolu, okrenite se, pa otkrijte koji je pomeren.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Na polici neko primeti plavi marker, neko knjigu sa savijenim uglom, a neko predmet koji stoji iza vaze.",
+                   "bonus":  "Izaberite kategoriju, na primer boje, oblike ili sitne tragove. Svako pronađe jedan primer koji drugi još nisu naveli.",
+                   "safety":  "Posmatrajte iz mesta, bez penjanja ili pomeranja predmeta. Dete može da preskoči red."
                },
         "en":  {
-                   "description":  "Notice five tiny details others may have missed.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Everyone quietly observes the same small area of a room. Take turns naming one new detail; work together to notice as many different things as possible.",
+                   "preparation":  "Choose an area of the room that everyone can clearly see from where they are sitting or standing.",
                    "steps":  [
-                                 "Explain the goal: notice five tiny details others may have missed.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Choose a small area and observe it quietly for about 20 seconds.",
+                                 "Take turns naming one detail you noticed; do not repeat details.",
+                                 "Continue until no one can find a new detail, then choose another area."
                              ],
-                   "example":  "Look at three objects on a table, turn away, then spot which one has moved.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "On a shelf, one player notices a blue marker, another spots a book with a bent corner, and someone finds an object behind a vase.",
+                   "bonus":  "Choose a category such as colors, shapes or tiny clues. Each player finds one example the others have not named yet.",
+                   "safety":  "Observe from where you are; do not climb or move objects. Anyone may skip a turn."
                }
     },
     {
         "id":  48,
         "title":  "Detective File: Three Clues",
-        "srTitle":  "Detektivski dosije: tri tragа",
+        "srTitle":  "Detektivski dosije: tri traga",
         "minAge":  6,
         "maxAge":  12,
-        "ageText":  "6–12 godina / 6–12 years",
+        "ageText":  "6–12 godina",
         "duration":  15,
         "material":  "none",
         "skills":  [
@@ -2241,88 +2252,92 @@ window.GAME_FEEDBACK_DATA = [
                        }
                    ],
         "situationsSr":  [
-
+                             "Kišni dani",
+                             "Porodična okupljanja"
                          ],
         "situationsEn":  [
-
+                             "Rainy days",
+                             "Family gatherings"
                          ],
         "sr":  {
-                   "description":  "Igrači rešavaju malu misteriju tako što povezuju tri traga i obrazlažu zaključak, umesto da samo pogađaju odgovor.",
-                   "preparation":  "Odrasli ili jedan igrač smisli jednostavnu, bezazlenu misteriju i zapiše tri traga koji zajedno vode do rešenja.",
+                   "description":  "Jedan igrač zamisli životinju, predmet ili lik i pripremi tri istinita traga, od opšteg ka konkretnom. Ostali pogađaju i objašnjavaju koji ih je trag naveo na odgovor.",
+                   "preparation":  "Izaberite bezazlen odgovor i pripremite tri jasna traga; svaki treba da bude tačan, a svi zajedno da vode do istog rešenja.",
                    "steps":  [
-                                 "Pročitajte početnu situaciju, na primer: ko je premestio zalivanje cveća?",
-                                 "Otkrijte prvi trag, a zatim pitajte igrače šta on može da znači.",
-                                 "Otkrijte preostale tragove jedan po jedan; igrači mogu da menjaju mišljenje kada dobiju novu informaciju.",
-                                 "Svako iznese zaključak i navede koji tragovi ga podržavaju."
+                                 "Jedan igrač izabere životinju, predmet ili lik koji će ostali pogađati.",
+                                 "Smisli tri istinita traga, od najopštijeg do najkonkretnijeg.",
+                                 "Otkrijte po jedan trag; posle svakog igrači mogu da iznesu pretpostavku i kažu zašto tako misle.",
+                                 "Otkrijte odgovor i proverite kako ga tragovi podržavaju, pa zamenite uloge."
                              ],
-                   "example":  "Tragovi: pod prozorom je mokro, kanta je pored saksije, a neko je ostavio tragove zemlje. Rešenje može biti da je biljka presađena, a ne da je neko napravio nered.",
-                   "bonus":  "Neka dete napravi novu misteriju sa dva lažna, ali bezazlena traga i jednim ključnim tragom. Ostali treba da objasne šta ih je navelo na rešenje.",
-                   "safety":  "Koristite izmišljene situacije i izbegavajte misterije koje okrivljuju stvarne članove porodice."
+                   "example":  "Ko je posetio baštu? Tragovi: ostavio je sitne otiske u zemlji; voli šargarepu; ima duge uši. Rešenje: zec.",
+                   "bonus":  "Za stariju decu smislite trag koji bi mogao da odgovara dvama odgovorima, pa dodajte završni trag koji ih jasno razlikuje.",
+                   "safety":  "Koristite izmišljene situacije; ne okrivljujte stvarne osobe. Svako može da preskoči red."
                },
         "en":  {
-                   "description":  "Players solve a small mystery by connecting three clues and explaining their conclusion rather than simply guessing.",
-                   "preparation":  "An adult or one player invents a simple, harmless mystery and writes three clues that lead to a solution.",
+                   "description":  "One player chooses an animal, object or character and prepares three truthful clues, from general to specific. The others guess and explain which clues led them to the answer.",
+                   "preparation":  "Choose a harmless answer and prepare three clear clues; each should be true, and together they should point to the same solution.",
                    "steps":  [
-                                 "Read the opening situation, such as: who moved the watering can?",
-                                 "Reveal the first clue and ask what it might mean.",
-                                 "Reveal the remaining clues one at a time; players may change their minds as new information appears.",
-                                 "Each player shares a conclusion and names the clues that support it."
+                                 "One player chooses an animal, object or character for the others to guess.",
+                                 "Prepare three truthful clues, from the broadest to the most specific.",
+                                 "Reveal one clue at a time; after each one, players may guess and explain their thinking.",
+                                 "Reveal the answer and check how the clues support it, then switch roles."
                              ],
-                   "example":  "Clues: the floor by the window is wet, the watering can is beside a pot, and someone left soil marks. The answer may be that a plant was repotted, not that someone made a mess.",
-                   "bonus":  "Let the child create a new mystery with two harmless red herrings and one key clue. Others explain what led them to the answer.",
-                   "safety":  "Use fictional situations and avoid mysteries that blame real family members."
+                   "example":  "Who visited the garden? Clues: it left small prints in the soil; it likes carrots; it has long ears. Answer: a rabbit.",
+                   "bonus":  "For older players, create a clue that could fit two answers, then add a final clue that clearly distinguishes them.",
+                   "safety":  "Use fictional situations and do not blame real people. Anyone may skip a turn."
                }
     },
     {
         "id":  49,
-        "title":  "Story Dice Without Dice",
-        "srTitle":  "Priča bez kockica",
+        "title":  "Switch Signals",
+        "srTitle":  "Obrnuti signali",
         "minAge":  5,
         "maxAge":  12,
-        "ageText":  "5–12 godina (mlađima uz pomoć odraslog)",
-        "duration":  15,
+        "ageText":  "5–12 godina",
+        "duration":  10,
         "material":  "none",
         "skills":  [
                        {
-                           "sr":  "Govor i komunikacija",
-                           "en":  "Speech \u0026 communication"
+                           "sr":  "Kretanje i motorika",
+                           "en":  "Movement \u0026 motor skills"
                        },
                        {
-                           "sr":  "Saradnja",
-                           "en":  "Cooperation"
+                           "sr":  "Opažanje i pažnja",
+                           "en":  "Observation \u0026 attention"
                        }
                    ],
         "situationsSr":  [
-                             "Kišni dani",
+                             "Porodična okupljanja",
+                             "Grupe i proslave",
                              "U pokretu"
                          ],
         "situationsEn":  [
-                             "Rainy days",
+                             "Family gatherings",
+                             "Groups \u0026 parties",
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Izaberite tri predmeta u blizini i učinite ih junacima priče.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Dogovorite dva znaka: jedan pljesak znači korak u mestu, a dva pljeska pozu zamrzavanja. Kada vođa kaže „Promena!“, značenja se zamene. Niko ne ispada.",
+                   "preparation":  "Oslobodite malo ličnog prostora i izaberite mirne pokrete koji mogu da se izvedu i sedeći.",
                    "steps":  [
-                                 "Objasnite cilj igre: izaberite tri predmeta u blizini i učinite ih junacima priče.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Uvežbajte pravilo: jedan pljesak znači korak u mestu; dva pljeska znače da se zamrznete u udobnoj pozi.",
+                                 "Vođa daje znake različitim redosledom, a ostali reaguju.",
+                                 "Kada vođa kaže „Promena!“, zamenite značenja i nastavite bez ispadanja igrača."
                              ],
-                   "example":  "Izaberite čašu, list i igračku; neka svaka pomogne da se reši problem u priči.",
-                   "bonus":  "Dodajte obrt: sledeći igrač mora da uvede novi lik, problem ili iznenađenje, a grupa zajedno odlučuje kako će se priča nastaviti.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Jedan pljesak: svi naprave korak u mestu. Vođa kaže „Promena!“; od sada jedan pljesak znači zamrzavanje, a dva pljeska korak.",
+                   "bonus":  "Stariji igrači mogu da dodaju treći znak: tapkanje po kolenima znači spor okret u mestu.",
+                   "safety":  "Krećite se u svom prostoru bez trčanja, skakanja i dodira. Pokreti mogu da se rade sedeći; niko ne ispada."
                },
         "en":  {
-                   "description":  "Point to three nearby objects and make them story heroes.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Agree on two signals: one clap means step in place, and two claps mean freeze in a pose. When the leader says ‘Switch!’, swap the meanings. Nobody is out.",
+                   "preparation":  "Clear a little personal space and choose gentle movements that can also be done sitting down.",
                    "steps":  [
-                                 "Explain the goal: point to three nearby objects and make them story heroes.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Practise the rule: one clap means step in place; two claps mean freeze in a comfortable pose.",
+                                 "The leader gives the signals in different orders while everyone responds.",
+                                 "When the leader says ‘Switch!’, swap the meanings and keep playing without eliminating anyone."
                              ],
-                   "example":  "Choose a cup, a leaf and a toy; make each one help solve the story\u0027s problem.",
-                   "bonus":  "Add a twist: the next player must introduce a new character, problem or surprise, and the group decides together what happens next.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "One clap: everyone steps in place. The leader says ‘Switch!’; now one clap means freeze, and two claps mean step.",
+                   "bonus":  "Older players can add a third signal: tapping knees means a slow turn in place.",
+                   "safety":  "Stay in personal space; no running, jumping or touching. Movements can be done sitting down, and nobody is eliminated."
                }
     },
     {
@@ -2359,7 +2374,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Pogledajte nekoliko sekundi šaru od većih, bezbednih kamenčića, pa je složite po sećanju.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
+                   "bonus":  "Smislite pravilo koje se ponavlja, na primer veliki–mali–mali. Partner nastavlja šaru sa tri kamenčića, pa obrnite uloge.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -2371,7 +2386,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "Copy a short pattern of large, safe pebbles after looking at it for a few seconds.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
+                   "bonus":  "Create a repeating rule, such as large–small–small. A partner continues the pattern with three pebbles, then switch roles.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -2409,7 +2424,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Pljesnite dvaput, jednom tapnite kolena i neka partner ponovi ritam.",
-                   "bonus":  "Bonus: Napravite niz od tri zvuka/osećaja i zamolite drugog igrača da ga prepozna ili ponovi istim redosledom.",
+                   "bonus":  "Vođa kaže osećaj, na primer radost, mir ili iznenađenje. Grupa smisli kratak ritam pljeska koji ga predstavlja, pa ga svi ponove.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -2421,18 +2436,18 @@ window.GAME_FEEDBACK_DATA = [
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "Clap twice, tap your knees once and let a partner repeat the rhythm.",
-                   "bonus":  "Bonus: Make a sequence of three sounds or sensations and ask another player to identify or repeat them in order.",
+                   "bonus":  "The leader names a feeling, such as joy, calm or surprise. The group creates a short clap rhythm to represent it, then everyone repeats it.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
     {
         "id":  52,
-        "title":  "Paper Costume",
-        "srTitle":  "Kostim od papira",
+        "title":  "Hero Costume Design",
+        "srTitle":  "Kostim za junaka",
         "minAge":  4,
         "maxAge":  10,
         "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
-        "duration":  30,
+        "duration":  20,
         "material":  "paper",
         "skills":  [
                        {
@@ -2445,34 +2460,36 @@ window.GAME_FEEDBACK_DATA = [
                        }
                    ],
         "situationsSr":  [
-                             "Kišni dani"
+                             "Kišni dani",
+                             "Porodična okupljanja"
                          ],
         "situationsEn":  [
-                             "Rainy days"
+                             "Rainy days",
+                             "Family gatherings"
                          ],
         "sr":  {
-                   "description":  "Napravite papirne dodatke za kostim zamišljenog junaka.",
-                   "preparation":  "Pripremite papir i bezbedne olovke, bojice ili drugi pribor za crtanje potreban za ovu igru.",
+                   "description":  "Izaberite zamišljenog junaka i avanturu, pa nacrtajte kostim sa tri dela koja mu pomažu u toj situaciji. Na kraju objasnite čemu svaki služi.",
+                   "preparation":  "Pripremite papir i bojice. Kostim se crta na papiru; ne mora da se seče niti oblači.",
                    "steps":  [
-                                 "Objasnite cilj igre: napravite papirne dodatke za kostim zamišljenog junaka.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Izaberite junaka i dogovorite se gde ide ili koji problem treba da reši.",
+                                 "Nacrtajte kostim sa tri dela, od kojih svaki ima korisnu ulogu u avanturi.",
+                                 "Predstavite crtež i objasnite kako svaki deo pomaže; ostali mogu da pogode misiju."
                              ],
-                   "example":  "Napravite papirnu značku za zamišljenog junaka i neka ostali pogode njegov posao.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Za podvodnog istraživača nacrtajte masku za ronjenje, peraje i podvodnu lampu; svaki deo pomaže u misiji.",
+                   "bonus":  "Izaberite novu sredinu, poput kišne šume ili Meseca, pa promenite jedan deo kostima da tamo bude koristan.",
+                   "safety":  "Kostim crtajte na papiru i ne obmotavajte papir oko vrata ili lica. Makaze koristite samo uz nadzor odrasle osobe."
                },
         "en":  {
-                   "description":  "Design wearable paper accessories for an imaginary character.",
-                   "preparation":  "Prepare paper and child-safe pencils, crayons or other drawing supplies needed for the activity.",
+                   "description":  "Choose an imaginary hero and an adventure, then draw a costume with three parts that help in that situation. Explain what each part does.",
+                   "preparation":  "Prepare paper and crayons. The costume is drawn on paper; it does not need to be cut out or worn.",
                    "steps":  [
-                                 "Explain the goal: design wearable paper accessories for an imaginary character.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Choose a hero and decide where they are going or what problem they need to solve.",
+                                 "Draw a costume with three parts, each with a useful job in the adventure.",
+                                 "Show the drawing and explain how each part helps; others can guess the mission."
                              ],
-                   "example":  "Make a paper badge for an imaginary hero and let others guess the hero\u0027s job.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "For an underwater explorer, draw a diving mask, fins and an underwater torch; each part helps with the mission.",
+                   "bonus":  "Choose a new setting, such as a rainy forest or the Moon, then change one costume part to make it useful there.",
+                   "safety":  "Draw the costume on paper; do not wrap paper around anyone’s neck or face. Use scissors only with adult supervision."
                }
     },
     {
@@ -2559,28 +2576,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Odglumite osećanje i razgovarajte o znacima koji su ga otkrili.",
+                   "description":  "Jedan igrač bez reči odglumi osećanje izrazom lica i pokretima, a ostali pogađaju koje je. Zatim menjaju uloge.",
                    "preparation":  "Nije potrebna posebna priprema.",
                    "steps":  [
-                                 "Objasnite cilj igre: odglumite osećanje i razgovarajte o znacima koji su ga otkrili.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Jedan igrač izabere osećanje, ali ne izgovara njegov naziv.",
+                                 "Odglumi ga izrazom lica, stavom tela i pokretima; ostali pogađaju.",
+                                 "Kada pogode, glumac otkriva odgovor, a sledeći igrač bira osećanje."
                              ],
-                   "example":  "Bez reči odglumite iznenađenje, pa zatim promenite izraz u smirenost.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Odglumite iznenađenje raširenim očima i podignutim obrvama, a ostali pogađaju osećanje.",
+                   "bonus":  "Bez reči odglumite dva osećanja zaredom. Ostali pogađaju koja su bila i kojim redosledom.",
+                   "safety":  "Birajte prijatna osećanja i niko ne mora da glumi nešto što mu je neprijatno."
                },
         "en":  {
-                   "description":  "Act out an emotion and discuss clues that revealed it.",
+                   "description":  "One player silently acts out a feeling with their face and movements while the others guess. Then switch roles.",
                    "preparation":  "No special preparation needed.",
                    "steps":  [
-                                 "Explain the goal: act out an emotion and discuss clues that revealed it.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "One player chooses a feeling without saying its name.",
+                                 "Act it out with facial expressions, posture and movement while the others guess.",
+                                 "Once they guess, reveal the answer and let the next player choose a feeling."
                              ],
-                   "example":  "Act out feeling surprised without words, then change to feeling calm.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Act out surprise with wide eyes and raised eyebrows while the others guess the feeling.",
+                   "bonus":  "Silently act out two feelings in a row. The others guess both feelings and their order.",
+                   "safety":  "Choose comfortable feelings; nobody has to act out anything that feels uncomfortable."
                }
     },
     {
@@ -2590,7 +2607,7 @@ window.GAME_FEEDBACK_DATA = [
         "minAge":  4,
         "maxAge":  10,
         "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
-        "duration":  30,
+        "duration":  15,
         "material":  "household",
         "skills":  [
                        {
@@ -2603,34 +2620,36 @@ window.GAME_FEEDBACK_DATA = [
                        }
                    ],
         "situationsSr":  [
-                             "Letnje igre"
+                             "Letnje igre",
+                             "U pokretu"
                          ],
         "situationsEn":  [
-                             "Summer play"
+                             "Summer play",
+                             "On the go"
                          ],
         "sr":  {
-                   "description":  "Nacrtajte krivudavu reku i skačite između njenih obala.",
-                   "preparation":  "Pripremite bezbednu dečju kredu i izaberite bezbednu površinu ili tablu.",
+                   "description":  "Kredom nacrtajte reku sa početnom i završnom obalom i nekoliko velikih ostrva. Zajedno pređite do cilja gazeći samo po ostrvima; ako neko promaši, vraća se na poslednje ostrvo.",
+                   "preparation":  "Koristite dečju kredu na ravnoj, suvoj površini daleko od saobraćaja. Ostrva nacrtajte dovoljno velika da dete može sigurno da stane.",
                    "steps":  [
-                                 "Objasnite cilj igre: nacrtajte krivudavu reku i skačite između njenih obala.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Označite početnu obalu, cilj i tri do pet velikih ostrva između njih.",
+                                 "Dogovorite redosled ostrva, pa prelazite hodanjem ili malim koracima, bez trčanja i dalekih skokova.",
+                                 "Ako neko stane u reku, vraća se na poslednje ostrvo i pokušava ponovo; pomozite jedni drugima da izaberete put."
                              ],
-                   "example":  "Nacrtajte krivudavu reku i označite jedno široko ostrvo na koje svi mogu bezbedno da stanu.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Nacrtajte četiri velika ostrva u cik-cak između obala. Svako bira sledeće ostrvo pre nego što pažljivo zakorači na njega.",
+                   "bonus":  "Dogovorite dodatno pravilo za ostrva: pljesnite jednom ili recite ime voća. Ako je podloga ravna i suva, stariji mogu da pokušaju mali skok na jednoj nozi.",
+                   "safety":  "Igrajte samo na ravnoj, suvoj podlozi. Ostrva moraju biti dovoljno velika; hodajte, ne trčite i ne skačite na daljinu."
                },
         "en":  {
-                   "description":  "Draw a winding river path and jump between its banks.",
-                   "preparation":  "Prepare child-safe chalk and choose a safe pavement or chalkboard surface.",
+                   "description":  "Draw a river with a starting bank, a finish bank and several large islands. Work together to reach the finish by stepping only on islands; if someone misses, they return to the last island.",
+                   "preparation":  "Use child-safe chalk on flat, dry ground away from traffic. Make the islands large enough for a child to stand on safely.",
                    "steps":  [
-                                 "Explain the goal: draw a winding river path and jump between its banks.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Mark a starting bank, a finish and three to five large islands between them.",
+                                 "Agree on an island route, then cross by walking or taking small steps, without running or long jumps.",
+                                 "If someone steps in the river, return to the last island and try again; help one another choose a route."
                              ],
-                   "example":  "Draw a winding river and mark one wide island where everyone can safely step.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Draw four large islands in a zigzag between the banks. Each player chooses the next island before carefully stepping onto it.",
+                   "bonus":  "Agree on an extra rule for the islands: clap once or name a fruit. If the surface is flat and dry, older players can try a small one-foot hop.",
+                   "safety":  "Play only on flat, dry ground. Make islands large enough; walk, do not run or make long jumps."
                }
     },
     {
@@ -2671,7 +2690,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Nacrtajte krug, prosledite papir i neka ga sledeći pretvori u balon ili planetu.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
+                   "bonus":  "U završnom krugu svako ukratko opiše detalj koji je dodao, pa zajedno smislite naslov crteža.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -2683,7 +2702,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "Draw a circle, pass the page and let the next player turn it into a balloon or planet.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
+                   "bonus":  "In the final round, each player briefly describes their detail, then everyone comes up with a title together.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -2713,28 +2732,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Summer play"
                          ],
         "sr":  {
-                   "description":  "Osmislite malu baštu od lišća, grančica i kamenčića.",
-                   "preparation":  "Izaberite bezbedan prostor napolju i koristite samo čisto opalo lišće, grančice ili kamenčiće potrebne za igru.",
+                   "description":  "Napravite siguran, maštovit kutak za malog gosta u bašti koristeći pronađene prirodne materijale.",
+                   "preparation":  "Izaberite ravno mesto napolju i koristite samo čisto opalo lišće, kratke grančice i veće, stabilne kamenčiće.",
                    "steps":  [
-                                 "Objasnite cilj igre: osmislite malu baštu od lišća, grančica i kamenčića.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Izaberite zamišljenog gosta i razmislite šta mu treba: staza, zaklon ili mesto za odmor.",
+                                 "Od opalih prirodnih materijala napravite te delove bašte.",
+                                 "Pokažite kako gost prolazi kroz stanište i proverite da li je put slobodan i sve stabilno."
                              ],
-                   "example":  "Poređajte opalo lišće kao leje, a kratke grančice kao vijugavu stazu.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Za bubamaru napravite skrovište ispod opalog lista, stazu od većih kamenčića i širok list kao mesto za odmor.",
+                   "bonus":  "Zamislite da je dunuo vetar. Dodajte zaklon koji neće odleteti i proverite da li je staza i dalje prohodna.",
+                   "safety":  "Ne berite žive biljke i ne uznemiravajte insekte. Izbegavajte oštre grančice i proverite da se ništa ne prevrće."
                },
         "en":  {
-                   "description":  "Plan a miniature garden using leaves, sticks and stones.",
-                   "preparation":  "Choose a safe outdoor area and use only clean, fallen leaves, twigs or stones needed for the game.",
+                   "description":  "Create a safe, imaginative spot for a tiny garden visitor using found natural materials.",
+                   "preparation":  "Choose a flat outdoor spot and use only clean fallen leaves, short twigs and larger stable pebbles.",
                    "steps":  [
-                                 "Explain the goal: plan a miniature garden using leaves, sticks and stones.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Choose an imaginary visitor and decide what it needs: a path, shelter or resting place.",
+                                 "Use fallen natural materials to make those parts of the garden.",
+                                 "Show how the visitor moves through the habitat and check that the path is clear and everything is stable."
                              ],
-                   "example":  "Arrange fallen leaves as garden beds and small twigs as a winding path.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "For a ladybug, make a shelter under a fallen leaf, a path of larger pebbles and a broad leaf as a resting spot.",
+                   "bonus":  "Imagine a gust of wind. Add a shelter that will not blow away and check whether the path is still clear.",
+                   "safety":  "Do not pick living plants or disturb insects. Avoid sharp twigs and make sure nothing can topple over."
                }
     },
     {
@@ -2773,7 +2792,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Sakrijte mekanu igračku u blizini i vodite tragača samo tragovima toplo ili hladno.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
+                   "bonus":  "Za stariju decu sakrijte dva predmeta. Tragač ih pronalazi redom uz tragove „toplo“ i „hladno“.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -2785,7 +2804,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "Hide a soft toy nearby and guide the seeker with only warm or cold clues.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
+                   "bonus":  "For older players, hide two objects. The seeker finds them one at a time using only warm and cold clues.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -2823,7 +2842,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Nežno dodirnite balon tri puta, pa sledeći dodir prepustite partneru.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
+                   "bonus":  "Za dodatni izazov, pre svakog dodira izgovorite ime osobe kojoj šaljete balon. Cilj je da svi jednom dođu na red, bez žurbe.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -2835,7 +2854,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "Gently tap a balloon three times, then pass the next tap to a partner.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
+                   "bonus":  "For an extra challenge, say the name of the person you are sending the balloon to before each tap. Try to give everyone a turn without rushing.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -2866,27 +2885,27 @@ window.GAME_FEEDBACK_DATA = [
                          ],
         "sr":  {
                    "description":  "Napravite udobnu kućicu i osmislite priču uz zamišljenu vatru.",
-                   "preparation":  "Pripremite samo bezbedne i čiste kućne predmete koji se pominju u igri.",
+                   "preparation":  "Pripremite čisto ćebe i nekoliko čvrstih jastuka ili dve stabilne stolice za oslonac. Odrasla osoba proverava da je konstrukcija stabilna.",
                    "steps":  [
                                  "Objasnite cilj igre: napravite udobnu kućicu i osmislite priču uz zamišljenu vatru.",
                                  "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
-                   "example":  "Napravite nisko sklonište od ćebeta i smislite priču o životinjskom gostu.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Prebacite ćebe preko dve stabilne stolice ili ga oslonite na čvrste jastuke da napravite niski zaklon. Unutra ispričajte priču o životinjskom gostu.",
+                   "bonus":  "Pred skloništem se pojavi neobičan gost. Ostali mu postavljaju do tri pitanja na koja odgovara samo sa „da“ ili „ne“, pa zajedno odlučuju kako da ga dočekaju.",
+                   "safety":  "Koristite samo stabilne oslonce, ostavite ulaz slobodan i ne penjite se na stolice. Odrasli proverava da sklonište ne može da se prevrne."
                },
         "en":  {
                    "description":  "Build a cozy den and invent a campfire story.",
-                   "preparation":  "Prepare only the safe, clean household items named in the game.",
+                   "preparation":  "Prepare a clean blanket and a few firm cushions or two stable chairs for support. An adult checks that the structure is steady.",
                    "steps":  [
                                  "Explain the goal: build a cozy den and invent a campfire story.",
                                  "Agree on who starts and demonstrate one example before the child tries.",
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
-                   "example":  "Build a low blanket den and tell a short story about an animal visitor.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Drape a blanket over two stable chairs or support it with firm cushions to make a low den. Tell a short story about an animal visitor inside.",
+                   "bonus":  "A mysterious visitor appears outside the den. Ask up to three yes-or-no questions, then decide together how to welcome them.",
+                   "safety":  "Use stable supports, keep the entrance clear and do not climb on chairs. An adult checks that the den cannot tip over."
                }
     },
     {
@@ -2985,7 +3004,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Pljesak, tapkanje po kolenima, pljesak; grupa ponavlja dok vođa ne promeni jedan zvuk.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
+                   "bonus":  "Posle nekoliko ponavljanja, vođa jednom izostavi zvuk iz ritma. Ostali pogađaju koji zvuk nedostaje i gde pripada.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -2997,7 +3016,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "Clap, tap your knees, clap; let the group repeat while the leader changes one sound.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
+                   "bonus":  "After a few repeats, the leader skips one sound for a round. The others guess which sound is missing and where it belongs.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -3029,28 +3048,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Pogledajte igrača, okrenite se i otkrijte jedan promenjen detalj.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Jedan igrač zapamti pozu grupe i okrene se, dok ostali promene jedan vidljiv detalj. Kada se okrene nazad, pogađa šta se promenilo.",
+                   "preparation":  "Izaberite dovoljno slobodan prostor da svi mogu udobno da stoje ili sede na svojim mestima.",
                    "steps":  [
-                                 "Objasnite cilj igre: pogledajte igrača, okrenite se i otkrijte jedan promenjen detalj.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Svi zauzmu udobnu pozu; posmatrač je zapamti i okrene se.",
+                                 "Grupa promeni jedan vidljiv detalj, na primer neko spusti podignutu ruku.",
+                                 "Posmatrač se okrene, pogađa promenu, pa se uloge zamene."
                              ],
-                   "example":  "Počnite sa tri predmeta; kada pogodite jednu promenu, probajte krug sa dve.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Svi podignu desnu ruku. Dok se posmatrač okrene, jedan igrač je spusti; posmatrač pogađa šta je drugačije.",
+                   "bonus":  "Za stariju decu promenite dva detalja odjednom i tražite da pronađu oba.",
+                   "safety":  "Menjajte samo pozu ili položaj ruku; ne dodirujte druge i birajte udobne položaje. Svako može da preskoči red."
                },
         "en":  {
-                   "description":  "Study a player, turn away and spot one changed detail.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "One player remembers the group’s pose and turns away while the others change one visible detail. When they turn back, they guess what changed.",
+                   "preparation":  "Choose a clear space where everyone can comfortably stand or sit in place.",
                    "steps":  [
-                                 "Explain the goal: study a player, turn away and spot one changed detail.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Everyone takes a comfortable pose; the observer remembers it and turns away.",
+                                 "The group changes one visible detail, such as someone lowering a raised hand.",
+                                 "The observer turns back and guesses what changed, then players switch roles."
                              ],
-                   "example":  "Start with three objects; after one change is guessed, try a round with two changes.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Everyone raises their right hand. While the observer turns away, one player lowers theirs; the observer guesses what changed.",
+                   "bonus":  "For older players, change two details at once and ask them to spot both.",
+                   "safety":  "Only change poses or hand positions; do not touch anyone and choose comfortable poses. Anyone may skip a turn."
                }
     },
     {
@@ -3060,12 +3079,12 @@ window.GAME_FEEDBACK_DATA = [
         "minAge":  4,
         "maxAge":  10,
         "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
-        "duration":  30,
+        "duration":  20,
         "material":  "paper",
         "skills":  [
                        {
-                           "sr":  "Kreativnost",
-                           "en":  "Creativity"
+                           "sr":  "Govor i komunikacija",
+                           "en":  "Speech \u0026 communication"
                        },
                        {
                            "sr":  "Saradnja",
@@ -3079,39 +3098,39 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Napravite papirne junake i izvedite kratku predstavu.",
-                   "preparation":  "Pripremite papir i bezbedne olovke, bojice ili drugi pribor za crtanje potreban za ovu igru.",
+                   "description":  "Svako nacrta papirnog junaka, a zatim zajedno odigrate kratku priču u kojoj likovi rešavaju jednostavan problem.",
+                   "preparation":  "Pripremite papir i bojice. Lutke mogu da se drže u ruci; ako ih sečete, koristite makaze uz pomoć odrasle osobe.",
                    "steps":  [
-                                 "Objasnite cilj igre: napravite papirne junake i izvedite kratku predstavu.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Svako nacrta jednog lika i smisli šta on želi.",
+                                 "Zajedno izaberite mesto radnje i mali problem koji likovi rešavaju.",
+                                 "Osmislite početak, pokušaj rešenja i završetak; zatim odglumite priču tako da svako dobije red."
                              ],
-                   "example":  "Neka jedna papirna lutka pita kuda ide, a druga odgovori u svojoj ulozi.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Jež se izgubio na putu do bašte, a ptica mu pokazuje prepoznatljive tragove koji vode kući.",
+                   "bonus":  "Neka publika predloži jedan bezbedan predmet koji junaci moraju da upotrebe u priči.",
+                   "safety":  "Ne stavljajte štapiće ili papir blizu lica i ne vezujte ih oko ruku ili vrata. Makaze koristi samo odrasla osoba ili dete uz nadzor."
                },
         "en":  {
-                   "description":  "Create simple paper characters and perform a tiny play.",
-                   "preparation":  "Prepare paper and child-safe pencils, crayons or other drawing supplies needed for the activity.",
+                   "description":  "Each player draws a paper character, then the group performs a short story in which the characters solve a simple problem.",
+                   "preparation":  "Prepare paper and crayons. Puppets can be held by hand; if cutting them out, use scissors with adult help.",
                    "steps":  [
-                                 "Explain the goal: create simple paper characters and perform a tiny play.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Each player draws one character and decides what they want.",
+                                 "Choose a setting and a small problem for the characters to solve together.",
+                                 "Plan a beginning, an attempt to solve the problem and an ending; then perform the story so everyone gets a turn."
                              ],
-                   "example":  "Have one paper puppet ask where it is going and let the other answer in character.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "A hedgehog gets lost on the way to the garden, and a bird shows familiar clues that lead home.",
+                   "bonus":  "Let the audience suggest one safe object the characters must use in the story.",
+                   "safety":  "Keep sticks or paper away from faces and never tie them around hands or necks. Scissors should be used by an adult or with adult supervision."
                }
     },
     {
         "id":  65,
-        "title":  "Cone-Free Slalom",
-        "srTitle":  "Slalom bez čunjeva",
+        "title":  "Zigzag Delivery",
+        "srTitle":  "Cik-cak dostava",
         "minAge":  3,
         "maxAge":  9,
-        "ageText":  "3–9 godina; starijima dodati pravila ili izazov",
+        "ageText":  "3–9 godina; starijoj deci zadajte tri zadatka na stanicama",
         "duration":  15,
-        "material":  "none",
+        "material":  "household",
         "skills":  [
                        {
                            "sr":  "Kretanje i motorika",
@@ -3133,43 +3152,43 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Koristite bezbedne predmete kao oznake i vijugajte kroz stazu.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Pretvorite tri plastične čaše u cik-cak stazu za dostavljača. Igrač najpre prolazi praznih ruku, a zatim nosi laganu plišanu igračku do cilja; posle svakog kruga menjajte igrača ili ulogu vodiča.",
+                   "preparation":  "Sklonite prepreke i postavite tri stabilne plastične čaše cik-cak na suv, neklizav pod. Stavite laganu plišanu igračku iza poslednje čaše i ostavite dovoljno prostora oko staze.",
                    "steps":  [
-                                 "Objasnite cilj igre: koristite bezbedne predmete kao oznake i vijugajte kroz stazu.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Pokažite putanju levo–desno–levo i prvo je prođite bez predmeta.",
+                                 "U sledećem krugu igrač nosi plišanu igračku do cilja, obilazeći čaše bez dodirivanja.",
+                                 "Menjajte igrača; starije dete može da bude vodič i mirno govori kuda da se ide."
                              ],
-                   "example":  "Prošetajte oko tri bezbedne oznake od čaša, pa ponovite stazu blagim bočnim koracima.",
-                   "bonus":  "Dodajte promenu pravila u sledećem krugu, na primer promenite smer, usporite pokret ili uvedite malu misiju. Odrasli proverava da prostor ostane bezbedan.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "U prvom krugu prođi stazu praznih ruku. U drugom prenesi medu do cilja: levo oko prve čaše, desno oko druge, pa levo oko treće.",
+                   "bonus":  "Za stariju decu vodič zada tri zadatka: kod prve čaše zastani i dodirni rame, kod srednje reci kome nosiš igračku, a kod poslednje je ostavi i reci „Dostava završena“. Igrač zapamti redosled pre polaska.",
+                   "safety":  "Koristite samo plastične čaše, nikad staklene. Neka dete hoda po suvom podu, a odrasla osoba bude u blizini; po potrebi ga držite za ruku."
                },
         "en":  {
-                   "description":  "Use safe objects as markers and weave through the course.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Turn three plastic cups into a zigzag delivery course. The player first walks through empty-handed, then carries a light soft toy to the finish; switch players or the guide role after each round.",
+                   "preparation":  "Clear the area and arrange three sturdy plastic cups in a zigzag on a dry, non-slip floor. Place a light soft toy beyond the last cup and leave plenty of room around the course.",
                    "steps":  [
-                                 "Explain the goal: use safe objects as markers and weave through the course.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Show the left–right–left route and walk through it once without carrying anything.",
+                                 "In the next round, the player carries the soft toy to the finish without touching the cups.",
+                                 "Take turns; an older child can be the guide and calmly call out the directions."
                              ],
-                   "example":  "Walk around three safe cup markers, then try the same route with gentle side steps.",
-                   "bonus":  "Bonus: Change one rule in the next round, such as switching direction, slowing down or adding a small mission. An adult should keep the space safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Walk through empty-handed in the first round. In the second, carry the teddy to the finish: left around the first cup, right around the second, then left around the third.",
+                   "bonus":  "For older children, the guide gives three tasks: pause and touch one shoulder at the first cup, say who the toy is for at the middle one, then leave it at the last and say, ‘Delivery complete.’ The player remembers the order before starting.",
+                   "safety":  "Use plastic cups only, never glass. The child should walk on a dry floor while an adult stays nearby and offers a hand if needed."
                }
     },
     {
         "id":  66,
-        "title":  "Seed and Tree",
-        "srTitle":  "Seme i drvo",
-        "minAge":  3,
-        "maxAge":  9,
-        "ageText":  "3–9 godina",
-        "duration":  15,
-        "material":  "none",
+        "title":  "Chain Reaction",
+        "srTitle":  "Lančana reakcija",
+        "minAge":  6,
+        "maxAge":  12,
+        "ageText":  "6–12 godina",
+        "duration":  25,
+        "material":  "household",
         "skills":  [
                        {
-                           "sr":  "Kreativnost",
-                           "en":  "Creativity"
+                           "sr":  "Rešavanje problema",
+                           "en":  "Problem solving"
                        },
                        {
                            "sr":  "Saradnja",
@@ -3177,43 +3196,45 @@ window.GAME_FEEDBACK_DATA = [
                        }
                    ],
         "situationsSr":  [
-                             "Letnje igre"
+                             "Kišni dani",
+                             "Igre kod kuće"
                          ],
         "situationsEn":  [
-                             "Summer play"
+                             "Rainy days",
+                             "Indoor activities"
                          ],
         "sr":  {
-                   "description":  "Izrastite iz malog sklupčanog semena u drvo koje se njiše.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Poređajte najmanje osam domina u dugačak cik-cak lanac. Kada prva padne, svaka obara sledeću, a poslednja gura laganu loptu preko ciljne linije.",
+                   "preparation":  "Oslobodite ravan, suv pod. Pripremite domine ili velike kockice, laganu penastu loptu i papirnu traku kojom ćete obeležiti cilj.",
                    "steps":  [
-                                 "Objasnite cilj igre: izrastite iz malog sklupčanog semena u drvo koje se njiše.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Poređajte najmanje osam domina sa razmakom koji omogućava da svaka obori sledeću; prvo isprobajte lanac.",
+                                 "Ako sve domine padnu redom, produžite lanac dodavanjem još domina koliko prostor bezbedno dozvoljava.",
+                                 "Dogovorite ko gradi, ko proverava razmake i ko nežno pokreće prvu dominu. Svi se sklone pre pokretanja."
                              ],
-                   "example":  "Sklupčajte se kao malo seme. Polako se odmotajte u klicu, zatim ustanite i raširite ruke kao grane.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Postavite osam ili više domina cik-cak, poslednju tik uz laganu penastu loptu, a traku malo dalje kao cilj. Nežno oborite prvu i gledajte da li će lopta preći liniju.",
+                   "bonus":  "Napravite račvanje: jedna domina obori široku, laganu kockicu koja pokrene dve kratke linije domina. Na kraju svake stavite po mekanu loptu i obeležite dva cilja; pokušajte da obe pređu svoju liniju.",
+                   "safety":  "Koristite samo velike, lagane i neostre predmete i penastu loptu. Lanac pokrenite nežnim dodirom, nikad bacanjem; držite ga dalje od stepenica, utičnica, ljubimaca i prolaza. Ne koristite staklo, teške predmete ni sitne kuglice."
                },
         "en":  {
-                   "description":  "Grow from a tiny curled seed into a swaying tree.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Arrange at least eight dominoes in a long zigzag chain. When the first falls, each knocks over the next, and the last nudges a lightweight ball across the finish line.",
+                   "preparation":  "Clear a flat, dry floor. Gather dominoes or large blocks, a lightweight foam ball and paper tape to mark the finish.",
                    "steps":  [
-                                 "Explain the goal: grow from a tiny curled seed into a swaying tree.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Set up at least eight dominoes with gaps small enough for each to knock over the next; test the chain.",
+                                 "If they all fall in sequence, extend the chain with more dominoes as far as the space safely allows.",
+                                 "Choose who builds, checks the gaps and gently starts the first domino. Everyone steps back before the start."
                              ],
-                   "example":  "Curl up small like a seed. Slowly uncurl into a sprout, then stand tall and stretch your arms as branches.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Set eight or more dominoes in a zigzag, with the last one touching a lightweight foam ball and a tape line a little farther away as the finish. Gently tip the first domino and see if the ball crosses the line.",
+                   "bonus":  "Make a fork: one domino tips a wide, lightweight block that starts two short domino lines. Put a soft ball at the end of each and mark two finishes; try to get both across their lines.",
+                   "safety":  "Use only large, lightweight, blunt objects and a foam ball. Start the chain with a gentle touch, never a throw; keep it away from stairs, outlets, pets and walkways. Do not use glass, heavy objects or small marbles."
                }
     },
     {
         "id":  67,
         "title":  "One-Line Creature",
         "srTitle":  "Biće iz jedne linije",
-        "minAge":  4,
-        "maxAge":  10,
-        "ageText":  "4–10 godina; mlađima ponuditi izbor, starijima dodatni izazov",
+        "minAge":  6,
+        "maxAge":  12,
+        "ageText":  "6–12 godina",
         "duration":  30,
         "material":  "paper",
         "skills":  [
@@ -3233,27 +3254,27 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Nacrtajte biće jednom neprekidnom vijugavom linijom.",
+                   "description":  "Bez podizanja olovke nacrtajte obris bića jednom neprekidnom linijom, pa mu dodajte noge i osmislite kako hoda.",
                    "preparation":  "Pripremite papir i bezbedne olovke, bojice ili drugi pribor za crtanje potreban za ovu igru.",
                    "steps":  [
-                                 "Objasnite cilj igre: nacrtajte biće jednom neprekidnom vijugavom linijom.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Bez podizanja olovke nacrtajte glavu, telo i rep ili krila u jednoj neprekidnoj liniji.",
+                                 "Dodajte oči i noge, pa odlučite da li biće hoda sporo, gegavo, skakuće ili se šunja.",
+                                 "Pokažite hod pokretima ili prstom pređite nacrtanu putanju; ostali pogađaju kako se biće kreće."
                              ],
-                   "example":  "Pretvorite neprekidnu liniju u biće, pa mu dajte ime i poseban hod.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
+                   "example":  "Nacrtajte obris ptice u jednom potezu, dodajte dve noge i tri otiska stopala, pa prstom pokažite njen gegavi hod.",
+                   "bonus":  "Nacrtajte putanju sa tri stanice, na primer kamen, bara i gnezdo. Odglumite kako biće menja hod na svakoj stanici, a ostali neka pogode gde ide.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Draw a creature using one continuous looping line.",
+                   "description":  "Draw a creature’s outline in one continuous line without lifting the pencil, then add its legs and invent how it walks.",
                    "preparation":  "Prepare paper and child-safe pencils, crayons or other drawing supplies needed for the activity.",
                    "steps":  [
-                                 "Explain the goal: draw a creature using one continuous looping line.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Draw the head, body and tail or wings in one continuous line without lifting the pencil.",
+                                 "Add eyes and legs, then decide whether the creature walks slowly, waddles, hops or sneaks.",
+                                 "Show its walk with movement or trace its drawn path with a finger while others guess how it moves."
                              ],
-                   "example":  "Turn one continuous line into a creature, then give it a name and a special walk.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
+                   "example":  "Draw a bird’s outline in one stroke, add two legs and three footprints, then use a finger to show its waddle.",
+                   "bonus":  "Draw a path with three stops, such as a stone, a puddle and a nest. Act out how the creature changes its walk at each stop while the others guess where it is going.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -3263,9 +3284,9 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Muzejski vodič",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
+        "ageText":  "4–10 godina",
         "duration":  15,
-        "material":  "none",
+        "material":  "household",
         "skills":  [
                        {
                            "sr":  "Govor i komunikacija",
@@ -3285,28 +3306,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Izaberite kućna blaga i vodite posetioce kroz izložbu.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Izaberite tri bezbedna predmeta i izložite ih na stolu. Vodič predstavlja svaki predmet i objašnjava čemu služi, a posetilac postavlja pitanja; zatim zamenite uloge.",
+                   "preparation":  "Na sto stavite tri čista, nerazbijena predmeta koja nisu oštra ni sitna. Dogovorite ko je prvi vodič, a ko posetilac.",
                    "steps":  [
-                                 "Objasnite cilj igre: izaberite kućna blaga i vodite posetioce kroz izložbu.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Posetilac razgleda izložbu, a vodič predstavlja predmete jedan po jedan.",
+                                 "Za svaki predmet vodič kaže naziv, čemu služi i jednu zanimljivu pojedinost.",
+                                 "Posetilac postavlja pitanje; posle tri predmeta zamenite uloge."
                              ],
-                   "example":  "Izložite tri bezbedna kućna predmeta i izmislite po jednu zanimljivu činjenicu o svakom.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Vodič pokazuje drvenu kašiku: „Ovaj predmet meša hranu u šerpi. Po tragovima se vidi da se često koristi.“ Posetilac pita: „Šta se njome najčešće meša?“",
+                   "bonus":  "Za stariju decu posetilac izabere jedan predmet, a vodič daje tri traga bez izgovaranja njegovog imena. Posetilac pogađa predmet i čemu služi, pa zamenite uloge.",
+                   "safety":  "Koristite samo čiste predmete bez oštrih ivica, stakla i sitnih delova. Ne stavljajte eksponate u usta; odrasla osoba bira predmete primerene uzrastu."
                },
         "en":  {
-                   "description":  "Choose household treasures and give visitors a guided tour.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Choose three safe objects and display them on a table. The guide introduces each object and explains what it is used for while the visitor asks questions; then switch roles.",
+                   "preparation":  "Place three clean, unbroken objects on a table; avoid anything sharp or tiny. Decide who will be the first guide and visitor.",
                    "steps":  [
-                                 "Explain the goal: choose household treasures and give visitors a guided tour.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "The visitor explores the display while the guide introduces the objects one at a time.",
+                                 "For each object, the guide says its name, what it is used for and one interesting detail.",
+                                 "The visitor asks a question; switch roles after all three objects."
                              ],
-                   "example":  "Show three safe household objects as exhibits and invent one surprising fact about each.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "The guide shows a wooden spoon: ‘This tool stirs food in a pot. The marks show it is used often.’ The visitor asks, ‘What do you stir with it?’",
+                   "bonus":  "For older children, the visitor chooses an object and the guide gives three clues without saying its name. The visitor guesses the object and what it is used for, then switch roles.",
+                   "safety":  "Use only clean objects with no sharp edges, glass or tiny parts. Do not put exhibits in mouths; an adult should choose age-appropriate items."
                }
     },
     {
@@ -3314,8 +3335,8 @@ window.GAME_FEEDBACK_DATA = [
         "title":  "Balance Delivery",
         "srTitle":  "Dostava u ravnoteži",
         "minAge":  4,
-        "maxAge":  10,
-        "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
+        "maxAge":  12,
+        "ageText":  "4–12 godina",
         "duration":  15,
         "material":  "household",
         "skills":  [
@@ -3335,28 +3356,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Summer play"
                          ],
         "sr":  {
-                   "description":  "Prenesite lagan predmet na poslužavniku kroz jednostavnu stazu.",
-                   "preparation":  "Pripremite lagani poslužavnik i nekoliko bezbednih, nelomljivih predmeta.",
+                   "description":  "Prenesite malu, mekanu lopticu u većoj kašiki od startne do ciljne trake, držeći kašiku jednom rukom. Hodajte polako i ne pridržavajte lopticu drugom rukom.",
+                   "preparation":  "Na ravnom, suvom podu označite start i cilj papirnom trakom. Pripremite veću kuhinjsku kašiku i mekanu lopticu veličine ping-pong loptice; put između traka ostavite prazan.",
                    "steps":  [
-                                 "Objasnite cilj igre: prenesite lagan predmet na poslužavniku kroz jednostavnu stazu.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Stavite lopticu u kašiku i držite dršku jednom rukom.",
+                                 "Hodajte polako pravo od startne do ciljne trake; ako loptica ispadne, podignite je i nastavite od tog mesta.",
+                                 "Na cilju spustite lopticu. Sledeći igrač preuzima kašiku i pokušava istu putanju."
                              ],
-                   "example":  "Prenesite laganu igračku na poslužavniku kratkom, slobodnom stazom, pa je vratite.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Stavite mekanu lopticu u veću kašiku. Držeći kašiku jednom rukom, hodajte pravo od startne do ciljne trake bez pridržavanja loptice.",
+                   "bonus":  "Za stariju decu, nosite lopticu nedominantnom rukom do cilja i nazad bez ispuštanja. Ako padne, pokušaj počinje ponovo od starta.",
+                   "safety":  "Koristite veću kašiku i laganu, mekanu lopticu, nikad staklenu ili metalnu. Hodajte po ravnom, suvom podu; ne trčite i držite putanju dalje od stepenica i prepreka."
                },
         "en":  {
-                   "description":  "Carry a light object on a tray through a simple route.",
-                   "preparation":  "Prepare a lightweight tray and a few safe, unbreakable objects.",
+                   "description":  "Carry a small, soft ball in a larger spoon from the start tape to the finish, holding the spoon in one hand. Walk slowly and do not steady the ball with your other hand.",
+                   "preparation":  "Mark the start and finish on a flat, dry floor with paper tape. Prepare a large kitchen spoon and a soft ball about ping-pong-ball size; keep the route clear.",
                    "steps":  [
-                                 "Explain the goal: carry a light object on a tray through a simple route.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Place the ball in the spoon and hold the handle with one hand.",
+                                 "Walk slowly and straight from start to finish; if the ball falls, pick it up and continue from that spot.",
+                                 "Set the ball down at the finish. The next player takes the spoon and tries the same route."
                              ],
-                   "example":  "Carry a light toy on an open tray across a short, clear route, then return it.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Place a soft ball in a large spoon. Holding the spoon in one hand, walk straight from the start tape to the finish without steadying the ball.",
+                   "bonus":  "For older children, carry the ball to the finish and back using the non-dominant hand without dropping it. If it falls, restart from the beginning.",
+                   "safety":  "Use a large spoon and a lightweight, soft ball, never glass or metal. Walk on a flat, dry floor; do not run, and keep the route clear of stairs and obstacles."
                }
     },
     {
@@ -3395,7 +3416,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Navedite pet životinja, pa pokušajte da navedete pet jela pre kraja odbrojavanja.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
+                   "bonus":  "Za stariju decu: nabrojte pet različitih voćki pre isteka vremena, svaku na drugo početno slovo. Primer: banana, kruška, šljiva, narandža, lubenica.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -3407,19 +3428,19 @@ window.GAME_FEEDBACK_DATA = [
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "Name five animals, then try five foods before the count ends.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
+                   "bonus":  "For older children: name five different fruits before time runs out, each starting with a different letter. Example: banana, kiwi, plum, orange, watermelon.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
     {
         "id":  71,
-        "title":  "Build a Chain-Reaction Machine",
-        "srTitle":  "Sagradi mašinu od lančanih reakcija",
+        "title":  "Chain Reaction",
+        "srTitle":  "Lančana reakcija",
         "minAge":  6,
         "maxAge":  12,
-        "ageText":  "6–12 godina / 6–12 years",
+        "ageText":  "6–12 godina",
         "duration":  30,
-        "material":  "none",
+        "material":  "household",
         "skills":  [
                        {
                            "sr":  "Inženjerstvo",
@@ -3441,29 +3462,29 @@ window.GAME_FEEDBACK_DATA = [
 
                          ],
         "sr":  {
-                   "description":  "Napravite jednostavnu mašinu u kojoj jedan bezbedan pokret pokreće niz događaja i na kraju obavi mali zadatak.",
-                   "preparation":  "Prikupite lagane materijale i izaberite završni cilj, na primer da papirna loptica upadne u čašu.",
+                   "description":  "Složite bezbedne predmete tako da jedan pokrene sledeći i mašina na kraju obavi dogovoreni zadatak.",
+                   "preparation":  "Oslobodite ravan deo poda i prikupite lagane, stabilne i bezbedne predmete. Dogovorite šta mašina treba da uradi na kraju.",
                    "steps":  [
-                                 "Nacrtajte ili dogovorite početak i kraj mašine.",
-                                 "Sagradite dva ili tri koraka, na primer kockica obara cev, a cev kotrlja lopticu.",
-                                 "Testirajte mašinu i menjajte samo jedan deo odjednom ako ne radi.",
-                                 "Proslavite pokušaj i objasnite koji deo je izazvao sledeći pokret."
+                                 "Izaberite početak i dogovorite završni zadatak mašine.",
+                                 "Poređajte predmete tako da svaki pokrene sledeći; prvo napravite kratak lanac.",
+                                 "Nežno pokrenite prvi deo i posmatrajte da li lanac stiže do cilja.",
+                                 "Ako se lanac zaustavi, menjajte samo položaj ili razmak dela koji nije pokrenuo sledeći."
                              ],
-                   "example":  "Povucite kartonsku cev da obori kockicu; kockica gurne papirnu lopticu niz rampu, a loptica se zaustavi u čaši.",
-                   "bonus":  "Dodajte uslov da mašina na kraju podigne zastavicu ili zazvoni, koristeći samo lagane predmete.",
+                   "example":  "Na primer, prva domina obori kockicu, kockica gurne autić, a autić obori čašu na cilju. Smislite i isprobajte svoju kombinaciju predmeta.",
+                   "bonus":  "Napravite račvanje: jedan deo mašine pokreće dva odvojena niza, a oba završavaju zadatak jednim početnim dodirom.",
                    "safety":  "Odrasli proverava stabilnost konstrukcije; ne koristite staklo, teške predmete, struju ni predmete koji se mogu progutati."
                },
         "en":  {
-                   "description":  "Build a simple machine in which one safe movement triggers a chain of events and completes a small task at the end.",
-                   "preparation":  "Gather lightweight materials and choose an end goal, such as getting a paper ball into a cup.",
+                   "description":  "Arrange safe objects so each one triggers the next and the machine completes an agreed task at the end.",
+                   "preparation":  "Clear a flat floor area and gather lightweight, stable, safe objects. Agree on what the machine should do at the end.",
                    "steps":  [
-                                 "Sketch or agree on the machine’s start and finish.",
-                                 "Build two or three steps, such as a block tipping a tube that rolls a ball.",
-                                 "Test the machine and change only one part at a time if it fails.",
-                                 "Celebrate the attempt and explain which part triggered the next movement."
+                                 "Choose a starting point and agree on the machine’s final task.",
+                                 "Arrange objects so each one triggers the next; start with a short chain.",
+                                 "Gently start the first part and see whether the chain reaches its goal.",
+                                 "If the chain stops, adjust only the position or spacing of the part that failed to trigger the next one."
                              ],
-                   "example":  "Tip a cardboard tube to knock over a block; the block nudges a paper ball down a ramp, and the ball lands in a cup.",
-                   "bonus":  "Add a condition that the machine raises a small flag or makes a sound at the end, using only lightweight objects.",
+                   "example":  "For example, the first domino tips a block, the block nudges a toy car, and the car knocks over a cup at the finish. Invent and test your own object combination.",
+                   "bonus":  "Make a fork: one part of the machine starts two separate chains, and both must complete their tasks from one gentle tap.",
                    "safety":  "An adult checks the structure’s stability; avoid glass, heavy objects, electricity, and small swallowable parts."
                }
     },
@@ -3473,7 +3494,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Bingo iz prirode",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; mlađima ponuditi izbor, starijima dodatni izazov",
+        "ageText":  "4–10 godina",
         "duration":  15,
         "material":  "household",
         "skills":  [
@@ -3501,7 +3522,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Uočite list, pticu i gladak kamen bez branja ili uznemiravanja prirode.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
+                   "bonus":  "Za stariju decu zadajte dva uslova odjednom, na primer: „Pronađi nešto zeleno sa nazubljenim ivicama.“ Igrač to traži pogledom i objašnjava kako ispunjava oba uslova. Ne berite i ne dirajte.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -3513,7 +3534,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "Spot a leaf, a bird and a smooth stone without picking or disturbing anything.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
+                   "bonus":  "For older children, give two clues at once, such as: ‘Find something green with jagged edges.’ The player searches with their eyes and explains how it matches both clues. Do not pick or touch anything.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -3523,7 +3544,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Odbij i uhvati",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
+        "ageText":  "4–10 godina",
         "duration":  15,
         "material":  "ball",
         "skills":  [
@@ -3551,7 +3572,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Jednom odbijte mekanu loptu, tiho pljesnite i uhvatite je obema rukama.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
+                   "bonus":  "Za stariju decu: posle jednog odskoka brzo dodirnite kolena, pa ramena i uhvatite loptu pre nego što ponovo udari o pod. Odbijajte je nežno i ostanite na mestu.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -3563,7 +3584,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "Bounce the soft ball once, clap quietly and catch it with both hands.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
+                   "bonus":  "For older children: after one bounce, quickly touch your knees, then shoulders, and catch the ball before it hits the floor again. Bounce gently and stay in place.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -3573,7 +3594,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Plesni semafor",
         "minAge":  3,
         "maxAge":  9,
-        "ageText":  "3–9 godina; starijima dodati pravila ili izazov",
+        "ageText":  "3–9 godina",
         "duration":  15,
         "material":  "none",
         "skills":  [
@@ -3603,7 +3624,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Na zeleno se krećite, na žuto usporite, a na crveno se ukočite u smešnoj pozi.",
-                   "bonus":  "Dodajte promenu pravila u sledećem krugu, na primer promenite smer, usporite pokret ili uvedite malu misiju. Odrasli proverava da prostor ostane bezbedan.",
+                   "bonus":  "Za stariju decu uvedite plavi signal: napravite jedan spor okret u mestu, a na crveno se odmah ukočite. Vodič može da menja signale nepredvidivo; ne trčite.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -3615,7 +3636,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "On green move, on yellow slow down, and on red freeze in a funny pose.",
-                   "bonus":  "Bonus: Change one rule in the next round, such as switching direction, slowing down or adding a small mission. An adult should keep the space safe.",
+                   "bonus":  "For older children, add a blue signal: make one slow turn in place, then freeze on red. The caller can change signals unpredictably; do not run.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -3675,9 +3696,9 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Istraživač mirisa",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; mlađima ponuditi izbor, starijima dodatni izazov",
+        "ageText":  "4–10 godina",
         "duration":  15,
-        "material":  "none",
+        "material":  "household",
         "skills":  [
                        {
                            "sr":  "Opažanje i pažnja",
@@ -3697,27 +3718,27 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Bezbedno uporedite poznate mirise i opišite uspomene.",
-                   "preparation":  "Koristite samo blage, poznate mirise; nemojte ih probati. Preskočite poznate alergene i mirise koji izazivaju nelagodnost.",
+                   "description":  "Uporedite dva blaga, poznata mirisa: koji je jači, slađi ili svežiji i na šta vas svaki podseća? Nema pogrešnog odgovora.",
+                   "preparation":  "Odrasla osoba priprema dve posudice za poređenje i treću za bonus, sa poznatim, blagim mirisima nakon provere alergija. Mirise ponudite sa odstojanja blagim mahanjem vazduha; ne koristite parfeme ni sredstva za čišćenje.",
                    "steps":  [
-                                 "Objasnite cilj igre: bezbedno uporedite poznate mirise i opišite uspomene.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Odrasla osoba ponudi prvi miris sa odstojanja; dete kaže koju osobinu primećuje.",
+                                 "Ponudite drugi miris i uporedite da li je jači, slađi, svežiji ili drugačiji.",
+                                 "Svako kaže na šta ga miris podseća; odgovori su lični i nema pogrešnih."
                              ],
-                   "example":  "Uporedite dva poznata mirisa hrane, poput limuna i nane, bez probanja.",
-                   "bonus":  "Bonus: Napravite niz od tri zvuka/osećaja i zamolite drugog igrača da ga prepozna ili ponovi istim redosledom.",
+                   "example":  "Kora limuna mi miriše oštro i podseća me na limunadu; nana mi deluje svežije i podseća me na žvaku.",
+                   "bonus":  "Za stariju decu odrasli ponudi tri mirisa jedan po jedan. Dete zapamti i ponovi redosled; za teži nivo, ponovi ga unazad. Mirise ponudite sa odstojanja.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Safely compare familiar scents and describe their memories.",
-                   "preparation":  "Use only familiar, mild scents; do not taste them. Skip known allergens or any scent that causes discomfort.",
+                   "description":  "Compare two mild, familiar scents: which is stronger, sweeter or fresher, and what does each remind you of? There is no wrong answer.",
+                   "preparation":  "An adult prepares two dishes for comparing and a third for the bonus, with familiar, mild scents after checking for allergies. Offer scents from a distance by gently wafting the air; avoid perfumes and cleaning products.",
                    "steps":  [
-                                 "Explain the goal: safely compare familiar scents and describe their memories.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "An adult offers the first scent from a distance; the child says what quality they notice.",
+                                 "Offer the second scent and compare whether it is stronger, sweeter, fresher or different.",
+                                 "Each player says what the scent reminds them of; answers are personal and there are no wrong ones."
                              ],
-                   "example":  "Compare two familiar food smells, such as lemon and mint, without tasting them.",
-                   "bonus":  "Bonus: Make a sequence of three sounds or sensations and ask another player to identify or repeat them in order.",
+                   "example":  "Lemon peel smells sharp to me and reminds me of lemonade; mint feels fresher and reminds me of chewing gum.",
+                   "bonus":  "For older children, an adult offers three scents one at a time. The child remembers and repeats the order; for a harder level, repeat it backwards. Offer scents from a distance.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -3727,9 +3748,9 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Trening superheroja",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
+        "ageText":  "4–10 godina",
         "duration":  15,
-        "material":  "none",
+        "material":  "household",
         "skills":  [
                        {
                            "sr":  "Kreativnost",
@@ -3749,28 +3770,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Izvršite ljubazne, snažne i pametne superherojske misije.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Izvršite spasilačku misiju: saslušajte šta plišanom prijatelju treba i pomozite mu da bezbedno stigne do baze.",
+                   "preparation":  "Pripremite plišanu igračku, odredite sigurnu bazu i oslobodite ravnu putanju bez prepreka.",
                    "steps":  [
-                                 "Objasnite cilj igre: izvršite ljubazne, snažne i pametne superherojske misije.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Izaberite plišanu igračku i dogovorite gde je sigurna baza.",
+                                 "Smislite šta je prijatelju potrebno i isplanirajte kratak, bezbedan put do baze.",
+                                 "Priđite igrački hodajući, saslušajte je, pa je pažljivo odnesite do baze i recite joj ohrabrujuću rečenicu."
                              ],
-                   "example":  "Plišani drug se izgubio. Pažljivo hodajte i lepim rečima ga odvedite do bezbedne baze.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Meda se uplašio od grmljavine. Superheroj ga pita šta mu treba, pažljivo ga odnese do jastuka koji je sigurna baza i kaže: „Tu sam, sada si bezbedan.“",
+                   "bonus":  "Za stariju decu dispečer zada tri uputstva, na primer: „Priđi medi, obiđi oznaku na podu, odnesi ga u bazu.“ Superheroj ponovi redosled pa ga izvrši noseći medu. Putanja ostaje kratka i slobodna; ne trčite i ne žmurite.",
+                   "safety":  "Koristite samo laganu plišanu igračku. Hodajte po ravnom, slobodnom podu, ne trčite i držite se dalje od stepenica i nameštaja. Odrasla osoba nadgleda igru."
                },
         "en":  {
-                   "description":  "Complete kind, strong and clever superhero missions.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Complete a rescue mission: listen to what a stuffed friend needs and help them reach a safe base.",
+                   "preparation":  "Prepare a stuffed toy, choose a safe base and clear a short, flat route.",
                    "steps":  [
-                                 "Explain the goal: complete kind, strong and clever superhero missions.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Choose a stuffed toy and agree where the safe base is.",
+                                 "Decide what the friend needs and plan a short, safe route to the base.",
+                                 "Walk to the toy, listen to it, then carefully carry it to the base and say something reassuring."
                              ],
-                   "example":  "A stuffed toy is lost. Walk carefully and use kind words to guide it to a safe home base.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Teddy is scared of a thunderstorm. The superhero asks what Teddy needs, carefully carries him to a pillow safe base and says, ‘I’m here; you’re safe now.’",
+                   "bonus":  "For older children, a dispatcher gives three directions, such as: ‘Go to Teddy, walk around the floor marker, carry him to base.’ The superhero repeats the order, then follows it while carrying Teddy. Keep the route short and clear; no running or closing eyes.",
+                   "safety":  "Use only a lightweight stuffed toy. Walk on a flat, clear floor, do not run, and stay away from stairs and furniture. An adult should supervise."
                }
     },
     {
@@ -3779,7 +3800,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Simetrična umetnost",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; mlađima ponuditi izbor, starijima dodatni izazov",
+        "ageText":  "4–10 godina",
         "duration":  30,
         "material":  "paper",
         "skills":  [
@@ -3799,27 +3820,27 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Nacrtajte polovinu slike i dovršite odgovarajuću stranu.",
-                   "preparation":  "Pripremite papir i bezbedne olovke, bojice ili drugi pribor za crtanje potreban za ovu igru.",
+                   "description":  "Odrasli nacrta polovinu slike uz srednju liniju, a dete pokušava da nacrta njen odraz na drugoj polovini papira.",
+                   "preparation":  "Podelite papir uspravnom srednjom linijom i pripremite olovke ili bojice. Odrasla osoba crta samo sa jedne strane.",
                    "steps":  [
-                                 "Objasnite cilj igre: nacrtajte polovinu slike i dovršite odgovarajuću stranu.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Odrasli nacrta polovinu jednostavne slike tako da njeni delovi dodiruju srednju liniju.",
+                                 "Dete posmatra oblik i položaj svakog dela, pa ih crta kao odraz sa druge strane linije.",
+                                 "Kada završi, uporedite strane i zajedno dodajte boje ili ukrase."
                              ],
-                   "example":  "Presavijte papir po sredini i dodajte odgovarajući detalj na drugu polovinu.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
+                   "example":  "Odrasli nacrta levu polovinu leptira do srednje linije. Dete sa desne strane nacrta krilo iste veličine i ponovi isti broj šara na odgovarajućim mestima.",
+                   "bonus":  "Za stariju decu odrasli nacrta tri tačke na različitim udaljenostima od srednje linije. Dete ih preslika na drugu stranu bez presavijanja papira, pa zajedno proverite položaj.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Draw half a picture and complete its matching side.",
-                   "preparation":  "Prepare paper and child-safe pencils, crayons or other drawing supplies needed for the activity.",
+                   "description":  "An adult draws half a picture beside a center line, and the child tries to draw its mirror image on the other half of the paper.",
+                   "preparation":  "Divide the paper with a vertical center line and prepare pencils or crayons. The adult draws on one side only.",
                    "steps":  [
-                                 "Explain the goal: draw half a picture and complete its matching side.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "The adult draws half of a simple picture, with its parts touching the center line.",
+                                 "The child studies each part’s shape and position, then draws its reflection on the other side.",
+                                 "Compare the two sides, then add colors or decorations together."
                              ],
-                   "example":  "Fold the page down the middle and add a matching detail to the other half.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
+                   "example":  "The adult draws the left half of a butterfly up to the center line. The child draws a wing of the same size on the right and repeats the same number of patterns in matching places.",
+                   "bonus":  "For older children, the adult draws three dots at different distances from the center line. The child mirrors them on the other side without folding the paper, then check their positions together.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -3829,9 +3850,9 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Brojevi u skoku",
         "minAge":  5,
         "maxAge":  12,
-        "ageText":  "5–12 godina (mlađima uz pomoć odraslog)",
+        "ageText":  "5–12 godina",
         "duration":  15,
-        "material":  "none",
+        "material":  "paper",
         "skills":  [
                        {
                            "sr":  "Kretanje i motorika",
@@ -3853,28 +3874,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Postavite brojeve i skačite kroz izgovoreni niz.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Odrasli izgovara broj, a dete jednim malim skokom dolazi do odgovarajuće kartice i glasno kaže broj.",
+                   "preparation":  "Napišite brojeve od 1 do 5 na papirne kartice i pričvrstite ih trakom za suv, neklizav pod, dovoljno razmaknute za mali skok.",
                    "steps":  [
-                                 "Objasnite cilj igre: postavite brojeve i skačite kroz izgovoreni niz.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Raširite kartice 1–5 po slobodnom delu poda.",
+                                 "Odrasli kaže jedan broj; dete jednim malim skokom staje pored odgovarajuće kartice i izgovara ga.",
+                                 "Ponavljajte sa različitim brojevima, pa zamenite ko ih izgovara."
                              ],
-                   "example":  "Poređajte kartice sa brojevima po podu i malim skokom dođite do izgovorenog broja.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Odrasli kaže „četiri“. Dete jednim malim skokom staje pored kartice 4 i glasno kaže „četiri“.",
+                   "bonus":  "Za stariju decu odrasli izgovori tri broja zaredom, na primer 2–5–1. Dete zapamti niz, pa jednim malim skokom dođe do svake odgovarajuće kartice redom.",
+                   "safety":  "Pričvrstite kartice da ne klize i ostavite dovoljno prostora između njih. Skačite nisko po suvom podu; ne trčite između kartica."
                },
         "en":  {
-                   "description":  "Place number markers and jump through a called sequence.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "An adult calls a number; the child makes one small jump to the matching card and says the number aloud.",
+                   "preparation":  "Write numbers 1 to 5 on paper cards and tape them to a dry, non-slip floor, spaced far enough apart for a small jump.",
                    "steps":  [
-                                 "Explain the goal: place number markers and jump through a called sequence.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Spread cards 1–5 across a clear area of floor.",
+                                 "The adult calls one number; the child makes one small jump beside the matching card and says it aloud.",
+                                 "Repeat with different numbers, then switch who calls them."
                              ],
-                   "example":  "Place number cards on the floor and make one small jump to the number called.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "The adult calls ‘four.’ The child makes one small jump beside card 4 and says ‘four’ aloud.",
+                   "bonus":  "For older children, the adult calls three numbers in a row, such as 2–5–1. The child remembers the sequence, then makes one small jump to each matching card in order.",
+                   "safety":  "Tape cards down so they cannot slide and leave enough space between them. Use small jumps on a dry floor; do not run between cards."
                }
     },
     {
@@ -3883,7 +3904,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Slova od grančica",
         "minAge":  5,
         "maxAge":  12,
-        "ageText":  "5–12 godina (mlađima uz pomoć odraslog)",
+        "ageText":  "5–12 godina",
         "duration":  15,
         "material":  "household",
         "skills":  [
@@ -3911,7 +3932,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Složite prvo slovo svog imena od opalih grančica, pa dodajte mali ukras.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
+                   "bonus":  "Složite kratku tajnu reč od opalih grančica, a drugi igrač neka je pročita bez nagoveštaja. Za teži nivo izaberite reč od najmanje četiri slova, pa zamenite uloge.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -3923,7 +3944,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "Make the first letter of your name from fallen twigs, then add a small decoration.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
+                   "bonus":  "Build a short secret word from fallen twigs and ask another player to read it without hints. For a harder level, choose a word of at least four letters, then switch roles.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -3983,9 +4004,9 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Ljudska skulptura",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; mlađima ponuditi izbor, starijima dodatni izazov",
+        "ageText":  "4–10 godina",
         "duration":  15,
-        "material":  "household",
+        "material":  "none",
         "skills":  [
                        {
                            "sr":  "Kreativnost",
@@ -4005,28 +4026,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Family gatherings"
                          ],
         "sr":  {
-                   "description":  "Zajedno telima napravite oblik zadatog predmeta.",
-                   "preparation":  "Pripremite samo bezbedne i čiste kućne predmete koji se pominju u igri.",
+                   "description":  "Jedan igrač bira predmet, a grupa zajedno oblikuje njegovu siluetu udobnim, stabilnim pozama.",
+                   "preparation":  "Nisu potrebni predmeti. Oslobodite dovoljno prostora da svako može da zauzme udobnu pozu.",
                    "steps":  [
-                                 "Izaberite jednostavan predmet ili oblik koji ćete zajedno predstaviti.",
-                                 "Zauzmite udobne poze sa stopalima na podu; nemojte podizati ni vući druge.",
-                                 "Kratko zadržite pozu, opustite se, pa neka sledeći igrač izabere novi oblik."
+                                 "Jedan igrač bira predmet, a ostali dogovaraju kako će ga prikazati telom.",
+                                 "Svako zauzima udobnu pozu sa stopalima na podu; niko ne podiže, vuče ni namešta druge.",
+                                 "Zadržite skulpturu nekoliko sekundi dok posmatrači pogađaju, pa se opustite."
                              ],
                    "example":  "Napravite drvo: jedna osoba je stablo, a ostali rukama predstavljaju grane.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "bonus":  "Za stariju decu odrasli zada scenu, na primer „vetrenjača na vetru“. Grupa ima 15 sekundi da zauzme poze i zamrzne se, a posmatrač pogađa scenu. Svi ostaju stabilni, bez dodirivanja ili podizanja.",
+                   "safety":  "Koristite samo udobne poze sa stopalima na podu. Ne penjite se, ne stojte na drugima, ne gurajte i ne podižite učesnike; odmah opustite pozu ako nekome nije prijatna."
                },
         "en":  {
-                   "description":  "Work together to form a named object with body poses.",
-                   "preparation":  "Prepare only the safe, clean household items named in the game.",
+                   "description":  "One player chooses an object, and the group forms its silhouette together using comfortable, stable poses.",
+                   "preparation":  "No objects are needed. Clear enough space for everyone to pose comfortably.",
                    "steps":  [
-                                 "Choose a simple object or shape for the group to make.",
-                                 "Arrange comfortable body poses with feet on the floor; do not lift or pull anyone.",
-                                 "Hold the pose briefly, then relax and let another player choose the next shape."
+                                 "One player chooses an object, and the others decide how to show it with their bodies.",
+                                 "Everyone takes a comfortable pose with feet on the floor; nobody lifts, pulls or positions another person.",
+                                 "Hold the sculpture for a few seconds while observers guess, then relax."
                              ],
                    "example":  "Work together to make a tree: one person stands as the trunk while others form branches with their arms.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "bonus":  "For older children, an adult names a scene, such as ‘a windmill in the wind.’ The group has 15 seconds to pose and freeze while an observer guesses the scene. Everyone stays stable, without touching or lifting anyone.",
+                   "safety":  "Use comfortable poses with feet on the floor. Do not climb, stand on others, push or lift anyone; stop the pose if anyone feels uncomfortable."
                }
     },
     {
@@ -4085,9 +4106,9 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Kuhinjski bend",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
+        "ageText":  "4–10 godina",
         "duration":  15,
-        "material":  "none",
+        "material":  "household",
         "skills":  [
                        {
                            "sr":  "Kreativnost",
@@ -4107,28 +4128,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Koristite bezbedan pribor kao instrumente za porodični ritam.",
-                   "preparation":  "Izaberite nekoliko bezbednih drvenih ili plastičnih kuhinjskih predmeta i nelomljive posude.",
+                   "description":  "Napravite kuhinjski bend: dirigent zada kratak ritam, a ostali ga ponavljaju nežnim udaranjem drvenih i plastičnih predmeta po nelomljivim posudama.",
+                   "preparation":  "Pripremite drvenu kašiku, plastičnu posudu i čašu od čvrste plastike. Sklonite staklene i lomljive predmete.",
                    "steps":  [
-                                 "Objasnite cilj igre: koristite bezbedan pribor kao instrumente za porodični ritam.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Izaberite ko će biti dirigent, a ko svirači; svako dobija po jedan bezbedan predmet.",
+                                 "Dirigent tiho otkuca ritam od dva ili tri udarca po plastičnoj posudi, a bend ga ponovi.",
+                                 "Dirigent rukom pokazuje kada početi, stati, svirati tiše ili malo glasnije; zatim se menja dirigent."
                              ],
-                   "example":  "Neka dirigent označi tiši završetak, pa neka svi instrumenti zajedno utihnu.",
-                   "bonus":  "Bonus: Napravite niz od tri zvuka/osećaja i zamolite drugog igrača da ga prepozna ili ponovi istim redosledom.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Dirigent dva puta nežno kucne drvenom kašikom o plastičnu posudu, napravi pauzu, pa jednom kucne o plastičnu čašu. Bend ponovi: „ta-ta, pauza, ta“.",
+                   "bonus":  "Svaki svirač smisli po jedan tih zvuk. Dirigent ih spoji u kratak ritam, a bend ga zajedno odsvira; zatim se menja dirigent.",
+                   "safety":  "Koristite samo drvene ili plastične predmete i plastične posude. Udarajte nežno, nikada blizu ušiju; ako je zvuk neprijatan, odmah stanite."
                },
         "en":  {
-                   "description":  "Use safe utensils as instruments for a family rhythm.",
-                   "preparation":  "Choose a few safe wooden or plastic kitchen utensils and unbreakable containers.",
+                   "description":  "Make a kitchen band: the conductor sets a short rhythm and the others repeat it by gently tapping wooden and plastic items on unbreakable containers.",
+                   "preparation":  "Prepare a wooden spoon, a plastic bowl and a sturdy plastic cup. Put away glass and breakable items.",
                    "steps":  [
-                                 "Explain the goal: use safe utensils as instruments for a family rhythm.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Choose a conductor and players; give each person one safe item.",
+                                 "The conductor gently taps a two- or three-beat rhythm on a plastic bowl, and the band repeats it.",
+                                 "The conductor uses hand signals to start, stop, play softly or a little louder; then switch conductors."
                              ],
-                   "example":  "Let the conductor signal a quiet ending, and have every instrument fade out together.",
-                   "bonus":  "Bonus: Make a sequence of three sounds or sensations and ask another player to identify or repeat them in order.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "The conductor gently taps a plastic bowl twice with a wooden spoon, pauses, then taps a plastic cup once. The band repeats: ‘tap-tap, pause, tap.’",
+                   "bonus":  "Each player invents one quiet sound. The conductor combines them into a short rhythm for the band to play together, then a new player conducts.",
+                   "safety":  "Use only wooden or plastic items and plastic containers. Tap gently, never near ears; stop immediately if the sound feels uncomfortable."
                }
     },
     {
@@ -4189,7 +4210,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Napravi biće",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; mlađima ponuditi izbor, starijima dodatni izazov",
+        "ageText":  "4–10 godina",
         "duration":  30,
         "material":  "household",
         "skills":  [
@@ -4209,28 +4230,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Spojite bezbedne predmete u biće i objasnite njegove moći.",
-                   "preparation":  "Pripremite samo bezbedne i čiste kućne predmete koji se pominju u igri.",
+                   "description":  "Sastavite biće od nekoliko bezbednih kućnih predmeta. Zatim naizmenično dodajte njegove osobine, dajte mu ime i zajedno smislite kako će rešiti misiju.",
+                   "preparation":  "Pripremite tri ili četiri velika, lagana i čista predmeta, na primer smotane čarape, mekanu maramu i plastičnu činiju. Sklonite sitne, oštre i lomljive stvari.",
                    "steps":  [
-                                 "Objasnite cilj igre: spojite bezbedne predmete u biće i objasnite njegove moći.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Izaberite tri predmeta i dogovorite se koji će biti telo, glava i poseban deo bića. Poređajte ih na podu ili stabilnoj površini.",
+                                 "Naizmenično dodajte po jednu osobinu, na primer stanište, pokret, zvuk ili omiljenu hranu, i objasnite koji deo bića je predstavlja. Dajte biću ime.",
+                                 "Smislite jednostavnu misiju za biće i odglumite kako mu njegovi delovi pomažu da je izvrši."
                              ],
-                   "example":  "Izaberite dva bezbedna predmeta za delove tela i osmislite kako se biće nežno kreće.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Smotane čarape su telo, marama su krila, a plastična činija je oklop. Igrači naizmenično dodaju osobine: Krilko živi u bašti i cvrkuće da dozove prijatelje. Njegova misija je da odnese pozivnicu ježu s druge strane bašte.",
+                   "bonus":  "Jastuk predstavlja oboreno drvo koje blokira put do ježa. Igrači naizmenično dodaju ili menjaju po jednu osobinu bića — na primer, daju mu duga krila da odleti oko prepreke — pa zajedno odglume kako nova osobina pomaže da je bezbedno zaobiđe.",
+                   "safety":  "Koristite samo velike, lagane i čiste predmete. Ne koristite sitne delove, oštre ili lomljive stvari; ništa ne stavljajte preko lica niti vezujte oko tela."
                },
         "en":  {
-                   "description":  "Combine safe objects into a creature and explain its powers.",
-                   "preparation":  "Prepare only the safe, clean household items named in the game.",
+                   "description":  "Build a creature from a few safe household objects. Then take turns adding features, give it a name and invent a mission for it to solve together.",
+                   "preparation":  "Prepare three or four large, lightweight, clean objects, such as rolled socks, a soft scarf and a plastic bowl. Put away tiny, sharp or breakable items.",
                    "steps":  [
-                                 "Explain the goal: combine safe objects into a creature and explain its powers.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Choose three objects and decide which will be the body, head and special feature. Arrange them on the floor or a stable surface.",
+                                 "Take turns adding one feature, such as a habitat, movement, sound or favorite food, and explain which part represents it. Give the creature a name.",
+                                 "Invent a simple mission for the creature and act out how its parts help it complete it."
                              ],
-                   "example":  "Choose two safe objects for body parts and invent a gentle way the creature moves.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Rolled socks are the body, a scarf is the wings and a plastic bowl is the shell. Players take turns adding features: Winged Postie lives in a garden and chirps to call friends. Its mission is to deliver an invitation to a hedgehog on the other side of the garden.",
+                   "bonus":  "A cushion represents a fallen tree blocking the way to the hedgehog. Players take turns adding or changing one creature feature—for example, giving it long wings to fly around the obstacle—then act out how the new feature helps it get around safely.",
+                   "safety":  "Use only large, lightweight, clean objects. Avoid tiny parts, sharp or breakable items; never cover faces or tie objects around the body."
                }
     },
     {
@@ -4239,7 +4260,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Kapetan kaže",
         "minAge":  3,
         "maxAge":  9,
-        "ageText":  "3–9 godina; starijima dodati pravila ili izazov",
+        "ageText":  "3–9 godina",
         "duration":  15,
         "material":  "none",
         "skills":  [
@@ -4261,28 +4282,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Izvršite komande samo kada počnu kapetanovom rečenicom.",
+                   "description":  "Slušajte komande i uradite ih samo ako počinju rečima „Kapetan kaže“. Ako tih reči nema, ostanite mirni.",
                    "preparation":  "Nije potrebna posebna priprema.",
                    "steps":  [
-                                 "Objasnite cilj igre: izvršite komande samo kada počnu kapetanovom rečenicom.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Jedan igrač je kapetan i izgovara kratke komande; ostali slušaju početne reči.",
+                                 "Pokret uradite samo kada komanda počinje sa „Kapetan kaže“.",
+                                 "Ako neko pogreši, samo se nasmejte i nastavite; posle kratkog kruga promenite kapetana."
                              ],
-                   "example":  "Zadajte komandu iz dva dela, ali igrači je prate samo ako počinje sa „Kapetan kaže”.",
-                   "bonus":  "Dodajte promenu pravila u sledećem krugu, na primer promenite smer, usporite pokret ili uvedite malu misiju. Odrasli proverava da prostor ostane bezbedan.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "„Kapetan kaže: dodirni kolena pa pljesni jednom“ — uradite. „Podigni ruke!“ — ne pomerajte se, jer komanda nije počela kapetanovim rečima.",
+                   "bonus":  "Za stariju decu kapetan brzo smenjuje pravu i lažnu komandu: „Kapetan kaže: dodirni ramena“, pa odmah „napravi jedan korak“. Igrači urade samo prvu; nema ispadanja, samo nastavite igru.",
+                   "safety":  "Igrajte na slobodnom prostoru, ostanite na svom mestu i birajte male, udobne pokrete. Ne trčite i ne okrećite se brzo."
                },
         "en":  {
-                   "description":  "Follow commands only when they begin with the captain’s phrase.",
+                   "description":  "Listen to the commands and follow them only if they begin with ‘Captain says.’ If those words are missing, stay still.",
                    "preparation":  "No special preparation needed.",
                    "steps":  [
-                                 "Explain the goal: follow commands only when they begin with the captain’s phrase.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "One player is captain and calls short commands; the others listen for the opening words.",
+                                 "Do the movement only when the command starts with ‘Captain says.’",
+                                 "If someone makes a mistake, laugh it off and continue; change captains after a short round."
                              ],
-                   "example":  "Give a two-part command, but players follow it only if it starts with “Captain says”.",
-                   "bonus":  "Bonus: Change one rule in the next round, such as switching direction, slowing down or adding a small mission. An adult should keep the space safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "‘Captain says: touch your knees, then clap once’ — do it. ‘Raise your hands!’ — stay still because the command did not start with the captain’s words.",
+                   "bonus":  "For older children, the captain quickly alternates a real and a trick command: ‘Captain says: touch your shoulders,’ then ‘take one step.’ Players do only the first; nobody is eliminated, just keep playing.",
+                   "safety":  "Play in a clear space, stay in your own spot and choose small, comfortable movements. Do not run or spin quickly."
                }
     },
     {
@@ -4291,9 +4312,9 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Nove školice",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; mlađima ponuditi izbor, starijima dodatni izazov",
+        "ageText":  "4–10 godina",
         "duration":  30,
-        "material":  "none",
+        "material":  "household",
         "skills":  [
                        {
                            "sr":  "Kreativnost",
@@ -4313,28 +4334,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Cold days"
                          ],
         "sr":  {
-                   "description":  "Napravite školice sa posebnim radnjama u svakom polju.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Nacrtajte numerisanu putanju školica i dodajte jednostavnu radnju u neka polja. Skačite redom i uradite zadatu radnju kada dođete do tog polja.",
+                   "preparation":  "Napravite šest polja redom: jedno polje, dva jedno pored drugog, jedno polje, pa opet dva jedno pored drugog. Obeležite ih brojevima 1–6; napolju koristite kredu, a unutra papirnu traku.",
                    "steps":  [
-                                 "Objasnite cilj igre: napravite školice sa posebnim radnjama u svakom polju.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Označite polja 1, 2–3, 4 i 5–6 tim redom; parna polja nacrtajte jedno pored drugog.",
+                                 "U jedno ili dva polja dodajte znak za radnju, na primer zvezdicu za jedan pljesak.",
+                                 "Igrač skače jednom nogom u pojedinačna polja, a sa obe noge u parna; na označenom polju izvede radnju. Po potrebi može i da hoda."
                              ],
-                   "example":  "Na jednom polju zastanite da kažete omiljenu životinju, pa nastavite školice.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Igrač skače na 1, staje sa obe noge na 2 i 3 i pljesne na 3, zatim skače na 4 i staje sa obe noge na 5 i 6.",
+                   "bonus":  "Za stariju decu odrasli izgovori tri broja redom, na primer 4–2–6. Igrač pamti niz, skače do tih polja i izvodi radnju samo ako je neko od njih označeno.",
+                   "safety":  "Koristite kredu ili traku koja se ne kliza na ravnoj, suvoj površini. Ostavite razmak oko putanje; dozvolite hodanje umesto skakanja i ne koristite kamenčiće kao markere."
                },
         "en":  {
-                   "description":  "Create a hopscotch path with special actions in each square.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Draw a numbered hopscotch path and add a simple action to a few squares. Hop through in order and do the action when you reach its square.",
+                   "preparation":  "Make six squares in this order: one square, two side-by-side, one square, then two side-by-side. Number them 1–6; use chalk outdoors or removable tape indoors.",
                    "steps":  [
-                                 "Explain the goal: create a hopscotch path with special actions in each square.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Mark the squares 1, 2–3, 4 and 5–6 in order; draw paired squares side-by-side.",
+                                 "Add an action symbol to one or two squares, such as a star for one clap.",
+                                 "Hop on one foot in single squares and land with both feet in paired squares; do the action on marked squares. Walking is fine too."
                              ],
-                   "example":  "At one square, pause to name a favorite animal before continuing the hopscotch path.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "The player hops to 1, lands with both feet on 2 and 3 and claps on 3, then hops to 4 and lands with both feet on 5 and 6.",
+                   "bonus":  "For older children, an adult calls three numbers in order, such as 4–2–6. The player remembers the sequence, hops to those squares and does an action only if a square is marked.",
+                   "safety":  "Use chalk or non-slip tape on a flat, dry surface. Leave clear space around the path; walking instead of hopping is fine, and do not use small stones as markers."
                }
     },
     {
@@ -4343,7 +4364,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Crtanje senke lista",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; mlađima ponuditi izbor, starijima dodatni izazov",
+        "ageText":  "4–10 godina",
         "duration":  15,
         "material":  "household",
         "skills":  [
@@ -4366,24 +4387,24 @@ window.GAME_FEEDBACK_DATA = [
                    "description":  "Postavite list na sunce i pratite njegovu promenljivu senku.",
                    "preparation":  "Pripremite jedan bezbedan opali list, papir, bezbednu olovku i sunčano mesto.",
                    "steps":  [
-                                 "Objasnite cilj igre: postavite list na sunce i pratite njegovu promenljivu senku.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Stavite opali list na papir na sunčanom mestu i pričvrstite ga da se ne pomera.",
+                                 "Ocrtajte senku lista olovkom, bez pomeranja lista ili papira.",
+                                 "Sačekajte 10–15 minuta, drugom bojom ponovo ocrtajte senku i uporedite promenu."
                              ],
-                   "example":  "Kasnije ponovo ocrtajte senku istog lista i primetite na koju stranu se pomerila.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
+                   "example":  "Stavite opali list na papir na sunčanom mestu i ocrtajte ivicu njegove senke.",
+                   "bonus":  "Ocrtajte senku sada, pa ponovo za 10–15 minuta drugom bojom, bez pomeranja lista ili papira. Uporedite u kom smeru se senka pomerila i da li je duža ili kraća; ne gledajte direktno u sunce.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
                    "description":  "Place a leaf in sunlight and trace its changing shadow.",
                    "preparation":  "Prepare one safe fallen leaf, paper, a child-safe pencil and a sunny spot.",
                    "steps":  [
-                                 "Explain the goal: place a leaf in sunlight and trace its changing shadow.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Place a fallen leaf on paper in a sunny spot and secure it so it does not move.",
+                                 "Trace the leaf’s shadow with a pencil without moving the leaf or paper.",
+                                 "Wait 10–15 minutes, trace the shadow again in another color and compare the change."
                              ],
-                   "example":  "Trace the same leaf shadow later and notice which way it shifted.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
+                   "example":  "Place a fallen leaf on paper in a sunny spot and trace the edge of its shadow.",
+                   "bonus":  "Trace the shadow now, then again in 10–15 minutes using another color, without moving the leaf or paper. Compare which way it shifted and whether it is longer or shorter; do not look directly at the sun.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -4493,9 +4514,9 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Pogodi moje pravilo",
         "minAge":  5,
         "maxAge":  12,
-        "ageText":  "5–12 godina (mlađima uz pomoć odraslog)",
+        "ageText":  "5–12 godina",
         "duration":  15,
-        "material":  "none",
+        "material":  "household",
         "skills":  [
                        {
                            "sr":  "Kreativnost",
@@ -4515,28 +4536,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Razvrstajte predmete po tajnom pravilu koje ostali otkrivaju.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Jedan igrač tajno smisli pravilo i razvrsta predmete u dve grupe. Ostali analiziraju predmete i raspored, pa pogađaju pravilo.",
+                   "preparation":  "Pripremite šest čistih, bezbednih kućnih predmeta različitih osobina, na primer mekanu loptu, autić, čarapu i plastičnu činiju. Izbegavajte staklo, oštre ivice i sitne delove.",
                    "steps":  [
-                                 "Objasnite cilj igre: razvrstajte predmete po tajnom pravilu koje ostali otkrivaju.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Jedan igrač bira jasno pravilo, ali ga ne otkriva, pa rasporedi predmete u dve grupe.",
+                                 "Ostali predlažu gde bi stavili po jedan predmet i objašnjavaju zašto.",
+                                 "Kada pogode pravilo, otkrivaju ga i menjaju igrača koji osmišljava sledeće pravilo."
                              ],
-                   "example":  "Kada pogode pravilo, razvrstajte iste predmete po novom pravilu.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Tajno pravilo je „može da se kotrlja“: lopta i autić idu u jednu grupu, a čarapa i činija u drugu. Ostali analiziraju raspored i zaključuju šta je zajedničko predmetima u prvoj grupi.",
+                   "bonus":  "Za stariju decu razvrstavač može da promeni pravilo između krugova, a ostali pogađaju šta je sada zajedničko predmetima u grupama.",
+                   "safety":  "Koristite samo čiste, dovoljno velike i bezbedne predmete. Izbegavajte staklo, oštre ivice i sitne delove; predmete ne stavljajte u usta."
                },
         "en":  {
-                   "description":  "Sort objects by a secret rule for others to discover.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "One player secretly chooses a rule and sorts objects into two groups. The others analyze the objects and arrangement, then guess the rule.",
+                   "preparation":  "Prepare six clean, safe household objects with different features, such as a soft ball, toy car, sock and plastic bowl. Avoid glass, sharp edges and tiny parts.",
                    "steps":  [
-                                 "Explain the goal: sort objects by a secret rule for others to discover.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "One player chooses a clear rule without saying it, then sorts the objects into two groups.",
+                                 "The others suggest where each object belongs and explain why.",
+                                 "Once they guess the rule, reveal it and choose a new rule-maker."
                              ],
-                   "example":  "After the rule is guessed, sort the same objects by a new rule.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "The secret rule is ‘can roll’: the ball and toy car go in one group, while the sock and bowl go in the other. The others analyze the arrangement and infer what the first group’s objects have in common.",
+                   "bonus":  "For older children, the sorter can change the rule between rounds, and the others guess what the objects in each group now have in common.",
+                   "safety":  "Use only clean, large, safe objects. Avoid glass, sharp edges and tiny parts; do not put objects in mouths."
                }
     },
     {
@@ -4645,7 +4666,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Trka na vetru",
         "minAge":  3,
         "maxAge":  9,
-        "ageText":  "3–9 godina; starijima dodati pravila ili izazov",
+        "ageText":  "3–9 godina",
         "duration":  15,
         "material":  "household",
         "skills":  [
@@ -4665,28 +4686,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Summer play"
                          ],
         "sr":  {
-                   "description":  "Trkajte lagano lišće ili papiriće koristeći samo dah.",
-                   "preparation":  "Izaberite bezbedan prostor napolju i koristite samo čisto opalo lišće, grančice ili kamenčiće potrebne za igru.",
+                   "description":  "Svaki igrač dobija svoj lagani opali list ili papirić i svoju stazu. Nežno duvajući, pomerite ga od starta do cilja bez korišćenja ruku.",
+                   "preparation":  "Na ravnom, čistom prostoru označite po jednu stazu za svakog igrača, sa startom i ciljem. Pripremite list ili papirić za svakoga; koristite samo čisto opalo lišće.",
                    "steps":  [
-                                 "Objasnite cilj igre: trkajte lagano lišće ili papiriće koristeći samo dah.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Svaki igrač stavi svoj list ili papirić iza startne linije, u svoju stazu.",
+                                 "Na znak, igrači duvaju nežno i pomeraju svoj list ka cilju; ruke ostaju iza leđa.",
+                                 "Ako list izađe iz staze, vratite ga na mesto gde je izašao i nastavite."
                              ],
-                   "example":  "Naizmenično nežno duvajte u opali list kako bi stigao do cilja.",
-                   "bonus":  "Dodajte promenu pravila u sledećem krugu, na primer promenite smer, usporite pokret ili uvedite malu misiju. Odrasli proverava da prostor ostane bezbedan.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Svako dobija po jedan list i staje iza svoje startne linije. Na „sad“ duva nežno u svoj list do cilja, bez dodirivanja rukama.",
+                   "bonus":  "Za stariju decu napravite kapiju na polovini svake staze od dve oznake. List mora da prođe kroz kapiju pa tek onda preko cilja; ako je promaši, pokušajte ponovo nežnim duvanjem.",
+                   "safety":  "Igrajte na ravnom, čistom prostoru, ne duvajte jedni drugima u lice i ne koristite lišće koje je prljavo ili nepoznato. Operite ruke posle igre."
                },
         "en":  {
-                   "description":  "Race lightweight leaves or paper pieces using only breath.",
-                   "preparation":  "Choose a safe outdoor area and use only clean, fallen leaves, twigs or stones needed for the game.",
+                   "description":  "Each player gets their own lightweight fallen leaf or paper scrap and lane. Gently blow it from start to finish without using hands.",
+                   "preparation":  "Mark one lane for each player on a flat, clean area, with a start and finish. Prepare one leaf or paper scrap per player; use only clean fallen leaves.",
                    "steps":  [
-                                 "Explain the goal: race lightweight leaves or paper pieces using only breath.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Each player places their own leaf or paper scrap behind the start line in their lane.",
+                                 "On ‘go,’ players blow gently to move their leaf toward the finish; hands stay behind their backs.",
+                                 "If a leaf leaves its lane, return it to the point where it went out and continue."
                              ],
-                   "example":  "Take turns giving a fallen leaf one gentle puff toward the finish line.",
-                   "bonus":  "Bonus: Change one rule in the next round, such as switching direction, slowing down or adding a small mission. An adult should keep the space safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Each player gets one leaf and stands behind their own start line. On ‘go,’ gently blow it to the finish without touching it with hands.",
+                   "bonus":  "For older children, make a gate halfway down each lane using two markers. The leaf must pass through the gate before crossing the finish; if it misses, try again with a gentle blow.",
+                   "safety":  "Play on a flat, clean surface, do not blow toward anyone’s face, and avoid dirty or unknown leaves. Wash hands after play."
                }
     },
     {
@@ -4695,7 +4716,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Čuvaj krug",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
+        "ageText":  "4–10 godina",
         "duration":  15,
         "material":  "ball",
         "skills":  [
@@ -4719,28 +4740,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Groups \u0026 parties"
                          ],
         "sr":  {
-                   "description":  "Dodajte loptu u krugu pre nego što je igrač u sredini dohvati.",
-                   "preparation":  "Koristite mekanu loptu primerenu uzrastu i pripremite bezbedne mete ili oznake koje igra traži.",
+                   "description":  "Jedan igrač stoji u sredini kruga, a ostali nežno kotrljaju mekanu loptu po podu bilo kome u krugu, ne samo susedima. Igrač u sredini pokušava da je zaustavi rukom; lopta se ne šutira niti baca.",
+                   "preparation":  "Potrebna su najmanje četiri igrača, ravna neklizava površina i jedna mekana lopta. Napravite krug sa dovoljno prostora između igrača.",
                    "steps":  [
-                                 "Objasnite cilj igre: dodajte loptu u krugu pre nego što je igrač u sredini dohvati.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Jedan igrač stane u sredinu, a ostali naprave krug oko njega.",
+                                 "Spoljašnji igrači nežno kotrljaju loptu po podu bilo kom igraču u krugu, ne samo susedu. Mogu da menjaju primaoca pri svakom dodavanju; loptu ne bacaju i ne šutiraju.",
+                                 "Igrač u sredini pokušava da je zaustavi dodirom ruke. Kada uspe, menja se sa igračem koji je poslednji kotrljao loptu."
                              ],
-                   "example":  "U sledećem krugu kotrljajte mekanu loptu kroz krug u suprotnom smeru.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Mila nežno kotrlja loptu po podu ka Luki preko kruga, iako Luka ne stoji pored nje. Sledeći igrač može da izabere nekog drugog.",
+                   "bonus":  "Za dodatni izazov, niko ne sme da kotrlja loptu istoj osobi dva puta zaredom. Igrač u sredini ostaje na mestu i pokušava da je presretne.",
+                   "safety":  "Kotrljajte loptu polako samo po podu; ne šutirajte je, ne bacajte i ne gađajte igrače. Igrač u sredini stoji stabilno i ne zaleće se niti baca na loptu."
                },
         "en":  {
-                   "description":  "Pass a ball around a circle before the middle player reaches it.",
-                   "preparation":  "Use a soft, age-appropriate ball and prepare any safe targets or markers mentioned in the game.",
+                   "description":  "One player stands in the middle while the others gently roll a soft ball along the floor to anyone in the circle, not just their neighbors. The middle player tries to stop it with a hand; do not kick or throw the ball.",
+                   "preparation":  "At least four players, a flat non-slip surface and one soft ball are needed. Form a circle with enough space between players.",
                    "steps":  [
-                                 "Explain the goal: pass a ball around a circle before the middle player reaches it.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "One player stands in the middle while the others form a circle around them.",
+                                 "Players on the outside gently roll the ball along the floor to anyone in the circle, not just their neighbors. They can choose a different receiver each time; do not throw or kick the ball.",
+                                 "The middle player tries to stop it with a hand. When they succeed, they switch with the last player who rolled the ball."
                              ],
-                   "example":  "Roll the soft ball around the circle in the opposite direction on the next round.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Mia gently rolls the ball along the floor to Leo across the circle, even though Leo is not standing next to her. The next player can choose someone else.",
+                   "bonus":  "For an extra challenge, no one may roll the ball to the same person twice in a row. The middle player stays in place and tries to intercept it.",
+                   "safety":  "Roll the ball slowly along the floor only; do not kick, throw or aim at players. The middle player stays balanced and does not dive or lunge for the ball."
                }
     },
     {
@@ -4801,7 +4822,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Šareni koraci",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; mlađima ponuditi izbor, starijima dodatni izazov",
+        "ageText":  "4–10 godina",
         "duration":  30,
         "material":  "none",
         "skills":  [
@@ -4823,28 +4844,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Cold days"
                          ],
         "sr":  {
-                   "description":  "Pratite stazu boja i osmislite pokret za svaku boju.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Napravite stazu od nekoliko boja i dogovorite pokret za svaku. Dete ide redom od jedne boje do druge i izvodi odgovarajući pokret.",
+                   "preparation":  "Pripremite četiri kartice od papira ili kartona: crvenu, plavu, žutu i zelenu. Ako nemate papir u boji, nacrtajte velike krugove na belom papiru i obojite ih bojicama ili flomasterima; mogu poslužiti i komadi tkanine ili predmeti u tim bojama. Poređajte oznake u stazu i pričvrstite ih za pod trakom. Dete hoda do svake oznake, ne po labavom papiru.",
                    "steps":  [
-                                 "Objasnite cilj igre: pratite stazu boja i osmislite pokret za svaku boju.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Za svaku boju dogovorite pokret: crvena – pljesni dvaput, plava – dodirni ramena, žuta – polako se okreni, zelena – dodirni kolena.",
+                                 "Dete hoda do četiri oznake redom i izvodi dogovoreni pokret uz svaku boju. Prvo zajedno ponovite niz.",
+                                 "Zatim promenite redosled kartica i zamolite dete da zapamti novi niz boja i pokreta."
                              ],
-                   "example":  "Napravite niz od tri boje i ponovite odgovarajuće pokrete istim redom.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Prvo dete vežba crvenu–pljesak, plavu–dodir ramena, žutu–okret i zelenu–dodir kolena. Zatim pomešajte kartice, na primer: zelena, crvena, plava, žuta, i neka dete izvede pokrete tim redom.",
+                   "bonus":  "Pokažite novi redosled četiri boje jednom, a zatim okrenite kartice licem nadole. Dete pokuša da se seti boja i odgovarajućih pokreta; posle zajedno proverite redosled.",
+                   "safety":  "Pričvrstite oznake da ne klize i oslobodite stazu od nameštaja. Krećite se hodom, bez trčanja; odrasli može da skrati stazu ili da dete pokaže boju umesto da se kreće do nje."
                },
         "en":  {
-                   "description":  "Follow a path of colors and invent a movement for each one.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Create a path with several colors and choose a movement for each one. The child goes from one color to the next and does the matching movement.",
+                   "preparation":  "Prepare four paper or cardboard cards: red, blue, yellow and green. If you do not have colored paper, draw large circles on white paper and color them with crayons or markers; pieces of fabric or objects in those colors also work. Arrange the markers as a path and secure paper cards to the floor with tape. The child walks to each marker, not on loose paper.",
                    "steps":  [
-                                 "Explain the goal: follow a path of colors and invent a movement for each one.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Choose a movement for each color: red – clap twice, blue – touch your shoulders, yellow – turn slowly, green – touch your knees.",
+                                 "The child walks to the four markers in order and does the matching movement. Repeat the sequence together first.",
+                                 "Then change the order of the cards and ask the child to remember the new sequence of colors and movements."
                              ],
-                   "example":  "Make a three-color pattern and repeat the matching movements in the same order.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "First, the child practices red–clap, blue–touch shoulders, yellow–turn and green–touch knees. Then shuffle the cards, for example green, red, blue, yellow, and have the child do the movements in that order.",
+                   "bonus":  "Show a new sequence of four colors once, then turn the cards face down. The child tries to remember the colors and matching movements; check the order together afterward.",
+                   "safety":  "Secure the markers so they do not slip and clear furniture from the path. Walk rather than run; an adult can shorten the path or let the child point to a color instead of moving to it."
                }
     },
     {
@@ -4854,7 +4875,7 @@ window.GAME_FEEDBACK_DATA = [
         "minAge":  4,
         "maxAge":  10,
         "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
-        "duration":  15,
+        "duration":  5,
         "material":  "household",
         "skills":  [
                        {
@@ -4873,28 +4894,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Polako se krećite oko male igračke koja predstavlja blago dok muzika svira. Kada stane, ukočite se u pozi čuvara, pa u sledećem krugu izaberite novu.",
-                   "preparation":  "Pripremite samo bezbedne i čiste kućne predmete koji se pominju u igri.",
+                   "description":  "Čuvajte plišanu igračku kao blago: dok muzika svira, hodajte oko nje. Kada muzika stane, zaustavite se u pozi čuvara.",
+                   "preparation":  "Izaberite jednu plišanu igračku i stavite je na pod kao blago. Pripremite muziku na telefonu ili zvučniku i oslobodite prostor oko igračke. Bez muzike, odrasli može da kaže „stop“.",
                    "steps":  [
-                                 "Objasnite cilj igre: polako se krećite oko male igračke koja predstavlja blago dok muzika svira. Kada stane, ukočite se u pozi čuvara, pa u sledećem krugu izaberite novu.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Jedan igrač pušta i zaustavlja muziku; ostali stanu oko igračke.",
+                                 "Dok muzika svira, igrači hodaju oko blaga bez trčanja i bez dodirivanja igračke.",
+                                 "Kada muzika stane, svi se ukoče u pozi čuvara i zadrže je dok odrasli ne izbroji do tri. Ponovite nekoliko kratkih krugova i svaki put izaberite novu pozu."
                              ],
-                   "example":  "Stavite malu igračku na sredinu. Krećite se oko nje i, kada muzika stane, ukočite se kao štit ili kapija koja je čuva.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Mila i Luka hodaju oko plišanog medveda. Kada muzika stane, Mila raširi ruke kao kapiju, a Luka se ukoči poput statue koja čuva blago.",
+                   "bonus":  "Pre nego što zaustavi muziku, vodič najavi vrstu čuvara: „kapija“, „štit“ ili „statua“. Kada muzika stane, svi naprave pozu koja odgovara reči. Za uzrast 10–12 godina dodajte izazov pamćenja: vodič najavi dve poze, na primer „kapija pa štit“. Igrači naprave prvu pozu, zadrže je dok vodič ne izbroji do tri, pa pređu u drugu.",
+                   "safety":  "Sklonite prepreke oko igračke. Igrači hodaju, ne trče, ne guraju se i ne skaču ka blagu; pozu mogu da naprave sedeći ako im je tako lakše."
                },
         "en":  {
-                   "description":  "Move slowly around a small toy treasure while music plays. When it stops, freeze in a guard pose and choose a new pose for the next round.",
-                   "preparation":  "Prepare only the safe, clean household items named in the game.",
+                   "description":  "Guard a soft toy as the treasure: walk around it while the music plays. When the music stops, freeze in a guard pose.",
+                   "preparation":  "Choose one soft toy and place it on the floor as the treasure. Prepare music on a phone or speaker and clear the space around the toy. Without music, an adult can say “stop”.",
                    "steps":  [
-                                 "Explain the goal: move slowly around a small toy treasure while music plays. When it stops, freeze in a guard pose and choose a new pose for the next round.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "One player starts and stops the music while the others stand around the toy.",
+                                 "While the music plays, walk around the treasure without running or touching it.",
+                                 "When the music stops, freeze in a guard pose and hold it while an adult counts to three. Repeat a few short rounds, choosing a new pose each time."
                              ],
-                   "example":  "Place a small toy in the middle. Move around it and, when the music stops, freeze like a shield or gate protecting it.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Mia and Leo walk around a teddy bear. When the music stops, Mia spreads her arms like a gate, while Leo freezes like a statue guarding the treasure.",
+                   "bonus":  "Before stopping the music, the caller names a guard type: “gate”, “shield” or “statue”. When the music stops, everyone makes a matching pose. For ages 10–12, add a memory challenge: the caller names two poses, such as “gate then shield”. Players make the first pose, hold it while the caller counts to three, then switch to the second.",
+                   "safety":  "Clear obstacles from around the toy. Walk rather than run, do not push or jump toward the treasure, and allow players to make their pose sitting down if that is easier."
                }
     },
     {
@@ -4959,7 +4980,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Planina od jastuka",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
+        "ageText":  "4–10 godina",
         "duration":  15,
         "material":  "household",
         "skills":  [
@@ -4979,28 +5000,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Pređite preko bezbedne planine od jastuka pažljivim koracima.",
-                   "preparation":  "Postavite nekoliko čvrstih jastuka na slobodan pod i ostavite bezbedan razmak između njih.",
+                   "description":  "Poređajte tri jastuka jedan uz drugi na podu. Dete puzi preko njih do druge strane.",
+                   "preparation":  "Stavite tri čvrsta jastuka jedan uz drugi na neklizajući tepih, praveći nisku i široku stazu. Ne slažite ih jedan na drugi. Odrasli proverava da se ne pomeraju.",
                    "steps":  [
-                                 "Objasnite cilj igre: pređite preko bezbedne planine od jastuka pažljivim koracima.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Odrasli pokaže početak staze i ostane pored deteta.",
+                                 "Dete se spusti na dlanove i kolena, pa polako puzi preko jastuka do druge strane. Ne skače po njima.",
+                                 "Kada stigne do kraja, dete ustane i vrati se hodajući oko staze. Zatim dolazi sledeći igrač."
                              ],
-                   "example":  "Provedite igračku preko planine od jastuka sporim i pažljivim koracima.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Mila se spusti na dlanove i kolena i puzi preko tri jastuka do druge strane. Zatim ustane i obiđe jastuke da bi se vratila na početak.",
+                   "bonus":  "Stavite plišanu igračku na drugu stranu jastuka. Dete puzi preko staze da je dohvati, pa se vrati hodajući oko jastuka i donese je sledećem igraču.",
+                   "safety":  "Koristite samo niske, čvrste jastuke na tepihu i proverite da ne klize. Odrasli ostaje uz dete. Ako mu je puzanje preko jastuka neprijatno, može da ih obiđe."
                },
         "en":  {
-                   "description":  "Climb over a safe pillow mountain using careful steps.",
-                   "preparation":  "Place a few firm cushions or pillows on a clear floor, leaving safe space between them.",
+                   "description":  "Place three cushions side by side on the floor. The child crawls over them to the other side.",
+                   "preparation":  "Place three firm cushions side by side on a non-slip rug to make a low, wide path. Do not stack them. An adult checks that they do not move.",
                    "steps":  [
-                                 "Explain the goal: climb over a safe pillow mountain using careful steps.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "An adult shows the start of the path and stays beside the child.",
+                                 "The child gets down on hands and knees and slowly crawls over the cushions to the other side. No jumping on them.",
+                                 "At the end, the child stands up and walks back around the path. Then the next player takes a turn."
                              ],
-                   "example":  "Guide a toy across the cushion mountain using slow, careful steps.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Mia gets down on her hands and knees and crawls over three cushions to the other side. She then stands up and walks around them to return to the start.",
+                   "bonus":  "Place a soft toy on the other side of the cushions. The child crawls over the path to get it, then walks back around the cushions and hands it to the next player.",
+                   "safety":  "Use only low, firm cushions on a rug and check that they do not slide. An adult stays beside the child. If crawling over the cushions feels uncomfortable, the child can walk around them."
                }
     },
     {
@@ -5009,7 +5030,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Tajna poruka od simbola",
         "minAge":  6,
         "maxAge":  12,
-        "ageText":  "6–12 godina / 6–12 years",
+        "ageText":  "6–12 godina",
         "duration":  15,
         "material":  "none",
         "skills":  [
@@ -5029,29 +5050,29 @@ window.GAME_FEEDBACK_DATA = [
 
                          ],
         "sr":  {
-                   "description":  "Igrači izmišljaju jednostavan simbolički kod i šalju jedni drugima tajne poruke koje se mogu dešifrovati pomoću ključa.",
-                   "preparation":  "Zajedno napravite ključ u kome svaki simbol predstavlja slovo, reč ili radnju. Na primer, zvezda znači „pogledaj gore“, a krug „promeni mesto“.",
+                   "description":  "Ključ je spisak koji objašnjava šta znači svaki simbol. Pošiljalac izabere nekoliko simbola sa spiska i poređa ih u poruku; primalac koristi ključ da je pročita.",
+                   "preparation":  "Na papir nacrtajte četiri simbola i pored svakog upišite radnju: zvezda = pljesni, srce = dodirni rame, talas = okreni se, krug = podigni ruku. Ovaj spisak je ključ i ostaje vidljiv igračima.",
                    "steps":  [
-                                 "Dogovorite ključ od četiri do šest simbola.",
-                                 "Jedan igrač napiše kratku poruku samo simbolima.",
-                                 "Drugi koristi ključ da je dešifruje i kaže kako je došao do odgovora.",
-                                 "Zamenite uloge i dodajte novi simbol ako želite."
+                                 "Nacrtajte ključ sa četiri simbola i značenjem svakog od njih.",
+                                 "Pošiljalac izabere dva ili tri simbola iz ključa i zapiše ih na poseban papir, drugim redosledom. Ne kopira ceo ključ.",
+                                 "Primalac pronađe svaki simbol u ključu i izvede radnje tim redom.",
+                                 "Zamenite uloge i sastavite novu poruku."
                              ],
-                   "example":  "Ključ kaže: zvezda = „pogledaj gore“, srce = „nasmej se“, talas = „mahni“. Poruka zvezda–srce–talas postaje mala tajna misija.",
-                   "bonus":  "Neka dete napravi kod koji ima dva moguća značenja, pa pošiljalac doda još jedan trag da razjasni poruku.",
+                   "example":  "Ključ: zvezda = pljesni, srce = dodirni rame, talas = okreni se, krug = podigni ruku. Poruka: krug–zvezda–srce. To znači: podigni ruku, pljesni, dodirni rame.",
+                   "bonus":  "Napravite tajnu putanju do plišane igračke: zvezda = jedan korak napred, talas = okreni se levo, krug = stani. Pošiljalac napiše niz simbola, na primer zvezda–talas–zvezda, a primalac ga dešifruje i polako prati uputstva do igračke.",
                    "safety":  "Poruke neka budu zabavne i bezazlene; ne koristite kod za skrivanje važnih ili uznemirujućih informacija od odraslih."
                },
         "en":  {
-                   "description":  "Players invent a simple symbol code and send secret messages that can be decoded using a key.",
-                   "preparation":  "Create a key in which each symbol stands for a letter, word, or action. For example, a star means “look up,” and a circle means “switch places.”",
+                   "description":  "A key is a list that explains what each symbol means. The sender chooses a few symbols from the list and puts them in a message; the receiver uses the key to read it.",
+                   "preparation":  "Draw four symbols on paper and write an action beside each one: star = clap, heart = touch your shoulder, wave = turn around, circle = raise your hand. This list is the key and stays visible to the players.",
                    "steps":  [
-                                 "Agree on a key of four to six symbols.",
-                                 "One player writes a short message using symbols only.",
-                                 "Another player decodes it with the key and explains their reasoning.",
-                                 "Switch roles and add a new symbol if you like."
+                                 "Draw a key with four symbols and the meaning of each one.",
+                                 "The sender chooses two or three symbols from the key and writes them on a separate piece of paper in a different order. Do not copy the whole key.",
+                                 "The receiver looks up each symbol in the key and performs the actions in that order.",
+                                 "Switch roles and create a new message."
                              ],
-                   "example":  "The key says: star = “look up,” heart = “smile,” wave = “wave hello.” The message star–heart–wave becomes a little secret mission.",
-                   "bonus":  "Let the child create a code with two possible meanings, then add one extra clue to clarify the message.",
+                   "example":  "Key: star = clap, heart = touch your shoulder, wave = turn around, circle = raise your hand. Message: circle–star–heart. This means: raise your hand, clap, touch your shoulder.",
+                   "bonus":  "Create a secret path to a soft toy: star = take one step forward, wave = turn left, circle = stop. The sender writes a sequence of symbols, such as star–wave–star, and the receiver decodes it and slowly follows the instructions to the toy.",
                    "safety":  "Keep messages playful and harmless; never use the code to hide important or worrying information from trusted adults."
                }
     },
@@ -5083,28 +5104,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Krećite se kao različite životinje prateći signale stani i kreni.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Jedan igrač je semafor i bira životinju za svaki krug. Na zeleno se krećite kao ta životinja, na žuto usporite, a na crveno se ukočite.",
+                   "preparation":  "Oslobodite malu stazu sa jasnim početkom i krajem. Dogovorite ko je prvi semafor i ponovite značenja signala: zeleno = kreni, žuto = uspori, crveno = stani.",
                    "steps":  [
-                                 "Objasnite cilj igre: krećite se kao različite životinje prateći signale stani i kreni.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Semafor izabere životinju, na primer zeca, medveda ili patku, i kaže njeno ime.",
+                                 "Na „zeleno“ igrači se kreću kao ta životinja; na „žuto“ nastavljaju istim pokretom, ali polako; na „crveno“ se ukoče.",
+                                 "Semafor menja signale dok igrači stižu do kraja staze. Zatim se uloge menjaju i bira se nova životinja."
                              ],
-                   "example":  "Dodajte znak za usporeni pokret kako bi svaka životinja pažljivo prešla slobodan prostor.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Semafor kaže „zec“. Na zeleno igrači prave male zečje skokove, na žuto idu sitnim i sporim koracima, a na crveno stanu i pokažu zečje uši rukama.",
+                   "bonus":  "Kada semafor kaže „crveno“, svi se ukoče, a semafor tiho izabere novu životinju. Na sledeće „zeleno“ igrači nastavljaju kao nova životinja, na primer iz zeca prelaze u patku.",
+                   "safety":  "Igrajte se samo na slobodnoj, neklizavoj površini. Krećite se polako, skačite samo nisko i ostavite dovoljno prostora da se igrači ne sudare. Pokrete mogu da rade i sedeći."
                },
         "en":  {
-                   "description":  "Move like different animals while following stop and go signals.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "One player is the traffic light and chooses an animal for each round. Move like that animal on green, slow down on yellow and freeze on red.",
+                   "preparation":  "Clear a short path with a clear start and finish. Choose the first traffic-light caller and review the signals: green = go, yellow = slow down, red = stop.",
                    "steps":  [
-                                 "Explain the goal: move like different animals while following stop and go signals.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "The caller chooses an animal, such as a rabbit, bear or duck, and says its name.",
+                                 "On green, players move like that animal; on yellow, they keep the same movement but go slowly; on red, they freeze.",
+                                 "The caller changes signals as players move toward the end of the path. Then switch roles and choose a new animal."
                              ],
-                   "example":  "Add a slow-motion signal so each animal crosses the clear area carefully.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "The caller says “rabbit.” On green, players make small rabbit hops; on yellow, they take tiny, slow steps; on red, they freeze and make rabbit ears with their hands.",
+                   "bonus":  "When the caller says “red,” everyone freezes while the caller quietly chooses a new animal. On the next “green,” players move as the new animal, for example switching from a rabbit to a duck.",
+                   "safety":  "Play only on a clear, non-slip surface. Move slowly, keep jumps low and leave enough space to avoid collisions. Players can do the movements while seated."
                }
     },
     {
@@ -5137,28 +5158,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Skočite na bezbedno mesto i recite pojam iz zadate kategorije.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Izaberite kategoriju, na primer životinje. Igrači se smenjuju: naprave mali skok u mestu i imenuju pojam iz te kategorije koji još nije pomenut.",
+                   "preparation":  "Oslobodite neklizav prostor i stanite dovoljno razmaknuti da se ne sudarite. Nisu potrebni rekviziti. Dogovorite se oko kategorije i igrajte bez ispadanja.",
                    "steps":  [
-                                 "Objasnite cilj igre: skočite na bezbedno mesto i recite pojam iz zadate kategorije.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Izaberite kategoriju, na primer životinje, voće ili stvari koje se nose u školu.",
+                                 "Igrači redom naprave jedan mali skok u mestu i kažu po jedan pojam iz kategorije. Ne ponavljajte već izgovorene odgovore.",
+                                 "Nastavite dok svi imaju ideje. Ako se neko ne seti, ostali mogu da daju trag ili možete da izaberete novu kategoriju; niko ne ispada."
                              ],
-                   "example":  "Izaberite novu kategoriju i navedite po jednu stvar posle svakog malog, bezbednog skoka.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Kategorija su životinje: Mila napravi mali skok i kaže „mačka“, Luka skoči i kaže „pas“, a sledeći igrač kaže „zec“. Reči se ne ponavljaju.",
+                   "bonus":  "Za teži izazov, vođa neočekivano promeni kategoriju, na primer sa životinja na voće. Sledeći igrač napravi mali skok i kaže novu reč iz nove kategorije; u toj rundi se odgovori ne ponavljaju.",
+                   "safety":  "Skačite nisko u mestu na neklizavoj podlozi i ostavite razmak između igrača. Ako skakanje nije prijatno, umesto toga napravite jedan korak u mestu."
                },
         "en":  {
-                   "description":  "Jump to a safe spot and name something from a chosen category.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Choose a category, such as animals. Players take turns making a small in-place jump and naming an item from that category that has not been said yet.",
+                   "preparation":  "Clear a non-slip space and stand far enough apart to avoid bumping into one another. No equipment is needed. Agree on a category and play without eliminating anyone.",
                    "steps":  [
-                                 "Explain the goal: jump to a safe spot and name something from a chosen category.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Choose a category, such as animals, fruit or things you take to school.",
+                                 "Players take turns making one small in-place jump and naming one item in the category. Do not repeat an answer.",
+                                 "Continue while players have ideas. If someone gets stuck, others can give a clue or you can choose a new category; nobody is out."
                              ],
-                   "example":  "Choose a new category and name one item after each small, safe jump.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "The category is animals: Mia makes a small jump and says “cat,” Leo jumps and says “dog,” and the next player says “rabbit.” No words are repeated.",
+                   "bonus":  "For a harder challenge, the caller unexpectedly changes the category, for example from animals to fruit. The next player makes a small jump and names a new item in the new category; answers cannot be repeated in that round.",
+                   "safety":  "Make low in-place jumps on a non-slip surface and leave space between players. If jumping is uncomfortable, take one step in place instead."
                }
     },
     {
@@ -5191,28 +5212,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Izvršite niz razigranih pokretnih misija po redu.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Izvucite po jednu karticu cilja i načina kretanja, spojite ih u jednu misiju i zajedno je izvršite.",
+                   "preparation":  "Na odvojene papiriće napišite ciljeve, na primer „odnesi plišanog medu do stolice“ ili „dodirni plavi predmet“. Na drugi špil napišite načine kretanja, na primer „hodaj kao robot“ ili „idi sitnim koracima“. Presavijte papiriće i razdvojte ih po špilovima.",
                    "steps":  [
-                                 "Objasnite cilj igre: izvršite niz razigranih pokretnih misija po redu.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Jedan igrač izvlači karticu cilja, a drugi karticu načina kretanja.",
+                                 "Pročitajte ih zajedno i spojite u jednu rečenicu: „Odnesite medu do stolice hodajući kao robot.“",
+                                 "Svi zajedno izvršite misiju bez trčanja, pa vratite kartice u njihove špilove i zamenite uloge."
                              ],
-                   "example":  "Izaberite dve kartice i spojite njihove zadatke u jednu kratku misiju.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Izvučete cilj „odnesi medu do stolice“ i način „hodaj kao robot“. Svi zajedno hodaju kao roboti dok nose plišanog medu do stolice.",
+                   "bonus":  "Dodajte treći špil obrta, na primer „izvršite misiju bez govora“. Izvucite po jednu karticu iz sva tri špila i pokušajte zajedno da ispunite sve uslove.",
+                   "safety":  "Oslobodite putanju i birajte lake predmete. Krećite se hodom, bez trčanja, penjanja ili skakanja preko nameštaja. Ako je zadatak nezgodan, izvucite drugu karticu."
                },
         "en":  {
-                   "description":  "Complete a sequence of playful movement missions in order.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Draw one goal card and one movement card, combine them into a mission and complete it together.",
+                   "preparation":  "Write goals on separate slips of paper, such as “take the teddy to the chair” or “touch something blue.” On a second set, write ways to move, such as “walk like a robot” or “take tiny steps.” Fold the slips and keep the two decks separate.",
                    "steps":  [
-                                 "Explain the goal: complete a sequence of playful movement missions in order.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "One player draws a goal card and another draws a movement card.",
+                                 "Read them together and combine them into one sentence: “Take the teddy to the chair while walking like a robot.”",
+                                 "Complete the mission together without running, return the cards to their decks and switch roles."
                              ],
-                   "example":  "Pick two cards and join their tasks into one short mission.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Draw the goal “take the teddy to the chair” and the movement “walk like a robot.” Everyone walks like robots while carrying the soft toy to the chair.",
+                   "bonus":  "Add a third twist deck, such as “complete the mission without talking.” Draw one card from each deck and try to meet all three conditions together.",
+                   "safety":  "Clear the route and choose light objects. Walk rather than run; do not climb or jump over furniture. If a task feels awkward, draw another card."
                }
     },
     {
@@ -5221,7 +5242,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Puzi kao kometa",
         "minAge":  3,
         "maxAge":  9,
-        "ageText":  "3–9 godina; starijima dodati pravila ili izazov",
+        "ageText":  "3–9 godina",
         "duration":  15,
         "material":  "none",
         "skills":  [
@@ -5245,28 +5266,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Krećite se nisko i brzo, a zatim završite pozom sjajne zvezde.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Kometa puzi oko planeta. Na „zvezda“ legne na pod i raširi ruke i noge; na „asteroid“ napravi mali skok u mestu, a zatim nastavi da puzi.",
+                   "preparation":  "Oslobodite neklizav prostor i postavite tri mekane igračke ili jastuka kao planete koje kometa obilazi. Dogovorite tri signala: „kometa“ = nastavi da puzi, „zvezda“ = legni na pod i raširi ruke i noge, „asteroid“ = napravi jedan mali skok u mestu.",
                    "steps":  [
-                                 "Objasnite cilj igre: krećite se nisko i brzo, a zatim završite pozom sjajne zvezde.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Jedan igrač je kometa, a drugi Kontrola leta. Kometa odmah počinje da puzi oko planeta i nastavlja da se kreće između poziva.",
+                                 "Na „zvezda“ kometa se pažljivo spusti na leđa i raširi ruke i noge; na „asteroid“ napravi jedan mali skok u mestu.",
+                                 "Na „kometa“ nastavlja da puzi. Kontrola leta smenjuje signale dok kometa obiđe planete, pa zamenite uloge."
                              ],
-                   "example":  "Završite stazu tako što ćete se na podu raširiti u oblik zvezde.",
-                   "bonus":  "Dodajte promenu pravila u sledećem krugu, na primer promenite smer, usporite pokret ili uvedite malu misiju. Odrasli proverava da prostor ostane bezbedan.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Kontrola leta kaže „kometa–asteroid–zvezda“. Mina puzi oko medveda, napravi mali skok u mestu, pa legne na leđa i raširi ruke i noge kao zvezda. Na „kometa“ nastavlja da puzi.",
+                   "bonus":  "Dodajte signale „sunce“ = pljesni dvaput, „mesec“ = čučni i „meteor“ = stani i sklupčaj se. Zovite ih jedan po jedan; za stariju decu postepeno ubrzavajte smenu signala, ali dete uvek završi pokret pre sledećeg poziva.",
+                   "safety":  "Igrajte se samo na čistom, neklizavom podu i ostavite slobodno mesto za ležanje. Skok neka bude nizak i u mestu. Kometa obilazi igračke, ne penje se na njih; dete može da napravi zvezdu sedeći ili da hoda umesto da puzi."
                },
         "en":  {
-                   "description":  "Travel low and fast, then finish with a bright star pose.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "The comet crawls around the planets. On “star,” lie on the floor and spread your arms and legs; on “asteroid,” make one small in-place jump, then keep crawling.",
+                   "preparation":  "Clear a non-slip space and place three soft toys or cushions as planets for the comet to go around. Agree on three signals: “comet” = keep crawling, “star” = lie on the floor and spread your arms and legs, “asteroid” = make one small in-place jump.",
                    "steps":  [
-                                 "Explain the goal: travel low and fast, then finish with a bright star pose.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "One player is the comet and another is Mission Control. The comet starts crawling around the planets and keeps moving between calls.",
+                                 "On “star,” the comet carefully lies on its back and spreads its arms and legs; on “asteroid,” it makes one small in-place jump.",
+                                 "On “comet,” it keeps crawling. Mission Control alternates the calls until the comet has passed all the planets, then switch roles."
                              ],
-                   "example":  "Finish the route by stretching out in a star shape on the floor.",
-                   "bonus":  "Bonus: Change one rule in the next round, such as switching direction, slowing down or adding a small mission. An adult should keep the space safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Mission Control says “comet–asteroid–star.” Mia crawls around the teddy bear, makes one small in-place jump, then lies on her back and spreads her arms and legs like a star. On “comet,” she keeps crawling.",
+                   "bonus":  "Add signals: “sun” = clap twice, “moon” = squat and “meteor” = stop and curl up. Call them one at a time; for older children, gradually speed up the signals, but let the child finish each movement before the next call.",
+                   "safety":  "Play only on a clear, non-slip floor and leave open space for lying down. Keep jumps low and in place. The comet goes around toys, not on them; the child can make a star shape while sitting or walk instead of crawl."
                }
     },
     {
@@ -5355,27 +5376,27 @@ window.GAME_FEEDBACK_DATA = [
                              "Groups \u0026 parties"
                          ],
         "sr":  {
-                   "description":  "Zamislite zajedničko putovanje vozom i naizmenično postavljajte jednostavna pitanja. Svaki odgovor određuje sledeću stanicu, a grupa bira kuda voz ide dalje.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Osmislite zajedničko putovanje vozom: na svakoj stanici odlučite kuda voz ide, ko se ukrcava ili šta se nosi. Svaki odgovor nadovezuje se na prethodni.",
+                   "preparation":  "Nisu potrebni rekviziti. Izaberite početnu stanicu, na primer kuću, park ili školu. Dogovorite tri vrste pitanja: sledeća stanica, novi putnik ili prtljag za put.",
                    "steps":  [
-                                 "Objasnite cilj igre: zamislite zajedničko putovanje vozom i naizmenično postavljajte jednostavna pitanja. Svaki odgovor određuje sledeću stanicu, a grupa bira kuda voz ide dalje.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Prvi putnik pita gde je sledeća stanica, ko se ukrcava ili šta se nosi. Sledeći putnik odgovara.",
+                                 "Odgovor postaje deo putovanja i treba da se poveže s onim što je već pomenuto. Na primer, putnik može da traži stanicu na kojoj će pronaći pomenuti predmet.",
+                                 "Osoba koja je odgovorila postavlja sledeće pitanje. Posle četiri do šest stanica zajedno prepričajte put i odlučite kako se voz vraća na početak. Ako se neko ne seti odgovora, grupa mu može ponuditi dve ideje."
                              ],
-                   "example":  "„Kuda prvo putujemo?” „U zoološki vrt.” „Koju životinju ćemo posetiti?” „Slonove.” Svaki odgovor dodaje novu stanicu putovanju.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
+                   "example":  "Mila pita: „Gde je prva stanica?“ Luka kaže: „U zoološkom vrtu.“ Luka pita Anu: „Ko se ukrcava?“ Ana odgovara: „Žirafa.“ Ana pita Milu: „Šta je žirafi potrebno za put?“ Mila kaže: „Jabuke.“ Sledeća stanica zato postaje voćnjak.",
+                   "bonus":  "Na jednoj stanici kondukter tajno izabere sledeće mesto. Putnici postavljaju pitanja sa odgovorom „da“ ili „ne“ dok ne pogode stanicu. Kada je otkriju, zajedno smisle šta se tamo dogodilo.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Take turns asking simple questions about an imaginary train trip. Each answer chooses the next station, and the group decides where the train goes next.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Invent a train trip together: at each station decide where to go next, who gets on or what to bring. Each answer connects to the one before it.",
+                   "preparation":  "No equipment is needed. Choose a starting station, such as home, a park or school. Agree on three kinds of questions: next stop, new passenger or luggage for the trip.",
                    "steps":  [
-                                 "Explain the goal: take turns asking simple questions about an imaginary train trip. Each answer chooses the next station, and the group decides where the train goes next.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "The first passenger asks where the next stop is, who is getting on or what to bring. The next passenger answers.",
+                                 "The answer becomes part of the trip and should connect to what was already mentioned. For example, a passenger can request a stop where they can find the item just named.",
+                                 "The person who answered asks the next question. After four to six stops, retell the route together and decide how the train returns to the start. If someone gets stuck, the group can offer two ideas."
                              ],
-                   "example":  "“Where should we go first?” “To the zoo.” “Which animal will we visit?” “The elephants.” Each answer adds a stop to the trip.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
+                   "example":  "Mia asks, “Where is the first stop?” Leo says, “The zoo.” Leo asks Ana, “Who gets on?” Ana answers, “A giraffe.” Ana asks Mia, “What does the giraffe need for the trip?” Mia says, “Apples.” So the next stop is an orchard.",
+                   "bonus":  "At one stop, the conductor secretly chooses the next place. Passengers ask yes-or-no questions until they guess the station. Once they reveal it, invent together what happened there.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -5387,7 +5408,7 @@ window.GAME_FEEDBACK_DATA = [
         "maxAge":  12,
         "ageText":  "6–12 godina",
         "duration":  15,
-        "material":  "none",
+        "material":  "household",
         "skills":  [
                        {
                            "sr":  "Kreativnost",
@@ -5407,27 +5428,27 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Izaberite tri mala predmeta i dajte svakom svoj glas.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Tri bezbedna predmeta postaju likovi u jednoj priči. Govorite u prvom licu kao predmet, a ostali pogađaju ko je to i kako se uklapa u priču.",
+                   "preparation":  "Izaberite tri velika, bezbedna predmeta, na primer smotanu čarapu, drvenu kašiku i plastičnu čašu. Sklonite ih od pogleda i zamislite jednostavnu situaciju, na primer putnik je umoran i gladan.",
                    "steps":  [
-                                 "Objasnite cilj igre: izaberite tri mala predmeta i dajte svakom svoj glas.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Jedan igrač tajno izabere predmet i kaže jednu rečenicu govoreći u prvom licu, a da ne izgovori njegovo ime.",
+                                 "Ostali pogađaju predmet. Kada ga otkriju, sledeći igrač uzima novi predmet i dodaje rečenicu koja nastavlja istu priču.",
+                                 "Kada sva tri predmeta progovore, grupa zajedno smisli završetak u kome se pojavljuju sva tri."
                              ],
-                   "example":  "Upotrebite svaki od tri predmeta po jednom, bez izgovaranja njihovih imena.",
-                   "bonus":  "Dodajte obrt: sledeći igrač mora da uvede novi lik, problem ili iznenađenje, a grupa zajedno odlučuje kako će se priča nastaviti.",
+                   "example":  "Čarapa kaže: „Ja grejem putniku stopala.“ Ostali pogađaju čarapu. Kašika nastavlja: „Ja mu mešam toplu supu.“ Čaša dodaje: „Ja mu sipam kakao za put.“ Na kraju grupa kaže kako se putnik najeo, ugrejao i krenuo kući.",
+                   "bonus":  "Za obrt, jedan predmet ima problem: čaša kaže „putnik je žedan, a ja sam prazna“. Igrači neka osmisle kako druga dva predmeta mogu da pomognu, pa završe priču.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Choose three small objects and give each one a voice.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Three safe objects become characters in one story. Speak in the first person as an object while the others guess who you are and how you fit into the story.",
+                   "preparation":  "Choose three large, safe objects, such as a rolled sock, wooden spoon and plastic cup. Keep them out of sight and imagine a simple situation, such as a traveler being tired and hungry.",
                    "steps":  [
-                                 "Explain the goal: choose three small objects and give each one a voice.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "One player secretly chooses an object and says one sentence in the first person without naming it.",
+                                 "The others guess the object. Once it is revealed, the next player takes a new object and adds a sentence that continues the same story.",
+                                 "After all three objects have spoken, invent an ending together that includes all three."
                              ],
-                   "example":  "Use each of the three objects once, without saying their names.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
+                   "example":  "The sock says, “I keep the traveler’s feet warm.” The others guess the sock. The spoon continues, “I stir warm soup for him.” The cup adds, “I pour him cocoa for the road.” The group ends by saying how the traveler eats, warms up and sets off home.",
+                   "bonus":  "For a twist, one object has a problem: the cup says, “The traveler is thirsty, and I’m empty.” Players invent how the other two objects can help, then finish the story.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -5463,27 +5484,27 @@ window.GAME_FEEDBACK_DATA = [
                              "Groups \u0026 parties"
                          ],
         "sr":  {
-                   "description":  "Gradite smešan lanac rima reč po reč.",
+                   "description":  "Gradite lanac rimovanih reči, reč po reč.",
                    "preparation":  "Nije potrebna posebna priprema.",
                    "steps":  [
-                                 "Objasnite cilj igre: gradite smešan lanac rima reč po reč.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Prvi igrač kaže početnu reč, na primer „dan“.",
+                                 "Sledeći igrači redom kažu po jednu novu reč koja se rimuje sa prethodnom: dan–san–plan–stan. Reč se ne ponavlja.",
+                                 "Posle četiri reči izaberite novi završni glas i započnite novu rundu. Ako se neko ne seti reči, grupa može da mu pomogne."
                              ],
-                   "example":  "Zadržite isti završni glas tri kruga, pa izaberite novu rimu.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
+                   "example":  "Mila kaže „dan“, Luka „san“, Ana „plan“, a Vuk „stan“. Zatim izaberu novu rimu: „more“, „gore“.",
+                   "bonus":  "Kad se lanac završi, izaberite dve reči iz njega i sastavite dvostih, na primer: „Mali jež je smislio plan / da sagradi topao stan.“ Sledeći igrač može da doda još jedan stih koji se rimuje sa „stan“.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Build a silly rhyme chain one word at a time.",
+                   "description":  "Build a chain of rhyming words, one word at a time.",
                    "preparation":  "No special preparation needed.",
                    "steps":  [
-                                 "Explain the goal: build a silly rhyme chain one word at a time.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "The first player says a starting word, such as “day.”",
+                                 "Players take turns saying one new word that rhymes with the previous one: day–say–play–stay. Do not repeat a word.",
+                                 "After four words, choose a new ending sound and start another round. If someone gets stuck, the group can help."
                              ],
-                   "example":  "Keep the same ending sound for three turns, then choose a new rhyme.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
+                   "example":  "Mia says “day,” Leo says “say,” Ana says “play,” and Vik says “stay.” Then they choose a new rhyme: “light,” “night.”",
+                   "bonus":  "When the chain ends, choose two of its words and make a couplet, such as: “A little fox set off at night / to follow stars of silver light.” The next player can add another line that rhymes with “light.”",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -5494,7 +5515,7 @@ window.GAME_FEEDBACK_DATA = [
         "minAge":  5,
         "maxAge":  12,
         "ageText":  "5–12 godina (mlađima uz pomoć odraslog)",
-        "duration":  15,
+        "duration":  5,
         "material":  "none",
         "skills":  [
                        {
@@ -5515,28 +5536,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Ispričajte priču koristeći drugi zvuk za svakog lika.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Zajedno pričajte kratku priču: svaki put kada se pomene lik, svi naprave njegov dogovoreni zvuk.",
+                   "preparation":  "Izaberite dva lika i dogovorite zvuk za svakog, na primer mačka = „mijau“, sova = „hu-hu“. Neka jedan igrač bude pripovedač; ostali prave zvuk čim čuju ime lika.",
                    "steps":  [
-                                 "Objasnite cilj igre: ispričajte priču koristeći drugi zvuk za svakog lika.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Pripovedač kaže jednu kratku rečenicu i pomene jedan od dogovorenih likova.",
+                                 "Svi ostali odmah naprave zvuk tog lika. Pripovedač nastavlja sledećom rečenicom, a zatim ulogu preuzima drugi igrač.",
+                                 "Nastavite dok ne stignete do kraja priče; zajedno odlučite kako se završava."
                              ],
-                   "example":  "Izaberite zvuk za jednog junaka i ponovite ga svaki put kada se pojavi.",
-                   "bonus":  "Dodajte obrt: sledeći igrač mora da uvede novi lik, problem ili iznenađenje, a grupa zajedno odlučuje kako će se priča nastaviti.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Pripovedač kaže: „Mačka je krenula kroz šumu.“ Svi kažu „mijau“. Zatim kaže: „Na grani je sedela sova.“ Svi odgovaraju „hu-hu“. Sledeći igrač nastavlja priču.",
+                   "bonus":  "Posle nekoliko rečenica uvedite ježa sa zvukom „šš-šš“. Njegova uloga je vodič, a problem je što mačka ne može da pronađe put kući. Nastavite priču tako što jež daje tragove koji mački pomažu da stigne kući.",
+                   "safety":  "Pravite zvuke tihim ili umerenim glasom; ne vičite jedni drugima u uši. Dete može da pokaže znak umesto da napravi zvuk."
                },
         "en":  {
-                   "description":  "Tell a story using a different sound for every character.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Tell a short story together: whenever a character is mentioned, everyone makes that character’s agreed sound.",
+                   "preparation":  "Choose two characters and agree on a sound for each, such as cat = “meow,” owl = “hoo-hoo.” One player narrates; the others make the sound when they hear the character’s name.",
                    "steps":  [
-                                 "Explain the goal: tell a story using a different sound for every character.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "The narrator says one short sentence and mentions one of the chosen characters.",
+                                 "Everyone else immediately makes that character’s sound. The narrator adds the next sentence, then another player takes over.",
+                                 "Continue until the story reaches an ending; decide together how it finishes."
                              ],
-                   "example":  "Choose a sound for one character and repeat it each time they appear.",
-                   "bonus":  "Add a twist: the next player must introduce a new character, problem or surprise, and the group decides together what happens next.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "The narrator says, “The cat walked into the forest.” Everyone says “meow.” Then: “An owl was sitting on a branch.” Everyone answers “hoo-hoo.” The next player continues the story.",
+                   "bonus":  "After a few sentences, introduce a hedgehog with a “snuffle” sound. Its role is a guide, and the problem is that the cat cannot find its way home. Continue the story with the hedgehog giving clues that help the cat get home.",
+                   "safety":  "Keep sounds quiet or moderate; do not shout near anyone’s ears. A child can use a gesture instead of making a sound."
                }
     },
     {
@@ -5597,7 +5618,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Vesti dobrote",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
+        "ageText":  "4–10 godina",
         "duration":  15,
         "material":  "none",
         "skills":  [
@@ -5619,28 +5640,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Izvestite o lepom postupku kao da je glavna vest.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Pretvorite lep postupak u kratku vest: smislite naslov, recite šta se dogodilo i pitajte pomagača o njegovom postupku.",
+                   "preparation":  "Izaberite jedan mali lep postupak, stvaran ili izmišljen, na primer pomoć u skupljanju olovaka. Dogovorite ko je reporter, ko pomagač i ko je sagovornik. Reporter može da pita: „Šta si primetio?“, „Kako si odlučio da pomogneš?“ i „Kako se druga osoba osećala?“",
                    "steps":  [
-                                 "Objasnite cilj igre: izvestite o lepom postupku kao da je glavna vest.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Reporter smisli kratak naslov i kaže jednu činjenicu o tome ko je kome pomogao i kako.",
+                                 "Zatim postavi pomagaču dva ili tri prijatna pitanja, na primer šta je primetio, kako je pomogao i kako se druga osoba osećala.",
+                                 "Sagovornik odgovori, reporter završi vest jednom rečenicom, pa zamenite uloge."
                              ],
-                   "example":  "Smislite naslov za lep postupak, pa postavite pomagaču jedno prijatno pitanje.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Naslov je „Brza pomoć u učionici“. Reporter kaže: „Luka je pomogao Mili da pokupi olovke.“ Zatim pita: „Šta si primetio?“ Luka odgovara: „Mila ih je ispustila.“ Reporter nastavlja: „Kako si odlučio da pomogneš?“ — „Video sam da joj je teško.“ — „Kako se Mila osećala?“ — „Bilo joj je lakše i zahvalila mi je.“",
+                   "bonus":  "Za stariju decu odglumite kratke vesti uživo: reporter kaže naslov i jednu činjenicu, zatim pita pomagača jedno pitanje. Zamenite uloge i napravite vest o drugom postupku.",
+                   "safety":  "Birajte prijatne, bezazlene postupke. Ako izveštavate o stvarnom događaju, pitajte osobu da li želi da se pominje; u suprotnom izmišljajte imena i situacije."
                },
         "en":  {
-                   "description":  "Report one kind thing someone did as if it were headline news.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Turn a kind act into a short news story: make a headline, say what happened and ask the helper about it.",
+                   "preparation":  "Choose one small kind act, real or fictional, such as helping pick up pencils. Choose who is the reporter, helper and interviewee. The reporter can ask: “What did you notice?”, “How did you decide to help?” and “How did the other person feel?”",
                    "steps":  [
-                                 "Explain the goal: report one kind thing someone did as if it were headline news.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "The reporter makes a short headline and states one fact about who helped whom and how.",
+                                 "Then ask the helper two or three friendly questions, such as what they noticed, how they helped and how the other person felt.",
+                                 "The interviewee answers, the reporter ends with one sentence, then switch roles."
                              ],
-                   "example":  "Give the kind act a headline, then ask the helper one friendly interview question.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "The headline is “Quick Help in Class.” The reporter says, “Leo helped Mia pick up her pencils.” Then asks, “What did you notice?” Leo says, “She dropped them.” “How did you decide to help?” “I saw she needed help.” “How did Mia feel?” “She felt better and thanked me.”",
+                   "bonus":  "For older children, act out a short live report: the reporter gives a headline and one fact, then asks the helper one question. Switch roles and make a report about a different kind act.",
+                   "safety":  "Choose kind, harmless acts. If reporting a real event, ask the person whether they want to be named; otherwise, invent names and situations."
                }
     },
     {
@@ -5669,27 +5690,27 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Napravite priču u kojoj se sve dešava suprotno.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Gradite zajedničku priču tako što svaki igrač u svojoj rečenici preokrene jedan detalj iz prethodne, ali nastavi istu priču.",
+                   "preparation":  "Nisu potrebni rekviziti. Dogovorite ko počinje i izaberite lik, na primer medveda koji ide kroz šumu. Pripremite suprotne parove: napred–nazad, veliko–malo, toplo–hladno.",
                    "steps":  [
-                                 "Objasnite cilj igre: napravite priču u kojoj se sve dešava suprotno.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Prvi igrač kaže početnu rečenicu o izabranom liku.",
+                                 "Sledeći igrač nastavlja priču, ali preokrene samo jedan detalj iz prethodne rečenice.",
+                                 "Nastavite redom tako da se svi detalji i dalje uklapaju u istu priču. Posle šest rečenica zajedno smislite završetak."
                              ],
-                   "example":  "Neka sledeća rečenica preokrene jedan detalj iz prethodne.",
-                   "bonus":  "Dodajte obrt: sledeći igrač mora da uvede novi lik, problem ili iznenađenje, a grupa zajedno odlučuje kako će se priča nastaviti.",
+                   "example":  "Mila kaže: „Medved je krenuo napred kroz šumu.“ Luka nastavlja: „Medved se okrenuo i krenuo nazad ka kući.“ Ana dodaje: „Kod kuće je pronašao hladan sladoled umesto tople supe.“",
+                   "bonus":  "Za teži izazov, svaki sledeći igrač preokrene dva detalja iz prethodne rečenice, na primer veličinu i smer: „Veliki medved je krenuo napred kroz šumu“ postaje „Mali medved je pošao unazad ka kući“. Na kraju zajedno smislite povezan završetak priče.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Create a story where everything happens in an opposite way.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Build a story together: each player reverses one detail from the previous sentence while continuing the same story.",
+                   "preparation":  "No equipment is needed. Choose who starts and pick a character, such as a bear walking through a forest. Think of opposite pairs: forward–backward, big–small, hot–cold.",
                    "steps":  [
-                                 "Explain the goal: create a story where everything happens in an opposite way.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "The first player says an opening sentence about the chosen character.",
+                                 "The next player continues the story but reverses only one detail from the previous sentence.",
+                                 "Take turns so all details still fit the same story. After six sentences, invent an ending together."
                              ],
-                   "example":  "Let the next sentence reverse one detail from the previous one.",
-                   "bonus":  "Add a twist: the next player must introduce a new character, problem or surprise, and the group decides together what happens next.",
+                   "example":  "Mia says, “The bear walked forward through the forest.” Leo continues, “The bear turned around and walked backward home.” Ana adds, “At home it found cold ice cream instead of hot soup.”",
+                   "bonus":  "For a harder challenge, each player reverses two details from the previous sentence, such as size and direction: “The big bear walked forward into the forest” becomes “The small bear walked backward home.” Invent a connected ending together.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -5823,27 +5844,27 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Sakrijte oblik u crtežu i pustite druge da ga pronađu.",
-                   "preparation":  "Pripremite papir i bezbedne olovke, bojice ili drugi pribor za crtanje potreban za ovu igru.",
+                   "description":  "Jedan igrač tankom linijom nacrta jednostavan oblik, pa ga pretvori u deo slike dodavanjem detalja. Drugi pokušava da ga otkrije postavljajući do tri pitanja, pa zamene uloge.",
+                   "preparation":  "Pripremite papir i olovke ili bojice. Izaberite jednostavan oblik, poput kruga, trougla ili zvezde.",
                    "steps":  [
-                                 "Objasnite cilj igre: sakrijte oblik u crtežu i pustite druge da ga pronađu.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Crtač tankom linijom nacrta izabrani oblik na papiru.",
+                                 "Pretvorite oblik u deo slike dodavanjem detalja, ali ga nemojte sasvim prekriti.",
+                                 "Drugi igrač pogađa skriveni oblik i može postaviti do tri pitanja. Zatim zamenite uloge."
                              ],
-                   "example":  "Sakrijte još jedan mali oblik u crtežu da ga neko drugi pronađe.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
+                   "example":  "Sakrijte trougao u krovu kućice ili jedru broda. Može li ga partner pronaći bez pomoći?",
+                   "bonus":  "Detektivski izazov: sakrijte dva različita oblika u istoj slici i dajte po jedan trag za svaki.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Hide a shape inside a picture and let others find it.",
-                   "preparation":  "Prepare paper and child-safe pencils, crayons or other drawing supplies needed for the activity.",
+                   "description":  "One player lightly draws a simple shape, then turns it into part of a picture by adding details. The other tries to uncover it with up to three questions, then they switch roles.",
+                   "preparation":  "Prepare paper and pencils or crayons. Choose a simple shape such as a circle, triangle or star.",
                    "steps":  [
-                                 "Explain the goal: hide a shape inside a picture and let others find it.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "The artist lightly draws the chosen shape on the paper.",
+                                 "Turn the shape into part of a picture by adding details, but do not cover it completely.",
+                                 "The other player guesses the hidden shape and may ask up to three questions. Then switch roles."
                              ],
-                   "example":  "Hide a second small shape in the picture for someone else to spot.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
+                   "example":  "Hide a triangle in a house roof or a ship's sail. Can your partner find it without help?",
+                   "bonus":  "Detective challenge: hide two different shapes in one picture and give one clue for each.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -6073,27 +6094,27 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Presavijte papir, nacrtajte detalj, otvorite ga i dovršite lice.",
-                   "preparation":  "Pripremite papir i bezbedne olovke, bojice ili drugi pribor za crtanje potreban za ovu igru.",
+                   "description":  "Presavijte papir na tri polja. Igrači redom crtaju kosu i oči, nos, pa usta i bradu; svako ostavlja spojne crte na pregibu i sakriva svoj deo. Otvorite papir, dajte licu ime i zamenite uloge.",
+                   "preparation":  "Presavijte papir na tri jednaka vodoravna polja kao harmoniku. Pripremite olovke ili bojice.",
                    "steps":  [
-                                 "Objasnite cilj igre: presavijte papir, nacrtajte detalj, otvorite ga i dovršite lice.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Prvi igrač u gornjem polju crta kosu i oči, ostavi dve kratke spojne crte na pregibu, pa sakrije svoj deo presavijanjem papira.",
+                                 "Sledeći igrač koristi samo vidljive spojne crte kao orijentir, crta nos u srednjem polju i ostavlja nove spojne crte pre nego što sakrije svoj deo.",
+                                 "Treći igrač crta usta i bradu u donjem polju. Otvorite papir, dajte licu ime i pozdrav, pa zamenite uloge."
                              ],
-                   "example":  "Dajte gotovom licu ime i smislite njegov pozdrav.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
+                   "example":  "Neko sakrije kosu i oči, sledeći doda nos, a poslednji nacrta usta i bradu. Otvorite papir: da li je nastalo lice čoveka, životinje ili vanzemaljca?",
+                   "bonus":  "U sledećem krugu izaberite raspoloženje ili lik, na primer iznenađenog astronauta, pa pokušajte da ga dočarate skrivenim delovima lica.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Fold paper, draw one feature, unfold and complete the funny face.",
-                   "preparation":  "Prepare paper and child-safe pencils, crayons or other drawing supplies needed for the activity.",
+                   "description":  "Fold the paper into three panels. Players take turns drawing the hair and eyes, nose, then mouth and chin; each leaves connector marks at the fold and hides their part. Unfold the paper, name the face and switch roles.",
+                   "preparation":  "Accordion-fold the paper into three equal horizontal panels. Prepare pencils or crayons.",
                    "steps":  [
-                                 "Explain the goal: fold paper, draw one feature, unfold and complete the funny face.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "The first player draws hair and eyes in the top panel, leaves two short connector marks at the fold, then folds the panel over to hide the drawing.",
+                                 "Using only the visible connector marks as a guide, the next player draws a nose in the middle panel and leaves new connector marks before folding it over.",
+                                 "The third player draws the mouth and chin in the bottom panel. Unfold the paper, name the face and give it a greeting, then switch roles."
                              ],
-                   "example":  "Name the finished face and give it a greeting to say.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
+                   "example":  "One player hides the hair and eyes, the next adds a nose, and the last draws the mouth and chin. Unfold it: is the face a person, animal or alien?",
+                   "bonus":  "For the next round, choose a mood or character, such as a surprised astronaut, and try to show it through the hidden face parts.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -6125,27 +6146,27 @@ window.GAME_FEEDBACK_DATA = [
                              "Groups \u0026 parties"
                          ],
         "sr":  {
-                   "description":  "Nacrtajte jednostavan prizor na papiru. Odrasla osoba ga iseče na četiri velika dela; pomešajte ih i neka partner ponovo sastavi sliku.",
-                   "preparation":  "Pripremite papir i bezbedne olovke, bojice ili drugi pribor za crtanje potreban za ovu igru.",
+                   "description":  "Nacrtajte razglednicu sa jasnim detaljima i kratkim pozdravom na prednjoj strani. Odrasli je iseče u slagalicu, a partner je sastavlja da ponovo otkrije celu sliku i pozdrav.",
+                   "preparation":  "Pripremite papir i bojice. Makaze koristi samo odrasla osoba.",
                    "steps":  [
-                                 "Objasnite cilj igre: nacrtajte jednostavan prizor na papiru. Odrasla osoba ga iseče na četiri velika dela; pomešajte ih i neka partner ponovo sastavi sliku.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Nacrtajte prizor sa tri jasna detalja, na primer sunce, kuću i drvo. Na prednjoj strani dodajte kratak pozdrav.",
+                                 "Odrasli iseče crtež na najmanje šest velikih delova, pomeša ih i poređa licem nagore.",
+                                 "Partner sastavlja sliku tražeći linije i boje koje se nastavljaju. Kada je složi, pročita pozdrav sa prednje strane; zatim zamenite uloge."
                              ],
-                   "example":  "Nacrtajte plažu sa suncem, suncobranom i kantom. Odrasla osoba iseče sliku na četiri velika dela; pomešajte ih i naizmenično je sastavljajte.",
-                   "bonus":  "Dodajte obrt: sledeći igrač mora da uvede novi lik, problem ili iznenađenje, a grupa zajedno odlučuje kako će se priča nastaviti.",
+                   "example":  "Nacrtajte plažu sa suncem, čamcem i kantom, pa na prednjoj strani dodajte „Pozdrav sa mora!“ Odrasli iseče sliku, a partner je sastavi i pročita pozdrav.",
+                   "bonus":  "Sakrijte malu nacrtanu školjku u jednom delu slike. Kada sastavi razglednicu, partner treba da pokaže gde se školjka nalazi u prizoru.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Draw a simple postcard scene on paper. An adult cuts it into four large pieces; mix them up and let a partner put the picture back together.",
-                   "preparation":  "Prepare paper and child-safe pencils, crayons or other drawing supplies needed for the activity.",
+                   "description":  "Draw a postcard with clear details and a short greeting on the front. An adult turns it into a puzzle for a partner to rebuild and reveal the complete picture and greeting.",
+                   "preparation":  "Prepare paper and crayons. Only an adult should use the scissors.",
                    "steps":  [
-                                 "Explain the goal: draw a simple postcard scene on paper. An adult cuts it into four large pieces; mix them up and let a partner put the picture back together.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Draw a scene with three clear details, such as a sun, a house and a tree. Add a short greeting on the front.",
+                                 "An adult cuts the picture into at least six large pieces, mixes them and lays them face up.",
+                                 "The partner rebuilds the scene by matching lines and colors. Once it is complete, read the greeting on the front and switch roles."
                              ],
-                   "example":  "Draw a beach with a sun, umbrella and bucket. An adult cuts the picture into four large pieces; mix them and take turns putting it back together.",
-                   "bonus":  "Add a twist: the next player must introduce a new character, problem or surprise, and the group decides together what happens next.",
+                   "example":  "Draw a beach with a sun, boat and bucket, then add “Greetings from the sea!” on the front. An adult cuts the picture; a partner rebuilds it and reads the greeting.",
+                   "bonus":  "Hide a small drawn shell in one piece of the picture. Once the partner rebuilds the postcard, ask them to point out where the shell is in the scene.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -6256,7 +6277,7 @@ window.GAME_FEEDBACK_DATA = [
         "minAge":  4,
         "maxAge":  10,
         "ageText":  "4–10 godina; mlađima ponuditi izbor, starijima dodatni izazov",
-        "duration":  30,
+        "duration":  15,
         "material":  "paper",
         "skills":  [
                        {
@@ -6275,27 +6296,27 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Prikažite osećanje linijama i bojama bez crtanja lica.",
-                   "preparation":  "Pripremite papir i bezbedne olovke, bojice ili drugi pribor za crtanje potreban za ovu igru.",
+                   "description":  "Izaberite osećanje, poput radosti, tuge ili mira, pa ga prikažite bojama i linijama bez crtanja lica. Partner može da pogodi ili sasluša objašnjenje; nema pogrešnog crteža.",
+                   "preparation":  "Pripremite papir i bojice ili olovke u nekoliko boja.",
                    "steps":  [
-                                 "Objasnite cilj igre: prikažite osećanje linijama i bojama bez crtanja lica.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Izaberite osećanje: radost, tugu ili mir. Mlađem detetu ponudite izbor između dva.",
+                                 "Odaberite dve ili tri boje i prikažite osećanje linijama i oblicima; lice nije potrebno.",
+                                 "Partner može da pogodi osećanje ili sasluša objašnjenje crtača. Zamenite uloge; nema jednog tačnog odgovora."
                              ],
-                   "example":  "Isto osećanje prikažite glatkim, pa izlomljenim linijama.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
+                   "example":  "Mir možete prikazati dugim talasastim linijama, a radost kratkim zakrivljenim potezima. To su samo predlozi; izaberite ono što vama odgovara.",
+                   "bonus":  "Nacrtajte isto osećanje na dva načina. Uporedite kako izbor boja i linija menja utisak, bez ocenjivanja crteža.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Use lines and colors to show a feeling without drawing a face.",
-                   "preparation":  "Prepare paper and child-safe pencils, crayons or other drawing supplies needed for the activity.",
+                   "description":  "Choose a feeling such as joy, sadness or calm and show it with colors and lines, without drawing a face. A partner may guess or listen to the artist's explanation; there is no wrong drawing.",
+                   "preparation":  "Prepare paper and colored pencils or crayons.",
                    "steps":  [
-                                 "Explain the goal: use lines and colors to show a feeling without drawing a face.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Choose a feeling: joy, sadness or calm. Offer younger children a choice between two.",
+                                 "Pick two or three colors and show the feeling with lines and shapes; no face is needed.",
+                                 "A partner may guess the feeling or listen to the artist's explanation. Switch roles; there is no single right answer."
                              ],
-                   "example":  "Show the same feeling once with smooth lines and once with jagged lines.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
+                   "example":  "You might show calm with long, wavy lines and joy with short, curved marks. These are only ideas; choose what feels right to you.",
+                   "bonus":  "Draw the same feeling in two different ways. Compare how the colors and lines change the impression, without judging either drawing.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -6377,27 +6398,27 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Pogledajte grupu predmeta, sakrijte jedan i pronađite šta nedostaje.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Stavite tri do pet poznatih predmeta na sto. Posmatrajte ih, prekrijte rukom, pa jedan sklonite. Otkrijte predmete i pogodite koji nedostaje; zatim zamenite uloge.",
+                   "preparation":  "Izaberite tri do pet poznatih i bezbednih predmeta dovoljno velikih za dete. Nije potrebna druga oprema.",
                    "steps":  [
                                  "Objasnite cilj igre: pogledajte grupu predmeta, sakrijte jedan i pronađite šta nedostaje.",
                                  "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
-                   "example":  "Sakrijte dva poznata predmeta i proverite može li grupa da pogodi oba.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
+                   "example":  "Stavite kašiku, čarapu i omiljenu igračku na sto. Neka dete pogleda, pokrijte predmete rukom, sklonite igračku pa pitajte šta nedostaje.",
+                   "bonus":  "Zamenite uloge: dete skloni predmet, a odrasli pogađa. Ako dete želi teži krug, sklonite dva predmeta ili zamenite mesta dvama predmetima.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Look at a group of objects, hide one and identify the missing item.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Place three to five familiar objects on a table. Look at them, cover them with a hand, then remove one. Uncover the objects and guess what is missing; then switch roles.",
+                   "preparation":  "Choose three to five familiar, child-safe objects large enough for the child. No other equipment is needed.",
                    "steps":  [
                                  "Explain the goal: look at a group of objects, hide one and identify the missing item.",
                                  "Agree on who starts and demonstrate one example before the child tries.",
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
-                   "example":  "Hide two familiar objects and see if the group can name both.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
+                   "example":  "Place a spoon, a sock and a favorite toy on the table. Let the child look, cover the objects with your hand, remove the toy and ask what is missing.",
+                   "bonus":  "Switch roles: the child removes an object and the adult guesses. If the child wants a harder round, remove two objects or swap the positions of two objects.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -6565,7 +6586,7 @@ window.GAME_FEEDBACK_DATA = [
         "maxAge":  10,
         "ageText":  "4–10 godina; mlađima ponuditi izbor, starijima dodatni izazov",
         "duration":  15,
-        "material":  "none",
+        "material":  "household",
         "skills":  [
                        {
                            "sr":  "Opažanje i pažnja",
@@ -6585,28 +6606,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Dodirnite bezbedan predmet u torbi i opišite ga pre gledanja.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Stavite poznat, bezbedan predmet u neprozirnu torbu. Jedan igrač ga opipava i opisuje bez imenovanja, a ostali pogađaju šta je.",
+                   "preparation":  "Pripremite neprozirnu torbu i četiri do šest čistih, poznatih, krupnih predmeta različitih oblika i tekstura.",
                    "steps":  [
-                                 "Objasnite cilj igre: dodirnite bezbedan predmet u torbi i opišite ga pre gledanja.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Odrasli bira bezbedne predmete i stavlja jedan u neprozirnu torbu, a da ga opipavač ne vidi.",
+                                 "Opipavač opisuje oblik i teksturu bez izgovaranja imena predmeta; ostali pogađaju šta je.",
+                                 "Izvadite predmet da proverite odgovor, pa zamenite uloge i izaberite novi predmet."
                              ],
-                   "example":  "Opišite oblik i teksturu predmeta dok ga partner crta ne gledajući ga.",
-                   "bonus":  "Bonus: Napravite niz od tri zvuka/osećaja i zamolite drugog igrača da ga prepozna ili ponovi istim redosledom.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Igrač opipa mekanu lopticu u torbi i kaže: „Okrugla je, glatka i može da odskoči.“ Ostali pogađaju pre nego što se loptica pokaže.",
+                   "bonus":  "Neka oni koji pogađaju postave do tri pitanja sa odgovorom „da“ ili „ne“ pre otkrivanja predmeta, pa zamenite uloge.",
+                   "safety":  "Odrasli bira i proverava krupne, čiste i neoštećene predmete. Izbegavajte oštre ivice, sitne delove i lomljive predmete; predmet se ne stavlja u usta, a dete može da preskoči dodir ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Feel a safe object in a bag and describe it before looking.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Place a familiar, safe object in an opaque bag. One player feels and describes it without naming it while the others guess what it is.",
+                   "preparation":  "Prepare an opaque bag and four to six clean, familiar, large objects with different shapes and textures.",
                    "steps":  [
-                                 "Explain the goal: feel a safe object in a bag and describe it before looking.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "An adult chooses safe objects and places one in the opaque bag without showing it to the player who will feel it.",
+                                 "The player describes its shape and texture without naming it; the others guess what it is.",
+                                 "Reveal the object to check the answer, then switch roles and choose another object."
                              ],
-                   "example":  "Describe the object\u0027s shape and texture while a partner sketches it without seeing it.",
-                   "bonus":  "Bonus: Make a sequence of three sounds or sensations and ask another player to identify or repeat them in order.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "A player feels a soft ball in the bag and says, ‘It is round, smooth and can bounce.’ The others guess before the ball is revealed.",
+                   "bonus":  "Let the guessers ask up to three yes-or-no questions before the object is revealed, then switch roles.",
+                   "safety":  "An adult chooses and checks large, clean, intact objects. Avoid sharp edges, small parts and breakable items; never put objects in mouths, and let a child skip touching an item or ask for help."
                }
     },
     {
@@ -6617,7 +6638,7 @@ window.GAME_FEEDBACK_DATA = [
         "maxAge":  12,
         "ageText":  "6–12 godina",
         "duration":  15,
-        "material":  "none",
+        "material":  "household",
         "skills":  [
                        {
                            "sr":  "Opažanje i pažnja",
@@ -6637,28 +6658,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Pogledajte niz koji se ponavlja i recite šta sledi.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Poređajte bezbedne predmete po obrascu koji se ponavlja. Igrač predviđa šta sledi i objašnjava pravilo.",
+                   "preparation":  "Pripremite četiri do šest krupnih, bezbednih predmeta u dve boje ili oblika, na primer kocke.",
                    "steps":  [
-                                 "Objasnite cilj igre: pogledajte niz koji se ponavlja i recite šta sledi.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Poređajte četiri predmeta po jednostavnom obrascu koji se ponavlja, na primer crvena kocka, plava kocka, crvena, plava.",
+                                 "Pitajte šta dolazi sledeće i zbog čega; neka igrač doda predmet koji nastavlja obrazac.",
+                                 "Zamenite uloge tako da dete smisli svoj obrazac, a ostali ga nastave."
                              ],
-                   "example":  "Produžite niz za jedan predmet, pa neka partner kaže šta sledi.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Poređajte crvene i plave kocke: crvena, plava, crvena, plava. Pitajte šta sledi i zašto, pa neka igrač doda sledeću kocku.",
+                   "bonus":  "Za teži krug koristite obrazac od tri dela, poput crveno-crveno-plavo. Neka igrač objasni pravilo pre nego što nastavi niz.",
+                   "safety":  "Koristite samo krupne, neoštećene predmete bez oštrih ivica i sitnih delova; odrasli proverava materijale i nadgleda igru."
                },
         "en":  {
-                   "description":  "Study a repeating arrangement and say what should come next.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Arrange safe objects in a repeating pattern. The player predicts what comes next and explains the rule.",
+                   "preparation":  "Prepare four to six large, safe objects in two colors or shapes, such as blocks.",
                    "steps":  [
-                                 "Explain the goal: study a repeating arrangement and say what should come next.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Arrange four objects in a simple repeating pattern, such as red block, blue block, red, blue.",
+                                 "Ask what comes next and why; let the player add an object to continue the pattern.",
+                                 "Switch roles so the child creates a pattern for the others to continue."
                              ],
-                   "example":  "Extend the pattern by one item, then let a partner say what comes next.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Arrange red and blue blocks in a row: red, blue, red, blue. Ask what comes next and why, then let the player add the next block.",
+                   "bonus":  "For a harder round, use a three-part pattern such as red-red-blue. Ask the player to explain the rule before extending it.",
+                   "safety":  "Use only large, intact objects without sharp edges or small parts; an adult checks the materials and supervises play."
                }
     },
     {
@@ -7043,28 +7064,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Ukrasite kartonsku cev i izmislite šta ona otkriva.",
-                   "preparation":  "Pripremite čiste kartonske kutije bez spajalica, lepljive trake i oštrih ivica.",
+                   "description":  "Kroz kartonsku cev posmatrajte bezbedan predmet, uočite tri detalja i pustite partnera da pogodi na osnovu tragova.",
+                   "preparation":  "Pripremite čistu kartonsku cev sa glatkim ivicama i nekoliko bezbednih predmeta za posmatranje.",
                    "steps":  [
-                                 "Objasnite cilj igre: ukrasite kartonsku cev i izmislite šta ona otkriva.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Odrasli proverava da je kartonska cev čista i da su joj ivice glatke, pa bira bezbedan predmet.",
+                                 "Igrač posmatra predmet kroz cev, uočava tri detalja i daje ih kao tragove bez imenovanja predmeta.",
+                                 "Partner pogađa predmet, a zatim zamenite uloge i izaberite novi."
                              ],
-                   "example":  "Izaberite predmet viđen kroz cev i opišite ga bez imenovanja.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Kroz cev posmatrajte autić i opišite tri detalja, poput boje, točkova i prozora. Neka partner pogodi predmet.",
+                   "bonus":  "Izaberite dva predmeta i kroz zamišljeni teleskop pronađite jednu zajedničku i jednu različitu osobinu.",
+                   "safety":  "Koristite samo čistu kartonsku cev sa glatkim ivicama. Ne gledajte kroz nju u sunce ili jaku svetlost i ne usmeravajte je ka nečijim očima; odrasli nadgleda igru."
                },
         "en":  {
-                   "description":  "Decorate a cardboard tube and invent what it can discover.",
-                   "preparation":  "Prepare clean cardboard boxes with staples, tape and sharp edges removed.",
+                   "description":  "Look at a safe object through a cardboard tube, notice three details and let a partner guess from your clues.",
+                   "preparation":  "Prepare a clean cardboard tube with smooth edges and a few safe objects to observe.",
                    "steps":  [
-                                 "Explain the goal: decorate a cardboard tube and invent what it can discover.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "An adult checks that the cardboard tube is clean and has smooth edges, then chooses a safe object.",
+                                 "The player looks at the object through the tube, notices three details and gives them as clues without naming it.",
+                                 "The partner guesses the object, then switch roles and choose another."
                              ],
-                   "example":  "Choose one object seen through the tube and describe it without naming it.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Look at a toy car through the tube and describe three details, such as its color, wheels and windows. Let a partner guess the object.",
+                   "bonus":  "Choose two objects and find one detail they share and one detail that differs through the pretend telescope.",
+                   "safety":  "Use only a clean cardboard tube with smooth edges. Do not look through it at the sun or bright lights, and never point it at anyone’s eyes; an adult supervises play."
                }
     },
     {
@@ -7143,28 +7164,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Složite bezbedne predmete u skulpturu koja se naginje ali ne pada.",
-                   "preparation":  "Pripremite samo bezbedne i čiste kućne predmete koji se pominju u igri.",
+                   "description":  "Na podu napravite nisku, stabilnu skulpturu od krupnih, laganih predmeta. Dodajte po jedan i pogledajte kako širina osnove utiče na ravnotežu.",
+                   "preparation":  "Pripremite tri do pet velikih, laganih i nelomljivih predmeta, poput penastih kocki, plastičnih čaša ili praznih kutija; gradite na podu.",
                    "steps":  [
-                                 "Objasnite cilj igre: složite bezbedne predmete u skulpturu koja se naginje ali ne pada.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Odrasli proverava da su predmeti lagani i bezbedni; dogovorite se da skulptura ostane niska i na podu.",
+                                 "Počnite širokom osnovom i dodajte po jedan predmet, pa posle svakog pogledajte da li konstrukcija ostaje stabilna.",
+                                 "Ako se klima, raširite osnovu ili uklonite gornji predmet; zatim zamenite uloge."
                              ],
-                   "example":  "Malo pomerite donji deo i pogodite da li će skulptura ostati uspravna.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Stavite dve velike penaste kocke jednu do druge, pa preko njih položite treću laganu kocku. Ako se klima, raširite osnovu.",
+                   "bonus":  "Uporedite dve niske osnove različite širine i pogodite koja će stabilnije držati još jednu laganu kocku.",
+                   "safety":  "Gradite na podu i držite skulpturu ispod visine kolena. Koristite samo velike, lagane i nelomljive predmete; bez stakla, oštrih ivica, sitnih delova ili penjanja."
                },
         "en":  {
-                   "description":  "Stack safe objects into a sculpture that leans but does not fall.",
-                   "preparation":  "Prepare only the safe, clean household items named in the game.",
+                   "description":  "Build a low, stable sculpture on the floor using large, lightweight objects. Add one piece at a time and see how the base affects balance.",
+                   "preparation":  "Prepare three to five large, lightweight, unbreakable objects, such as foam blocks, plastic cups or empty boxes; build on the floor.",
                    "steps":  [
-                                 "Explain the goal: stack safe objects into a sculpture that leans but does not fall.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "An adult checks that the objects are light and safe; agree to keep the sculpture low and on the floor.",
+                                 "Start with a wide base and add one object at a time, checking that the structure stays stable after each turn.",
+                                 "If it wobbles, widen the base or remove the top object, then switch roles."
                              ],
-                   "example":  "Move one bottom piece slightly and predict whether the sculpture will stay standing.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Place two large foam blocks side by side, then set a third lightweight block across them. If it wobbles, widen the base.",
+                   "bonus":  "Compare two low bases of different widths and predict which will hold one extra lightweight block more steadily.",
+                   "safety":  "Build on the floor and keep the sculpture below knee height. Use only large, lightweight, unbreakable objects; no glass, sharp edges, small parts or climbing."
                }
     },
     {
@@ -7607,28 +7628,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Groups \u0026 parties"
                          ],
         "sr":  {
-                   "description":  "Napravite šablon dodavanja i proverite da li ga grupa pamti.",
-                   "preparation":  "Koristite mekanu loptu primerenu uzrastu i sklonite lomljive predmete.",
+                   "description":  "Stanite u krug i napravite redosled blagih dodavanja. Ponovite isti redosled, pa dodajte jedno dodavanje i proverite da li grupa pamti ceo niz.",
+                   "preparation":  "Koristite mekanu loptu primerenu uzrastu i oslobodite prostor oko kruga.",
                    "steps":  [
-                                 "Objasnite cilj igre: napravite šablon dodavanja i proverite da li ga grupa pamti.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Stanite u krug. Prvi igrač nežno dodaje loptu nekome i izgovara njegovo ime.",
+                                 "Svaki primalac dodaje loptu sledećem igraču; zapamtite ceo redosled dodavanja.",
+                                 "Ponovite isti niz, pa dodajte još jedno dodavanje na kraj. Ako se neko zbuni, usporite i krenite ponovo bez ispadanja."
                              ],
-                   "example":  "Kada zapamtite niz, pokušajte da dodajete loptu bez govora.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Mila dodaje Luki, Luka Ani, a Ana Sari. Ponovite taj redosled, pa dodajte da Sara vrati loptu Mili.",
+                   "bonus":  "Kada grupa zapamti niz, pokušajte da ga ponovite bez izgovaranja imena, uz nežne dodavanja ispod visine ramena.",
+                   "safety":  "Koristite mekanu loptu, dodajte je nežno ispod visine ramena i ostavite dovoljno prostora između igrača. Ne ciljajte lice; odrasli prilagođava udaljenost i pomaže mlađima."
                },
         "en":  {
-                   "description":  "Create a repeating pass pattern and see if the group remembers it.",
-                   "preparation":  "Use a soft, age-appropriate ball and clear fragile objects away.",
+                   "description":  "Stand in a circle and create a route of gentle passes. Repeat the same order, then add one pass and see if everyone remembers the growing pattern.",
+                   "preparation":  "Use a soft, age-appropriate ball and clear the space around the circle.",
                    "steps":  [
-                                 "Explain the goal: create a repeating pass pattern and see if the group remembers it.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Stand in a circle. The first player gently passes the ball to someone and says their name.",
+                                 "Each receiver passes to the next player; remember the full route of passes.",
+                                 "Repeat the same sequence, then add one more pass at the end. If anyone gets mixed up, slow down and restart without eliminating anyone."
                              ],
-                   "example":  "Once the pattern is remembered, try passing the ball without speaking.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Mila passes to Luka, Luka to Ana, and Ana to Sara. Repeat that route, then add Sara passing back to Mila.",
+                   "bonus":  "Once the group remembers the route, try repeating it without saying names, using gentle passes below shoulder height.",
+                   "safety":  "Use a soft ball, pass gently below shoulder height and leave enough space between players. Do not aim at faces; an adult adjusts the distance and helps younger children."
                }
     },
     {
@@ -7811,28 +7832,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Summer play"
                          ],
         "sr":  {
-                   "description":  "Poređajte opalo lišće od najmanjeg do najvećeg ili svetlog do tamnog.",
-                   "preparation":  "Izaberite bezbedan prostor napolju i koristite samo čisto opalo lišće, grančice ili kamenčiće potrebne za igru.",
+                   "description":  "Sakupite četiri do šest čistih, opalih listova različitih veličina. Poređajte ih od najmanjeg do najvećeg, objasnite redosled i zatim pokušajte s novim kriterijumom.",
+                   "preparation":  "Izaberite ravan, bezbedan prostor i četiri do šest čistih listova koji su već opali; ne berite lišće sa biljaka.",
                    "steps":  [
-                                 "Objasnite cilj igre: poređajte opalo lišće od najmanjeg do najvećeg ili svetlog do tamnog.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Složite četiri do šest čistih, opalih listova na ravnu površinu.",
+                                 "Poređajte ih od najmanjeg do najvećeg i objasnite po čemu ste odredili redosled.",
+                                 "Promešajte listove i poređajte ih ponovo po drugom kriterijumu, kao što su nijansa ili oblik."
                              ],
-                   "example":  "Poređajte isto lišće po dužini drške umesto po ukupnoj veličini.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Poređajte četiri opala lista od najmanjeg do najvećeg. Objasnite redosled, pa ih zatim poređajte od najsvetlijeg do najtamnijeg.",
+                   "bonus":  "Posle slaganja po veličini promešajte listove i zamolite partnera da ih ponovo poređa po nijansi ili obliku.",
+                   "safety":  "Koristite samo suvo, čisto i opalo lišće. Ne dodirujte nepoznate biljke ili buđave listove, ne stavljajte materijale u usta i operite ruke posle igre."
                },
         "en":  {
-                   "description":  "Arrange fallen leaves from smallest to largest or lightest to darkest.",
-                   "preparation":  "Choose a safe outdoor area and use only clean, fallen leaves, twigs or stones needed for the game.",
+                   "description":  "Gather four to six clean, fallen leaves of different sizes. Arrange them from smallest to largest, explain the order, then try a new sorting clue.",
+                   "preparation":  "Choose a safe, level spot and four to six clean leaves that have already fallen; do not pick leaves from plants.",
                    "steps":  [
-                                 "Explain the goal: arrange fallen leaves from smallest to largest or lightest to darkest.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Place four to six clean, fallen leaves on a level surface.",
+                                 "Arrange them from smallest to largest and explain how you chose the order.",
+                                 "Mix the leaves and arrange them again using a different clue, such as shade or shape."
                              ],
-                   "example":  "Sort the same leaves by stem length instead of overall size.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Arrange four fallen leaves from smallest to largest. Explain your order, then rearrange them from lightest to darkest.",
+                   "bonus":  "After sorting by size, mix the leaves and ask a partner to rebuild the order using shade or shape.",
+                   "safety":  "Use only dry, clean, fallen leaves. Avoid unknown plants and moldy leaves, keep materials out of mouths and wash hands after play."
                }
     },
     {
@@ -7963,28 +7984,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Summer play"
                          ],
         "sr":  {
-                   "description":  "Slušajte tiho, pa oponašajte jedan zvuk koji ste čuli.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Zastanite i slušajte 20 sekundi. Izaberite jedan zvuk ptice koji ste čuli, tiho ga oponašajte, pa neka drugi opišu da li je bio kratak, dug, visok ili nizak. Ako nema cvrkuta, izaberite drugi miran zvuk iz okoline.",
+                   "preparation":  "Izaberite mirno, bezbedno mesto napolju; pticama ne prilazite.",
                    "steps":  [
-                                 "Objasnite cilj igre: slušajte tiho, pa oponašajte jedan zvuk koji ste čuli.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Dogovorite se da svi miruju i osluškuju 20 sekundi; nije potrebno prepoznati vrstu ptice.",
+                                 "Svako izabere jedan zvuk koji je čuo i ponovi ga vrlo tiho, bez vikanja.",
+                                 "Ostali opisuju da li je zvuk bio kratak ili dug, visok ili nizak; zatim zamenite uloge."
                              ],
-                   "example":  "Jedan igrač tiho oponaša pticu, a ostali mu odgovore blagim odjekom.",
-                   "bonus":  "Bonus: Napravite niz od tri zvuka/osećaja i zamolite drugog igrača da ga prepozna ili ponovi istim redosledom.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Čujete dva kratka cvrkuta. Jedan igrač ih tiho oponaša, a ostali kažu da su bili kratki i ponovljeni.",
+                   "bonus":  "Svako tiho ponovi jedan zapamćeni zvuk; sledeći igrač doda svoj na kraj, pa grupa ponovi ceo niz iz sećanja. Zaustavite se na najviše tri zvuka.",
+                   "safety":  "Slušajte sa bezbedne udaljenosti; ne prilazite pticama ni gnezdima, ne puštajte glasne snimke i ne vičite. Odrasli nadzire igru napolju, a dete može samo da sluša ili da preskoči oponašanje."
                },
         "en":  {
-                   "description":  "Listen quietly, then imitate one sound you noticed.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Pause and listen for 20 seconds. Choose one bird sound you heard, imitate it quietly, then let others describe whether it was short, long, high or low. If no birds are calling, choose another gentle outdoor sound.",
+                   "preparation":  "Choose a quiet, safe outdoor spot; do not approach the birds.",
                    "steps":  [
-                                 "Explain the goal: listen quietly, then imitate one sound you noticed.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Agree to stay still and listen for 20 seconds; there is no need to identify the bird species.",
+                                 "Each player chooses one sound they heard and repeats it very softly, without shouting.",
+                                 "The others describe whether it was short or long, high or low; then switch roles."
                              ],
-                   "example":  "One player makes a soft bird call and the others answer with a gentle echo.",
-                   "bonus":  "Bonus: Make a sequence of three sounds or sensations and ask another player to identify or repeat them in order.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "You hear two short chirps. One player imitates them quietly, and the others describe them as short and repeated.",
+                   "bonus":  "Each player quietly repeats one sound they remember; the next player adds theirs, then the group repeats the whole sequence from memory. Stop at three sounds.",
+                   "safety":  "Listen from a safe distance; do not approach birds or nests, play loud recordings or shout. An adult supervises outdoors, and a child may listen without imitating or skip a turn."
                }
     },
     {
@@ -8427,28 +8448,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Groups \u0026 parties"
                          ],
         "sr":  {
-                   "description":  "Telom napravite slova koja partner pogađa.",
-                   "preparation":  "Pripremite papir i bezbedne olovke, bojice ili drugi pribor za crtanje potreban za ovu igru.",
+                   "description":  "Izaberite kratku poznatu reč. Jedan igrač telom prikaže njena slova jedno po jedno, a partner ih pogađa i zapisuje. Kada pogodi celu reč, zamenite uloge.",
+                   "preparation":  "Pripremite papir i olovku za zapisivanje reči i oslobodite malo prostora. Poze mogu da se prave sedeći ili samo rukama.",
                    "steps":  [
-                                 "Objasnite cilj igre: telom napravite slova koja partner pogađa.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Jedan igrač smisli poznatu reč od dva do pet slova i ne otkriva je partneru.",
+                                 "Prikaže prvo slovo telom bez govora; partner pogađa i zapisuje ga. Zatim prikažite sledeće slovo.",
+                                 "Kada partner pogodi celu reč, pročitajte je zajedno i zamenite uloge. Ako zapne, dajte jedan trag."
                              ],
-                   "example":  "Telom napravite dva slova zaredom i zajedno složite kratku reč.",
-                   "bonus":  "Dodajte „izazov za istraživače“: pronađite još jedan primer, objasnite po čemu se razlikuje ili napravite sopstveni zadatak za sledećeg igrača.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Složite reč TATA. Za T igrač stoji uspravno i raširi ruke; za A spoji šake iznad glave i blago raširi stopala. Partner pogađa i zapisuje slovo, pa na kraju pročita reč.",
+                   "bonus":  "Za teži krug izaberite reč od četiri ili pet slova i probajte da prikažete jedno slovo zajedno u paru.",
+                   "safety":  "Ne penjite se, ne skačite i ne forsirajte istezanje; stopala ostaju na podu. Poze mogu da se rade sedeći ili samo rukama, a dete može da izabere drugo slovo ili preskoči potez."
                },
         "en":  {
-                   "description":  "Use your body to form letters while a partner guesses them.",
-                   "preparation":  "Prepare paper and child-safe pencils, crayons or other drawing supplies needed for the activity.",
+                   "description":  "Choose a short, familiar word. One player forms its letters with their body, one at a time, while a partner guesses and writes them down. Switch roles after the whole word is guessed.",
+                   "preparation":  "Prepare paper and a pencil to write the word, and clear a little space. Poses can be done seated or with arms only.",
                    "steps":  [
-                                 "Explain the goal: use your body to form letters while a partner guesses them.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "One player thinks of a familiar two- to five-letter word and keeps it secret.",
+                                 "Form the first letter with your body without speaking; the partner guesses and writes it down. Then show the next letter.",
+                                 "When the partner guesses the whole word, read it together and switch roles. Give one hint if they get stuck."
                              ],
-                   "example":  "Use two body letters in a row to spell a short word together.",
-                   "bonus":  "Add an “explorer challenge”: find one more example, explain how it differs, or invent a task for the next player.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "Spell TATA. For T, stand tall with arms stretched out; for A, bring your hands together above your head and spread your feet slightly. The partner guesses and writes each letter, then reads the word.",
+                   "bonus":  "For a harder round, choose a four- or five-letter word and try forming one of its letters together as a pair.",
+                   "safety":  "Do not climb, jump or force a stretch; keep feet on the floor. Poses can be done seated or with arms only, and the child can choose another letter or skip a turn."
                }
     },
     {
@@ -8481,30 +8502,30 @@ window.GAME_FEEDBACK_DATA = [
 
                          ],
         "sr":  {
-                   "description":  "Igrači rešavaju tri kratke zagonetke povezane u priču kako bi pronašli šifru koja otvara završnu kovertu ili kutiju.",
-                   "preparation":  "Pripremite tri zagonetke različitog tipa: niz, zagonetku sa rečima i trag koji treba pronaći u sobi. Završni odgovor može biti trocifreni broj ili reč.",
+                   "description":  "Rešite zajedno tri povezana traga i sakupite cifre za završnu šifru. Svaki odgovor vodi do sledeće kartice; izgovorite šifru da otvorite završnu kovertu.",
+                   "preparation":  "Napravite tri kartice. Na prvoj napišite „Dopuni: 2, 4, 6, __“ (odgovor 8) i „Sledeća kartica je pored stolice“. Drugu stavite pored stolice, nacrtajte tri zvezdice (odgovor 3) i napišite „Sledeća kartica je pored police za knjige“. Treću karticu stavite pored police i napišite „1 + 3 = __“ (odgovor 4). Završna koverta se otvara šifrom 834.",
                    "steps":  [
-                                 "Pročitajte uvodnu priču: potrebno je pronaći izgubljeni ključ pre nego što „svemirski brod“ poleti.",
-                                 "Dajte prvu zagonetku; njen odgovor vodi do druge poruke.",
-                                 "Druga poruka upućuje na treći trag, koji daje završni broj ili reč.",
-                                 "Otvorite kovertu i pročitajte zajedničku poruku ili nagradu."
+                                 "Pročitajte misiju: posada treba da pronađe šifru za završnu poruku pre poletanja svemirskog broda.",
+                                 "Na prvoj kartici dopunite 2, 4, 6, __; odgovor 8 je prva cifra, a uputstvo vodi do stolice.",
+                                 "Pored stolice prebrojte tri zvezdice da dobijete 3; uputstvo vodi do police za knjige, gde rešavate 1 + 3 = 4.",
+                                 "Zapišite cifre redom i izgovorite 834 da otvorite kovertu. Odrasli može da da nagoveštaj u bilo kom trenutku."
                              ],
-                   "example":  "Prva zagonetka traži sledeći broj u nizu 2, 4, 6; odgovor 8 pokazuje na kovertu broj 8, u kojoj je trag za završnu reč.",
-                   "bonus":  "Posle igre, dete postaje dizajner i pravi jednu novu zagonetku za odrasle. Neka rešenje bude moguće, ali ne očigledno.",
-                   "safety":  "Ne zaključavajte ljude u prostoriju; „escape“ se odnosi samo na rešavanje zagonetki, a dete može da zatraži nagoveštaj u bilo kom trenutku."
+                   "example":  "Na prvoj kartici dete dopuni 2, 4, 6, __ i dobije 8. Uputstvo ga šalje do stolice. Pored stolice prebroji tri zvezdice na drugoj kartici (3); na njoj piše da sledeću potraži pored police za knjige. Tamo reši 1 + 3 = 4. Zajedno izgovorite cifre redom: 8, 3, 4.",
+                   "bonus":  "Neka dete napravi jednu novu karticu za odrasle. Isprobajte je i proverite da li se do rešenja može doći jasnim tragovima.",
+                   "safety":  "Nikoga ne zaključavajte. Kartice postavite na vidljiva mesta do kojih dete lako može da dođe, nikad u uređaje, visoke police ili iza teškog nameštaja. Igra nije trka; nagoveštaj je uvek dozvoljen."
                },
         "en":  {
-                   "description":  "Players solve three short puzzles connected by a story to find a code that opens the final envelope or box.",
-                   "preparation":  "Prepare three different puzzle types: a sequence, a word riddle, and a clue to find in the room. The final answer can be a three-digit number or a word.",
+                   "description":  "Solve three linked clues together and collect digits for a final code. Each answer leads to the next card; say the code aloud to open the final envelope.",
+                   "preparation":  "Make three cards. On the first, write “Complete: 2, 4, 6, __” (answer: 8) and “The next card is by the chair.” Put the second card by the chair, draw three stars on it (answer: 3), and write “The next card is by the bookshelf.” Put the third card by the bookshelf and write “1 + 3 = __” (answer: 4). The final envelope opens with code 834.",
                    "steps":  [
-                                 "Read the opening story: the team must find a lost key before the “spaceship” launches.",
-                                 "Give the first puzzle; its answer leads to the second message.",
-                                 "The second message points to a third clue that gives the final number or word.",
-                                 "Open the envelope and read the team message or reward."
+                                 "Read the mission: the crew must find the code for the final message before the spaceship launches.",
+                                 "Complete 2, 4, 6, __ on the first card; 8 is the first digit, and the instruction leads to the chair.",
+                                 "By the chair, count three stars to get 3; the instruction leads to the bookshelf, where you solve 1 + 3 = 4.",
+                                 "Write the digits in order and say 834 to open the envelope. An adult can give a hint at any time."
                              ],
-                   "example":  "The first puzzle asks for the next number in 2, 4, 6; the answer 8 points to envelope 8, which contains a clue for the final word.",
-                   "bonus":  "After the game, the child becomes the designer and creates a new puzzle for the adults. The answer should be solvable but not obvious.",
-                   "safety":  "Never lock anyone in a room; “escape” refers only to solving puzzles, and a child may ask for a hint at any time."
+                   "example":  "On the first card, the child completes 2, 4, 6, __ and gets 8. The instruction sends them to the chair. By the chair, they count three stars on the second card (3); it says the next card is by the bookshelf. There, they solve 1 + 3 = 4. Say the digits in order: 8, 3, 4.",
+                   "bonus":  "Let the child make one new card for the adults. Try it and check that clear clues lead to the answer.",
+                   "safety":  "Never lock anyone in. Place cards where the child can easily reach them, never inside appliances, on high shelves or behind heavy furniture. This is not a race; hints are always allowed."
                }
     },
     {
@@ -8641,28 +8662,28 @@ window.GAME_FEEDBACK_DATA = [
                              "Groups \u0026 parties"
                          ],
         "sr":  {
-                   "description":  "Jedan plesač vodi, a drugi ga prati kao nežna senka.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Stanite u kolonu na bezbednom razmaku. Vođa se polako kreće slobodnom putanjom i pravi jednostavne pokrete; pratilac ide istom putanjom takt kasnije, kao senka. Na dogovoreni znak zamenite uloge.",
+                   "preparation":  "Oslobodite mali, ravan prostor i dogovorite znak za zamenu vođe. Ostavite razmak od najmanje jedne ruke i ne koristite prepreke.",
                    "steps":  [
-                                 "Objasnite cilj igre: jedan plesač vodi, a drugi ga prati kao nežna senka.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Jedan igrač polako izabere putanju kroz slobodan prostor; drugi stoji iza njega, uz razmak od jedne ruke.",
+                                 "Vođa napravi dva spora pokreta ili zaokreta. Pratilac ponavlja putanju i pokrete takt kasnije, bez dodira.",
+                                 "Na dogovoreni znak zamenite uloge i probajte novu putanju."
                              ],
-                   "example":  "Zamenite vođu bez reči i proverite da li pratilac primećuje promenu.",
-                   "bonus":  "Dodajte promenu pravila u sledećem krugu, na primer promenite smer, usporite pokret ili uvedite malu misiju. Odrasli proverava da prostor ostane bezbedan.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Vođa napravi dva spora koraka napred, obiđe zamišljenu tačku širokim zaokretom i podigne ruke kao krila. Pratilac ponovi putanju i pokret takt kasnije; na znak, zamenite vođu.",
+                   "bonus":  "Pratilac doda jedan jednostavan pokret na kraju putanje. U sledećem krugu vođa ga uključi, pa se ponovo zamene.",
+                   "safety":  "Krećite se polako, bez trčanja, skokova i dodirivanja. Ostavite razmak od jedne ruke, uklonite prepreke i stanite ako prostor postane tesan. Pokreti mogu da se rade sedeći."
                },
         "en":  {
-                   "description":  "One dancer leads while the other follows like a gentle shadow.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Stand in a line with a safe gap. The leader moves slowly along a clear path and makes simple movements; the follower traces the same path one beat later, like a shadow. Switch roles on an agreed signal.",
+                   "preparation":  "Clear a small, level space and agree on a signal to switch leaders. Leave at least an arm's length between players and use no obstacles.",
                    "steps":  [
-                                 "Explain the goal: one dancer leads while the other follows like a gentle shadow.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "One player slowly chooses a path through the clear space; the other stands behind, an arm's length away.",
+                                 "The leader makes two slow movements or turns. The follower traces the path and repeats the movements one beat later, without touching.",
+                                 "Switch roles on the agreed signal and try a new path."
                              ],
-                   "example":  "Switch leaders without speaking and see if the follower notices the change.",
-                   "bonus":  "Bonus: Change one rule in the next round, such as switching direction, slowing down or adding a small mission. An adult should keep the space safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "The leader takes two slow steps forward, makes a wide turn around an imaginary point, and raises their arms like wings. The follower repeats the path and movement one beat later; switch leaders on the signal.",
+                   "bonus":  "The follower adds one simple movement at the end of the path. In the next round, the leader includes it, then they switch again.",
+                   "safety":  "Move slowly, without running, jumping or touching. Keep an arm's-length gap, clear obstacles and stop if the space feels crowded. Movements can be done seated."
                }
     },
     {
@@ -8861,7 +8882,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Polako brojite do deset pored drveta dok se ostali kriju unutar dogovorenog prostora. Pronađite ih, pa zamenite uloge.",
-                   "bonus":  "Dodajte promenu pravila u sledećem krugu, na primer promenite smer, usporite pokret ili uvedite malu misiju. Odrasli proverava da prostor ostane bezbedan.",
+                   "bonus":  "U sledećem krugu tražilac broji do 15 okrenut ka drvetu ili zidu. Dok broji, svaki sakriveni može jednom da pređe hodajući na drugo bezbedno mesto unutar dogovorenog prostora. Kada brojanje stane, svi ostaju gde jesu.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -8873,7 +8894,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "Count slowly to ten beside a tree while the others hide within the agreed area. Find everyone, then switch roles.",
-                   "bonus":  "Bonus: Change one rule in the next round, such as switching direction, slowing down or adding a small mission. An adult should keep the space safe.",
+                   "bonus":  "In the next round, the seeker counts to 15 while facing a tree or wall. While they count, each hider may walk once to a different safe spot within the agreed area. When counting ends, everyone stays where they are.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -8987,7 +9008,7 @@ window.GAME_FEEDBACK_DATA = [
         "maxAge":  12,
         "ageText":  "6–12 godina",
         "duration":  15,
-        "material":  "none",
+        "material":  "paper",
         "skills":  [
                        {
                            "sr":  "Kreativnost",
@@ -9007,28 +9028,28 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Razvrstajte zamišljena pisma i dostavite ih na prava mesta.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Nacrtajte po jedan simbol na tri pisma i iste simbole na tri odredišta. Poštar razvrsta pisma prema simbolu i odnese svako na odgovarajuće mesto; zatim zamenite uloge.",
+                   "preparation":  "Pripremite papir i olovku. Nacrtajte zvezdu, krug i srce na tri mala pisma, pa stavite oznaku sa istim simbolom na tri lako dostupna mesta u sobi.",
                    "steps":  [
-                                 "Objasnite cilj igre: razvrstajte zamišljena pisma i dostavite ih na prava mesta.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Jedan igrač je poštar, a drugi postavlja oznake odredišta ili prima pisma.",
+                                 "Poštar uzima jedno pismo, pronalazi oznaku sa istim simbolom i odnosi ga hodajući.",
+                                 "Proverite da li se simboli poklapaju, dostavite sva pisma, pa zamenite uloge i promešajte ih."
                              ],
-                   "example":  "Razvrstajte zamišljena pisma po simbolima, pa ih dostavite na odgovarajuća mesta.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
-                   "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
+                   "example":  "Pismo sa zvezdom ide do mesta označenog zvezdom, krug do kruga, a srce do srca. Poštar odnosi svako pismo, a primalac proverava oznaku.",
+                   "bonus":  "Nacrtajte malu markicu na svakom pismu. Kada primalac proveri da se simbol pisma poklapa sa odredištem, nacrta pečat ili kvačicu da je pismo stiglo.",
+                   "safety":  "Koristite samo papir i olovke; držite oznake na lako dostupnim mestima, nikad visoko ili na prolazu. Poštar hoda, ne trči, a odrasli pomaže ako je potrebno."
                },
         "en":  {
-                   "description":  "Sort pretend letters and deliver them to the right places.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Draw one symbol on each of three letters and the same symbols on three destinations. The postal worker sorts the letters by symbol and takes each to the matching place, then players switch roles.",
+                   "preparation":  "Prepare paper and a pencil. Draw a star, circle and heart on three small letters, then place a matching symbol at three easy-to-reach spots in the room.",
                    "steps":  [
-                                 "Explain the goal: sort pretend letters and deliver them to the right places.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "One player is the postal worker while the other sets up destination labels or receives letters.",
+                                 "The postal worker picks up one letter, finds the label with the same symbol and walks it there.",
+                                 "Check that the symbols match, deliver all the letters, then switch roles and shuffle them."
                              ],
-                   "example":  "Sort the pretend letters by a symbol, then deliver each to its matching place.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
-                   "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
+                   "example":  "The star letter goes to the spot marked with a star, the circle to the circle and the heart to the heart. The postal worker delivers each one, and the receiver checks the label.",
+                   "bonus":  "Draw a small stamp on each letter. When the receiver checks that its symbol matches the destination, they draw a postmark or check to show it arrived.",
+                   "safety":  "Use only paper and pencils; keep labels at easy-to-reach spots, never high up or in walkways. The postal worker walks, not runs, and an adult can help when needed."
                }
     },
     {
@@ -9089,8 +9110,8 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Korisni pronalazač",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
-        "duration":  30,
+        "ageText":  "4–10 godina",
+        "duration":  15,
         "material":  "none",
         "skills":  [
                        {
@@ -9109,27 +9130,29 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Izmislite alat koji rešava mali svakodnevni problem.",
+                   "description":  "Jedan igrač opiše mali svakodnevni problem kroz tri traga. Drugi pogodi problem, smisli zamišljeni alat koji pomaže i pokaže kako radi; zatim zamene uloge.",
                    "preparation":  "Nije potrebna posebna priprema.",
                    "steps":  [
-                                 "Objasnite cilj igre: izmislite alat koji rešava mali svakodnevni problem.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Izaberite bezbedan svakodnevni problem, na primer razbacane igračke ili čarape koje se razdvajaju.",
+                                 "Prvi igrač opisuje problem kroz tri traga, ali ne izgovara njegovo ime; drugi pokušava da pogodi problem.",
+                                 "Kada pogodi, osmisli alat, da mu ime i pokretima pokaže kako pomaže. Sve je zamišljeno; rekviziti nisu potrebni.",
+                                 "Partner postavi jedno pitanje o izumu, pa zamenite uloge i izaberite novi problem."
                              ],
-                   "example":  "Opišite namenu izuma kroz tri traga i neka partner pogodi koji problem rešava.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
+                   "example":  "Tragovi: „Nosimo ih na stopalima, obično dolaze u paru, ali se ponekad razdvoje.” Problem su izgubljene čarape. Izumitelj osmisli „čarapni radar” koji zapišti kada pronađe drugu čarapu iz para.",
+                   "bonus":  "Dodajte izumu jedno smešno ograničenje, na primer da radi samo kada mu neko kaže „molim“. Može li i dalje da reši problem?",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Invent a tool that solves a small everyday problem.",
+                   "description":  "One player describes a small everyday problem in three clues. The other guesses it, invents an imaginary tool to help and shows how it works, then they switch roles.",
                    "preparation":  "No special preparation needed.",
                    "steps":  [
-                                 "Explain the goal: invent a tool that solves a small everyday problem.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Choose a safe everyday problem, such as scattered toys or socks that keep getting separated.",
+                                 "The first player describes the problem in three clues without naming it; the other player guesses.",
+                                 "Once guessed, invent a tool, give it a name and act out how it helps. Everything is pretend; no props are needed.",
+                                 "The partner asks one question about the invention, then switch roles and choose a new problem."
                              ],
-                   "example":  "Describe the tool\u0027s job with three clues and let a partner guess the problem it solves.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
+                   "example":  "Clues: “We wear them on our feet, they usually come in pairs, but they sometimes get separated.” The problem is missing socks. The inventor creates a “sock radar” that beeps when it finds the other sock.",
+                   "bonus":  "Give the invention one funny limitation, such as only working when someone says “please.” Can it still solve the problem?",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -9192,7 +9215,7 @@ window.GAME_FEEDBACK_DATA = [
         "minAge":  5,
         "maxAge":  12,
         "ageText":  "5–12 godina (mlađima uz pomoć odraslog)",
-        "duration":  30,
+        "duration":  15,
         "material":  "none",
         "skills":  [
                        {
@@ -9211,27 +9234,29 @@ window.GAME_FEEDBACK_DATA = [
                              "Rainy days"
                          ],
         "sr":  {
-                   "description":  "Napravite prijatne vesti o današnjim događajima kod kuće.",
+                   "description":  "Pretvarajte se da ste porodična redakcija: reporter osmisli vedar naslov, ispriča vest u jednoj ili dve rečenice i postavi gostu prijatno pitanje, pa zamene uloge. Vest može biti izmišljena; lične događaje možete preskočiti.",
                    "preparation":  "Nije potrebna posebna priprema.",
                    "steps":  [
-                                 "Objasnite cilj igre: napravite prijatne vesti o današnjim događajima kod kuće.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Izaberite vedar ili smešan događaj koji neko rado deli, ili izmislite vest; ne morate pričati o ličnim stvarima.",
+                                 "Reporter smisli kratak naslov i ispriča vest u jednoj ili dve rečenice.",
+                                 "Reporter postavi gostu jedno prijatno pitanje, na primer: „Šta ti je bilo najzabavnije?“ Gost može da odgovori ili da preskoči.",
+                                 "Zamenite uloge i napravite novu vest. Svako može da preskoči pitanje ili izmisli događaj."
                              ],
-                   "example":  "Pretvorite jedan lep postupak od danas u vedar naslov vesti.",
-                   "bonus":  "Dodajte obrt: sledeći igrač mora da uvede novi lik, problem ili iznenađenje, a grupa zajedno odlučuje kako će se priča nastaviti.",
+                   "example":  "Naslov: „Sto je spreman za večeru!“ Reporter kaže: „Neko je danas pomogao da se postavi sto.“ Zatim pita gosta: „Šta ti je bilo najzabavnije?“",
+                   "bonus":  "Dodajte vremensku prognozu za jednu sobu: najavite kakvo je tamo izmišljeno vreme i šta bi ukućanima moglo zatrebati.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Create a friendly news show about today’s household events.",
+                   "description":  "Pretend to run a family newsroom: the reporter makes a cheerful headline, tells a one- or two-sentence story and asks the guest a friendly question, then they switch roles. The story may be invented; personal events can be skipped.",
                    "preparation":  "No special preparation needed.",
                    "steps":  [
-                                 "Explain the goal: create a friendly news show about today’s household events.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Choose a cheerful or funny event someone is happy to share, or invent a story; no one has to discuss personal events.",
+                                 "The reporter makes a short headline and tells the story in one or two sentences.",
+                                 "The reporter asks the guest one friendly question, such as “What was the most fun part?” The guest may answer or pass.",
+                                 "Switch roles and make a new story. Anyone may pass on a question or invent an event."
                              ],
-                   "example":  "Turn one kind thing someone did today into a cheerful headline.",
-                   "bonus":  "Add a twist: the next player must introduce a new character, problem or surprise, and the group decides together what happens next.",
+                   "example":  "Headline: “The table is ready for dinner!” The reporter says, “Someone helped set the table today,” then asks the guest, “What was the most fun part?”",
+                   "bonus":  "Add a weather report for one room: announce its imaginary weather and what the family might need there.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -9265,27 +9290,27 @@ window.GAME_FEEDBACK_DATA = [
                              "Groups \u0026 parties"
                          ],
         "sr":  {
-                   "description":  "Budite vodič koji posetiocu pokazuje trenutak iz prošlosti ili budućnosti.",
+                   "description":  "Jedan igrač je vodič kroz vreme, a drugi posetilac. Izaberite konkretno vreme i mesto, na primer selo pre struje ili grad 100 godina u budućnosti. Vodič opisuje kakav je tamo život i šta posetilac može da vidi; posetilac postavlja pitanje. Zatim zamenite uloge i izaberite novo vreme i mesto.",
                    "preparation":  "Nije potrebna posebna priprema.",
                    "steps":  [
                                  "Objasnite cilj igre: budite vodič koji posetiocu pokazuje trenutak iz prošlosti ili budućnosti.",
                                  "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
-                   "example":  "Neka posetilac postavi jedno pitanje o stanici u prošlosti ili budućnosti.",
-                   "bonus":  "Dodajte obrt: sledeći igrač mora da uvede novi lik, problem ili iznenađenje, a grupa zajedno odlučuje kako će se priča nastaviti.",
+                   "example":  "Prošlost: selo pre struje — posetilac pita kako su ljudi osvetljavali kuće. Budućnost: grad u kome autobusi lete između zgrada — pita kako znaju gde da slete. Izaberite jedan primer ili smislite svoje vreme i mesto.",
+                   "bonus":  "Posetilac ponese zamišljeni predmet iz današnjice u izabrano vreme, a vodič izmisli kako se tamo koristi.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Act as a guide showing a visitor one past or future moment.",
+                   "description":  "One player is the time-travel guide and the other is a visitor. Choose a specific time and place, such as a village before electricity or a city 100 years in the future. The guide describes what life is like and what the visitor can see; the visitor asks a question. Then switch roles and choose a new time and place.",
                    "preparation":  "No special preparation needed.",
                    "steps":  [
                                  "Explain the goal: act as a guide showing a visitor one past or future moment.",
                                  "Agree on who starts and demonstrate one example before the child tries.",
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
-                   "example":  "Let a visitor ask one question about the past or future stop.",
-                   "bonus":  "Add a twist: the next player must introduce a new character, problem or surprise, and the group decides together what happens next.",
+                   "example":  "Past: a village before electricity, where the visitor asks how homes were lit. Future: a city where buses fly between buildings, where the visitor asks how they know where to land. Choose one or invent your own time and place.",
+                   "bonus":  "The visitor brings an imaginary everyday object to the chosen time, and the guide invents how people use it there.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -9317,27 +9342,27 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Izaberite uloge, osmislite početak i kraj i izvedite scenu.",
+                   "description":  "Izaberite dva lika i jednu želju. Odglumite kratku scenu u kojoj se pojavi mali problem i zajedno ga rešavate, pa zamenite uloge i pokušajte drugačiji završetak.",
                    "preparation":  "Nije potrebna posebna priprema.",
                    "steps":  [
                                  "Objasnite cilj igre: izaberite uloge, osmislite početak i kraj i izvedite scenu.",
                                  "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
-                   "example":  "Odglumite istu kratku scenu jednom rečima, a zatim bez govora.",
-                   "bonus":  "Dodajte obrt: sledeći igrač mora da uvede novi lik, problem ili iznenađenje, a grupa zajedno odlučuje kako će se priča nastaviti.",
+                   "example":  "Jedan lik želi na piknik, ali počinje kiša. Drugi predloži novo mesto, pa zajedno odglumite kako spašavaju izlet.",
+                   "bonus":  "Zamenite uloge i dodajte novi, bezbedan obrt, na primer vetar odnese mapu. Smislite drugo rešenje i odigrajte scenu ponovo.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Choose roles, make a beginning and ending, then perform a short scene.",
+                   "description":  "Choose two characters and one thing they want. Act out a short scene where a small problem appears and they solve it together, then switch roles and try a different ending.",
                    "preparation":  "No special preparation needed.",
                    "steps":  [
                                  "Explain the goal: choose roles, make a beginning and ending, then perform a short scene.",
                                  "Agree on who starts and demonstrate one example before the child tries.",
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
-                   "example":  "Perform the same short scene once with words and once without speaking.",
-                   "bonus":  "Add a twist: the next player must introduce a new character, problem or surprise, and the group decides together what happens next.",
+                   "example":  "One character wants to go on a picnic, but it starts raining. The other suggests a new place, and they act out how they save the outing.",
+                   "bonus":  "Switch roles and add a new, safe twist, such as the wind blowing away the map. Find another solution and perform the scene again.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -9545,11 +9570,11 @@ window.GAME_FEEDBACK_DATA = [
     },
     {
         "id":  190,
-        "title":  "Design a Family Secret Handshake",
-        "srTitle":  "Dizajniraj porodični tajni pozdrav",
+        "title":  "Family Secret Handshake",
+        "srTitle":  "Porodični tajni pozdrav",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina / 4–10 years",
+        "ageText":  "4–10 godina",
         "duration":  15,
         "material":  "none",
         "skills":  [
@@ -9573,7 +9598,7 @@ window.GAME_FEEDBACK_DATA = [
 
                          ],
         "sr":  {
-                   "description":  "Dvoje ili više igrača osmišljava jedinstven pozdrav od pokreta, zvuka i izraza lica, a zatim ga uvežbava i menja.",
+                   "description":  "Zajedno osmislite porodični tajni pozdrav: svako predloži jednostavan pokret ili zvuk, povežite tri do pet predloga i uvežbajte ih polako, pa pokušajte bez podsećanja. Dajte pozdravu ime i dogovorite kada ćete ga koristiti.",
                    "preparation":  "Dogovorite se da pozdrav može biti jednostavan: pljesak, pokret rukom, zvuk ili kratka poza.",
                    "steps":  [
                                  "Svaki igrač predloži jedan pokret ili zvuk.",
@@ -9581,12 +9606,12 @@ window.GAME_FEEDBACK_DATA = [
                                  "Vežbajte polako, pa pokušajte bez podsećanja.",
                                  "Dajte pozdravu ime i odlučite kada ćete ga koristiti."
                              ],
-                   "example":  "Dodir ramena, dva pljeska, okret šake i zajedničko „bum!“ postaju pozdrav pod nazivom „Tajni raketni start“.",
-                   "bonus":  "Napravite drugu verziju koja se izvodi sedeći ili bez zvuka, tako da svi mogu da učestvuju na svoj način.",
+                   "example":  "Dodir ramena, dva pljeska, okret šake i zajedničko „bum!“ čine „Pozdrav tajnih agenata“.",
+                   "bonus":  "Kada svi zapamte pozdrav, dogovorite tajni znak: podignuta ruka znači da se poslednji pokret menja u zajedničku pozu. Možete li da primetite znak i izvedete novu završnicu?",
                    "safety":  "Izbegavajte snažne udarce, nagle pokrete i dodire koji nekome nisu prijatni; pozdrav može biti i potpuno bez kontakta."
                },
         "en":  {
-                   "description":  "Two or more players invent a unique greeting using movements, sounds, and facial expressions, then practise and adapt it.",
+                   "description":  "Create a family secret handshake together: each person suggests a simple movement or sound, combine three to five ideas and practise them slowly, then try without reminders. Give the greeting a name and decide when to use it.",
                    "preparation":  "Agree that the greeting can be simple: a clap, hand movement, sound, or brief pose.",
                    "steps":  [
                                  "Each player suggests one movement or sound.",
@@ -9594,8 +9619,8 @@ window.GAME_FEEDBACK_DATA = [
                                  "Practise slowly, then try without reminders.",
                                  "Give the greeting a name and decide when to use it."
                              ],
-                   "example":  "A shoulder tap, two claps, a hand turn, and a shared “boom!” become a greeting called “Secret Rocket Launch.”",
-                   "bonus":  "Create a second version that can be done seated or silently so everyone can participate in their own way.",
+                   "example":  "A shoulder tap, two claps, a hand turn, and a shared “boom!” make the “Secret Agent Greeting.”",
+                   "bonus":  "Once everyone knows the greeting, agree on a secret signal: a raised hand means replacing the final move with a shared pose. Can everyone spot the signal and perform the new ending?",
                    "safety":  "Avoid hard impacts, sudden movements, or touch that someone dislikes; the greeting can also be entirely contact-free."
                }
     },
@@ -9779,27 +9804,27 @@ window.GAME_FEEDBACK_DATA = [
                              "Groups \u0026 parties"
                          ],
         "sr":  {
-                   "description":  "Postavite zamišljene cvetove za stvari na kojima je svako zahvalan.",
-                   "preparation":  "Nije potrebna posebna priprema.",
+                   "description":  "Naizmenično podelite nešto lepo iz dana ili nešto što vam je prijalo. Za svaku stvar nacrtajte cvet na zajedničkom papiru i dodajte mu detalj koji vas podseća na taj trenutak. Svako može i da preskoči red.",
+                   "preparation":  "Pripremite papir i bojice ili olovke. Možete crtati svi na jednom listu ili svako na svom.",
                    "steps":  [
-                                 "Objasnite cilj igre: postavite zamišljene cvetove za stvari na kojima je svako zahvalan.",
-                                 "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
-                                 "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
+                                 "Svako može da podeli jednu lepu stvar iz dana; dozvoljeno je i preskočiti red.",
+                                 "Na zajedničkom papiru nacrtajte cvet za svaki pomenuti trenutak i dodajte mu boju ili detalj koji vas podseća na njega.",
+                                 "Na kraju pogledajte baštu i ispričajte koji vam je cvet najdraži ili dodajte još jedan."
                              ],
-                   "example":  "Svaki zamišljeni cvet posvetite konkretnom lepom postupku od danas.",
-                   "bonus":  "Dodajte jedno ograničenje koje menja rešenje — na primer, koristite samo tri dodatna elementa ili napravite da konstrukcija stoji samostalno.",
+                   "example":  "„Danas mi se dopalo kad smo zajedno crtali“ — nacrtajte žuti cvet za taj trenutak.",
+                   "bonus":  "Dodajte šaru na jednu laticu svakog cveta koja vas podseća na lepi trenutak.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "Place imaginary flowers for things each player appreciates.",
-                   "preparation":  "No special preparation needed.",
+                   "description":  "Take turns sharing something good from the day or something you enjoyed. Draw a flower for each thing on a shared sheet of paper and add a detail that reminds you of that moment. Anyone may pass.",
+                   "preparation":  "Get paper and crayons or pencils. Draw together on one sheet or give everyone their own.",
                    "steps":  [
-                                 "Explain the goal: place imaginary flowers for things each player appreciates.",
-                                 "Agree on who starts and demonstrate one example before the child tries.",
-                                 "Switch roles or change one detail so everyone gets a turn."
+                                 "Each player may share one good thing from the day; anyone may pass.",
+                                 "Draw a flower for each shared moment on the paper and add a color or detail that reminds you of it.",
+                                 "Look at the garden together and share which flower is your favorite, or add one more."
                              ],
-                   "example":  "Give each imaginary flower a specific kind act someone did today.",
-                   "bonus":  "Bonus: Add one constraint that changes the solution—for example, use only three extra pieces or make the structure stand on its own.",
+                   "example":  "“I liked drawing together today” — draw a yellow flower for that moment.",
+                   "bonus":  "Add a pattern to one petal on each flower that reminds you of the good moment.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -9967,7 +9992,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Ne gazi pukotinu",
         "minAge":  3,
         "maxAge":  9,
-        "ageText":  "3–9 godina; starijima dodati pravila ili izazov",
+        "ageText":  "3–9 godina",
         "duration":  15,
         "material":  "none",
         "skills":  [
@@ -9989,27 +10014,27 @@ window.GAME_FEEDBACK_DATA = [
                              "On the go"
                          ],
         "sr":  {
-                   "description":  "Na mirnom, ravnom trotoaru, uz odraslu osobu, hodajte polako bez gaženja pukotina. Prekinite igru ako je put prometan, neravan ili blizu saobraćaja.",
+                   "description":  "Uz odraslu osobu hodajte uobičajenim korakom po mirnom, ravnom trotoaru i pazite da ne stanete na spojne linije između ploča ili kockica. Ne skačite. Prekinite igru ako je trotoar prometan, neravan ili blizu saobraćaja.",
                    "preparation":  "Nije potrebna posebna priprema.",
                    "steps":  [
                                  "Objasnite cilj igre: na mirnom, ravnom trotoaru, uz odraslu osobu, hodajte polako bez gaženja pukotina. Prekinite igru ako je put prometan, neravan ili blizu saobraćaja.",
                                  "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
-                   "example":  "Hodajte uobičajenim korakom po mirnom i ravnom delu trotoara, uz odraslu osobu. Preskočite igru kod prelaza, prilaza za kola ili neravnog tla.",
-                   "bonus":  "Dodajte promenu pravila u sledećem krugu, na primer promenite smer, usporite pokret ili uvedite malu misiju. Odrasli proverava da prostor ostane bezbedan.",
+                   "example":  "Pratite spojne linije između kockica na mirnom, ravnom trotoaru i pokušajte da hodate tako da ne stanete na njih. Odrasla osoba hoda uz dete; kod prelaza, prilaza za kola ili neravnog tla preskočite igru.",
+                   "bonus":  "Uzrast 3–5: odrasli bira kratak, miran deo trotoara i zajedno s detetom traži spojne linije. Uzrast 6–9: dete bira koju spojnu liniju će izbeći i objašnjava zašto. U oba uzrasta odrasli hoda uz dete; gledajte ispred sebe, hodajte normalno, bez skakanja, i preskočite prometan ili neravan trotoar.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
-                   "description":  "On a quiet, even sidewalk with an adult, walk slowly without stepping on cracks. Stop if the path is crowded, uneven or near traffic.",
+                   "description":  "With an adult, walk at a normal pace on a quiet, even sidewalk and try not to step on the seams between paving slabs. Do not jump. Stop if the sidewalk is busy, uneven or near traffic.",
                    "preparation":  "No special preparation needed.",
                    "steps":  [
                                  "Explain the goal: on a quiet, even sidewalk with an adult, walk slowly without stepping on cracks. Stop if the path is crowded, uneven or near traffic.",
                                  "Agree on who starts and demonstrate one example before the child tries.",
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
-                   "example":  "Walk at a normal pace along a quiet, flat stretch of pavement, with an adult beside you. Skip the game near crossings, driveways or uneven ground.",
-                   "bonus":  "Bonus: Change one rule in the next round, such as switching direction, slowing down or adding a small mission. An adult should keep the space safe.",
+                   "example":  "Follow the seams between paving slabs on a quiet, even sidewalk and try not to step on them. An adult walks beside the child; skip the game near crossings, driveways or uneven ground.",
+                   "bonus":  "Ages 3–5: an adult chooses a short, quiet stretch and looks for the seams with the child. Ages 6–9: let the child choose a seam to avoid and explain why. At every age, an adult walks beside the child; look ahead, walk normally without jumping, and skip busy or uneven sidewalks.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -10049,7 +10074,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
                    "example":  "Zamislite poznat lik iz priče. Ostali mogu da pitaju: „Da li si iz knjige?” ili „Da li nosiš krunu?” dok ne pogode.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
+                   "bonus":  "Bonus: Ako je odgovor „da“, isti igrač nastavlja da pita. Ako je odgovor „ne“, pitanje postavlja sledeći igrač. Nastavite dok neko ne pogodi, pa zamenite uloge.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -10061,7 +10086,7 @@ window.GAME_FEEDBACK_DATA = [
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
                    "example":  "Think of a familiar story character. Others can ask, “Are you from a book?” or “Do you wear a crown?” until they guess.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
+                   "bonus":  "Bonus: If the answer is yes, the same player keeps asking. If the answer is no, the next player asks a question. Continue until someone guesses, then switch roles.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     },
@@ -10071,7 +10096,7 @@ window.GAME_FEEDBACK_DATA = [
         "srTitle":  "Minutni izazov",
         "minAge":  4,
         "maxAge":  10,
-        "ageText":  "4–10 godina; za 10–12 godina koristiti izazovnu varijantu",
+        "ageText":  "4–10 godina",
         "duration":  5,
         "material":  "none",
         "skills":  [
@@ -10104,8 +10129,8 @@ window.GAME_FEEDBACK_DATA = [
                                  "Dogovorite se ko počinje i pokažite jedan primer pre nego što dete pokuša samo.",
                                  "Zamenite uloge ili promenite jedan detalj kako bi svako dobio priliku da učestvuje."
                              ],
-                   "example":  "Podesite tajmer na minut i proverite koliko plastičnih čaša možete da složite. Zamenite uloge i pokušajte ponovo.",
-                   "bonus":  "Bonus: Neka dete osmisli novu varijantu pravila, a ostali je isprobaju. Zadržite samo pravila koja su jasna, dobrovoljna i bezbedna.",
+                   "example":  "Za svaki minut izaberite jedan zadatak: stanite na jednoj nozi pa promenite nogu (odrasli može da pruži ruku za oslonac), dodirnite naizmenično kolena ili složite plastične čaše u kulu. U sledećem krugu zamenite uloge ili izaberite drugi zadatak.",
+                   "bonus":  "Uzrast 4–6: odrasli bira lak zadatak, poput slaganja tri čaše, i broji zajedno s detetom. Uzrast 7–10: dete bira zadatak i dodaje uslov, na primer da složi čaše u piramidu. Ponovite izazov i uporedite svaki pokušaj samo sa prethodnim pokušajem istog igrača, ne međusobno.",
                    "safety":  "Proverite da prostor i svi materijali odgovaraju uzrastu. Odrasli treba da prilagodi izazov i da dete može da preskoči potez ili zatraži pomoć."
                },
         "en":  {
@@ -10116,8 +10141,8 @@ window.GAME_FEEDBACK_DATA = [
                                  "Agree on who starts and demonstrate one example before the child tries.",
                                  "Switch roles or change one detail so everyone gets a turn."
                              ],
-                   "example":  "Set a one-minute timer and see how many plastic cups you can stack. Swap roles and try again.",
-                   "bonus":  "Bonus: Let the child invent a new version of the rule and invite everyone to try it. Keep only rules that are clear, voluntary and safe.",
+                   "example":  "Choose one task for each one-minute round: stand on one foot, then switch legs (an adult can offer a hand for support), alternate touching your knees, or stack plastic cups into a tower. Swap roles or choose a different task in the next round.",
+                   "bonus":  "Ages 4–6: an adult chooses an easy task, such as stacking three cups, and counts along with the child. Ages 7–10: let the child choose a task and add a condition, such as stacking the cups into a pyramid. Repeat the challenge and compare each player only with their own previous attempt, not with one another.",
                    "safety":  "Check that the space and materials are suitable for the child’s age. An adult should adapt the challenge, and the child may skip a turn or ask for help."
                }
     }

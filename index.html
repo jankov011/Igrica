@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20261102-tools21" />
   </head>
   <body>
     <div class="page-shape page-shape-one" aria-hidden="true"></div>
@@ -28,15 +28,13 @@
       <div id="landing">
         <section class="hero">
           <div class="hero-content">
-            <h1 id="heroTitle">Find their next <span>favorite game.</span></h1>
-            <p class="hero-copy" id="heroCopy">Answer a few questions to find a simple game that fits the moment.</p>
+            <h1 id="heroTitle">Find a game idea <span>to play screen-free.</span></h1>
+            <p class="hero-copy" id="heroCopy">Answer a few quick questions to find an idea, then put the phone away and play together in person.</p>
             <div class="hero-actions">
               <button class="primary-button hero-primary" id="startButton" type="button">Find a game <span>→</span></button>
             </div>
             <div class="trust-row">
-              <span id="trustTwo">✓ Screen-free ideas</span>
               <span id="trustThree">✓ Ages 3–12</span>
-              <span id="trustFour">✓ For every day</span>
             </div>
           </div>
           <div class="hero-visual" aria-hidden="true">
@@ -45,30 +43,30 @@
         </section>
 
         <section class="parent-section">
-          <div class="parent-grid">
-            <article class="parent-card parent-card-featured">
-              <span class="mini-label" id="dailyLabel">TODAY’S EASY WIN</span>
-              <h3 id="dailyTitle">Five-minute connection</h3>
-              <p id="dailyCopy">Short play still counts. A few focused minutes can turn an ordinary pause into a warm family memory.</p>
-              <div class="daily-meta" id="dailyMeta"></div>
-              <button class="card-link" id="dailyButton" type="button">Find a quick game →</button>
-            </article>
-            <article class="parent-card">
-              <div class="card-icon mint-icon">🌱</div>
+          <div class="benefit-grid">
+            <article class="benefit-card">
+              <div class="card-icon mint-icon" aria-hidden="true"></div>
               <h3 id="benefitOneTitle">Supports development</h3>
               <p id="benefitOneCopy">Discover ideas for movement, creativity, cooperation and calm focus.</p>
             </article>
-            <article class="parent-card">
-              <div class="card-icon blue-icon">🧘</div>
+            <article class="benefit-card">
+              <div class="card-icon heart-icon" aria-hidden="true"></div>
               <h3 id="benefitTwoTitle">Less decision fatigue</h3>
               <p id="benefitTwoCopy">Six simple choices turn “what should we do?” into a useful shortlist.</p>
             </article>
-            <article class="parent-card">
-              <div class="card-icon">🌼</div>
+            <article class="benefit-card">
+              <div class="card-icon star-icon" aria-hidden="true"></div>
               <h3 id="benefitThreeTitle">Time together to remember</h3>
               <p id="benefitThreeCopy">Small shared moments can become happy memories children carry with them.</p>
             </article>
           </div>
+          <article class="parent-card parent-card-featured">
+            <span class="mini-label" id="dailyLabel">TODAY’S EASY WIN</span>
+            <h3 id="dailyTitle">Five-minute connection</h3>
+            <p id="dailyCopy">Short play still counts. A few focused minutes can turn an ordinary pause into a warm family memory.</p>
+            <div class="daily-meta" id="dailyMeta"></div>
+            <button class="card-link" id="dailyButton" type="button">Pogledaj ideju za igru →</button>
+          </article>
         </section>
 
       </div>
@@ -175,10 +173,6 @@
               <h3 id="detailPreparationTitle"></h3>
               <p id="detailPreparationCopy"></p>
             </section>
-            <section class="detail-steps-panel" id="detailStepsSection" hidden aria-labelledby="detailStepsTitle">
-              <h3 id="detailStepsTitle"></h3>
-              <ol class="detail-steps-list" id="detailStepsList"></ol>
-            </section>
             <section class="detail-demo" id="detailDemo" hidden aria-labelledby="detailDemoTitle">
               <div class="detail-demo-toolbar">
                 <h3 id="detailDemoTitle"></h3>
@@ -202,6 +196,10 @@
                 </div>
               </div>
             </section>
+            <section class="detail-tools" id="detailTools" hidden aria-labelledby="detailToolsTitle">
+              <h3 id="detailToolsTitle"></h3>
+              <div class="detail-tools-content" id="detailToolsContent"></div>
+            </section>
             <div class="detail-grid" id="detailGrid">
               <div class="detail-tip" id="detailExampleCard">
                 <span aria-hidden="true">💡</span>
@@ -214,6 +212,10 @@
                 <p id="detailParent"></p>
               </div>
             </div>
+            <section class="detail-section" id="detailAgeGuidance" hidden aria-labelledby="detailAgeGuidanceTitle">
+              <h3 id="detailAgeGuidanceTitle"></h3>
+              <p id="detailAgeGuidanceCopy"></p>
+            </section>
           </div>
         </article>
       </section>
@@ -254,7 +256,7 @@
       </button>
     </nav>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="game-feedback-data.js"></script>
-    <script src="app.js"></script>
+    <script src="game-feedback-data.js?v=20261103-circle-roll"></script>
+    <script src="app.js?v=20261103-circle-roll"></script>
   </body>
 </html>

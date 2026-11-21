@@ -5,7 +5,7 @@ const questionSets = {
     ["place", "Setting", "Where will they play?", "Select every setting available.", [["indoors","🏠","Indoors",""],["outdoors","🌿","Outdoors",""],["travel","🚗","On the go",""],["either","🌤️","Either one",""]]],
     ["duration", "Time", "How much time do you have?", "Select every time limit that works.", [["5","⚡","Up to 5 min","A quick reset"],["15","⏱️","Up to 15 min","A play break"],["30","🕰️","Up to 30 min","Time to create"],["60","🌈","Up to 1 hour","A bigger adventure"]]],
     ["material", "Materials", "What can they use?", "Select all available materials; no-material games are always included.", [["none","🙌","Nothing","Just imagination"],["paper","🖍️","Paper & pencils","Simple craft supplies"],["household","📦","Household items","Cups, cushions and more"],["ball","⚽","A ball","Any safe ball"]]],
-    ["activity", "Energy", "What activity level feels right?", "Select every activity level that fits.", [["calm","☁️","Calm","Quiet and focused"],["medium","🪁","Playful","Some movement"],["active","⚡","Very active","Lots of energy"]]],
+    ["activity", "Energy", "What kind of play feels right?", "", [["calm","☁️","Calm",""],["playful","🪁","Playful",""]]],
   ],
   sr: [
     ["age", "Uzrast", "Koliko godina imaju deca?", "Možete izabrati više uzrasta; igra mora odgovarati celom izabranom rasponu.", [["3-4","🐣","3–4 godine","Mali istraživači"],["5-6","🧸","5–6 godina","Radoznali kreativci"],["7-9","🦊","7–9 godina","Velika mašta"],["10-12","🚀","10–12 godina","Samostalni igrači"]]],
@@ -13,15 +13,15 @@ const questionSets = {
     ["place", "Mesto", "Gde će se igrati?", "Izaberite sva mesta na kojima igra može da se odigra.", [["indoors","🏠","Unutra",""],["outdoors","🌿","Napolju",""],["travel","🚗","U pokretu",""],["either","🌤️","Svejedno",""]]],
     ["duration", "Vreme", "Koliko vremena imate?", "Izaberite sve vremenske okvire koji odgovaraju.", [["5","⚡","Do 5 min","Brza razbibriga"],["15","⏱️","Do 15 min","Kratka igra"],["30","🕰️","Do 30 min","Vreme za kreativnost"],["60","🌈","Do 1 sata","Veća avantura"]]],
     ["material", "Materijali", "Šta mogu da koriste?", "Izaberite sve dostupne materijale; igre bez materijala su uvek dobar izbor.", [["none","🙌","Ništa","Samo mašta"],["paper","🖍️","Papir i olovke","Jednostavan pribor"],["household","📦","Kućni predmeti","Čaše, jastuci i drugo"],["ball","⚽","Lopta","Bilo koja bezbedna lopta"]]],
-    ["activity", "Energija", "Koji nivo aktivnosti odgovara?", "Izaberite sve nivoe aktivnosti koji odgovaraju.", [["calm","☁️","Mirno","Tiho i fokusirano"],["medium","🪁","Razigrano","Malo kretanja"],["active","⚡","Veoma aktivno","Mnogo energije"]]],
+    ["activity", "Energija", "Šta vam više odgovara?", "", [["calm","☁️","Mirno",""],["playful","🪁","Razigrano",""]]],
   ]
 };
 
 const copy = {
   en: {
       pageTitle:"Play Picks", brand:"Play Picks", description:"Find screen-free children's games for every moment.", home:"Play Picks home", language:"Language",
-    nav:["For you","Explore","Popular","Saved"], profile:"Profile", hero:"Find their next <span>favorite game.</span>",
-    heroCopy:"Answer a few questions to find a simple game that fits the moment.", progress:"Setup progress", resultsEye:"Your play picks",
+    nav:["For you","Explore","Popular","Saved"], profile:"Profile", hero:"Find a game idea <span>to play screen-free.</span>",
+    heroCopy:"Choose an idea, put the phone away, and play together in person.", progress:"Setup progress", resultsEye:"Your play picks",
     ready:"Ideas picked for you", popular:"Popular games", saved:"Your saved games", edit:"Edit filters", step:(a,b)=>`Step ${a} of ${b}`,
     next:"Continue", show:"Show", back:"Back", matches:"",
     collectionSummary:{popular:"Ideas for your next play break.",saved:"Games you’ve saved, ready when you need them."},
@@ -32,22 +32,23 @@ const copy = {
     place:{either:"Inside or outside",indoors:"Indoors",outdoors:"Outdoors",travel:"On the go"}, ages:(a,b)=>`Ages ${a}–${b}`, min:"min", image:t=>`Children playing ${t}`,
     noProfile:"Profile",
     findGame:"Find a game",
-    trust:["✓ Screen-free ideas","✓ Ages 3–12","✓ Everyday ideas"], visualTitle:"Ready for play?", visualCopy:"Simple ideas for everyday moments",
-    dailyLabel:"TODAY’S GAME", dailyTitle:"Five-minute connection", dailyCopy:"Short play still counts. A few focused minutes can turn an ordinary pause into a warm family memory.",
-    benefitOneTitle:"Supports development", benefitOneCopy:"Discover ideas for movement, creativity, cooperation and calm focus.",
-    benefitTwoTitle:"Less decision fatigue", benefitTwoCopy:"Six simple choices turn “what should we do?” into a useful shortlist.",
-    benefitThreeTitle:"Time together to remember", benefitThreeCopy:"Small shared moments can become happy memories children carry with them.",
+    trust:["✓ Ages 3–12"], visualTitle:"Ready for play?", visualCopy:"Simple ideas for everyday moments",
+    dailyLabel:"TODAY’S GAME", dailyTitle:"Five-minute connection", dailyCopy:"Short play still counts. A few focused minutes can turn an ordinary pause into a warm family memory.", dailyButtonLabel:"Explore a play idea →",
+    benefitOneTitle:"We grow through play", benefitOneCopy:"Discover games that encourage movement, imagination, cooperation, and concentration.",
+    benefitTwoTitle:"An easier choice", benefitTwoCopy:"Six simple choices help you find an activity to enjoy together.",
+    benefitThreeTitle:"Little moments, big memories", benefitThreeCopy:"Playing and talking together creates moments you’ll both remember.",
     safetyTitle:"A note for safe, happy play", safetyCopy:"Stay nearby and adapt each game to your child and space.", safetyNoteAction:"Details", safetyDetailsTitle:"Keeping play safe", safetyDialogDone:"Close", safetyDetails:[["Stay close","Supervise play and adapt the activity to the child’s age, confidence and abilities."],["Prepare the space","Clear the floor, avoid slippery or crowded areas, and keep play away from roads, stairs and furniture used for climbing."],["Check materials","Use clean, age-appropriate materials. Keep small parts, sharp objects and broken balloon pieces away from young children; do not taste scents."],["Keep it voluntary","Let children pause, skip a turn or stop if they feel tired or uncomfortable. There is no need to compete or finish every challenge."]],
     liked:"Saved to your profile ♥", unliked:"Removed from saved games", saveAction:"Save", savedAction:"Saved",
     momentTitle:"By situation", skillTitle:"By skill",
-    prepareLabel:"Before play", ageGuidanceTitle:"Age guidance", ageBonusLabel:"Age guidance", stepsTitle:"Steps", safetyNoteTitle:"Safety note", aboutTitle:"About this game", skillsTitle:"What it develops", startGame:"Start game", shareCopied:"Game details copied.", shareUnavailable:"Sharing is unavailable here.",
-    details:"Details", categorySummary:()=>"", exampleTitle:"Try this example", parentTipTitle:"Bonus idea", closeDetails:"Back to games", demoTitle:"How to play", demoPlay:"Play", demoPause:"Pause", demoSteps:[["Turn away","The observer turns around while the group chooses a leader."],["Copy the leader","Everyone copies the leader’s slow movement."],["Guess who leads","The observer turns back and guesses."]],
+    prepareLabel:"Before play", ageGuidanceTitle:"Age guidance", ageBonusLabel:"Age guidance", stepsTitle:"Steps", safetyNoteTitle:"Safety note", aboutTitle:"About this game", skillsTitle:"What it develops", startGame:"Start game", shareCopied:"Game information copied.", shareUnavailable:"Sharing is unavailable here.",
+    toolTitles:{storyWords:"Story word generator",magicWord:"Magic word",forbiddenWords:"Forbidden word pair",letter:"Letter picker",timer:"One-minute timer",sculpture:"Sculpture idea"}, toolActions:{storyWords:"Generate 3 words",magicWord:"Generate a word",forbiddenWords:"Generate a pair",letter:"Pick a letter",sculpture:"Suggest a shape"}, toolStart:"Start", toolPause:"Pause", toolReset:"Reset", toolTimeUp:"One minute is up. Switch turns or finish the round.", toolWordLabel:"Word", toolForbiddenLabel:"Forbidden word", toolLetterLabel:"Letter",
+    details:"What's the Fun?", categorySummary:()=>"", exampleTitle:"Try this example", parentTipTitle:"Parent tip", closeDetails:"Back to games", demoTitle:"How to play", demoPlay:"Play", demoPause:"Pause", demoSteps:[["Turn away","The observer turns around while the group chooses a leader."],["Copy the leader","Everyone copies the leader’s slow movement."],["Guess who leads","The observer turns back and guesses."]],
     feedbackLabel:"Send a comment", feedbackHint:"Your email app will open with the comment ready to send.", feedbackButton:"Prepare email", feedbackRequired:"Write a comment first.", feedbackSubject:"A comment about Play Picks"
   },
   sr: {
     pageTitle:"Naše igre", brand:"Naše igre", description:"Pronađite dečje igre bez ekrana za svaki trenutak.", home:"Početna stranica Naše igre", language:"Jezik",
-    nav:["Za vas","Istraži","Popularno","Sačuvano"], profile:"Profil", hero:"Pronađite njihovu novu <span>omiljenu igru.</span>",
-    heroCopy:"Odgovorite na nekoliko pitanja i pronađite jednostavnu igru koja odgovara trenutku.", progress:"Napredak izbora", resultsEye:"Predlozi za igru",
+    nav:["Za vas","Istraži","Popularno","Sačuvano"], profile:"Profil", hero:"Pronađite ideju za <span>igru bez ekrana.</span>",
+    heroCopy:"Izaberite ideju, odložite telefon i igrajte se zajedno uživo.", progress:"Napredak izbora", resultsEye:"Predlozi za igru",
     ready:"Predlozi igara za vas", popular:"Popularno", saved:"Sačuvane igre", edit:"Promeni filtere", step:(a,b)=>`Korak ${a} od ${b}`,
     next:"Nastavi", show:"Prikaži", back:"Nazad", matches:"",
     collectionSummary:{popular:"Izdvojene ideje za sledeću igru.",saved:"Igre koje ste sačuvali, spremne kad vam zatrebaju."},
@@ -58,16 +59,17 @@ const copy = {
     place:{either:"Unutra ili napolju",indoors:"Unutra",outdoors:"Napolju",travel:"U pokretu"}, ages:(a,b)=>`Uzrast ${a}–${b}`, min:"min", image:t=>`Deca igraju igru ${t}`,
     noProfile:"Profil",
     findGame:"Pronađi igru",
-    trust:["✓ Ideje bez ekrana","✓ Uzrast 3–12","✓ Za svaki dan"], visualTitle:"Spremni za igru?", visualCopy:"Jednostavne ideje za svaki dan",
-    dailyLabel:"DANAŠNJA IGRA", dailyTitle:"Pet minuta povezivanja", dailyCopy:"I kratka igra se računa. Nekoliko posvećenih minuta može običnu pauzu pretvoriti u lepu porodičnu uspomenu.",
-    benefitOneTitle:"Podstiče razvoj", benefitOneCopy:"Otkrijte ideje za kretanje, kreativnost, saradnju i miran fokus.",
-    benefitTwoTitle:"Manje umora od odlučivanja", benefitTwoCopy:"Šest lakih izbora pretvara „šta ćemo sada?“ u koristan izbor igara.",
-    benefitThreeTitle:"Vreme zajedno koje se pamti", benefitThreeCopy:"Male zajedničke igre i razgovori mogu postati lepe uspomene koje dete pamti.",
+    trust:["✓ Uzrast 3–12"], visualTitle:"Spremni za igru?", visualCopy:"Jednostavne ideje za svaki dan",
+    dailyLabel:"DANAŠNJA IGRA", dailyTitle:"Pet minuta povezivanja", dailyCopy:"I kratka igra se računa. Nekoliko posvećenih minuta može običnu pauzu pretvoriti u lepu porodičnu uspomenu.", dailyButtonLabel:"Pogledaj ideju za igru →",
+    benefitOneTitle:"Rastemo kroz igru", benefitOneCopy:"Otkrijte igre koje podstiču kretanje, maštu, saradnju i koncentraciju.",
+    benefitTwoTitle:"Lakši izbor", benefitTwoCopy:"Šest jednostavnih izbora pomaže vam da lako pronađete šta ćete raditi zajedno.",
+    benefitThreeTitle:"Mali trenuci, velike uspomene", benefitThreeCopy:"Kroz igru i razgovor stvarate trenutke koje ćete oboje pamtiti.",
     safetyTitle:"Napomena za bezbednu i veselu igru", safetyCopy:"Budite u blizini i prilagodite igru detetu i prostoru.", safetyNoteAction:"Detalji", safetyDetailsTitle:"Bezbedna igra", safetyDialogDone:"Zatvori", safetyDetails:[["Budite u blizini","Nadgledajte igru i prilagodite aktivnost uzrastu, sigurnosti i mogućnostima deteta."],["Pripremite prostor","Oslobodite pod, izbegavajte klizave ili prepune prostore i držite se dalje od puta, stepenica i nameštaja za penjanje."],["Proverite materijale","Koristite čiste materijale primerene uzrastu. Sitne delove, oštre predmete i pocepane delove balona držite dalje od male dece; mirise nemojte probati."],["Igra je dobrovoljna","Dete može da napravi pauzu, preskoči potez ili prekine igru ako je umorno ili mu je neprijatno. Nije potrebno takmičenje ni završavanje svakog izazova."]],
     liked:"Sačuvano u profilu ♥", unliked:"Uklonjeno iz sačuvanih igara", saveAction:"Sačuvaj", savedAction:"Sačuvano",
     momentTitle:"Situacije", skillTitle:"Veštine",
-    prepareLabel:"Priprema", ageGuidanceTitle:"Uzrasna napomena", ageBonusLabel:"Prilagođavanje uzrastu", stepsTitle:"Koraci", safetyNoteTitle:"Bezbednosna napomena", aboutTitle:"O igri", skillsTitle:"Šta razvija?", startGame:"Pokreni igru", shareCopied:"Detalji igre su kopirani.", shareUnavailable:"Deljenje nije dostupno u ovom pregledaču.",
-    details:"Detalji", categorySummary:()=>"", exampleTitle:"Primer", parentTipTitle:"Bonus ideja", closeDetails:"Nazad na igre", demoTitle:"Kako se igra", demoPlay:"Pusti", demoPause:"Pauziraj", demoSteps:[["Okreni se","Posmatrač se okreće dok grupa bira vođu."],["Prati vođu","Svi oponašaju spori pokret vođe."],["Pogodi ko vodi","Posmatrač se vrati i pogađa."]],
+    prepareLabel:"Priprema", ageGuidanceTitle:"Uzrasna napomena", ageBonusLabel:"Prilagođavanje uzrastu", stepsTitle:"Koraci", safetyNoteTitle:"Bezbednosna napomena", aboutTitle:"O igri", skillsTitle:"Šta razvija?", startGame:"Pokreni igru", shareCopied:"Informacije o igri su kopirane.", shareUnavailable:"Deljenje nije dostupno u ovom pregledaču.",
+    toolTitles:{storyWords:"Generator reči za priču",magicWord:"Čarobna reč",forbiddenWords:"Pojam i zabranjena reč",letter:"Birač slova",timer:"Tajmer od 1 minuta",sculpture:"Ideja za skulpturu"}, toolActions:{storyWords:"Izaberi 3 reči",magicWord:"Izaberi reč",forbiddenWords:"Izaberi par reči",letter:"Izaberi slovo",sculpture:"Predloži oblik"}, toolStart:"Pokreni", toolPause:"Pauziraj", toolReset:"Vrati na početak", toolTimeUp:"Minut je prošao. Zamenite uloge ili završite krug.", toolWordLabel:"Pojam", toolForbiddenLabel:"Zabranjena reč", toolLetterLabel:"Slovo",
+    details:"Zavirimo!", categorySummary:()=>"", exampleTitle:"Primer", parentTipTitle:"Bonus ideja", closeDetails:"Nazad na igre", demoTitle:"Kako se igra", demoPlay:"Pusti", demoPause:"Pauziraj", demoSteps:[["Okreni se","Posmatrač se okreće dok grupa bira vođu."],["Prati vođu","Svi oponašaju spori pokret vođe."],["Pogodi ko vodi","Posmatrač se vrati i pogađa."]],
     feedbackLabel:"Pošaljite komentar", feedbackHint:"Otvoriće se e-pošta sa pripremljenim komentarom.", feedbackButton:"Pripremi e-poštu", feedbackRequired:"Prvo napišite komentar.", feedbackSubject:"Komentar o aplikaciji Naše igre"
   }
 };
@@ -114,62 +116,62 @@ const gameIdeas = [
 ["Make a Goal","Napravimo gol","On flat, clear ground, mark a small goal with two short sticks or stones that will not roll. Take turns gently rolling a soft ball through it.","Na ravnom, slobodnom prostoru označite mali gol kratkim grančicama ili kamenovima koji se ne kotrljaju. Naizmenično nežno kotrljajte mekanu loptu kroz gol.","ball"],
 ["Sound Orchestra","Orkestar zvukova","Assign each player a sound and conduct a group performance.","Dodelite svakom igraču zvuk i dirigujte grupnim nastupom.","story"],
 ["Forbidden Word","Zabranjena reč","Describe a familiar word without saying it or its forbidden clue word while the others guess.","Opišite poznatu reč bez izgovaranja njenog naziva ili povezane zabranjene reči, dok ostali pogađaju.","story"],
-["Monster Steps","Koraci čudovišta","Invent giant, tiny and wobbly monster walks.","Osmislite džinovske, sićušne i klimave korake čudovišta.","dance"],
-["Memory Tray","Poslužavnik pamćenja","Study several objects, hide one and identify what changed.","Pogledajte nekoliko predmeta, sakrijte jedan i pogodite šta se promenilo.","search"],
+["Sardines","Sardine (obrnuta žmurka)","One child hides while the others search, then everyone joins the hiding place.","Jedno dete se sakrije, a ostali ga traže; ko ga pronađe, tiho mu se pridruži.","search"],
+["Memory Tray","Poslužavnik pamćenja","Observe familiar objects, remove one to guess what is missing, or rearrange them for a harder round.","Posmatrajte poznate predmete, sklonite jedan i pogodite šta nedostaje ili ih premestite za teži krug.","search"],
 ["Bridge Builders","Graditelji mosta","Span a small gap between two sturdy supports with folded paper, cardboard strips or craft sticks. Test the bridge with a small toy and add one piece at a time.","Prebacite presavijeni papir, trake kartona ili drvene štapiće preko malog razmaka između dva stabilna oslonca. Ispitajte most malom igračkom i dodajte po jedan deo.","build"],
 ["Compliment Ball","Lopta lepih reči","Pass a soft ball gently around the group. Whoever catches it shares one specific, kind thing someone in the group did.","Nežno dodajte mekanu loptu u krugu. Ko je uhvati, kaže jednu konkretnu lepu stvar koju je neko iz grupe uradio.","ball"],
 ["Weather Reporter","Vremenski reporter","Present today’s weather with dramatic gestures and predictions.","Predstavite današnje vreme dramatičnim pokretima i prognozom.","pretend"],
-["Dot-to-Doodle","Od tačke do crteža","Place random dots, connect them and turn the shape into art.","Postavite nasumične tačke, spojite ih i pretvorite oblik u crtež.","draw"],
-["Quiet Detective","Tihi detektiv","Notice five tiny details others may have missed.","Primetite pet sitnih detalja koje su drugi možda propustili.","search"],
+["Dot-to-Doodle","Od tačke do crteža","Place dots to outline a recognizable picture, connect them and add details.","Postavite tačke u oblik prepoznatljivog crteža, spojite ih i dodajte detalje.","draw"],
+["Quiet Detective","Tihi detektiv","Observe one small area quietly and take turns naming new details without repeating them.","U tišini posmatrajte isti deo prostorije i naizmenično navodite nove detalje bez ponavljanja.","search"],
 ["Obstacle Mission","Misija sa preprekama","Crawl, step and weave through a safe homemade course.","Puzite, koračajte i provlačite se kroz bezbedan kućni poligon.","run"],
-["Story Dice Without Dice","Priča bez kockica","Point to three nearby objects and make them story heroes.","Izaberite tri predmeta u blizini i učinite ih junacima priče.","story"],
+["Switch Signals","Obrnuti signali","React to one clap and two claps, then switch the meanings when the leader calls change.","Reagujte na jedan i dva pljeska, a zatim zamenite značenja kada vođa kaže promena.","dance"],
 ["Pebble Patterns","Šare od kamenčića","Arrange stones in repeating patterns, spirals or pictures.","Složite kamenčiće u ponavljajuće šare, spirale ili slike.","nature"],
 ["Copycat Clap","Kopiraj pljesak","Create clap rhythms that others echo and extend.","Napravite ritam pljeskanja koji ostali ponavljaju i produžavaju.","dance"],
-["Paper Costume","Kostim od papira","Design wearable paper accessories for an imaginary character.","Napravite papirne dodatke za kostim zamišljenog junaka.","build"],
+["Hero Costume Design","Kostim za junaka","Draw a costume with three useful parts for an imaginary hero's adventure.","Nacrtajte tri korisna dela kostima za avanturu zamišljenog junaka.","draw"],
 ["Alphabet Hunt","Lov na slova","Find objects beginning with as many letters as possible.","Pronađite predmete koji počinju na što više različitih slova.","search"],
-["Emotion Charades","Pantomima osećanja","Act out an emotion and discuss clues that revealed it.","Odglumite osećanje i razgovarajte o znacima koji su ga otkrili.","pretend"],
-["Chalk River","Reka od krede","Draw a winding river path and jump between its banks.","Nacrtajte krivudavu reku i skačite između njenih obala.","run"],
+["Emotion Charades","Pantomima osećanja","Silently act out a feeling while others guess, then switch roles.","Bez reči odglumite osećanje dok ostali pogađaju, pa zamenite uloge.","pretend"],
+["Chalk River","Reka od krede","Cross a chalk river together by walking between large stepping-stone islands.","Zajedno pređite reku od krede hodajući između velikih ostrva.","balance"],
 ["Pass the Sketch","Prosledi crtež","Each player adds one detail before passing the picture.","Svaki igrač dodaje jedan detalj pre nego što prosledi crtež.","draw"],
-["Tiny Garden Design","Dizajn male bašte","Plan a miniature garden using leaves, sticks and stones.","Osmislite malu baštu od lišća, grančica i kamenčića.","nature"],
+["Tiny Garden Design","Dizajn male bašte","Create a safe, imaginative spot for a tiny garden visitor using found natural materials.","Napravite siguran, maštovit kutak za malog gosta u bašti koristeći pronađene prirodne materijale.","nature"],
 ["Hot and Cold Hunt","Toplo-hladno potraga","Guide a seeker toward a hidden object using hot and cold clues.","Vodite tragača ka skrivenom predmetu uz tragove toplo i hladno.","search"],
 ["Balloon Keep-Up","Balon ne sme pasti","Keep a light balloon in the air using gentle taps.","Održavajte lagani balon u vazduhu nežnim udarcima.","ball"],
 ["Living Room Camp","Kamp u dnevnoj sobi","Build a cozy den and invent a campfire story.","Napravite udobnu kućicu i osmislite priču uz zamišljenu vatru.","build"],
 ["Slow-Motion Race","Usporena trka","Race to the finish while moving as slowly as possible.","Trkajte se do cilja krećući se što sporije.","balance"],
 ["Rhythm Leader","Vođa ritma","Lead a repeating body-percussion pattern for the group.","Vodite ponavljajući ritam pljeskanjem i tapkanjem po telu.","dance"],
-["What Changed","Šta se promenilo","Study a player, turn away and spot one changed detail.","Pogledajte igrača, okrenite se i otkrijte jedan promenjen detalj.","search"],
-["Paper Puppet Show","Predstava papirnih lutaka","Create simple paper characters and perform a tiny play.","Napravite papirne junake i izvedite kratku predstavu.","story"],
-["Cone-Free Slalom","Slalom bez čunjeva","Use safe objects as markers and weave through the course.","Koristite bezbedne predmete kao oznake i vijugajte kroz stazu.","run"],
-["Seed and Tree","Seme i drvo","Grow from a tiny curled seed into a swaying tree.","Izrastite iz malog sklupčanog semena u drvo koje se njiše.","nature"],
-["One-Line Creature","Biće iz jedne linije","Draw a creature using one continuous looping line.","Nacrtajte biće jednom neprekidnom vijugavom linijom.","draw"],
-["Museum Guide","Muzejski vodič","Choose household treasures and give visitors a guided tour.","Izaberite kućna blaga i vodite posetioce kroz izložbu.","pretend"],
-["Balance Delivery","Dostava u ravnoteži","Carry a light object on a tray through a simple route.","Prenesite lagan predmet na poslužavniku kroz jednostavnu stazu.","balance"],
+["What Changed","Šta se promenilo","One player remembers the group’s pose, turns away, and guesses the one detail the others change.","Jedan igrač zapamti pozu grupe i pogađa jedan detalj koji ostali promene.","search"],
+["Paper Puppet Show","Predstava papirnih lutaka","Each player draws a paper character, then the group performs a short story in which the characters solve a simple problem.","Svako nacrta papirnog junaka, a zatim zajedno odigrate kratku priču u kojoj likovi rešavaju jednostavan problem.","story"],
+["Zigzag Delivery","Cik-cak dostava","Walk a zigzag delivery course around three plastic cups, first empty-handed and then carrying a soft toy.","Prođite cik-cak stazu oko tri plastične čaše, prvo praznih ruku, a zatim noseći plišanu igračku.","run"],
+["Chain Reaction","Lančana reakcija","Set off a chain of at least eight dominoes that nudges a lightweight foam ball across a finish line.","Pokrenite lanac od najmanje osam domina koji pogura laganu penastu loptu preko ciljne linije.","build"],
+["One-Line Creature","Biće iz jedne linije","Draw a creature in one continuous line, then add its walking path and act out its gait.","Nacrtajte biće jednom neprekidnom linijom, dodajte mu putanju i odglumite njegov hod.","draw"],
+["Museum Guide","Muzejski vodič","Display three safe objects. The guide introduces what each is used for while the visitor asks questions, then they switch roles.","Izložite tri bezbedna predmeta. Vodič objašnjava čemu služe, a posetilac postavlja pitanja; zatim zamene uloge.","pretend"],
+["Balance Delivery","Dostava u ravnoteži","Carry a small soft ball in a large spoon from the start tape to the finish without steadying it by hand.","Prenesite malu mekanu lopticu u većoj kašiki od startne do ciljne trake, bez pridržavanja rukom.","balance"],
 ["Category Countdown","Odbrojavanje pojmova","Name five things in a category before time runs out.","Nabrojte pet stvari iz kategorije pre isteka vremena.","story"],
 ["Spider Web Route","Staza paukove mreže","Step over and under safe lines arranged like a web.","Prekoračite i provucite se ispod bezbednih linija poput mreže.","run"],
 ["Nature Bingo","Bingo iz prirode","Look for a bird, a smooth stone, a leaf and a tiny sound.","Potražite pticu, gladak kamen, list i tihi zvuk.","nature"],
 ["Bounce and Catch","Odbij i uhvati","Bounce a ball once and add a movement before catching.","Odbijte loptu jednom i dodajte pokret pre hvatanja.","ball"],
 ["Dance Traffic Lights","Plesni semafor","Move on green, slowly on yellow and freeze on red.","Krećite se na zeleno, sporo na žuto i stanite na crveno.","dance"],
 ["Box Invention","Izum od kutije","Transform a box into a useful imaginary machine.","Pretvorite kutiju u korisnu zamišljenu mašinu.","build"],
-["Scent Explorer","Istraživač mirisa","Safely compare familiar scents and describe their memories.","Bezbedno uporedite poznate mirise i opišite uspomene.","search"],
-["Superhero Training","Trening superheroja","Complete kind, strong and clever superhero missions.","Izvršite ljubazne, snažne i pametne superherojske misije.","pretend"],
-["Symmetry Art","Simetrična umetnost","Draw half a picture and complete its matching side.","Nacrtajte polovinu slike i dovršite odgovarajuću stranu.","draw"],
-["Jumping Numbers","Brojevi u skoku","Place number markers and jump through a called sequence.","Postavite brojeve i skačite kroz izgovoreni niz.","run"],
+["Scent Explorer","Istraživač mirisa","Compare two mild familiar scents, describe how they differ and what each reminds you of.","Uporedite dva blaga, poznata mirisa, opišite razlike i na šta vas svaki podseća.","search"],
+["Superhero Training","Trening superheroja","Complete a rescue mission by listening to a stuffed friend and helping them reach a safe base.","Izvršite spasilačku misiju: saslušajte plišanog prijatelja i pomozite mu da stigne do sigurne baze.","pretend"],
+["Symmetry Art","Simetrična umetnost","An adult draws half a picture beside a center line; the child copies its mirror image on the other half.","Odrasli nacrta polovinu slike uz srednju liniju, a dete je preslikava na drugu polovinu.","draw"],
+["Jumping Numbers","Brojevi u skoku","An adult calls a number; the child makes one small jump to the matching card and says the number aloud.","Odrasli izgovara broj, a dete jednim malim skokom dolazi do odgovarajuće kartice i glasno kaže broj.","run"],
 ["Twig Letters","Slova od grančica","Form letters or short words using fallen twigs.","Napravite slova ili kratke reči od opalih grančica.","nature"],
 ["Corner Goals","Golovi u uglovima","Roll a ball toward different corner goals for points.","Kotrljajte loptu ka golovima u uglovima za poene.","ball"],
 ["Human Sculpture","Ljudska skulptura","Work together to form a named object with body poses.","Zajedno telima napravite oblik zadatog predmeta.","balance"],
 ["Sound Map","Mapa zvukova","Sit quietly and draw where each surrounding sound comes from.","Sedite mirno i nacrtajte odakle dolazi svaki zvuk.","draw"],
-["Kitchen Band","Kuhinjski bend","Use safe utensils as instruments for a family rhythm.","Koristite bezbedan pribor kao instrumente za porodični ritam.","dance"],
+["Kitchen Band","Kuhinjski bend","A conductor sets a short rhythm; players repeat it by gently tapping wooden or plastic items on unbreakable containers.","Dirigent zada kratak ritam, a svirači ga ponavljaju nežnim kuckanjem drvenim ili plastičnim predmetima po nelomljivim posudama.","dance"],
 ["Indoor Picnic Quest","Potraga za kućni piknik","Gather pretend picnic items through a clue trail.","Sakupite zamišljene stvari za piknik prateći tragove.","search"],
-["Build a Creature","Napravi biće","Combine safe objects into a creature and explain its powers.","Spojite bezbedne predmete u biće i objasnite njegove moći.","build"],
-["Captain Says","Kapetan kaže","Follow commands only when they begin with the captain’s phrase.","Izvršite komande samo kada počnu kapetanovom rečenicom.","pretend"],
-["Hopscotch Remix","Nove školice","Create a hopscotch path with special actions in each square.","Napravite školice sa posebnim radnjama u svakom polju.","run"],
-["Leaf Shadow Trace","Crtanje senke lista","Place a leaf in sunlight and trace its changing shadow.","Postavite list na sunce i pratite njegovu promenljivu senku.","nature"],
+["Build a Creature","Napravi biće","Build a creature from safe household objects, name it and explain how its parts help it do something special.","Sastavite biće od bezbednih kućnih predmeta, dajte mu ime i objasnite kako mu njegovi delovi pomažu.","build"],
+["Captain Says","Kapetan kaže","Follow commands only when they begin with ‘Captain says.’ If those words are missing, stay still.","Uradite komandu samo ako počinje rečima „Kapetan kaže“. Ako ih nema, ostanite mirni.","pretend"],
+["Hopscotch Remix","Nove školice","Draw or tape a numbered six-square hopscotch path, add actions to marked squares and hop through in order.","Nacrtajte ili trakom označite numerisanu putanju školica sa šest polja; skačite redom i uradite zadatu radnju na označenom polju.","run"],
+["Leaf Shadow Trace","Crtanje senke lista","Trace a fallen leaf’s shadow now and again later to compare how its position and length change.","Ocrtajte senku opalog lista sada i kasnije da biste uporedili promenu položaja i dužine.","nature"],
 ["Mood Music Moves","Pokreti uz raspoloženje","Move differently to happy, calm and dramatic rhythms.","Krećite se drugačije uz vesele, mirne i dramatične ritmove.","dance"],
 ["Tallest Tiny Tower","Najviša mala kula","Build a tall tower from the smallest safe objects available.","Napravite visoku kulu od najmanjih dostupnih bezbednih predmeta.","build"],
-["Guess My Rule","Pogodi moje pravilo","Sort objects by a secret rule for others to discover.","Razvrstajte predmete po tajnom pravilu koje ostali otkrivaju.","search"],
+["Guess My Rule","Pogodi moje pravilo","One player secretly sorts objects by a rule while others analyze the objects and arrangement to guess it.","Jedan igrač tajno razvrsta predmete po pravilu, a ostali analiziraju predmete i raspored da bi ga otkrili.","search"],
 ["Postcard Adventure","Avantura na razglednici","Draw a place and write one sentence from an imaginary trip.","Nacrtajte mesto i napišite rečenicu sa zamišljenog putovanja.","draw"],
 ["Stepping-Stone Story","Priča preko kamenja","Add one story sentence on every safe stepping spot.","Dodajte rečenicu priče na svakoj bezbednoj tački staze.","story"],
-["Wind Race","Trka na vetru","Race lightweight leaves or paper pieces using only breath.","Trkajte lagano lišće ili papiriće koristeći samo dah.","nature"],
-["Circle Keep-Away","Čuvaj krug","Pass a ball around a circle before the middle player reaches it.","Dodajte loptu u krugu pre nego što je igrač u sredini dohvati.","ball"],
+["Wind Race","Trka na vetru","Each player gets their own lightweight leaf or paper scrap and lane, then gently blows it from start to finish without using hands.","Svaki igrač dobija svoj lagani list ili papirić i stazu, pa ga nežno duva od starta do cilja bez korišćenja ruku.","nature"],
+["Circle Keep-Away","Čuvaj krug","Players gently roll a soft ball along the floor around a circle while one player in the middle tries to stop it by hand; no kicking or throwing.","Igrači nežno kotrljaju mekanu loptu po podu u krugu, dok jedan igrač u sredini pokušava da je zaustavi rukom; nema šutiranja ni bacanja.","ball"],
 ["Final Pose Challenge","Izazov završne poze","Cross the space with a dance and finish in a themed pose.","Pređite prostor plesom i završite u zadatoj pozi.","dance"],
 ["Colorful Steps","Šareni koraci","Follow a path of colors and invent a movement for each one.","Pratite stazu boja i osmislite pokret za svaku boju.","run"],
 ["Treasure Guards","Čuvari blaga","Move slowly around a small toy treasure while music plays. When it stops, freeze in a guard pose and choose a new pose for the next round.","Polako se krećite oko male igračke koja predstavlja blago dok muzika svira. Kada stane, ukočite se u pozi čuvara, pa u sledećem krugu izaberite novu.","pretend"],
@@ -182,12 +184,12 @@ const gameIdeas = [
 ["Crawl Like a Comet","Puzi kao kometa","Travel low and fast, then finish with a bright star pose.","Krećite se nisko i brzo, a zatim završite pozom sjajne zvezde.","run"],
 ["Invent a Creature","Izmisli biće","Take turns adding one feature to an imaginary creature—its appearance, movement, sound or favorite food—then give it a name.","Naizmenično dodajte po jednu osobinu zamišljenom biću — izgled, pokret, zvuk ili omiljenu hranu — pa mu dajte ime.","pretend"],
 ["Question Train","Voz pitanja","Take turns asking simple questions about an imaginary train trip. Each answer chooses the next station, and the group decides where the train goes next.","Zamislite zajedničko putovanje vozom i naizmenično postavljajte jednostavna pitanja. Svaki odgovor određuje sledeću stanicu, a grupa bira kuda voz ide dalje.","story"],
-["Pocket Narrator","Džepni pripovedač","Choose three small objects and give each one a voice.","Izaberite tri mala predmeta i dajte svakom svoj glas.","story"],
-["Rhyme Relay","Rimovana štafeta","Build a silly rhyme chain one word at a time.","Gradite smešan lanac rima reč po reč.","story"],
-["Sound Story","Priča od zvukova","Tell a story using a different sound for every character.","Ispričajte priču koristeći drugi zvuk za svakog lika.","story"],
+["Pocket Narrator","Džepni pripovedač","Three objects become characters in one story. Speak as an object, let others guess and continue the story.","Tri predmeta postaju likovi u jednoj priči. Govorite kao predmet, pustite ostale da pogađaju i nastavite priču.","story"],
+["Rhyme Relay","Rimovana štafeta","Build a chain of rhyming words, one word at a time.","Gradite lanac rimovanih reči, reč po reč.","story"],
+["Sound Story","Priča od zvukova","Tell a short story together; make each character’s agreed sound when they appear.","Zajedno pričajte kratku priču; napravite dogovoreni zvuk svakog lika kada se pomene.","story"],
 ["Question Detective","Detektiv pitanja","Ask yes-or-no questions to discover the secret object.","Postavljajte pitanja sa da ili ne da otkrijete tajni predmet.","story"],
-["Kindness News","Vesti dobrote","Report one kind thing someone did as if it were headline news.","Izvestite o lepom postupku kao da je glavna vest.","story"],
-["Opposite Day Tale","Priča suprotnosti","Create a story where everything happens in an opposite way.","Napravite priču u kojoj se sve dešava suprotno.","story"],
+["Kindness News","Vesti dobrote","Turn a kind act into a short news story with a headline and interview.","Pretvorite lep postupak u kratku vest sa naslovom i intervjuom.","story"],
+["Opposite Day Tale","Priča suprotnosti","Continue one story by reversing details in each new sentence.","Nastavite jednu priču tako što ćete u svakoj novoj rečenici preokretati detalje.","story"],
 ["Soundtrack Story","Priča sa muzikom","Add a body sound whenever the story reaches an exciting moment.","Dodajte zvuk telom kad god priča stigne do uzbudljivog dela.","story"],
 ["Magic Word Story","Priča čarobne reči","Choose a word that changes the story every time it is spoken.","Izaberite reč koja menja priču svaki put kada se izgovori.","story"],
 ["Secret Shape Sketch","Crtež tajnog oblika","Hide a shape inside a picture and let others find it.","Sakrijte oblik u crtežu i pustite druge da ga pronađu.","draw"],
@@ -196,17 +198,17 @@ const gameIdeas = [
 ["Round-Robin Doodle","Kružni crtež","Pass a drawing around and add one surprising detail each turn.","Prosleđujte crtež i dodajte po jedan detalj iznenađenja.","draw"],
 ["Shape Family","Porodica oblika","Give geometric shapes names, feelings and a family story.","Dajte geometrijskim oblicima imena, osećanja i porodičnu priču.","draw"],
 ["Folded Face","Presavijeno lice","Fold paper, draw one feature, unfold and complete the funny face.","Presavijte papir, nacrtajte detalj, otvorite ga i dovršite lice.","draw"],
-["Postcard Puzzle","Sastavi razglednicu","Draw a simple postcard scene on paper. An adult cuts it into four large pieces; mix them up and let a partner put the picture back together.","Nacrtajte jednostavan prizor na papiru. Odrasla osoba ga iseče na četiri velika dela; pomešajte ih i neka partner ponovo sastavi sliku.","draw"],
+["Postcard Puzzle","Sastavi razglednicu","Draw a postcard scene on paper. An adult cuts it into at least six pieces; mix them up and let a partner put the picture back together.","Nacrtajte prizor za razglednicu. Odrasla osoba ga iseče na najmanje šest delova; pomešajte ih i neka partner ponovo sastavi sliku.","draw"],
 ["Pattern Portrait","Portret sa šarama","Make a portrait where hair, clothes and background use patterns.","Napravite portret sa šarama u kosi, odeći i pozadini.","draw"],
 ["Invisible Ink Map","Mapa nevidljivog mastila","Draw a secret route with symbols and explain how to decode it.","Nacrtajte tajnu rutu simbolima i objasnite kako se čita.","draw"],
-["Draw the Feeling","Nacrtaj osećanje","Use lines and colors to show a feeling without drawing a face.","Prikažite osećanje linijama i bojama bez crtanja lica.","draw"],
+["Draw the Feeling","Nacrtaj osećanje","Choose a feeling such as joy, sadness or calm and show it with colors and lines, without drawing a face.","Izaberite osećanje, poput radosti, tuge ili mira, pa ga prikažite bojama i linijama bez crtanja lica.","draw"],
 ["Button Sorting Lab","Laboratorija dugmića","Sort safe buttons or objects in as many ways as possible.","Razvrstajte bezbedne dugmiće ili predmete na što više načina.","search"],
-["What Is Missing?","Šta nedostaje?","Look at a group of objects, hide one and identify the missing item.","Pogledajte grupu predmeta, sakrijte jedan i pronađite šta nedostaje.","search"],
+["What Is Missing?","Šta nedostaje?","Look at three to five familiar objects, cover them, remove one and guess what is missing. Then switch roles.","Pogledajte tri do pet poznatih predmeta, pokrijte ih, sklonite jedan i pogodite šta nedostaje. Zatim zamenite uloge.","search"],
 ["Clue Collector","Sakupljač tragova","Follow simple clues that lead to a safe hidden surprise.","Pratite jednostavne tragove do bezbednog skrivenog iznenađenja.","search"],
 ["Sound Source Hunt","Potraga za izvorom zvuka","Listen to a familiar sound and point toward where it comes from; keep your eyes open.","Slušajte poznati zvuk i pokažite odakle dolazi; oči ostaju otvorene.","search"],
 ["Odd One Out","Uljez u grupi","Find the object that does not belong and explain why.","Pronađite predmet koji ne pripada grupi i objasnite zašto.","search"],
-["Touch and Tell","Dodirni i opiši","Feel a safe object in a bag and describe it before looking.","Dodirnite bezbedan predmet u torbi i opišite ga pre gledanja.","search"],
-["Sequence Spotter","Uoči niz","Study a repeating arrangement and say what should come next.","Pogledajte niz koji se ponavlja i recite šta sledi.","search"],
+["Touch and Tell","Dodirni i opiši","Feel a hidden object in an opaque bag, describe it without naming it, and let the others guess what it is.","Opipajte predmet u neprozirnoj torbi, opišite ga bez imenovanja i pustite ostale da pogode šta je.","search"],
+["Sequence Spotter","Uoči niz","Study a repeating pattern of safe objects, predict what comes next and explain the rule.","Posmatrajte obrazac od bezbednih predmeta, predvidite šta sledi i objasnite pravilo.","search"],
 ["Room Scavenger List","Spisak sobne potrage","Find safe items that match a list of colors, shapes or textures.","Pronađite bezbedne predmete prema bojama, oblicima ili teksturama.","search"],
 ["Secret Path Finder","Pronađi tajnu stazu","Remember a short route and guide someone through it with clues.","Zapamtite kratku rutu i vodite nekoga tragovima.","search"],
 ["Five Things Fast","Pet stvari brzo","Name or find five items that fit the chosen clue before counting down.","Navedite ili pronađite pet predmeta pre odbrojavanja.","search"],
@@ -214,9 +216,9 @@ const gameIdeas = [
 ["Straw City","Grad od slamki","Connect safe straws or craft sticks into roads and buildings.","Spojite bezbedne slamčice ili štapiće u puteve i zgrade.","build"],
 ["Marshmallow Structures","Konstrukcije od mekanih kockica","Build a structure that balances three lightweight pieces.","Napravite konstrukciju koja drži tri lagana dela u ravnoteži.","build"],
 ["Bridge to the Toy","Most do igračke","Design a route that lets a small toy cross an imaginary river.","Osmislite put kojim mala igračka prelazi zamišljenu reku.","build"],
-["Cardboard Telescope","Kartonski teleskop","Decorate a cardboard tube and invent what it can discover.","Ukrasite kartonsku cev i izmislite šta ona otkriva.","build"],
+["Cardboard Telescope","Kartonski teleskop","Look at a safe object through a cardboard tube, notice three details and let a partner guess from your clues.","Kroz kartonsku cev posmatrajte bezbedan predmet, uočite tri detalja i pustite partnera da pogodi na osnovu tragova.","build"],
 ["Maze Builder","Pravimo lavirint","Build a maze from any safe items you have, then guide a toy from start to finish.","Od bezbednih predmeta koje imate napravite lavirint, pa provedite igračku od početka do cilja.","build"],
-["Balance Sculpture","Skulptura ravnoteže","Stack safe objects into a sculpture that leans but does not fall.","Složite bezbedne predmete u skulpturu koja se naginje ali ne pada.","build"],
+["Balance Sculpture","Skulptura ravnoteže","Build a low, stable sculpture on the floor using large, lightweight objects. Add one piece at a time and see how the base affects balance.","Na podu napravite nisku, stabilnu skulpturu od krupnih, laganih predmeta. Dodajte po jedan i pogledajte kako širina osnove utiče na ravnotežu.","build"],
 ["Tiny Shop","Mala prodavnica","Build a pretend shop and create signs, shelves and products.","Napravite zamišljenu prodavnicu sa natpisima, policama i proizvodima.","build"],
 ["Paper Playground","Igralište od papira","Design a paper playground with spaces for different games.","Osmislite igralište od papira sa prostorima za različite igre.","build"],
 ["Balloon Tap Circle","Krug dodira balona","Keep a balloon moving around the circle without holding it.","Održavajte balon u kretanju kroz krug bez zadržavanja.","ball"],
@@ -225,14 +227,14 @@ const gameIdeas = [
 ["Two-Bounce Catch","Hvatanje posle dva odskoka","Let the ball bounce twice before trying a careful catch.","Pustite loptu da odskoči dva puta pre pažljivog hvatanja.","ball"],
 ["Guess the Leader","Pogodi vođu","One player turns away while the group chooses a leader. The leader makes slow movements for everyone to copy. The player turns back toward the group and guesses who is leading.","Jedan igrač se okrene leđima dok grupa bira vođu. Vođa pravi spore pokrete koje svi oponašaju. Igrač se zatim okrene prema grupi i pogađa ko vodi.","pretend"],
 ["Balloon Volleyball","Odbojka balonom","Tap a balloon over a line and count cooperative hits.","Prebacujte balon preko linije i brojite zajedničke udarce.","ball"],
-["Partner Pass Pattern","Šablon dodavanja","Create a repeating pass pattern and see if the group remembers it.","Napravite šablon dodavanja i proverite da li ga grupa pamti.","ball"],
+["Partner Pass Pattern","Šablon dodavanja","Stand in a circle and create a route of gentle passes. Repeat the same order, then add one pass and see if everyone remembers the growing pattern.","Stanite u krug i napravite redosled blagih dodavanja. Ponovite isti redosled, pa dodajte jedno dodavanje i proverite da li grupa pamti ceo niz.","ball"],
 ["Rolling Ramps","Rampe za kotrljanje","Make a gentle ramp and compare how different balls travel.","Napravite blagu rampu i uporedite kretanje različitih lopti.","ball"],
 ["Circle Bounce","Odbijanje u krugu","Bounce a ball once before passing it to the next player.","Odbijte loptu jednom pre nego što je dodate sledećem igraču.","ball"],
 ["Target Story Toss","Bacanje priče u metu","Name a story detail whenever the ball lands in a target.","Recite detalj priče svaki put kada lopta pogodi metu.","ball"],
-["Leaf Line-Up","Poređaj lišće","Arrange fallen leaves from smallest to largest or lightest to darkest.","Poređajte opalo lišće od najmanjeg do najvećeg ili svetlog do tamnog.","nature"],
+["Leaf Line-Up","Poređaj lišće","Arrange four to six fallen leaves from smallest to largest, then explain the rule and try a new sorting clue.","Poređajte četiri do šest opalih listova od najmanjeg do najvećeg, objasnite pravilo i zatim pokušajte s novim kriterijumom.","nature"],
 ["Nature Number Hunt","Lov na brojeve u prirodi","Find natural groups that match called numbers.","Pronađite grupe iz prirode koje odgovaraju izgovorenim brojevima.","nature"],
 ["Stick Shadow Shapes","Oblici senki grančica","Use sticks and sunlight to create and guess shadow shapes.","Koristite grančice i sunce da napravite i pogodite oblike senki.","nature"],
-["Bird Sound Pause","Pauza za zvuke ptica","Listen quietly, then imitate one sound you noticed.","Slušajte tiho, pa oponašajte jedan zvuk koji ste čuli.","nature"],
+["Bird Sound Pause","Pauza za zvuke ptica","Pause outdoors to listen for a bird call, quietly imitate one sound, and let others describe what they heard.","Zastanite napolju, osluškujte cvrkut, tiho oponašajte jedan zvuk i opišite šta ste čuli.","nature"],
 ["Nature Color Wheel","Točak boja prirode","Collect fallen items to make a circular color wheel.","Sakupite otpale delove i napravite kružni točak boja.","nature"],
 ["Windy Ribbon Watch","Posmatranje vetra","Watch a ribbon or leaf and copy its movement with your body.","Posmatrajte traku ili list i oponašajte njegovo kretanje telom.","nature"],
 ["Mini Habitat","Malo stanište","Arrange natural loose parts into a pretend home for a tiny creature.","Složite prirodne delove u zamišljeni dom malog bića.","nature"],
@@ -241,24 +243,24 @@ const gameIdeas = [
 ["Sunrise Stretch Story","Priča uz istezanje","Stretch like parts of a landscape while telling a morning story.","Istežite se kao delovi pejzaža dok pričate jutarnju priču.","nature"],
 ["Mirror Animal","Životinjsko ogledalo","Copy a partner’s animal movement, then switch leaders.","Kopirajte pokrete životinje partnera, pa zamenite vođu.","dance"],
 ["Beat the Pause","Pobedi pauzu","Move to a steady beat and create a pose during every pause.","Krećite se uz ritam i zauzmite pozu tokom svake pauze.","dance"],
-["Body Letter Dance","Ples slova telom","Use your body to form letters while a partner guesses them.","Telom napravite slova koja partner pogađa.","dance"],
+["Body Letter Dance","Ples slova telom","Choose a short word and silently form each letter with your body while a partner guesses and writes it down.","Izaberite kratku reč i telom prikažite njena slova jedno po jedno, dok ih partner pogađa i zapisuje.","dance"],
 ["Slow Fast Switch","Sporo-brza promena","Switch between slow and fast movement when the leader signals.","Menjajte spore i brze pokrete na znak vođe.","dance"],
 ["Clap and Step","Pljesak i korak","Combine a clap and a step into a growing rhythm sequence.","Spojite pljesak i korak u ritam koji raste.","dance"],
 ["Rainbow Ribbon Dance","Ples šarenih traka","Dance with imaginary ribbons that trace different patterns.","Plešite sa zamišljenim trakama koje prave različite šare.","dance"],
-["Partner Shadow Dance","Ples senki u paru","One dancer leads while the other follows like a gentle shadow.","Jedan plesač vodi, a drugi ga prati kao nežna senka.","dance"],
+["Partner Shadow Dance","Ples senki u paru","Follow the leader along a slow, clear path, copying each move one beat later while keeping a safe gap.","Pratite vođu sporom, slobodnom putanjom i ponavljajte pokrete takt kasnije, uz bezbedan razmak.","dance"],
 ["Mood Statues","Statue raspoloženja","Make a statue for each feeling and explain the pose.","Napravite statuu za svako osećanje i objasnite pozu.","dance"],
 ["Direction Dance","Ples pravaca","Turn, step and reach in the direction called by the leader.","Okrenite se, zakoračite i pružite ruke u smeru vođe.","dance"],
 ["Celebration Choreo","Koreografija slavlja","Create a short group dance with a shared final move.","Napravite kratak grupni ples sa zajedničkim završnim pokretom.","dance"],
 ["Hide and Seek","Žmurke","One player counts slowly to ten while the others hide in an agreed safe area. The seeker finds everyone, then players switch roles.","Jedan igrač polako broji do deset dok se ostali sakrivaju u dogovorenom bezbednom prostoru. Tražilac ih pronalazi, pa menjaju uloge.","search"],
 ["Toy Doctor","Doktor za igračke","Give a toy a check-up and explain how to help it feel better.","Pregledajte igračku i objasnite kako da joj bude bolje.","pretend"],
 ["Restaurant Imagination","Restoran mašte","Run a restaurant with menus, orders and creative dishes.","Vodite restoran sa jelovnicima, porudžbinama i maštovitim jelima.","pretend"],
-["Post Office Play","Igra pošte","Sort pretend letters and deliver them to the right places.","Razvrstajte zamišljena pisma i dostavite ih na prava mesta.","pretend"],
+["Post Office Play","Igra pošte","Draw symbols on pretend letters and matching destinations, then sort and deliver each letter to the right place.","Nacrtajte simbole na pisma i podudarna odredišta, pa razvrstajte i dostavite svako pismo na pravo mesto.","pretend"],
 ["Space Mission Control","Kontrola svemirske misije","Count down, solve a mission problem and celebrate the landing.","Odbrojavajte, rešite problem misije i proslavite sletanje.","pretend"],
-["Helpful Inventor","Korisni pronalazač","Invent a tool that solves a small everyday problem.","Izmislite alat koji rešava mali svakodnevni problem.","pretend"],
+["Helpful Inventor","Korisni pronalazač","Describe an everyday problem in three clues, then invent and act out a tool that could solve it.","Opišite svakodnevni problem kroz tri traga, pa izmislite i odglumite alat koji bi ga rešio.","pretend"],
 ["Underwater Tour","Podvodni obilazak","Guide visitors through an imaginary ocean using movements and sounds.","Vodite posetioce kroz zamišljeni okean pokretima i zvucima.","pretend"],
-["Family Newsroom","Porodična redakcija","Create a friendly news show about today’s household events.","Napravite prijatne vesti o današnjim događajima kod kuće.","pretend"],
-["Time-Travel Guide","Vodič kroz vreme","Act as a guide showing a visitor one past or future moment.","Budite vodič koji posetiocu pokazuje trenutak iz prošlosti ili budućnosti.","pretend"],
-["Tiny Theatre","Malo pozorište","Choose roles, make a beginning and ending, then perform a short scene.","Izaberite uloge, osmislite početak i kraj i izvedite scenu.","pretend"],
+["Family Newsroom","Porodična redakcija","Take turns as reporter and guest: share or invent a cheerful headline, tell a short story and ask a friendly question.","Naizmenično budite reporter i gost: podelite ili izmislite vedar naslov, ispričajte kratku vest i postavite prijatno pitanje.","pretend"],
+["Time-Travel Guide","Vodič kroz vreme","Guide a visitor through a specific place in the past or future, describe what life is like and answer a question, then switch roles.","Vodič vodi posetioca na konkretno mesto u prošlosti ili budućnosti, opisuje kakav je tamo život i odgovara na pitanje, pa zamenite uloge.","pretend"],
+["Tiny Theatre","Malo pozorište","Choose two characters and one thing they want. Act out a short scene where a small problem appears and they solve it together, then switch roles and try a different ending.","Izaberite dva lika i jednu želju. Odglumite kratku scenu u kojoj se pojavi mali problem i zajedno ga rešavate, pa zamenite uloge i pokušajte drugačiji završetak.","pretend"],
 ["Quiet Cloud Count","Tiho brojanje oblaka","Watch the sky or imagine clouds and count slow breaths together.","Posmatrajte nebo ili zamišljajte oblake i zajedno brojite spore udaha.","nature"],
 ["Feather Focus","Pažnja na pero","Watch a feather or tissue float and describe its path.","Posmatrajte pero ili maramicu kako lebdi i opišite putanju.","nature"],
 ["Breathing Shapes","Oblici disanja","Trace a square or circle in the air while breathing slowly.","Pratite kvadrat ili krug u vazduhu uz sporo disanje.","nature"],
@@ -267,11 +269,11 @@ const gameIdeas = [
 ["Listening Minute","Minut slušanja","Sit comfortably and name the sounds you notice after one minute.","Udobno sedite i posle jednog minuta navedite zvuke koje čujete.","nature"],
 ["Tense and Relax","Stegni i opusti","Gently tense and relax different body parts like a robot.","Nežno stežite i opuštajte delove tela kao robot.","nature"],
 ["Quiet Pattern Tiles","Tihe šare","Make a repeating pattern with safe objects in complete silence.","Napravite ponavljajuću šaru od bezbednih predmeta u tišini.","nature"],
-["Gratitude Garden","Bašta zahvalnosti","Place imaginary flowers for things each player appreciates.","Postavite zamišljene cvetove za stvari na kojima je svako zahvalan.","nature"],
+["Gratitude Garden","Bašta zahvalnosti","Take turns sharing something good from the day and draw a flower for it.","Naizmenično podelite nešto lepo iz dana i nacrtajte cvet za to.","nature"],
 ["Breathing Buddy","Drug za disanje","Help a toy or partner match five slow, comfortable breaths.","Pomozite igrački ili partneru da prati pet sporih, prijatnih udaha.","nature"],
 ["Letter Clue Guess","Na slovo, na slovo","Choose a letter and category, give clues for a word that starts with it, and let others guess the word.","Izaberite slovo i kategoriju, dajte tragove za reč koja počinje tim slovom i neka je ostali pogode.","story"],
 ["Movement Commands","Komande pokreta","Follow one safe movement command at a time: make a star shape, crouch, lie on the floor or do one small jump. Pause between moves.","Pratite jednu bezbednu komandu za pokret: raširite se kao zvezda, čučnite, lezite na pod ili napravite mali skok. Pravite pauze između pokreta.","run"],
-["Don't Step on a Crack","Ne gazi pukotinu","On a quiet, even sidewalk with an adult, walk slowly without stepping on cracks. Stop if the path is crowded, uneven or near traffic.","Na mirnom, ravnom trotoaru, uz odraslu osobu, hodajte polako bez gaženja pukotina. Prekinite igru ako je put prometan, neravan ili blizu saobraćaja.","search"],
+["Don't Step on a Crack","Ne gazi pukotinu","With an adult, walk at a normal pace on an even sidewalk and avoid the seams between paving slabs. Do not jump.","Uz odraslu osobu hodajte uobičajenim korakom po ravnom trotoaru i izbegavajte spojne linije između ploča. Ne skačite.","search"],
 ["Guess Who I Am","Pogodi ko sam","One player thinks of a familiar person or story character. The others ask yes-or-no questions until they guess, then switch roles.","Jedan igrač zamisli poznatu osobu ili lik iz priče. Ostali postavljaju pitanja na koja se odgovara sa „da” ili „ne” dok ne pogode, pa menjaju uloge.","story"],
 ["One-Minute Challenge","Minutni izazov","Choose a simple task, set a one-minute timer and take turns seeing how many times you can do it. Keep it playful, not competitive.","Izaberite jednostavan zadatak, podesite tajmer na minut i naizmenično pratite koliko puta možete da ga uradite. Neka bude zabavno, bez takmičenja.","story"]
 ];
@@ -378,6 +380,8 @@ const parts = {
   kidReach:c=>illustratedChild(c,"reach"),
   kidCape:c=>illustratedChild(c,"reach",true),
   ball:c=>`<circle r="20" fill="#fff" stroke="${c}" stroke-width="5"/><path d="M-18-8q18 11 36 0M-18 8q18-11 36 0M0-20v40" fill="none" stroke="${c}" stroke-width="3.5"/>`,
+  domino:c=>`<rect x="-8" y="-24" width="16" height="48" rx="3" fill="#fff" stroke="${c}" stroke-width="4"/><circle cy="-11" r="3" fill="${c}"/><circle cy="11" r="3" fill="${c}"/>`,
+  ramp:c=>`<path d="M-32 20 24-10 32 20z" fill="${c}" opacity=".22"/><path d="M-32 20 24-10 32 20M-32 13 27-18" fill="none" stroke="${c}" stroke-width="4" stroke-linecap="round"/>`,
   balloon:c=>`<ellipse cy="-12" rx="16" ry="20" fill="${c}"/><path d="M0 8v24" fill="none" stroke="${c}" stroke-width="3"/>`,
   leaf:c=>`<g transform="rotate(-25)"><ellipse rx="21" ry="11" fill="${c}"/><path d="M-19 6 19-6" fill="none" stroke="#fff" stroke-width="3"/></g>`,
   stone:c=>`<ellipse rx="15" ry="10" fill="${c}" opacity=".85"/>`,
@@ -442,6 +446,7 @@ const parts = {
   ribbon:c=>`<path d="M-34-18q28-28 40 0t28 0M-34 0q28-28 40 0T34 0M-34 18q28-28 40 0T34 18" fill="none" stroke="${c}" stroke-width="5" stroke-linecap="round"/>`,
   arrows:c=>`<path d="M-29 0h53m-14-14L24 0 10 14M0 28V-25m-14 14L0-25l14 14" fill="none" stroke="${c}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>`,
   crack:c=>`<path d="m3-31-12 19 13 5-17 20 14-2-5 22 21-29-13 2 14-20-14 2z" fill="${c}"/>`,
+  pavers:c=>`<g stroke-linejoin="round" stroke-width="3"><rect x="-56" y="-35" width="53" height="32" rx="2" fill="#d9d6cb" stroke="#858b88"/><rect x="3" y="-35" width="53" height="32" rx="2" fill="#e4e0d5" stroke="#858b88"/><rect x="-56" y="3" width="34" height="32" rx="2" fill="#e4e0d5" stroke="#858b88"/><rect x="-18" y="3" width="36" height="32" rx="2" fill="#d9d6cb" stroke="#858b88"/><rect x="22" y="3" width="34" height="32" rx="2" fill="#e4e0d5" stroke="#858b88"/><path d="M0-33v29" fill="none" stroke="${c}" stroke-width="5" stroke-linecap="round" stroke-dasharray="3 4"/></g>`,
   book:c=>`<path d="M-3-24q-23-14-42-4v49q20-10 42 4zm6 0q23-14 42-4v49Q25 11 3 25z" fill="#fff" stroke="${c}" stroke-width="4"/><path d="M-34-12h21M-34 0h20M13-12h21M13 0h20" stroke="${c}" stroke-width="3"/>`,
   rocket:c=>`<path d="M0-33q21 17 18 41L0 24-18 8Q-21-16 0-33Z" fill="${c}"/><circle cy="-7" r="6" fill="#fff"/><path d="m-17 4-16 8 10 13 12-5m28-16 16 8-10 13-12-5M-8 24l-7 14 15-6 15 6-7-14" fill="${c}"/>`,
   gear:c=>`<circle r="17" fill="none" stroke="${c}" stroke-width="8"/><circle r="6" fill="${c}"/><path d="M0-31v8M0 23v8M-31 0h8M23 0h8M-22-22l6 6M16 16l6 6M22-22l-6 6M-16 16l-6 6" stroke="${c}" stroke-width="7" stroke-linecap="round"/>`,
@@ -492,7 +497,7 @@ const artRecipes = {
   "Make a Goal":[["goal",312,160,1.5],["kidRun",110,182,1.2],["ball",188,162,1.05]],
   "Sound Orchestra":[["note",222,96,1.3],["note",290,130,1],["note",352,92,1.2],["kid",118,182,1.2],["kid",332,182,1.2]],
   "Tape-Line Balance":[["tape",222,192,1.6],["kidReach",222,182,1.3],["steps",342,170,1.05]],
-  "Monster Steps":[["kidJump",152,182,1.5],["steps",302,158,1.6]],
+  "Sardines":[["kidSit",147,178,1],["kid",353,166,1.15],["tree",300,156,1.05]],
   "Memory Tray":[["cup",192,122,.95],["apple",250,120,.78],["star",306,120,.88],["tray",248,160,2]],
   "Bridge Builders":[["bridge",252,152,1.8],["box",118,172,1.1]],
   "Compliment Ball":[["heart",302,78,.9],["kid",118,182,1.3],["ball",228,112,1.05],["kid",352,182,1.3]],
@@ -500,10 +505,10 @@ const artRecipes = {
   "Dot-to-Doodle":[["paper",228,112,1.8],["dots",228,102,1.05],["pencil",342,150,1.3]],
   "Quiet Detective":[["magnifier",232,120,1.9],["kidSit",112,182,1.2],["star",352,88,.85]],
   "Obstacle Mission":[["cushion",128,182,1.1],["bridge",252,168,1.1],["kidJump",252,138,1],["tape",356,192,.65]],
-  "Story Dice Without Dice":[["bubble",250,68,1.1],["cup",142,162,1.05],["sock",232,152,.95],["apple",322,158,.95]],
+  "Switch Signals":[["kidDance",250,160,1.35],["note",180,82,1],["note",326,90,1]],
   "Pebble Patterns":[["stone",170,120,.95],["stone",232,120,.95],["stone",294,120,.95],["stone",140,164,1.15],["stone",202,164,1.15],["stone",264,164,1.15],["stone",326,164,1.15]],
   "Copycat Clap":[["note",252,66,1],["hands",182,132,1.5],["hands",305,132,1.2]],
-  "Paper Costume":[["kidCape",152,182,1.4],["paper",302,120,1.25],["crown",362,152,.95]],
+  "Hero Costume Design":[["kidCape",152,182,1.4],["paper",302,120,1.25],["crown",362,152,.95]],
   "Blindfold-Free Guide":[["bubble",232,72,1.05],["kid",158,182,1.3],["kid",292,182,1.3],["steps",372,166,.95]],
   "Alphabet Hunt":[["abc",248,122,1.6],["magnifier",120,142,1.2]],
   "Emotion Charades":[["mask",168,120,1.4],["mask",292,120,1.4],["heart",372,98,.8]],
@@ -517,8 +522,8 @@ const artRecipes = {
   "Rhythm Leader":[["note",362,88,.95],["kid",150,182,1.3],["hands",282,122,1.35]],
   "What Changed":[["question",232,82,1],["kid",158,182,1.3],["kid",302,182,1.3]],
   "Paper Puppet Show":[["bubble",252,58,.95],["puppet",192,142,1.55],["puppet",302,142,1.25]],
-  "Cone-Free Slalom":[["cup",148,166,1.05],["cup",250,166,1.05],["cup",352,166,1.05],["kidRun",198,182,1.2],["steps",302,186,.85]],
-  "Seed and Tree":[["stone",128,172,.95],["tree",248,172,1.25],["tree",352,166,1.6]],
+  "Zigzag Delivery":[["cup",148,166,1.05],["cup",250,166,1.05],["cup",352,166,1.05],["kidRun",198,182,1.2],["steps",302,186,.85]],
+  "Chain Reaction":[["kidSit",78,178,.65],["domino",130,154,.55],["domino",168,142,.55],["domino",206,154,.55],["domino",244,142,.55],["domino",282,154,.55],["ball",326,146,.72],["ramp",370,174,.75],["goal",416,137,.55]],
   "One-Line Creature":[["spiral",232,116,1.35],["pencil",342,150,1.3]],
   "Museum Guide":[["kidReach",118,182,1.2],["star",188,110,1.15],["cup",262,160,.95],["apple",332,156,.95]],
   "Balance Delivery":[["cup",272,112,.85],["tray",272,132,1.55],["kidReach",158,182,1.3],["steps",362,176,.95]],
@@ -653,7 +658,7 @@ Object.assign(artRecipes,{
   "Breathing Buddy":[["kidSit",148,178,1],["heart",249,125,.7],["animal",352,134,.85]],
   "Letter Clue Guess":[["abc",148,125,.8],["question",247,117,.72],["bubble",352,79,.65]],
   "Movement Commands":[["bubble",146,82,.7],["kidReach",248,177,1.1],["steps",353,158,.8]],
-  "Don't Step on a Crack":[["crack",243,157,1],["kidRun",145,177,1],["steps",351,162,.8]],
+  "Don't Step on a Crack":[["kid",113,177,1.05],["pavers",292,137,1.4],["steps",220,187,.7]],
   "Guess Who I Am":[["mask",147,124,.9],["question",248,117,.75],["kid",351,179,.95]],
   "One-Minute Challenge":[["timer",149,121,.95],["num",247,121,.7],["kidRun",350,178,1]]
 });
@@ -700,7 +705,7 @@ const skillOverrides = {
   "Nature Color Wheel":"creativity","Nature Faces":"creativity","Nature Number Hunt":"problem",
   "Nature Texture Cards":"problem","Paper Costume":"creativity","Paper Maze":"problem",
   "Paper Playground":"creativity","Pebble Patterns":"creativity","Postcard Puzzle":"problem",
-  "Quiet Pattern Tiles":"problem","Roll and Follow":"movement","Seed and Tree":"movement",
+  "Quiet Pattern Tiles":"problem","Roll and Follow":"movement","Chain Reaction":"problem",
   "Silent Sorting":"problem","Slow Fast Switch":"movement","Sound Map":"calm",
   "Sunrise Stretch Story":"movement","Tiny Garden Design":"creativity","Tiny Shop":"creativity",
   "Treasure Guards":"movement","Treasure Map":"problem","Twig Letters":"creativity",
@@ -726,7 +731,7 @@ function maxPlayersForIdea(g) {
 }
 function placeForIdea(g) {
   const text=`${g[0]} ${g[2]}`.toLowerCase();
-  if(/\b(window|living room|classroom|kitchen|indoors?|room|cushions?|pillows?|cups?|cardboard boxes?)\b/.test(text))return "indoors";
+  if(/\b(window|living room|classroom|kitchen|indoors?|room|cushions?|pillows?|cups?|cardboard(?: boxes?)?)\b/.test(text))return "indoors";
   if(/\b(outdoors?|backyard|garden|park|beach|pavement|sunlight|clouds?|birds?|wind|chalk|leaves?|twigs?|stones?|pebbles?)\b/.test(text))return "outdoors";
   return "either";
 }
@@ -755,9 +760,9 @@ const ageRangeOverrides = {
   "Texture Safari":[4,9],
   "Shape Explorer":[4,9],
   "Floor Is Lava":[4,9],
-  "Monster Steps":[3,9],
+  "Sardines":[5,12],
   "Copycat Clap":[3,9],
-  "Seed and Tree":[3,9],
+  "Chain Reaction":[6,12],"One-Line Creature":[6,12],
   "Animal Traffic":[3,9],
   "Jump and Name":[4,9],
   "Colorful Steps":[4,9],
@@ -768,7 +773,7 @@ const ageRangeOverrides = {
 };
 function ageRangeForIdea(g) {
   const text=`${g[0]} ${g[2]}`.toLowerCase();
-  const simpleImitationGames=new Set(["Animal Parade","Freeze Dance","Magic Object","Hide and Seek","Mirror Moves","Monster Steps","Copycat Clap","Animal Traffic","Seed and Tree","Mirror Animal","Bird Sound Pause","Breathing Buddy"]);
+  const simpleImitationGames=new Set(["Animal Parade","Freeze Dance","Magic Object","Hide and Seek","Mirror Moves","Copycat Clap","Animal Traffic","Mirror Animal","Bird Sound Pause"]);
   if(ageRangeOverrides[g[0]])return ageRangeOverrides[g[0]];
   if(simpleImitationGames.has(g[0]))return [3,12];
   if(g[0]==="Robot Guide")return [4,12];
@@ -778,70 +783,79 @@ function ageRangeForIdea(g) {
   return [4,12];
 }
 const uploadedHeroImages = {
+  "Don't Step on a Crack":"Ilustracije_igara_21-40_JPG_novi/040_balans_po_liniji.jpg",
   "Freeze Dance":"Game app/matched-images/167_igra.jpg",
   "Who Lives in This Ecosystem?":"Game app/illustrations-133-200/162_igra.jpg",
   "Invent a New Sport":"Game app/matched-images/037_igra.jpg",
   "Mystery Drawing":"Game app/matched-images/056_igra.jpg",
   "Family Quiz":"Game app/illustrations-133-200/150_igra.jpg",
+  "Family Mini Escape Room":"Ilustracije_igara_101-132_JPG/105_kartice_misija.jpg",
+  "Chain Reaction":"20_hero_slika_JPG/cropped/15_Napravi_stazu.jpg",
+  "Museum Guide":"20_hero_slika_JPG/cropped/03_Krug_prica.jpg",
+  "Question Detective":"20_hero_slika_JPG/cropped/10_Pitaj_i_pogodi.jpg",
+  "Switch Signals":"20_hero_slika_JPG/cropped/18_Broji_korake.jpg",
+  "Sardines":"Ilustracije_igara_133-200_JPG_bez_teksta/176_murke.jpg",
   "Forbidden Word":"Game app/matched-images/112_igra.jpg",
   "Funny Portrait":"Game app/illustrations-133-200/124_igra.jpg",
   "Nature Faces":"Game app/illustrations-133-200/160_igra.jpg",
   "Target Toss":"Game app/illustrations-133-200/147_igra.jpg",
   "Movement Memory":"Game app/illustrations-133-200/170_igra.jpg",
-  "Pass the Sketch":"Game app/matched-images/056_igra.jpg",
+  "Pass the Sketch":"20_hero_slika_JPG/cropped/13_Crtaj_zajedno.jpg",
   "Guess My Rule":"Game app/illustrations-133-200/133_igra.jpg",
-  "Balance Delivery":"Game app/illustrations-133-200/143_igra.jpg",
+  "Secret Symbol Message":"Ilustracije_igara_101-132_JPG/105_kartice_misija.jpg",
+  "Balance Delivery":"20_hero_slika_JPG/cropped/12_Balansiranje_lopte.jpg",
   "Marshmallow Structures":"Game app/illustrations-133-200/139_igra.jpg",
   "Balance Sculpture":"Game app/illustrations-133-200/143_igra.jpg",
   "Guess the Leader":"Game app/illustrations-133-200/150_igra.jpg",
   "Restaurant Imagination":"Game app/illustrations-133-200/178_igra.jpg",
   "Helpful Inventor":"Game app/illustrations-133-200/181_igra.jpg",
-  "Letter Clue Guess":"Game app/illustrations-133-200/196_igra.jpg",
-  "Guess Who I Am":"Game app/illustrations-133-200/199_igra.jpg",
+  "Family Secret Handshake":"20_hero_slika_JPG/cropped/20_Plesna_misija.jpg",
+  "Letter Clue Guess":"20_hero_slika_JPG/cropped/17_Lov_na_slova.jpg",
+  "Guess Who I Am":"20_hero_slika_JPG/cropped/16_Ko_sam_ja.jpg",
   "Target Ladder":"Game app/illustrations-133-200/147_igra.jpg",
   "Leaf Line-Up":"Game app/illustrations-133-200/156_igra.jpg",
   "Stick Shadow Shapes":"Game app/illustrations-133-200/158_igra.jpg",
   "Nature Color Wheel":"Game app/illustrations-133-200/160_igra.jpg",
   "Mirror Animal":"Game app/illustrations-133-200/166_igra.jpg",
-  "Animal Parade":"Game app/illustrations-133-200/166_igra.jpg",
+  "Animal Parade":"20_hero_slika_JPG/cropped/02_Parada_zivotinja.jpg",
   "Shadow Zoo":"Game app/illustrations-133-200/172_igra.jpg",
   "Robot Guide":"Game app/illustrations-133-200/181_igra.jpg",
   "Tallest Tower":"Game app/matched-images/091_igra.jpg",
   "Cup Castle":"Game app/illustrations-133-200/139_igra.jpg",
-  "Animal Traffic":"Game app/illustrations-133-200/103_igra.jpg",
+  "Animal Traffic":"20_hero_slika_JPG/cropped/02_Parada_zivotinja.jpg",
   "Cloud Shapes":"Game app/illustrations-133-200/163_igra.jpg",
   "One-Minute Challenge":"Game app/illustrations-133-200/136_igra.jpg",
-  "Rainbow Hunt":"Game app/illustrations-133-200/190_igra.jpg",
-  "Story Circle":"Game app/matched-images/100_igra.jpg",
-  "Color Dash":"Game app/matched-images/074_igra.jpg",
-  "Secret Sound":"Game app/illustrations-133-200/130_igra.jpg",
-  "Cushion Islands":"Game app/illustrations-133-200/101_igra.jpg",
-  "Mini Bowling":"Game app/matched-images/022_igra.jpg",
-  "Shape Explorer":"Game app/illustrations-133-200/121_igra.jpg",
-  "Magic Object":"Game app/matched-images/023_igra.jpg",
-  "Three Things, One Story":"Game app/matched-images/100_igra.jpg",
-  "Ball Balance":"Game app/illustrations-133-200/148_igra.jpg",
-  "What Changed":"Game app/matched-images/063_igra.jpg",
-  "Adventure Path":"Game app/matched-images/065_igra.jpg",
-  "Jumping Numbers":"Game app/matched-images/079_igra.jpg",
-  "Postcard Adventure":"Game app/matched-images/093_igra.jpg",
-  "Celebration Choreo":"Game app/illustrations-133-200/175_igra.jpg"
+  "Rainbow Hunt":"20_hero_slika_JPG/cropped/01_Lov_na_dugu.jpg",
+  "Story Circle":"20_hero_slika_JPG/cropped/03_Krug_prica.jpg",
+  "Color Dash":"20_hero_slika_JPG/cropped/04_Trka_boja.jpg",
+  "Secret Sound":"20_hero_slika_JPG/cropped/05_Tajni_zvuk.jpg",
+  "Cushion Islands":"20_hero_slika_JPG/cropped/06_Ostrva_od_jastuka.jpg",
+  "Mini Bowling":"20_hero_slika_JPG/cropped/07_Mini_kuglanje.jpg",
+  "Shape Explorer":"20_hero_slika_JPG/cropped/08_Potraga_za_oblicima.jpg",
+  "Magic Object":"20_hero_slika_JPG/cropped/09_Carobna_kutija.jpg",
+  "Three Things, One Story":"20_hero_slika_JPG/cropped/11_Slozi_pricu.jpg",
+  "Ball Balance":"20_hero_slika_JPG/cropped/12_Balansiranje_lopte.jpg",
+  "What Changed":"20_hero_slika_JPG/cropped/14_Sta_se_promenilo.jpg",
+  "Adventure Path":"20_hero_slika_JPG/cropped/15_Napravi_stazu.jpg",
+  "Jumping Numbers":"20_hero_slika_JPG/cropped/18_Broji_korake.jpg",
+  "Postcard Adventure":"20_hero_slika_JPG/cropped/19_Zamisljenо_putovanje.jpg",
+  "Celebration Choreo":"20_hero_slika_JPG/cropped/20_Plesna_misija.jpg"
 };
-const publishedImageNameOverrides={21:"test_papirnog_aviona",48:"misija_sa_balonom",69:"dostava_u_svemir",70:"odbrojavanje",78:"simetri_na_slika",85:"potraga_za_ku_nim_blagom",90:"pokreti_uz_muziku",92:"pogodi_moje_zanimanje",93:"avantura_na_ostrvu",97:"izazov_zavr_ne_re_i"};
+const publishedImageNameOverrides={21:"test_papirnog_aviona",48:"misija_sa_balonom",52:"kostim_od_papira",69:"dostava_u_svemir",70:"odbrojavanje",78:"simetri_na_slika",85:"potraga_za_ku_nim_blagom",90:"pokreti_uz_muziku",92:"pogodi_moje_zanimanje",93:"avantura_na_ostrvu",97:"izazov_zavr_ne_re_i"};
 function publishedImagePath(image){
   const match=image.match(/^Game app\/(?:matched-images|illustrations-133-200)\/(\d{3})_igra\.jpg$/);
-  if(!match)return image;
+  if(!match)return image.startsWith("20_hero_slika_JPG/")?`${image}?v=20261102`:image;
   const imageId=Number(match[1]);
   const directory=imageId<=40?"Ilustracije_igara_21-40_JPG_novi":imageId<=100?"Ilustracije_igara_41-100_JPG":imageId<=132?"Ilustracije_igara_101-132_JPG":"Ilustracije_igara_133-200_JPG_bez_teksta";
   const sourceTitle=gameIdeas[imageId-1]?.[1]||"";
   const slug=sourceTitle.toLowerCase().replace(/[čćđšž]/g,"_").replace(/[^a-z0-9]+/g,"_").replace(/_+/g,"_").replace(/^_+|_+$/g,"");
-  return `${directory}/${String(imageId).padStart(3,"0")}_${publishedImageNameOverrides[imageId]||slug}.jpg`;
+  return `${directory}/${String(imageId).padStart(3,"0")}_${publishedImageNameOverrides[imageId]||slug}.jpg?v=20261102`;
 }
-function hasUploadedGameImage(image){return image.startsWith("Ilustracije_igara_")||image.startsWith("Game app/")}
+function hasUploadedGameImage(image){return image.startsWith("20_hero_slika_JPG/")||image.startsWith("Ilustracije_igara_")||image.startsWith("Game app/")}
 function hasNumberedGameImage(image){return image.startsWith("Ilustracije_igara_")||image.startsWith("Game app/matched-images/")||image.startsWith("Game app/illustrations-133-200/")}
 const gameFeedbackById=new Map((window.GAME_FEEDBACK_DATA||[]).map(record=>[record.id,record]));
 const situationKeyByName={"Kišni dani":"rainy","Letnje igre":"summer","Hladniji dani":"winter","Porodična okupljanja":"holiday","U pokretu":"travel","Grupe i proslave":"party"};
-const replacementScenes={"Invent a New Sport":"run","Forbidden Word":"story","Museum of the Future":"pretend","Detective File: Three Clues":"search","Spot the Story Glitch":"story","Advertise the Most Useless Invention":"story","Build a Chain-Reaction Machine":"build","Secret Symbol Message":"search","Who Lives in This Ecosystem?":"nature","Invent a New Planet":"draw","Family Mini Escape Room":"search","Design a Family Secret Handshake":"dance"};
+const replacementScenes={"Invent a New Sport":"run","Forbidden Word":"story","Museum of the Future":"pretend","Detective File: Three Clues":"search","Spot the Story Glitch":"story","Advertise the Most Useless Invention":"story","Zigzag Delivery":"run","Chain Reaction":"build","Secret Symbol Message":"draw","Who Lives in This Ecosystem?":"nature","Invent a New Planet":"draw","Family Mini Escape Room":"search","Family Secret Handshake":"dance"};
 function feedbackSkillKey(skill){
   const text=`${skill.sr} ${skill.en}`.toLowerCase();
   if(/cooperation|teamwork|negotiation|emotion|saradnja|pregovaranje|emocij/.test(text))return "social";
@@ -868,23 +882,24 @@ function feedbackSkillIcon(label){
   if(/problem|logic|reason|planning|spatial|engineering|coding|system|cause|rešavanje|logika|zaključ|planiranje|prostorno|inženjer|šifrovanje|uzrok|sistemsko/.test(text))return "🧩";
   return "✨";
 }
-const games = gameIdeas.map((idea,index)=>{
+const allGames = gameIdeas.map((idea,index)=>{
   const feedback=gameFeedbackById.get(index+1);
   if(!feedback)throw new Error(`Missing feedback record for game ${index+1}`);
   const scene=replacementScenes[feedback.title]||idea[4];
   const derivedIdea=[feedback.title,feedback.srTitle,feedback.en.description,feedback.sr.description,scene];
-  const generatedImage=Boolean(replacementScenes[feedback.title])||[7,16,56,69,85,92,93,139,143,147,150,156,158,160,163,166,172,178,181,196,199].includes(feedback.id);
+  const generatedImage=Boolean(replacementScenes[feedback.title])||[7,16,56,69,85,92,93,139,143,147,150,156,158,160,163,166,172,178,181,196,198,199].includes(feedback.id);
   const imageId=feedback.id>=196&&feedback.id<=199?feedback.id+1:feedback.id;
   const skillKeys=[...new Set(feedback.skills.map(feedbackSkillKey).filter(Boolean))];
   const situationKeys=feedback.situationsSr.map(name=>situationKeyByName[name]).filter(Boolean);
   return {
     id:index+1,title:feedback.title,srTitle:feedback.srTitle,description:feedback.en.description,srDescription:feedback.sr.description,scene,
-    place:placeForIdea(derivedIdea),material:feedback.material,activity:activityForIdea(derivedIdea),duration:feedback.duration,
+    place:placeForIdea(derivedIdea),material:feedback.material,activity:activityForIdea(derivedIdea),duration:feedback.duration,durationLabel:feedback.durationLabel||String(feedback.duration),
     minAge:feedback.minAge,maxAge:feedback.maxAge,ageText:feedback.ageText,minPlayers:1,maxPlayers:maxPlayersForIdea(derivedIdea),
     skills:feedback.skills,skillKeys,skill:skillKeys[0]||"",situationKeys,feedback,
     image:publishedImagePath(uploadedHeroImages[feedback.title]||(generatedImage?gameArt(feedback.title,scene,index,feedback.en.description):feedback.id>=133&&feedback.id<=200?`Game app/illustrations-133-200/${String(feedback.id).padStart(3,"0")}_igra.jpg`:imageId>=21&&imageId<=200?`Game app/matched-images/${String(imageId).padStart(3,"0")}_igra.jpg`:gameArt(feedback.title,scene,index,feedback.en.description)))
   };
-});
+}).filter(game=>game.id !== 66 && game.id !== 75 && game.id !== 81 && game.id !== 83 && game.id !== 85 && game.id !== 91 && game.id !== 94 && game.id !== 97 && game.id !== 100 && game.id !== 107 && game.id !== 109 && game.id !== 112 && game.id !== 115 && game.id !== 116 && game.id !== 118 && game.id !== 119 && game.id !== 120 && game.id !== 121 && game.id !== 124 && game.id !== 125 && game.id !== 126 && game.id !== 127 && game.id !== 128 && game.id !== 129 && game.id !== 130 && game.id !== 131 && game.id !== 134 && game.id !== 135 && game.id !== 137 && game.id !== 138 && game.id !== 139 && game.id !== 140 && game.id !== 141 && game.id !== 142 && game.id !== 145 && game.id !== 146 && game.id !== 147 && game.id !== 148 && game.id !== 149 && game.id !== 151 && game.id !== 153 && game.id !== 154 && game.id !== 155 && game.id !== 157 && game.id !== 158 && game.id !== 159 && game.id !== 160 && game.id !== 161 && game.id !== 162 && game.id !== 163 && game.id !== 165 && game.id !== 166 && game.id !== 167 && game.id !== 170 && game.id !== 171 && game.id !== 173 && game.id !== 174 && game.id !== 175 && game.id !== 178 && game.id !== 180 && game.id !== 182 && game.id !== 185 && game.id !== 187 && game.id !== 188 && game.id !== 189 && game.id !== 191 && game.id !== 192 && game.id !== 193);
+const games=allGames.filter(game=>game.id!==195&&game.id!==197);
 
 const exploreCategories = {
   en:[
@@ -976,8 +991,8 @@ const gameDetailOverrides = {
     sr:{prep:"Izaberite slobodan pod koji se ne kliza, dalje od nameštaja; oprema nije potrebna.",steps:["Zadajte po jedan pokret: zvezda, čučanj, ležanje ili mali skok.","Napravite pauzu posle svakog pokreta da svi mogu udobno da ustanu ili odmore.","Novi krug počnite sporijim pokretom; svako može da preskoči pokret ili stane."],example:"Zvezda, čučanj, zvezda, lezi i odmori. Dodajte samo jedan mali skok ako se dete i dalje oseća prijatno.",parent:"Izbegavajte brzo ponavljanje skok–ležanje. Smenjujte pokret i odmor, neka skokovi budu niski i prepustite detetu tempo."}
   },
   "Memory Tray": {
-    en:{example:"Place a cup, an apple and a toy on a tray. Let the child look, cover the tray, remove the apple, then ask what is missing.",parent:"Start with two or three familiar objects and give the child time to look. Add more only if they enjoy the challenge; do not turn recall into a test."},
-    sr:{example:"Stavite čašu, jabuku i igračku na poslužavnik. Neka dete pogleda, pokrijte ga, sklonite jabuku, pa pitajte šta nedostaje.",parent:"Počnite sa dva ili tri poznata predmeta i dajte detetu vremena da ih zapamti. Dodajte još samo ako mu je izazov zabavan; nemojte igru pretvarati u test."}
+    en:{example:"Place a cup, an apple and a toy on a tray or table. Let the child look, cover the objects, remove the toy, then ask what is missing.",parent:"Start with three familiar objects and give the child time to look. For a harder round, rearrange the objects instead of removing one; keep it playful, not a memory test."},
+    sr:{example:"Stavite čašu, jabuku i igračku na poslužavnik ili sto. Neka dete pogleda, pokrijte predmete, sklonite igračku pa pitajte šta nedostaje.",parent:"Počnite sa tri poznata predmeta i dajte detetu vremena da ih pogleda. Za teži krug promenite raspored umesto da sklonite predmet; neka igra ostane zabavna, bez testiranja pamćenja."}
   },
   "Compliment Ball": {
     en:{prep:"Use a soft ball and sit or stand in a comfortable circle.",steps:["Agree to pass the ball gently to someone in the circle.","Whoever catches it shares one specific, kind thing someone in the group did.","Pass to another person; anyone can skip a turn if they cannot think of something."],example:"Say, “I liked how you helped me put the blocks away,” then gently pass the ball to someone else.",parent:"Model sincere compliments about actions or effort, not appearance. Give children time to think and never pressure anyone to speak."},
@@ -1032,8 +1047,8 @@ const gameDetailOverrides = {
     sr:{prep:"Za svaki avion pripremite po jedan list papira; drugi materijali nisu potrebni.",steps:["Napravite jednostavan papirni avion i dogovorite slobodnu liniju i smer bacanja.","Bacajte blago, jedan po jedan, pa primetite da li avion leti pravo, daleko ili skreće.","Promenite jedan pregib ili oblik krila i ponovo probajte; menjajte se u bacanju i posmatranju."],example:"Ako avion skreće ulevo, proverite da li su krila ista, promenite jedan pregib i bacite ga ponovo, nežno.",parent:"Avion usmeravajte dalje od lica i lomljivih predmeta. Pohvalite pažljivo isprobavanje i zapažanja, a ne samo najduži let."}
   },
   "Human Sculpture": {
-    en:{steps:["Choose a simple object or shape for the group to make.","Arrange comfortable body poses with feet on the floor; do not lift or pull anyone.","Hold the pose briefly, then relax and let another player choose the next shape."],example:"Work together to make a tree: one person stands as the trunk while others form branches with their arms.",parent:"Keep poses comfortable and brief. Help the group communicate instead of physically moving a child into position."},
-    sr:{steps:["Izaberite jednostavan predmet ili oblik koji ćete zajedno predstaviti.","Zauzmite udobne poze sa stopalima na podu; nemojte podizati ni vući druge.","Kratko zadržite pozu, opustite se, pa neka sledeći igrač izabere novi oblik."],example:"Napravite drvo: jedna osoba je stablo, a ostali rukama predstavljaju grane.",parent:"Neka poze budu udobne i kratke. Dogovarajte se rečima umesto da fizički nameštate dete."}
+    en:{steps:["One player chooses an object, and the others decide how to show it with their bodies.","Everyone takes a comfortable pose with feet on the floor; nobody lifts, pulls or positions another person.","Hold the sculpture for a few seconds while observers guess, then relax."],example:"Work together to make a tree: one person stands as the trunk while others form branches with their arms.",parent:"For older children, an adult names a scene, such as ‘a windmill in the wind.’ The group has 15 seconds to pose and freeze while an observer guesses the scene. Everyone stays stable, without touching or lifting anyone."},
+    sr:{steps:["Jedan igrač bira predmet, a ostali dogovaraju kako će ga prikazati telom.","Svako zauzima udobnu pozu sa stopalima na podu; niko ne podiže, vuče ni namešta druge.","Zadržite skulpturu nekoliko sekundi dok posmatrači pogađaju, pa se opustite."],example:"Napravite drvo: jedna osoba je stablo, a ostali rukama predstavljaju grane.",parent:"Za stariju decu odrasli zada scenu, na primer „vetrenjača na vetru“. Grupa ima 15 sekundi da zauzme poze i zamrzne se, a posmatrač pogađa scenu. Svi ostaju stabilni, bez dodirivanja ili podizanja."}
   },
   "Paper Maze": {
     en:{example:"Draw one start, one finish and two or three dead ends. Swap papers and use a pencil to trace a path to the finish.",parent:"For a bonus challenge, draw a tiny treasure at the finish and add one extra dead end for your partner to navigate."},
@@ -1044,8 +1059,8 @@ const gameDetailOverrides = {
     sr:{example:"„Kuda prvo putujemo?” „U zoološki vrt.” „Koju životinju ćemo posetiti?” „Slonove.” Svaki odgovor dodaje novu stanicu putovanju.",parent:"Za bonus izaberite temu, poput životinja, mesta ili hrane, pa neka se svako novo pitanje nadoveže na prethodnu stanicu. Svako može da preskoči red."}
   },
   "Postcard Puzzle": {
-    en:{example:"Draw a beach with a sun, umbrella and bucket. An adult cuts the picture into four large pieces; mix them and take turns putting it back together.",parent:"For a bonus, hide one piece and describe what is missing before revealing it. An adult should handle the scissors."},
-    sr:{example:"Nacrtajte plažu sa suncem, suncobranom i kantom. Odrasla osoba iseče sliku na četiri velika dela; pomešajte ih i naizmenično je sastavljajte.",parent:"Za bonus sakrijte jedan deo i opišite šta nedostaje pre nego što ga otkrijete. Makazama rukuje odrasla osoba."}
+    en:{example:"Draw a beach with a sun, boat and bucket. An adult cuts it into at least six pieces; mix them and take turns rebuilding the picture.",parent:"Hide a small drawn shell in the scene. After rebuilding the postcard, ask the partner to point out the shell. An adult should handle the scissors."},
+    sr:{example:"Nacrtajte plažu sa suncem, čamcem i kantom. Odrasla osoba iseče sliku na najmanje šest delova; pomešajte ih i naizmenično je sastavljajte.",parent:"Sakrijte malu nacrtanu školjku u prizoru. Kada sastavi razglednicu, partner treba da pokaže gde se školjka nalazi. Makazama rukuje odrasla osoba."}
   },
   "Guess the Leader": {
     en:{example:"One player turns away. The group chooses a leader who slowly raises and lowers their arms; everyone copies. The player turns back toward the group and guesses who started the movement.",parent:"Keep movements slow and comfortable. Let anyone pass on being the observer, and avoid sudden or unsafe actions."},
@@ -1060,8 +1075,8 @@ const gameDetailOverrides = {
     sr:{example:"Zamislite poznat lik iz priče. Ostali mogu da pitaju: „Da li si iz knjige?” ili „Da li nosiš krunu?” dok ne pogode.",parent:"Birajte osobu ili lik koga svi mogu da poznaju, prihvatite jednostavna pitanja i dozvolite svakome da preskoči red ili promeni ulogu."}
   },
   "One-Minute Challenge": {
-    en:{prep:"Choose a safe, simple task and set a one-minute timer.",example:"Set a one-minute timer and see how many plastic cups you can stack. Swap roles and try again.",parent:"Compare each player's result with their own previous try, not with others. If a timer feels stressful, count down together instead."},
-    sr:{prep:"Izaberite bezbedan, jednostavan zadatak i podesite tajmer na minut.",example:"Podesite tajmer na minut i proverite koliko plastičnih čaša možete da složite. Zamenite uloge i pokušajte ponovo.",parent:"Uporedite pokušaj svakog igrača sa njegovim prethodnim, ne sa drugima. Ako tajmer stvara pritisak, odbrojavajte zajedno."}
+    en:{prep:"Choose a safe, simple task and set a one-minute timer.",example:"Choose one task for each one-minute round: stand on one foot, then switch legs (an adult can offer a hand for support), alternate touching your knees, or stack plastic cups into a tower. Swap roles or choose a different task in the next round.",parent:"Compare each player's result with their own previous try, not with others. If a timer feels stressful, count down together instead."},
+    sr:{prep:"Izaberite bezbedan, jednostavan zadatak i podesite tajmer na minut.",example:"Za svaki minut izaberite jedan zadatak: stanite na jednoj nozi pa promenite nogu (odrasli može da pruži ruku za oslonac), dodirnite naizmenično kolena ili složite plastične čaše u kulu. U sledećem krugu zamenite uloge ili izaberite drugi zadatak.",parent:"Uporedite pokušaj svakog igrača sa njegovim prethodnim, ne sa drugima. Ako tajmer stvara pritisak, odbrojavajte zajedno."}
   },
   "Slow-Motion Race": {
     en:{example:"Walk toward the finish as slowly as possible, keeping both feet on the floor and using small, steady steps.",parent:"For a bonus, pause halfway in a comfortable statue pose for three seconds, then continue slowly. Focus on control, not finishing first."},
@@ -1091,13 +1106,13 @@ const gameDetailOverrides = {
     en:{prep:"Choose a small, agreed play area. Stay away from stairs, roads, closets and places the supervising adult cannot see.",example:"Count slowly to ten beside a tree while the others hide within the agreed area. Find everyone, then switch roles.",parent:"For younger children, hide a toy and look for it together. Keep everyone in sight and set a clear boundary before starting."},
     sr:{prep:"Dogovorite mali prostor za igru. Držite se dalje od stepenica, puta, ormara i mesta koja odrasla osoba ne može da vidi.",example:"Polako brojite do deset pored drveta dok se ostali kriju unutar dogovorenog prostora. Pronađite ih, pa zamenite uloge.",parent:"Za mlađu decu sakrijte igračku i tražite je zajedno. Držite decu na oku i jasno odredite granice pre početka."}
   },
-  "Seed and Tree": {
-    en:{example:"Curl up small like a seed. Slowly uncurl into a sprout, then stand tall and stretch your arms as branches.",parent:"For a bonus, one player makes a gentle breeze by softly fanning their hands. The tree sways only while the breeze blows, then grows still."},
-    sr:{example:"Sklupčajte se kao malo seme. Polako se odmotajte u klicu, zatim ustanite i raširite ruke kao grane.",parent:"Za bonus, jedan igrač pravi blag povetarac nežnim mahanjem ruku. Drvo se njiše samo dok vetar duva, pa se umiri."}
+  "Chain Reaction": {
+    en:{example:"Set eight or more dominoes in a zigzag, with the last one touching a lightweight foam ball and a tape line a little farther away as the finish. Gently tip the first domino and see if the ball crosses the line.",parent:"Make a fork: one domino tips a wide, lightweight block that starts two short domino lines. Put a soft ball at the end of each and mark two finishes; try to get both across their lines."},
+    sr:{example:"Postavite osam ili više domina cik-cak, poslednju tik uz laganu penastu loptu, a traku malo dalje kao cilj. Nežno oborite prvu i gledajte da li će lopta preći liniju.",parent:"Napravite račvanje: jedna domina obori široku, laganu kockicu koja pokrene dve kratke linije domina. Na kraju svake stavite po mekanu loptu i obeležite dva cilja; pokušajte da obe pređu svoju liniju."}
   },
   "Superhero Training": {
-    en:{example:"A stuffed toy is lost. Walk carefully and use kind words to guide it to a safe home base.",parent:"For a bonus, repeat the rescue mission while moving as quietly as possible, like a stealthy superhero."},
-    sr:{example:"Plišani drug se izgubio. Pažljivo hodajte i lepim rečima ga odvedite do bezbedne baze.",parent:"Za bonus ponovite spasavanje, ali se do baze krećite što tiše, kao heroj u tajnoj misiji."}
+    en:{example:"Teddy is scared of a thunderstorm. The superhero asks what Teddy needs, carefully carries him to a pillow safe base and says, ‘I’m here; you’re safe now.’",parent:"For older children, a dispatcher gives three directions, such as: ‘Go to Teddy, walk around the floor marker, carry him to base.’ The superhero repeats the order, then follows it while carrying Teddy. Keep the route short and clear; no running or closing eyes."},
+    sr:{example:"Meda se uplašio od grmljavine. Superheroj ga pita šta mu treba, pažljivo ga odnese do jastuka koji je sigurna baza i kaže: „Tu sam, sada si bezbedan.“",parent:"Za stariju decu dispečer zada tri uputstva, na primer: „Priđi medi, obiđi oznaku na podu, odnesi ga u bazu.“ Superheroj ponovi redosled pa ga izvrši noseći medu. Putanja ostaje kratka i slobodna; ne trčite i ne žmurite."}
   }
 };
 
@@ -1109,7 +1124,7 @@ function preparationForGame(game, language) {
   if(/\b(maze|labyrinth)\b/.test(text))return localized("Gather safe items you have, such as paper, cups or cushions, and a small toy. Build on a clear, stable surface.","Pripremite bezbedne predmete koje imate, poput papira, čaša ili jastuka, i malu igračku. Lavirint pravite na stabilnoj i slobodnoj površini.");
   if(/\bmini bowling\b/.test(text))return localized("Prepare a soft ball and a few lightweight, unbreakable cups or bottles as pins.","Pripremite mekanu loptu i nekoliko laganih, nelomljivih čaša ili flašica kao čunjeve.");
   if(/\b(sock|rolled socks)\b/.test(text))return localized("Roll a clean pair of socks into a soft ball and prepare a basket or other safe target.","Urolajte čist par čarapa u mekanu loptu i pripremite korpu ili drugu bezbednu metu.");
-  if(/\bscent explorer\b/.test(text))return localized("Use only familiar, mild scents; do not taste them. Skip known allergens or any scent that causes discomfort.","Koristite samo blage, poznate mirise; nemojte ih probati. Preskočite poznate alergene i mirise koji izazivaju nelagodnost.");
+  if(/\bscent explorer\b/.test(text))return localized("An adult prepares two familiar, mild scents for comparing and a third for the bonus after checking for allergies. Offer them from a distance by gently wafting the air; avoid perfumes and cleaning products.","Odrasla osoba priprema dva poznata, blaga mirisa za poređenje i treći za bonus nakon provere alergija. Ponudite ih sa odstojanja blagim mahanjem vazduha; izbegavajte parfeme i sredstva za čišćenje.");
   if(/\bballoon\b/.test(text))return localized("Use an intact balloon with an adult nearby. Clear sharp objects; immediately discard broken balloon pieces and keep them away from young children.","Koristite ceo balon uz odraslu osobu u blizini. Sklonite oštre predmete; pocepane delove odmah bacite i držite dalje od male dece.");
   if(/\b(cup|cups)\b/.test(text))return localized("Prepare several clean, reusable plastic cups and a flat, stable surface.","Pripremite nekoliko čistih plastičnih čaša za višekratnu upotrebu i ravnu, stabilnu površinu.");
   if(/\b(cushion|cushions|pillow|pillows)\b/.test(text))return localized("Place a few firm cushions or pillows on a clear floor, leaving safe space between them.","Postavite nekoliko čvrstih jastuka na slobodan pod i ostavite bezbedan razmak između njih.");
@@ -1118,10 +1133,11 @@ function preparationForGame(game, language) {
   if(/\b(box|boxes|cardboard)\b/.test(text))return localized("Prepare clean cardboard boxes with staples, tape and sharp edges removed.","Pripremite čiste kartonske kutije bez spajalica, lepljive trake i oštrih ivica.");
   if(/\btray\b/.test(text))return localized("Prepare a lightweight tray and a few safe, unbreakable objects.","Pripremite lagani poslužavnik i nekoliko bezbednih, nelomljivih predmeta.");
   if(/\b(straw|straws|craft sticks)\b/.test(text))return localized("Prepare child-safe paper straws or craft sticks and a clear building surface.","Pripremite bezbedne papirne slamčice ili štapiće i slobodnu površinu za građenje.");
-  if(/\b(utensil|utensils|kitchen band)\b/.test(text))return localized("Choose a few safe wooden or plastic kitchen utensils and unbreakable containers.","Izaberite nekoliko bezbednih drvenih ili plastičnih kuhinjskih predmeta i nelomljive posude.");
+  if(/\b(utensil|utensils|kitchen band)\b/.test(text))return localized("Prepare a wooden spoon, a plastic bowl and a sturdy plastic cup. Put away glass and breakable items.","Pripremite drvenu kašiku, plastičnu posudu i čašu od čvrste plastike. Sklonite staklene i lomljive predmete.");
   if(/\b(ribbon|scarf)\b/.test(text))return localized("Prepare a short lightweight ribbon or scarf and clear enough room for gentle movement.","Pripremite kratku laganu traku ili maramu i oslobodite prostor za nežno kretanje.");
   if(/\b(feather|tissue)\b/.test(text))return localized("Prepare one clean feather or a small piece of lightweight tissue.","Pripremite jedno čisto pero ili mali komad lagane papirne maramice.");
   if(/\b(button|buttons)\b/.test(text))return localized("Choose large, child-safe buttons or replace them with other safe objects for younger children.","Izaberite veliku dugmad bezbednu za dete ili je za mlađu decu zamenite drugim bezbednim predmetima.");
+  if(/\bcircle keep-away\b/.test(text))return localized("At least four players, a soft ball and a flat, non-slip surface are needed. Form a circle with enough space between players.","Potrebna su najmanje četiri igrača, mekana lopta i ravna neklizava površina. Napravite krug sa dovoljno prostora između igrača.");
   if(/\b(ball|goalkeeper|bowling|bounce|rolling goal|target toss)\b/.test(text))return localized("Use a soft, age-appropriate ball and prepare any safe targets or markers mentioned in the game.","Koristite mekanu loptu primerenu uzrastu i pripremite bezbedne mete ili oznake koje igra traži.");
   if(/\b(leaf|leaves|twig|twigs|stone|stones|pebble|pebbles|nature)\b/.test(text))return localized("Choose a safe outdoor area and use only clean, fallen leaves, twigs or stones needed for the game.","Izaberite bezbedan prostor napolju i koristite samo čisto opalo lišće, grančice ili kamenčiće potrebne za igru.");
   if(game.material==="paper")return localized("Prepare paper and child-safe pencils, crayons or other drawing supplies needed for the activity.","Pripremite papir i bezbedne olovke, bojice ili drugi pribor za crtanje potreban za ovu igru.");
@@ -1157,9 +1173,9 @@ function translate() {
   $("#profileNameLabel").textContent=c.name; $("#profileSaveButton").textContent=c.saveProfile; $("#deleteProfileButton").textContent=c.deleteProfile;
   $("#feedbackLabel").textContent=c.feedbackLabel; $("#feedbackHint").textContent=c.feedbackHint; $("#feedbackButton").textContent=c.feedbackButton;
   $("#startButton").innerHTML=`${c.findGame} <span>→</span>`;
-  $("#trustTwo").textContent=c.trust[0]; $("#trustThree").textContent=c.trust[1]; $("#trustFour").textContent=c.trust[2];
+  $("#trustThree").textContent=c.trust[0];
   $("#dailyLabel").textContent=c.dailyLabel;
-  $("#dailyTitle").textContent=c.dailyTitle; $("#dailyCopy").textContent=c.dailyCopy; $("#dailyButton").textContent=c.dailyButton;
+  $("#dailyTitle").textContent=c.dailyTitle; $("#dailyCopy").textContent=c.dailyCopy; $("#dailyButton").textContent=c.dailyButtonLabel;
   $("#benefitOneTitle").textContent=c.benefitOneTitle; $("#benefitOneCopy").textContent=c.benefitOneCopy;
   $("#benefitTwoTitle").textContent=c.benefitTwoTitle; $("#benefitTwoCopy").textContent=c.benefitTwoCopy;
   $("#benefitThreeTitle").textContent=c.benefitThreeTitle; $("#benefitThreeCopy").textContent=c.benefitThreeCopy;
@@ -1172,7 +1188,7 @@ function translate() {
 function $$(selector){return document.querySelectorAll(selector)}
 function renderProgress(){ $("#progress").style.gridTemplateColumns=`repeat(${questions().length}, minmax(0, 1fr))`; $("#progress").innerHTML=questions().map((q,i)=>`<div class="progress-step ${i===state.step?"is-active":""} ${i<state.step?"is-complete":""}" data-number="${i+1}">${q[1]}</div>`).join("") }
 function renderQuestion(){
-  const q=questions()[state.step]; $("#stepLabel").textContent=t().step(state.step+1,questions().length); $("#questionTitle").textContent=q[2]; $("#questionHint").textContent=q[3];
+  const q=questions()[state.step]; $("#stepLabel").textContent=t().step(state.step+1,questions().length); $("#questionTitle").textContent=q[2]; $("#questionHint").textContent=q[3]; $("#questionHint").hidden=!q[3];
   const selected=selectedValues(q[0]);
   $("#questionNumber").textContent=String(state.step+1).padStart(2,"0"); $("#choiceGrid").innerHTML=q[4].map(c=>`<button class="choice ${selected.includes(c[0])?"is-selected":""}" data-choice="${c[0]}" type="button" aria-pressed="${selected.includes(c[0])}"><span class="choice-icon">${c[1]}</span><strong>${c[2]}</strong>${c[3]?`<small>${c[3]}</small>`:""}</button>`).join("");
   $$(".choice").forEach(b=>{b.onclick=()=>{const value=b.dataset.choice;if(multiSelectQuestions.has(q[0])){const values=selectedValues(q[0]);const next=values.includes(value)?values.filter(item=>item!==value):[...values,value];if(next.length)state.answers[q[0]]=next;else delete state.answers[q[0]]}else state.answers[q[0]]=value;renderQuestion()}});
@@ -1187,15 +1203,16 @@ function score(game){
   if(selectedValues("place").some(place=>place==="either"||game.place==="either"||game.place===place||(place==="travel"&&travelFriendly(game))))total+=3;
   const durations=selectedValues("duration").map(Number);if(durations.length&&game.duration<=Math.max(...durations))total+=3;
   const materials=selectedValues("material");if(game.material==="none"||materials.includes(game.material))total+=3;
-  if(selectedValues("activity").includes(game.activity))total+=4;
+  const activityChoices=selectedValues("activity");
+  if(activityChoices.some(value=>value==="calm"?game.activity==="calm":value==="playful"?game.activity!=="calm":false))total+=4;
   return total;
 }
 function localized(game){return state.language==="sr"?[game.srTitle,game.srDescription]:[game.title,game.description]}
 function dailyGame(){const now=new Date();const day=Math.floor(new Date(now.getFullYear(),now.getMonth(),now.getDate()).getTime()/86400000);return games[((day%games.length)+games.length)%games.length]}
 function renderDaily(){
   const game=dailyGame(), [title,description]=localized(game);
-  $("#dailyTitle").textContent=title; $("#dailyCopy").textContent=description; $("#dailyButton").textContent=`${t().details} →`;
-  $("#dailyMeta").innerHTML=`<span>${game.duration} ${t().min}</span><span>${t().place[game.place]}</span><span>${t().ages(game.minAge,game.maxAge)}</span>`;
+  $("#dailyTitle").textContent=title; $("#dailyCopy").textContent=description; $("#dailyButton").textContent=t().dailyButtonLabel;
+  $("#dailyMeta").innerHTML=`<span>${game.durationLabel} ${t().min}</span><span>${t().place[game.place]}</span><span>${t().ages(game.minAge,game.maxAge)}</span>`;
 }
 function travelFriendly(game){
   const carGame=game.material==="none"&&game.duration<=15&&game.activity!=="active"&&game.place!=="outdoors"&&["story","search"].includes(game.scene);
@@ -1220,9 +1237,11 @@ function gameCard(game){
   const [title,description]=localized(game), liked=state.likes.includes(game.id);
   const saveLabel=liked?t().savedAction:t().saveAction;
   const uploadedImage=hasUploadedGameImage(game.image);
-  const numberedImage=hasNumberedGameImage(game.image), wideImage=numberedImage&&game.srTitle.length>20&&![21,100].includes(game.id);
-  const imageClasses=["activity-image",uploadedImage&&"activity-image-uploaded",numberedImage&&"activity-image-numbered",wideImage&&"activity-image-numbered-wide"].filter(Boolean).join(" ");
-  return `<article class="activity" data-detail="${game.id}" tabindex="0"><div class="activity-visual"><img class="${imageClasses}" src="${game.image}" alt="${t().image(title)}"><button class="like-button activity-like ${liked?"is-liked":""}" data-like="${game.id}" aria-label="${saveLabel}" aria-pressed="${liked}">♥ <span class="save-label">${saveLabel}</span></button></div><div class="activity-content"><div class="activity-topline"><h3>${title}</h3></div><p>${description}</p><div class="activity-meta"><span class="tag">${game.duration} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span></div><button class="details-button" data-open-detail="${game.id}">${t().details}</button></div></article>`;
+  const numberedImage=hasNumberedGameImage(game.image), wideImage=numberedImage&&game.srTitle.length>20&&![21,100,102].includes(game.id);
+  const cropFromRight=[2,154].includes(game.id);
+  const imageFocus=game.id===102?"symbol-message":game.id===103?"animal-traffic":"";
+  const imageClasses=["activity-image",uploadedImage&&"activity-image-uploaded",numberedImage&&"activity-image-numbered",wideImage&&"activity-image-numbered-wide",cropFromRight&&"activity-image-collage-crop-right",imageFocus&&`activity-image-${imageFocus}`].filter(Boolean).join(" ");
+  return `<article class="activity" data-detail="${game.id}" tabindex="0"><div class="activity-visual"><img class="${imageClasses}" src="${game.image}" alt="${t().image(title)}"><button class="like-button activity-like ${liked?"is-liked":""}" data-like="${game.id}" aria-label="${saveLabel}" aria-pressed="${liked}">♥ <span class="save-label">${saveLabel}</span></button></div><div class="activity-content"><div class="activity-topline"><h3>${title}</h3></div><p>${description}</p><div class="activity-meta"><span class="tag">${game.durationLabel} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span></div><button class="details-button" data-open-detail="${game.id}">${t().details}</button></div></article>`;
 }
 function renderResults(){
   const list=gameList(), c=t(); $("#questionCard").hidden=true; $("#progress").hidden=true; $("#results").hidden=false;
@@ -1254,6 +1273,68 @@ function renderExplore(){
 }
 function openCollection(type,key,label){state.collection={type,key,label};state.view="collection";renderResults();scrollTo({top:0,behavior:"smooth"})}
 let detailDemoTimer=null;
+let detailToolTimer=null;
+let detailToolDeadline=0;
+let detailToolRemaining=60000;
+
+const gameToolModes={3:"storyWords",40:"forbiddenWords",70:"timer",82:"sculpture",116:"magicWord",191:"timer",196:"letter",200:"timer"};
+const gameToolWords={
+  sr:["astronauta","palačinka","kišobran","robot","jež","balon","ostrvo","ključ","duga","kaktus","bicikl","zmaj","sendvič","čarapa","sova","brod","pahulja","raketa","šešir","kornjača","med","zvezda","kofer","leptir","čarobnjak","prozor","kompas","torta","papuča","livada","tajna","vulkan"],
+  en:["astronaut","pancake","umbrella","robot","hedgehog","balloon","island","key","rainbow","cactus","bicycle","dragon","sandwich","sock","owl","boat","snowflake","rocket","hat","turtle","honey","star","suitcase","butterfly","wizard","window","compass","cake","slipper","meadow","secret","volcano"]
+};
+const forbiddenWordPairs={
+  sr:[["kišobran","kiša"],["pas","lajanje"],["čokolada","slatko"],["zub","četkica"],["sunce","leto"],["knjiga","čitanje"],["bicikl","točak"],["banana","voće"],["lopta","sport"],["sneg","zima"],["čarapa","stopalo"],["zvezda","noć"],["med","pčela"],["raketa","svemir"]],
+  en:[["umbrella","rain"],["dog","bark"],["chocolate","sweet"],["tooth","toothbrush"],["sun","summer"],["book","reading"],["bicycle","wheel"],["banana","fruit"],["ball","game"],["snow","winter"],["sock","foot"],["star","night"],["honey","bee"],["rocket","space"]]
+};
+const gameToolLetters={sr:["A","B","C","Č","Ć","D","Dž","Đ","E","F","G","H","I","J","K","L","Lj","M","N","Nj","O","P","R","S","Š","T","U","V","Z","Ž"],en:"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")};
+const gameToolSculptureIdeas={
+  sr:["Drvo: jedna osoba je stablo, ostali rašire ruke kao grane.","Cvet: jedna osoba je stabljika, ostali otvore ruke kao latice.","Zvezda: raširite ruke i noge u obliku krakova.","Kišobran: stojte uspravno i podignite ruke kao krov.","Sat: jedna osoba pravi brojčanik rukama, druga pokazuje kazaljke.","Planina: podignite ruke ukoso da prikažete dva vrha.","Leptir: stojte uspravno i raširite ruke kao krila.","Vetrenjača: jedna osoba je stub, druga raširi ruke kao krila."],
+  en:["Tree: one person is the trunk while others spread their arms like branches.","Flower: one person is the stem while others open their arms like petals.","Star: stretch arms and legs out like points.","Umbrella: stand tall and raise arms like a canopy.","Clock: one person makes the dial with their arms while another shows the hands.","Mountain: raise arms diagonally to show two peaks.","Butterfly: stand tall and spread arms like wings.","Windmill: one person is the tower while another spreads arms like blades."]
+};
+
+function randomItems(items,count=1){
+  const shuffled=items.slice();
+  for(let index=shuffled.length-1;index>0;index--){const swapIndex=Math.floor(Math.random()*(index+1));[shuffled[index],shuffled[swapIndex]]=[shuffled[swapIndex],shuffled[index]]}
+  return shuffled.slice(0,count);
+}
+function clearGameToolTimer(){if(detailToolTimer){clearInterval(detailToolTimer);detailToolTimer=null}detailToolDeadline=0;detailToolRemaining=60000}
+function formatGameToolTime(milliseconds){const totalSeconds=Math.ceil(milliseconds/1000),minutes=Math.floor(totalSeconds/60),seconds=totalSeconds%60;return `${String(minutes).padStart(2,"0")}:${String(seconds).padStart(2,"0")}`}
+function renderGameTools(game){
+  clearGameToolTimer();
+  const mode=gameToolModes[game.id], section=$("#detailTools"), content=$("#detailToolsContent");
+  content.replaceChildren();section.hidden=!mode;
+  if(!mode)return;
+  $("#detailToolsTitle").textContent=t().toolTitles[mode];
+  if(mode==="timer"){
+    const clock=document.createElement("output");clock.className="detail-tool-clock";clock.id="detailToolClock";clock.setAttribute("role","timer");clock.setAttribute("aria-live","off");clock.textContent="01:00";
+    const toggle=document.createElement("button");toggle.type="button";toggle.className="detail-tool-button";toggle.dataset.gameToolAction="timer-toggle";toggle.id="detailToolToggle";toggle.textContent=t().toolStart;
+    const reset=document.createElement("button");reset.type="button";reset.className="detail-tool-button detail-tool-button-secondary";reset.dataset.gameToolAction="timer-reset";reset.textContent=t().toolReset;
+    const status=document.createElement("p");status.className="detail-tool-status";status.id="detailToolStatus";status.setAttribute("role","status");
+    content.append(clock,toggle,reset,status);return;
+  }
+  const button=document.createElement("button");button.type="button";button.className="detail-tool-button";button.dataset.gameToolAction="generate";button.textContent=t().toolActions[mode];
+  const result=document.createElement("div");result.className="detail-tool-result";result.id="detailToolResult";result.setAttribute("aria-live","polite");result.setAttribute("aria-atomic","true");
+  content.append(button,result);
+}
+function generateGameTool(){
+  const mode=gameToolModes[state.selectedGame],language=state.language,words=gameToolWords[language];let results=[];
+  if(mode==="storyWords")results=randomItems(words,3);
+  else if(mode==="magicWord")results=randomItems(words);
+  else if(mode==="forbiddenWords"){const [word,forbidden]=randomItems(forbiddenWordPairs[language])[0];results=[`${t().toolWordLabel}: ${word}`,`${t().toolForbiddenLabel}: ${forbidden}`]}
+  else if(mode==="letter")results=[`${t().toolLetterLabel}: ${randomItems(gameToolLetters[language])[0]}`];
+  else if(mode==="sculpture")results=randomItems(gameToolSculptureIdeas[language]);
+  const output=$("#detailToolResult");output.replaceChildren();results.forEach(value=>{const chip=document.createElement("span");chip.textContent=value;output.append(chip)});
+}
+function updateGameToolTimer(){
+  detailToolRemaining=Math.max(0,detailToolDeadline-Date.now());$("#detailToolClock").textContent=formatGameToolTime(detailToolRemaining);
+  if(detailToolRemaining===0){clearInterval(detailToolTimer);detailToolTimer=null;$("#detailToolToggle").textContent=t().toolStart;$("#detailToolStatus").textContent=t().toolTimeUp}
+}
+function toggleGameToolTimer(){
+  if(detailToolTimer){detailToolRemaining=Math.max(0,detailToolDeadline-Date.now());clearInterval(detailToolTimer);detailToolTimer=null;$("#detailToolToggle").textContent=t().toolStart;$("#detailToolClock").textContent=formatGameToolTime(detailToolRemaining);return}
+  if(detailToolRemaining<=0)detailToolRemaining=60000;
+  detailToolDeadline=Date.now()+detailToolRemaining;$("#detailToolStatus").textContent="";$("#detailToolToggle").textContent=t().toolPause;detailToolTimer=setInterval(updateGameToolTimer,100);updateGameToolTimer();
+}
+function resetGameToolTimer(){clearGameToolTimer();$("#detailToolClock").textContent="01:00";$("#detailToolToggle").textContent=t().toolStart;$("#detailToolStatus").textContent=""}
 const ageGuidanceTranslations={
   "3–5 uz odraslog":"Younger children ages 3–5 should play with adult support.",
   "mlađima ponuditi dva izvora zvuka":"Offer younger children a choice of two sounds.",
@@ -1277,7 +1358,83 @@ const ageGuidanceTranslations={
   "5–6 uz kotrljanje lopte":"For ages 5–6, roll the ball instead of throwing it.",
   "početi sa dva pokreta":"Start with two movements."
 };
+const ageGuidanceByGame={
+  "Gratitude Garden":{
+    sr:"Uzrast 4–6: ponudite izbor između dve lepe stvari; odrasli može da pomogne detetu da nacrta jednostavan cvet od kruga i latica. Dete može samo da kaže šta cvet predstavlja ili da preskoči red. Uzrast 7–10: dete samostalno bira događaj, crta cvet sa detaljem koji ga podseća na njega i može da napiše jednu reč pored cveta.",
+    en:"Ages 4–6: offer a choice between two good moments; an adult can help draw a simple flower with a center and petals. The child can say what it represents or pass. Ages 7–10: let the child choose a moment, draw a flower with a detail that recalls it, and add a word beside it if they like."
+  },
+  "Family Newsroom":{
+    sr:"Uzrast 5–7: odrasli pomaže detetu da smisli vedar naslov i postavlja jedno kratko pitanje; dete može da izmisli vest. Uzrast 8–12: reporter osmisli naslov i vest u dve rečenice, postavi gostu dodatno pitanje, pa zamene uloge. Niko ne mora da deli lične događaje.",
+    en:"Ages 5–7: an adult helps the child make a cheerful headline and asks one short question; the child may invent the news story. Ages 8–12: the reporter creates a headline and a two-sentence story, asks the guest a follow-up question, then they switch roles. No one has to share personal events."
+  },
+  "Helpful Inventor":{
+    sr:"Uzrast 4–6: odrasli ponudi izbor između dva poznata problema i daje tragove jedan po jedan; dete pogađa, pa pokretima pokazuje zamišljeni alat. Uzrast 7–10: jedan igrač bira problem i daje tačno tri traga; partner pogađa, osmišljava alat i objašnjava kako radi, pa zamene uloge.",
+    en:"Ages 4–6: an adult offers a choice between two familiar problems and gives clues one at a time; the child guesses, then acts out an imaginary tool. Ages 7–10: one player chooses a problem and gives exactly three clues; the partner guesses, invents a tool and explains how it works, then they switch roles."
+  },
+  "Folded Face":{
+    sr:"Uzrast 4–6: odrasli unapred savije papir i pokaže gde se crtaju delovi; dete bira boje i crta uz pomoć. Uzrast 7–10: deca sama smenjuju uloge, skrivaju delove i dodaju zadatu emociju ili temu.",
+    en:"Ages 4–6: an adult folds the paper and shows where to draw each part; the child chooses colors and draws with help. Ages 7–10: children take turns independently, hide each part and add a chosen emotion or theme."
+  },
+  "Postcard Puzzle":{
+    sr:"Uzrast 4–6: odrasli iseče sliku na šest velikih delova i ostavi celu originalnu sliku pored njih kao model; dete traži boje i linije koje se nastavljaju. Uzrast 7–10: iseći na osam delova, skloniti original i tražiti da dete objasni kako se ivice spajaju.",
+    en:"Ages 4–6: an adult cuts the picture into six large pieces and keeps the complete original beside them as a reference; the child matches colors and lines. Ages 7–10: use eight pieces, hide the original and ask the child to explain how the edges connect."
+  },
+  "Draw the Feeling":{
+    sr:"Uzrast 4–6: ponudite izbor između radosti i mira; dete može da izabere boju ili vrstu linije, a odrasli može da pokaže primer. Uzrast 7–10: neka dete isto osećanje prikaže na dva načina i objasni koje su boje ili linije izabrane.",
+    en:"Ages 4–6: offer a choice between joy and calm; the child can choose a color or line style, and an adult may show an example. Ages 7–10: invite the child to show the same feeling in two ways and explain the colors or lines they chose."
+  },
+  "Memory Tray":{
+    sr:"Uzrast 4–6: koristite tri velika, poznata predmeta, sklonite jedan i dajte dovoljno vremena za gledanje. Uzrast 7–12: koristite pet do sedam predmeta; sklonite jedan ili promenite raspored dva, pa neka igrač objasni šta se promenilo.",
+    en:"Ages 4–6: use three large, familiar objects, remove one and allow plenty of looking time. Ages 7–12: use five to seven objects; remove one or rearrange two, then ask the player to explain what changed."
+  },
+  "What Is Missing?":{
+    sr:"Uzrast 4–6: počnite sa tri velika, poznata predmeta i sklonite jedan; dajte detetu dovoljno vremena da ih pogleda. Uzrast 7–10: koristite pet do sedam predmeta, pa sklonite dva ili promenite mesta dvama predmetima.",
+    en:"Ages 4–6: start with three large, familiar objects and remove one; give the child plenty of time to look. Ages 7–10: use five to seven objects, then remove two or swap the positions of two objects."
+  },
+  "Touch and Tell":{
+    sr:"Uzrast 4–6: počnite sa dva velika, poznata predmeta i ponudite izbor između dva odgovora; odrasli može da da prvi trag. Uzrast 7–10: koristite više različitih predmeta, a opipavač daje najviše tri traga pre pogađanja.",
+    en:"Ages 4–6: start with two large, familiar objects and offer a choice of two answers; an adult can give the first clue. Ages 7–10: use a wider range of objects, and let the player feeling the object give up to three clues before the guess."
+  },
+  "Cardboard Telescope":{
+    sr:"Uzrast 4–6: izaberite dva poznata predmeta i ponudite prvi trag o boji ili obliku. Uzrast 7–10: posmatrač daje tri različita traga, a partner može postaviti jedno pitanje pre pogađanja.",
+    en:"Ages 4–6: choose two familiar objects and offer a first clue about color or shape. Ages 7–10: the observer gives three different clues, and the partner may ask one question before guessing."
+  },
+  "Balance Sculpture":{
+    sr:"Uzrast 4–6: koristite tri velike penaste kocke; odrasli postavlja široku osnovu, a dete dodaje po jednu. Uzrast 7–10: uporedite dve niske osnove različite širine i predvidite koja će stabilnije držati dodatnu laganu kocku.",
+    en:"Ages 4–6: use three large foam blocks; an adult makes a wide base and the child adds one block at a time. Ages 7–10: compare two low bases of different widths and predict which will hold one extra lightweight block more steadily."
+  },
+  "Partner Pass Pattern":{
+    sr:"Uzrast 4–6: počnite sa tri dodavanja i ponovite niz uz izgovaranje imena. Uzrast 7–10: napravite niz od pet dodavanja, ponovite ga bez pomoći, pa dodajte jedno novo dodavanje.",
+    en:"Ages 4–6: start with three passes and repeat the sequence while saying names. Ages 7–10: create a five-pass sequence, repeat it without prompts, then add one new pass."
+  },
+  "Leaf Line-Up":{
+    sr:"Uzrast 4–6: koristite tri velika opala lista i poređajte ih od najmanjeg do najvećeg uz pomoć odraslog. Uzrast 7–10: koristite pet ili šest listova, pa ih poređajte po veličini, a zatim po nijansi ili obliku.",
+    en:"Ages 4–6: use three large fallen leaves and order them from smallest to largest with an adult's help. Ages 7–10: use five or six leaves, then sort them by size and by shade or shape."
+  },
+  "Bird Sound Pause":{
+    sr:"Uzrast 4–6: osluškujte kratko uz odraslog i oponašajte samo jedan zvuk; odrasli može da ponudi izbor između kratkog i dugog. Uzrast 7–10: opišite da li je zvuk visok ili nizak, pa zapamtite i ponovite niz od najviše tri zvuka.",
+    en:"Ages 4–6: listen briefly with an adult and imitate just one sound; an adult can offer a choice between short and long. Ages 7–10: describe whether a sound is high or low, then remember and repeat a sequence of up to three sounds."
+  },
+  "Body Letter Dance":{
+    sr:"Uzrast 5–7: izaberite poznatu reč od dva ili tri slova i pogađajte slovo po slovo uz pomoć odraslog. Uzrast 8–12: sakrijte reč od četiri ili pet slova; za teže slovo dvoje igrača može zajedno da napravi oblik.",
+    en:"Ages 5–7: choose a familiar two- or three-letter word and guess it one letter at a time with an adult's help. Ages 8–12: hide a four- or five-letter word; two players may form a tricky letter together."
+  },
+  "Family Mini Escape Room":{
+    sr:"Uzrast 7–9: koristite tri laka zadatka kao u primeru i pomozite detetu da zapisuje cifre. Uzrast 10–12: zadržite tri kartice, ali tražite da dete objasni kako je došlo do svakog odgovora. Nagoveštaj je uvek dozvoljen.",
+    en:"Ages 7–9: use three easy puzzles like the example and help the child record the digits. Ages 10–12: keep three cards, but ask the child to explain how they reached each answer. Hints are always allowed."
+  },
+  "Partner Shadow Dance":{
+    sr:"Uzrast 3–5: odrasli vodi samo dva spora pokreta i jedan širok zaokret; dete prati uz dovoljno razmaka. Uzrast 6–9: napravite putanju sa tri zaokreta i zamenite vođu na dogovoreni znak.",
+    en:"Ages 3–5: an adult leads just two slow movements and one wide turn; the child follows with plenty of space. Ages 6–9: make a path with three turns and switch leaders on an agreed signal."
+  },
+  "Post Office Play":{
+    sr:"Uzrast 6–8: koristite sva tri simbola; za svako odredište drugi igrač daje kratak trag, na primer „zvezda je pored stolice“. Poštar treba da prepozna simbol i pronađe mesto po tragu. Uzrast 9–12: dete neka smisli četvrti simbol, nacrta dodatno pismo i podudarno odredište, pa dostavi sva pisma bez dodatnih tragova.",
+    en:"Ages 6–8: use all three symbols; for each destination, the other player gives a short location clue, such as “the star is beside the chair.” The postal worker must match the symbol and find the place from the clue. Ages 9–12: have the child invent a fourth symbol, draw an extra letter and matching destination, then deliver all the letters without extra clues."
+  }
+};
 function localizedAgeGuidance(game,language){
+  const specific=ageGuidanceByGame[game.title]?.[language];
+  if(specific)return specific;
   const ageText=game.ageText||"";let note=ageText.includes(";")?ageText.split(";").slice(1).join(";").trim():(ageText.match(/\(([^)]+)\)/)?.[1]||ageText.replace(/^\d+\s*[–-]\s*\d+\s*godina\s*/i,"").trim());
   if(!note||/^\d+\s*[–-]\s*\d+\s*(godina|years?)$/i.test(note))return "";
   if(language==="sr")return note;
@@ -1306,59 +1463,59 @@ const gameBonusIdeas = {
   "Shape Explorer": {en:"Use two safe objects to make one of the shapes you found.",sr:"Od dva bezbedna predmeta napravite jedan oblik koji ste pronašli."},
   "Floor Is Lava": {en:"After crossing, retrace the same route without stepping off the safe spots.",sr:"Posle prelaska ponovite istu putanju bez silaska sa bezbednih mesta."},
   "Backyard Olympics": {en:"Give a medal for careful effort or a creative idea, not just winning.",sr:"Dodelite medalju za pažljiv trud ili maštovitu ideju, ne samo za pobedu."},
-  "Make a Goal": {en:"Move the goal slightly farther away after a successful gentle roll.",sr:"Posle uspešnog nežnog kotrljanja pomerite gol malo dalje."},
+  "Make a Goal": {en:"Mark the left and right corners of the goal opening with paper tape. Before each turn, the caller says ‘left’ or ‘right.’ A goal through the called corner scores two points; through the other part of the goal scores one. Then switch roles.",sr:"Papirnom trakom označite levi i desni ugao otvora gola. Pre svakog pokušaja vodič kaže „levo“ ili „desno“. Pogodak kroz najavljeni ugao vredi dva poena; kroz drugi deo gola jedan poen. Zatim zamenite uloge."},
   "Sound Orchestra": {en:"Switch conductors and let the new leader change one sound at a time.",sr:"Zamenite dirigenta i neka novi vođa menja po jedan zvuk."},
   "Tape-Line Balance": {en:"At each turn in the line, pause in a steady statue pose.",sr:"Na svakom skretanju linije zastanite u stabilnoj pozi statue."},
-  "Monster Steps": {en:"Give the monster a quiet sound to match each kind of step.",sr:"Smislite tihi zvuk koji odgovara svakoj vrsti koraka čudovišta."},
-  "Bridge Builders": {en:"Add one folded paper layer and see if the bridge still holds the same toy.",sr:"Dodajte jedan sloj presavijenog papira i proverite da li most i dalje drži istu igračku."},
+  "Sardines": {en:"Keep the hiding place roomy and make sure nobody needs to squeeze in.",sr:"Birajte prostrano skrovište u koje niko ne mora da se ugura."},
+  "Bridge Builders": {en:"Add light paper balls one at a time and count how many the bridge can hold before it bends.",sr:"Dodajte lagane papirne loptice jednu po jednu i brojite koliko ih most drži pre nego što se savije."},
   "Weather Reporter": {en:"Invent a forecast for an imaginary planet and show its weather with a gesture.",sr:"Smislite prognozu za zamišljenu planetu i pokažite vreme jednim pokretom."},
-  "Dot-to-Doodle": {en:"After someone guesses the picture, add one detail to turn it into something else.",sr:"Kada neko pogodi crtež, dodajte detalj i pretvorite ga u nešto drugo."},
-  "Quiet Detective": {en:"Remember three small details, then tell the group one that has changed.",sr:"Zapamtite tri sitna detalja, pa recite grupi koji se promenio."},
+  "Dot-to-Doodle": {en:"For older children, outline a new subject with dots and let others guess it before adding details.",sr:"Za stariju decu nacrtajte novi motiv samo pomoću tačaka, pa neka ostali pogode šta predstavlja pre dodavanja detalja."},
+  "Quiet Detective": {en:"Choose a category such as colors, shapes or tiny clues. Each player finds one example the others have not named yet.",sr:"Izaberite kategoriju, na primer boje, oblike ili sitne tragove. Svako pronađe jedan primer koji drugi još nisu naveli."},
   "Obstacle Mission": {en:"Let the next player choose one safe way to go around the cushion.",sr:"Neka sledeći igrač izabere jedan bezbedan način da zaobiđe jastuk."},
-  "Story Dice Without Dice": {en:"Make one chosen object the helper that solves the story’s problem.",sr:"Neka izabrani predmet bude pomoćnik koji rešava problem u priči."},
-  "Pebble Patterns": {en:"Let a partner look briefly, cover the pattern and rebuild it from memory.",sr:"Neka partner kratko pogleda šaru, zatim je pokrijte i složite je po sećanju."},
-  "Copycat Clap": {en:"Repeat the rhythm using knee taps instead of claps for one round.",sr:"Jedan krug ponavljajte ritam tapkanjem po kolenima umesto pljeskanjem."},
-  "Paper Costume": {en:"Add one paper accessory that hints at the character’s special job.",sr:"Dodajte papirni detalj koji otkriva poseban posao lika."},
+  "Switch Signals": {en:"Add a third signal: tapping knees means a slow turn in place.",sr:"Dodajte treći znak: tapkanje po kolenima znači spor okret u mestu."},
+  "Pebble Patterns": {en:"Create a repeating rule, such as large–small–small. A partner continues the pattern with three pebbles, then switch roles.",sr:"Smislite pravilo koje se ponavlja, na primer veliki–mali–mali. Partner nastavlja šaru sa tri kamenčića, pa obrnite uloge."},
+  "Copycat Clap": {en:"The leader names a feeling, such as joy, calm or surprise. Create a clap rhythm to match it, then echo the rhythm together.",sr:"Vođa kaže osećaj, na primer radost, mir ili iznenađenje. Smislite ritam pljeska koji ga predstavlja, pa ga zajedno ponovite."},
+  "Hero Costume Design": {en:"Choose a new setting, such as a rainy forest or the Moon, then change one costume part to make it useful there.",sr:"Izaberite novu sredinu, poput kišne šume ili Meseca, pa promenite jedan deo kostima da tamo bude koristan."},
   "Alphabet Hunt": {en:"Find safe objects for the first three letters of a player’s name.",sr:"Pronađite bezbedne predmete za prva tri slova nečijeg imena."},
-  "Emotion Charades": {en:"Show the same feeling first as tiny, then as a very big pose.",sr:"Isto osećanje pokažite prvo sitnom, pa veoma velikom pozom."},
-  "Chalk River": {en:"Draw one safe island in the river and choose how to reach it.",sr:"Nacrtajte bezbedno ostrvo u reci i osmislite kako da stignete do njega."},
-  "Pass the Sketch": {en:"Keep the last detail secret and reveal the finished drawing together.",sr:"Sakrijte poslednji detalj i zajedno otkrijte gotov crtež."},
-  "Tiny Garden Design": {en:"Add a clear path and a small resting spot for a toy visitor.",sr:"Dodajte jasnu stazu i malo odmorište za gosta-igračku."},
-  "Hot and Cold Hunt": {en:"Give the seeker only three clues before they make a guess.",sr:"Dajte tragaču samo tri nagoveštaja pre nego što pogodi."},
-  "Balloon Keep-Up": {en:"Take turns tapping with the left and right hand, using gentle touches.",sr:"Naizmenično dodirujte balon levom i desnom rukom, sasvim nežno."},
+  "Emotion Charades": {en:"Silently act out two feelings in a row. The others guess both feelings and their order.",sr:"Bez reči odglumite dva osećanja zaredom. Ostali pogađaju koja su bila i kojim redosledom."},
+  "Chalk River": {en:"Agree on an extra rule for the islands: clap once or name a fruit. If the surface is flat and dry, older players can try a small one-foot hop.",sr:"Dogovorite dodatno pravilo za ostrva: pljesnite jednom ili recite ime voća. Ako je podloga ravna i suva, stariji mogu da pokušaju mali skok na jednoj nozi."},
+  "Pass the Sketch": {en:"In the final round, each player briefly describes their detail, then everyone comes up with a title together.",sr:"U završnom krugu svako ukratko opiše detalj koji je dodao, pa zajedno smislite naslov crteža."},
+  "Tiny Garden Design": {en:"Imagine a gust of wind. Add a shelter that will not blow away and check whether the path is still clear.",sr:"Zamislite da je dunuo vetar. Dodajte zaklon koji neće odleteti i proverite da li je staza i dalje prohodna."},
+  "Hot and Cold Hunt": {en:"For older players, hide two objects. The seeker finds them one at a time using only warm and cold clues.",sr:"Za stariju decu sakrijte dva predmeta. Tragač ih pronalazi redom uz tragove „toplo“ i „hladno“."},
+  "Balloon Keep-Up": {en:"For an extra challenge, say the name of the person you are sending the balloon to before each tap. Try to give everyone a turn without rushing.",sr:"Za dodatni izazov, pre svakog dodira izgovorite ime osobe kojoj šaljete balon. Cilj je da svi jednom dođu na red, bez žurbe."},
   "Living Room Camp": {en:"Invent a quiet animal visitor and act out how the campers welcome it.",sr:"Izmislite tihog životinjskog gosta i odglumite kako ga kamperi dočekuju."},
-  "Rhythm Leader": {en:"Change one sound in the pattern and see if everyone notices.",sr:"Promenite jedan zvuk u ritmu i proverite da li su svi primetili."},
-  "What Changed": {en:"Start with three objects; in the next round change two for an extra challenge.",sr:"Počnite sa tri predmeta, a u sledećem krugu promenite dva za dodatni izazov."},
-  "Paper Puppet Show": {en:"Let the audience choose a place, then have the puppets decide how to solve a small problem there.",sr:"Neka publika izabere mesto, pa neka lutke smisle kako da tamo reše mali problem."},
-  "Cone-Free Slalom": {en:"Try the same route with gentle side steps instead of forward steps.",sr:"Istu stazu pređite blagim bočnim koracima umesto koraka napred."},
-  "One-Line Creature": {en:"Give the creature a name and one special way it moves.",sr:"Dajte biću ime i osmislite jedan poseban način na koji se kreće."},
-  "Museum Guide": {en:"Let a visitor choose one exhibit and ask the guide one curious question.",sr:"Neka posetilac izabere jedan eksponat i postavi vodiču radoznalo pitanje."},
-  "Balance Delivery": {en:"Carry the same light item back along the route using both hands.",sr:"Vratite isti lagani predmet istom stazom, držeći ga obema rukama."},
-  "Category Countdown": {en:"Try the same category again, but name items in reverse alphabetical order.",sr:"Ponovite kategoriju, ali navodite stvari obrnutim abecednim redom."},
+  "Rhythm Leader": {en:"After a few repeats, the leader skips one sound for a round. The others guess which sound is missing and where it belongs.",sr:"Posle nekoliko ponavljanja, vođa jednom izostavi zvuk iz ritma. Ostali pogađaju koji zvuk nedostaje i gde pripada."},
+  "What Changed": {en:"For older players, change two details at once and ask them to spot both.",sr:"Za stariju decu promenite dva detalja odjednom i tražite da pronađu oba."},
+  "Paper Puppet Show": {en:"Let the audience suggest one safe object the characters must use in the story.",sr:"Neka publika predloži jedan bezbedan predmet koji junaci moraju da upotrebe u priči."},
+  "Zigzag Delivery": {en:"For older children, the guide gives three tasks: pause and touch one shoulder at the first cup, say who the toy is for at the middle one, then leave it at the last and say, ‘Delivery complete.’ The player remembers the order before starting.",sr:"Za stariju decu vodič zada tri zadatka: kod prve čaše zastani i dodirni rame, kod srednje reci kome nosiš igračku, a kod poslednje je ostavi i reci „Dostava završena“. Igrač zapamti redosled pre polaska."},
+  "One-Line Creature": {en:"Draw a path with three stops, such as a stone, a puddle and a nest. Act out how the creature changes its walk at each stop while the others guess where it is going.",sr:"Nacrtajte putanju sa tri stanice, na primer kamen, bara i gnezdo. Odglumite kako biće menja hod na svakoj stanici, a ostali neka pogode gde ide."},
+  "Museum Guide": {en:"For older children, the visitor chooses an object and the guide gives three clues without saying its name. The visitor guesses the object and what it is used for, then switch roles.",sr:"Za stariju decu posetilac izabere jedan predmet, a vodič daje tri traga bez izgovaranja njegovog imena. Posetilac pogađa predmet i čemu služi, pa zamenite uloge."},
+  "Balance Delivery": {en:"For older children, carry the ball to the finish and back using the non-dominant hand without dropping it. If it falls, restart from the beginning.",sr:"Za stariju decu, nosite lopticu nedominantnom rukom do cilja i nazad bez ispuštanja. Ako padne, pokušaj počinje ponovo od starta."},
+  "Category Countdown": {en:"For older children, name five different fruits before time runs out, each starting with a different letter. Example: banana, kiwi, plum, orange, watermelon.",sr:"Za stariju decu: nabrojte pet različitih voćki pre isteka vremena, svaku na drugo početno slovo. Primer: banana, kruška, šljiva, narandža, lubenica."},
   "Spider Web Route": {en:"Add one new safe turn to the route and show a partner the way through.",sr:"Dodajte jedno bezbedno skretanje stazi i pokažite partneru put kroz nju."},
-  "Nature Bingo": {en:"Choose a new row of three things to spot without collecting them.",sr:"Izaberite novi red od tri stvari koje treba uočiti, bez sakupljanja."},
-  "Bounce and Catch": {en:"Add one quiet clap after the bounce and before the catch.",sr:"Dodajte jedan tihi pljesak posle odskoka, pre hvatanja."},
-  "Dance Traffic Lights": {en:"Add a blue signal for a slow turn, then return to the usual colors.",sr:"Dodajte plavi znak za spori okret, pa se vratite uobičajenim bojama."},
+  "Nature Bingo": {en:"For older children, give two clues at once, such as: ‘Find something green with jagged edges.’ The player searches with their eyes and explains how it matches both clues. Do not pick or touch anything.",sr:"Za stariju decu zadajte dva uslova odjednom, na primer: „Pronađi nešto zeleno sa nazubljenim ivicama.“ Igrač to traži pogledom i objašnjava kako ispunjava oba uslova. Ne berite i ne dirajte."},
+  "Bounce and Catch": {en:"For older children: after one bounce, quickly touch your knees, then shoulders, and catch the ball before it hits the floor again. Bounce gently and stay in place.",sr:"Za stariju decu: posle jednog odskoka brzo dodirnite kolena, pa ramena i uhvatite loptu pre nego što ponovo udari o pod. Odbijajte je nežno i ostanite na mestu."},
+  "Dance Traffic Lights": {en:"For older children, add a blue signal: make one slow turn in place, then freeze on red. The caller can change signals unpredictably; do not run.",sr:"Za stariju decu uvedite plavi signal: napravite jedan spor okret u mestu, a na crveno se odmah ukočite. Vodič može da menja signale nepredvidivo; ne trčite."},
   "Box Invention": {en:"Give the invention one problem to solve and demonstrate how it helps.",sr:"Zadajte izumu jedan problem i pokažite kako pomaže da se reši."},
-  "Scent Explorer": {en:"Choose two familiar scents and invent a place where both might be found.",sr:"Izaberite dva poznata mirisa i zamislite mesto na kom biste mogli naći oba."},
-  "Symmetry Art": {en:"Fold the page to check the two sides, then add a matching detail to each.",sr:"Presavijte papir da uporedite strane, pa dodajte isti detalj na obe."},
-  "Jumping Numbers": {en:"Call a number and make that many small jumps on a clear floor.",sr:"Izgovorite broj i napravite toliko malih skokova na slobodnom podu."},
-  "Twig Letters": {en:"Use fallen twigs to spell a short word, then let a partner read it.",sr:"Od opalih grančica složite kratku reč, pa neka je partner pročita."},
+  "Scent Explorer": {en:"For older children, an adult offers three scents one at a time. The child remembers and repeats the order; for a harder level, repeat it backwards. Offer scents from a distance.",sr:"Za stariju decu odrasli ponudi tri mirisa jedan po jedan. Dete zapamti i ponovi redosled; za teži nivo, ponovi ga unazad. Mirise ponudite sa odstojanja."},
+  "Symmetry Art": {en:"For older children, the adult draws three dots at different distances from the center line. The child mirrors them on the other side without folding the paper, then check their positions together.",sr:"Za stariju decu odrasli nacrta tri tačke na različitim udaljenostima od srednje linije. Dete ih preslika na drugu stranu bez presavijanja papira, pa zajedno proverite položaj."},
+  "Jumping Numbers": {en:"For older children, the adult calls three numbers in a row, such as 2–5–1. The child remembers the sequence, then makes one small jump to each matching card in order.",sr:"Za stariju decu odrasli izgovori tri broja zaredom, na primer 2–5–1. Dete zapamti niz, pa jednim malim skokom dođe do svake odgovarajuće kartice redom."},
+  "Twig Letters": {en:"Build a short secret word from fallen twigs and ask another player to read it without hints. For a harder level, choose a word of at least four letters, then switch roles.",sr:"Složite kratku tajnu reč od opalih grančica, a drugi igrač neka je pročita bez nagoveštaja. Za teži nivo izaberite reč od najmanje četiri slova, pa zamenite uloge."},
   "Corner Goals": {en:"Call a color and gently roll the ball toward its matching corner marker.",sr:"Izgovorite boju i nežno otkotrljajte loptu ka odgovarajućoj oznaci u uglu."},
   "Sound Map": {en:"Mark the farthest sound on the drawing, then add an arrow showing its direction.",sr:"Na crtežu označite najudaljeniji zvuk i dodajte strelicu koja pokazuje smer."},
-  "Kitchen Band": {en:"The conductor gives a quiet signal; the band changes from loud to soft together.",sr:"Dirigent daje tihi znak, a orkestar zajedno prelazi sa glasnog na tiho."},
+  "Kitchen Band": {en:"Each player invents one quiet sound. The conductor combines them into a short rhythm for the band to play together, then a new player conducts.",sr:"Svaki svirač smisli po jedan tih zvuk. Dirigent ih spoji u kratak ritam, a bend ga zajedno odsvira; zatim se menja dirigent."},
   "Indoor Picnic Quest": {en:"Add a pretend dessert to the picnic and invent a clue that leads to it.",sr:"Dodajte zamišljeni desert pikniku i smislite trag koji vodi do njega."},
   "Build a Creature": {en:"Give the creature a home and one helpful job it can do there.",sr:"Osmislite dom za biće i jedan koristan posao koji tamo obavlja."},
-  "Captain Says": {en:"Give two short commands in a row; players follow them only when you say “Captain says”.",sr:"Zadajte dve kratke komande zaredom; igrači ih prate samo kada kažete „Kapetan kaže”."},
-  "Hopscotch Remix": {en:"Add one easy movement to a square, such as a clap or a turn on the spot.",sr:"Dodajte jedan lak pokret u polje, poput pljeska ili okreta u mestu."},
-  "Leaf Shadow Trace": {en:"Trace the leaf shadow again later and compare how its outline moved.",sr:"Kasnije ponovo ocrtajte senku lista i uporedite kako se njen oblik pomerio."},
+  "Captain Says": {en:"For older children, the captain quickly alternates a real and a trick command: ‘Captain says: touch your shoulders,’ then ‘take one step.’ Players do only the first; nobody is eliminated, just keep playing.",sr:"Za stariju decu kapetan brzo smenjuje pravu i lažnu komandu: „Kapetan kaže: dodirni ramena“, pa odmah „napravi jedan korak“. Igrači urade samo prvu; nema ispadanja, samo nastavite igru."},
+  "Hopscotch Remix": {en:"For older children, an adult calls three numbers in order, such as 4–2–6. The player remembers the sequence, hops to those squares and does an action only if a square is marked.",sr:"Za stariju decu odrasli izgovori tri broja redom, na primer 4–2–6. Igrač pamti niz, skače do tih polja i izvodi radnju samo ako je neko od njih označeno."},
+  "Leaf Shadow Trace": {en:"Trace the shadow now, then again in 10–15 minutes using another color, without moving the leaf or paper. Compare which way it shifted and whether it is longer or shorter; do not look directly at the sun.",sr:"Ocrtajte senku sada, pa ponovo za 10–15 minuta drugom bojom, bez pomeranja lista ili papira. Uporedite u kom smeru se senka pomerila i da li je duža ili kraća; ne gledajte direktno u sunce."},
   "Mood Music Moves": {en:"Switch feelings halfway through the song and change your movement to match.",sr:"Na polovini pesme promenite osećanje i pokretom pokažite novu emociju."},
   "Tallest Tiny Tower": {en:"Pause after each new level and count how many pieces the tower holds.",sr:"Posle svakog novog nivoa zastanite i prebrojte koliko delova kula drži."},
-  "Guess My Rule": {en:"After the rule is guessed, change it and sort one new object.",sr:"Kada pogode pravilo, promenite ga i razvrstajte još jedan predmet."},
+  "Guess My Rule": {en:"For older children, the sorter sneaks one object into the wrong group. The others first guess the secret rule, then find the odd one out and explain why it does not belong.",sr:"Za stariju decu razvrstavač ubaci jedan predmet u pogrešnu grupu. Ostali prvo pogađaju tajno pravilo, zatim pronalaze uljeza i objašnjavaju zašto ne pripada toj grupi."},
   "Postcard Adventure": {en:"Add a one-line message from someone who lives in the place you drew.",sr:"Dodajte kratku poruku osobe koja živi na mestu koje ste nacrtali."},
   "Stepping-Stone Story": {en:"At each safe stepping spot, add one word to a shared sentence.",sr:"Na svakom bezbednom mestu za stajanje dodajte po jednu reč zajedničkoj priči."},
-  "Wind Race": {en:"Make two clear lanes and gently blow a small paper scrap toward the finish.",sr:"Označite dve jasne staze i nežno duvajte mali komadić papira ka cilju."},
-  "Circle Keep-Away": {en:"The middle player chooses which way the gentle ball pass should travel around the circle.",sr:"Igrač u sredini bira u kom smeru će se lopta nežno dodavati u krugu."},
+  "Wind Race": {en:"For older children, make a gate halfway down each lane using two markers. The leaf must pass through the gate before crossing the finish; if it misses, try again with a gentle blow.",sr:"Za stariju decu napravite kapiju na polovini svake staze od dve oznake. List mora da prođe kroz kapiju pa tek onda preko cilja; ako je promaši, pokušajte ponovo nežnim duvanjem."},
+  "Circle Keep-Away": {en:"After the ball goes around the circle once, the caller says ‘change direction’ and players begin rolling it the other way. The middle player stays in place until they intercept it.",sr:"Kada lopta obiđe krug jednom, vodič kaže „promena smera“ i igrači počinju da je kotrljaju u suprotnom smeru. Igrač u sredini ostaje na mestu dok ne presretne loptu."},
   "Final Pose Challenge": {en:"Finish as a statue of an animal or object and let the group guess it.",sr:"Završite kao statua životinje ili predmeta, pa neka grupa pogodi šta ste."},
   "Colorful Steps": {en:"Make a short color pattern and give each color its own safe movement.",sr:"Napravite kratak niz boja i svakoj dodelite po jedan bezbedan pokret."},
   "Three Things, One Story": {en:"For a twist, choose one object to become the story's narrator and tell the ending from its point of view.",sr:"Za obrt, izaberite jedan predmet da bude pripovedač i ispriča kraj iz svog ugla."},
@@ -1369,12 +1526,12 @@ const gameBonusIdeas = {
   "Mission Cards": {en:"Combine two cards into one short mission and complete them in order.",sr:"Spojite dve kartice u kratku misiju i izvršite zadatke po redu."},
   "Crawl Like a Comet": {en:"Repeat the route slowly, then finish by making a star shape on the floor.",sr:"Ponovite stazu polako, pa završite tako što ćete na podu napraviti zvezdu."},
   "Invent a Creature": {en:"Choose a habitat for the creature and make a sound it might use there.",sr:"Izaberite stanište za biće i smislite zvuk kojim bi se tamo oglašavalo."},
-  "Pocket Narrator": {en:"Use three small objects in a story without naming them directly.",sr:"Upotrebite tri mala predmeta u priči, ali nemojte ih direktno imenovati."},
-  "Rhyme Relay": {en:"Make the final rhyme describe a character or place from the chain.",sr:"Neka se poslednja rima odnosi na junaka ili mesto iz niza."},
-  "Sound Story": {en:"Give one character a repeating sound and make it whenever they appear.",sr:"Dodelite jednom junaku zvuk koji ponavljate svaki put kada se pojavi."},
+  "Pocket Narrator": {en:"Choose one object as the problem-maker. Let the other two characters find a way to help, then act out the ending.",sr:"Izaberite jedan predmet koji će napraviti problem. Neka druga dva lika pronađu način da pomognu, pa odglumite završetak."},
+  "Rhyme Relay": {en:"Choose two words from the chain and make a couplet, then add a rhyming line.",sr:"Izaberite dve reči iz lanca i sastavite dvostih, pa dodajte još jedan stih koji se rimuje."},
+  "Sound Story": {en:"Add a third character with a new sound and let it help solve the story’s problem.",sr:"Dodajte trećeg lika sa novim zvukom i dajte mu ulogu u rešavanju problema iz priče."},
   "Question Detective": {en:"Set a limit of five yes-or-no questions before making a guess.",sr:"Dogovorite najviše pet pitanja sa odgovorom „da” ili „ne” pre pogađanja."},
-  "Kindness News": {en:"Report a kind act as a headline, then interview the helper.",sr:"Predstavite lep postupak kao vest, pa postavite pitanje osobi koja je pomogla."},
-  "Opposite Day Tale": {en:"At the end, choose the funniest opposite detail and explain how it changed the story.",sr:"Na kraju izaberite najsmešniji obrnuti detalj i objasnite kako je promenio priču."},
+  "Kindness News": {en:"Make a headline, report one fact, then interview the helper and switch roles.",sr:"Smislite naslov, iznesite jednu činjenicu, intervjuišite pomagača i zamenite uloge."},
+  "Opposite Day Tale": {en:"Reverse two details at once: a big bear walks forward into the forest; next, a small bear walks backward home.",sr:"Preokrenite dva detalja odjednom: veliki medved ide napred u šumu, a zatim mali medved ide unazad kući."},
   "Soundtrack Story": {en:"Give each character a quiet sound and repeat it whenever that character appears.",sr:"Dodelite svakom junaku tih zvuk i ponovite ga kad god se pojavi."},
   "Magic Word Story": {en:"Add a second magic word that changes one character's plan.",sr:"Dodajte drugu čarobnu reč koja menja plan jednog junaka."},
   "Secret Shape Sketch": {en:"Let a partner draw a new picture around the hidden shape, then find it together.",sr:"Neka partner nacrta novu sliku oko skrivenog oblika, pa ga zajedno pronađite."},
@@ -1385,14 +1542,14 @@ const gameBonusIdeas = {
   "Folded Face": {en:"Add a thought bubble and let the group guess what the face is thinking.",sr:"Dodajte oblačić za misli i neka grupa pogodi o čemu lice razmišlja."},
   "Pattern Portrait": {en:"Use two patterns that alternate and give the finished portrait a name.",sr:"Naizmenično koristite dve šare i dajte gotovom portretu ime."},
   "Invisible Ink Map": {en:"For a bonus, give your partner only the key and let them draw a new route from start to finish.",sr:"Za bonus, dajte partneru samo legendu i pustite ga da nacrta novi put od početka do cilja."},
-  "Draw the Feeling": {en:"Draw the same feeling twice: once with calm lines and once with energetic lines.",sr:"Nacrtajte isto osećanje dvaput: mirnim linijama, pa energičnim linijama."},
+  "Draw the Feeling": {en:"Draw the same feeling in two different ways, then explain which colors and lines shaped each version.",sr:"Nacrtajte isto osećanje na dva načina, pa objasnite kako su boje i linije promenile utisak."},
   "Button Sorting Lab": {en:"Invent a new sorting rule and see if a partner can guess it.",sr:"Smislite novo pravilo za razvrstavanje i proverite da li ga partner pogađa."},
-  "What Is Missing?": {en:"After the first round, hide two familiar objects and guess both.",sr:"Posle prvog kruga sakrijte dva poznata predmeta i pogodite oba."},
+  "What Is Missing?": {en:"Switch roles so the child removes an object and the adult gets to guess. Add a second missing object only if the child wants a harder round.",sr:"Zamenite uloge tako da dete skloni predmet, a odrasli pogađa. Dodajte drugi predmet samo ako dete želi teži krug."},
   "Clue Collector": {en:"Make the last clue rhyme with the place where the surprise is hidden.",sr:"Neka se poslednji trag rimuje sa mestom na kom je iznenađenje sakriveno."},
   "Sound Source Hunt": {en:"With eyes open, stay still and follow one gentle sound using only left/right clues.",sr:"Otvorenih očiju mirujte i pratite nežan zvuk samo pomoću tragova levo/desno."},
   "Odd One Out": {en:"Add a second odd item and explain a different reason it does not belong.",sr:"Dodajte još jedan uljez i objasnite po čemu se razlikuje."},
-  "Touch and Tell": {en:"Describe the object without naming its color; let the partner ask three questions.",sr:"Opišite predmet bez pominjanja boje, a partner neka postavi tri pitanja."},
-  "Sequence Spotter": {en:"Let one player extend the pattern by one item before the other guesses what comes next.",sr:"Neka jedan igrač produži niz za jedan predmet pre nego što drugi pogodi šta sledi."},
+  "Touch and Tell": {en:"Let the guessers ask up to three yes-or-no questions before the object is revealed, then switch roles.",sr:"Neka oni koji pogađaju postave do tri pitanja sa odgovorom „da“ ili „ne“ pre otkrivanja predmeta, pa zamenite uloge."},
+  "Sequence Spotter": {en:"For a harder round, use a three-part pattern such as red-red-blue. Ask the player to explain the rule before extending it.",sr:"Za teži krug koristite obrazac od tri dela, poput crveno-crveno-plavo. Neka igrač objasni pravilo pre nego što nastavi niz."},
   "Room Scavenger List": {en:"Find one safe object that matches two clues at once, such as color and shape.",sr:"Pronađite bezbedan predmet koji odgovara dvama tragovima, na primer boji i obliku."},
   "Secret Path Finder": {en:"Add one extra turn to the route and give a clue only at the halfway point.",sr:"Dodajte još jedno skretanje na stazu i dajte trag tek na polovini."},
   "Five Things Fast": {en:"Choose one letter and name five familiar things that start with it.",sr:"Izaberite jedno slovo i navedite pet poznatih stvari koje njime počinju."},
@@ -1400,9 +1557,9 @@ const gameBonusIdeas = {
   "Straw City": {en:"Add one connecting road and make a sign that tells the toy where to go.",sr:"Dodajte povezni put i napravite znak koji pokazuje igrački kuda da ide."},
   "Marshmallow Structures": {en:"Try making a small arch that can stand without anyone holding it.",sr:"Pokušajte da napravite mali luk koji stoji bez pridržavanja."},
   "Bridge to the Toy": {en:"Make the bridge reach a little farther while keeping its base on a stable surface.",sr:"Produžite most malo više, ali mu osnovu zadržite na stabilnoj površini."},
-  "Cardboard Telescope": {en:"Spot three things through the pretend telescope and invent a name for each discovery.",sr:"Kroz zamišljeni teleskop uočite tri stvari i izmislite ime za svako otkriće."},
+  "Cardboard Telescope": {en:"Choose two objects and find one detail they share and one detail that differs through the pretend telescope.",sr:"Izaberite dva predmeta i kroz zamišljeni teleskop pronađite jednu zajedničku i jednu različitu osobinu."},
   "Maze Builder": {en:"Add one dead end, but make sure there is still a clear route to the toy.",sr:"Dodajte jednu slepu ulicu, ali ostavite jasan put do igračke."},
-  "Balance Sculpture": {en:"Rebuild the same shape with one fewer object while keeping it stable.",sr:"Ponovo složite isti oblik sa jednim predmetom manje i pokušajte da ostane stabilan."},
+  "Balance Sculpture": {en:"Compare two low bases of different widths and predict which will hold one extra lightweight block more steadily.",sr:"Uporedite dve niske osnove različite širine i pogodite koja će stabilnije držati još jednu laganu kocku."},
   "Tiny Shop": {en:"A pretend customer asks for something unusual; invent it and add it to the shop.",sr:"Zamišljeni kupac traži nešto neobično; izmislite taj proizvod i dodajte ga u prodavnicu."},
   "Paper Playground": {en:"Add a quiet rest spot to the drawing and decide who might use it.",sr:"Dodajte mirno mesto za odmor na crtež i zamislite ko bi ga koristio."},
   "Balloon Tap Circle": {en:"After one full round, gently reverse the direction of the balloon taps.",sr:"Posle jednog punog kruga nežno promenite smer dodavanja balona."},
@@ -1410,11 +1567,11 @@ const gameBonusIdeas = {
   "Roll and Follow": {en:"After each pass, the receiver chooses a new safe movement for both players to do.",sr:"Posle svakog dodavanja primalac bira novi bezbedan pokret koji oba igrača izvode."},
   "Two-Bounce Catch": {en:"Try two soft bounces in different places before the careful catch.",sr:"Pokušajte dva blaga odskoka na različitim mestima pre pažljivog hvatanja."},
   "Balloon Volleyball": {en:"After three gentle taps, switch places before keeping the balloon in the air again.",sr:"Posle tri blaga udarca zamenite mesta, pa nastavite da održavate balon u vazduhu."},
-  "Partner Pass Pattern": {en:"Add one new pass to the pattern, then repeat the whole sequence together.",sr:"Dodajte jedno novo dodavanje u niz, pa ga zajedno ponovite od početka."},
+  "Partner Pass Pattern": {en:"After the group can repeat the route, add one new pass at the end and try the full sequence again.",sr:"Kada grupa ponovi redosled, dodajte jedno novo dodavanje na kraj i ponovite ceo niz."},
   "Rolling Ramps": {en:"Raise one end of the low, stable ramp slightly and compare how the ball rolls.",sr:"Malo podignite jedan kraj niske, stabilne rampe i uporedite kako se lopta kotrlja."},
   "Circle Bounce": {en:"Say the next player's name before the gentle bounce and pass.",sr:"Izgovorite ime sledećeg igrača pre nego što nežno odbijete i dodate loptu."},
   "Target Story Toss": {en:"Invent a new story detail for the target the ball reaches.",sr:"Smislite novi detalj priče za metu do koje je lopta stigla."},
-  "Leaf Line-Up": {en:"Reorder the leaves by color after sorting them by size.",sr:"Poređajte lišće ponovo po boji, nakon što ste ga složili po veličini."},
+  "Leaf Line-Up": {en:"After sorting by size, mix the leaves and ask a partner to rebuild the order using shade or shape.",sr:"Posle slaganja po veličini promešajte listove i zamolite partnera da ih ponovo poređa po nijansi ili obliku."},
   "Nature Number Hunt": {en:"Choose a number and point to a safe natural group that matches it.",sr:"Izaberite broj i pokažite bezbednu grupu iz prirode koja mu odgovara."},
   "Stick Shadow Shapes": {en:"Let a partner guess the shadow shape before you name it.",sr:"Neka partner pogodi oblik senke pre nego što ga imenujete."},
   "Bird Sound Pause": {en:"Take turns copying one bird call softly, then choose which sound you liked best.",sr:"Naizmenično tiho oponašajte glas jedne ptice, pa izaberite zvuk koji vam se najviše dopao."},
@@ -1441,7 +1598,7 @@ const gameBonusIdeas = {
   "Helpful Inventor": {en:"Describe the tool's job with three clues and let a partner guess the problem it solves.",sr:"Opišite namenu izuma kroz tri traga i neka partner pogodi koji problem rešava."},
   "Underwater Tour": {en:"Add three sea creatures to the tour and invent a gentle movement for each.",sr:"Dodajte tri morska bića u obilazak i izmislite blag pokret za svako."},
   "Family Newsroom": {en:"Turn one kind thing someone did today into a cheerful headline.",sr:"Pretvorite jedan lep postupak od danas u vedar naslov vesti."},
-  "Time-Travel Guide": {en:"Let a visitor ask one question about the past or future stop.",sr:"Neka posetilac postavi jedno pitanje o stanici u prošlosti ili budućnosti."},
+  "Time-Travel Guide": {en:"Visit a village before electricity and ask how homes were lit, or a future city where buses fly between buildings and ask how they know where to land.",sr:"Posetite selo pre struje i pitajte kako su osvetljavali kuće ili grad budućnosti u kome autobusi lete između zgrada i pitajte kako znaju gde da slete."},
   "Tiny Theatre": {en:"Perform the same short scene once with words and once without speaking.",sr:"Odglumite istu kratku scenu jednom rečima, a zatim bez govora."},
   "Quiet Cloud Count": {en:"Silently count the clouds you see, then compare totals without rushing.",sr:"U sebi prebrojte oblake koje vidite, pa polako uporedite broj."},
   "Feather Focus": {en:"Guess where the feather will land, then see how close your guess was.",sr:"Pogodite gde će pero pasti, pa proverite koliko je procena bila blizu."},
@@ -1451,14 +1608,14 @@ const gameBonusIdeas = {
   "Listening Minute": {en:"After listening, point toward the farthest sound you noticed.",sr:"Posle slušanja pokažite u smeru najudaljenijeg zvuka koji ste primetili."},
   "Tense and Relax": {en:"Add a gentle shoulder stretch between each tense-and-relax round.",sr:"Između krugova stezanja i opuštanja nežno istegnite ramena."},
   "Quiet Pattern Tiles": {en:"Hide one item from the pattern and let a partner identify the missing spot.",sr:"Sakrijte jedan predmet iz niza i neka partner otkrije koje mesto nedostaje."},
-  "Gratitude Garden": {en:"Give each imaginary flower a specific kind act someone did today.",sr:"Svaki zamišljeni cvet posvetite konkretnom lepom postupku od danas."},
+  "Gratitude Garden": {en:"I liked drawing together today; draw a yellow flower for that moment.",sr:"Danas mi se dopalo kad smo zajedno crtali; nacrtajte žuti cvet za taj trenutak."},
   "Paper Bridge Test": {en:"Change one fold and test the bridge again with the same small toy to compare the result.",sr:"Promenite jedan pregib i ponovo ispitajte most istom malom igračkom da uporedite rezultat."},
   "Straw City": {en:"Add one connecting road and make a sign that tells the toy where to go.",sr:"Dodajte povezni put i napravite znak koji pokazuje igrački kuda da ide."},
   "Marshmallow Structures": {en:"Try making a small arch that can stand without anyone holding it.",sr:"Pokušajte da napravite mali luk koji stoji bez pridržavanja."},
   "Bridge to the Toy": {en:"Make the bridge reach a little farther while keeping its base on a stable surface.",sr:"Produžite most malo više, ali mu osnovu zadržite na stabilnoj površini."},
-  "Cardboard Telescope": {en:"Spot three things through the pretend telescope and invent a name for each discovery.",sr:"Kroz zamišljeni teleskop uočite tri stvari i izmislite ime za svako otkriće."},
+  "Cardboard Telescope": {en:"Choose two objects and find one detail they share and one detail that differs through the pretend telescope.",sr:"Izaberite dva predmeta i kroz zamišljeni teleskop pronađite jednu zajedničku i jednu različitu osobinu."},
   "Maze Builder": {en:"Add one dead end, but make sure there is still a clear route to the toy.",sr:"Dodajte jednu slepu ulicu, ali ostavite jasan put do igračke."},
-  "Balance Sculpture": {en:"Rebuild the same shape with one fewer object while keeping it stable.",sr:"Ponovo složite isti oblik sa jednim predmetom manje i pokušajte da ostane stabilan."},
+  "Balance Sculpture": {en:"Compare two low bases of different widths and predict which will hold one extra lightweight block more steadily.",sr:"Uporedite dve niske osnove različite širine i pogodite koja će stabilnije držati još jednu laganu kocku."},
   "Tiny Shop": {en:"A pretend customer asks for something unusual; invent it and add it to the shop.",sr:"Zamišljeni kupac traži nešto neobično; izmislite taj proizvod i dodajte ga u prodavnicu."},
   "Paper Playground": {en:"Add a quiet rest spot to the drawing and decide who might use it.",sr:"Dodajte mirno mesto za odmor na crtež i zamislite ko bi ga koristio."},
   "Balloon Tap Circle": {en:"After one full round, gently reverse the direction of the balloon taps.",sr:"Posle jednog punog kruga nežno promenite smer dodavanja balona."},
@@ -1466,11 +1623,11 @@ const gameBonusIdeas = {
   "Roll and Follow": {en:"After each pass, the receiver chooses a new safe movement for both players to do.",sr:"Posle svakog dodavanja primalac bira novi bezbedan pokret koji oba igrača izvode."},
   "Two-Bounce Catch": {en:"Try two soft bounces in different places before the careful catch.",sr:"Pokušajte dva blaga odskoka na različitim mestima pre pažljivog hvatanja."},
   "Balloon Volleyball": {en:"After three gentle taps, switch places before keeping the balloon in the air again.",sr:"Posle tri blaga udarca zamenite mesta, pa nastavite da održavate balon u vazduhu."},
-  "Partner Pass Pattern": {en:"Add one new pass to the pattern, then repeat the whole sequence together.",sr:"Dodajte jedno novo dodavanje u niz, pa ga zajedno ponovite od početka."},
+  "Partner Pass Pattern": {en:"After the group can repeat the route, add one new pass at the end and try the full sequence again.",sr:"Kada grupa ponovi redosled, dodajte jedno novo dodavanje na kraj i ponovite ceo niz."},
   "Rolling Ramps": {en:"Raise one end of the low, stable ramp slightly and compare how the ball rolls.",sr:"Malo podignite jedan kraj niske, stabilne rampe i uporedite kako se lopta kotrlja."},
   "Circle Bounce": {en:"Say the next player's name before the gentle bounce and pass.",sr:"Izgovorite ime sledećeg igrača pre nego što nežno odbijete i dodate loptu."},
   "Target Story Toss": {en:"Invent a new story detail for the target the ball reaches.",sr:"Smislite novi detalj priče za metu do koje je lopta stigla."},
-  "Leaf Line-Up": {en:"Reorder the leaves by color after sorting them by size.",sr:"Poređajte lišće ponovo po boji, nakon što ste ga složili po veličini."},
+  "Leaf Line-Up": {en:"After sorting by size, mix the leaves and ask a partner to rebuild the order using shade or shape.",sr:"Posle slaganja po veličini promešajte listove i zamolite partnera da ih ponovo poređa po nijansi ili obliku."},
   "Nature Number Hunt": {en:"Choose a number and point to a safe natural group that matches it.",sr:"Izaberite broj i pokažite bezbednu grupu iz prirode koja mu odgovara."},
   "Stick Shadow Shapes": {en:"Let a partner guess the shadow shape before you name it.",sr:"Neka partner pogodi oblik senke pre nego što ga imenujete."},
   "Bird Sound Pause": {en:"Take turns copying one bird call softly, then choose which sound you liked best.",sr:"Naizmenično tiho oponašajte glas jedne ptice, pa izaberite zvuk koji vam se najviše dopao."},
@@ -1507,7 +1664,7 @@ const gameBonusIdeas = {
   "Listening Minute": {en:"Try to remember two sounds in the order you heard them.",sr:"Pokušajte da zapamtite dva zvuka redom kojim ste ih čuli."},
   "Tense and Relax": {en:"Choose one body part, gently tense it, then relax it and notice the difference.",sr:"Izaberite deo tela, blago ga zategnite, pa opustite i primetite razliku."},
   "Quiet Pattern Tiles": {en:"Make a repeating pattern with two safe objects, then let a partner continue it.",sr:"Napravite šaru koja se ponavlja od dva bezbedna predmeta, pa neka je partner nastavi."},
-  "Gratitude Garden": {en:"Choose one flower and say a specific kind thing someone did, such as sharing or helping.",sr:"Izaberite jedan cvet i navedite konkretnu lepu stvar koju je neko uradio, poput deljenja ili pomoći."}
+  "Gratitude Garden": {en:"Share one good thing from the day and draw a flower for it; anyone may pass.",sr:"Podelite jednu lepu stvar iz dana i nacrtajte cvet za nju; svako može i da preskoči red."}
 };
 
 const gameExampleIdeas = {
@@ -1536,56 +1693,56 @@ const gameExampleIdeas = {
   "Make a Goal": {en:"Set two short sticks as a goal and gently roll a soft ball through the gap.",sr:"Označite gol dvema kratkim grančicama i nežno otkotrljajte mekanu loptu kroz otvor."},
   "Sound Orchestra": {en:"Give one player a clap, another a soft tap and a third a hum; conduct them together.",sr:"Jednom igraču dodelite pljesak, drugom tiho tapkanje, trećem pevušenje; zajedno im dirigujte."},
   "Tape-Line Balance": {en:"Follow a removable floor-tape line slowly and pause in a steady pose at each turn.",sr:"Polako pratite liniju od uklonjive trake na podu i zastanite u stabilnoj pozi na svakom skretanju."},
-  "Monster Steps": {en:"Try giant steps, tiny steps and tiptoes; let the others guess which monster you are.",sr:"Probajte džinovske i sićušne korake, pa hod na prstima; neka ostali pogode koje ste čudovište."},
-  "Bridge Builders": {en:"Rest a folded strip of cardboard between two sturdy books and test it with a small toy.",sr:"Oslonite presavijenu traku kartona na dve stabilne knjige i isprobajte je malom igračkom."},
+  "Sardines": {en:"One child hides in a spacious, safe place. Everyone who finds them quietly joins the group.",sr:"Jedno dete se sakrije na prostranom, bezbednom mestu. Ko ga pronađe, tiho se pridruži grupi."},
+  "Bridge Builders": {en:"Fold paper like an accordion, rest it between two books and carefully place a small soft toy in the middle.",sr:"Presavijte papir u harmoniku, oslonite ga na dve knjige i pažljivo stavite malu plišanu igračku na sredinu."},
   "Weather Reporter": {en:"Give a sunny forecast for an imaginary planet and show the breeze with your hands.",sr:"Dajte sunčanu prognozu za zamišljenu planetu i rukama pokažite povetarac."},
-  "Dot-to-Doodle": {en:"Connect five dots into a fish, then add bubbles and a place for it to swim.",sr:"Spojite pet tačaka u ribu, pa joj dodajte mehuriće i mesto gde pliva."},
-  "Quiet Detective": {en:"Look at three objects on a table, turn away, then spot which one has moved.",sr:"Pogledajte tri predmeta na stolu, okrenite se, pa otkrijte koji je pomeren."},
+  "Dot-to-Doodle": {en:"Arrange the dots into a fish outline, connect them, then add an eye, fins and bubbles.",sr:"Rasporedite tačke u obris ribe, spojite ih, pa dodajte oko, peraje i mehuriće."},
+  "Quiet Detective": {en:"On a shelf, one player notices a blue marker, another spots a book with a bent corner, and someone finds an object behind a vase.",sr:"Na polici neko primeti plavi marker, neko knjigu sa savijenim uglom, a neko predmet koji stoji iza vaze."},
   "Obstacle Mission": {en:"Walk around a cushion, step over a tape line and reach the toy at the finish.",sr:"Zaobiđite jastuk, prekoračite liniju od trake i stignite do igračke na cilju."},
-  "Story Dice Without Dice": {en:"Choose a cup, a leaf and a toy; make each one help solve the story's problem.",sr:"Izaberite čašu, list i igračku; neka svaka pomogne da se reši problem u priči."},
+  "Switch Signals": {en:"One clap means step in place and two claps mean freeze. After ‘Switch!’, the meanings reverse.",sr:"Jedan pljesak znači korak u mestu, a dva pljeska zamrzavanje. Posle „Promena!“ značenja se obrću."},
   "Pebble Patterns": {en:"Copy a short pattern of large, safe pebbles after looking at it for a few seconds.",sr:"Pogledajte nekoliko sekundi šaru od većih, bezbednih kamenčića, pa je složite po sećanju."},
   "Copycat Clap": {en:"Clap twice, tap your knees once and let a partner repeat the rhythm.",sr:"Pljesnite dvaput, jednom tapnite kolena i neka partner ponovi ritam."},
-  "Paper Costume": {en:"Make a paper badge for an imaginary hero and let others guess the hero's job.",sr:"Napravite papirnu značku za zamišljenog junaka i neka ostali pogode njegov posao."},
+  "Hero Costume Design": {en:"For an underwater explorer, draw a diving mask, fins and an underwater torch; each part helps with the mission.",sr:"Za podvodnog istraživača nacrtajte masku za ronjenje, peraje i podvodnu lampu; svaki deo pomaže u misiji."},
   "Alphabet Hunt": {en:"Find one safe object for the first three letters of a player's name.",sr:"Pronađite po jedan bezbedan predmet za prva tri slova nečijeg imena."},
-  "Emotion Charades": {en:"Act out feeling surprised without words, then change to feeling calm.",sr:"Bez reči odglumite iznenađenje, pa zatim promenite izraz u smirenost."},
-  "Chalk River": {en:"Draw a winding river and mark one wide island where everyone can safely step.",sr:"Nacrtajte krivudavu reku i označite jedno široko ostrvo na koje svi mogu bezbedno da stanu."},
+  "Emotion Charades": {en:"Act out surprise with wide eyes and raised eyebrows while the others guess the feeling.",sr:"Odglumite iznenađenje raširenim očima i podignutim obrvama, a ostali pogađaju osećanje."},
+  "Chalk River": {en:"Draw four large islands in a zigzag between the banks. Each player chooses the next island before carefully stepping onto it.",sr:"Nacrtajte četiri velika ostrva u cik-cak između obala. Svako bira sledeće ostrvo pre nego što pažljivo zakorači na njega."},
   "Pass the Sketch": {en:"Draw a circle, pass the page and let the next player turn it into a balloon or planet.",sr:"Nacrtajte krug, prosledite papir i neka ga sledeći pretvori u balon ili planetu."},
-  "Tiny Garden Design": {en:"Arrange fallen leaves as garden beds and small twigs as a winding path.",sr:"Poređajte opalo lišće kao leje, a kratke grančice kao vijugavu stazu."},
+  "Tiny Garden Design": {en:"For a ladybug, make a shelter under a fallen leaf, a path of larger pebbles and a broad leaf as a resting spot.",sr:"Za bubamaru napravite skrovište ispod opalog lista, stazu od većih kamenčića i širok list kao mesto za odmor."},
   "Hot and Cold Hunt": {en:"Hide a soft toy nearby and guide the seeker with only warm or cold clues.",sr:"Sakrijte mekanu igračku u blizini i vodite tragača samo tragovima toplo ili hladno."},
   "Balloon Keep-Up": {en:"Gently tap a balloon three times, then pass the next tap to a partner.",sr:"Nežno dodirnite balon tri puta, pa sledeći dodir prepustite partneru."},
-  "Living Room Camp": {en:"Build a low blanket den and tell a short story about an animal visitor.",sr:"Napravite nisko sklonište od ćebeta i smislite priču o životinjskom gostu."},
+  "Living Room Camp": {en:"Drape a blanket over two stable chairs or support it with firm cushions to make a low den. Tell a short story about an animal visitor inside.",sr:"Prebacite ćebe preko dve stabilne stolice ili ga oslonite na čvrste jastuke da napravite niski zaklon. Unutra ispričajte priču o životinjskom gostu."},
   "Rhythm Leader": {en:"Clap, tap your knees, clap; let the group repeat while the leader changes one sound.",sr:"Pljesak, tapkanje po kolenima, pljesak; grupa ponavlja dok vođa ne promeni jedan zvuk."},
-  "What Changed": {en:"Start with three objects; after one change is guessed, try a round with two changes.",sr:"Počnite sa tri predmeta; kada pogodite jednu promenu, probajte krug sa dve."},
-  "Paper Puppet Show": {en:"Have one paper puppet ask where it is going and let the other answer in character.",sr:"Neka jedna papirna lutka pita kuda ide, a druga odgovori u svojoj ulozi."},
-  "Cone-Free Slalom": {en:"Walk around three safe cup markers, then try the same route with gentle side steps.",sr:"Prošetajte oko tri bezbedne oznake od čaša, pa ponovite stazu blagim bočnim koracima."},
-  "One-Line Creature": {en:"Turn one continuous line into a creature, then give it a name and a special walk.",sr:"Pretvorite neprekidnu liniju u biće, pa mu dajte ime i poseban hod."},
-  "Museum Guide": {en:"Show three safe household objects as exhibits and invent one surprising fact about each.",sr:"Izložite tri bezbedna kućna predmeta i izmislite po jednu zanimljivu činjenicu o svakom."},
-  "Balance Delivery": {en:"Carry a light toy on an open tray across a short, clear route, then return it.",sr:"Prenesite laganu igračku na poslužavniku kratkom, slobodnom stazom, pa je vratite."},
+  "What Changed": {en:"Everyone raises their right hand. While the observer turns away, one player lowers theirs; the observer guesses what changed.",sr:"Svi podignu desnu ruku. Dok se posmatrač okrene, jedan igrač je spusti; posmatrač pogađa šta je drugačije."},
+  "Paper Puppet Show": {en:"A hedgehog gets lost on the way to the garden, and a bird shows familiar clues that lead home.",sr:"Jež se izgubio na putu do bašte, a ptica mu pokazuje prepoznatljive tragove koji vode kući."},
+  "Zigzag Delivery": {en:"Walk through empty-handed in the first round. In the second, carry the teddy to the finish: left around the first cup, right around the second, then left around the third.",sr:"U prvom krugu prođi stazu praznih ruku. U drugom prenesi medu do cilja: levo oko prve čaše, desno oko druge, pa levo oko treće."},
+  "One-Line Creature": {en:"Draw a bird’s outline in one stroke, add two legs and three footprints, then use a finger to show its waddle.",sr:"Nacrtajte obris ptice u jednom potezu, dodajte dve noge i tri otiska stopala, pa prstom pokažite njen gegavi hod."},
+  "Museum Guide": {en:"The guide shows a wooden spoon: ‘This tool stirs food in a pot. The marks show it is used often.’ The visitor asks, ‘What do you stir with it?’",sr:"Vodič pokazuje drvenu kašiku: „Ovaj predmet meša hranu u šerpi. Po tragovima se vidi da se često koristi.“ Posetilac pita: „Šta se njome najčešće meša?“"},
+  "Balance Delivery": {en:"Place a soft ball in a large spoon. Holding the spoon in one hand, walk straight from the start tape to the finish without steadying the ball.",sr:"Stavite mekanu lopticu u veću kašiku. Držeći kašiku jednom rukom, hodajte pravo od startne do ciljne trake bez pridržavanja loptice."},
   "Category Countdown": {en:"Name five animals, then try five foods before the count ends.",sr:"Navedite pet životinja, pa pokušajte da navedete pet jela pre kraja odbrojavanja."},
   "Spider Web Route": {en:"Step over low, safe lines and choose a clear route through the pretend web.",sr:"Prekoračite niske, bezbedne linije i izaberite slobodan put kroz zamišljenu mrežu."},
   "Nature Bingo": {en:"Spot a leaf, a bird and a smooth stone without picking or disturbing anything.",sr:"Uočite list, pticu i gladak kamen bez branja ili uznemiravanja prirode."},
   "Bounce and Catch": {en:"Bounce the soft ball once, clap quietly and catch it with both hands.",sr:"Jednom odbijte mekanu loptu, tiho pljesnite i uhvatite je obema rukama."},
   "Dance Traffic Lights": {en:"On green move, on yellow slow down, and on red freeze in a funny pose.",sr:"Na zeleno se krećite, na žuto usporite, a na crveno se ukočite u smešnoj pozi."},
   "Box Invention": {en:"Turn an empty box into a pretend wind machine and show what problem it solves.",sr:"Pretvorite praznu kutiju u zamišljenu mašinu za vetar i pokažite koji problem rešava."},
-  "Scent Explorer": {en:"Compare two familiar food smells, such as lemon and mint, without tasting them.",sr:"Uporedite dva poznata mirisa hrane, poput limuna i nane, bez probanja."},
-  "Symmetry Art": {en:"Fold the page down the middle and add a matching detail to the other half.",sr:"Presavijte papir po sredini i dodajte odgovarajući detalj na drugu polovinu."},
-  "Jumping Numbers": {en:"Place number cards on the floor and make one small jump to the number called.",sr:"Poređajte kartice sa brojevima po podu i malim skokom dođite do izgovorenog broja."},
+  "Scent Explorer": {en:"Lemon peel smells sharp to me and reminds me of lemonade; mint feels fresher and reminds me of chewing gum.",sr:"Kora limuna mi miriše oštro i podseća me na limunadu; nana mi deluje svežije i podseća me na žvaku."},
+  "Symmetry Art": {en:"The adult draws the left half of a butterfly up to the center line. The child draws a wing of the same size on the right and repeats the same number of patterns in matching places.",sr:"Odrasli nacrta levu polovinu leptira do srednje linije. Dete sa desne strane nacrta krilo iste veličine i ponovi isti broj šara na odgovarajućim mestima."},
+  "Jumping Numbers": {en:"The adult calls ‘four.’ The child makes one small jump beside card 4 and says ‘four’ aloud.",sr:"Odrasli kaže „četiri“. Dete jednim malim skokom staje pored kartice 4 i glasno kaže „četiri“."},
   "Twig Letters": {en:"Make the first letter of your name from fallen twigs, then add a small decoration.",sr:"Složite prvo slovo svog imena od opalih grančica, pa dodajte mali ukras."},
   "Corner Goals": {en:"Call one corner and gently roll the soft ball toward its goal marker.",sr:"Izgovorite jedan ugao i nežno otkotrljajte mekanu loptu ka oznaci gola."},
   "Sound Map": {en:"Draw a symbol where you hear each sound, then compare which came from farthest away.",sr:"Nacrtajte simbol na mestu odakle čujete zvuk, pa uporedite koji je bio najudaljeniji."},
-  "Kitchen Band": {en:"Let the conductor signal a quiet ending, and have every instrument fade out together.",sr:"Neka dirigent označi tiši završetak, pa neka svi instrumenti zajedno utihnu."},
+  "Kitchen Band": {en:"The conductor gently taps a plastic bowl twice with a wooden spoon, pauses, then taps a plastic cup once. The band repeats: ‘tap-tap, pause, tap.’",sr:"Dirigent dva puta nežno kucne drvenom kašikom o plastičnu posudu, napravi pauzu, pa jednom kucne o plastičnu čašu. Bend ponovi: „ta-ta, pauza, ta“."},
   "Indoor Picnic Quest": {en:"Follow a clue to find a pretend cup, plate and picnic snack, then arrange a menu.",sr:"Pratite tragove do zamišljene čaše, tanjira i užine, pa složite meni za piknik."},
   "Build a Creature": {en:"Choose two safe objects for body parts and invent a gentle way the creature moves.",sr:"Izaberite dva bezbedna predmeta za delove tela i osmislite kako se biće nežno kreće."},
-  "Captain Says": {en:"Give a two-part command, but players follow it only if it starts with “Captain says”.",sr:"Zadajte komandu iz dva dela, ali igrači je prate samo ako počinje sa „Kapetan kaže”."},
-  "Hopscotch Remix": {en:"At one square, pause to name a favorite animal before continuing the hopscotch path.",sr:"Na jednom polju zastanite da kažete omiljenu životinju, pa nastavite školice."},
-  "Leaf Shadow Trace": {en:"Trace the same leaf shadow later and notice which way it shifted.",sr:"Kasnije ponovo ocrtajte senku istog lista i primetite na koju stranu se pomerila."},
+  "Captain Says": {en:"‘Captain says: touch your knees, then clap once’ — do it. ‘Raise your hands!’ — stay still because the command did not start with the captain’s words.",sr:"„Kapetan kaže: dodirni kolena pa pljesni jednom“ — uradite. „Podigni ruke!“ — ne pomerajte se, jer komanda nije počela kapetanovim rečima."},
+  "Hopscotch Remix": {en:"The player hops to 1, lands with both feet on 2 and 3 and claps on 3, then hops to 4 and lands with both feet on 5 and 6.",sr:"Igrač skače na 1, staje sa obe noge na 2 i 3 i pljesne na 3, zatim skače na 4 i staje sa obe noge na 5 i 6."},
+  "Leaf Shadow Trace": {en:"Place a fallen leaf on paper in a sunny spot and trace the edge of its shadow.",sr:"Stavite opali list na papir na sunčanom mestu i ocrtajte ivicu njegove senke."},
   "Mood Music Moves": {en:"Change from a calm feeling to a joyful one and invent a new movement for each.",sr:"Pređite iz mirnog u radosno raspoloženje i osmislite poseban pokret za svako."},
   "Tallest Tiny Tower": {en:"See if the tower can stand still for a slow count of five.",sr:"Proverite može li kula da stoji mirno dok polako brojite do pet."},
-  "Guess My Rule": {en:"After the rule is guessed, sort the same objects by a new rule.",sr:"Kada pogode pravilo, razvrstajte iste predmete po novom pravilu."},
+  "Guess My Rule": {en:"The secret rule is ‘can roll’: the ball and toy car go in one group, while the sock and bowl go in the other. The others analyze the arrangement and infer what the first group’s objects have in common.",sr:"Tajno pravilo je „može da se kotrlja“: lopta i autić idu u jednu grupu, a čarapa i činija u drugu. Ostali analiziraju raspored i zaključuju šta je zajedničko predmetima u prvoj grupi."},
   "Postcard Adventure": {en:"Add a short greeting from the place in the picture to an imaginary friend.",sr:"Dodajte kratak pozdrav sa mesta na slici za zamišljenog prijatelja."},
   "Stepping-Stone Story": {en:"Add one new sentence at every safe stepping spot until the story reaches its ending.",sr:"Dodajte po jednu rečenicu na svakom bezbednom mestu dok priča ne stigne do kraja."},
-  "Wind Race": {en:"Take turns giving a fallen leaf one gentle puff toward the finish line.",sr:"Naizmenično nežno duvajte u opali list kako bi stigao do cilja."},
-  "Circle Keep-Away": {en:"Roll the soft ball around the circle in the opposite direction on the next round.",sr:"U sledećem krugu kotrljajte mekanu loptu kroz krug u suprotnom smeru."},
+  "Wind Race": {en:"Each player gets one leaf and stands behind their own start line. On ‘go,’ gently blow it to the finish without touching it with hands.",sr:"Svako dobija po jedan list i staje iza svoje startne linije. Na „sad“ duva nežno u svoj list do cilja, bez dodirivanja rukama."},
+  "Circle Keep-Away": {en:"Mia gently rolls the ball along the floor to Leo across the circle. The middle player tries to stop it with a hand before it reaches Leo.",sr:"Mila nežno kotrlja loptu po podu ka Luki preko kruga. Igrač u sredini pokušava da je zaustavi rukom pre nego što stigne do Luke."},
   "Final Pose Challenge": {en:"Call an animal and have everyone finish in a comfortable statue pose that represents it.",sr:"Izgovorite životinju, pa neka svi završe u udobnoj pozi statue koja je predstavlja."},
   "Colorful Steps": {en:"Make a three-color pattern and repeat the matching movements in the same order.",sr:"Napravite niz od tri boje i ponovite odgovarajuće pokrete istim redom."},
   "Three Things, One Story": {en:"End the tale by using all three objects to solve one problem together.",sr:"Završite priču tako što sva tri predmeta zajedno reše jedan problem."},
@@ -1596,12 +1753,12 @@ const gameExampleIdeas = {
   "Mission Cards": {en:"Pick two cards and join their tasks into one short mission.",sr:"Izaberite dve kartice i spojite njihove zadatke u jednu kratku misiju."},
   "Crawl Like a Comet": {en:"Finish the route by stretching out in a star shape on the floor.",sr:"Završite stazu tako što ćete se na podu raširiti u oblik zvezde."},
   "Invent a Creature": {en:"Give the creature a habitat and one sound it uses to call a friend.",sr:"Dajte biću stanište i jedan zvuk kojim doziva prijatelja."},
-  "Pocket Narrator": {en:"Use each of the three objects once, without saying their names.",sr:"Upotrebite svaki od tri predmeta po jednom, bez izgovaranja njihovih imena."},
-  "Rhyme Relay": {en:"Keep the same ending sound for three turns, then choose a new rhyme.",sr:"Zadržite isti završni glas tri kruga, pa izaberite novu rimu."},
-  "Sound Story": {en:"Choose a sound for one character and repeat it each time they appear.",sr:"Izaberite zvuk za jednog junaka i ponovite ga svaki put kada se pojavi."},
+  "Pocket Narrator": {en:"The sock says, ‘I keep the traveler's feet warm.’ The spoon says, ‘I stir soup for him.’ The cup says, ‘I pour him cocoa for the road.’ The others guess each object, then invent an ending where the traveler sets off home.",sr:"Čarapa kaže: „Ja grejem putniku stopala.“ Kašika kaže: „Ja mu mešam supu.“ Čaša kaže: „Ja mu sipam kakao za put.“ Ostali pogađaju predmete, pa smišljaju završetak u kome putnik kreće kući."},
+  "Rhyme Relay": {en:"Start with “day”: continue with “say–play–stay,” then begin a new rhyme with “light–night.”",sr:"Počnite sa „dan“ i nastavite „san–plan–stan“, pa novu rimu počnite sa „more–gore“."},
+  "Sound Story": {en:"When the narrator says “The cat walked into the forest,” everyone meows. When an owl appears, everyone says “hoo-hoo.”",sr:"Kada pripovedač kaže „Mačka je krenula kroz šumu“, svi kažu „mijau“. Kada se pojavi sova, svi kažu „hu-hu“."},
   "Question Detective": {en:"Set a five-question limit and see if the group can solve the mystery in time.",sr:"Ograničite igru na pet pitanja i proverite može li grupa na vreme da reši misteriju."},
-  "Kindness News": {en:"Give the kind act a headline, then ask the helper one friendly interview question.",sr:"Smislite naslov za lep postupak, pa postavite pomagaču jedno prijatno pitanje."},
-  "Opposite Day Tale": {en:"Let the next sentence reverse one detail from the previous one.",sr:"Neka sledeća rečenica preokrene jedan detalj iz prethodne."},
+  "Kindness News": {en:"Headline: “Quick Help in Class.” Report: “Leo helped Mia pick up her pencils.” Ask: “What did you notice?”",sr:"Naslov: „Brza pomoć u učionici.“ Vest: „Luka je pomogao Mili da pokupi olovke.“ Pitanje: „Šta si primetio?“"},
+  "Opposite Day Tale": {en:"The big bear walks forward into the forest; the next player reverses both details: the small bear walks backward home.",sr:"Veliki medved ide napred u šumu; sledeći igrač preokreće oba detalja: mali medved ide unazad kući."},
   "Soundtrack Story": {en:"Choose one gentle sound for the beginning, middle and ending of the story.",sr:"Izaberite po jedan blag zvuk za početak, sredinu i kraj priče."},
   "Magic Word Story": {en:"Choose a magic word that changes one character's plan whenever it is spoken.",sr:"Izaberite čarobnu reč koja menja plan jednog junaka svaki put kada se izgovori."},
   "Secret Shape Sketch": {en:"Hide a second small shape in the picture for someone else to spot.",sr:"Sakrijte još jedan mali oblik u crtežu da ga neko drugi pronađe."},
@@ -1612,14 +1769,14 @@ const gameExampleIdeas = {
   "Folded Face": {en:"Name the finished face and give it a greeting to say.",sr:"Dajte gotovom licu ime i smislite njegov pozdrav."},
   "Pattern Portrait": {en:"Repeat one chosen pattern in the hair, clothes and background.",sr:"Ponovite izabranu šaru u kosi, odeći i pozadini."},
   "Invisible Ink Map": {en:"Add a three-symbol key and let a partner decode the route.",sr:"Dodajte legendu od tri simbola i pustite partnera da otkrije put."},
-  "Draw the Feeling": {en:"Show the same feeling once with smooth lines and once with jagged lines.",sr:"Isto osećanje prikažite glatkim, pa izlomljenim linijama."},
+  "Draw the Feeling": {en:"Pick joy, sadness or calm and show it with colors and lines. A partner can guess or listen to your explanation.",sr:"Izaberite radost, tugu ili mir i prikažite ih bojama i linijama. Partner može da pogodi ili sasluša objašnjenje."},
   "Button Sorting Lab": {en:"Name each sorted group after its shared feature, such as color or number of holes.",sr:"Dajte naziv svakoj grupi prema zajedničkoj osobini, poput boje ili broja rupica."},
-  "What Is Missing?": {en:"Hide two familiar objects and see if the group can name both.",sr:"Sakrijte dva poznata predmeta i proverite može li grupa da pogodi oba."},
+  "What Is Missing?": {en:"Use three to five familiar objects. Cover them, remove one, then uncover the group and guess what is missing.",sr:"Izaberite tri do pet poznatih predmeta. Pokrijte ih, sklonite jedan, pa ih otkrijte i pogodite šta nedostaje."},
   "Clue Collector": {en:"Hide a safe object in the agreed area, leave three clues, then swap roles.",sr:"Sakrijte bezbedan predmet u dogovorenom prostoru, ostavite tri traga, pa zamenite uloge."},
   "Sound Source Hunt": {en:"Make two familiar sounds from different safe spots and point to each source.",sr:"Sa dva bezbedna mesta napravite različite poznate zvuke i pokažite njihov izvor."},
   "Odd One Out": {en:"Add a second item that does not belong and accept more than one reason.",sr:"Dodajte još jedan predmet koji ne pripada grupi i prihvatite više mogućih razloga."},
-  "Touch and Tell": {en:"Describe the object's shape and texture while a partner sketches it without seeing it.",sr:"Opišite oblik i teksturu predmeta dok ga partner crta ne gledajući ga."},
-  "Sequence Spotter": {en:"Extend the pattern by one item, then let a partner say what comes next.",sr:"Produžite niz za jedan predmet, pa neka partner kaže šta sledi."},
+  "Touch and Tell": {en:"A player feels a soft ball in the bag and says, ‘It is round, smooth and can bounce.’ The others guess before the ball is revealed.",sr:"Igrač opipa mekanu lopticu u torbi i kaže: „Okrugla je, glatka i može da odskoči.“ Ostali pogađaju pre nego što se loptica pokaže."},
+  "Sequence Spotter": {en:"Arrange red and blue blocks in a row: red, blue, red, blue. Ask what comes next and why, then let the player add the next block.",sr:"Poređajte crvene i plave kocke: crvena, plava, crvena, plava. Pitajte šta sledi i zašto, pa neka igrač doda sledeću kocku."},
   "Room Scavenger List": {en:"Find one safe item matching two clues at once, such as color and shape.",sr:"Pronađite jedan bezbedan predmet koji odgovara dvama tragovima, poput boje i oblika."},
   "Secret Path Finder": {en:"Guide the seeker using only “left”, “right” and “forward”, without adding extra clues.",sr:"Vodite tragača samo rečima „levo”, „desno” i „napred”, bez dodatnih tragova."},
   "Five Things Fast": {en:"Try a new category and name five items in reverse order, starting with the last one you thought of.",sr:"Izaberite novu kategoriju i navedite pet stvari obrnutim redom, počevši od poslednje koje ste se setili."},
@@ -1627,9 +1784,9 @@ const gameExampleIdeas = {
   "Straw City": {en:"Give the city a park and draw a route connecting three of its buildings.",sr:"Dodajte gradu park i nacrtajte put koji povezuje tri zgrade."},
   "Marshmallow Structures": {en:"Build a wide base and a tall tower, then compare which uses more pieces.",sr:"Napravite široku osnovu i visoku kulu, pa uporedite koja koristi više delova."},
   "Bridge to the Toy": {en:"Add low paper side rails and guide the toy across without letting it slide off.",sr:"Dodajte niske bočne ograde od papira i prevedite igračku preko bez spadanja."},
-  "Cardboard Telescope": {en:"Choose one object seen through the tube and describe it without naming it.",sr:"Izaberite predmet viđen kroz cev i opišite ga bez imenovanja."},
+  "Cardboard Telescope": {en:"Look at a toy car through the tube and describe three details, such as its color, wheels and windows. Let a partner guess the object.",sr:"Kroz cev posmatrajte autić i opišite tri detalja, poput boje, točkova i prozora. Neka partner pogodi predmet."},
   "Maze Builder": {en:"Mark a special symbol somewhere in the maze and let the toy pass it before reaching the exit.",sr:"Označite poseban simbol u lavirintu i provedite igračku pored njega pre izlaza."},
-  "Balance Sculpture": {en:"Move one bottom piece slightly and predict whether the sculpture will stay standing.",sr:"Malo pomerite donji deo i pogodite da li će skulptura ostati uspravna."},
+  "Balance Sculpture": {en:"Place two large foam blocks side by side, then set a third lightweight block across them. If it wobbles, widen the base.",sr:"Stavite dve velike penaste kocke jednu do druge, pa preko njih položite treću laganu kocku. Ako se klima, raširite osnovu."},
   "Tiny Shop": {en:"Give the customer three pretend coins and decide what they can buy with them.",sr:"Dajte kupcu tri zamišljena novčića i dogovorite šta može da kupi."},
   "Paper Playground": {en:"Draw a clear path between two play areas and add a sign for one simple rule.",sr:"Nacrtajte jasnu stazu između dva prostora za igru i dodajte znak sa jednim pravilom."},
   "Balloon Tap Circle": {en:"Tap the balloon once each in a repeating order, then try the pattern in reverse.",sr:"Dodirnite balon po jednom u ponavljajućem redosledu, pa probajte niz unazad."},
@@ -1637,11 +1794,11 @@ const gameExampleIdeas = {
   "Roll and Follow": {en:"Roll the ball slowly along a gentle curve marked on the floor.",sr:"Polako otkotrljajte loptu duž blage krivine označene na podu."},
   "Two-Bounce Catch": {en:"Call out one or two bounces before the throw and catch after that number.",sr:"Pre bacanja recite jedan ili dva odskoka, pa uhvatite loptu nakon tog broja."},
   "Balloon Volleyball": {en:"Call a partner's name before a gentle tap so they can get ready to return it.",sr:"Izgovorite ime partnera pre blagog udarca da bi se spremio da vrati balon."},
-  "Partner Pass Pattern": {en:"Once the pattern is remembered, try passing the ball without speaking.",sr:"Kada zapamtite niz, pokušajte da dodajete loptu bez govora."},
+  "Partner Pass Pattern": {en:"Mila passes to Luka, Luka to Ana, and Ana to Sara. Repeat that route, then add Sara passing back to Mila.",sr:"Mila dodaje Luki, Luka Ani, a Ana Sari. Ponovite taj redosled, pa dodajte da Sara vrati loptu Mili."},
   "Rolling Ramps": {en:"Add low paper side walls and see if the ball stays on the ramp.",sr:"Dodajte niske bočne ivice od papira i proverite da li lopta ostaje na rampi."},
   "Circle Bounce": {en:"On a clap, gently change the direction of the next pass around the circle.",sr:"Na pljesak nežno promenite smer sledećeg dodavanja u krugu."},
   "Target Story Toss": {en:"Give the story one shared hero and let every hit offer that hero a choice.",sr:"Izaberite zajedničkog junaka, pa neka mu svaki pogodak ponudi izbor."},
-  "Leaf Line-Up": {en:"Sort the same leaves by stem length instead of overall size.",sr:"Poređajte isto lišće po dužini drške umesto po ukupnoj veličini."},
+  "Leaf Line-Up": {en:"Arrange four fallen leaves from smallest to largest. Explain your order, then rearrange them from lightest to darkest.",sr:"Poređajte četiri opala lista od najmanjeg do najvećeg. Objasnite redosled, pa ih zatim poređajte od najsvetlijeg do najtamnijeg."},
   "Nature Number Hunt": {en:"Find two separate safe groups that add up to the called number.",sr:"Pronađite dve odvojene bezbedne grupe čiji je zbir izgovoreni broj."},
   "Stick Shadow Shapes": {en:"Trace the outline of one shadow shape on paper, if a safe drawing surface is available.",sr:"Ocrtajte oblik jedne senke na papiru ako imate bezbednu podlogu za crtanje."},
   "Bird Sound Pause": {en:"One player makes a soft bird call and the others answer with a gentle echo.",sr:"Jedan igrač tiho oponaša pticu, a ostali mu odgovore blagim odjekom."},
@@ -1668,7 +1825,7 @@ const gameExampleIdeas = {
   "Helpful Inventor": {en:"Describe the tool's job with three clues and let a partner guess the problem it solves.",sr:"Opišite namenu izuma kroz tri traga i neka partner pogodi koji problem rešava."},
   "Underwater Tour": {en:"Add three sea creatures to the tour and invent a gentle movement for each.",sr:"Dodajte tri morska bića u obilazak i izmislite blag pokret za svako."},
   "Family Newsroom": {en:"Turn one kind thing someone did today into a cheerful headline.",sr:"Pretvorite jedan lep postupak od danas u vedar naslov vesti."},
-  "Time-Travel Guide": {en:"Let a visitor ask one question about the past or future stop.",sr:"Neka posetilac postavi jedno pitanje o stanici u prošlosti ili budućnosti."},
+  "Time-Travel Guide": {en:"Visit a village before electricity and ask how homes were lit, or a future city where buses fly between buildings and ask how they know where to land.",sr:"Posetite selo pre struje i pitajte kako su osvetljavali kuće ili grad budućnosti u kome autobusi lete između zgrada i pitajte kako znaju gde da slete."},
   "Tiny Theatre": {en:"Perform the same short scene once with words and once without speaking.",sr:"Odglumite istu kratku scenu jednom rečima, a zatim bez govora."},
   "Quiet Cloud Count": {en:"Silently count the clouds you see, then compare totals without rushing.",sr:"U sebi prebrojte oblake koje vidite, pa polako uporedite broj."},
   "Feather Focus": {en:"Guess where the feather will land, then see how close your guess was.",sr:"Pogodite gde će pero pasti, pa proverite koliko je procena bila blizu."},
@@ -1678,7 +1835,7 @@ const gameExampleIdeas = {
   "Listening Minute": {en:"After listening, point toward the farthest sound you noticed.",sr:"Posle slušanja pokažite u smeru najudaljenijeg zvuka koji ste primetili."},
   "Tense and Relax": {en:"Add a gentle shoulder stretch between each tense-and-relax round.",sr:"Između krugova stezanja i opuštanja nežno istegnite ramena."},
   "Quiet Pattern Tiles": {en:"Hide one item from the pattern and let a partner identify the missing spot.",sr:"Sakrijte jedan predmet iz niza i neka partner otkrije koje mesto nedostaje."},
-  "Gratitude Garden": {en:"Give each imaginary flower a specific kind act someone did today.",sr:"Svaki zamišljeni cvet posvetite konkretnom lepom postupku od danas."}
+  "Gratitude Garden": {en:"Add a pattern to one petal on each flower that reminds you of the good moment.",sr:"Dodajte šaru na jednu laticu svakog cveta koja vas podseća na lepi trenutak."}
 };
 
 function openGameDetail(id){
@@ -1688,41 +1845,41 @@ function openGameDetail(id){
   const [title,description]=localized(game), liked=state.likes.includes(id);
   const specific=gameDetailOverrides[game.title]?.[state.language];
   const feedback=game.feedback?.[state.language];
-  const numberedImage=hasNumberedGameImage(game.image),wideImage=numberedImage&&game.srTitle.length>20&&![21,100].includes(game.id);
-  $("#detailImage").src=game.image;$("#detailImage").alt=t().image(title);$("#detailImage").classList.toggle("game-detail-image-uploaded",hasUploadedGameImage(game.image));$("#detailImage").classList.toggle("game-detail-image-numbered",numberedImage);$("#detailImage").classList.toggle("game-detail-image-numbered-wide",wideImage);$("#detailImage").classList.toggle("game-detail-image-ecosystem",game.title==="Who Lives in This Ecosystem?");$("#detailTitle").textContent=title;$("#detailDescription").textContent=description;
+  const numberedImage=hasNumberedGameImage(game.image),wideImage=numberedImage&&game.srTitle.length>20&&![21,100,102].includes(game.id);
+  $("#detailImage").src=game.image;$("#detailImage").alt=t().image(title);$("#detailImage").classList.toggle("game-detail-image-uploaded",hasUploadedGameImage(game.image));$("#detailImage").classList.toggle("game-detail-image-numbered",numberedImage);$("#detailImage").classList.toggle("game-detail-image-numbered-wide",wideImage);$("#detailImage").classList.toggle("game-detail-image-symbol-message",game.id===102);$("#detailImage").classList.toggle("game-detail-image-animal-traffic",game.id===103);$("#detailImage").classList.toggle("game-detail-image-ecosystem",game.title==="Who Lives in This Ecosystem?");$("#detailImage").classList.toggle("game-detail-image-collage-crop-right",[2,154].includes(game.id));$("#detailTitle").textContent=title;$("#detailDescription").textContent=description;renderGameTools(game);
   $("#detailAboutTitle").textContent=t().aboutTitle;
-  const skills=(game.skills||[]).slice(0,2);$("#detailSkillsSection").hidden=!skills.length;$("#detailSkillsTitle").textContent=t().skillsTitle;
+  const skills=(game.skills||[]).slice(0,game.id===41?3:2);$("#detailSkillsSection").hidden=!skills.length;$("#detailSkillsTitle").textContent=t().skillsTitle;
   $("#detailSkillsList").innerHTML=skills.map(skill=>{const name=state.language==="sr"?skill.sr:skill.en;return `<div class="detail-skill"><span class="detail-skill-icon" aria-hidden="true">${feedbackSkillIcon(name)}</span><strong>${name}</strong></div>`}).join("");
   const preparation=feedback?.preparation||specific?.prep||preparationForGame(game,state.language);
   const needsPreparation=Boolean(preparation)&&!/^no special preparation needed\.?$/i.test(preparation.trim())&&!/^nije potrebna posebna priprema\.?$/i.test(preparation.trim());
   $("#detailPreparation").hidden=!needsPreparation;$("#detailPreparationTitle").textContent=t().prepareLabel;$("#detailPreparationCopy").textContent=preparation;
   const ageNote=localizedAgeGuidance(game,state.language);
-  const steps=[];
-  $("#detailStepsSection").hidden=!steps.length;$("#detailStepsTitle").textContent=t().stepsTitle;
-  const stepList=$("#detailStepsList");stepList.replaceChildren();steps.forEach(step=>{const item=document.createElement("li");item.textContent=step;stepList.append(item)});
   const showDemo=game.title==="Guess the Leader", demoCopy=t().demoSteps;
   if(detailDemoTimer){clearInterval(detailDemoTimer);detailDemoTimer=null}
   $("#detailDemo").hidden=!showDemo;$("#detailDemo").classList.remove("is-playing");
   $$(".detail-demo-step").forEach((step,index)=>step.classList.toggle("is-active",showDemo&&index===0));
   if(showDemo){$("#detailDemoTitle").textContent=t().demoTitle;demoCopy.forEach((step,index)=>{$(`#detailDemoStep${index+1}Title`).textContent=step[0];$(`#detailDemoStep${index+1}Copy`).textContent=step[1]});$("#detailDemoToggleText").textContent=t().demoPlay;$("#detailDemoToggle").querySelector("[aria-hidden='true']").textContent="▶";$("#detailDemoToggle").setAttribute("aria-pressed","false")}
-  $("#detailTags").innerHTML=`<span class="tag">${game.duration} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span>`;
+  $("#detailTags").innerHTML=`<span class="tag">${game.durationLabel} ${t().min}</span><span class="tag">${t().place[game.place]}</span><span class="tag">${t().ages(game.minAge,game.maxAge)}</span>`;
   $("#detailExampleTitle").textContent=t().exampleTitle;
   const example=feedback?.example||specific?.example||gameExampleIdeas[game.title]?.[state.language];
   $("#detailExampleCard").hidden=!example;
   const bonusBase=feedback?.bonus||specific?.parent||gameBonusIdeas[game.title]?.[state.language]||"";
-  const bonus=[bonusBase,ageNote?`${t().ageBonusLabel}: ${ageNote}`:""].filter(Boolean).join("\n\n");
-  $("#detailParentCard").hidden=!bonus;
-  $("#detailGrid").hidden=!(example||bonus);
+  $("#detailParentCard").hidden=!bonusBase;
+  $("#detailGrid").hidden=!(example||bonusBase);
   $("#detailGrid").classList.toggle("has-example",Boolean(example));
   $("#detailExample").textContent=example||"";
   $("#detailParentTitle").textContent=t().parentTipTitle;
-  $("#detailParent").textContent=bonus||"";
+  $("#detailParent").textContent=bonusBase;
+  $("#detailAgeGuidance").hidden=!ageNote;
+  $("#detailAgeGuidanceTitle").textContent=t().ageGuidanceTitle;
+  $("#detailAgeGuidanceCopy").textContent=ageNote||"";
   $("#gamePageBack").setAttribute("aria-label",t().closeDetails);$("#gameShareButton").setAttribute("aria-label",state.language==="sr"?"Podeli igru":"Share game");
   const saveLabel=liked?t().savedAction:t().saveAction;
   $("#detailLikeButton").innerHTML=`♥ <span class="save-label">${saveLabel}</span>`;$("#detailLikeButton").setAttribute("aria-label",saveLabel);$("#detailLikeButton").setAttribute("aria-pressed",String(liked));
   $("#detailLikeButton").classList.toggle("is-liked",liked);
 }
 function closeGameDetail(){
+  clearGameToolTimer();
   if(detailDemoTimer){clearInterval(detailDemoTimer);detailDemoTimer=null}
   $("#detailDemo").classList.remove("is-playing");$("#gamePage").hidden=true;$("#appTopbar").hidden=false;$("#appFooter").hidden=false;$(".main-nav").hidden=false;
   const previous=state.gameReturnScreen;state.gameReturnScreen=null;
@@ -1743,6 +1900,7 @@ $("#changeFiltersButton").onclick=()=>setView("recommended"); $$(".nav-button").
 $("#startButton").onclick=()=>showFilters(0); $("#dailyButton").onclick=()=>openGameDetail(dailyGame().id);
 $("#detailDemoToggle").onclick=()=>{const playing=$("#detailDemo").classList.toggle("is-playing"),steps=[...$$(".detail-demo-step")];if(detailDemoTimer){clearInterval(detailDemoTimer);detailDemoTimer=null}if(playing&&steps.length){let activeIndex=0;steps.forEach((step,index)=>step.classList.toggle("is-active",index===0));detailDemoTimer=setInterval(()=>{steps[activeIndex].classList.remove("is-active");activeIndex=(activeIndex+1)%steps.length;steps[activeIndex].classList.add("is-active")},1600)}else{steps.forEach(step=>step.classList.remove("is-active"))}$("#detailDemoToggle").setAttribute("aria-pressed",String(playing));$("#detailDemoToggleText").textContent=playing?t().demoPause:t().demoPlay;$("#detailDemoToggle").querySelector("[aria-hidden='true']").textContent=playing?"Ⅱ":"▶"};
 $("#gamePageBack").onclick=closeGameDetail;$("#detailLikeButton").onclick=()=>toggleLike(state.selectedGame);
+$("#detailToolsContent").onclick=event=>{const action=event.target.closest("[data-game-tool-action]")?.dataset.gameToolAction;if(action==="generate")generateGameTool();else if(action==="timer-toggle")toggleGameToolTimer();else if(action==="timer-reset")resetGameToolTimer()};
 $("#safetyNoteButton").onclick=()=>$("#safetyDialog").showModal();$("#safetyDialogClose").onclick=()=>$("#safetyDialog").close();$("#safetyDialogDone").onclick=()=>$("#safetyDialog").close();
 $("#gameShareButton").onclick=async()=>{const title=$("#detailTitle").textContent,text=$("#detailDescription").textContent;try{if(navigator.share)await navigator.share({title,text,url:location.href});else if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(`${title}\n${text}`);showToast(t().shareCopied)}else showToast(t().shareUnavailable)}catch(error){if(error.name!=="AbortError")showToast(t().shareUnavailable)}};
 $$ (".language-button").forEach(b=>b.onclick=()=>{state.language=b.dataset.language;translate();if(!$("#gamePage").hidden)openGameDetail(state.selectedGame);if(!$("#explorePage").hidden)renderExplore();else if(!$("#results").hidden)renderResults();else if(!$("#questionCard").hidden)renderQuestion()});
@@ -1752,5 +1910,5 @@ $("#feedbackButton").onclick=()=>{const message=$("#feedbackMessage").value.trim
 $("#profileForm").onsubmit=e=>{if(e.submitter?.value==="cancel")return; e.preventDefault();const name=$("#profileName").value.trim();if(!name)return;state.profile={name};localStorage.setItem("playPicksProfile",JSON.stringify(state.profile));$("#profileDialog").close();translate()};
 $("#deleteProfileButton").onclick=()=>{state.profile=null;state.likes=[];localStorage.removeItem("playPicksProfile");localStorage.removeItem("playPicksLikes");$("#profileDialog").close();translate();if(state.view==="saved")renderResults()};
 
-if(games.length<200||new Set(games.map(g=>g.title)).size<200)throw new Error("Catalog must contain at least 200 unique games.");
+if(games.length!==130||new Set(games.map(g=>g.title)).size!==games.length)throw new Error("Catalog must contain 130 unique games.");
 translate();renderQuestion();showLanding();
