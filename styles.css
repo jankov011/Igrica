@@ -355,7 +355,7 @@ footer { display: block; padding: 8px 0 28px; color: #949eaa; font-size: .8rem; 
   .profile-avatar { width: 28px; height: 28px; font-size: .75rem; }
   .language-button { width: 40px; height: 40px; }
   .profile-button span:last-child { display: none; }
-  .hero { min-height: max(380px, calc(100svh - 238px)); margin: 0 -13px; padding: 18px 26px 26px; border-radius: 0; }
+  .hero { min-height: max(380px, calc(100svh - 238px)); margin: 0 -13px; padding: 18px 26px 26px; border-radius: 0; background-color: #fdf9ee; }
   .hero::after { background: none; }
   .hero-content { width: 100%; max-width: 340px; margin: 0 auto; padding-top: 0; }
   .hero-title-second { display: block; }
