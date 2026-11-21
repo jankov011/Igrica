@@ -32,7 +32,7 @@ const copy = {
     place:{either:"Inside or outside",indoors:"Indoors",outdoors:"Outdoors",travel:"On the go"}, ages:(a,b)=>`Ages ${a}–${b}`, min:"min", image:t=>`Children playing ${t}`,
     noProfile:"Profile",
     findGame:"Find a game",
-    trust:["✓ Ages 3–12"], visualTitle:"Ready for play?", visualCopy:"Simple ideas for everyday moments",
+    trust:["Ages 3–12."], visualTitle:"Ready for play?", visualCopy:"Simple ideas for everyday moments",
     dailyLabel:"TODAY’S GAME", dailyTitle:"Five-minute connection", dailyCopy:"Short play still counts. A few focused minutes can turn an ordinary pause into a warm family memory.", dailyButtonLabel:"Explore a play idea →",
     benefitOneTitle:"We grow through play", benefitOneCopy:"Discover games that encourage movement, imagination, cooperation, and concentration.",
     benefitTwoTitle:"An easier choice", benefitTwoCopy:"Six simple choices help you find an activity to enjoy together.",
@@ -59,7 +59,7 @@ const copy = {
     place:{either:"Unutra ili napolju",indoors:"Unutra",outdoors:"Napolju",travel:"U pokretu"}, ages:(a,b)=>`Uzrast ${a}–${b}`, min:"min", image:t=>`Deca igraju igru ${t}`,
     noProfile:"Profil",
     findGame:"Pronađi igru",
-    trust:["✓ Uzrast 3–12"], visualTitle:"Spremni za igru?", visualCopy:"Jednostavne ideje za svaki dan",
+    trust:["Uzrast 3–12."], visualTitle:"Spremni za igru?", visualCopy:"Jednostavne ideje za svaki dan",
     dailyLabel:"DANAŠNJA IGRA", dailyTitle:"Pet minuta povezivanja", dailyCopy:"I kratka igra se računa. Nekoliko posvećenih minuta može običnu pauzu pretvoriti u lepu porodičnu uspomenu.", dailyButtonLabel:"Pogledaj ideju za igru →",
     benefitOneTitle:"Rastemo kroz igru", benefitOneCopy:"Otkrijte igre koje podstiču kretanje, maštu, saradnju i koncentraciju.",
     benefitTwoTitle:"Lakši izbor", benefitTwoCopy:"Šest jednostavnih izbora pomaže vam da lako pronađete šta ćete raditi zajedno.",
@@ -1168,7 +1168,7 @@ function translate() {
   $('meta[name="description"]').content=c.description; $("#homeButton").ariaLabel=c.home; $(".language-switcher").ariaLabel=c.language;
   $("#heroTitle").innerHTML=c.hero; $("#heroCopy").textContent=c.heroCopy;
   $("#progress").ariaLabel=c.progress; $("#editButton").textContent=c.edit;
-  $("#profileLabel").textContent=state.profile?.name||c.noProfile;
+  $("#profileLabel").textContent=state.profile?.name||c.noProfile; $("#profileButton").ariaLabel=state.profile?.name||c.noProfile;
   $("#profileAvatar").textContent=state.profile?.name?.[0]||"?"; $("#profileTitle").textContent=c.profileTitle; $("#profileCopy").textContent=c.profileCopy;
   $("#profileNameLabel").textContent=c.name; $("#profileSaveButton").textContent=c.saveProfile; $("#deleteProfileButton").textContent=c.deleteProfile;
   $("#feedbackLabel").textContent=c.feedbackLabel; $("#feedbackHint").textContent=c.feedbackHint; $("#feedbackButton").textContent=c.feedbackButton;
@@ -1896,7 +1896,7 @@ function showFilters(step=state.step){state.step=step;$("#landing").hidden=true;
 function showLanding(){state.step=0;state.answers={};state.view="recommended";$("#landing").hidden=false;$("#explorePage").hidden=true;$("#questionCard").hidden=true;$("#progress").hidden=true;$("#results").hidden=true;$$(".nav-button").forEach(b=>b.classList.toggle("is-active",b.dataset.view==="recommended"));scrollTo({top:0,behavior:"smooth"})}
 $("#nextButton").onclick=()=>{if(state.step<questions().length-1){state.step++;renderQuestion()}else{state.view="recommended";renderResults()}};
 $("#backButton").onclick=()=>{if(state.step){state.step--;renderQuestion()}else showLanding()}; $("#homeButton").onclick=showLanding; $("#editButton").onclick=()=>showFilters(0);
-$("#changeFiltersButton").onclick=()=>setView("recommended"); $$(".nav-button").forEach(b=>b.onclick=()=>setView(b.dataset.view));
+$("#changeFiltersButton").onclick=()=>setView("recommended"); $$(".nav-button").forEach(b=>b.onclick=()=>b.dataset.view==="recommended"?showLanding():setView(b.dataset.view));
 $("#startButton").onclick=()=>showFilters(0); $("#dailyButton").onclick=()=>openGameDetail(dailyGame().id);
 $("#detailDemoToggle").onclick=()=>{const playing=$("#detailDemo").classList.toggle("is-playing"),steps=[...$$(".detail-demo-step")];if(detailDemoTimer){clearInterval(detailDemoTimer);detailDemoTimer=null}if(playing&&steps.length){let activeIndex=0;steps.forEach((step,index)=>step.classList.toggle("is-active",index===0));detailDemoTimer=setInterval(()=>{steps[activeIndex].classList.remove("is-active");activeIndex=(activeIndex+1)%steps.length;steps[activeIndex].classList.add("is-active")},1600)}else{steps.forEach(step=>step.classList.remove("is-active"))}$("#detailDemoToggle").setAttribute("aria-pressed",String(playing));$("#detailDemoToggleText").textContent=playing?t().demoPause:t().demoPlay;$("#detailDemoToggle").querySelector("[aria-hidden='true']").textContent=playing?"Ⅱ":"▶"};
 $("#gamePageBack").onclick=closeGameDetail;$("#detailLikeButton").onclick=()=>toggleLike(state.selectedGame);
@@ -1904,7 +1904,8 @@ $("#detailToolsContent").onclick=event=>{const action=event.target.closest("[dat
 $("#safetyNoteButton").onclick=()=>$("#safetyDialog").showModal();$("#safetyDialogClose").onclick=()=>$("#safetyDialog").close();$("#safetyDialogDone").onclick=()=>$("#safetyDialog").close();
 $("#gameShareButton").onclick=async()=>{const title=$("#detailTitle").textContent,text=$("#detailDescription").textContent;try{if(navigator.share)await navigator.share({title,text,url:location.href});else if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(`${title}\n${text}`);showToast(t().shareCopied)}else showToast(t().shareUnavailable)}catch(error){if(error.name!=="AbortError")showToast(t().shareUnavailable)}};
 $$ (".language-button").forEach(b=>b.onclick=()=>{state.language=b.dataset.language;translate();if(!$("#gamePage").hidden)openGameDetail(state.selectedGame);if(!$("#explorePage").hidden)renderExplore();else if(!$("#results").hidden)renderResults();else if(!$("#questionCard").hidden)renderQuestion()});
-$("#profileButton").onclick=()=>{$("#profileName").value=state.profile?.name||"";$("#deleteProfileButton").classList.toggle("is-visible",Boolean(state.profile));$("#profileDialog").showModal()};
+function openProfileDialog(){$("#profileName").value=state.profile?.name||"";$("#deleteProfileButton").classList.toggle("is-visible",Boolean(state.profile));$("#profileDialog").showModal()}
+$("#profileButton").onclick=openProfileDialog;
 $("#feedbackLabel").textContent=t().feedbackLabel;$("#feedbackHint").textContent=t().feedbackHint;$("#feedbackButton").textContent=t().feedbackButton;
 $("#feedbackButton").onclick=()=>{const message=$("#feedbackMessage").value.trim();if(!message){showToast(t().feedbackRequired);return}window.location.href=`mailto:?subject=${encodeURIComponent(t().feedbackSubject)}&body=${encodeURIComponent(message)}`};
 $("#profileForm").onsubmit=e=>{if(e.submitter?.value==="cancel")return; e.preventDefault();const name=$("#profileName").value.trim();if(!name)return;state.profile={name};localStorage.setItem("playPicksProfile",JSON.stringify(state.profile));$("#profileDialog").close();translate()};
