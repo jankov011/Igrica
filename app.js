@@ -47,7 +47,7 @@ const copy = {
   },
   sr: {
     pageTitle:"Naše igre", brand:"Naše igre", description:"Pronađite dečje igre bez ekrana za svaki trenutak.", home:"Početna stranica Naše igre", language:"Jezik",
-    nav:["Za vas","Istraži","Popularno","Sačuvano"], profile:"Profil", hero:"Pronađite ideju za <span>igru bez ekrana.</span>",
+    nav:["Za vas","Istraži","Popularno","Sačuvano"], profile:"Profil", hero:"Pronađite ideju <span class='hero-title-second'>za igru bez ekrana.</span>",
     heroCopy:"Izaberite ideju, odložite telefon i igrajte se zajedno uživo.", progress:"Napredak izbora", resultsEye:"Predlozi za igru",
     ready:"Predlozi igara za vas", popular:"Popularno", saved:"Sačuvane igre", edit:"Promeni filtere", step:(a,b)=>`Korak ${a} od ${b}`,
     next:"Nastavi", show:"Prikaži", back:"Nazad", matches:"",
@@ -844,7 +844,11 @@ const uploadedHeroImages = {
 const publishedImageNameOverrides={21:"test_papirnog_aviona",48:"misija_sa_balonom",52:"kostim_od_papira",69:"dostava_u_svemir",70:"odbrojavanje",78:"simetri_na_slika",85:"potraga_za_ku_nim_blagom",90:"pokreti_uz_muziku",92:"pogodi_moje_zanimanje",93:"avantura_na_ostrvu",97:"izazov_zavr_ne_re_i"};
 function publishedImagePath(image){
   const match=image.match(/^Game app\/(?:matched-images|illustrations-133-200)\/(\d{3})_igra\.jpg$/);
-  if(!match)return image.startsWith("20_hero_slika_JPG/")?`${image}?v=20261102`:image;
+  if(!match&&image.startsWith("20_hero_slika_JPG/")){
+    const publishedImage=location.hostname.endsWith("github.io")?image.slice(image.lastIndexOf("/")+1):image;
+    return `${publishedImage}?v=20261121`;
+  }
+  if(!match)return image;
   const imageId=Number(match[1]);
   const directory=imageId<=40?"Ilustracije_igara_21-40_JPG_novi":imageId<=100?"Ilustracije_igara_41-100_JPG":imageId<=132?"Ilustracije_igara_101-132_JPG":"Ilustracije_igara_133-200_JPG_bez_teksta";
   const sourceTitle=gameIdeas[imageId-1]?.[1]||"";
