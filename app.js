@@ -1886,14 +1886,14 @@ function closeGameDetail(){
   if(previous?.explore)renderExplore();else if(previous?.question)showFilters(previous.step);else if(previous?.results)renderResults();else showLanding();
 }
 function setView(view){
-  state.view=view; $$(".nav-button").forEach(b=>b.classList.toggle("is-active",b.dataset.view===view));
+  state.view=view; $("#appTopbar").classList.toggle("is-nav-page",["explore","popular","saved"].includes(view)); $$(".nav-button").forEach(b=>b.classList.toggle("is-active",b.dataset.view===view));
   if(view==="explore")renderExplore();else if(view==="recommended"&&!state.answers.age){showFilters(0)}else renderResults();
 }
 function requireProfile(){if(state.profile)return true;$("#profileDialog").showModal();return false}
 function showToast(message){const toast=$("#toast");toast.textContent=message;toast.classList.add("is-visible");clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>toast.classList.remove("is-visible"),2600)}
 function toggleLike(id){if(!requireProfile())return;const liked=state.likes.includes(id);if(!liked){state.saveCounts[id]=(Number(state.saveCounts[id])||0)+1;localStorage.setItem("playPicksSaveCounts",JSON.stringify(state.saveCounts))}state.likes=liked?state.likes.filter(x=>x!==id):[...state.likes,id];localStorage.setItem("playPicksLikes",JSON.stringify(state.likes));showToast(liked?t().unliked:t().liked);if(!$("#results").hidden)renderResults();if(!$("#gamePage").hidden)openGameDetail(id)}
 function showFilters(step=state.step){state.step=step;$("#landing").hidden=true;$("#explorePage").hidden=true;$("#questionCard").hidden=false;$("#progress").hidden=false;$("#results").hidden=true;renderQuestion();scrollTo({top:0,behavior:"smooth"})}
-function showLanding(){state.step=0;state.answers={};state.view="recommended";$("#landing").hidden=false;$("#explorePage").hidden=true;$("#questionCard").hidden=true;$("#progress").hidden=true;$("#results").hidden=true;$$(".nav-button").forEach(b=>b.classList.toggle("is-active",b.dataset.view==="recommended"));scrollTo({top:0,behavior:"smooth"})}
+function showLanding(){state.step=0;state.answers={};state.view="recommended";$("#appTopbar").classList.remove("is-nav-page");$("#landing").hidden=false;$("#explorePage").hidden=true;$("#questionCard").hidden=true;$("#progress").hidden=true;$("#results").hidden=true;$$('.nav-button').forEach(b=>b.classList.toggle("is-active",b.dataset.view==="recommended"));scrollTo({top:0,behavior:"smooth"})}
 $("#nextButton").onclick=()=>{if(state.step<questions().length-1){state.step++;renderQuestion()}else{state.view="recommended";renderResults()}};
 $("#backButton").onclick=()=>{if(state.step){state.step--;renderQuestion()}else showLanding()}; $("#homeButton").onclick=showLanding; $("#editButton").onclick=()=>showFilters(0);
 $("#changeFiltersButton").onclick=()=>setView("recommended"); $$(".nav-button").forEach(b=>b.onclick=()=>b.dataset.view==="recommended"?showLanding():setView(b.dataset.view));
